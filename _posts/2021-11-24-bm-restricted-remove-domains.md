@@ -21,3 +21,10 @@ if (dd != undefined) {
 document.getElementsByClassName("pu94sjp6")[0].classList.remove("pu94sjp6");
 ```
 P.S. 可能需要多粘贴执行几次代码
+
+---
+当然，也不是每次都要花半天去搜索代码这么麻烦
+
+你也可以尝试更加优雅的方法
+
+比如：将上述代码添加到你输入法的 **自定义短语** 中就可以省去每次使用都要找文档的繁琐
