@@ -66,13 +66,22 @@ date: 2022-06-07 11:08:22 +0800
 
 ## **备注**
 
-如果粘贴的目标网址**已携带有参数**，粘贴过程中要用 **“&”** 符号进行连接。例如复制的参数后缀为```?utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}```时，需要将utm前的 **“?”** 修改为 **“&”**。粘贴的参数正确格式为 ```&utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}```
+如果粘贴的目标网址**已携带有参数**，粘贴过程中要用 **“&”** 符号进行连接。例如复制的参数后缀为
+```
+?utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}
+```
+时，需要将utm前的 **“?”** 修改为 **“&”**。粘贴的参数正确格式为 
+```
+&utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}
+```
 
 3.已创建好的广告添加跟踪后缀
 
 对于之前**已经创建好存量**的广告，在跟踪网址后粘贴UTM参数后缀发布保存即可，但之前已产生的订单数据不做统计
 
-```&utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}```
+```
+&utm_campaign={{campaign.id}}&utm_adset={{adset.id}}&utm_ad={{ad.id}}
+```
 
 ![添加跟踪后缀](https://helpcenter.shoplazza.com/hc/article_attachments/4409348884889/image-12.png)
 
