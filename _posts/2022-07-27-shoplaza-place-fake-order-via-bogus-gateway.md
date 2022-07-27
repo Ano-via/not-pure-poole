@@ -2,7 +2,7 @@
 layout: post
 title: 店匠虚拟订单测试订单
 tags: [Shoplaza, Shoplazza, 店匠, 测试订单, 虚拟订单]
-date: 2022-07-27 14:08 +0800
+date: 2022-07-27 15:59 +0800
 ---
 # 通过Bogus Gateway模拟交易下测试订单
 
