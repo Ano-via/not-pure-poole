@@ -5,15 +5,17 @@ tags: [Shoplaza, Shoplazza, 店匠, logo, 多域名]
 date: 2022-07-27 14:08 +0800
 ---
 代码是我找同行的网站的时候发现的，主要改最前的几行就够了，放在 **自定义代码** 里面就好，修改很方便，比上一篇帖子的强大。
+
 **mainSiteName** 是待替换的域名，最好用主域名
-然后每个 **name**, **logo**, **icon** 为一组，分别对应 **新域名**、**新网站logo** 和 **新favicon（左上角小图标）**。
+ **name**, **logo**, **icon** 构成一组，分别对应 **新域名**、**新网站logo** 和 **新favicon（左上角小图标）**。
+
 如图就是3组，一共可以自动改成3种新域名。要添加或减少则自行增删。
 
 `````
 <script> try { 
   const mainSiteName = "civicsmile"
   const sites = [{
-    name: "rosermia",
+    name: "betteruu",
     logo: "https://img.staticdj.com/313f5ad28f0e204b4cd0f0fa1316a30a.png",
     icon: "https://img.staticdj.com/b1cfc0ffd4943fbc681f3bc58efae126.jpg"
   },{
