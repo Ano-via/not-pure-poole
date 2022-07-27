@@ -4,7 +4,9 @@ title: 店匠根据域名自动切换logo和域名信息
 tags: [Shoplaza, Shoplazza, 店匠, logo, 多域名]
 date: 2022-07-27 14:08 +0800
 ---
-代码是我找同行的网站的时候发现的，主要改最前的几行就够了，放在 **自定义代码** 里面就好，修改很方便，比上一篇帖子的强大。
+可以修改logo和网站里面所有的域名信息，如service@abc.com可以改成service@def.com，自定义页面内的所有信息都可以改。
+
+放在 **自定义代码** 里面就好，修改很方便，比上一篇帖子的强大。
 
 **mainSiteName** 是待替换的域名，最好用主域名
 
@@ -14,17 +16,17 @@ date: 2022-07-27 14:08 +0800
 
 `````
 <script> try { 
-  const mainSiteName = "civicsmile"
+  const mainSiteName = "旧域名，最好是主域名，如：civicsmile"
   const sites = [{
-    name: "betteruu",
-    logo: "https://img.staticdj.com/313f5ad28f0e204b4cd0f0fa1316a30a.png",
-    icon: "https://img.staticdj.com/b1cfc0ffd4943fbc681f3bc58efae126.jpg"
+    name: "新域名1，如：betteruu",
+    logo: "新logo1链接，如：https://img.staticdj.com/313f5ad28f0e204b4cd0f0fa1316a30a.png",
+    icon: "新favicon1链接，如：https://img.staticdj.com/b1cfc0ffd4943fbc681f3bc58efae126.jpg"
   },{
-    name: "boydanny",
+    name: "新域名2",
     logo: "https://cdn.shoplazza.com/dc04ae1c7c36c1764488ee8e7a20b8d7.png",
     icon: "https://img.staticdj.com/6563b178904c757503687a8acd3043a7_32x32.jpg"
   },{
-    name: "AnDigest",
+    name: "新域名3",
     logo: "https://cdn.shoplazza.com/be4891fcc3cd1734354910116df6610d.png",
     icon: "https://cdn.shoplazza.com/c2a63fe2aeb5185d88cdc16cb5c52bdd_32x32.jpg"
   }
