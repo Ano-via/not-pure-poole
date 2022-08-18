@@ -3,6 +3,4 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
-
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+**Ano出海笔记** 收集的笔记不多，但是大抵都是有用的。因为我是佛系更新的，所以不用尝试网页内的联系方式，谢谢。
