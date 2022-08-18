@@ -2,8 +2,8 @@
   url: mailto://atticus_beta@outlook.com
   icon: fas fa-envelope
 - title: Twitter
-#  url: https://twitter.com/vszhub
+  url: https://twitter.com/atticus80021894
   icon: fab fa-twitter
 - title: GitHub
-  url: https://github.com/ano-via/not-pure-poole
+  url: /
   icon: fab fa-github
