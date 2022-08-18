@@ -4,16 +4,18 @@ title: 店匠虚拟订单测试订单
 tags: [Shoplaza, Shoplazza, 店匠, 测试订单, 虚拟订单]
 date: 2022-07-27 15:59 +0800
 ---
-# 通过Bogus Gateway模拟交易下测试订单
-
 您可以通过设置 Bogus Gateway，以便在结账页面实现模拟交易。Bogus Gateway是一个支付服务提供商，任何商店都可以使用它来创建测试订单。设置Bogus Gateway后，您创建的每个订单都是测试订单。
 
 若要创建订单，您需要在结账时输入测试付款信息。您可以根据输入的信息模拟不同类型的交易。
 
 1. 在Shoplazza后台中，进入**店铺设置** > **收款 > Bogus Gateway。**
+
 ![screenshot-20220722-104353.png](https://helpcenter.shoplazza.com/hc/article_attachments/8731813781401/screenshot-20220722-104353.png)
+
 2. 启用Bogus Gateway，在启用后，其他的支付服务渠道将自动 **关闭** 。
+
 ![1.png](https://helpcenter.shoplazza.com/hc/article_attachments/8632112554521/1.png)
+
 3. 转到您的在线商店并像客户那样下单。在结账时，请输入以下信用卡信息，从而会返回不同的支付场景。
 
 | **字段名称**   | **要输入的详细信息**                                                                                                                              |
@@ -24,8 +26,11 @@ date: 2022-07-27 15:59 +0800
 | **有效期**     | 输入一个将来的日期。                                                                                                                                    |
 
 4. 完成测试后，点击 Shoplazza 后台中的 " **订单** " 可以查看测试订单交易交易详情。
+
 ![2.png](https://helpcenter.shoplazza.com/hc/article_attachments/8632099642393/2.png)
+
 5. 关闭Bogus Gateway控制开关 或 启用其他支付渠道，将自动**停用**此网关。
+
 ![3.png](https://helpcenter.shoplazza.com/hc/article_attachments/8632112896921/3.png)
 
 ## **备注**
