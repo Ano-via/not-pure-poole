@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GA4(Google Analytics 4)无法显示年龄、性别、兴趣怎么办
-tags: [GA4，Google Analytics 4，无法显示]
+tags: [GA4, Google Analytics 4, 无法显示]
 date: 2023-03-08 11:48 +0800
 ---
 
