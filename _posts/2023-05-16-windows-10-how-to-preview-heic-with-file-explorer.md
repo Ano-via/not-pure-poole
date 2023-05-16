@@ -13,11 +13,7 @@ win10系统已经支持 **heic** 格式，**应用商店** 下载即可：
 1. [HEIF图像扩展](https://apps.microsoft.com/store/detail/heif-image-extensions/9PMMSR1CGPWG?hl=en-us&gl=us)
 2. [来自设备制造商的HEVC 视频扩展](https://apps.microsoft.com/store/detail/hevc-video-extensions-from-device-manufacturer/9N4WGH0Z6VHQ?hl=en-us&gl=us)
 
-
-
-
-
-
+---
 
 *（备用方法，不需要魔法，但是我没试过）*
 
