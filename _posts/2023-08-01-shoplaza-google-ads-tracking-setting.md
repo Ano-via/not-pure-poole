@@ -18,7 +18,7 @@ date: 2023-08-01 11:28 +0800
 
 7. 勾选 **指定CSS选择器或JavaScript变量**。勾选 **电子邮件、电话、姓名和地址** 并选择 **JavaScript类型** ，依次填入以下的参数，然后点击 **保存**。
 
-> | **名称** | **JavaScript变量** |
+| **名称** | **JavaScript变量** |
 |------|------|
 | **电子邮件** | enhanced_conversion_data.email |
 | **电话** | enhanced_conversion_data.phone_number |
@@ -40,4 +40,4 @@ date: 2023-08-01 11:28 +0800
 
 ---
 
-> Tips：第3步可以把全部的事件都勾选，导入到Ads账户内，但是后面一定要去Ads账户内[（点击直达）](https://ads.google.com/aw/conversions)，把购买之外的其他转化事件都设置为 **不纳入转化次数列** 或 **不作为优化出价的主要操作** ，以免前台转化次数虚高。
+Tips：第3步可以把全部的事件都勾选，导入到Ads账户内，但是后面一定要去Ads账户内[（点击直达）](https://ads.google.com/aw/conversions)，把购买之外的其他转化事件都设置为 **不纳入转化次数列** 或 **不作为优化出价的主要操作** ，以免前台转化次数虚高。
