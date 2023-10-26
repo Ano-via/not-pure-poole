@@ -29,7 +29,7 @@ layout: default
         <select id="length">
             <option value="8">8位</option>
             <option value="16">16位</option>
-        </select><br><br>
+        </select>
 
         <input type="checkbox" id="includeNumbers" checked>
         <label for="includeNumbers">数字  </label>
@@ -43,7 +43,7 @@ layout: default
         <input type="checkbox" id="includeSpecial" checked>
         <label for="includeSpecial">特殊符号  </label><br><br>
 
-        <button id="generate">生成密码</button><p id="newPassword"></p>        
+        <button id="generate">生成密码</button><span id="newPassword"></span>        
     </div>
 
     <script>
@@ -58,7 +58,7 @@ layout: default
 
             const textarea = document.createElement("textarea");
             textarea.value = password;
-            document.getElementById("newPassword").innerText = password;
+            document.getElementById("newPassword").innerHTML = password;
             document.body.appendChild(textarea);
             textarea.select();
             document.execCommand("copy");
