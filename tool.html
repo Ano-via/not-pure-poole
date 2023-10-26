@@ -2,71 +2,109 @@
 layout: default
 ---
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Password Generator</title>
+    <meta charset="UTF-8">
+    <title>实用工具</title>
 </head>
 <body>
-    <h1>Password Generator</h1>
+    <h1>密码生成器</h1>
+    <form id="password-generator">
+        <label for="password-length">密码长度：</label>
+        <select id="password-length">
+            <option value="8">8位数字加字母</option>
+            <option value="8s">8位数字加字母加符号</option>
+            <option value="16s">16位数字加字母加符号</option>
+        </select>
+        <button id="generate-password">生成密码</button>
+        <input type="text" id="generated-password" readonly>
+    </form>
 
-    <label for="password-length">Password Length:</label>
-    <input type="number" id="password-length" min="8" max="32" value="8">
-
-    <label for="include-uppercase">Include Uppercase:</label>
-    <input type="checkbox" id="include-uppercase" checked>
-
-    <label for="include-symbols">Include Symbols:</label>
-    <input type="checkbox" id="include-symbols">
-
-    <button id="generate-password">Generate Password</button>
-
-    <div id="password-display"></div>
+    <h1>文本处理</h1>
+    <form id="text-processor">
+        <label for="text-input">输入文本：</label>
+        <textarea id="text-input"></textarea>
+        <button id="process-text">处理文本</button>
+        <p>处理后的文本：</p>
+        <div id="processed-text"></div>
+        <p>2FA Code：<span id="2fa-code"></span></p>
+        <p>过期时间：<span id="expiration-time"></span></p>
+    </form>
 
     <script>
-        function generatePassword() {
-            const length = document.getElementById("password-length").value;
-            const includeUppercase = document.getElementById("include-uppercase").checked;
-            const includeSymbols = document.getElementById("include-symbols").checked;
-            const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-            const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            const digitChars = "0123456789";
-            const symbolChars = "!@#$%^&*()_-+=<>?/[]{}";
+        // 密码生成器
+        document.getElementById("generate-password").addEventListener("click", function () {
+            const passwordLength = document.getElementById("password-length").value;
+            const generatedPassword = generatePassword(passwordLength);
+            document.getElementById("generated-password").value = generatedPassword;
+        });
 
-            let characters = lowercaseChars + digitChars;
-
-            if (includeUppercase) {
-                characters += uppercaseChars;
-            }
-
-            if (includeSymbols) {
-                characters += symbolChars;
-            }
-
+        function generatePassword(length) {
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            const symbols = "!@#$%^&*()_+";
             let password = "";
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * characters.length);
-                password += characters.charAt(randomIndex);
+
+            if (length === "8") {
+                password = generateRandomString(charset, 8);
+            } else if (length === "8s") {
+                password = generateRandomString(charset + symbols, 8);
+            } else if (length === "16s") {
+                password = generateRandomString(charset + symbols, 16);
             }
 
             return password;
         }
 
-        document.getElementById("generate-password").addEventListener("click", function() {
-            const password = generatePassword();
-            const passwordDisplay = document.getElementById("password-display");
-            passwordDisplay.textContent = password;
+        function generateRandomString(charset, length) {
+            let result = "";
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                result += charset.charAt(randomIndex);
+            }
+            return result;
+        }
 
-            // Copy the password to the clipboard
-            const el = document.createElement('textarea');
-            el.value = password;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-
-            alert("Password copied to clipboard!");
+        // 文本处理
+        document.getElementById("process-text").addEventListener("click", function () {
+            const textInput = document.getElementById("text-input").value;
+            const processedText = processText(textInput);
+            document.getElementById("processed-text").textContent = processedText.processedText;
+            document.getElementById("2fa-code").textContent = processedText.twofaCode;
+            document.getElementById("expiration-time").textContent = processedText.expirationTime;
         });
+
+        function processText(input) {
+            const lines = input.split("\n");
+            let lineCount = 1;
+            let twofaCode = "";
+            let expirationTime = "";
+
+            for (let i = 0; i < lines.length; i++) {
+                if (lines[i].includes("|") || lines[i].includes("---")) {
+                    lines[i] = `Line ${lineCount}`;
+                    lineCount++;
+
+                    const twofaPattern = /2FA: (\d{6})/;
+                    const match = lines[i].match(twofaPattern);
+                    if (match) {
+                        twofaCode = match[1];
+                        const expirationPattern = /Expires: (\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})/;
+                        const expirationMatch = lines[i].match(expirationPattern);
+                        if (expirationMatch) {
+                            expirationTime = expirationMatch[1];
+                        }
+                    }
+                }
+            }
+
+            const processedText = lines.join("\n");
+
+            return {
+                processedText: processedText,
+                twofaCode: twofaCode,
+                expirationTime: expirationTime,
+            };
+        }
     </script>
 </body>
 </html>
