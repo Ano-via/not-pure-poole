@@ -4,65 +4,95 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <title>密码生成器</title>
+  <title>密码生成器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #password {
+      font-size: 24px;
+      margin: 20px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #copyStatus {
+      font-size: 16px;
+      color: green;
+    }
+  </style>
 </head>
 <body>
-    <h1>密码生成器</h1>
-    <form id="passwordGeneratorForm">
-        <label for="passwordLength">密码长度:</label>
-        <input type="number" id="passwordLength" value="8" min="1" max="50">
-        <input type="checkbox" id="includeNumbers" checked>
-        <label for="includeNumbers">数字  </label>
-        <input type="checkbox" id="includeLetters" checked>
-        <label for="includeLetters">字母  </label>
-        <input type="checkbox" id="includeSpecialChars">
-        <label for="includeSpecialChars">特殊符号  </label>
-        <button type="button" onclick="generatePassword()">生成密码</button>
-    </form>
+  <h1>密码生成器</h1>
+  <div>
+    <label for="passwordLength">密码长度:</label>
+    <input type="number" id="passwordLength" value="8">
+  </div>
+  <div>
+    <label for="includeNumbers">包含数字:</label>
+    <input type="checkbox" id="includeNumbers" checked>
+  </div>
+  <div>
+    <label for="includeUppercase">包含大写字母:</label>
+    <input type="checkbox" id="includeUppercase" checked>
+  </div>
+  <div>
+    <label for="includeLowercase">包含小写字母:</label>
+    <input type="checkbox" id="includeLowercase" checked>
+  </div>
+  <div>
+    <label for="includeSpecialChars">包含特殊字符:</label>
+    <input type="checkbox" id="includeSpecialChars" checked>
+  </div>
+  <button id="generateButton">生成密码</button>
+  <div id="copyStatus"></div>
+  <script>
+    const generateButton = document.getElementById('generateButton');
+    const copyStatus = document.getElementById('copyStatus');
 
-    <h2>生成的密码:</h2>
-    <input type="text" id="generatedPassword" readonly>
-    
-    <script>
-        function generatePassword() {
-            const passwordLength = document.getElementById("passwordLength").value;
-            const includeNumbers = document.getElementById("includeNumbers").checked;
-            const includeLetters = document.getElementById("includeLetters").checked;
-            const includeSpecialChars = document.getElementById("includeSpecialChars").checked;
+    generateButton.addEventListener('click', () => {
+      const length = parseInt(document.getElementById('passwordLength').value);
+      const includeNumbers = document.getElementById('includeNumbers').checked;
+      const includeUppercase = document.getElementById('includeUppercase').checked;
+      const includeLowercase = document.getElementById('includeLowercase').checked;
+      const includeSpecialChars = document.getElementById('includeSpecialChars').checked;
+      const password = generatePassword(length, includeNumbers, includeUppercase, includeLowercase, includeSpecialChars);
+      navigator.clipboard.writeText(password).then(() => {
+        copyStatus.textContent = '√ 已复制';
+        copyStatus.style.color = 'green';
+        setTimeout(() => {
+          copyStatus.textContent = '';
+          copyStatus.style.color = '';
+        }, 3000);
+      });
+    });
 
-            const charset = "abcdefghijklmnopqrstuvwxyz";
-            const numbers = "0123456789";
-            const specialChars = "!@#$%^&*()_+[]{}|;:,.<>?";
+    function generatePassword(length, includeNumbers, includeUppercase, includeLowercase, includeSpecialChars) {
+      // 生成密码的逻辑
+      // 这里只提供了一个简单的示例，您可以根据需要修改密码生成逻辑
+      const charset = "abcdefghijklmnopqrstuvwxyz";
+      const numbers = "0123456789";
+      const specialChars = "!@#$%^&*()_+[]{}|;:,.<>?";
 
-            let passwordChars = charset;
+      let validChars = charset;
+      if (includeNumbers) validChars += numbers;
+      if (includeUppercase) validChars += charset.toUpperCase();
+      if (includeSpecialChars) validChars += specialChars;
 
-            if (includeNumbers) {
-                passwordChars += numbers;
-            }
+      let password = "";
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * validChars.length);
+        password += validChars.charAt(randomIndex);
+      }
 
-            if (includeLetters) {
-                passwordChars += charset.toUpperCase();
-            }
-
-            if (includeSpecialChars) {
-                passwordChars += specialChars;
-            }
-
-            let generatedPassword = "";
-            for (let i = 0; i < passwordLength; i++) {
-                const randomIndex = Math.floor(Math.random() * passwordChars.length);
-                generatedPassword += passwordChars.charAt(randomIndex);
-            }
-
-            document.getElementById("generatedPassword").value = generatedPassword;
-
-            // 复制生成的密码到剪贴板
-            const passwordField = document.getElementById("generatedPassword");
-            passwordField.select();
-            document.execCommand("copy");
-            alert("密码已复制到剪贴板: " + generatedPassword);
-        }
-    </script>
+      return password;
+    }
+  </script>
 </body>
 </html>
-
