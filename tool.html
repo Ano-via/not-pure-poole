@@ -58,7 +58,7 @@ layout: default
 
             const textarea = document.createElement("textarea");
             textarea.value = password;
-            document.getElementById("newPassword").value = password;
+            document.getElementById("newPassword").innerText = password;
             document.body.appendChild(textarea);
             textarea.select();
             document.execCommand("copy");
