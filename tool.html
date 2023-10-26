@@ -2,110 +2,63 @@
 layout: default
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>实用工具</title>
+    <title>工具</title>
 </head>
 <body>
-    <h1>密码生成器</h1>
-    <form id="password-generator">
-        <label for="password-length">密码长度：</label>
-        <select id="password-length">
-            <option value="8">8位数字加字母</option>
-            <option value="8s">8位数字加字母加符号</option>
-            <option value="16s">16位数字加字母加符号</option>
-        </select>
-        <button id="generate-password">生成密码</button>
-        <input type="text" id="generated-password" readonly>
-    </form>
+    <h2>密码生成器</h2>
+    <div>
+        <button onclick="generatePassword(8)">8位数字加字母</button>
+        <button onclick="generatePassword(8, true)">8位数字加字母加符号</button>
+        <button onclick="generatePassword(16, true)">16位数字加字母加符号</button>
+        <button onclick="copyToClipboard()">复制</button>
+        <p id="password"></p>
+    </div>
 
-    <h1>文本处理</h1>
-    <form id="text-processor">
-        <label for="text-input">输入文本：</label>
-        <textarea id="text-input"></textarea>
-        <button id="process-text">处理文本</button>
-        <p>处理后的文本：</p>
-        <div id="processed-text"></div>
-        <p>2FA Code：<span id="2fa-code"></span></p>
-        <p>过期时间：<span id="expiration-time"></span></p>
-    </form>
+    <h2>文本处理</h2>
+    <textarea id="textInput" rows="6" cols="50" placeholder="在这里粘贴你的文本"></textarea>
+    <br>
+    <button onclick="processText()">处理文本</button>
+    <p id="result"></p>
 
     <script>
-        // 密码生成器
-        document.getElementById("generate-password").addEventListener("click", function () {
-            const passwordLength = document.getElementById("password-length").value;
-            const generatedPassword = generatePassword(passwordLength);
-            document.getElementById("generated-password").value = generatedPassword;
-        });
-
-        function generatePassword(length) {
-            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            const symbols = "!@#$%^&*()_+";
+        function generatePassword(length, includeSymbols = false) {
+            let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            if (includeSymbols) {
+                charset += "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+            }
             let password = "";
-
-            if (length === "8") {
-                password = generateRandomString(charset, 8);
-            } else if (length === "8s") {
-                password = generateRandomString(charset + symbols, 8);
-            } else if (length === "16s") {
-                password = generateRandomString(charset + symbols, 16);
-            }
-
-            return password;
-        }
-
-        function generateRandomString(charset, length) {
-            let result = "";
             for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                result += charset.charAt(randomIndex);
+                let randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
             }
-            return result;
+            document.getElementById("password").innerText = password;
         }
 
-        // 文本处理
-        document.getElementById("process-text").addEventListener("click", function () {
-            const textInput = document.getElementById("text-input").value;
-            const processedText = processText(textInput);
-            document.getElementById("processed-text").textContent = processedText.processedText;
-            document.getElementById("2fa-code").textContent = processedText.twofaCode;
-            document.getElementById("expiration-time").textContent = processedText.expirationTime;
-        });
+        function copyToClipboard() {
+            const password = document.getElementById("password").innerText;
+            navigator.clipboard.writeText(password);
+            alert("已复制密码到剪贴板: " + password);
+        }
 
-        function processText(input) {
-            const lines = input.split("\n");
-            let lineCount = 1;
-            let twofaCode = "";
-            let expirationTime = "";
-
+        function processText() {
+            let inputText = document.getElementById("textInput").value;
+            let lines = inputText.split('\n');
+            let result = "";
             for (let i = 0; i < lines.length; i++) {
-                if (lines[i].includes("|") || lines[i].includes("---")) {
-                    lines[i] = `Line ${lineCount}`;
-                    lineCount++;
-
-                    const twofaPattern = /2FA: (\d{6})/;
-                    const match = lines[i].match(twofaPattern);
-                    if (match) {
-                        twofaCode = match[1];
-                        const expirationPattern = /Expires: (\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})/;
-                        const expirationMatch = lines[i].match(expirationPattern);
-                        if (expirationMatch) {
-                            expirationTime = expirationMatch[1];
-                        }
-                    }
+                let line = lines[i];
+                line = line.replace(/\|/g, (i + 1) + ".");
+                line = line.replace(/---/g, (i + 1) + ".");
+                let matches = line.match(/\b[0-9]{6}\b/g);
+                if (matches) {
+                    let now = new Date();
+                    let expireTime = new Date(now.getTime() + 300000); // Adding 5 minutes
+                    result += "2FA Code: " + matches.join(", ") + " (Expires at " + expireTime.toLocaleTimeString() + ")\n";
                 }
             }
-
-            const processedText = lines.join("\n");
-
-            return {
-                processedText: processedText,
-                twofaCode: twofaCode,
-                expirationTime: expirationTime,
-            };
+            document.getElementById("result").innerText = result;
         }
     </script>
 </body>
 </html>
-
