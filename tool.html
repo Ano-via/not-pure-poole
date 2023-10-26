@@ -4,61 +4,73 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <title>工具</title>
+    <title>密码生成器</title>
 </head>
 <body>
-    <h2>密码生成器</h2>
-    <div>
-        <button onclick="generatePassword(8)">8位数字加字母</button>
-        <button onclick="generatePassword(8, true)">8位数字加字母加符号</button>
-        <button onclick="generatePassword(16, true)">16位数字加字母加符号</button>
-        <button onclick="copyToClipboard()">复制</button>
-        <p id="password"></p>
-    </div>
+    <h1>密码生成器</h1>
+    <form id="passwordGeneratorForm">
+        <label for="passwordLength">密码长度:</label>
+        <input type="number" id="passwordLength" value="8" min="1" max="50">
+        <br>
 
-    <h2>文本处理</h2>
-    <textarea id="textInput" rows="6" cols="50" placeholder="在这里粘贴你的文本"></textarea>
-    <br>
-    <button onclick="processText()">处理文本</button>
-    <p id="result"></p>
+        <label for="includeNumbers">包含数字:</label>
+        <input type="checkbox" id="includeNumbers" checked>
+        <br>
 
+        <label for="includeLetters">包含字母:</label>
+        <input type="checkbox" id="includeLetters" checked>
+        <br>
+
+        <label for="includeSpecialChars">包含特殊符号:</label>
+        <input type="checkbox" id="includeSpecialChars">
+        <br>
+
+        <button type="button" onclick="generatePassword()">生成密码</button>
+    </form>
+
+    <h2>生成的密码:</h2>
+    <input type="text" id="generatedPassword" readonly>
+    
     <script>
-        function generatePassword(length, includeSymbols = false) {
-            let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            if (includeSymbols) {
-                charset += "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
-            }
-            let password = "";
-            for (let i = 0; i < length; i++) {
-                let randomIndex = Math.floor(Math.random() * charset.length);
-                password += charset[randomIndex];
-            }
-            document.getElementById("password").innerText = password;
-        }
+        function generatePassword() {
+            const passwordLength = document.getElementById("passwordLength").value;
+            const includeNumbers = document.getElementById("includeNumbers").checked;
+            const includeLetters = document.getElementById("includeLetters").checked;
+            const includeSpecialChars = document.getElementById("includeSpecialChars").checked;
 
-        function copyToClipboard() {
-            const password = document.getElementById("password").innerText;
-            navigator.clipboard.writeText(password);
-            alert("已复制密码到剪贴板: " + password);
-        }
+            const charset = "abcdefghijklmnopqrstuvwxyz";
+            const numbers = "0123456789";
+            const specialChars = "!@#$%^&*()_+[]{}|;:,.<>?";
 
-        function processText() {
-            let inputText = document.getElementById("textInput").value;
-            let lines = inputText.split('\n');
-            let result = "";
-            for (let i = 0; i < lines.length; i++) {
-                let line = lines[i];
-                line = line.replace(/\|/g, (i + 1) + ".");
-                line = line.replace(/---/g, (i + 1) + ".");
-                let matches = line.match(/\b[0-9]{6}\b/g);
-                if (matches) {
-                    let now = new Date();
-                    let expireTime = new Date(now.getTime() + 300000); // Adding 5 minutes
-                    result += "2FA Code: " + matches.join(", ") + " (Expires at " + expireTime.toLocaleTimeString() + ")\n";
-                }
+            let passwordChars = charset;
+
+            if (includeNumbers) {
+                passwordChars += numbers;
             }
-            document.getElementById("result").innerText = result;
+
+            if (includeLetters) {
+                passwordChars += charset.toUpperCase();
+            }
+
+            if (includeSpecialChars) {
+                passwordChars += specialChars;
+            }
+
+            let generatedPassword = "";
+            for (let i = 0; i < passwordLength; i++) {
+                const randomIndex = Math.floor(Math.random() * passwordChars.length);
+                generatedPassword += passwordChars.charAt(randomIndex);
+            }
+
+            document.getElementById("generatedPassword").value = generatedPassword;
+
+            // 复制生成的密码到剪贴板
+            const passwordField = document.getElementById("generatedPassword");
+            passwordField.select();
+            document.execCommand("copy");
+            alert("密码已复制到剪贴板: " + generatedPassword);
         }
     </script>
 </body>
 </html>
+
