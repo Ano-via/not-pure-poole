@@ -44,6 +44,7 @@ layout: default
         <label for="includeSpecial">包含特殊符号</label><br><br>
 
         <button id="generate">生成密码</button>
+        <p>密码：<span id="newPassword"></span></p>
     </div>
 
     <script>
@@ -58,6 +59,7 @@ layout: default
 
             const textarea = document.createElement("textarea");
             textarea.value = password;
+            document.getElementById("newPassword").value = password;
             document.body.appendChild(textarea);
             textarea.select();
             document.execCommand("copy");
