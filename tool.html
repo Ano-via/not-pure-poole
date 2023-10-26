@@ -4,7 +4,7 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <title>密码生成器</title>
+    <title>Lux的1号工具箱</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,8 +45,72 @@ layout: default
 
         <button id="generate">生成密码</button><span>&nbsp;&nbsp;</span> <span id="newPassword"></span>        
     </div>
-
+    <div class="container">
+        <textarea id="textArea" rows="10" cols="50"></textarea>
+    <br>
+    <button onclick="openLinks()">批量打开链接</button>
+    <button onclick="groupAndQuery()">分组并查询</button>
+    <button onclick="replaceSpacesWithNumbers()">空格替换为行号</button>
+    <button onclick="replaceNumbersWithCommas()">行号替换为逗号</button>
+    <br>
+    <div id="status"></div>
+    </div>
     <script>
+        function updateStatus() {
+            var text = document.getElementById('textArea').value;
+            var commaCount = (text.match(/,/g) || []).length;
+            var lineCount = (text.match(/\n/g) || []).length + 1;
+            var charCount = text.length;
+
+            document.getElementById('status').innerText = '逗号数: ' + commaCount + ', 行数: ' + lineCount + ', 字符数: ' + charCount;
+        }
+
+        document.getElementById('textArea').addEventListener('input', updateStatus);
+        function openLinks() {
+    var text = document.getElementById('textArea').value;
+    var lines = text.split('\n');
+
+    lines.forEach(function (line) {
+        window.open(line);
+    });
+}
+function groupAndQuery() {
+    var text = document.getElementById('textArea').value;
+    var lines = text.split('\n');
+    var groups = [];
+    var group = [];
+
+    for (var i = 0; i < lines.length; i++) {
+        group.push(lines[i]);
+
+        if (group.length === 40 || i === lines.length - 1) {
+            groups.push(group.join(','));
+            group = [];
+        }
+    }
+
+    // Now 'groups' contains the grouped and comma-separated lines.
+    // You can proceed to use 17track for each group.
+}
+function replaceSpacesWithNumbers() {
+    var text = document.getElementById('textArea').value;
+    text = text.replace(/ /g, '\n');
+    document.getElementById('textArea').value = text;
+    updateStatus();
+}
+function replaceNumbersWithCommas() {
+    var text = document.getElementById('textArea').value;
+
+    // Replace line numbers with commas
+    text = text.replace(/\d+/g, ',');
+
+    // Remove content within parentheses
+    text = text.replace(/\([^)]*\)/g, '');
+
+    document.getElementById('textArea').value = text;
+    updateStatus();
+}
+
         document.getElementById("generate").addEventListener("click", function() {
             const length = document.getElementById("length").value;
             const includeNumbers = document.getElementById("includeNumbers").checked;
