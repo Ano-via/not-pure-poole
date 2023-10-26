@@ -11,17 +11,12 @@ layout: default
     <form id="passwordGeneratorForm">
         <label for="passwordLength">密码长度:</label>
         <input type="number" id="passwordLength" value="8" min="1" max="50">
-
-        <label for="includeNumbers">包含数字:</label>
         <input type="checkbox" id="includeNumbers" checked>
-
-        <label for="includeLetters">包含字母:</label>
+        <label for="includeNumbers">数字  </label>
         <input type="checkbox" id="includeLetters" checked>
-
-        <label for="includeSpecialChars">包含特殊符号:</label>
+        <label for="includeLetters">字母  </label>
         <input type="checkbox" id="includeSpecialChars">
-        <br>
-
+        <label for="includeSpecialChars">特殊符号  </label>
         <button type="button" onclick="generatePassword()">生成密码</button>
     </form>
 
