@@ -2,7 +2,7 @@
 layout: post
 title: 店匠Google渠道无法选择账户
 tags: [店匠, Shoplaza, Google, GG, Google Ads, GG Ads]
-date: 2023-11-21 11:28 +0800
+date: 2023-11-21 10:25 +0800
 ---
 
 原因：目前受到google第三方后台的影响暂时无法选定账号，需要去google后台进行设置
