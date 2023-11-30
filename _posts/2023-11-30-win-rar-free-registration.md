@@ -6,6 +6,7 @@ date: 2023-11-30 10:52 +0800
 ---
 
 简体中文的就算激活了也是有广告的。所以我用**繁体中文**，官网在这里：[https://www.win-rar.com/download.html](https://www.win-rar.com/download.html)
+
 接下来放正式步骤：
 
 一、右键创建一个文本文档，粘贴以下内容：
