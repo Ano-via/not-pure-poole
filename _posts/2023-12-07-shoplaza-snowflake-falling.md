@@ -22,4 +22,6 @@ date: 2023-11-30 16:37 +0800
 
 二、如果需要修改颜色，可以在 **new Snowflakes();** 中加入参数，自定义需要的颜色，例子如下：
 
-```new Snowflakes({color: 'rgb(234,245,253)'});```
+```
+new Snowflakes({color: 'rgb(234,245,253)'});
+```
