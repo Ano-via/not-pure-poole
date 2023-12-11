@@ -81,7 +81,7 @@ layout: default
       // 创建复制代码按钮
       const copyButton = document.createElement('div');
       copyButton.classList.add('copy-btn');
-      copyButton.textContent = '复制代码';
+      copyButton.textContent = '📋 复制代码';
       div.appendChild(copyButton);
 
       // 复制按钮的点击事件处理程序
@@ -89,9 +89,9 @@ layout: default
         const codeToCopy = preElement.textContent;
         navigator.clipboard.writeText(codeToCopy)
           .then(() => {
-            copyButton.textContent = '已复制';
+            copyButton.textContent = '√ 已复制';
             setTimeout(() => {
-              copyButton.textContent = '复制代码';
+              copyButton.textContent = '📋 复制代码';
             }, 2000); // 2秒后恢复按钮文本
           })
           .catch(err => {
