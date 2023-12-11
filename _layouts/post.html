@@ -70,11 +70,39 @@ layout: default
   gitalk.render('gitalk-container');
 </script>
 <!-- Gitalk end -->
-<!-- Snowflake start -->
-<div class="cjj-xuehua">
-  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-  <script>
-    new Snowflakes({color: 'rgb(234,245,253)'});
-  </script>
-</div>
-<!-- Snowflake end -->
+<!-- Copy Code Start -->
+<script>
+  // 查找所有包含 class="highlight" 的 div 元素
+  const highlightDivs = document.querySelectorAll('div.highlight');
+
+  // 遍历每个高亮代码块的父级 div
+  highlightDivs.forEach(div => {
+    const preElement = div.querySelector('pre.highlight code');
+
+    if (preElement) {
+      // 创建复制代码按钮
+      const copyButton = document.createElement('div');
+      copyButton.classList.add('copy-btn');
+      copyButton.textContent = '📋 复制代码';
+      div.appendChild(copyButton);
+
+      // 复制按钮的点击事件处理程序
+      copyButton.addEventListener('click', () => {
+        const codeToCopy = preElement.textContent;
+        navigator.clipboard.writeText(codeToCopy)
+          .then(() => {
+            copyButton.textContent = '✅ 已经复制';
+            copyButton.style.backgroundColor = '#b7e1cd';
+            setTimeout(() => {
+              copyButton.textContent = '📋 复制代码';
+              copyButton.style.backgroundColor = 'var(--code-bg)';
+            }, 3000); // 3秒后恢复按钮文本
+          })
+          .catch(err => {
+            console.error('复制失败：', err);
+          });
+      });
+    }
+  });
+</script>
+<!-- Copy Code End-->
