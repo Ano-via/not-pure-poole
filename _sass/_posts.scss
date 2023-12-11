@@ -13,11 +13,17 @@
   font-family: var(--text-font);
   margin-bottom: 4em;
 
-  h1, h2, h3, h4, h5, h6, .post-meta {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .post-meta {
     font-family: var(--body-font);
   }
 
-  li + li {
+  li+li {
     margin-top: .25rem;
   }
 }
@@ -27,10 +33,12 @@
 .post-title {
   color: var(--heading-color);
 }
+
 .page-title,
 .post-title {
   margin-top: 0;
 }
+
 .post-title a {
   color: inherit;
   text-decoration: none;
@@ -125,4 +133,17 @@
   padding: .1em .5em;
   border: 1px solid var(--border-color);
   border-radius: .5em;
+}
+
+.highlight {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  background-color: #ccc;
+  cursor: pointer;
 }
