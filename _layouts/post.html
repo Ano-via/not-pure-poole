@@ -90,8 +90,10 @@ layout: default
         navigator.clipboard.writeText(codeToCopy)
           .then(() => {
             copyButton.textContent = '√ 已复制';
+            copyButton.style.backgroundColor = 'green';
             setTimeout(() => {
               copyButton.textContent = '📋 复制代码';
+              copyButton.style.backgroundColor = 'var(--code-bg)';
             }, 2000); // 2秒后恢复按钮文本
           })
           .catch(err => {

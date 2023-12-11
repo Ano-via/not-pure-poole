@@ -144,7 +144,8 @@
   top: 0;
   right: 0;
   padding: 5px 10px;
-  background-color: #ccc;
+  border: 1px;
+  background-color: var(--code-bg);
   cursor: pointer;
-  border-radius: 5px; /* 添加圆角 */
+  border-radius: 10px; /* 添加圆角 */
 }
