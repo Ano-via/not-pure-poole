@@ -6,33 +6,34 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-meta">
     {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format
+      }}</time>
     {%- if page.last_modified_at -%}
-      <span> ~ </span>
-      {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-      <time datetime="{{ mdate }}" itemprop="dateModified">
-        {{ mdate | date: date_format }}
-      </time>
+    <span> ~ </span>
+    {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+    <time datetime="{{ mdate }}" itemprop="dateModified">
+      {{ mdate | date: date_format }}
+    </time>
     {%- endif -%}
     {%- if page.author -%}
-      <span> • </span>
-      {% for author in page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          {{ author }}
-        </span>
-        {%- if forloop.last == false %}, {% endif -%}
-      {% endfor %}
+    <span> • </span>
+    {% for author in page.author %}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      {{ author }}
+    </span>
+    {%- if forloop.last == false %}, {% endif -%}
+    {% endfor %}
     {%- endif -%}
   </div>
 
   {{ content }}
 
   {% if page.tags %}
-    {% include post-tags.html %}
+  {% include post-tags.html %}
   {% endif %}
 
   {% if jekyll.environment == "production" and site.disqus and page.comments != false %}
-    {% include disqus.html %}
+  {% include disqus.html %}
   {% endif %}
 </article>
 
@@ -41,12 +42,12 @@ layout: default
   <h2>Related posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+        <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </aside>
@@ -54,10 +55,10 @@ layout: default
 <!-- Gitalk 评论 start -->
 <!-- Link Gitalk 的支持文件 -->
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
 <script type="text/javascript">
-    var gitalk = new Gitalk({
+  var gitalk = new Gitalk({
     // gitalk的主要参数
     clientID: `894ba7ad0ce92e41d259`,
     clientSecret: `e76c74a716674b91887afe34206bafa44331825c`,
@@ -65,41 +66,15 @@ layout: default
     owner: 'Ano-via',
     admin: ['Ano-via'],
     id: '页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签',
-    });
-    gitalk.render('gitalk-container');
+  });
+  gitalk.render('gitalk-container');
 </script>
 <!-- Gitalk end -->
-<script>
-  // 查找所有包含 class="highlight" 的 div 元素
-  const highlightDivs = document.querySelectorAll('div.highlight');
-
-  // 遍历每个高亮代码块的父级 div
-  highlightDivs.forEach(div => {
-    const preElement = div.querySelector('pre.highlight code');
-
-    if (preElement) {
-      // 创建复制代码按钮
-      const copyButton = document.createElement('div');
-      copyButton.classList.add('copy-btn');
-      copyButton.textContent = '📋 复制代码';
-      div.appendChild(copyButton);
-
-      // 复制按钮的点击事件处理程序
-      copyButton.addEventListener('click', () => {
-        const codeToCopy = preElement.textContent;
-        navigator.clipboard.writeText(codeToCopy)
-          .then(() => {
-            copyButton.textContent = '✅ 已经复制';
-            copyButton.style.backgroundColor = '#b7e1cd';
-            setTimeout(() => {
-              copyButton.textContent = '📋 复制代码';
-              copyButton.style.backgroundColor = 'var(--code-bg)';
-            }, 3000); // 3秒后恢复按钮文本
-          })
-          .catch(err => {
-            console.error('复制失败：', err);
-          });
-      });
-    }
-  });
-</script>
+<!-- Snowflake start -->
+<div class="cjj-xuehua">
+  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+  <script>
+    new Snowflakes({color: 'rgb(234,245,253)'});
+  </script>
+</div>
+<!-- Snowflake end -->
