@@ -89,8 +89,8 @@ layout: default
         const codeToCopy = preElement.textContent;
         navigator.clipboard.writeText(codeToCopy)
           .then(() => {
-            copyButton.textContent = '√ 已复制';
-            copyButton.style.backgroundColor = 'green';
+            copyButton.textContent = '✅ 已经复制';
+            copyButton.style.backgroundColor = '#b7e1cd';
             setTimeout(() => {
               copyButton.textContent = '📋 复制代码';
               copyButton.style.backgroundColor = 'var(--code-bg)';
