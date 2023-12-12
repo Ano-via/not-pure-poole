@@ -26,6 +26,8 @@ date: 2023-12-07 16:37 +0800
 new Snowflakes({color: 'rgb(234,245,253)'});
 ```
 
+---
+
 三、以下是另一种效果的代码，有些网站可能会卡，所以推荐用上面那种
 ```
 <script type="text/javascript">
