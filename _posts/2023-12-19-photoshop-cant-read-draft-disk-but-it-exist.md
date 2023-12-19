@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 系统能看到硬盘但是PS暂存盘无法识别
+title: PS暂存盘无法识别硬盘但是系统文件管理器能看到硬盘
 tags: [Photoshop, PS, 暂存盘]
 date: 2023-12-19 10:17 +0800
 ---
