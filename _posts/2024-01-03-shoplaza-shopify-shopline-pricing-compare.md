@@ -9,7 +9,7 @@ date: 2024-01-03 11:17 +0800
 [Shopify 套餐价格对比](#shopify-套餐价格对比) |
 [Shopline 套餐价格对比](#shopline-套餐价格对比)
 
-# 店匠套餐价格对比
+## 店匠套餐价格对比
 
 <table>
     <thead>
@@ -368,7 +368,7 @@ date: 2024-01-03 11:17 +0800
 [店匠套餐价格对比](#店匠套餐价格对比) |
 [Shopify 套餐价格对比](#shopify-套餐价格对比) |
 [Shopline 套餐价格对比](#shopline-套餐价格对比)
-# Shopify 套餐价格对比
+## Shopify 套餐价格对比
 <table>
     <thead>
         <tr>
@@ -835,7 +835,7 @@ date: 2024-01-03 11:17 +0800
 [店匠套餐价格对比](#店匠套餐价格对比) |
 [Shopify 套餐价格对比](#shopify-套餐价格对比) |
 [Shopline 套餐价格对比](#shopline-套餐价格对比)
-# Shopline 套餐价格对比
+## Shopline 套餐价格对比
 <table>
     <thead>
         <tr>
