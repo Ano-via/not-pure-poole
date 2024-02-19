@@ -1,9 +1,9 @@
 - title: Email
-  url: mailto:atticus_beta@outlook.com
+  url: /contact-us
   icon: fas fa-envelope
-- title: Twitter
-  url: https://twitter.com/atticus80021894
-  icon: fab fa-twitter
-- title: #1 Toolbox
-  url: https://fxchuhai.gq
-  icon: fas fa-archive
+# - title: Twitter
+#   url: https://twitter.com/atticus80021894
+#   icon: fab fa-twitter
+# - title: #1 Toolbox
+#   url: https://fxchuhai.gq
+#   icon: fas fa-archive
