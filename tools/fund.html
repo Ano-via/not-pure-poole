@@ -1,0 +1,117 @@
+---
+layout: default
+title: "Investment Calculator"
+---
+
+    <h3>Investment Calculator</h3>
+
+    <form id="investmentForm">
+        <!-- Date and Value Inputs -->
+        <div>
+            <label for="date1">Date 1:</label>
+            <input type="text" id="date1" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 1:</label>
+            <input type="number" id="value1" required>
+        </div>
+        <div>
+            <label for="date1">Date 2:</label>
+            <input type="text" id="date2" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 2:</label>
+            <input type="number" id="value2" required>
+        </div>
+        <div>
+            <label for="date1">Date 3:</label>
+            <input type="text" id="date3" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 3:</label>
+            <input type="number" id="value3" required>
+        </div>
+        <div>
+            <label for="date1">Date 4:</label>
+            <input type="text" id="date4" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 4:</label>
+            <input type="number" id="value4" required>
+        </div>
+        <div>
+            <label for="date1">Date 5:</label>
+            <input type="text" id="date5" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 5:</label>
+            <input type="number" id="value5" required>
+        </div>
+        <div>
+            <label for="date1">Date 6:</label>
+            <input type="text" id="date6" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 6:</label>
+            <input type="number" id="value6" required>
+        </div>
+        <div>
+            <label for="date1">Date 7:</label>
+            <input type="text" id="date7" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 7:</label>
+            <input type="number" id="value7" required>
+        </div>
+        <div>
+            <label for="date1">Date 8:</label>
+            <input type="text" id="date8" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 8:</label>
+            <input type="number" id="value8" required>
+        </div>
+        <div>
+            <label for="date1">Date 9:</label>
+            <input type="text" id="date9" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 9:</label>
+            <input type="number" id="value9" required>
+        </div>
+        <div>
+            <label for="date1">Date 10:</label>
+            <input type="text" id="date10" placeholder="YYYY.MM.DD" required>
+            <label for="value1">Value 10:</label>
+            <input type="number" id="value10" required>
+        </div>
+
+        <!-- Final Amount Input -->
+        <div>
+            <label for="finalAmount">Final Amount:</label>
+            <input type="number" id="finalAmount" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="button" onclick="calculateInterest()">Calculate</button>
+        </div>
+    </form>
+
+    <!-- Result Display -->
+    <div id="result"></div>
+
+    <script>
+        function calculateInterest() {
+            // Retrieve input values
+            const investList = [];
+            for (let i = 1; i <= 10; i++) {
+                const dateStr = document.getElementById(`date${i}`).value;
+                const value = parseFloat(document.getElementById(`value${i}`).value);
+
+                if (dateStr && !isNaN(value)) {
+                    const dateObject = new Date(dateStr);
+                    investList.push({ date: dateObject, value: value });
+                }
+            }
+
+            const finalAmount = parseFloat(document.getElementById('finalAmount').value);
+
+            // Calculate interest
+            let principalAmount = 0;
+            let itemAmount = 0;
+            const todayDate = new Date();
+
+            for (const { date, value } of investList) {
+                const dateDifference = Math.floor((todayDate - date) / (1000 * 60 * 60 * 24));
+                principalAmount += value;
+                itemAmount += (value * dateDifference) / 365;
+            }
+
+            const result = ((finalAmount - principalAmount) * 100) / itemAmount;
+            document.getElementById('result').innerHTML = `年利率：${result.toFixed(2)}%`;
+        }
+    </script>
+
