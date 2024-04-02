@@ -9,3 +9,4 @@ title: About
 
 目前有以下工具可用：
 * [投资理财年利率计算](/tools/fund.html)
+* [现代汉语词典 第7版](/tools/dict.html)
