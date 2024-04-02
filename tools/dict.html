@@ -1,576 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Viewer with XML Menu</title>
-  <style>
-    #image-container {
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代汉语词典 第7版</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAJJElEQVR4nO2d+3NU5RnH+dHOJP9BO9OStcFaFaKQkARCriQkWbKbCwQFS+1twA7teBnrjIrtDIKiDI5oaW0rKgjUquiMlFbwEizVJszQYBwrilI2u0v2cs5ez/70dN5zsuey73tuu5vd83TOO/P5AWGGOZ/vu9/z5GHGXbTIPe5xj3vc4x73uMc97nGPe2ycj6+r+9b52rpXp2rqEudrPaAmtX5T+fASximSg3k2ahnIs0FLv5oxmcS6QkYh5h2HmR9ug1eefApOnHgDpibOwpeHjsL00k7x+cgzT9V6Xr9QW19fNflTNXXRQvFlDcA7biB+YxHixwzEjyr0KUS843Dq8BGYnJyEQCAA/NUATC9plZ9zqsYTIy4qHgC5+XrySwrAW27pG2xLlxiR6B2BS9vvkQNIJpMQPPKa5lmnaj3HKx4Aq3aKDsC7qYLSxyxJVxP3jmsC4IMh7fPW1PEVD8BIvuUAvMXc9g2lVUyfjvheFsPAr5VQB0AofF48ATig1xMGt71Q/P9HABWtmNGySZfp8SMMoAqjY6LM0tUgDMCpFTNsIF4rHX0AOCrGryud7/bJoAsAW8XwDOn4A1gw6aNlls4Wz3URhkTwBeCA0ZG3UTF64hEHUP3RkS9RukinBL4AHNXr/qKkc53rZRAGUN7RkS+rdJ8l6SIdEugCwNDrnAXxXIdXBGEAzu91Tle6Ip4Qb8cYAIJe50ykq0EcQHlXAnxRt329acWwxQ9KrBnEGIDze50zkj4vPg++ABD0etxEusSACMIAqj86cia9biY93qaALgBsFRPXES/RjzgAJBUTb2OLj62WwBeAA0bHeInS1eANwDG9PmhbusiqdSL4AnB8rw8YiJekq0EdgB3pqd37IPXcHykSW7cvsHTltmtoJfThC6Com+7bDLl0BnK5HEX6rb+Wvdd1pYvi+zQgDMD+SiC1/7dM+QQhHgeud7isvW4mPdbSB9GWXhGcAdjs9ezFT3UDICQe2lXWXmdKbyXSFfEizRgDsDnF8Hduo6Vfm9P8OvPe2bL2ut5tV4uPNq8VwRmAjdEx9dJRbeUEQ5B+821tIKk0cIPjC1IxLOkyKzEGYGd0bPeCcDWgve3vTkDyyQPUpyL5+H5bFRMfuh34Xz4IiZ17IPGbJ4C//xGIDd3BkF4gfmWeHhGEAVif1/kdD9Cidz0F3NhWyAmCNph/nTeVzm+/D9In3gYhENR9n2QuzgC341eG0kWaeiDShDAAOyuB9JsntYKyWeC846Lk7CcFL2ZBgPjIDwx7PZdhj7IUggCJXfuY0vPiI03dIggDsLYS4Hr8IMRiGjHZf07Ktzz5uxfoT8eB3xv2uuUA5t8r8ZE7mdIjjQr4ArD4g1Jy52563Nz7jFwx3OafUb+f/c8lxuiodDoJQLj8NSSf/QNwd/0cYp1DEG3thZh/C6TeKHix53KQeukYU3qksUtiRRfWAMzn9czZc3TF+DZr6iV76UtKGgmGmtfnX6iJx/ZBlITC6vXWPhC+/q/2fTA9Q4tfoQVfAFbmde8mqi4y5y9Qo2PqhSP0rT30iunoqOl18o7wb4H43fdDpuC9IkSimtuu0AmR5RKIA+jXndmT+5+j+/3pg1S98D/aQa8mrgaUW86YYuIb74LkwT9BZuIcCF9dMX4vZAWtdJX4uXkQBmC+EsgyVg/ZLy5DdnpGhFRDZvoTcWRkieO23UNVTGzNIKRee0uUavlFnMsxpc/d1iGDLgCzn065O35qSxCL1KsnqNExffId5g3PfvY5pM9MQOrwnyH76Wd0ALJ4RbrMre1IAzBYCZAOz5UYAOnu6Kp+eXSMb6EnpvTp9yG2dlhTMem/v0v9OUr6vPg8+AIw2sOsXketHnJFwt37kDy9JPYfpH4/2jtK9Xpmhv4EsKTLNKxBGoDOqpe7+z76NieT4v+hhNzWWE8ev0K3H9LvfUjf8FNn5NExeegoI4ARTa/HfvILZpAs6WrwBWCwdUwVrh5y0vLNbCXAP7qHGVy0c0isl8SB5+mAJs5BdGwrRPo3AL9zDwhzEf0AGrTirxGWEdoQBqDzQ1KswwtCnKMEJH79uO4eJl8x0W4/c5wkYskt537Mvt2s0KgAGNLVoAtAb9XLP7yLMaVkIUa6WmcPo/4hKfPhR/Sn5x8fyxVD5n7DyenUaUif/oD67yzp15bmWY0wAJ39OktQ5qNJffEFK4HE7n2MAAWI9I6KL9FIuxfSfztD/5l0GpIvHxf/jvQ77zMCoKXL3IIyAPZKINblE1+opE6i3T6JtgHmbWetBMRPSccQRDrWa5hr6tFMMVHfZuAfeQz4J54B7oFHIdLlkytmrqUP5toGNLCkS6wSwReAzj9smFVMxGQlYDavs6YYvV6npDPEh2+WQBhAMdK7KiTd+LarxYdvbhVBF4CheAPpEZOVAC3dgvgipYdvUsAXgJWKWW5BOkt8Q5EVYyidLT58UwuEv9+CMYBq9nqbpV43lD4vPg++AMpWMWsqUjEs6RLNEL6xGWMAViumvUIV02pYMSzpIRX4ArBbMQ2lSi+tYljSQzeuhND3JNAFgKHXw0zpzbJ0NXgDqGqvt1quGJb00A1NMvgCcMDoGLZRMSzpMkswB1DmlUC4jL1uKH4JoRGC8+ALQC29SqNjyEbFKOIbNeKD9YQV+ALA0OshPekq8XnwBeCoXl9pWjEs6cHv5lmOMAAHjI6hYqTL4pcrXI8yAOf3elDntqvFS9yGMAAHjI4hGxXDkj6bx4MygOqPjkEbFcOSrnArvgCKkR4uoddtV8z1DPEF0kXqJPAFUOnRsb7IijGQLtEggjQAZ/f6rFp8HUP8YgV8AThgdAzOM2vnti/WEli8DALfWYY1gOqOjrM2KkYrXpKuxnEBmH2RW3EV07gAFcOSbnzbNXx7KVwpWMbxs0Ht89Z4uMoHUOt53TiAhVkJBMvY60bS1Vz03a4JYPbwXwqf91jFAyDfIkq+yFI3gAXu9WAJvc6qGJZ4wuUbGuHkiy/KAXBXrsK/61tUt78ucuEbnm8uqto3qtZ6jpPvUqQCcMDoOFt42y1KJ3xFFnB9w3Bo717x62wnP5iAL55/WZEvPfOxqsl3j3vc4x73uMc97nGPe9yzCOv5H4xNz3Ul8wF8AAAAAElFTkSuQmCC">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-    #image {
-      max-width: 100%;
-      max-height: 400px;
-    }
+        #leftright {
+            flex-direction: row;
+            position: relative; /* Added this line */
+        }
 
-    #menu {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        #searchContainer {
+            margin-bottom: 20px;
+        }
 
-    #menu li {
-      margin-bottom: 5px;
-    }
-  </style>
+        #searchInput {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #searchBtn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #prevBtn,
+        #nextBtn {
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            text-align: center;
+            line-height: 5vh;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            position: absolute; /* Changed this line */
+            top: 0; /* Added this line */
+        }
+
+        #prevBtn {
+            left: 0; /* Added this line */
+        }
+
+        #nextBtn {
+            right: 0; /* Added this line */
+        }
+
+        #mainImage {
+            max-width: 100%;
+            max-height: calc(100vh - 200px);
+        }
+    </style>
 </head>
+
 <body>
+    <div id="searchContainer">
+        <label for="searchInput">输入拼音：</label>
+        <input type="text" id="searchInput" placeholder="miao">
+        <button id="searchBtn" onclick="searchImage()">检索</button>
+    </div>
+    
+    <div id="leftright">
+        <img id="mainImage" src="https://ano-via.github.io/dict/images/0005.jpg" alt="Image">
+        <div id="prevBtn" onclick="changeImage(-1)"></div>
+        <div id="nextBtn" onclick="changeImage(1)"></div>
+    </div>
+    <script>
+        let currentImageIndex = 5; // Initial image index
+        const totalImages = 1897; // Total number of images
 
-<div id="image-container">
-  <img id="image" src="https://ano-via.github.io/dict/images/0005.jpg" alt="Image">
-</div>
+        function searchImage() {
+            const searchInput = document.getElementById('searchInput').value;
+            const pageNumber = getPageNumberByName(searchInput);
+            if (pageNumber !== null) {
+                currentImageIndex = pageNumber;
+                showImage();
+            } else {
+                alert('请输入一个拼音!');
+            }
+        }
 
-<ul id="menu"></ul>
+        function getPageNumberByName(name) {
+            const bookmarks = [
+                { name: "封面", page: 1 },
+                { name: "书脊", page: 2 },
+                { name: "部首目录", page: 3 },
+                { name: "书名题签", page: 4 },
+                { name: "扉页", page: 5 },
+                { name: "审订委员会", page: 8 },
+                { name: "编纂、修订工作人员", page: 9 },
+                { name: "第7版说明", page: 11 },
+                { name: "第1版前言", page: 12 },
+                { name: "第2版说明", page: 14 },
+                { name: "第4版说明", page: 15 },
+                { name: "第5版说明", page: 16 },
+                { name: "第6版说明", page: 18 },
+                { name: "目录", page: 21 },
+                { name: "凡例", page: 22 },
+                { name: "音节表", page: 26 },
+                { name: "新旧字形对照表", page: 32 },
+                { name: "部首检字表", page: 33 },
+                { name: "检字表", page: 35 },
+                { name: "难检字笔画索引", page: 76 },
+                { name: "A", page: 95 },
+                { name: "a", page: 95 },
+                { name: "ai", page: 96 },
+                { name: "an", page: 100 },
+                { name: "ang", page: 106 },
+                { name: "ao", page: 107 },
+                { name: "B", page: 110 },
+                { name: "ba", page: 110 },
+                { name: "bai", page: 116 },
+                { name: "ban", page: 126 },
+                { name: "bang", page: 133 },
+                { name: "bao", page: 135 },
+                { name: "bei", page: 146 },
+                { name: "ben", page: 154 },
+                { name: "beng", page: 157 },
+                { name: "bi", page: 159 },
+                { name: "bian", page: 169 },
+                { name: "biao", page: 178 },
+                { name: "bie", page: 182 },
+                { name: "bin", page: 184 },
+                { name: "bing", page: 185 },
+                { name: "bo", page: 190 },
+                { name: "bu", page: 197 },
+                { name: "C", page: 211 },
+                { name: "ca", page: 211 },
+                { name: "cai", page: 211 },
+                { name: "can", page: 216 },
+                { name: "cang", page: 220 },
+                { name: "cao", page: 222 },
+                { name: "ce", page: 225 },
+                { name: "cen", page: 226 },
+                { name: "ceng", page: 226 },
+                { name: "cha", page: 229 },
+                { name: "chai", page: 234 },
+                { name: "chan", page: 234 },
+                { name: "chang", page: 238 },
+                { name: "chao", page: 245 },
+                { name: "che", page: 249 },
+                { name: "chen", page: 252 },
+                { name: "cheng", page: 257 },
+                { name: "chi", page: 265 },
+                { name: "chong", page: 272 },
+                { name: "chou", page: 277 },
+                { name: "chu", page: 281 },
+                { name: "chua", page: 292 },
+                { name: "chuai", page: 292 },
+                { name: "chuan", page: 293 },
+                { name: "chuang", page: 298 },
+                { name: "chui", page: 300 },
+                { name: "chun", page: 302 },
+                { name: "chuo", page: 305 },
+                { name: "ci", page: 305 },
+                { name: "cong", page: 311 },
+                { name: "cou", page: 313 },
+                { name: "cu", page: 314 },
+                { name: "cuan", page: 316 },
+                { name: "cui", page: 317 },
+                { name: "cun", page: 319 },
+                { name: "cuo", page: 321 },
+                { name: "D", page: 324 },
+                { name: "da", page: 324 },
+                { name: "dai", page: 342 },
+                { name: "dan", page: 346 },
+                { name: "dang", page: 353 },
+                { name: "dao", page: 357 },
+                { name: "de", page: 364 },
+                { name: "dei", page: 367 },
+                { name: "den", page: 367 },
+                { name: "deng", page: 367 },
+                { name: "di", page: 371 },
+                { name: "dia", page: 384 },
+                { name: "dian", page: 384 },
+                { name: "diao", page: 393 },
+                { name: "die", page: 396 },
+                { name: "ding", page: 398 },
+                { name: "diu", page: 403 },
+                { name: "dong", page: 404 },
+                { name: "dou", page: 409 },
+                { name: "du", page: 413 },
+                { name: "duan", page: 419 },
+                { name: "dui", page: 422 },
+                { name: "dun", page: 426 },
+                { name: "duo", page: 428 },
+                { name: "E", page: 433 },
+                { name: "e", page: 433 },
+                { name: "en", page: 437 },
+                { name: "eng", page: 437 },
+                { name: "er", page: 437 },
+                { name: "F", page: 443 },
+                { name: "fa", page: 443 },
+                { name: "fan", page: 450 },
+                { name: "fang", page: 460 },
+                { name: "fei", page: 468 },
+                { name: "fen", page: 474 },
+                { name: "feng", page: 481 },
+                { name: "fo", page: 490 },
+                { name: "fou", page: 491 },
+                { name: "fu", page: 491 },
+                { name: "G", page: 509 },
+                { name: "ga", page: 509 },
+                { name: "gai", page: 510 },
+                { name: "gan", page: 513 },
+                { name: "gang", page: 520 },
+                { name: "gao", page: 524 },
+                { name: "ge", page: 531 },
+                { name: "gei", page: 537 },
+                { name: "gen", page: 538 },
+                { name: "geng", page: 539 },
+                { name: "gong", page: 541 },
+                { name: "gou", page: 553 },
+                { name: "gu", page: 557 },
+                { name: "gua", page: 567 },
+                { name: "guai", page: 571 },
+                { name: "guan", page: 571 },
+                { name: "guang", page: 578 },
+                { name: "gui", page: 583 },
+                { name: "gun", page: 588 },
+                { name: "guo", page: 589 },
+                { name: "H", page: 599 },
+                { name: "ha", page: 599 },
+                { name: "hai", page: 600 },
+                { name: "han", page: 604 },
+                { name: "hang", page: 609 },
+                { name: "hao", page: 611 },
+                { name: "he", page: 617 },
+                { name: "hei", page: 625 },
+                { name: "hen", page: 628 },
+                { name: "heng", page: 629 },
+                { name: "hm", page: 631 },
+                { name: "hng", page: 631 },
+                { name: "hong", page: 667 },
+                { name: "hou", page: 637 },
+                { name: "hu", page: 641 },
+                { name: "hua", page: 649 },
+                { name: "huai", page: 659 },
+                { name: "huan", page: 660 },
+                { name: "huang", page: 665 },
+                { name: "hui", page: 671 },
+                { name: "hun", page: 681 },
+                { name: "huo", page: 683 },
+                { name: "J", page: 692 },
+                { name: "ji", page: 692 },
+                { name: "jia", page: 715 },
+                { name: "jian", page: 724 },
+                { name: "jiang", page: 738 },
+                { name: "jiao", page: 742 },
+                { name: "jie", page: 754 },
+                { name: "jin", page: 767 },
+                { name: "jing", page: 778 },
+                { name: "jiong", page: 790 },
+                { name: "jiu", page: 790 },
+                { name: "ju", page: 796 },
+                { name: "juan", page: 803 },
+                { name: "jue", page: 805 },
+                { name: "jun", page: 810 },
+                { name: "K", page: 814 },
+                { name: "ka", page: 814 },
+                { name: "kai", page: 815 },
+                { name: "kan", page: 821 },
+                { name: "kang", page: 824 },
+                { name: "kao", page: 826 },
+                { name: "ke", page: 828 },
+                { name: "kei", page: 836 },
+                { name: "ken", page: 837 },
+                { name: "keng", page: 837 },
+                { name: "kong", page: 841 },
+                { name: "kou", page: 843 },
+                { name: "ku", page: 846 },
+                { name: "kua", page: 849 },
+                { name: "kuai", page: 850 },
+                { name: "kuan", page: 852 },
+                { name: "kuang", page: 854 },
+                { name: "kui", page: 854 },
+                { name: "kun", page: 859 },
+                { name: "kuo", page: 860 },
+                { name: "L", page: 862 },
+                { name: "la", page: 862 },
+                { name: "lai", page: 866 },
+                { name: "lan", page: 868 },
+                { name: "lang", page: 871 },
+                { name: "lao", page: 873 },
+                { name: "le", page: 881 },
+                { name: "lei", page: 883 },
+                { name: "leng", page: 886 },
+                { name: "li", page: 889 },
+                { name: "lia", page: 901 },
+                { name: "lian", page: 905 },
+                { name: "liang", page: 907 },
+                { name: "liao", page: 913 },
+                { name: "lie", page: 916 },
+                { name: "lin", page: 918 },
+                { name: "ling", page: 921 },
+                { name: "liu", page: 928 },
+                { name: "long", page: 934 },
+                { name: "lou", page: 937 },
+                { name: "lu", page: 940 },
+                { name: "lü", page: 945 },
+                { name: "luan", page: 949 },
+                { name: "lüe", page: 950 },
+                { name: "lun", page: 951 },
+                { name: "luo", page: 953 },
+                { name: "M", page: 959 },
+                { name: "ma", page: 959 },
+                { name: "mai", page: 964 },
+                { name: "man", page: 967 },
+                { name: "mang", page: 971 },
+                { name: "mao", page: 973 },
+                { name: "me", page: 978 },
+                { name: "mei", page: 978 },
+                { name: "men", page: 984 },
+                { name: "meng", page: 987 },
+                { name: "mi", page: 990 },
+                { name: "mian", page: 995 },
+                { name: "miao", page: 999 },
+                { name: "mie", page: 1001 },
+                { name: "min", page: 1002 },
+                { name: "ming", page: 1005 },
+                { name: "miu", page: 1011 },
+                { name: "mo", page: 1011 },
+                { name: "mou", page: 1018 },
+                { name: "mu", page: 1019 },
+                { name: "N", page: 1025 },
+                { name: "na", page: 1025 },
+                { name: "nai", page: 1028 },
+                { name: "nan", page: 1029 },
+                { name: "nang", page: 1033 },
+                { name: "nao", page: 1034 },
+                { name: "ne", page: 1037 },
+                { name: "nei", page: 1037 },
+                { name: "neng", page: 1040 },
+                { name: "ni", page: 1041 },
+                { name: "nian", page: 1045 },
+                { name: "niang", page: 1048 },
+                { name: "niao", page: 1049 },
+                { name: "nie", page: 1050 },
+                { name: "nin", page: 1051 },
+                { name: "ning", page: 1051 },
+                { name: "niu", page: 1052 },
+                { name: "nong", page: 1054 },
+                { name: "nou", page: 1056 },
+                { name: "nu", page: 1056 },
+                { name: "nü", page: 1058 },
+                { name: "nuan", page: 1058 },
+                { name: "nüe", page: 1059 },
+                { name: "nun", page: 1059 },
+                { name: "nuo", page: 1059 },
+                { name: "O", page: 1061 },
+                { name: "o", page: 1061 },
+                { name: "ou", page: 1061 },
+                { name: "P", page: 1064 },
+                { name: "pa", page: 1064 },
+                { name: "pai", page: 1059 },
+                { name: "pan", page: 1069 },
+                { name: "pang", page: 1072 },
+                { name: "pao", page: 1074 },
+                { name: "pei", page: 1077 },
+                { name: "pen", page: 1080 },
+                { name: "peng", page: 1081 },
+                { name: "pi", page: 1083 },
+                { name: "pian", page: 1090 },
+                { name: "piao", page: 1092 },
+                { name: "pie", page: 1096 },
+                { name: "pin", page: 1096 },
+                { name: "ping", page: 1099 },
+                { name: "po", page: 1105 },
+                { name: "pou", page: 1108 },
+                { name: "pu", page: 1109 },
+                { name: "Q", page: 1114 },
+                { name: "qi", page: 1114 },
+                { name: "qia", page: 1129 },
+                { name: "qian", page: 1130 },
+                { name: "qiang", page: 1140 },
+                { name: "qiao", page: 1145 },
+                { name: "qie", page: 1148 },
+                { name: "qin", page: 1150 },
+                { name: "qing", page: 1154 },
+                { name: "qiong", page: 1165 },
+                { name: "qiu", page: 1166 },
+                { name: "qu", page: 1169 },
+                { name: "quan", page: 1175 },
+                { name: "que", page: 1180 },
+                { name: "qun", page: 1182 },
+                { name: "R", page: 1184 },
+                { name: "ran", page: 1184 },
+                { name: "rang", page: 1185 },
+                { name: "rao", page: 1186 },
+                { name: "re", page: 1187 },
+                { name: "ren", page: 1190 },
+                { name: "ri", page: 1197 },
+                { name: "rong", page: 1199 },
+                { name: "rou", page: 1202 },
+                { name: "ru", page: 1203 },
+                { name: "rua", page: 1208 },
+                { name: "ruan", page: 1208 },
+                { name: "rui", page: 1210 },
+                { name: "run", page: 1211 },
+                { name: "ruo", page: 1211 },
+                { name: "S", page: 1213 },
+                { name: "sa", page: 1213 },
+                { name: "sai", page: 1214 },
+                { name: "san", page: 1215 },
+                { name: "sang", page: 1220 },
+                { name: "sao", page: 1221 },
+                { name: "se", page: 1223 },
+                { name: "sen", page: 1224 },
+                { name: "seng", page: 1224 },
+                { name: "sha", page: 1224 },
+                { name: "shai", page: 1228 },
+                { name: "shan", page: 1229 },
+                { name: "shang", page: 1234 },
+                { name: "shao", page: 1242 },
+                { name: "she", page: 1245 },
+                { name: "shei", page: 1251 },
+                { name: "shen", page: 1251 },
+                { name: "sheng", page: 1259 },
+                { name: "shi", page: 1269 },
+                { name: "shou", page: 1293 },
+                { name: "shu", page: 1303 },
+                { name: "shua", page: 1313 },
+                { name: "shuai", page: 1314 },
+                { name: "shuan", page: 1316 },
+                { name: "shuang", page: 1316 },
+                { name: "shui", page: 1318 },
+                { name: "shun", page: 1324 },
+                { name: "shuo", page: 1326 },
+                { name: "si", page: 1328 },
+                { name: "song", page: 1336 },
+                { name: "sou", page: 1339 },
+                { name: "su", page: 1340 },
+                { name: "suan", page: 1344 },
+                { name: "sui", page: 1346 },
+                { name: "sun", page: 1348 },
+                { name: "suo", page: 1350 },
+                { name: "T", page: 1353 },
+                { name: "ta", page: 1353 },
+                { name: "tai", page: 1355 },
+                { name: "tan", page: 1360 },
+                { name: "tang", page: 1366 },
+                { name: "tao", page: 1370 },
+                { name: "te", page: 1374 },
+                { name: "tei", page: 1376 },
+                { name: "teng", page: 1377 },
+                { name: "ti", page: 1377 },
+                { name: "tian", page: 1384 },
+                { name: "tiao", page: 1392 },
+                { name: "tie", page: 1396 },
+                { name: "ting", page: 1399 },
+                { name: "tong", page: 1402 },
+                { name: "tou", page: 1412 },
+                { name: "tu", page: 1417 },
+                { name: "tuan", page: 1422 },
+                { name: "tui", page: 1424 },
+                { name: "tun", page: 1427 },
+                { name: "tuo", page: 1428 },
+                { name: "W", page: 1434 },
+                { name: "wa", page: 1434 },
+                { name: "wai", page: 1435 },
+                { name: "wan", page: 1440 },
+                { name: "wang", page: 1446 },
+                { name: "wei", page: 1451 },
+                { name: "wen", page: 1463 },
+                { name: "weng", page: 1470 },
+                { name: "wo", page: 1471 },
+                { name: "wu", page: 1472 },
+                { name: "X", page: 1490 },
+                { name: "xi", page: 1490 },
+                { name: "xia", page: 1503 },
+                { name: "xian", page: 1513 },
+                { name: "xiang", page: 1520 },
+                { name: "xiao", page: 1529 },
+                { name: "xie", page: 1541 },
+                { name: "xin", page: 1547 },
+                { name: "xing", page: 1556 },
+                { name: "xiong", page: 1564 },
+                { name: "xiu", page: 1567 },
+                { name: "xu", page: 1571 },
+                { name: "xuan", page: 1576 },
+                { name: "xue", page: 1581 },
+                { name: "xun", page: 1586 },
+                { name: "Y", page: 1591 },
+                { name: "ya", page: 1591 },
+                { name: "yan", page: 1596 },
+                { name: "yang", page: 1608 },
+                { name: "yao", page: 1614 },
+                { name: "ye", page: 1621 },
+                { name: "yi", page: 1625 },
+                { name: "yin", page: 1652 },
+                { name: "ying", page: 1663 },
+                { name: "yo", page: 1671 },
+                { name: "yong", page: 1671 },
+                { name: "you", page: 1674 },
+                { name: "yu", page: 1688 },
+                { name: "yuan", page: 1701 },
+                { name: "yue", page: 1710 },
+                { name: "yun", page: 1714 },
+                { name: "Z", page: 1720 },
+                { name: "za", page: 1720 },
+                { name: "zai", page: 1721 },
+                { name: "zan", page: 1724 },
+                { name: "zang", page: 1726 },
+                { name: "zao", page: 1727 },
+                { name: "ze", page: 1730 },
+                { name: "zei", page: 1732 },
+                { name: "zeng", page: 1732 },
+                { name: "zha", page: 1734 },
+                { name: "zhai", page: 1736 },
+                { name: "zhan", page: 1738 },
+                { name: "zhang", page: 1743 },
+                { name: "zhao", page: 1747 },
+                { name: "zhe", page: 1751 },
+                { name: "zhei", page: 1755 },
+                { name: "zhen", page: 1755 },
+                { name: "zheng", page: 1761 },
+                { name: "zhi", page: 1769 },
+                { name: "zhong", page: 1787 },
+                { name: "zhou", page: 1798 },
+                { name: "zhu", page: 1801 },
+                { name: "zhua", page: 1811 },
+                { name: "zhuai", page: 1812 },
+                { name: "zhuan", page: 1812 },
+                { name: "zhuang", page: 1817 },
+                { name: "zhui", page: 1820 },
+                { name: "zhun", page: 1822 },
+                { name: "zhuo", page: 1823 },
+                { name: "zi", page: 1825 },
+                { name: "zong", page: 1836 },
+                { name: "zou", page: 1840 },
+                { name: "zu", page: 1842 },
+                { name: "zuan", page: 1845 },
+                { name: "zui", page: 1846 },
+                { name: "zun", page: 1848 },
+                { name: "zuo", page: 1848 },
+                { name: "西文字母开头的词语", page: 1845 },
+                { name: "附录", page: 1861 },
+                { name: "我国历代纪元表", page: 1863 },
+                { name: "计量单位表", page: 1880 },
+                { name: "汉字偏旁名称表", page: 1888 },
+                { name: "汉语拼音方案", page: 1891 },
+                { name: "元素周期表", page: 1894 },
+                { name: "版权页", page: 1895 },
+                { name: "中国地图", page: 1896 },
+                { name: "封底", page: 1897 },
 
-<button onclick="prevImage()">上一页</button>
-<button onclick="nextImage()">下一页</button>
 
-<script>
-  var currentImageIndex = 1; // 初始图片索引
 
-  function showImage(index) {
-    var image = document.getElementById('image');
-    image.src = 'https://ano-via.github.io/dict/images/' + pad(index, 4) + '.jpg';
-  }
+            ];
 
-  function prevImage() {
-    if (currentImageIndex > 1) {
-      currentImageIndex--;
-      showImage(currentImageIndex);
-    }
-  }
+            const result = bookmarks.find(item => item.name === name);
+            return result ? result.page : null;
+        }
 
-  function nextImage() {
-    // 假设最大图片索引为9999
-    if (currentImageIndex < 9999) {
-      currentImageIndex++;
-      showImage(currentImageIndex);
-    }
-  }
+        function showImage() {
+            const imageName = pad(currentImageIndex, 4) + '.jpg';
+            document.getElementById('mainImage').src = 'https://ano-via.github.io/dict/images' + imageName;
+        }
 
-  function pad(num, size) {
-    var s = num + "";
-    while (s.length < size) s = "0" + s;
-    return s;
-  }
+        function changeImage(offset) {
+            currentImageIndex += offset;
+            if (currentImageIndex < 1) {
+                currentImageIndex = 1;
+            } else if (currentImageIndex > totalImages) {
+                currentImageIndex = totalImages;
+            }
+            showImage();
+        }
 
-  // 解析XML并生成菜单
-  var xmlString = `<?xml version = '1.0' encoding='UTF-8'?>
-<BOOKMARKS>
-    <INFO PRODUCER="WPS PDF"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="0" NAME="封面"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1" NAME="书脊"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="2" NAME="部首目录"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="3" NAME="书名题签"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="4" NAME="扉页"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="7" NAME="审订委员会"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="8" NAME="编纂、修订工作人员"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="10" NAME="第7版说明"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="11" NAME="第1版前言"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="13" NAME="第2版说明"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="14" NAME="第4版说明"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="15" NAME="第5版说明"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="17" NAME="第6版说明"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="20" NAME="目录"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="21" NAME="凡例"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="25" NAME="音节表"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="31" NAME="新旧字形对照表"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="32" NAME="部首检字表"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="34" NAME="检字表"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="75" NAME="难检字笔画索引"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="94" NAME="A">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="94" NAME="a"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="95" NAME="ai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="99" NAME="an"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="105" NAME="ang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="106" NAME="ao"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="109" NAME="B">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="109" NAME="ba"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="115" NAME="bai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="125" NAME="ban"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="132" NAME="bang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="134" NAME="bao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="145" NAME="bei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="153" NAME="ben"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="156" NAME="beng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="158" NAME="bi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="168" NAME="bian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="177" NAME="biao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="181" NAME="bie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="183" NAME="bin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="184" NAME="bing"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="189" NAME="bo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="196" NAME="bu"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="210" NAME="C">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="210" NAME="ca"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="210" NAME="cai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="215" NAME="can"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="219" NAME="cang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="221" NAME="cao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="224" NAME="ce"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="225" NAME="cen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="225" NAME="ceng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="228" NAME="cha"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="233" NAME="chai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="233" NAME="chan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="237" NAME="chang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="244" NAME="chao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="248" NAME="che"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="251" NAME="chen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="256" NAME="cheng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="264" NAME="chi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="271" NAME="chong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="276" NAME="chou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="280" NAME="chu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="291" NAME="chua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="291" NAME="chuai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="292" NAME="chuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="297" NAME="chuang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="299" NAME="chui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="301" NAME="chun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="304" NAME="chuo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="304" NAME="ci"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="310" NAME="cong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="312" NAME="cou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="313" NAME="cu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="315" NAME="cuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="316" NAME="cui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="318" NAME="cun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="320" NAME="cuo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="323" NAME="D">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="323" NAME="da"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="341" NAME="dai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="345" NAME="dan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="352" NAME="dang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="356" NAME="dao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="363" NAME="de"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="366" NAME="dei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="366" NAME="den"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="366" NAME="deng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="370" NAME="di"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="383" NAME="dia"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="383" NAME="dian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="392" NAME="diao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="395" NAME="die"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="397" NAME="ding"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="402" NAME="diu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="403" NAME="dong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="408" NAME="dou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="412" NAME="du"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="418" NAME="duan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="421" NAME="dui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="425" NAME="dun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="427" NAME="duo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="432" NAME="E">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="432" NAME="e"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="436" NAME="en"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="436" NAME="eng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="436" NAME="er"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="442" NAME="F">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="442" NAME="fa"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="449" NAME="fan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="459" NAME="fang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="467" NAME="fei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="473" NAME="fen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="480" NAME="feng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="489" NAME="fo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="490" NAME="fou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="490" NAME="fu"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="508" NAME="G">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="508" NAME="ga"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="509" NAME="gai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="512" NAME="gan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="519" NAME="gang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="523" NAME="gao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="530" NAME="ge"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="536" NAME="gei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="537" NAME="gen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="538" NAME="geng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="540" NAME="gong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="552" NAME="gou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="556" NAME="gu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="566" NAME="gua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="570" NAME="guai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="570" NAME="guan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="577" NAME="guang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="582" NAME="gui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="587" NAME="gun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="588" NAME="guo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="598" NAME="H">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="598" NAME="ha"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="599" NAME="hai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="603" NAME="han"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="608" NAME="hang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="610" NAME="hao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="616" NAME="he"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="624" NAME="hei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="627" NAME="hen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="628" NAME="heng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="630" NAME="hm"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="630" NAME="hng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="666" NAME="hong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="636" NAME="hou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="640" NAME="hu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="648" NAME="hua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="658" NAME="huai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="659" NAME="huan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="664" NAME="huang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="670" NAME="hui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="680" NAME="hun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="682" NAME="huo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="691" NAME="J">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="691" NAME="ji"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="714" NAME="jia"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="723" NAME="jian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="737" NAME="jiang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="741" NAME="jiao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="753" NAME="jie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="766" NAME="jin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="777" NAME="jing"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="789" NAME="jiong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="789" NAME="jiu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="795" NAME="ju"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="802" NAME="juan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="804" NAME="jue"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="809" NAME="jun"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="813" NAME="K">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="813" NAME="ka"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="814" NAME="kai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="820" NAME="kan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="823" NAME="kang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="825" NAME="kao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="827" NAME="ke"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="835" NAME="kei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="836" NAME="ken"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="836" NAME="keng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="840" NAME="kong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="842" NAME="kou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="845" NAME="ku"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="848" NAME="kua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="849" NAME="kuai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="851" NAME="kuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="853" NAME="kuang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="853" NAME="kui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="858" NAME="kun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="859" NAME="kuo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="861" NAME="L">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="861" NAME="la"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="865" NAME="lai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="867" NAME="lan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="870" NAME="lang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="872" NAME="lao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="880" NAME="le"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="882" NAME="lei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="885" NAME="leng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="888" NAME="li"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="900" NAME="lia"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="904" NAME="lian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="906" NAME="liang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="912" NAME="liao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="915" NAME="lie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="917" NAME="lin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="920" NAME="ling"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="927" NAME="liu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="933" NAME="long"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="936" NAME="lou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="939" NAME="lu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="944" NAME="lü"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="948" NAME="luan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="949" NAME="lüe"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="950" NAME="lun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="952" NAME="luo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="958" NAME="M">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="958" NAME="ma"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="963" NAME="mai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="966" NAME="man"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="970" NAME="mang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="972" NAME="mao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="977" NAME="me"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="977" NAME="mei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="983" NAME="men"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="986" NAME="meng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="989" NAME="mi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="994" NAME="mian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="998" NAME="miao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1000" NAME="mie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1001" NAME="min"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1004" NAME="ming"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1010" NAME="miu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1010" NAME="mo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1017" NAME="mou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1018" NAME="mu"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1024" NAME="N">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1024" NAME="na"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1027" NAME="nai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1028" NAME="nan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1032" NAME="nang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1033" NAME="nao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1036" NAME="ne"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1036" NAME="nei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1039" NAME="neng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1040" NAME="ni"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1044" NAME="nian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1047" NAME="niang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1048" NAME="niao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1049" NAME="nie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1050" NAME="nin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1050" NAME="ning"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1051" NAME="niu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1053" NAME="nong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1055" NAME="nou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1055" NAME="nu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1057" NAME="nü"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1057" NAME="nuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1058" NAME="nüe"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1058" NAME="nun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1058" NAME="nuo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1060" NAME="O">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1060" NAME="o"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1060" NAME="ou"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1063" NAME="P">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1063" NAME="pa"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1058" NAME="pai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1068" NAME="pan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1071" NAME="pang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1073" NAME="pao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1076" NAME="pei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1079" NAME="pen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1080" NAME="peng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1082" NAME="pi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1089" NAME="pian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1091" NAME="piao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1095" NAME="pie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1095" NAME="pin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1098" NAME="ping"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1104" NAME="po"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1107" NAME="pou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1108" NAME="pu"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1113" NAME="Q">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1113" NAME="qi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1128" NAME="qia"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1129" NAME="qian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1139" NAME="qiang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1144" NAME="qiao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1147" NAME="qie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1149" NAME="qin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1153" NAME="qing"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1164" NAME="qiong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1165" NAME="qiu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1168" NAME="qu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1174" NAME="quan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1179" NAME="que"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1181" NAME="qun"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1183" NAME="R">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1183" NAME="ran"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1184" NAME="rang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1185" NAME="rao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1186" NAME="re"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1189" NAME="ren"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1196" NAME="ri"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1198" NAME="rong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1201" NAME="rou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1202" NAME="ru"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1207" NAME="rua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1207" NAME="ruan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1209" NAME="rui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1210" NAME="run"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1210" NAME="ruo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1212" NAME="S">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1212" NAME="sa"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1213" NAME="sai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1214" NAME="san"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1219" NAME="sang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1220" NAME="sao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1222" NAME="se"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1223" NAME="sen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1223" NAME="seng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1223" NAME="sha"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1227" NAME="shai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1228" NAME="shan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1233" NAME="shang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1241" NAME="shao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1244" NAME="she"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1250" NAME="shei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1250" NAME="shen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1258" NAME="sheng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1268" NAME="shi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1292" NAME="shou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1302" NAME="shu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1312" NAME="shua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1313" NAME="shuai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1315" NAME="shuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1315" NAME="shuang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1317" NAME="shui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1323" NAME="shun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1325" NAME="shuo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1327" NAME="si"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1335" NAME="song"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1338" NAME="sou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1339" NAME="su"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1343" NAME="suan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1345" NAME="sui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1347" NAME="sun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1349" NAME="suo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1352" NAME="T">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1352" NAME="ta"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1354" NAME="tai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1359" NAME="tan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1365" NAME="tang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1369" NAME="tao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1373" NAME="te"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1375" NAME="tei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1376" NAME="teng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1376" NAME="ti"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1383" NAME="tian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1391" NAME="tiao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1395" NAME="tie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1398" NAME="ting"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1401" NAME="tong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1411" NAME="tou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1416" NAME="tu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1421" NAME="tuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1423" NAME="tui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1426" NAME="tun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1427" NAME="tuo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1433" NAME="W">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1433" NAME="wa"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1434" NAME="wai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1439" NAME="wan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1445" NAME="wang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1450" NAME="wei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1462" NAME="wen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1469" NAME="weng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1470" NAME="wo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1471" NAME="wu"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1489" NAME="X">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1489" NAME="xi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1502" NAME="xia"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1512" NAME="xian"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1519" NAME="xiang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1528" NAME="xiao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1540" NAME="xie"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1546" NAME="xin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1555" NAME="xing"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1563" NAME="xiong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1566" NAME="xiu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1570" NAME="xu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1575" NAME="xuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1580" NAME="xue"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1585" NAME="xun"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1590" NAME="Y">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1590" NAME="ya"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1595" NAME="yan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1607" NAME="yang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1613" NAME="yao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1620" NAME="ye"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1624" NAME="yi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1651" NAME="yin"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1662" NAME="ying"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1670" NAME="yo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1670" NAME="yong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1673" NAME="you"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1687" NAME="yu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1700" NAME="yuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1709" NAME="yue"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1713" NAME="yun"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1719" NAME="Z">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1719" NAME="za"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1720" NAME="zai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1723" NAME="zan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1725" NAME="zang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1726" NAME="zao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1729" NAME="ze"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1731" NAME="zei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1731" NAME="zeng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1733" NAME="zha"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1735" NAME="zhai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1737" NAME="zhan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1742" NAME="zhang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1746" NAME="zhao"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1750" NAME="zhe"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1754" NAME="zhei"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1754" NAME="zhen"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1760" NAME="zheng"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1768" NAME="zhi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1786" NAME="zhong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1797" NAME="zhou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1800" NAME="zhu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1810" NAME="zhua"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1811" NAME="zhuai"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1811" NAME="zhuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1816" NAME="zhuang"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1819" NAME="zhui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1821" NAME="zhun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1822" NAME="zhuo"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1824" NAME="zi"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1835" NAME="zong"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1839" NAME="zou"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1841" NAME="zu"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1844" NAME="zuan"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1845" NAME="zui"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1847" NAME="zun"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1847" NAME="zuo"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1844" NAME="西文字母开头的词语"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1860" NAME="附录">
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1862" NAME="我国历代纪元表"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1879" NAME="计量单位表"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1887" NAME="汉字偏旁名称表"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1890" NAME="汉语拼音方案"/>
-        <ITEM INDENT="2" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1893" NAME="元素周期表"/>
-    </ITEM>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1894" NAME="版权页"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1895" NAME="中国地图"/>
-    <ITEM INDENT="1" OPEN="1" PARMA="0.000000,0.000000,0.000000,0.000000" FONTSTYLE="0" COLOR="4278190080" ZOOMMODE="1" PAGE="1896" NAME="封底"/>
-</BOOKMARKS>
-`;
+        function pad(num, size) {
+            num = num.toString();
+            while (num.length < size) num = "0" + num;
+            return num;
+        }
 
-  var parser = new DOMParser();
-  var xmlDoc = parser.parseFromString(xmlString, "text/xml");
-  var menuContainer = document.getElementById('menu');
+        function showButtons() {
+            document.getElementById('prevBtn').style.display = 'block';
+            document.getElementById('nextBtn').style.display = 'block';
+        }
 
-  xmlDoc.querySelectorAll('ITEM').forEach(function(item) {
-    var listItem = document.createElement('li');
-    listItem.textContent = item.getAttribute('NAME');
-    listItem.onclick = function() {
-      showImage(parseInt(item.getAttribute('PAGE'), 10));
-    };
-    menuContainer.appendChild(listItem);
-  });
-</script>
+        function hideButtons() {
+            document.getElementById('prevBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+        const mainImage = document.getElementById('mainImage');
+        mainImage.addEventListener('mouseenter', showButtons);
+        mainImage.addEventListener('mouseleave', hideButtons);
 
+        document.getElementById('prevBtn').addEventListener('mouseenter', showButtons);
+        document.getElementById('prevBtn').addEventListener('mouseleave', hideButtons);
+
+        document.getElementById('nextBtn').addEventListener('mouseenter', showButtons);
+        document.getElementById('nextBtn').addEventListener('mouseleave', hideButtons);
+    </script>
 </body>
+
 </html>
