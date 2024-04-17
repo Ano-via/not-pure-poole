@@ -185,7 +185,7 @@ date: 2024-02-06 09:58 +0800
         <td></td>
     </tr>
     <tr>
-      <td bgcolor="FFC000"><font color="white" style="font-weight: bold">3.质量得分</font></td>
+      <td bgcolor="FFC000"><font color="white" style="font-weight: bold">3. 质量得分</font></td>
         <td></td>
         <td></td>
         <td></td>
@@ -257,7 +257,7 @@ date: 2024-02-06 09:58 +0800
         <td>√</td>
     </tr>
     <tr>
-      <td bgcolor="FFC000"><font color="white" style="font-weight: bold">5.更好地细分或预算分配</font></td>
+      <td bgcolor="FFC000"><font color="white" style="font-weight: bold">5. 更好地细分或预算分配</font></td>
         <td></td>
         <td></td>
         <td></td>
