@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 谷歌广告投放注意事项
-tags: [Google Ads, GG Ads, Google Adwords]
+tags: [Google, GG, Google Ads, GG Ads, Google Adwords]
 date: 2024-02-06 09:58 +0800
 ---
 <style>
