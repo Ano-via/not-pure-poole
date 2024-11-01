@@ -1,0 +1,124 @@
+---
+layout: default
+title: "密码生成器"
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>密码生成器</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .password-generator { max-width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .input-group { display: flex; margin-bottom: 10px; }
+        input[type="text"] { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 3px; }
+        button { padding: 8px 12px; margin-left: 10px; border: none; border-radius: 3px; cursor: pointer; }
+        button.copied { background-color: #28a745; color: #fff; }
+        .option-group { margin-bottom: 10px; }
+        .history { margin-top: 10px; font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+<div class="password-generator">
+    <!-- 第一行：密码生成输入框和按钮 -->
+    <div class="input-group">
+        <input type="text" id="password" readonly placeholder="点击生成密码">
+        <button id="generateBtn" onclick="generatePassword()">生成</button>
+    </div>
+    <!-- 第二行：密码长度选择 -->
+    <div class="option-group">
+        <label>密码长度：</label>
+        <label><input type="radio" name="length" value="8"> 8</label>
+        <label><input type="radio" name="length" value="16" checked> 16</label>
+        <label><input type="radio" name="length" value="32"> 32</label>
+    </div>
+    <!-- 第三行：密码复杂度选择 -->
+    <div class="option-group">
+        <label>复杂度：</label>
+        <label><input type="checkbox" id="numbers"> 数字</label>
+        <label><input type="checkbox" id="uppercase"> 大写字母</label>
+        <label><input type="checkbox" id="lowercase" checked> 小写字母</label>
+        <label><input type="checkbox" id="symbols"> 特殊符号</label>
+    </div>
+    <!-- 第四行：排除字符 -->
+    <div class="option-group">
+        <label><input type="checkbox" id="enableExcludeChars"> 排除字符：</label>
+        <input type="text" id="excludeChars" value="iIl1o0O" placeholder="排除字符" disabled>
+    </div>
+    <!-- 第五行：记录历史记录 -->
+    <div class="option-group">
+        <label><input type="checkbox" id="saveHistory"> 记录历史记录</label>
+    </div>
+    <!-- 历史记录展示 -->
+    <div class="history" id="historyList"></div>
+</div>
+
+<script>
+    // 切换排除字符输入框的启用状态
+    document.getElementById("enableExcludeChars").addEventListener("change", function() {
+        document.getElementById("excludeChars").disabled = !this.checked;
+    });
+
+    function generatePassword() {
+        // 获取选项
+        const length = document.querySelector('input[name="length"]:checked').value;
+        const useNumbers = document.getElementById("numbers").checked;
+        const useUppercase = document.getElementById("uppercase").checked;
+        const useLowercase = document.getElementById("lowercase").checked;
+        const useSymbols = document.getElementById("symbols").checked;
+        const enableExcludeChars = document.getElementById("enableExcludeChars").checked;
+        const excludeChars = enableExcludeChars ? document.getElementById("excludeChars").value : "";
+        const saveHistory = document.getElementById("saveHistory").checked;
+
+        const numbers = "0123456789";
+        const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowercase = "abcdefghijklmnopqrstuvwxyz";
+        const symbols = "!@#$%^&*()_+-=[]{}|;:'\",.<>/?";
+
+        let characters = "";
+        if (useNumbers) characters += numbers;
+        if (useUppercase) characters += uppercase;
+        if (useLowercase) characters += lowercase;
+        if (useSymbols) characters += symbols;
+
+        // 从字符集中排除用户指定的字符
+        let filteredChars = characters.split('').filter(char => !excludeChars.includes(char)).join('');
+
+        if (filteredChars === "") {
+            alert("请至少选择一种复杂度且排除字符不能全部排除！");
+            return;
+        }
+
+        let password = "";
+        for (let i = 0; i < length; i++) {
+            password += filteredChars.charAt(Math.floor(Math.random() * filteredChars.length));
+        }
+
+        // 将生成的密码显示在输入框中
+        const passwordField = document.getElementById("password");
+        passwordField.value = password;
+
+        // 复制到剪贴板
+        passwordField.select();
+        document.execCommand("copy");
+
+        // 修改按钮状态
+        const generateBtn = document.getElementById("generateBtn");
+        generateBtn.textContent = "√已复制";
+        generateBtn.classList.add("copied");
+
+        // 三秒后恢复原状
+        setTimeout(() => {
+            generateBtn.textContent = "生成";
+            generateBtn.classList.remove("copied");
+        }, 3000);
+
+        // 保存历史记录
+        if (saveHistory) {
+            const historyList = document.getElementById("historyList");
+            historyList.innerHTML += `<div>${password}</div>`;
+        }
+    }
+</script>
+</body>
+</html>
