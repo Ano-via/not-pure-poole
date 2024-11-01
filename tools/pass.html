@@ -2,21 +2,18 @@
 layout: default
 title: "密码生成器"
 ---
-<head>
-    <meta charset="UTF-8">
-    <title>密码生成器</title>
-    <style>
-        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .password-generator { max-width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
-        .input-group { display: flex; margin-bottom: 10px; }
-        input[type="text"] { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 3px; }
-        button { padding: 8px 12px; margin-left: 10px; border: none; border-radius: 3px; cursor: pointer; }
-        button.copied { background-color: #28a745; color: #fff; }
-        .option-group { margin-bottom: 10px; }
-        .history { margin-top: 10px; font-size: 0.9em; color: #555; }
-    </style>
-</head>
-<body>
+
+<style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .password-generator { max-width: 300px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+    .input-group { display: flex; margin-bottom: 10px; }
+    input[type="text"] { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 3px; }
+    button { padding: 8px 12px; margin-left: 10px; border: none; border-radius: 3px; cursor: pointer; }
+    button.copied { background-color: #28a745; color: #fff; }
+    .option-group { margin-bottom: 10px; }
+    .history { margin-top: 10px; font-size: 0.9em; color: #555; }
+</style>
+
 <div class="password-generator">
     <!-- 第一行：密码生成输入框和按钮 -->
     <div class="input-group">
@@ -118,4 +115,3 @@ title: "密码生成器"
         }
     }
 </script>
-</body>
