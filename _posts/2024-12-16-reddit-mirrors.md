@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reddit镜像站地址汇总
-tags: [Reddit, Proxy]
+tags: [Reddit, Mirror]
 date: 2024-12-16 09:58 +0800
 ---
 |Status|Url|
