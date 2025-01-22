@@ -57,3 +57,14 @@ author:
   name: Ano-via
   url: /
 #  email: vszhub@gmail.com
+
+# search Page
+collections:
+  posts:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /:path/
