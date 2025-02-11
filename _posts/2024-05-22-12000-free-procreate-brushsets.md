@@ -59,10 +59,12 @@ Procreate 笔刷可以说是 Procreate 绘画过程中最为重要的一个工�
 
 文件大小：9.5G
 
-下载方式：百度云网盘下载
+下载方式：百度云网盘下载 | 夸克下载
 
 文件内容：12000 款笔刷免费分享下载（附导入教程）
 
 ## 下载地址
 
-[百度云下载](https://pan.baidu.com/s/1gUYUTxCzAhvMRALTYUJqIg?pwd=zf0q)
+[百度云下载](https://pan.baidu.com/s/1YZxGEfuMWOmp5eqiLpSJxQ?pwd=wqmf)
+
+[夸克下载](https://pan.quark.cn/s/5bfa11281fcf)
