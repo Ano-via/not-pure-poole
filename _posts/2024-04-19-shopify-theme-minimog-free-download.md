@@ -14,4 +14,4 @@ https://demo.minimog.co/
 
 界面简洁 功能全面
 
-### [<u>免费下载</u>](https://pan.baidu.com/s/1F02GQ-B8wRug5tDK7HaXBw?pwd=xixt)
+### [<u>免费下载</u>](https://pan.baidu.com/s/1nRSdrugfc8C78yoCMEAGgg?pwd=yyrj)

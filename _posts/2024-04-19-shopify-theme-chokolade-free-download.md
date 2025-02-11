@@ -13,4 +13,4 @@ Demo:
 
 https://chokolade-store-demo.myshopify.com/
 
-### [<u>免费下载</u>](https://pan.baidu.com/s/1tmAOsFK1kJFL0A-VRYZ2YA?pwd=s6lf)
+### [<u>免费下载</u>](https://pan.baidu.com/s/1yI5zL3PzV1O7XNZPT5ODHA?pwd=yyrj)
