@@ -59,12 +59,9 @@ author:
 #  email: vszhub@gmail.com
 
 # search Page
-collections:
-  posts:
-    output: true
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      permalink: /:path/
+plugins:
+  - jekyll-lunr-js
+lunr:
+  fields:
+    - title
+    - content
