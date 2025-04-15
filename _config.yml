@@ -57,11 +57,3 @@ author:
   name: Ano-via
   url: /
 #  email: vszhub@gmail.com
-
-# search Page
-plugins:
-  - jekyll-lunr-js
-lunr:
-  fields:
-    - title
-    - content
