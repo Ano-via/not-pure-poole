@@ -2,7 +2,7 @@
 layout: post
 title: Windows 创建网上邻居共享文件夹，以 Win 11 为例
 tags: [Windows, Windows 11, Win 11]
-date: 2025-05-20 11:17 +0800
+date: 2025-06-20 11:17 +0800
 ---
 
 在 Win XP/Win7/Win8/Win10/Win11 创建网上邻居共享文件夹的方法基本一致，这里我以Win11为例：
