@@ -2,23 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
-<!-- 引入 Simple-Jekyll-Search JS 库 -->
-<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
-
-<!-- 初始化脚本 -->
-<script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-    noResultsText: '没有找到相关结果',
-    limit: 10, // 最多显示 10 条结果
-    fuzzy: false, // 是否开启模糊搜索
-    // 可选：排除某些内容不被搜索
-    // exclude: ['Welcome to Jekyll!'] 
-  });
-</script>
   <body>
 
     <div class="container pure-g">
