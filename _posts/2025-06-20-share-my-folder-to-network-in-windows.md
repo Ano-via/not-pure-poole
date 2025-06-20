@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 创建网上邻居共享文件夹，以 Win 11 为例
-tags: [Windows, Windows 11, Win 11]
+tags: [Windows, Windows 11, Win 11, 网上邻居]
 date: 2025-06-20 11:17 +0800
 ---
 
