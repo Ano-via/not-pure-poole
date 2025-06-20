@@ -3,32 +3,7 @@
   <h2 class="toc-title">Table of Contents</h2>
     <nav class="toc-nav">
       {% include toc.html html=content h_min=2 h_max=3 skipNoIDs=true class="toc" %}
-    
-      <style>
-  .search-form input[type="text"] {
-    padding: 0.6em;
-    width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  .search-form button {
-    padding: 0.6em 1em;
-    border: none;
-    background: #007acc;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-</style>
-      <div style="text-align:center; margin: 2em 0;">
-  <form action="https://www.google.com/search" method="get" target="_blank" onsubmit="this.q.value = 'site:rwho.top ' + this.search.value;">
-    <input type="hidden" name="q" value="">
-    <input type="text" name="search" placeholder="站内搜索..." style="padding: 0.5em; width: 60%; max-width: 400px;" />
-    <button type="submit" style="padding: 0.5em;">🔍 搜索</button>
-  </form>
-</div>
-
-  </nav>
+    </nav>
   
 </div>
 {% endif %}
