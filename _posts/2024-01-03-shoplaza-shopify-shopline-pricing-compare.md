@@ -47,6 +47,13 @@ date: 2025-06-26 11:17 +0800
         </tr>
     </thead>
     <tbody>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="#FFEFD5">28</td>
+        <td>99</td>
+        <td>218 </td>
+    </tr>
         <tr>
         <td>100</td>
         <td>3,000</td>
