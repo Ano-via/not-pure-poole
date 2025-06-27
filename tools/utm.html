@@ -12,9 +12,8 @@ title: "URL Shortener"
   }
 
   .platform-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    /* 图标和文字垂直居中 */
     gap: 8px;
     padding: 8px 12px;
     border: 1px solid #ccc;
@@ -22,10 +21,7 @@ title: "URL Shortener"
     cursor: pointer;
     transition: background 0.2s;
     user-select: none;
-    justify-content: center;
-    /* 水平居中按钮内容 */
   }
-
 
   .platform-button:hover {
     background: #f0f0f0;
@@ -35,10 +31,7 @@ title: "URL Shortener"
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    vertical-align: middle;
-    /* 图标跟文字中线对齐 */
   }
-
 
   #result a {
     color: blue;
@@ -76,7 +69,7 @@ title: "URL Shortener"
   <div class="platform-button" onclick="shortenUrl('vgd')">
     <img src="https://v.gd/favicon.ico" alt="V.gd" />
     <span>v.gd</span>
-  </div>
+  </div>      
   <div class="platform-button" onclick="shortenUrl('clck')">
     <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
     <span>clck.ru</span>
