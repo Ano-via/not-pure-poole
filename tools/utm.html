@@ -11,6 +11,12 @@ title: "URL Shortener"
     margin-top: 10px;
   }
 
+  @media (max-width: 600px) {
+    .platform-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .platform-button {
     display: flex;
     align-items: center;
@@ -69,7 +75,7 @@ title: "URL Shortener"
   <div class="platform-button" onclick="shortenUrl('vgd')">
     <img src="https://v.gd/favicon.ico" alt="V.gd" />
     <span>v.gd</span>
-  </div>      
+  </div>
   <div class="platform-button" onclick="shortenUrl('clck')">
     <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
     <span>clck.ru</span>
