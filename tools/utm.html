@@ -3,105 +3,118 @@ layout: default
 title: "URL Shortener"
 ---
 <style>
-    .platform-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      max-width: 480px;
-      margin-top: 10px;
-    }
-    .platform-button {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.2s;
-      user-select: none;
-    }
-    .platform-button:hover {
-      background: #f0f0f0;
-    }
-    .platform-button img {
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-    }
-    #result a {
-      color: blue;
-      text-decoration: underline;
-    }
-  </style>
-    <textarea id="longUrl" placeholder="请输入长链接" rows="3" style="width: 80%; padding: 6px; resize: vertical;"></textarea><br />
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 480px;
+    margin-top: 10px;
+  }
 
-  <div class="platform-grid">
-    <div class="platform-button" onclick="shortenUrl('bitly')">
-      <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
-      <span>Bitly</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('tinyurl')">
-      <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
-      <span>TinyURL</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('isgd')">
-      <img src="https://is.gd/favicon.ico" alt="is.gd" />
-      <span>is.gd</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('vgd')">
-      <img src="https://v.gd/favicon.ico" alt="v.gd" />
-      <span>v.gd</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('lnrun')">
-  <img src="https://cdn.shortenworld.com/lnrun/static/img/logo/favicon.png" alt="ln.run" />
-  <span>ln.run</span>
-</div>
-    <div class="platform-button" onclick="shortenUrl('reurl')">
-      <img src="https://reurl.cc/favicon.ico" alt="reurl.cc" />
-      <span>Reurl</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('rebrandly')">
-      <img src="https://www.rebrandly.com/favicon.png" alt="Rebrandly" />
-      <span>Rebrandly</span>
-    </div>
-    <div class="platform-button" onclick="shortenUrl('spoo')">
-      <img src="https://spoo.me/favicon.ico" alt="spoo.me" />
-      <span>Spoo</span>
-    </div>
+  .platform-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+  }
+
+  .platform-button:hover {
+    background: #f0f0f0;
+  }
+
+  .platform-button img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  #result a {
+    color: blue;
+    text-decoration: underline;
+  }
+</style>
+<textarea id="longUrl" placeholder="请输入长链接" rows="3"
+  style="width: 80%; padding: 6px; resize: vertical;"></textarea><br />
+
+<div class="platform-grid">
+  <div class="platform-button" onclick="shortenUrl('bitly')">
+    <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
+    <span>Bitly</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('tinyurl')">
+    <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
+    <span>TinyURL</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('isgd')">
+    <img src="https://is.gd/favicon.ico" alt="is.gd" />
+    <span>is.gd</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('vgd')">
+    <img src="https://v.gd/favicon.ico" alt="v.gd" />
+    <span>v.gd</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('shortio')">
+    <img src="https://short.io/favicon.png" alt="short.io" />
+    <span>Short.io</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('reurl')">
+    <img src="https://reurl.cc/favicon.ico" alt="reurl.cc" />
+    <span>Reurl</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('rebrandly')">
+    <img src="https://www.rebrandly.com/favicon.png" alt="Rebrandly" />
+    <span>Rebrandly</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('cuttly')">
+    <img src="https://cutt.ly/img/favicon-64x64.png" alt="cutt.ly" />
+    <span>Cutt.ly</span>
   </div>
 
-  <p id="result"></p>
+</div>
 
-  <script>
-    async function shortenUrl(platform) {
-      const url = document.getElementById('longUrl').value.trim();
-      const result = document.getElementById('result');
+<p id="result"></p>
 
-      if (!url) {
-        result.innerText = '请输入URL！';
-        return;
-      }
+<script>
+  async function shortenUrl(platform) {
+    const url = document.getElementById('longUrl').value.trim();
+    const result = document.getElementById('result');
 
-      result.innerText = '生成中...';
-
-      try {
-        const res = await fetch('https://billowing-moon-ce78.atticus-beta.workers.dev/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ url: url, platform: platform }),
-        });
-
-        const data = await res.json();
-
-        if (res.ok) {
-          result.innerHTML = `短链：<a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
-          console.log('已生成短链：' + data.short_url)
-        } else {
-          result.innerText = '出错：' + (data.error || '未知错误');
-        }
-      } catch (err) {
-        result.innerText = '请求失败：' + err;
-      }
+    if (!url) {
+      result.innerText = '请输入URL！';
+      return;
     }
-  </script>
+
+    result.innerText = '生成中...';
+
+    try {
+      const res = await fetch('https://billowing-moon-ce78.atticus-beta.workers.dev/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: url, platform: platform }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        result.innerHTML = `短链已复制到剪贴板：<br><a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
+        console.log('已生成短链：' + data.short_url)
+        // 自动复制到剪贴板
+        try {
+          await navigator.clipboard.writeText(data.short_url);
+        } catch (copyErr) {
+          console.error('复制失败', copyErr);
+          result.innerHTML += '<br>⚠️ 自动复制失败，请手动复制';
+        }
+      } else {
+        result.innerText = '出错：' + (data.error || '未知错误');
+      }
+    } catch (err) {
+      result.innerText = '请求失败：' + err;
+    }
+  }
+</script>
