@@ -2,39 +2,106 @@
 layout: default
 title: "URL Shortener"
 ---
-<input type="text" id="longUrl" placeholder="输入长链接">
-<select id="platform">
-  <option value="bitly">Bitly</option>
-  <option value="tinyurl">TinyURL</option>
-  <option value="isgd">is.gd</option>
-  <option value="reurl">Reurl.cc</option>
-  <option value="rebrandly">Rebrandly</option>
-  <option value="spoo">Spoo.me</option>
-</select>
-<button onclick="shorten()">生成短链</button>
-<p id="result"></p>
-
-<script>
-async function shorten() {
-  const url = document.getElementById('longUrl').value;
-  const platform = document.getElementById('platform').value;
-  const result = document.getElementById('result');
-  result.innerText = '处理中...';
-
-  try {
-    const res = await fetch('https://billowing-moon-ce78.atticus-beta.workers.dev/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: url, platform: platform })
-    });
-    const data = await res.json();
-    if (res.ok) {
-      result.innerHTML = `短链：<a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
-    } else {
-      result.innerText = '失败: ' + data.error;
+<style>
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 480px;
+      margin-top: 10px;
     }
-  } catch (e) {
-    result.innerText = '请求失败: ' + e.message;
-  }
-}
-</script>
+    .platform-button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .platform-button:hover {
+      background: #f0f0f0;
+    }
+    .platform-button img {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    #result a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+  <input type="text" id="longUrl" placeholder="请输入长链接" style="width: 80%; padding: 6px;" /><br />
+
+  <div class="platform-grid">
+    <div class="platform-button" onclick="shortenUrl('bitly')">
+      <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
+      <span>Bitly</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('tinyurl')">
+      <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
+      <span>TinyURL</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('isgd')">
+      <img src="https://is.gd/favicon.ico" alt="is.gd" />
+      <span>is.gd</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('vgd')">
+      <img src="https://v.gd/favicon.ico" alt="v.gd" />
+      <span>v.gd</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('lnrun')">
+  <img src="https://cdn.shortenworld.com/lnrun/static/img/logo/favicon.png" alt="ln.run" />
+  <span>ln.run</span>
+</div>
+    <div class="platform-button" onclick="shortenUrl('reurl')">
+      <img src="https://reurl.cc/favicon.ico" alt="reurl.cc" />
+      <span>Reurl</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('rebrandly')">
+      <img src="https://www.rebrandly.com/favicon.png" alt="Rebrandly" />
+      <span>Rebrandly</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('spoo')">
+      <img src="https://spoo.me/favicon.ico" alt="spoo.me" />
+      <span>Spoo</span>
+    </div>
+  </div>
+
+  <p id="result"></p>
+
+  <script>
+    async function shortenUrl(platform) {
+      const url = document.getElementById('longUrl').value.trim();
+      const result = document.getElementById('result');
+
+      if (!url) {
+        result.innerText = '请输入URL！';
+        return;
+      }
+
+      result.innerText = '生成中...';
+
+      try {
+        const res = await fetch('https://billowing-moon-ce78.atticus-beta.workers.dev/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: url, platform: platform }),
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          result.innerHTML = `短链：<a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
+          console.log('已生成短链：' + data.short_url)
+        } else {
+          result.innerText = '出错：' + (data.error || '未知错误');
+        }
+      } catch (err) {
+        result.innerText = '请求失败：' + err;
+      }
+    }
+  </script>
