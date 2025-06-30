@@ -4,6 +4,8 @@ title: "URL Shortener"
 permalink: utm.html
 ---
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
   .platform-grid {
     display: grid;
@@ -23,16 +25,17 @@ permalink: utm.html
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.2s;
     user-select: none;
+    background-color: #f8f9fa;
   }
 
   .platform-button:hover {
-    background: #f0f0f0;
+    background: #e2e6ea;
   }
 
   .platform-button img {
@@ -42,14 +45,18 @@ permalink: utm.html
   }
 
   #result a {
-    color: blue;
+    color: #0d6efd;
     text-decoration: underline;
   }
 
-  textarea {
+  textarea,
+  input[type="text"] {
     width: 100%;
-    margin-bottom: 10px;
     box-sizing: border-box;
+  }
+
+  textarea.form-control {
+    resize: vertical;
   }
 
   .utm-inputs {
@@ -61,174 +68,310 @@ permalink: utm.html
     position: relative;
   }
 
-  .copy-button {
+  #copyButton {
     position: absolute;
     top: 5px;
     right: 5px;
-    padding: 5px 10px;
     font-size: 12px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-
-  .copy-button:hover {
-    background-color: #45a049;
   }
 
   .copy-button.copied {
-    background-color: #28a745;
+    background-color: #28a745 !important;
   }
 </style>
-<h3>输入链接：</h3>
-<textarea id="textarea1" rows="5" placeholder="在这里输入链接，每行一个..."></textarea>
 
-<h3>选择 UTM 模板：</h3>
+<div class="container mt-4">
+  <h3>输入链接：</h3>
+  <textarea id="textarea1" rows="5" class="form-control mb-3" placeholder="在这里输入链接，每行一个..."></textarea>
 
-<label>
-  <input type="radio" name="utm_option" value="none" checked>
-  不添加UTM
-</label><br>
+  <h3>选择 UTM 模板：</h3>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="utm_option" value="none" checked id="utm_none">
+    <label class="form-check-label" for="utm_none">不添加UTM</label>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="template1">
-  TikTok模板（utm_source=TikTok&utm_medium= <input type="text" id="medium1" placeholder="请输入 medium">&...）
-</label><br>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="utm_option" value="template1" id="utm_template1">
+    <label class="form-check-label" for="utm_template1">
+      TikTok模板（utm_source=TikTok，utm_medium=
+      <input type="text" id="medium1" class="form-control form-control-sm d-inline w-auto" placeholder="请输入 medium">）
+    </label>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="template2">
-  Pinterest模板（utm_source=Pinterest&utm_medium= <input type="text" id="medium2" placeholder="请输入 medium">&...）
-</label><br>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="utm_option" value="template2" id="utm_template2">
+    <label class="form-check-label" for="utm_template2">
+      Pinterest模板（utm_source=Pinterest，utm_medium=
+      <input type="text" id="medium2" class="form-control form-control-sm d-inline w-auto" placeholder="请输入 medium">）
+    </label>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="custom">
-  自定义UTM
-</label>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="utm_option" value="custom" id="utm_custom">
+    <label class="form-check-label" for="utm_custom">自定义UTM</label>
+  </div>
 
-<div class="utm-inputs" id="customInputs">
-  <label>utm_source: <input type="text" id="custom_source"></label><br>
-  <label>utm_medium: <input type="text" id="custom_medium"></label><br>
-  <label>utm_campaign: <input type="text" id="custom_campaign"></label><br>
-  <label>utm_content: <input type="text" id="custom_content"></label>
+  <div class="utm-inputs mt-2" id="customInputs">
+    <div class="mb-2">
+      <label>utm_source: <input type="text" id="custom_source" class="form-control form-control-sm"></label>
+    </div>
+    <div class="mb-2">
+      <label>utm_medium: <input type="text" id="custom_medium" class="form-control form-control-sm"></label>
+    </div>
+    <div class="mb-2">
+      <label>utm_campaign: <input type="text" id="custom_campaign" class="form-control form-control-sm"></label>
+    </div>
+    <div class="mb-2">
+      <label>utm_content: <input type="text" id="custom_content" class="form-control form-control-sm"></label>
+    </div>
+  </div>
+
+  <h3>生成后的链接：</h3>
+
+  <div class="copy-container mb-3">
+    <textarea id="longUrl" rows="5" readonly class="form-control" placeholder="这里显示生成后的链接..."></textarea>
+    <button class="btn btn-success btn-sm copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
+  </div>
+
+  <h3>选择短链平台：</h3>
+  <div class="platform-grid">
+    <div class="platform-button" onclick="shortenUrl('bitly')">
+      <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
+      <span>Bitly</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('tinyurl')">
+      <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
+      <span>TinyURL</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('reurl')">
+      <img src="https://reurl.cc/favicon.ico" alt="Reurl.cc" />
+      <span>Reurl</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('rebrandly')">
+      <img src="https://www.rebrandly.com/favicon.png" alt="Rebrandly" />
+      <span>Rebrandly</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('cuttly')">
+      <img src="https://cutt.ly/img/favicon-64x64.png" alt="Cutt.ly" />
+      <span>Cutt.ly</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('isgd')">
+      <img src="https://is.gd/favicon.ico" alt="Is.gd" />
+      <span>Is.gd</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('vgd')">
+      <img src="https://v.gd/favicon.ico" alt="V.gd" />
+      <span>V.gd</span>
+    </div>
+    <div class="platform-button" onclick="shortenUrl('clck')">
+      <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
+      <span>Clck.ru</span>
+    </div>
+  </div>
+
+  <div class="mt-3">
+    <p id="result" class="text-danger"></p>
+  </div>
 </div>
 
-<h3>生成后的链接：</h3>
-
-<div class="copy-container">
-<textarea id="longUrl" rows="5" readonly placeholder="这里显示生成后的链接..."></textarea><br />
-<button class="copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
-</div>
-<div class="platform-grid">
-  <div class="platform-button" onclick="shortenUrl('bitly')">
-    <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
-    <span>Bitly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('tinyurl')">
-    <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
-    <span>TinyURL</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('reurl')">
-    <img src="https://reurl.cc/favicon.ico" alt="Reurl.cc" />
-    <span>Reurl</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('rebrandly')">
-    <img src="https://www.rebrandly.com/favicon.png" alt="Rebrandly" />
-    <span>Rebrandly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('cuttly')">
-    <img src="https://cutt.ly/img/favicon-64x64.png" alt="Cutt.ly" />
-    <span>Cutt.ly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('isgd')">
-    <img src="https://is.gd/favicon.ico" alt="Is.gd" />
-    <span>Is.gd</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('vgd')">
-    <img src="https://v.gd/favicon.ico" alt="V.gd" />
-    <span>V.gd</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('clck')">
-    <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
-    <span>Clck.ru</span>
-  </div>
-</div>
-<p></p>
-<p id="result"></p>
 
 <script>
-  document.querySelectorAll('input[name="utm_option"]').forEach(function(radio) {
-  radio.addEventListener('change', updateUTM);
-});
+  document.querySelectorAll('input[name="utm_option"]').forEach(function (radio) {
+    radio.addEventListener('change', updateUTM);
+  });
 
-document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function(input) {
-  input.addEventListener('input', updateUTM);
-});
+  document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #custom_content, #textarea1').forEach(function (input) {
+    input.addEventListener('input', updateUTM);
+  });
 
-function updateUTM() {
-  let lines = document.getElementById('textarea1').value.trim().split('\n');
-  let result = [];
-  let selected = document.querySelector('input[name="utm_option"]:checked').value;
+  function updateUTM() {
+    let lines = document.getElementById('textarea1').value.trim().split('\n');
+    let result = [];
+    let selected = document.querySelector('input[name="utm_option"]:checked').value;
 
-  document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
+    document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
 
-  lines.forEach(function(url) {
-    url = url.trim();
-    if (!url) return;
+    lines.forEach(function (url) {
+      url = url.trim();
+      if (!url) return;
 
-    let params = new URLSearchParams();
+      let params = new URLSearchParams();
 
-    if (selected === 'template1') {
-      params.set('utm_source', 'TikTok');
-      params.set('utm_medium', document.getElementById('medium1').value.trim());
-      params.set('utm_adset','__AID_NAME__')
-      params.set('utm_ad','__CID_NAME__')
-    } else if (selected === 'template2') {
-      params.set('utm_source', 'Pinterest');
-      params.set('utm_medium', document.getElementById('medium2').value.trim());
-      params.set('utm_campaign','{campaignid}')
-      params.set('utm_content','{adid}')
-    } else if (selected === 'custom') {
-      params.set('utm_source', document.getElementById('custom_source').value.trim());
-      params.set('utm_medium', document.getElementById('custom_medium').value.trim());
-      params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
-      params.set('utm_content', document.getElementById('custom_content').value.trim());
-    } else {
-      result.push(url);
+      if (selected === 'template1') {
+        params.set('utm_source', 'TikTok');
+        params.set('utm_medium', document.getElementById('medium1').value.trim());
+        params.set('utm_adset', '__AID_NAME__')
+        params.set('utm_ad', '__CID_NAME__')
+      } else if (selected === 'template2') {
+        params.set('utm_source', 'Pinterest');
+        params.set('utm_medium', document.getElementById('medium2').value.trim());
+        params.set('utm_campaign', '{campaignid}')
+        params.set('utm_content', '{adid}')
+      } else if (selected === 'custom') {
+        if (document.getElementById('custom_source').value.trim()) {
+          params.set('utm_source', document.getElementById('custom_source').value.trim());
+        }
+        if (document.getElementById('custom_medium').value.trim()) {
+          params.set('utm_medium', document.getElementById('custom_medium').value.trim());
+        }
+        if (document.getElementById('custom_campaign').value.trim()) {
+          params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
+        }
+        if (document.getElementById('custom_content').value.trim()) {
+          params.set('utm_content', document.getElementById('custom_content').value.trim());
+        }
+      } else {
+        result.push(url);
+        return;
+      }
+
+      let separator = url.includes('?') ? '&' : '?';
+      result.push(url + separator + params.toString());
+    });
+
+    document.getElementById('longUrl').value = result.join('\n');
+
+    // 重置复制按钮状态
+    let btn = document.getElementById('copyButton');
+    btn.classList.remove('copied');
+    btn.textContent = '复制';
+  }
+
+  function copyToClipboard() {
+    let textarea = document.getElementById('longUrl');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // 兼容移动端
+
+    document.execCommand('copy');
+
+    let btn = document.getElementById('copyButton');
+    btn.classList.add('copied');
+    btn.textContent = '√ 已复制';
+
+    // 3秒后恢复按钮文字
+    setTimeout(function () {
+      btn.classList.remove('copied');
+      btn.textContent = '复制';
+    }, 3000);
+  }
+  async function shortenUrl(platform) {
+    const url = document.getElementById('longUrl').value.trim();
+    const result = document.getElementById('result');
+
+    if (!url) {
+      result.innerText = '请输入URL！';
       return;
     }
 
-    let separator = url.includes('?') ? '&' : '?';
-    result.push(url + separator + params.toString());
+    result.innerText = '生成中...';
+
+    try {
+      const res = await fetch('https://billowing-moon-ce78.atticus-beta.workers.dev/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: url, platform: platform }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        result.innerHTML = `短链已复制到剪贴板：<br><a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
+        console.log('已生成短链：' + data.short_url)
+        // 自动复制到剪贴板
+        try {
+          await navigator.clipboard.writeText(data.short_url);
+        } catch (copyErr) {
+          console.error('复制失败', copyErr);
+          result.innerHTML += '<br>⚠️ 自动复制失败，请手动复制';
+        }
+      } else {
+        result.innerText = '出错：' + (data.error || '未知错误');
+      }
+    } catch (err) {
+      result.innerText = '请求失败：' + err;
+    }
+  }
+</script>
+
+<script>
+  document.querySelectorAll('input[name="utm_option"]').forEach(function (radio) {
+    radio.addEventListener('change', updateUTM);
   });
 
-  document.getElementById('longUrl').value = result.join('\n');
+  document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #custom_content, #textarea1').forEach(function (input) {
+    input.addEventListener('input', updateUTM);
+  });
 
-  // 重置复制按钮状态
-  let btn = document.getElementById('copyButton');
-  btn.classList.remove('copied');
-  btn.textContent = '复制';
-}
+  function updateUTM() {
+    let lines = document.getElementById('textarea1').value.trim().split('\n');
+    let result = [];
+    let selected = document.querySelector('input[name="utm_option"]:checked').value;
 
-function copyToClipboard() {
-  let textarea = document.getElementById('longUrl');
-  textarea.select();
-  textarea.setSelectionRange(0, 99999); // 兼容移动端
+    document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
 
-  document.execCommand('copy');
+    lines.forEach(function (url) {
+      url = url.trim();
+      if (!url) return;
 
-  let btn = document.getElementById('copyButton');
-  btn.classList.add('copied');
-  btn.textContent = '√ 已复制';
+      let params = new URLSearchParams();
 
-  // 3秒后恢复按钮文字
-  setTimeout(function() {
+      if (selected === 'template1') {
+        params.set('utm_source', 'TikTok');
+        params.set('utm_medium', document.getElementById('medium1').value.trim());
+        params.set('utm_adset', '__AID_NAME__')
+        params.set('utm_ad', '__CID_NAME__')
+      } else if (selected === 'template2') {
+        params.set('utm_source', 'Pinterest');
+        params.set('utm_medium', document.getElementById('medium2').value.trim());
+        params.set('utm_campaign', '{campaignid}')
+        params.set('utm_content', '{adid}')
+      } else if (selected === 'custom') {
+        if (document.getElementById('custom_source').value.trim()) {
+          params.set('utm_source', document.getElementById('custom_source').value.trim());
+        }
+        if (document.getElementById('custom_medium').value.trim()) {
+          params.set('utm_medium', document.getElementById('custom_medium').value.trim());
+        }
+        if (document.getElementById('custom_campaign').value.trim()) {
+          params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
+        }
+        if (document.getElementById('custom_content').value.trim()) {
+          params.set('utm_content', document.getElementById('custom_content').value.trim());
+        }
+      } else {
+        result.push(url);
+        return;
+      }
+
+      let separator = url.includes('?') ? '&' : '?';
+      result.push(url + separator + params.toString());
+    });
+
+    document.getElementById('longUrl').value = result.join('\n');
+
+    // 重置复制按钮状态
+    let btn = document.getElementById('copyButton');
     btn.classList.remove('copied');
     btn.textContent = '复制';
-  }, 3000);
-}
+  }
+
+  function copyToClipboard() {
+    let textarea = document.getElementById('longUrl');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // 兼容移动端
+
+    document.execCommand('copy');
+
+    let btn = document.getElementById('copyButton');
+    btn.classList.add('copied');
+    btn.textContent = '√ 已复制';
+
+    // 3秒后恢复按钮文字
+    setTimeout(function () {
+      btn.classList.remove('copied');
+      btn.textContent = '复制';
+    }, 3000);
+  }
   async function shortenUrl(platform) {
     const url = document.getElementById('longUrl').value.trim();
     const result = document.getElementById('result');
