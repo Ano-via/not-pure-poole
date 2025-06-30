@@ -204,7 +204,7 @@ function updateUTM() {
     result.push(url + separator + params.toString());
   });
 
-  document.getElementById('textarea2').value = result.join('\n');
+  document.getElementById('longUrl').value = result.join('\n');
 
   // 重置复制按钮状态
   let btn = document.getElementById('copyButton');
@@ -213,7 +213,7 @@ function updateUTM() {
 }
 
 function copyToClipboard() {
-  let textarea = document.getElementById('textarea2');
+  let textarea = document.getElementById('longUrl');
   textarea.select();
   textarea.setSelectionRange(0, 99999); // 兼容移动端
 
