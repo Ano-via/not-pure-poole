@@ -3,6 +3,7 @@ layout: default
 title: "URL Shortener"
 permalink: utm.html
 ---
+
 <style>
   .platform-grid {
     display: grid;
@@ -44,10 +45,82 @@ permalink: utm.html
     color: blue;
     text-decoration: underline;
   }
-</style>
-<textarea id="longUrl" placeholder="请输入长链接" rows="5"
-  style="width: 100%; padding: 6px; resize: vertical;"></textarea><br />
 
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .utm-inputs {
+    display: none;
+    margin-top: 5px;
+  }
+
+  .copy-container {
+    position: relative;
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .copy-button:hover {
+    background-color: #45a049;
+  }
+
+  .copy-button.copied {
+    background-color: #28a745;
+  }
+</style>
+<h3>输入链接：</h3>
+<textarea id="textarea1" rows="5" placeholder="在这里输入链接，每行一个..."></textarea>
+
+<h3>选择 UTM 模板：</h3>
+
+<label>
+  <input type="radio" name="utm_option" value="none" checked>
+  不添加UTM
+</label><br>
+
+<label>
+  <input type="radio" name="utm_option" value="template1">
+  TikTok模板（utm_source=TikTok&utm_medium= <input type="text" id="medium1" placeholder="请输入 medium">&...）
+</label><br>
+
+<label>
+  <input type="radio" name="utm_option" value="template2">
+  Pinterest模板（utm_source=Pinterest&utm_medium= <input type="text" id="medium2" placeholder="请输入 medium">&...）
+</label><br>
+
+<label>
+  <input type="radio" name="utm_option" value="custom">
+  自定义UTM
+</label>
+
+<div class="utm-inputs" id="customInputs">
+  <label>utm_source: <input type="text" id="custom_source"></label><br>
+  <label>utm_medium: <input type="text" id="custom_medium"></label><br>
+  <label>utm_campaign: <input type="text" id="custom_campaign"></label><br>
+  <label>utm_campaign: <input type="text" id="custom_campaign"></label>
+</div>
+
+<h3>生成后的链接：</h3>
+
+<div class="copy-container">
+<textarea id="longUrl" rows="5" readonly placeholder="这里显示生成后的链接..."></textarea><br />
+<button class="copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
+</div>
 <div class="platform-grid">
   <div class="platform-button" onclick="shortenUrl('bitly')">
     <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
@@ -86,6 +159,76 @@ permalink: utm.html
 <p id="result"></p>
 
 <script>
+  document.querySelectorAll('input[name="utm_option"]').forEach(function(radio) {
+  radio.addEventListener('change', updateUTM);
+});
+
+document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function(input) {
+  input.addEventListener('input', updateUTM);
+});
+
+function updateUTM() {
+  let lines = document.getElementById('textarea1').value.trim().split('\n');
+  let result = [];
+  let selected = document.querySelector('input[name="utm_option"]:checked').value;
+
+  document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
+
+  lines.forEach(function(url) {
+    url = url.trim();
+    if (!url) return;
+
+    let params = new URLSearchParams();
+
+    if (selected === 'template1') {
+      params.set('utm_source', 'TikTok');
+      params.set('utm_medium', document.getElementById('medium1').value.trim());
+      params.set('utm_adset','__AID_NAME__')
+      params.set('utm_ad','__CID_NAME__')
+    } else if (selected === 'template2') {
+      params.set('utm_source', 'Pinterest');
+      params.set('utm_medium', document.getElementById('medium2').value.trim());
+      params.set('utm_campaign','{campaignid}')
+      params.set('utm_content','{adid}')
+    } else if (selected === 'custom') {
+      params.set('utm_source', document.getElementById('custom_source').value.trim());
+      params.set('utm_medium', document.getElementById('custom_medium').value.trim());
+      params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
+      params.set('utm_content', document.getElementById('custom_content').value.trim());
+    } else {
+      result.push(url);
+      return;
+    }
+
+    let separator = url.includes('?') ? '&' : '?';
+    result.push(url + separator + params.toString());
+  });
+
+  document.getElementById('textarea2').value = result.join('\n');
+
+  // 重置复制按钮状态
+  let btn = document.getElementById('copyButton');
+  btn.classList.remove('copied');
+  btn.textContent = '复制';
+}
+
+function copyToClipboard() {
+  let textarea = document.getElementById('textarea2');
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // 兼容移动端
+
+  document.execCommand('copy');
+
+  let btn = document.getElementById('copyButton');
+  btn.classList.add('copied');
+  btn.textContent = '√ 已复制';
+
+  // 3秒后恢复按钮文字
+  setTimeout(function() {
+    btn.classList.remove('copied');
+    btn.textContent = '复制';
+  }, 3000);
+}
   async function shortenUrl(platform) {
     const url = document.getElementById('longUrl').value.trim();
     const result = document.getElementById('result');
