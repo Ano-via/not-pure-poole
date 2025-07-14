@@ -118,8 +118,8 @@ permalink: utm.html
 <h3>生成后的链接：</h3>
 
 <div class="copy-container">
-<textarea id="longUrl" rows="5" readonly placeholder="这里显示生成后的链接..."></textarea><br />
-<button class="copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
+  <textarea id="longUrl" rows="5" readonly placeholder="这里显示生成后的链接..."></textarea><br />
+  <button class="copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
 </div>
 <div class="platform-grid">
   <div class="platform-button" onclick="shortenUrl('bitly')">
@@ -154,81 +154,98 @@ permalink: utm.html
     <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
     <span>Clck.ru</span>
   </div>
+  <!-- Backup APIs
+  <div class="platform-button" onclick="shortenUrl('kutt')">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACsklEQVR4AcSTg84lWRRG1z5VY9u2zWgQjxEnYxvP0HHGxlOMbbO7w7ZtXHXd87V37t3pv/qv5kp28hX3OmJ3YwSe/q91Opl/LGtv+mB5Y5HB+gN507XnHHL8NtNBdtmYB/adxAAlEDkSdCARhSCQj2AwGwjH3xV7mnQogURECs3kWQjFu56F4lteYBtTq04gIDxJSIAIyKv+iUssaSBgPiHxt24jNmaFvAUpoQ7GouYzEK8VJPyRvFwIDS7NlDEP7FcBaVQCPhiiTBy8EEICr6GXXOTv2LdGQMTsoxGo4QwgUM4/xNmPAvUivh8UnEZcc3zzoqrTWvopEElppL6hy/C0hnc8BRFXUf70lWdOWcQWKAmcoNVpb6soElhhgJFlVNno9RPtnrGqW1D1h1vZ0KoIw5/Q67VeHpj2XCsgZdKmNwsTpYkCKEooDYr9oDBoV8aSVsGCFSWrO4aD+Tawjf/7+JUnT/wVZ1iiJJIFKSyHMYzBAXuKg/eqOOPQiuWtxJSFJYtWFCD5S5KWrVg869ncr7xhlIgCfmqbcNh+fY5cV4tXFYybsQftTgKUu51V977z4gWzwqijSUAA5oV5HrlkgHHkAZkbz+ly7MH9vKbbevDVR074PPZqeAybs0cB157Z5e6rO3tSDztOwAhY2nvvvd/+ZfzE25sLGIC2uwzSvvvt++FnP/5+aiMBMwN2WO1/7HHHv3ngQQenRgI7kpTshq9+/v2GUQvsrf4KBhFbR9Rg7L/f/s833IRqVlb/fP0s/PD7P8c3EDAvdsyeSIcdfvjNO+8Yiq1SFMX1DJOjwE4lmV0am+/sPRCK47/87qd9gdxgD+zQSkcfc8yxu2MPOGVZHjoKAYs/3zEYmNn+BEoCZiwClgH7u08NFt+xGJ0O0ry1Q06I+IynUU2K2SgBALKHpaeAPdrdAAAAAElFTkSuQmCC">
+    <span>Kutt.it</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('ulvis')">
+    <img src="https://ulvis.net/favicon.ico">
+    <span>Ulvis</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('cleanuri')">
+    <span>CleanURI</span>
+  </div>
+  <div class="platform-button" onclick="shortenUrl('spoo')">
+    <img src="https://spoo.me/static/images/favicon.png">
+    <span>Spoo.me</span>
+  </div>
+  -->
 </div>
 <p></p>
 <p id="result"></p>
 
 <script>
-  document.querySelectorAll('input[name="utm_option"]').forEach(function(radio) {
-  radio.addEventListener('change', updateUTM);
-});
-
-document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function(input) {
-  input.addEventListener('input', updateUTM);
-});
-
-function updateUTM() {
-  let lines = document.getElementById('textarea1').value.trim().split('\n');
-  let result = [];
-  let selected = document.querySelector('input[name="utm_option"]:checked').value;
-
-  document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
-
-  lines.forEach(function(url) {
-    url = url.trim();
-    if (!url) return;
-
-    let params = new URLSearchParams();
-
-    if (selected === 'template1') {
-      params.set('utm_source', 'TikTok');
-      params.set('utm_medium', document.getElementById('medium1').value.trim());
-      params.set('utm_adset','__AID_NAME__')
-      params.set('utm_ad','__CID_NAME__')
-    } else if (selected === 'template2') {
-      params.set('utm_source', 'Pinterest');
-      params.set('utm_medium', document.getElementById('medium2').value.trim());
-      params.set('utm_campaign','{campaignid}')
-      params.set('utm_content','{adid}')
-    } else if (selected === 'custom') {
-      params.set('utm_source', document.getElementById('custom_source').value.trim());
-      params.set('utm_medium', document.getElementById('custom_medium').value.trim());
-      params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
-      params.set('utm_content', document.getElementById('custom_content').value.trim());
-    } else {
-      result.push(url);
-      return;
-    }
-
-    let separator = url.includes('?') ? '&' : '?';
-    result.push(url + separator + params.toString());
+  document.querySelectorAll('input[name="utm_option"]').forEach(function (radio) {
+    radio.addEventListener('change', updateUTM);
   });
 
-  document.getElementById('longUrl').value = result.join('\n');
+  document.querySelectorAll('#medium1, #medium2, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function (input) {
+    input.addEventListener('input', updateUTM);
+  });
 
-  // 重置复制按钮状态
-  let btn = document.getElementById('copyButton');
-  btn.classList.remove('copied');
-  btn.textContent = '复制';
-}
+  function updateUTM() {
+    let lines = document.getElementById('textarea1').value.trim().split('\n');
+    let result = [];
+    let selected = document.querySelector('input[name="utm_option"]:checked').value;
 
-function copyToClipboard() {
-  let textarea = document.getElementById('longUrl');
-  textarea.select();
-  textarea.setSelectionRange(0, 99999); // 兼容移动端
+    document.getElementById('customInputs').style.display = selected === 'custom' ? 'block' : 'none';
 
-  document.execCommand('copy');
+    lines.forEach(function (url) {
+      url = url.trim();
+      if (!url) return;
 
-  let btn = document.getElementById('copyButton');
-  btn.classList.add('copied');
-  btn.textContent = '√ 已复制';
+      let params = new URLSearchParams();
 
-  // 3秒后恢复按钮文字
-  setTimeout(function() {
+      if (selected === 'template1') {
+        params.set('utm_source', 'TikTok');
+        params.set('utm_medium', document.getElementById('medium1').value.trim());
+        params.set('utm_adset', '__AID_NAME__')
+        params.set('utm_ad', '__CID_NAME__')
+      } else if (selected === 'template2') {
+        params.set('utm_source', 'Pinterest');
+        params.set('utm_medium', document.getElementById('medium2').value.trim());
+        params.set('utm_campaign', '{campaignid}')
+        params.set('utm_content', '{adid}')
+      } else if (selected === 'custom') {
+        params.set('utm_source', document.getElementById('custom_source').value.trim());
+        params.set('utm_medium', document.getElementById('custom_medium').value.trim());
+        params.set('utm_campaign', document.getElementById('custom_campaign').value.trim());
+        params.set('utm_content', document.getElementById('custom_content').value.trim());
+      } else {
+        result.push(url);
+        return;
+      }
+
+      let separator = url.includes('?') ? '&' : '?';
+      result.push(url + separator + params.toString());
+    });
+
+    document.getElementById('longUrl').value = result.join('\n');
+
+    // 重置复制按钮状态
+    let btn = document.getElementById('copyButton');
     btn.classList.remove('copied');
     btn.textContent = '复制';
-  }, 3000);
-}
+  }
+
+  function copyToClipboard() {
+    let textarea = document.getElementById('longUrl');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // 兼容移动端
+
+    document.execCommand('copy');
+
+    let btn = document.getElementById('copyButton');
+    btn.classList.add('copied');
+    btn.textContent = '√ 已复制';
+
+    // 3秒后恢复按钮文字
+    setTimeout(function () {
+      btn.classList.remove('copied');
+      btn.textContent = '复制';
+    }, 3000);
+  }
   async function shortenUrl(platform) {
     const url = document.getElementById('longUrl').value.trim();
     const result = document.getElementById('result');
