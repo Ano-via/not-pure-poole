@@ -22,31 +22,31 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力300，前方炮击，碰到敌人3x3格范围爆破</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no002高级加农砲ハイキャノンHiCannon">高级加农砲</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no002高级加农砲ハイキャノンhicannon">高级加农砲</a></td>
             <td>002</td>
             <td>LMN</td>
             <td>攻击力400，同上</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no003MEGA加农砲メガキャノンM-Cannon">MEGA加农砲</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no003mega加农砲メガキャノンm-cannon">MEGA加农砲</a></td>
             <td>003</td>
             <td>RST</td>
             <td>攻击力500，同上</td>
         </tr>
         <tr>
-            <td>地狱燃烧者1</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no019地狱燃烧者1ヘルズバーナー１firebrn1">地狱燃烧者1</a></td>
             <td>019</td>
             <td>FGH</td>
             <td>攻击力300，大范围火焰攻击，地面裂开</td>
         </tr>
         <tr>
-            <td>地狱燃烧者2</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no020地狱燃烧者2ヘルズバーナー２firebrn2">地狱燃烧者2</a></td>
             <td>020</td>
             <td>STU</td>
             <td>攻击力350，同上</td>
         </tr>
         <tr>
-            <td>地狱燃烧者3</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no021地狱燃烧者3ヘルズバーナー３firebrn3">地狱燃烧者3</a></td>
             <td>021</td>
             <td>CDE</td>
             <td>攻击力400，同上</td>
