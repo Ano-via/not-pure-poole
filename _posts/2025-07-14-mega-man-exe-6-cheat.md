@@ -533,7 +533,7 @@ date: 2025-07-14 11:17 +0800
 
 
 
-晶片入手方式请参考：[这里](/_posts/2025-07-14-mega-man-exe-6-chip-source.md)
+晶片入手方式请参考：[这里](/2025/07/14/mega-man-exe-6-chip-source/)
 
 
 
@@ -549,7 +549,7 @@ date: 2025-07-14 11:17 +0800
 
 
 
-晶片入手方式请参考：[这里](/_posts/2025-07-14-mega-man-exe-6-chip-source.md)
+晶片入手方式请参考：[这里](/2025/07/14/mega-man-exe-6-chip-source/)
 
 
 
@@ -563,7 +563,7 @@ date: 2025-07-14 11:17 +0800
 
 
 
-晶片入手方式请参考：[这里](/_posts/2025-07-14-mega-man-exe-6-chip-source.md)
+晶片入手方式请参考：[这里](/2025/07/14/mega-man-exe-6-chip-source/)
 
 
 
