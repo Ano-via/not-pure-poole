@@ -52,19 +52,19 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力400，同上</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no021地狱燃烧者3ヘルズバーナー３firebrn3">火焰拳1</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no105火焰拳1ファイアパンチ１firehit1">火焰拳1</a></td>
             <td>105</td>
             <td>DEF</td>
             <td>攻击力300，面前三排区域大型火焰拳攻击</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no021地狱燃烧者3ヘルズバーナー３firebrn3">火焰拳2</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no106火焰拳2ファイアパンチ２firehit2">火焰拳2</a></td>
             <td>106</td>
             <td>RST</td>
             <td>攻击力350，同上</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no021地狱燃烧者3ヘルズバーナー３firebrn3">火焰拳3</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no107火焰拳3ファイアパンチ３firehit3">火焰拳3</a></td>
             <td>107</td>
             <td>ABC</td>
             <td>攻击力400，同上</td>
@@ -124,7 +124,7 @@ date: 2025-07-14 11:15 +0800
             <td>同上</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no033电气脉冲1エレキパルス１elcpuls1">电气脉冲1/2/3</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no033电气脉冲1エレキパルス１elcpuls1">电气脉冲1</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no034电气脉冲2エレキパルス２elcpuls2">2</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no035电气脉冲3エレキパルス３elcpuls3">3</a></td>
             <td>033/034/035</td>
             <td>JJJ</td>
             <td>攻击力400，前面T型音波攻击，有麻痹效果</td>
@@ -148,7 +148,7 @@ date: 2025-07-14 11:15 +0800
             <td>同上</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no048灵光头1オーラヘッド１aurahed1">灵光头1/2/3</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no048灵光头1オーラヘッド１aurahed1">灵光头1</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no049灵光头2オーラヘッド２aurahed2">2</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no050灵光头3オーラヘッド３aurahed3">3</a></td>
             <td>048/049/050</td>
             <td>BCD/DEF/FGH</td>
             <td>攻击力150，面前一直线连续N个飞头攻击</td>
@@ -160,13 +160,13 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力150，向前放出N个直列三格的水波攻击</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no009散射枪1スプレッドガン１spreadr1">散射枪1/2/3</a></td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no009散射枪1スプレッドガン１spreadr1">散射枪1</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no010散射枪2スプレッドガン２spreadr2">2</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no011散射枪3スプレッドガン３spreadr3">3</a></td>
             <td>009/010/011</td>
             <td>LMN/ABC/QRS</td>
             <td>攻击力60，向前放射炮击，碰到敌人3x3格连续攻击</td>
         </tr>
         <tr>
-            <td>剑/宽剑/长剑</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no070剑ソードsword">剑</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no071宽剑ワイドソードwideswrd">宽剑</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no072长剑ロングソードlongswrd">长剑</a></td>
             <td>070/071/072</td>
             <td>HHH/LLL/SSS</td>
             <td>攻击力400，面前2排阔剑攻击</td>
@@ -184,43 +184,43 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力100，放出连续弹边的冰球</td>
         </tr>
         <tr>
-            <td>毒沼种子/毒沼种子/毒气阿努比斯</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no069毒沼种子ポイズンシードpoisseed">毒沼种子/毒沼种子</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no155毒气阿努比斯ポイズンアヌビスanubis">毒气阿努比斯</a></td>
             <td>069/069/155</td>
             <td>PPP</td>
             <td>攻击力0，面前放置连续扣体力的毒神像</td>
         </tr>
         <tr>
-            <td>领航员征用/空手夺白刃/替身</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no188领航员征用ナビスカウトantinavi">领航员征用</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no190空手夺白刃シラハドリantiswrd">空手夺白刃</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no189替身カワリミantidmg">替身</a></td>
             <td>188/190/189</td>
             <td>\*\*\*</td>
             <td>攻击力100，放置陷阱，若使用某某攻击就被反击</td>
         </tr>
         <tr>
-            <td>宽刃/长刃/布鲁斯SP</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no073宽刃ワイドブレードwideblde">宽刃</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no074长刃ロングブレードlongblde">长刃</a>/布鲁斯SP</td>
             <td>073/074/布鲁斯SP</td>
             <td>BBB</td>
             <td>攻击力0，洛克人和布鲁斯对敌全区域连续攻击</td>
         </tr>
         <tr>
-            <td>稻草人/稻草人/弗尔德</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no153稻草人ワラニンギョウvdoll">稻草人/稻草人</a>/弗尔德</td>
             <td>153/153/弗尔德</td>
             <td>FFF</td>
             <td>攻击力300，黑暗洛克人使用大范围炎之吐息，然后弗尔德用他的阔剑攻击</td>
         </tr>
         <tr>
-            <td>火焰拳3/水针3/电气脉冲3/危险蜂蜜3</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no107火焰拳3ファイアパンチ３firehit3">火焰拳3</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no114水针3アクアニードル３aquandl3">水针3</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no035电气脉冲3エレキパルス３elcpuls3">电气脉冲3</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no041危险蜂蜜3リスキーハニー３rskyhny3">危险蜂蜜3</a></td>
             <td>107/114/035/041</td>
             <td>AAAA</td>
             <td>攻击力100，洛克人全魂融合形态出现对敌区域全面攻击</td>
         </tr>
         <tr>
-            <td>流星群/攻击+30/反安装</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no111流星群リュウセイグンmeteors">流星群</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no197攻击30アタック３０atk30">攻击+30</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no193反安装アンインストールuninstll">反安装</a></td>
             <td>111/197/193</td>
             <td>RRR</td>
             <td>攻击力200，红日与蓝月的合体攻击</td>
         </tr>
         <tr>
-            <td>布鲁斯SP/领航员征用/卡尼路</td>
+            <td>布鲁斯SP/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no188领航员征用ナビスカウトantinavi">领航员征用</a>/卡尼路</td>
             <td>布鲁斯SP/188/卡尼路</td>
             <td>\*\*\*</td>
             <td>攻击力200，布鲁斯和卡尼路的连续斩击</td>
