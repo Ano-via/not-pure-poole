@@ -16,7 +16,7 @@ date: 2025-07-14 11:15 +0800
     </thead>
     <tbody>
         <tr>
-            <td>加农砲</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#No.001加农砲（キャノン／Cannon）">加农砲</a></td>
             <td>001</td>
             <td>ABC</td>
             <td>攻击力300，前方炮击，碰到敌人3x3格范围爆破</td>
