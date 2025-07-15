@@ -22,13 +22,13 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力300，前方炮击，碰到敌人3x3格范围爆破</td>
         </tr>
         <tr>
-            <td>高级加农砲</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no002高级加农砲ハイキャノンHiCannon">高级加农砲</td>
             <td>002</td>
             <td>LMN</td>
             <td>攻击力400，同上</td>
         </tr>
         <tr>
-            <td>MEGA加农砲</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no003MEGA加农砲メガキャノンM-Cannon">MEGA加农砲</td>
             <td>003</td>
             <td>RST</td>
             <td>攻击力500，同上</td>
