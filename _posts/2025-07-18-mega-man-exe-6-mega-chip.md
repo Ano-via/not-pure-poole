@@ -6,8 +6,8 @@ tags: [洛克人]
 date: 2025-07-14 11:15 +0800
 ---
 
-<div class="post-body entry-content" id="post-body-3405641020697357760" itemprop="articleBody" style="font-size: 1rem;">
-<h3 id="nom01">No.M01萝露（ロール／Roll）</h3>
+
+<h3 id="nom01">No.M01 萝露（ロール／Roll）</h3>
 <p>威力：20<br>
   系统：无<br>
   容量：20MB<br>
@@ -17,7 +17,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nom02">No.M02萝露V2（ロールV2／Roll2）</h3>
+<h3 id="nom02">No.M02 萝露V2（ロールV2／Roll2）</h3>
 <p>威力：40<br>
   系统：无<br>
   容量：40MB<br>
@@ -26,7 +26,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nom03">No.M03萝露V3（ロールV3／Roll3）</h3>
+<h3 id="nom03">No.M03 萝露V3（ロールV3／Roll3）</h3>
 <p>威力：60<br>
   系统：无<br>
   容量：60MB<br>
@@ -35,7 +35,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nom04">No.M04布鲁斯（ブルース／ProtoMan）</h3>
+<h3 id="nom04">No.M04 布鲁斯（ブルース／ProtoMan）</h3>
 <p>威力：150<br>
   系统：剑<br>
   容量：41MB<br>
@@ -46,7 +46,7 @@ date: 2025-07-14 11:15 +0800
   布鲁斯（ブルース／ProtoMan）<br>
   －和秋原町热斗旧家门口的炎山对话进行网络战斗</p>
 <hr>
-<h3 id="nom05">No.M05布鲁斯EX（ブルースEX／ProtoMnEX）</h3>
+<h3 id="nom05">No.M05 布鲁斯EX（ブルースEX／ProtoMnEX）</h3>
 <p>威力：170<br>
   系统：剑<br>
   容量：53MB<br>
@@ -57,7 +57,7 @@ date: 2025-07-14 11:15 +0800
   －和秋原町热斗旧家门口的炎山对话进行网络战斗</p>
 <p>※必须将改造卡以外的委托全部完成才能挑战布鲁斯SP</p>
 <hr>
-<h3 id="nom06">No.M06布鲁斯SP（ブルースSP／ProtoMnSP）</h3>
+<h3 id="nom06">No.M06 布鲁斯SP（ブルースSP／ProtoMnSP）</h3>
 <p>威力：???<br>
   系统：剑<br>
   容量：68MB<br>
@@ -68,9 +68,9 @@ date: 2025-07-14 11:15 +0800
   －和秋原町热斗旧家门口的炎山对话进行网络战斗</p>
 <p>※必须将改造卡以外的委托全部完成才能挑战布鲁斯SP</p>
 <hr>
-<h3 id="nom07">No.M07~No.M21为止的内容会阴版本而有差异，以下为库雷卡版的内容，另一个版本的芯片将归类在隐藏芯片数据库。</h3>
+<h3 id="nom07">No.M07 ~No.M21 为止的内容会阴版本而有差异，以下为库雷卡版的内容，另一个版本的芯片将归类在隐藏芯片数据库。</p>
 <hr>
-<h3 id="nom07">No.M07高热人（ヒートマン／HeatMan）</h3>
+<h3 id="nom07">No.M07 高热人（ヒートマン／HeatMan）</h3>
 <p>威力：100<br>
   系统：火<br>
   容量：32MB<br>
@@ -81,7 +81,7 @@ date: 2025-07-14 11:15 +0800
   高热人（ヒートマン／HeatMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom08">No.M08高热人EX（ヒートマンEX／HeatManEX）</h3>
+<h3 id="nom08">No.M08 高热人EX（ヒートマンEX／HeatManEX）</h3>
 <p>威力：130<br>
   系统：火<br>
   容量：55MB<br>
@@ -91,7 +91,7 @@ date: 2025-07-14 11:15 +0800
   高热人（ヒートマン／HeatMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom09">No.M09高热人SP（ヒートマンSP／HeatManSP）</h3>
+<h3 id="nom09">No.M09 高热人SP（ヒートマンSP／HeatManSP）</h3>
 <p>威力：???<br>
   系统：火<br>
   容量：70MB<br>
@@ -101,7 +101,7 @@ date: 2025-07-14 11:15 +0800
   高热人（ヒートマン／HeatMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom10">No.M10电气人（エレキマン／ElecMan）</h3>
+<h3 id="nom10">No.M10 电气人（エレキマン／ElecMan）</h3>
 <p>威力：120<br>
   系统：电<br>
   容量：38MB<br>
@@ -112,7 +112,7 @@ date: 2025-07-14 11:15 +0800
   电气人（エレキマン／ElecMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom11">No.M11电气人EX（エレキマンEX／ElecManEX）</h3>
+<h3 id="nom11">No.M11 电气人EX（エレキマンEX／ElecManEX）</h3>
 <p>威力：140<br>
   系统：电<br>
   容量：52MB<br>
@@ -122,7 +122,7 @@ date: 2025-07-14 11:15 +0800
   电气人（エレキマン／ElecMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom12">No.M12电气人SP（エレキマンSP／ElecManSP）</h3>
+<h3 id="nom12">No.M12 电气人SP（エレキマンSP／ElecManSP）</h3>
 <p>威力：???<br>
   系统：电<br>
   容量：79MB<br>
@@ -132,7 +132,7 @@ date: 2025-07-14 11:15 +0800
   电气人（エレキマン／ElecMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom13">No.M13切削人（スラッシュマン／SlashMan）</h3>
+<h3 id="nom13">No.M13 切削人（スラッシュマン／SlashMan）</h3>
 <p>威力：80<br>
   系统：剑<br>
   容量：42MB<br>
@@ -143,7 +143,7 @@ date: 2025-07-14 11:15 +0800
   切削人（スラッシュマン／SlashMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom14">No.M14切削人EX（スラッシュマンEX／SlashMnEX）</h3>
+<h3 id="nom14">No.M14 切削人EX（スラッシュマンEX／SlashMnEX）</h3>
 <p>威力：100<br>
   系统：剑<br>
   容量：65MB<br>
@@ -153,7 +153,7 @@ date: 2025-07-14 11:15 +0800
   切削人（スラッシュマン／SlashMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom15">No.M15切削人SP（スラッシュマンSP／SlashMnSP）</h3>
+<h3 id="nom15">No.M15 切削人SP（スラッシュマンSP／SlashMnSP）</h3>
 <p>威力：???<br>
   系统：剑<br>
   容量：79MB<br>
@@ -163,7 +163,7 @@ date: 2025-07-14 11:15 +0800
   切削人（スラッシュマン／SlashMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom16">No.M16杀手人（キラーマン／EraseMan）</h3>
+<h3 id="nom16">No.M16 杀手人（キラーマン／EraseMan）</h3>
 <p>威力：120<br>
   系统：游标<br>
   容量：51MB<br>
@@ -174,7 +174,7 @@ date: 2025-07-14 11:15 +0800
   杀手人（キラーマン／EraseMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom17">No.M17杀手人EX（キラーマンEX／EraseMnEX）</h3>
+<h3 id="nom17">No.M17 杀手人EX（キラーマンEX／EraseMnEX）</h3>
 <p>威力：140<br>
   系统：游标<br>
   容量：65MB<br>
@@ -184,7 +184,7 @@ date: 2025-07-14 11:15 +0800
   杀手人（キラーマン／EraseMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom18">No.M18杀手人SP（キラーマンSP／EraseMnSP）</h3>
+<h3 id="nom18">No.M18 杀手人SP（キラーマンSP／EraseMnSP）</h3>
 <p>威力：???<br>
   系统：游标<br>
   容量：79MB<br>
@@ -194,7 +194,7 @@ date: 2025-07-14 11:15 +0800
   杀手人（キラーマン／EraseMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom19">No.M19冲锋人（チャージマン／ChrgeMan）</h3>
+<h3 id="nom19">No.M19 冲锋人（チャージマン／ChrgeMan）</h3>
 <p>威力：60<br>
   系统：无<br>
   容量：42MB<br>
@@ -205,7 +205,7 @@ date: 2025-07-14 11:15 +0800
   冲锋人（チャージマン／ChrgeMan）<br>
   －水族馆2的自动贩卖机前</p>
 <hr>
-<h3 id="nom20">No.M20冲锋人EX（チャージマンEX／ChrgeMnEX）</h3>
+<h3 id="nom20">No.M20 冲锋人EX（チャージマンEX／ChrgeMnEX）</h3>
 <p>威力：70<br>
   系统：无<br>
   容量：63MB<br>
@@ -215,7 +215,7 @@ date: 2025-07-14 11:15 +0800
   冲锋人（チャージマン／ChrgeMan）<br>
   －水族馆2的自动贩卖机前</p>
 <hr>
-<h3 id="nom21">No.M21冲锋人SP（チャージマンSP／ChrgeMnSP）</h3>
+<h3 id="nom21">No.M21 冲锋人SP（チャージマンSP／ChrgeMnSP）</h3>
 <p>威力：???<br>
   系统：无<br>
   容量：81MB<br>
@@ -225,9 +225,9 @@ date: 2025-07-14 11:15 +0800
   冲锋人（チャージマン／ChrgeMan）<br>
   －水族馆2的自动贩卖机前</p>
 <hr>
-<h3 id="nom07">No.M07~No.M21为止的内容会阴版本而有差异，以下为法尔沙版的内容，另一个版本的芯片将归类在隐藏芯片数据库。</h3>
+<h3 id="nom07">No.M07 ~No.M21 为止的内容会阴版本而有差异，以下为法尔沙版的内容，另一个版本的芯片将归类在隐藏芯片数据库。</p>
 <hr>
-<h3 id="nom07">No.M07水人（アクアマン／SpoutMan）</h3>
+<h3 id="nom07">No.M07 水人（アクアマン／SpoutMan）</h3>
 <p>威力：50<br>
   系统：水<br>
   容量：42MB<br>
@@ -238,7 +238,7 @@ date: 2025-07-14 11:15 +0800
   水人（アクアマン／SpoutMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom08">No.M08水人EX（アクアマンEX／SpoutMnEX）</h3>
+<h3 id="nom08">No.M08 水人EX（アクアマンEX／SpoutMnEX）</h3>
 <p>威力：60<br>
   系统：水<br>
   容量：56MB<br>
@@ -248,7 +248,7 @@ date: 2025-07-14 11:15 +0800
   水人（アクアマン／SpoutMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom09">No.M09水人SP（アクアマンSP／SpoutMnSP）</h3>
+<h3 id="nom09">No.M09 水人SP（アクアマンSP／SpoutMnSP）</h3>
 <p>威力：???<br>
   系统：水<br>
   容量：78MB<br>
@@ -258,7 +258,7 @@ date: 2025-07-14 11:15 +0800
   水人（アクアマン／SpoutMan）<br>
   －才叶学园第一研究室</p>
 <hr>
-<h3 id="nom10">No.M10战斧人（トマホークマン／TmhkMan）</h3>
+<h3 id="nom10">No.M10 战斧人（トマホークマン／TmhkMan）</h3>
 <p>威力：140<br>
   系统：木<br>
   容量：40MB<br>
@@ -269,7 +269,7 @@ date: 2025-07-14 11:15 +0800
   战斧人（トマホークマン／TmhkMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom11">No.M11战斧人EX（トマホークマンEX／TmhkManEX）</h3>
+<h3 id="nom11">No.M11 战斧人EX（トマホークマンEX／TmhkManEX）</h3>
 <p>威力：160<br>
   系统：木<br>
   容量：60MB<br>
@@ -279,7 +279,7 @@ date: 2025-07-14 11:15 +0800
   战斧人（トマホークマン／TmhkMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom12">No.M12战斧人SP（トマホークマンSP／TmhkManSP）</h3>
+<h3 id="nom12">No.M12 战斧人SP（トマホークマンSP／TmhkManSP）</h3>
 <p>威力：???<br>
   系统：木<br>
   容量：80MB<br>
@@ -289,7 +289,7 @@ date: 2025-07-14 11:15 +0800
   战斧人（トマホークマン／TmhkMan）<br>
   －天空镇直升机停机坪</p>
 <hr>
-<h3 id="nom13">No.M13天狗人（テングマン／TenguMan）</h3>
+<h3 id="nom13">No.M13 天狗人（テングマン／TenguMan）</h3>
 <p>威力：70<br>
   系统：风<br>
   容量：43MB<br>
@@ -300,7 +300,7 @@ date: 2025-07-14 11:15 +0800
   天狗人（テングマン／TenguMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom14">No.M14天狗人EX（テングマンEX／TenguMnEX）</h3>
+<h3 id="nom14">No.M14 天狗人EX（テングマンEX／TenguMnEX）</h3>
 <p>威力：90<br>
   系统：风<br>
   容量：61MB<br>
@@ -310,7 +310,7 @@ date: 2025-07-14 11:15 +0800
   天狗人（テングマン／TenguMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom15">No.M15天狗人SP（テングマンSP／TenguMnSP）</h3>
+<h3 id="nom15">No.M15 天狗人SP（テングマンSP／TenguMnSP）</h3>
 <p>威力：???<br>
   系统：风<br>
   容量：74MB<br>
@@ -320,7 +320,7 @@ date: 2025-07-14 11:15 +0800
   天狗人（テングマン／TenguMan）<br>
   －绿镇中央的圆木广场</p>
 <hr>
-<h3 id="nom16">No.M16地面人（グランドマン／GrndMan）</h3>
+<h3 id="nom16">No.M16 地面人（グランドマン／GrndMan）</h3>
 <p>威力：60<br>
   系统：破防<br>
   容量：41MB<br>
@@ -331,7 +331,7 @@ date: 2025-07-14 11:15 +0800
   地面人（グランドマン／GrndMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom17">No.M17地面人EX（グランドマンEX／GrndManEX）</h3>
+<h3 id="nom17">No.M17 地面人EX（グランドマンEX／GrndManEX）</h3>
 <p>威力：70<br>
   系统：破防<br>
   容量：66MB<br>
@@ -341,7 +341,7 @@ date: 2025-07-14 11:15 +0800
   地面人（グランドマン／GrndMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom18">No.M18地面人SP（グランドマンSP／GrndManSP）</h3>
+<h3 id="nom18">No.M18 地面人SP（グランドマンSP／GrndManSP）</h3>
 <p>威力：???<br>
   系统：破防<br>
   容量：85MB<br>
@@ -351,7 +351,7 @@ date: 2025-07-14 11:15 +0800
   地面人（グランドマン／GrndMan）<br>
   －才叶学园第二研究室</p>
 <hr>
-<h3 id="nom19">No.M19尘埃人（ダストマン／DustMan）</h3>
+<h3 id="nom19">No.M19 尘埃人（ダストマン／DustMan）</h3>
 <p>威力：110<br>
   系统：无<br>
   容量：39MB<br>
@@ -362,7 +362,7 @@ date: 2025-07-14 11:15 +0800
   尘埃人（ダストマン／DustMan）<br>
   －水族馆2的自动贩卖机前</p>
 <hr>
-<h3 id="nom20">No.M20尘埃人EX（ダストマンEX／DustManEX）</h3>
+<h3 id="nom20">No.M20 尘埃人EX（ダストマンEX／DustManEX）</h3>
 <p>威力：130<br>
   系统：无<br>
   容量：56MB<br>
@@ -372,7 +372,7 @@ date: 2025-07-14 11:15 +0800
   尘埃人（ダストマン／DustMan）<br>
   －水族馆2的自动贩卖机前</p>
 <hr>
-<h3 id="nom21">No.M21尘埃人SP（ダストマンSP／DustManSP）</h3>
+<h3 id="nom21">No.M21 尘埃人SP（ダストマンSP／DustManSP）</h3>
 <p>威力：???<br>
   系统：无<br>
   容量：74MB<br>
@@ -383,7 +383,7 @@ date: 2025-07-14 11:15 +0800
   －水族馆2的自动贩卖机前</p>
 <p>以下为两版本共通芯片。</p>
 <hr>
-<h3 id="nom22">No.M22爆破人（ブラストマン／BlastMan）</h3>
+<h3 id="nom22">No.M22 爆破人（ブラストマン／BlastMan）</h3>
 <p>威力：120<br>
   系统：火<br>
   容量：30MB<br>
@@ -394,7 +394,7 @@ date: 2025-07-14 11:15 +0800
   爆破人（ブラストマン／BlastMan）<br>
   －中央区域（セントラルエリア／Central Area）2</p>
 <hr>
-<h3 id="nom23">No.M23爆破人EX（ブラストマンEX／BlastMnEX）</h3>
+<h3 id="nom23">No.M23 爆破人EX（ブラストマンEX／BlastMnEX）</h3>
 <p>威力：140<br>
   系统：火<br>
   容量：49MB<br>
@@ -404,7 +404,7 @@ date: 2025-07-14 11:15 +0800
   爆破人（ブラストマン／BlastMan）<br>
   －中央区域（セントラルエリア／Central Area）2</p>
 <hr>
-<h3 id="nom24">No.M24爆破人SP（ブラストマンSP／BlastMnSP）</h3>
+<h3 id="nom24">No.M24 爆破人SP（ブラストマンSP／BlastMnSP）</h3>
 <p>威力：???<br>
   系统：火<br>
   容量：68MB<br>
@@ -414,7 +414,7 @@ date: 2025-07-14 11:15 +0800
   爆破人（ブラストマン／BlastMan）<br>
   －中央区域（セントラルエリア／Central Area）2</p>
 <hr>
-<h3 id="nom25">No.M25潜水人（ダイブマン／DiveMan）</h3>
+<h3 id="nom25">No.M25 潜水人（ダイブマン／DiveMan）</h3>
 <p>威力：130<br>
   系统：水<br>
   容量：45MB<br>
@@ -425,7 +425,7 @@ date: 2025-07-14 11:15 +0800
   潜水人（ダイブマン／DiveMan）<br>
   －海边区域（シーサイドエリア／Seaside Area）1</p>
 <hr>
-<h3 id="nom26">No.M26潜水人EX（ダイブマンEX／DiveManEX）</h3>
+<h3 id="nom26">No.M26 潜水人EX（ダイブマンEX／DiveManEX）</h3>
 <p>威力：150<br>
   系统：水<br>
   容量：49MB<br>
@@ -435,7 +435,7 @@ date: 2025-07-14 11:15 +0800
   潜水人（ダイブマン／DiveMan）<br>
   －海边区域（シーサイドエリア／Seaside Area）1</p>
 <hr>
-<h3 id="nom27">No.M27潜水人SP（ダイブマンSP／DiveManSP）</h3>
+<h3 id="nom27">No.M27 潜水人SP（ダイブマンSP／DiveManSP）</h3>
 <p>威力：???<br>
   系统：水<br>
   容量：68MB<br>
@@ -445,7 +445,7 @@ date: 2025-07-14 11:15 +0800
   潜水人（ダイブマン／DiveMan）<br>
   －海边区域（シーサイドエリア／Seaside Area）1</p>
 <hr>
-<h3 id="nom28">No.M28马戏团人（サーカスマン／CrcusMan）</h3>
+<h3 id="nom28">No.M28 马戏团人（サーカスマン／CrcusMan）</h3>
 <p>威力：20<br>
   系统：无<br>
   容量：42MB<br>
@@ -456,7 +456,7 @@ date: 2025-07-14 11:15 +0800
   马戏团人（サーカスマン／CrcusMan）<br>
   －中央区域（セントラルエリア／Central Area）3</p>
 <hr>
-<h3 id="nom29">No.M29马戏团人EX（サーカスマンEX／CrcusMnEX）</h3>
+<h3 id="nom29">No.M29 马戏团人EX（サーカスマンEX／CrcusMnEX）</h3>
 <p>威力：25<br>
   系统：无<br>
   容量：64MB<br>
@@ -466,7 +466,7 @@ date: 2025-07-14 11:15 +0800
   马戏团人（サーカスマン／CrcusMan）<br>
   －中央区域（セントラルエリア／Central Area）3</p>
 <hr>
-<h3 id="nom30">No.M30马戏团人SP（サーカスマンSP／CrcusMnSP）</h3>
+<h3 id="nom30">No.M30 马戏团人SP（サーカスマンSP／CrcusMnSP）</h3>
 <p>威力：???<br>
   系统：无<br>
   容量：86MB<br>
@@ -476,7 +476,7 @@ date: 2025-07-14 11:15 +0800
   马戏团人（サーカスマン／CrcusMan）<br>
   －中央区域（セントラルエリア／Central Area）3</p>
 <hr>
-<h3 id="nom31">No.M31审判人（ジャッジマン／JudgeMan）</h3>
+<h3 id="nom31">No.M31 审判人（ジャッジマン／JudgeMan）</h3>
 <p>威力：100<br>
   系统：电<br>
   容量：52MB<br>
@@ -487,7 +487,7 @@ date: 2025-07-14 11:15 +0800
   审判人（ジャッジマン／JudgeMan）<br>
   －绿镇区域（グリーンエリア／Green Area）2</p>
 <hr>
-<h3 id="nom32">No.M32审判人EX（ジャッジマンEX／JudgeMnEX）</h3>
+<h3 id="nom32">No.M32 审判人EX（ジャッジマンEX／JudgeMnEX）</h3>
 <p>威力：120<br>
   系统：电<br>
   容量：62MB<br>
@@ -497,7 +497,7 @@ date: 2025-07-14 11:15 +0800
   审判人（ジャッジマン／JudgeMan）<br>
   －绿镇区域（グリーンエリア／Green Area）2</p>
 <hr>
-<h3 id="nom33">No.M33审判人SP（ジャッジマンSP／JudgeMnSP）</h3>
+<h3 id="nom33">No.M33 审判人SP（ジャッジマンSP／JudgeMnSP）</h3>
 <p>威力：???<br>
   系统：电<br>
   容量：72MB<br>
@@ -507,7 +507,7 @@ date: 2025-07-14 11:15 +0800
   审判人（ジャッジマン／JudgeMan）<br>
   －绿镇区域（グリーンエリア／Green Area）2</p>
 <hr>
-<h3 id="nom34">No.M34元素人（エレメントマン／ElmntMan）</h3>
+<h3 id="nom34">No.M34 元素人（エレメントマン／ElmntMan）</h3>
 <p>威力：100<br>
   系统：无<br>
   容量：50MB<br>
@@ -518,7 +518,7 @@ date: 2025-07-14 11:15 +0800
   元素人（エレメントマン／ElmntMan）<br>
   －天空区域（スカイエリア／Sky Area）1</p>
 <hr>
-<h3 id="nom35">No.M35元素人EX（エレメントマンEX／ElmntMnEX）</h3>
+<h3 id="nom35">No.M35 元素人EX（エレメントマンEX／ElmntMnEX）</h3>
 <p>威力：120<br>
   系统：无<br>
   容量：53MB<br>
@@ -528,7 +528,7 @@ date: 2025-07-14 11:15 +0800
   元素人（エレメントマン／ElmntMan）<br>
   －天空区域（スカイエリア／Sky Area）1</p>
 <hr>
-<h3 id="nom36">No.M36元素人SP（エレメントマンSP／ElmntMnSP）</h3>
+<h3 id="nom36">No.M36 元素人SP（エレメントマンSP／ElmntMnSP）</h3>
 <p>威力：???<br>
   系统：无<br>
   容量：66MB<br>
@@ -538,7 +538,7 @@ date: 2025-07-14 11:15 +0800
   元素人（エレメントマン／ElmntMan）<br>
   －天空区域（スカイエリア／Sky Area）1</p>
 <hr>
-<h3 id="nom37">No.M37卡尼尔（カーネル／Colonel）</h3>
+<h3 id="nom37">No.M37 卡尼尔（カーネル／Colonel）</h3>
 <p>威力：160<br>
   系统：剑<br>
   容量：45MB<br>
@@ -549,7 +549,7 @@ date: 2025-07-14 11:15 +0800
   卡尼尔（カーネル／Colonel）<br>
   －地下世界（アンダーグラウンド／Underground）</p>
 <hr>
-<h3 id="nom38">No.M38卡尼尔EX（カーネルEX／ColoneEX）</h3>
+<h3 id="nom38">No.M38 卡尼尔EX（カーネルEX／ColoneEX）</h3>
 <p>威力：180<br>
   系统：剑<br>
   容量：70MB<br>
@@ -559,7 +559,7 @@ date: 2025-07-14 11:15 +0800
   卡尼尔（カーネル／Colonel）<br>
   －地下世界（アンダーグラウンド／Underground）</p>
 <hr>
-<h3 id="nom39">No.M39卡尼尔SP（カーネルSP／ColonelSP）</h3>
+<h3 id="nom39">No.M39 卡尼尔SP（カーネルSP／ColonelSP）</h3>
 <p>威力：???<br>
   系统：剑<br>
   容量：91MB<br>
@@ -569,7 +569,7 @@ date: 2025-07-14 11:15 +0800
   卡尼尔（カーネル／Colonel）<br>
   －地下世界（アンダーグラウンド／Underground）</p>
 <hr>
-<h3 id="nom40">No.M40伯爵（ハクシャク／Count）</h3>
+<h3 id="nom40">No.M40 伯爵（ハクシャク／Count）</h3>
 <p>威力：20<br>
   系统：无<br>
   容量：60MB<br>
@@ -580,7 +580,7 @@ date: 2025-07-14 11:15 +0800
   伯爵（ハクシャク／Count）<br>
   －永生者区域（イモータルエリア／ImmortalArea）</p>
 <hr>
-<h3 id="nom41">No.M41伯爵EX（ハクシャクEX／CountEX）</h3>
+<h3 id="nom41">No.M41 伯爵EX（ハクシャクEX／CountEX）</h3>
 <p>威力：25<br>
   系统：无<br>
   容量：75MB<br>
@@ -590,7 +590,7 @@ date: 2025-07-14 11:15 +0800
   伯爵（ハクシャク／Count）<br>
   －永生者区域（イモータルエリア／ImmortalArea）</p>
 <hr>
-<h3 id="nom42">No.M42伯爵SP（ハクシャクSP／CountSP）</h3>
+<h3 id="nom42">No.M42 伯爵SP（ハクシャクSP／CountSP）</h3>
 <p>威力：???<br>
   系统：无<br>
   容量：89MB<br>
@@ -600,7 +600,7 @@ date: 2025-07-14 11:15 +0800
   伯爵（ハクシャク／Count）<br>
   －永生者区域（イモータルエリア／ImmortalArea）</p>
 <hr>
-<h3 id="nom43">No.M43强戈（ジャンゴ／Django）</h3>
+<h3 id="nom43">No.M43 强戈（ジャンゴ／Django）</h3>
 <p>威力：130<br>
   系统：无<br>
   容量：30MB<br>
@@ -610,7 +610,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nom44">No.M44强戈V2（ジャンゴV2／Django2）</h3>
+<h3 id="nom44">No.M44 强戈V2（ジャンゴV2／Django2）</h3>
 <p>威力：180<br>
   系统：无<br>
   容量：70MB<br>
@@ -619,7 +619,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nom45">No.M45强戈V3（ジャンゴV3／Django3）</h3>
+<h3 id="nom45">No.M45 强戈V3（ジャンゴV3／Django3）</h3>
 <p>威力：260<br>
   系统：无<br>
   容量：90MB<br>
@@ -630,7 +630,7 @@ date: 2025-07-14 11:15 +0800
 <p>以下为隐藏芯片，数据库分类为隐藏芯片，不影响MEGA数据库的收集，<br>
   但会影响秘密数据库的收集，且芯片分级也是MEGA。</p>
 <hr>
-<h3 id="nos01">No.S01太阳枪EX（ガンデルソルＥＸ／GunDelEX）</h3>
+<h3 id="nos01">No.S01 太阳枪EX（ガンデルソルＥＸ／GunDelEX）</h3>
 <p>威力：-<br>
   系统：无<br>
   容量：80MB<br>
@@ -639,7 +639,7 @@ date: 2025-07-14 11:15 +0800
 <p>掉落领航员和出没区域：<br>
   无</p>
 <hr>
-<h3 id="nos02">No.S02天鼓大人（オテンコサマ／Otenko）</h3>
+<h3 id="nos02">No.S02 天鼓大人（オテンコサマ／Otenko）</h3>
 <p>威力：-<br>
   系统：置物<br>
   容量：66MB<br>
@@ -649,7 +649,7 @@ date: 2025-07-14 11:15 +0800
   无</p>
 <p>以下为改造卡赠送限定芯片，不影响数据库的收集，但芯片分级是MEGA。</p>
 <hr>
-<h3 id="nosm">No.SM双重野兽（ダブルビースト／DblBeast）</h3>
+<h3 id="nosm">No.SM 双重野兽（ダブルビースト／DblBeast）</h3>
 <p>威力：-<br>
   系统：无<br>
   容量：99MB<br>
@@ -660,5 +660,3 @@ date: 2025-07-14 11:15 +0800
 <hr>
 <p><br>
 </p>
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/like.php?locale=zh_TW&amp;href=https://rmmh.blogspot.com/2023/08/exe6-m-chip.html&amp;layout=standard&amp;action=like&amp;colorscheme=light&amp;share=true" style="display: block; margin-top: 20px; border:none; overflow:hidden; max-width:100%; width: 100%; height:20px;clear:both;"></iframe>
-</div>
