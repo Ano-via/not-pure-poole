@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: 洛克人 EXE6 Mega芯片
 tags: [洛克人]
