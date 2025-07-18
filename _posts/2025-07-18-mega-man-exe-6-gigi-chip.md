@@ -1,3 +1,9 @@
+---
+layout: post
+title: 洛克人 EXE6 Gigi芯片
+tags: [洛克人]
+date: 2025-07-14 11:15 +0800
+---
 
 <h3 id="gregar">法尔沙版和库雷卡版的GIGA芯片内容皆不相同，以下为库雷卡版。</h3>
 <a href="#falzar">跳转到法尔沙版</a>
