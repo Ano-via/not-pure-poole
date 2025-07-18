@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 洛克人 EXE6 常见晶片组合及效果
+title: 洛克人 EXE6 常见晶片组合（PA）及效果
 tags: [洛克人]
 date: 2025-07-14 11:15 +0800
 ---
@@ -196,13 +196,13 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力100 x 10，放置陷阱，若使用某某攻击就被反击</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no073" target="_blank">宽刃</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no074" target="_blank">长刃</a>/布鲁斯SP</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no073" target="_blank">宽刃</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no074" target="_blank">长刃</a>/<a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom06" target="_blank">布鲁斯SP</a></td>
             <td>073/074/布鲁斯SP</td>
             <td>BBB</td>
             <td>攻击力60 x 10，洛克人和布鲁斯对敌全区域连续攻击</td>
         </tr>
         <tr>
-            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no153" target="_blank">稻草人/稻草人</a>/弗尔德</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-chip-source/#no153" target="_blank">稻草人/稻草人</a>/<a href="/2025/07/18/mega-man-exe-6-gigi-chip/#nom01" target="_blank">弗尔德</a></td>
             <td>153/153/弗尔德</td>
             <td>FFF</td>
             <td>攻击力300 x 2，黑暗洛克人使用大范围炎之吐息，然后弗尔德用他的阔剑攻击</td>
@@ -220,13 +220,13 @@ date: 2025-07-14 11:15 +0800
             <td>攻击力200 x 2 或 50 x 6，红日与蓝月的合体攻击</td>
         </tr>
         <tr>
-            <td>布鲁斯SP/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no188" target="_blank">领航员征用</a>/卡尼路</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom06" target="_blank">布鲁斯SP</a>/<a href="/2025/07/14/mega-man-exe-6-chip-source/#no188" target="_blank">领航员征用</a>/<a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom37" target="_blank">卡尼路</a></td>
             <td>布鲁斯SP/188/卡尼路</td>
             <td>\*\*\*</td>
             <td>攻击力200 x 2 或 (200 + 400)，布鲁斯和卡尼路的连续斩击</td>
         </tr>
         <tr>
-            <td>强哥+V2+V3</td>
+            <td><a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom43" target="_blank">强哥</a>+<a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom44" target="_blank">V2</a>+<a href="/2025/07/14/mega-man-exe-6-mega-chip/#nom45" target="_blank">V3</a></td>
             <td>强哥+V2+V3</td>
             <td>DDD</td>
             <td>攻击力360 + 360 + (100 或 200)，洛克人和强哥的合体攻击，只打夹在中间的人</td>
