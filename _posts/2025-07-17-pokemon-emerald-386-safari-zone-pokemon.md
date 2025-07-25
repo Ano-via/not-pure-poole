@@ -2,7 +2,7 @@
 layout: post
 title: 口袋妖怪绿宝石386版狩猎区捉宠资料
 tags: [宠物小精灵, 绿宝石]
-date: 2025-08-01 11:15 +0800
+date: 2025-07-25 11:15 +0800
 ---
 
 <table width="700" border="0" cellspacing="0" cellpadding="0">
