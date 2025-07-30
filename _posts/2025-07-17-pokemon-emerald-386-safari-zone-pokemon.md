@@ -7,10 +7,6 @@ date: 2025-07-25 11:15 +0800
 
 <table width="700" border="0" cellspacing="0" cellpadding="0">
   <tbody>
-    <tr>
-      <td style="font-size:24px; font-family:黑体; color:#000000; text-align:center" align="center" height="80">
-        口袋妖怪绿宝石386版狩猎区捉宠资料</td>
-    </tr>
 
     <tr>
       <td style="color:#444444; padding:5 5 5 5; line-height:200%; font-size:14px " align="left">
