@@ -6,6 +6,11 @@ date: 2025-07-25 11:15 +0800
 ---
 
 <style>
+  table {
+    width: 100%;
+    table-layout: auto; /* 自动分配列宽 */
+    border-collapse: collapse;
+  }
   .wrap {
     word-break: break-word;
     white-space: normal;
