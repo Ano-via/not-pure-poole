@@ -27,8 +27,37 @@ date: 2025-07-25 11:15 +0800
     width: auto;
     display: block;
   }
+  .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .floating-buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons button:hover {
+      background-color: #45a049;
+    }
 </style>
-<a href="#001">Gen 1</a><a href="#152">Gen 2</a><a href="#252">Gen 3</a>
+<div class="floating-buttons">
+  <button onclick="location.hash='#001'">Gen 1</button>
+  <button onclick="location.hash='#152'">Gen 2</button>
+  <button onclick="location.hash='#252'">Gen 3</button>
+</div>
 <table>
 	<tbody>
 		<tr>
