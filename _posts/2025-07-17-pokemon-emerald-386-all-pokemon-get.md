@@ -4,7 +4,11 @@ title: 口袋妖怪红、蓝、绿宝石386版全图鉴捉宠资料
 tags: [宠物小精灵, 绿宝石]
 date: 2025-07-25 11:15 +0800
 ---
-
+<style>
+  td {
+    white-space: nowrap;
+  }
+</style>
 <table border="1" cellspacing="1" id="table1" cellpadding="10" bgcolor="#FFFFFF" style="border-collapse: collapse" bordercolor="#000000">
 		<tbody>
 		<tr>
