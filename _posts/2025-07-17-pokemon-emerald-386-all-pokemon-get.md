@@ -25,8 +25,7 @@ date: 2025-07-25 11:15 +0800
     display: block;
   }
 </style>
-<table border="1" cellspacing="1" id="table1" cellpadding="10" bgcolor="#FFFFFF" style="border-collapse: collapse"
-	bordercolor="#000000">
+<table>
 	<tbody>
 		<tr>
 			<td>001</td>
