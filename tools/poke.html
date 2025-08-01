@@ -50,14 +50,14 @@ permalink: poke.html
         font-weight: bold;
     }
 </style>
-<body style="max-width: 600px;">
+
 <h2>宝可梦捕获率计算器</h2>
 
 
 <div class="row-inline">
     <label>搜索宝可梦</label>
     <input list="pokemonList" id="search" placeholder="如 0001 或 妙蛙种子" oninput="fillCaptureRate()">
-    <label>基础捕获系数</label>
+    <label>基础捕获率</label>
     <input type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
 </div>
 <datalist id="pokemonList"></datalist>
@@ -80,7 +80,6 @@ permalink: poke.html
 </div>
 
 <div id="result"></div>
-</body>
 
 <script>
     const pokedex = [
