@@ -2589,19 +2589,32 @@ permalink: poke.html
 
         let resultText = `计算出的 a = ${a.toFixed(2)}<br>`;
         if (a >= 255) {
-            resultText += `🎯 直接捕获成功！`;
-        } else {
-            let temp = Math.floor(16711680 / a);
-            let sqrt1 = Math.floor(Math.sqrt(temp));
-            let sqrt2 = Math.floor(Math.sqrt(sqrt1));
-            const G = Math.floor(1048560 / sqrt2);
-            const rate = Math.pow((G + 1) / 65536, 4);
-
-            resultText += `G = ${G}<br>`;
-            resultText += `最终捕获率 = ${(rate * 100).toFixed(6)}%`;
+            resultText += "捕获成功！";
+            document.getElementById("result").innerHTML = resultText;
+            return;
         }
 
-        document.getElementById('result').innerHTML = resultText;
+        // G计算：G = 1048560 / sqrt(sqrt(16711680 / a))
+        let G = Math.floor(1048560 / Math.sqrt(Math.sqrt(16711680 / a)));
+
+        // 捕获概率计算
+        let prob = Math.pow((G + 1) / 65536, 4);
+        prob = Math.min(prob, 1);
+        let percent = (prob * 100).toFixed(2);
+
+        // 连抛次数和 SL 次数计算
+        const p = prob;
+        const alwaysCatchTries = p > 0 ? Math.ceil(1 / p) : "∞";
+        const sl90 = p > 0 ? Math.ceil(Math.log(1 - 0.9) / Math.log(1 - p)) : "∞";
+
+        resultText += `
+        G = ${G} <br>
+        捕获概率 = <strong>${percent}%</strong><br>
+        预计最多 <strong>${alwaysCatchTries}</strong> 次必中<br>
+        SL <strong>${sl90}</strong> 次可达 90% 成功率
+      `;
+
+        document.getElementById("result").innerHTML = resultText;
     }
 
     // 实时监听 radio
