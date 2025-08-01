@@ -54,7 +54,11 @@ permalink: poke.html
         display: none;
     }
 
-    #pc_catch {
+    #pc_catch_1 {
+        display: block;
+    }
+
+    #pc_catch_2 {
         display: block;
     }
 
@@ -63,7 +67,11 @@ permalink: poke.html
             display: block;
         }
 
-        #pc_catch {
+        #pc_catch_1 {
+            display: none;
+        }
+
+        #pc_catch_2 {
             display: none;
         }
     }
@@ -75,10 +83,10 @@ permalink: poke.html
 <div class="row-inline">
     <label>搜索宝可梦</label>
     <input list="pokemonList" id="search" placeholder="如 0001 或 妙蛙种子" oninput="fillCaptureRate()">
-    <div id="pc_catch" style="display: flex;">
-        <label>基础捕获率</label>
-        <input type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
-    </div>
+
+    <label id="pc_catch_1">基础捕获率</label>
+    <input id="pc_catch_2" type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
+
 </div>
 <div class="row-inline" id="mobile_catch">
     <label>基础捕获率</label>
