@@ -1,0 +1,156 @@
+---
+layout: default
+title: "宝可梦捕获率计算器"
+permalink: poke.html
+---
+<style>
+    body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        line-height: 1.8;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+    }
+
+    input[type="range"],
+    input[type="number"],
+    input[type="text"] {
+        padding: 6px;
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 6px;
+    }
+
+    .radio-group label {
+        margin-top: 0;
+        font-weight: normal;
+    }
+
+    .row-inline {
+        display: flex;
+        gap: 10px;
+        margin-top: 4px;
+    }
+
+    .row-inline input[type="text"] {
+        flex: 2;
+    }
+
+    .row-inline input[type="number"] {
+        flex: 1;
+    }
+
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    #hpValue {
+        font-weight: bold;
+    }
+</style>
+<h2>宝可梦捕获率计算器</h2>
+
+
+<div class="row-inline">
+    <label>搜索宝可梦</label>
+    <input list="pokemonList" id="search" placeholder="如 0001 或 妙蛙种子" oninput="fillCaptureRate()">
+    <label>基础捕获系数</label>
+    <input type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
+</div>
+<datalist id="pokemonList"></datalist>
+
+<label for="hp">当前HP百分比: <span id="hpValue">100%</span></label>
+<input type="range" id="hp" min="0" max="100" value="100" oninput="updateHPValue(this.value)">
+
+<label>精灵球类型:</label>
+<div class="radio-group" id="ballGroup">
+    <label><input type="radio" name="ball" value="1" checked> 精灵球</label>
+    <label><input type="radio" name="ball" value="1.5"> 超级球</label>
+    <label><input type="radio" name="ball" value="2"> 高级球</label>
+</div>
+
+<label>异常状态:</label>
+<div class="radio-group" id="statusGroup">
+    <label><input type="radio" name="status" value="1" checked> 无</label>
+    <label><input type="radio" name="status" value="1.5"> 中毒 / 灼伤 / 麻痹</label>
+    <label><input type="radio" name="status" value="2"> 冰冻 / 睡眠</label>
+</div>
+
+<div id="result"></div>
+
+<script>
+    const pokedex = [
+        { 编号: "0001", 名称: "妙蛙种子", 捕获率: "45" },
+        { 编号: "0002", 名称: "妙蛙草", 捕获率: "45" },
+        { 编号: "0003", 名称: "妙蛙花", 捕获率: "45" }
+    ];
+
+    const dataList = document.getElementById('pokemonList');
+    pokedex.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = `${p.编号} ${p.名称}`;
+        dataList.appendChild(opt);
+    });
+
+    function updateHPValue(value) {
+        document.getElementById('hpValue').innerText = value + '%';
+        calculate();
+    }
+
+    function fillCaptureRate() {
+        const input = document.getElementById('search').value.trim();
+        const found = pokedex.find(p => input.includes(p.编号) || input.includes(p.名称));
+        if (found) {
+            document.getElementById('baseRate').value = found.捕获率;
+            calculate();
+        }
+    }
+
+    function getRadioValue(name) {
+        const radios = document.getElementsByName(name);
+        for (let radio of radios) {
+            if (radio.checked) return parseFloat(radio.value);
+        }
+        return 1;
+    }
+
+    function calculate() {
+        const hpPercent = parseFloat(document.getElementById('hp').value);
+        const baseRate = parseInt(document.getElementById('baseRate').value);
+        const ballRate = getRadioValue('ball');
+        const statusRate = getRadioValue('status');
+
+        const a = (1 - 2 / 3 * (hpPercent / 100)) * baseRate * ballRate * statusRate;
+
+        let resultText = `计算出的 a = ${a.toFixed(2)}<br>`;
+        if (a >= 255) {
+            resultText += `🎯 直接捕获成功！`;
+        } else {
+            let temp = Math.floor(16711680 / a);
+            let sqrt1 = Math.floor(Math.sqrt(temp));
+            let sqrt2 = Math.floor(Math.sqrt(sqrt1));
+            const G = Math.floor(1048560 / sqrt2);
+            const rate = Math.pow((G + 1) / 65536, 4);
+
+            resultText += `G = ${G}<br>`;
+            resultText += `最终捕获率 = ${(rate * 100).toFixed(6)}%`;
+        }
+
+        document.getElementById('result').innerHTML = resultText;
+    }
+
+    // 实时监听 radio
+    document.querySelectorAll('input[name="ball"], input[name="status"]').forEach(radio => {
+        radio.addEventListener('change', calculate);
+    });
+</script>
