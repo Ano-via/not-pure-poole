@@ -2611,7 +2611,7 @@ permalink: poke.html
 
         const a = (1 - 2 / 3 * (hpPercent / 100)) * baseRate * ballRate * statusRate;
 
-        let resultText = `计算出的 a = ${a.toFixed(2)}<br>`;
+        let resultText = `a = ${a.toFixed(2)}<br>`;
         if (a >= 255) {
             resultText += "捕获成功！";
             document.getElementById("result").innerHTML = resultText;
