@@ -50,6 +50,14 @@ permalink: poke.html
         font-weight: bold;
     }
 
+    #mobile_catch {
+        display: none;
+    }
+
+    #pc_catch {
+        display: block;
+    }
+
     @media (max-width: 768px) {
         #mobile_catch {
             display: block;
@@ -67,19 +75,19 @@ permalink: poke.html
 <div class="row-inline">
     <label>搜索宝可梦</label>
     <input list="pokemonList" id="search" placeholder="如 0001 或 妙蛙种子" oninput="fillCaptureRate()">
-    <div id="pc_catch">
+    <div id="pc_catch" style="display: flex;">
         <label>基础捕获率</label>
         <input type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
     </div>
 </div>
-<div class="row-inline" id="mobile_catch" style="display: none;">
+<div class="row-inline" id="mobile_catch">
     <label>基础捕获率</label>
     <input type="number" id="baseRate" min="1" max="255" value="45" oninput="calculate()">
 </div>
 <datalist id="pokemonList"></datalist>
 
-<label for="hp">当前HP百分比: <span id="hpValue">100%</span></label>
-<input type="range" id="hp" min="0" max="100" value="100" oninput="updateHPValue(this.value)">
+<label for="hp">当前HP百分比: <span id="hpValue">0%</span></label>
+<input type="range" id="hp" min="0" max="100" value="0" oninput="updateHPValue(this.value)">
 
 <label>精灵球类型:</label>
 <div class="radio-group" id="ballGroup">
