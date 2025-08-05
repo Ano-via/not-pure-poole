@@ -4,4 +4,24 @@ title: "TikTok 授权管理"
 permalink: tkapi.html
 ---
 
-<h2>查看URL获取授权码</h2>
+<h2>授权码：</h2>
+<input id="auth_code">
+<button onclick="copyCode()">复制</button>
+<script>
+    // 从 URL 中提取 auth_code 参数
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("auth_code");
+    if (code) {
+      document.getElementById("auth_code").value = code;
+    }
+
+    // 复制到剪贴板
+    function copyCode() {
+      const input = document.getElementById("auth_code");
+      input.select();
+      input.setSelectionRange(0, 99999); // 兼容移动端
+      document.execCommand("copy");
+
+      alert("已复制")
+    }
+  </script>
