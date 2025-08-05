@@ -6,7 +6,7 @@ permalink: tkapi.html
 
 <h2>授权码：</h2>
 <input id="auth_code">
-<button onclick="copyCode()">复制</button>
+<button onclick="copyCode()" id="copy_button">复制</button>
 <script>
     // 从 URL 中提取 auth_code 参数
     const params = new URLSearchParams(window.location.search);
@@ -22,6 +22,14 @@ permalink: tkapi.html
       input.setSelectionRange(0, 99999); // 兼容移动端
       document.execCommand("copy");
 
-      alert("已复制")
+      var obj = document.getElementById('copy_button');
+      obj.innerHTML = "√ 已复制"
+      obj.style.backgroundColor = "#daf2c2";
+      obj.style.color = "#397300";
+      setTimeout(function () {
+        obj.innerHTML = "复制";
+        obj.style.backgroundColor = "#f2f2f2";
+        obj.style.color = "#000000";
+      }, 3000);
     }
   </script>
