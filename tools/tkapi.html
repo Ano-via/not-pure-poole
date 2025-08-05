@@ -4,15 +4,7 @@ title: "TikTok 授权管理"
 permalink: tkapi.html
 ---
 
-<head>
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    #auth_code { padding: 8px; border: 1px solid #ccc; width: 100%; max-width: 400px; margin-bottom: 10px; }
-    button { padding: 6px 12px; cursor: pointer; }
-    #copied { color: green; display: none; margin-left: 10px; }
-  </style>
-</head>
-<body>
+
   <h2>授权码</h2>
   <input type="text" id="auth_code" readonly>
   <button onclick="copyCode()">复制</button>
@@ -37,5 +29,4 @@ permalink: tkapi.html
       document.getElementById("copied").style.display = "inline";
     }
   </script>
-</body>
 
