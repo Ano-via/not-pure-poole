@@ -1,0 +1,58 @@
+---
+layout: default
+title: "TikTok 授权管理"
+permalink: tkapi.html
+---
+
+<style>
+.container {
+    font-family: sans-serif;
+    margin: 40px;
+}
+.param {
+    margin-bottom: 20px;
+}
+.param span {
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+}
+input {
+    width: 300px;
+    padding: 5px;
+}
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+</style>
+<div class="container">
+<div class="param">
+    <span>auth_code:</span>
+    <input id="auth_code" readonly>
+    <button onclick="copyToClipboard('auth_code')">复制</button>
+</div>
+<div class="param">
+    <span>code:</span>
+    <input id="code" readonly>
+    <button onclick="copyToClipboard('code')">复制</button>
+</div>
+</div>
+
+<script>
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name) || '';
+}
+
+function copyToClipboard(id) {
+    const input = document.getElementById(id);
+    input.select();
+    document.execCommand('copy');
+    alert(`已复制 ${id}: ${input.value}`);
+}
+
+// 显示参数
+document.getElementById('auth_code').value = getQueryParam('auth_code');
+document.getElementById('code').value = getQueryParam('code');
+</script>
