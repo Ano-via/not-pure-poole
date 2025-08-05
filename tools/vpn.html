@@ -1,0 +1,57 @@
+---
+layout: default
+title: "小猫备用链接生成"
+permalink: vpn.html
+---
+
+
+  <h3>请输入链接：</h3>
+  <input type="text" id="inputLink" placeholder="https://line.stotik.me/link/{token}?mu=5&name=stotik" />
+  <button onclick="generateLinks()">生成链接</button>
+
+  <div id="results" class="result"></div>
+
+  <script>
+    function extractToken(url) {
+      const match = url.match(/\/link\/([^?\/]+)\?/);
+      return match ? match[1] : '';
+    }
+
+    function generateLinks() {
+      const input = document.getElementById('inputLink').value.trim();
+      const token = extractToken(input);
+      const query = input.split('?')[1];
+      const domains = ['me', 'de', 'uk', 'cloud'];
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '';
+
+      if (!token || !query) {
+        resultsDiv.innerHTML = '<p style="color:red">链接格式错误，无法提取 token 或参数。</p>';
+        return;
+      }
+
+      domains.forEach(domain => {
+        const newUrl = `https://line.stotik.${domain}/link/update?token=${token}&${query}`;
+        const inputEl = document.createElement('input');
+        inputEl.type = 'text';
+        inputEl.value = newUrl;
+        inputEl.readOnly = true;
+
+        const copyBtn = document.createElement('button');
+        copyBtn.textContent = '复制';
+        copyBtn.onclick = () => {
+          inputEl.select();
+          document.execCommand('copy');
+          copyBtn.textContent = '已复制';
+          setTimeout(() => copyBtn.textContent = '复制', 1500);
+        };
+
+        const container = document.createElement('div');
+        container.className = 'link-box';
+        container.appendChild(inputEl);
+        container.appendChild(copyBtn);
+
+        resultsDiv.appendChild(container);
+      });
+    }
+  </script>
