@@ -4,7 +4,13 @@ title: "小猫备用链接生成"
 permalink: vpn.html
 ---
 
-
+<style>
+    input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; }
+    .result { margin-top: 10px; }
+    .link-box { margin-bottom: 10px; display: flex; align-items: center; }
+    .link-box input { flex: 1; padding: 6px; margin-right: 5px; }
+    button { padding: 6px 10px; cursor: pointer; }
+  </style>
   <h3>请输入链接：</h3>
   <input type="text" id="inputLink" placeholder="https://line.stotik.me/link/{token}?mu=5&name=stotik" />
   <button onclick="generateLinks()">生成链接</button>
