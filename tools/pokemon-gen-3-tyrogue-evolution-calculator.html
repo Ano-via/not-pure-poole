@@ -60,28 +60,28 @@ permalink: tyrogue.html
             <select class="tyrogue-select" id="tyrogue-nature"></select>
           </div>
           <div class="tyrogue-col-6">
-          <label>攻击 IV（0–31）</label>
-          <input id="atkIV" type="number" min="0" max="31" value="31" />
+          <label class="tyrogue-label">攻击 IV（0–31）</label>
+          <input class="tyrogue-input" id="atkIV" type="number" min="0" max="31" value="31" />
         </div>
         <div class="tyrogue-col-6">
-          <label>防御 IV（0–31）</label>
-          <input id="defIV" type="number" min="0" max="31" value="31" />
+          <label class="tyrogue-label">防御 IV（0–31）</label>
+          <input class="tyrogue-input" id="defIV" type="number" min="0" max="31" value="31" />
         </div>
 
         <div class="tyrogue-col-6">
-          <label>攻击 EV（0–252）</label>
-          <input id="atkEV" type="number" min="0" max="252" step="4" value="0" />
+          <label class="tyrogue-label">攻击 EV（0–252）</label>
+          <input class="tyrogue-input" id="atkEV" type="number" min="0" max="252" step="4" value="0" />
         </div>
         <div class="tyrogue-col-6">
-          <label>防御 EV（0–252）</label>
-          <input id="defEV" type="number" min="0" max="252" step="4" value="0" />
+          <label class="tyrogue-label">防御 EV（0–252）</label>
+          <input class="tyrogue-input" id="defEV" type="number" min="0" max="252" step="4" value="0" />
         </div>
 
         <div class="tyrogue-col-12">
-          <div class="row">
-            <button class="btn" id="calc">计算判定</button>
-            <button class="btn secondary" id="reset">重置</button>
-            <span class="pill">第三世代舍入：性格修正在最终加成后再向下取整</span>
+          <div class="tyrogue-row">
+            <button class="tyrogue-btn" id="calc">计算判定</button>
+            <button class="tyrogue-btn secondary" id="reset">重置</button>
+            <span class="tyrogue-pill">第三世代舍入：性格修正在最终加成后再向下取整</span>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ permalink: tyrogue.html
       </div>
 
       <div style="margin-top:16px" class="tyrogue-grid">
-        <div class="col-12">
+        <div class="tyrogue-col-12">
           <details>
             <summary>如何精准控制？（小技巧）</summary>
             <ul>
