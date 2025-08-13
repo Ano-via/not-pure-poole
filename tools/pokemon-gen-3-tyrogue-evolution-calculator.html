@@ -59,25 +59,25 @@ permalink: tyrogue.html
             <label class="tyrogue-label">性格（Nature）</label>
             <select class="tyrogue-select" id="tyrogue-nature"></select>
           </div>
-          <div class="col-6">
+          <div class="tyrogue-col-6">
           <label>攻击 IV（0–31）</label>
           <input id="atkIV" type="number" min="0" max="31" value="31" />
         </div>
-        <div class="col-6">
+        <div class="tyrogue-col-6">
           <label>防御 IV（0–31）</label>
           <input id="defIV" type="number" min="0" max="31" value="31" />
         </div>
 
-        <div class="col-6">
+        <div class="tyrogue-col-6">
           <label>攻击 EV（0–252）</label>
           <input id="atkEV" type="number" min="0" max="252" step="4" value="0" />
         </div>
-        <div class="col-6">
+        <div class="tyrogue-col-6">
           <label>防御 EV（0–252）</label>
           <input id="defEV" type="number" min="0" max="252" step="4" value="0" />
         </div>
 
-        <div class="col-12">
+        <div class="tyrogue-col-12">
           <div class="row">
             <button class="btn" id="calc">计算判定</button>
             <button class="btn secondary" id="reset">重置</button>
@@ -86,11 +86,11 @@ permalink: tyrogue.html
         </div>
       </div>
 
-      <div class="result" id="result" hidden>
-        <div class="row" style="justify-content:space-between">
+      <div class="tyrogue-result" id="result" hidden>
+        <div class="tyrogue-row" style="justify-content:space-between">
           <div>
-            <div class="big">预测结果：<span id="evo"></span></div>
-            <div class="tips">当该设置在升级到选定等级（默认 20级）时生效。</div>
+            <div class="tyrogue-big">预测结果：<span id="evo"></span></div>
+            <div class="tyrogue-tips">当该设置在升级到选定等级（默认 20级）时生效。</div>
           </div>
           <div>
             <div>攻击（Atk）：<strong id="atkStat">-</strong></div>
@@ -99,7 +99,7 @@ permalink: tyrogue.html
         </div>
       </div>
 
-      <div style="margin-top:16px" class="grid">
+      <div style="margin-top:16px" class="tyrogue-grid">
         <div class="col-12">
           <details>
             <summary>如何精准控制？（小技巧）</summary>
