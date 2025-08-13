@@ -59,7 +59,57 @@ permalink: tyrogue.html
             <label class="tyrogue-label">性格（Nature）</label>
             <select class="tyrogue-select" id="tyrogue-nature"></select>
           </div>
-          ...
+          <div class="col-6">
+          <label>攻击 IV（0–31）</label>
+          <input id="atkIV" type="number" min="0" max="31" value="31" />
+        </div>
+        <div class="col-6">
+          <label>防御 IV（0–31）</label>
+          <input id="defIV" type="number" min="0" max="31" value="31" />
+        </div>
+
+        <div class="col-6">
+          <label>攻击 EV（0–252）</label>
+          <input id="atkEV" type="number" min="0" max="252" step="4" value="0" />
+        </div>
+        <div class="col-6">
+          <label>防御 EV（0–252）</label>
+          <input id="defEV" type="number" min="0" max="252" step="4" value="0" />
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <button class="btn" id="calc">计算判定</button>
+            <button class="btn secondary" id="reset">重置</button>
+            <span class="pill">第三世代舍入：性格修正在最终加成后再向下取整</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="result" id="result" hidden>
+        <div class="row" style="justify-content:space-between">
+          <div>
+            <div class="big">预测结果：<span id="evo"></span></div>
+            <div class="tips">当该设置在升级到选定等级（默认 20级）时生效。</div>
+          </div>
+          <div>
+            <div>攻击（Atk）：<strong id="atkStat">-</strong></div>
+            <div>防御（Def）：<strong id="defStat">-</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px" class="grid">
+        <div class="col-12">
+          <details>
+            <summary>如何精准控制？（小技巧）</summary>
+            <ul>
+              <li>想要 <strong>飞腿郎</strong> → 选择加攻击的性格（怕上/固执/爽朗/顽皮/勇敢中的加攻：<em>Lonely、Adamant、Naughty、Brave</em>），或给攻击投入更多EV。</li>
+              <li>想要 <strong>快拳郎</strong> → 选择加防御的性格（<em>Bold、Impish、Lax、Relaxed</em>），或给防御投入更多EV。</li>
+              <li>想要 <strong>柔道郎</strong> → 选择中性性格（<em>Hardy、Docile、Serious、Bashful、Quirky</em>），并在19级时把攻防调成相等（用营养剂或打对应努力值）。</li>
+              <li>营养剂：<strong>力量强化剂</strong>（+10攻击EV）、<strong>铁</strong>（+10防御EV）。在 19→20 级前微调最稳。</li>
+            </ul>
+          </details>
         </div>
 
       </div>
