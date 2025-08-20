@@ -23,7 +23,7 @@ permalink: /unown
   }
   @media (max-width:768px){
     #mypicker-container .mypicker-gallery {
-      grid-template-columns:repeat(2,1fr);
+      grid-template-columns:repeat(6,1fr);
     }
   }
 
