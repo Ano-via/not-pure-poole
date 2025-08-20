@@ -7,7 +7,6 @@ permalink: /unown
 ---
 
 <style>
-  /* ================== 前缀化 CSS 避免冲突 ================== */
   :root {
     --mypicker-gap:12px;
     --mypicker-radius:14px;
@@ -27,19 +26,17 @@ permalink: /unown
     }
   }
 
-  /* 每一组（复选框+图片） */
+  /* 每一组 */
   #mypicker-container .mypicker-card {
     position:relative;
     border-radius:var(--mypicker-radius);
     overflow:hidden;
     border:2px solid transparent;
     cursor:pointer;
-    user-select:none;
-    outline:none;
     display:block;
   }
 
-  /* 隐藏原生 checkbox */
+  /* 隐藏 checkbox */
   #mypicker-container .mypicker-card input[type="checkbox"]{
     position:absolute;
     inset:0;
@@ -47,7 +44,7 @@ permalink: /unown
     pointer-events:none;
   }
 
-  /* 图片方形裁切 */
+  /* 图片 */
   #mypicker-container .mypicker-card img{
     width:100%;
     aspect-ratio:1/1;
@@ -55,16 +52,16 @@ permalink: /unown
     display:block;
     transition: transform .2s;
   }
-
-  /* 悬停微动效 */
   #mypicker-container .mypicker-card:hover img{ transform:scale(1.02); }
 
-  /* 选中态：高亮边框 + 打勾 + 蒙层 */
-  #mypicker-container .mypicker-card:has(input:checked){
+  /* ✅ 选中态（两种方式：:has + .checked 兼容旧浏览器） */
+  #mypicker-container .mypicker-card:has(input:checked),
+  #mypicker-container .mypicker-card.checked {
     border-color:var(--mypicker-ring);
     box-shadow:0 0 0 3px rgba(16,185,129,0.35);
   }
-  #mypicker-container .mypicker-card:has(input:checked)::after{
+  #mypicker-container .mypicker-card:has(input:checked)::after,
+  #mypicker-container .mypicker-card.checked::after {
     content:"✓";
     position:absolute;
     top:8px; right:10px;
@@ -75,32 +72,11 @@ permalink: /unown
     padding:.15em .45em;
     font-size:14px;
   }
-  #mypicker-container .mypicker-card:has(input:checked)::before{
+  #mypicker-container .mypicker-card:has(input:checked)::before,
+  #mypicker-container .mypicker-card.checked::before {
     content:"";
-    position:absolute;
-    inset:0;
+    position:absolute; inset:0;
     background:var(--mypicker-mask-bg);
-  }
-
-  /* 键盘可达性 */
-  #mypicker-container .mypicker-card:focus-within{
-    box-shadow:0 0 0 3px rgba(59,130,246,0.35);
-  }
-
-  /* 操作按钮样式 */
-  #mypicker-container .mypicker-actions{
-    margin:14px 0;
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-  }
-  #mypicker-container .mypicker-actions button{
-    padding:8px 14px;
-    border:0;
-    border-radius:10px;
-    cursor:pointer;
-    background:#111827;
-    color:#fff;
   }
 </style>
 
@@ -145,3 +121,19 @@ permalink: /unown
     </div>
   </form>
 </div>
+<script>
+  // ✅ fallback：兼容不支持 :has() 的浏览器
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('#mypicker-container .mypicker-card');
+    cards.forEach(card => {
+      const checkbox = card.querySelector('input[type="checkbox"]');
+      checkbox.addEventListener('change', () => {
+        if(checkbox.checked){
+          card.classList.add('checked');
+        }else{
+          card.classList.remove('checked');
+        }
+      });
+    });
+  });
+</script>
