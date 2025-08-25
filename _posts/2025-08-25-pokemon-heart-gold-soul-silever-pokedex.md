@@ -779,7 +779,7 @@ date: 2025-08-25 11:15 +0800
             <th id="126">126</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgALMAAPj4+PDwKPiwoLi4uLigQPCQKOhwmGCYgNBgQGBgWEBAQP///wAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAALACwHAAwAFgASAAAEeXBJqdS8OC8Vqv5UF3SeBW5jQFQjZ2pKMa5p+mZxgcT1em6IXUEW2N1glV1QuZtUbsngc/mKNSkCwVMBWDYViOE3KzAYwNRqeKwwn6Ue51OSSJjr+HoQr0vQAQV6XglLCWJ+E3mKhYUfeYADCAkEkog/hoF4Pxh5IBEAIfkECQwACwAsBwALABUAEwAABHxwSanUvDirYGfP1xZwS0V+2hgQIrehXjGyqgrHBaLIKgt6CF2Bp+tYYBWFLrgsLlEVZlKqzEEFgqQCwFwOdRSswGBQUkvDjyJLLgeTHjVAQdZGi7tOAjBM+JkJgF8JE36Gh4AJOYQZh3wDCAkEhj8XigWUlY2Sk5ogmRkRADs="></td>
             <td>鸭嘴火龙</td>
-            <td>烧焦塔地下一层，由小鸭嘴龙LV.30进化</td>
+            <td>烧焦塔地下一层，由 <a href="#240">小鸭嘴龙</a> LV.30进化</td>
         </tr>
         <tr>
             <th id="127">127</th>
@@ -875,7 +875,7 @@ date: 2025-08-25 11:15 +0800
             <th id="142">142</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgAKIAAPj4+Li4uGCYgICAcNBgQGBgWEBAQP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAAHACwEAAoAGQATAAADeXi63H7mSWdqiHOawDlmVRNCQ7VhZnQuZ1WyyhYMpWx61yvOndzNNonP1yn1NLgezZZ6XH4GAM34u3xiUIJ0mTyyitMltxoosAa5WmlQWKN/5kWbXSAQ2LQCr8DnO/h2dnR8eHEZgWUMZoYTAYiMGQ16HJCRkn6WCgkAIfkECQwABwAsAwAKABoAEgAAA3h4utxtLsplApxY1WBzrtdkhFoIRiN0apZqDOQxci2X2tYAP3QwWD0OzBZj+YDBoU202dh0zZQE1DMAdEraCFUlXKHBJU+IheqQwtgrB3u9ClnfrgEfFAoEgl1XeP3KBQ53eXqBdwVHh3wRdXYMcJAKhxKTdAeBDQkAOw=="></td>
             <td>化石翼龙</td>
-            <td>由基拉、沙基拉50%携带神秘琥珀，取得后在尼比市博物馆复活</td>
+            <td> <a href="#246">由基拉</a> 、沙基拉50%携带神秘琥珀，取得后在尼比市博物馆复活</td>
         </tr>
         <tr>
             <th id="143">143</th>
@@ -1121,7 +1121,7 @@ date: 2025-08-25 11:15 +0800
             <th id="183">183</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgALMAAPj4+Li4sKCo8GCYgPBgUHBwyGBgWEBAQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAAIACwEAAsAGAASAAAEfxBJec68OM8jhKWVlh0E4VFd8YlUqVYdUags2AmqUMqreAC3245Wg3WAuFKvsuxwPCnmZkY0Bm+zz2EW5fwA4GuWwsVZKuA0kqqljhGGgBrgfSO2+Ith/nqtpBMGcWkBATOCcBgrBodxhYaIdyEGIYGCl5gGFxWaNXCNniyXoREAIfkECQwACAAsAwAMABoAEQAABIQQyXnOvDjjI4SV1adlB0F4YFeII2WuVUcUa3vFKmfObHsAnaBgV7MhOJwOUFAw9UIUXDIJYx1oNaRwyywYPtdC7sgBmJdBLJg2Pp7PnYoahKWBA28zck6/sgx5AAErNF83FRcGXnhng4UHBhsYBpQGAZcBlYZQXz2JlYWRUaJGEpWlCBEAOw=="></td>
             <td>玛利露</td>
-            <td>研钵山（每天收听大木博士讲座）、狩猎区域，由露力丽高亲密度进化</td>
+            <td>研钵山（每天收听大木博士讲座）、狩猎区域，由 <a href="#298">露力丽</a> 高亲密度进化</td>
         </tr>
         <tr>
             <th id="184">184</th>
@@ -2171,7 +2171,7 @@ date: 2025-08-25 11:15 +0800
             <th id="358">358</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgALMAAPDwKPiwoKDA+LigQGCYgIh4+ICAcGBgWGBIyEBAQP///wAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAAKACwKAAoADAAUAAAEU1BJleq8FOiEs95Y8mkIJyXG8A1FYSaCMMxtWwlArNf3EeeBQCFwExwOA2OQSNEZBUMT5VBDuEKVbOe0PSEECMQWFpNeyALzBM3swILq07KN1SoiACH5BAkMAAoALAoACwAMABQAAARSUEmV6rwU6ISz3ljyaQgnJcbwDUVhJoIwzG1bCUCs1/cR54FAIXATHA4DY5BI0RkFQxPlUEO4QpVsZyLtJBACBGIL03W5ZrKO6RUEz6clG5uNAAA7"></td>
             <td>风铃铃</td>
-            <td>狩猎区域，由悠闲铃铛夜晚高亲密度进化</td>
+            <td>狩猎区域，由 <a href="#433">悠闲铃铛</a> 夜晚高亲密度进化</td>
         </tr>
         <tr>
             <th id="359">359</th>
@@ -2567,7 +2567,7 @@ date: 2025-08-25 11:15 +0800
             <th id="424">424</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgAPMAAPj4+OjAiLi4sLCAWJB4yPBgUGBgWEBAQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hFwb2tlZ3VpZGUuZmlsYi5kZQAh+QQJEQAIACwAAAAAIAAgAAAE1RDJSau9OOvNu/9gKI5kaZ6gYSCqdBymURQyfRAE7OpeLdevHOIm/BgCg9fMcAu+KM+n5RggHlbN4uQw4xakE8OgWiAwiTgmtEvrUgyEZBmNq8OiyACwAuceAGaBdTk4dwF5PG85AH9pgzdzB4eTiWGLf5MAh4GRY4cDKxdMAZqHjJp1kXEDA2YYTJ4EpJiCOjdwoRdNAwKZSIWJuBpWBgIAva1glrkYVi/PPLnCHNCydkErKq49VAGDaXDbHeGThIXgISpUwFctJepm7igsafNvzPYgEQAh+QQJEQAIACwAAAAAIAAgAAAEyhDJSau9OOvNu/9gKI5kaZ7mcaBGixgHQayU+hlFAR/7LKkyGgdXiM0MiBhwJuwYAocCoSebNp0BqNRYra5s4KvkOYgeANN01xjV5WwVw2AGOMsMa8K2EBi4ixZ4Z2dZAQBZaVsHhX6AcSqGhXWHVVtJhVAXMXKIhoRqX32iYkl3AwKSfUE8SXh3SJpBBgIAqHNLsJtTGjwqvr5rE3iwG4IEAV1WFMMeLYVMVy27TseIVS3Yd8131tJdLjfY0uLYJ8woy9rowsTrIREAOw=="></td>
             <td>双手尾猴</td>
-            <td>由长尾怪手学习双重攻击后进化</td>
+            <td>由 <a href="#190">长尾怪手</a> 学习双重攻击后进化</td>
         </tr>
         <tr>
             <th id="425">425</th>
@@ -2837,7 +2837,7 @@ date: 2025-08-25 11:15 +0800
             <th id="469">469</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgAPMAAPj4+Li4uJjISOhwmHiYSHBwcOBIKGBgWEBAQP///wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hFwb2tlZ3VpZGUuZmlsYi5kZQAh+QQJEQAJACwAAAAAIAAgAAAEzTDJSau9OOvNu/9gKI5kaZ5oqo5FIR1qAQAtAR+IKc9IfxA5zGFoCUpaiFYBAewZE0PDYICbJIPGZIGw472kQ8A1oc2NoYhfciZ+TQEBHFK5RKYFBsOS3KOExUo9BFxMS3h6Ak8XOAItAgJAjwWSiI2KRQONj4+RkJJJQBtpmZucBpw9AQFOogYHpQIDeQgCB6o9bH0ZB3m9vAaCtrkIALKXL8SPs2nAPmw8s0JkBACzyxJpM1Ouxy/YTqxYUL/AJTcwL0QkROgp6ivwKREAIfkECREACQAsAAAAACAAIAAABNMwyUmrvTjrzbv/YCiOZGmeaFUUKVUAAHt4x1xfL1wQNpIgvsrBYBgWcTAg4kAAJoWDwSE6wyFWBUQTBghODjAwoIoB7nJAi1g8lnjdRGUWwz4g2tcgkGhAxDVieV0rPnkDBgN+iYBJhFhZWQFRAQgDlBt2WEAEBFlNAaAIoRwIAisCAk2oBQKioaMalaaoqKqtoJSwGUsDtLQEBqiuw6RFvgKHfQJ2nGkdRnxGm0zOz3eocUt9Sj9kmD8EAHHZbhLegG5K3EFV5yQ27iU38e/0LSARADs="></td>
             <td>古蜻蜓</td>
-            <td>由阳阳玛学习原始力量后进化</td>
+            <td>由 <a href="#193">洋洋蜻蜓</a> 学习原始力量后进化</td>
         </tr>
         <tr>
             <th id="470">470</th>
@@ -2855,7 +2855,7 @@ date: 2025-08-25 11:15 +0800
             <th id="472">472</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgAPMAAPj4+PDwKLi4sKCo8MCoKLCAWPBgUHh4eHBwyGBgWLgomEBAQP///wAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hFwb2tlZ3VpZGUuZmlsYi5kZQAh+QQJEQAMACwAAAAAIAAgAAAE6JDJSau9OOvNu/9gKI5kaZ7gskwqugzDyrwt+cbIuhhwHd4LRGyhEA5yNZVSVrnhjioeDIacIq5M1hSHLG63V4MhZ3EGsbvA94gQF7MsI1eFUFvbBsVY5pMEuUhXRggFAW1vM0AUZzlICQJjVwEFBG1kQFCLgkE0CACRgpdTiot0dENtnwCmZj0XUQY3SEpGf0OuFQkHBypUYKNnTjEXurtLVjAJsWhUcBPFBwk9tDHLtmQYugnbVwmbQ7Sb2dvJ297dC7u8m84S0kdT0ubv0Eob5kII3vvn5tEe77qZc5fgGYh5KBJOiAAAIfkECREADAAsAAAAACAAIAAABOGQyUmrvTjrzbv/YCiOZGmeaEotS8pOy/CWsSwtxiC3Yr0grYUCoQPOWEiexUcM5nRFFhRBVcKgv4FxCO1qEQYDcNn9GQ0B7zc8tF51ZiMiPQUbFGI3jAivxosFAWBtMG5ZcQsJAmJUAQUEYGMMUjZ7VUYyCACMVFU3cFpWiEBNPwabACyYoJWFPzg1Rkh8lDJwFgksBrFdfDu0PhcJB0m1fAm7VWXCCc3NcLMyyauSFAlFOglU2sqwpFEYzsfNnbnEs516E9df187sw8Tp6tbc2vf2zef0uM0MzhL8BVThIQIAOw=="></td>
             <td>巨钳天蝎</td>
-            <td>由天蝎携带尖牙夜晚进化</td>
+            <td>由 <a href="#207">镰刀天蝎</a> 携带尖牙夜晚进化</td>
         </tr>
         <tr>
             <th id="473">473</th>
