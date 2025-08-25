@@ -4,7 +4,11 @@ title: 口袋妖怪心金·魂银493全精灵捕获列表
 tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 心金魂银]
 date: 2025-08-25 11:15 +0800
 ---
-
+<style>
+  td:nth-child(2) {
+    min-width: 64px;
+  }
+</style>
 <table>
     <thead>
         <tr>
