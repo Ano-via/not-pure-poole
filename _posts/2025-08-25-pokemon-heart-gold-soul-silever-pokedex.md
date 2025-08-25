@@ -8,6 +8,12 @@ date: 2025-08-25 11:15 +0800
   td:nth-child(2) {
     min-width: 64px;
   }
+  td img {
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    display: block;
+  }
 </style>
 <table>
     <thead>
