@@ -1229,7 +1229,7 @@ date: 2025-08-25 11:15 +0800
             <th id="201">201</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgAKIGAAAA/0JCQmNjWoSEc729vf///////////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAAGACwAAAAAIAAgAAADW2i63P4wykmrvTjrzbv/YBgFgbgExFCawaCaRiusokyHNpyzw6z3tw9JRcKlBAICIahpKZXJpcf5JAheHVm00GJiWoUZ8uq9gEmFMDZLSBesa/abVG7SYfg8KAEAIfkEBQwABgAsAAAAACAAIAAAA1toutz+MMpJq7046827/2AoXkEwKgExmGMwrKcrsKJMh3Y8zDrf7rdPaVXCqQQCAiGocSmVyaXH+SQIYB1ZtOBiYlyFGfLqJQ24gUIYmyWoC1Z2G14qN+unvCcBADs="></td>
             <td>安侬</td>
-            <td>阿露夫遗迹内</td>
+            <td>阿露夫遗迹内，<a href="/unown" target="_blank">查看全部未知图腾</a></td>
         </tr>
         <tr>
             <th id="202">202</th>
