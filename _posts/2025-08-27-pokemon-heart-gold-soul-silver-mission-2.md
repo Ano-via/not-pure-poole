@@ -534,4 +534,4 @@ Lv80 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQ
 结束后赤红离开，二周目也随之结束，再会<br>
 <br>
 </td>
-<a href="/2025/08/27/pokemon-heart-gold-soul-silver-mission-3">直达三周目</a>
+<a href="/2025/08/24/pokemon-heart-gold-soul-silver-mission-3">直达三周目</a>
