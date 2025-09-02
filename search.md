@@ -58,7 +58,7 @@ function renderPage(page) {
   resultsContainer.innerHTML = pageResults.map(r => `
     <li>
       <a href="${r.url}">${r.title}</a> <small>(${r.date})</small><br>
-      <strong>Tags:</strong> ${r.tags}<br>
+      <strong>标签:</strong> ${r.tags}<br>
       <span style="color:#666;font-size:90%;">${r.content}</span>
     </li>
   `).join('');
