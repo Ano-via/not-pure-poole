@@ -4,7 +4,7 @@ title: 搜索
 permalink: /search/
 ---
 
-<input type="text" id="search-input" placeholder="输入关键词或标签搜索..." style="width:100%">
+<input type="text" id="search-input" placeholder="输入关键词或标签搜索，用空格或逗号分隔..." style="width:100%">
 <ul id="results"></ul>
 <div id="pagination" style="margin-top:10px; display:none;">
   <button id="prev-page" disabled>上一页</button>
@@ -41,10 +41,11 @@ const sjs = SimpleJekyllSearch({
   limit: 1000
 });
 
-// 高亮函数
-function highlight(text, keyword) {
-  if (!keyword) return text;
-  const regex = new RegExp(`(${keyword})`, 'gi');
+// 高亮多个关键词
+function highlightMultiple(text, keywords) {
+  if (!keywords || keywords.length === 0) return text;
+  // 生成正则，匹配所有关键词，忽略大小写
+  const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
   return text.replace(regex, '<mark>$1</mark>');
 }
 
@@ -62,9 +63,10 @@ function renderPage(page) {
     </li>
   `).join('');
 
-  const keyword = searchInput.value.trim();
+  const keywordInput = searchInput.value.trim();
+  const keywords = keywordInput ? keywordInput.split(/[\s,]+/) : [];
   resultsContainer.querySelectorAll('li').forEach(li => {
-    li.innerHTML = highlight(li.innerHTML, keyword);
+    li.innerHTML = highlightMultiple(li.innerHTML, keywords);
   });
 
   // 更新分页按钮和信息
