@@ -137,5 +137,11 @@ mark {
   background: yellow;
   font-weight: bold;
 }
+
+ul#results {
+  list-style: none; /* 去掉所有li前的圆点 */
+  padding-left: 0;  /* 去掉默认缩进 */
+  margin-left: 0;
+}
 </style>
 
