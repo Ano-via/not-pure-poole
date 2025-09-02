@@ -44,9 +44,23 @@ const sjs = SimpleJekyllSearch({
 // 高亮多个关键词
 function highlightMultiple(text, keywords) {
   if (!keywords || keywords.length === 0) return text;
-  // 生成正则，匹配所有关键词，忽略大小写
   const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
   return text.replace(regex, '<mark>$1</mark>');
+}
+
+// 计算匹配度：匹配关键词数量
+function computeScore(item, keywords) {
+  if (!keywords || keywords.length === 0) return 0;
+  let score = 0;
+  const text = [item.title, item.tags, item.content].join(' ').toLowerCase();
+  keywords.forEach(k => {
+    if (k) {
+      const regex = new RegExp(k.toLowerCase(), 'g');
+      const matches = text.match(regex);
+      if (matches) score += matches.length;
+    }
+  });
+  return score;
 }
 
 // 渲染当前页
@@ -58,7 +72,7 @@ function renderPage(page) {
   resultsContainer.innerHTML = pageResults.map(r => `
     <li>
       <a href="${r.url}">${r.title}</a> <small>(${r.date})</small><br>
-      <strong>标签:</strong> ${r.tags}<br>
+      <strong>Tags:</strong> ${r.tags}<br>
       <span style="color:#666;font-size:90%;">${r.content}</span>
     </li>
   `).join('');
@@ -69,7 +83,6 @@ function renderPage(page) {
     li.innerHTML = highlightMultiple(li.innerHTML, keywords);
   });
 
-  // 更新分页按钮和信息
   if (allResults.length === 0) {
     pagination.style.display = 'none';
   } else {
@@ -84,6 +97,10 @@ function renderPage(page) {
 searchInput.addEventListener('input', () => {
   currentPage = 1;
   setTimeout(() => {
+    const keywordInput = searchInput.value.trim();
+    const keywords = keywordInput ? keywordInput.split(/[\s,]+/) : [];
+
+    // 提取结果
     allResults = Array.from(resultsContainer.querySelectorAll('li')).map(li => ({
       url: li.querySelector('a').href,
       title: li.querySelector('a').textContent,
@@ -91,6 +108,11 @@ searchInput.addEventListener('input', () => {
       tags: li.querySelector('strong + text') ? li.querySelector('strong + text').textContent : '',
       content: li.querySelector('span').textContent
     }));
+
+    // 根据匹配度排序
+    allResults.forEach(r => r.score = computeScore(r, keywords));
+    allResults.sort((a,b) => b.score - a.score);
+
     renderPage(currentPage);
   }, 100);
 });
@@ -116,3 +138,4 @@ mark {
   font-weight: bold;
 }
 </style>
+
