@@ -1,10 +1,15 @@
+---
+layout: null
+permalink: /search.json
+---
+
 [
   {% for post in site.posts %}
     {
-      "title": "{{ post.title | escape }}",
-      "url": "{{ post.url }}",
-      "date": "{{ post.date | date_to_string }}",
-      "content": "{{ post.content | strip_html | strip_newlines | escape }}"
-    }{% if forloop.last == false %},{% endif %}
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | absolute_url | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "content": {{ post.content | strip_html | strip_newlines | truncatewords: 50 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
