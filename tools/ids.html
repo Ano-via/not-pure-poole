@@ -55,10 +55,7 @@ permalink: ids.html
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 4px;
-    }
-    #copyBtn.success {
-      background-color: #daf2c2;
-      color: white;
+      cursor: pointer;
     }
     #dropZone {
       border: 2px dashed #bbb;
@@ -75,6 +72,15 @@ permalink: ids.html
       color: #007bff;
       background-color: #e6f0ff;
     }
+    .delete-btn {
+      margin-left: 6px;
+      color: red;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .delete-btn:hover {
+      color: darkred;
+    }
   </style>
 </head>
 <body>
@@ -89,188 +95,170 @@ permalink: ids.html
   
   <ul id="idList"></ul>
   <div><strong id="finalUrlTitle">最终链接：</strong></div>
-<div id="finalUrl" title="点击复制链接，右键跳转预览"></div>
+  <div id="finalUrl" title="点击复制链接，右键跳转预览"></div>
 </div>
 
+<script>
+const urlInput = document.getElementById('urlInput');
+const idList = document.getElementById('idList');
+const finalUrl = document.getElementById('finalUrl');
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
 
+urlInput.addEventListener('input', updateList);
 
+function updateList() {
+  idList.innerHTML = '';
+  const url = urlInput.value;
+  const match = url.match(/ids=([^&]*)/);
+  if (!match) {
+    finalUrl.textContent = '';
+    return;
+  }
+  const raw = decodeURIComponent(match[1]);
+  const ids = raw.split(',').map(id => id.trim()).filter(id => id !== '');
+  ids.forEach((id, index) => {
+    const li = document.createElement('li');
+    li.setAttribute('data-id', id);
+    li.innerHTML = `${index + 1}. ${id} <span class="delete-btn">×</span>`;
+    idList.appendChild(li);
+  });
+  updateFinalUrl();
+}
 
-  <script>
-    const urlInput = document.getElementById('urlInput');
-    const idList = document.getElementById('idList');
-    const finalUrl = document.getElementById('finalUrl');
-    const copyBtn = document.getElementById('copyBtn');
-    const dropZone = document.getElementById('dropZone');
-    const fileInput = document.getElementById('fileInput');
+new Sortable(idList, {
+  animation: 150,
+  multiDrag: true,
+  selectedClass: 'selected',
+  onEnd: updateFinalUrl
+});
 
-    urlInput.addEventListener('input', updateList);
+function updateFinalUrl() {
+  const baseUrl = urlInput.value.split(/ids=[^&]*/)[0];
+  const ids = [...idList.children].map(li => li.getAttribute('data-id'));
+  const final = baseUrl + 'ids=' + ids.join(',');
+  finalUrl.textContent = final;
 
-    function updateList() {
-      idList.innerHTML = '';
-      const url = urlInput.value;
-      const match = url.match(/ids=([^&]*)/);
-      if (!match) {
-        finalUrl.textContent = '';
-        return;
-      }
-const raw = decodeURIComponent(match[1]);  // 解码 %2C
-const ids = raw.split(',').map(id => id.trim()).filter(id => id !== '');
-      ids.forEach((id, index) => {
-        const li = document.createElement('li');
-        li.textContent = `${index + 1}. ${id}`;
-        li.setAttribute('data-id', id);
-        idList.appendChild(li);
-      });
+  [...idList.children].forEach((li, idx) => {
+    const id = li.getAttribute('data-id');
+    li.innerHTML = `${idx + 1}. ${id} <span class="delete-btn">×</span>`;
+  });
+}
+
+// 删除按钮事件
+idList.addEventListener('click', function(e) {
+  if (e.target.classList.contains('delete-btn')) {
+    const li = e.target.closest('li');
+    if (li) {
+      li.remove();
       updateFinalUrl();
     }
+  }
+});
 
-    new Sortable(idList, {
-      animation: 150,
-      multiDrag: true,
-      selectedClass: 'selected',
-      onEnd: updateFinalUrl
-    });
+// 批量移到顶部功能（右键）
+idList.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  const li = e.target.closest('li');
+  if (!li || !li.classList.contains('selected')) return;
 
-    function updateFinalUrl() {
-      const baseUrl = urlInput.value.split(/ids=[^&]*/)[0];
-      const ids = [...idList.children].map(li => li.getAttribute('data-id'));
-      const final = baseUrl + 'ids=' + ids.join(',');
-      finalUrl.textContent = final;
+  const selectedItems = [...idList.querySelectorAll('li.selected')];
+  selectedItems.forEach(item => idList.removeChild(item));
+  selectedItems.reverse().forEach(item => idList.insertBefore(item, idList.firstChild));
 
-      [...idList.children].forEach((li, idx) => {
-        const id = li.getAttribute('data-id');
-        li.textContent = `${idx + 1}. ${id}`;
-      });
-    }
+  updateFinalUrl();
+});
 
-    function copyFinalUrl() {
-      const text = finalUrl.textContent;
-      navigator.clipboard.writeText(text).then(() => {
-        copyBtn.classList.add('success');
-        copyBtn.textContent = "√ 链接已复制";
-        setTimeout(() => {
-          copyBtn.classList.remove('success');
-          copyBtn.textContent = "复制最终链接";
-        }, 3000);
-      });
-    }
+// 拖拽与点击打开文件
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', e => {
+  e.preventDefault();
+  dropZone.classList.add('hover');
+});
+dropZone.addEventListener('dragleave', e => {
+  e.preventDefault();
+  dropZone.classList.remove('hover');
+});
+dropZone.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('hover');
+  const files = e.dataTransfer.files;
+  if (files.length > 0) {
+    handleFile(files[0]);
+  }
+});
+fileInput.addEventListener('change', e => {
+  if (fileInput.files.length > 0) {
+    handleFile(fileInput.files[0]);
+  }
+});
 
-    // 批量移到顶部功能（右键）
-    idList.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-      const li = e.target.closest('li');
-      if (!li || !li.classList.contains('selected')) return;
+function handleFile(file) {
+  if (!file.name.match(/\.(xlsx|xls)$/)) {
+    alert('请上传 Excel 文件（.xlsx 或 .xls）');
+    return;
+  }
 
-      const selectedItems = [...idList.querySelectorAll('li.selected')];
-      selectedItems.forEach(item => idList.removeChild(item));
-      selectedItems.reverse().forEach(item => idList.insertBefore(item, idList.firstChild));
+  const reader = new FileReader();
+  reader.onload = function(evt) {
+    const data = evt.target.result;
+    const workbook = XLSX.read(data, {type: 'array'});
+    const firstSheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[firstSheetName];
+    const rows = XLSX.utils.sheet_to_json(sheet, {header:1});
 
-      updateFinalUrl();
-    });
-
-    // 拖拽与点击打开文件
-    dropZone.addEventListener('click', () => fileInput.click());
-
-    dropZone.addEventListener('dragover', e => {
-      e.preventDefault();
-      dropZone.classList.add('hover');
-    });
-
-    dropZone.addEventListener('dragleave', e => {
-      e.preventDefault();
-      dropZone.classList.remove('hover');
-    });
-
-    dropZone.addEventListener('drop', e => {
-      e.preventDefault();
-      dropZone.classList.remove('hover');
-      const files = e.dataTransfer.files;
-      if (files.length > 0) {
-        handleFile(files[0]);
-      }
-    });
-
-    fileInput.addEventListener('change', e => {
-      if (fileInput.files.length > 0) {
-        handleFile(fileInput.files[0]);
-      }
-    });
-
-    function handleFile(file) {
-      if (!file.name.match(/\.(xlsx|xls)$/)) {
-        alert('请上传 Excel 文件（.xlsx 或 .xls）');
-        return;
-      }
-
-      const reader = new FileReader();
-      reader.onload = function(evt) {
-        const data = evt.target.result;
-        const workbook = XLSX.read(data, {type: 'array'});
-
-        // 默认读第一个sheet
-        const firstSheetName = workbook.SheetNames[0];
-        const sheet = workbook.Sheets[firstSheetName];
-
-        // 转换为json，header:1 返回二维数组
-        const rows = XLSX.utils.sheet_to_json(sheet, {header:1});
-
-        // 跳过前两行，从第三行开始遍历
-        // 找 B 列不为空的，取对应行的 A 列
-        const result = [];
-        for(let i=2; i<rows.length; i++) {
-          const row = rows[i];
-          if (!row) continue;
-          const B = row[1]; // B列，数组从0开始
-          const A = row[0];
-          if (B !== undefined && B !== null && String(B).trim() !== '') {
-            if (A !== undefined && A !== null && String(A).trim() !== '') {
-              result.push(String(A).trim());
-            }
-          }
+    const result = [];
+    for(let i=2; i<rows.length; i++) {
+      const row = rows[i];
+      if (!row) continue;
+      const B = row[1];
+      const A = row[0];
+      if (B !== undefined && B !== null && String(B).trim() !== '') {
+        if (A !== undefined && A !== null && String(A).trim() !== '') {
+          result.push(String(A).trim());
         }
-
-        if (result.length === 0) {
-          alert('未找到符合条件的数据');
-          return;
-        }
-
-        // 替换 input 中 ids 后面内容
-        replaceIds(result);
-      };
-      reader.readAsArrayBuffer(file);
-    }
-
-    function replaceIds(newIds) {
-      let url = urlInput.value;
-
-      if (!url.includes('ids=')) {
-        // 如果没有ids=，就加到末尾
-        if (url.includes('?')) {
-          url += '&ids=' + newIds.join(',');
-        } else {
-          url += '?ids=' + newIds.join(',');
-        }
-      } else {
-        // 替换ids=后面内容直到 & 或结束
-        url = url.replace(/ids=[^&]*/, 'ids=' + newIds.join(','));
       }
-      urlInput.value = url;
-      updateList();
     }
 
-    finalUrl.addEventListener('click', () => {
+    if (result.length === 0) {
+      alert('未找到符合条件的数据');
+      return;
+    }
+    replaceIds(result);
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function replaceIds(newIds) {
+  let url = urlInput.value;
+  if (!url.includes('ids=')) {
+    if (url.includes('?')) {
+      url += '&ids=' + newIds.join(',');
+    } else {
+      url += '?ids=' + newIds.join(',');
+    }
+  } else {
+    url = url.replace(/ids=[^&]*/, 'ids=' + newIds.join(','));
+  }
+  urlInput.value = url;
+  updateList();
+}
+
+// 点击复制最终链接
+finalUrl.addEventListener('click', () => {
   const text = finalUrl.textContent;
   navigator.clipboard.writeText(text).then(() => {
     finalUrl.style.backgroundColor = '#28a745';
     finalUrl.style.color = '#fff';
     setTimeout(() => {
-      updateFinalUrl(); // 恢复显示链接
+      updateFinalUrl();
       finalUrl.style.backgroundColor = '';
       finalUrl.style.color = '';
     }, 3000);
   });
 });
 
+// 右键打开最终链接
 finalUrl.addEventListener('contextmenu', (e) => {
   e.preventDefault();
   const url = finalUrl.textContent;
@@ -278,9 +266,6 @@ finalUrl.addEventListener('contextmenu', (e) => {
     window.open(url, '_blank');
   }
 });
-
-    
-  </script>
-
+</script>
 </body>
 </html>
