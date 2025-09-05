@@ -33,8 +33,8 @@ permalink: /search/
     json: '/search.json',
     searchResultTemplate: `
       <li>
-        <a href="{url}">{title}</a> <small>({date})</small><br>
-        <strong>标签：</strong> {tags}<br>
+        <a class="search-title" href="{url}">{title}</a> <small>({date})</small><br>
+        <strong>标签：</strong> <span class="search-tags">{tags}</span><br>
         <span class="search-content" style="color:#666;font-size:90%;">{content}</span>
       </li>
     `,
@@ -60,12 +60,27 @@ permalink: /search/
 
     setTimeout(() => {
       resultsContainer.querySelectorAll('li').forEach(li => {
-        li.innerHTML = li.innerHTML.replace(/<mark>|<\/mark>/g, ''); // 去掉旧高亮
+        // 清除旧高亮
+        li.querySelectorAll('mark').forEach(m => {
+          m.replaceWith(m.textContent);
+        });
+
+        // 只高亮 title, tags, content
+        ['.search-title', '.search-tags', '.search-content'].forEach(sel => {
+          const el = li.querySelector(sel);
+          if (el) {
+            el.innerHTML = el.innerHTML.replace(
+              new RegExp(`(${keyword})`, 'gi'),
+              '<mark>$1</mark>'
+            );
+          }
+        });
+
+        // 重新截断 content
         const contentSpan = li.querySelector('.search-content');
         if (contentSpan) {
           contentSpan.textContent = getContentDisplay(contentSpan.textContent);
         }
-        li.innerHTML = li.innerHTML.replace(new RegExp(`(${keyword})`, 'gi'), '<mark>$1</mark>');
       });
     }, 100);
   });
@@ -73,6 +88,7 @@ permalink: /search/
   // 屏幕尺寸改变时重新处理 content
   window.addEventListener('resize', updateContentDisplay);
 </script>
+
 
 <style>
 mark {
