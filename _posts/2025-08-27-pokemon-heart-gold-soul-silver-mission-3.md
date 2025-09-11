@@ -4,10 +4,7 @@ title: 口袋妖怪心金·魂银图文攻略三周目，巴尔郎入手，叉�
 tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 心金魂银]
 date: 2025-08-24 11:24 +0800
 ---
-<nav class="toc">
-      <h2>目录</h2>
-      <ul id="toc-list"></ul>
-    </nav>
+
 <td>
 <font color="Blue">- 以心金版为基础</font><br>
 <br>
@@ -445,24 +442,3 @@ Lv34 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQ
 <br>
 <br>
 </td>
-  <script>
-    const tocList = document.getElementById("toc-list");
-    const article = document.getElementById("article");
-    const headers = article.querySelectorAll("font[size='5'], font[size='4']");
-
-    headers.forEach((header, index) => {
-      const id = "section-" + index;
-      header.id = id;
-
-      const li = document.createElement("li");
-      // size=4 的当作子标题，缩进
-      li.style.marginLeft = header.getAttribute("size") === "4" ? "20px" : "0";
-
-      const a = document.createElement("a");
-      a.href = "#" + id;
-      a.textContent = header.textContent;
-
-      li.appendChild(a);
-      tocList.appendChild(li);
-    });
-  </script>
