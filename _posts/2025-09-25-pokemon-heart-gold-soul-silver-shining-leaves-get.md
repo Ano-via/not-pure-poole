@@ -5,13 +5,13 @@ tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 心金魂银]
 date: 2025-08-24 11:21 +0800
 ---
 <style>
-  .table-wrapper {
-    overflow-x: auto; /* 手机端横向滚动 */
-    -webkit-overflow-scrolling: touch;
-  }
   table {
     border-collapse: collapse;
-    min-width: 600px; /* 让表格有基本宽度，避免太挤 */
+    width: 100%; /* 表格占满屏幕宽度 */
+    max-width: 30em;
+    table-layout: fixed; /* 列等比例缩放 */
+    word-wrap: break-word; /* 自动换行 */
+    word-break: break-all;
   }
   table, th, td {
     border: 1px solid black;
@@ -21,12 +21,10 @@ date: 2025-08-24 11:21 +0800
     text-align: center;
   }
   td:first-child {
-    min-width: 3em; /* 固定第一列最小宽度 */
-    text-align: left; /* 左对齐更适合多行文字 */
-    background: #f9f9f9; /* 给第一列加浅底色，区分更明显 */
-    position: sticky; /* 固定第一列 */
-    left: 0;
-    z-index: 1;
+    width: 25%;  /* 第一列占比，防止被挤没 */
+    max-width: 3em;
+    text-align: left;
+    background: #f9f9f9;
   }
 </style>
 <h2>获取方式</h2>
