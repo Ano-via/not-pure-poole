@@ -8,7 +8,6 @@ date: 2025-08-24 11:21 +0800
   table {
     border-collapse: collapse;
     width: 100%; /* 表格占满屏幕宽度 */
-    max-width: 30em;
     table-layout: fixed; /* 列等比例缩放 */
     word-wrap: break-word; /* 自动换行 */
     word-break: break-all;
@@ -22,7 +21,6 @@ date: 2025-08-24 11:21 +0800
   }
   td:first-child {
     width: 20%;  /* 第一列占比，防止被挤没 */
-    max-width: 3em;
     text-align: left;
     background: #f9f9f9;
   }
