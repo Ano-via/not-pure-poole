@@ -156,7 +156,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#e0b192">青铜</td>    
     <td style="background-color:#c0c0c0">白银</td>
     <td style="background-color:#daa520">黄金</td>
-    <td style="background-color:#444444">黑色</td>
+    <td style="background-color:#444444; color:#eeeded">黑色</td>
   </tr>
   <tr>
     <td colspan="6" style="background-color:#cfc059">获得方式</td>
@@ -184,7 +184,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#64d364">翠绿</td>    
     <td style="background-color:#c689ba">粉紫</td>
     <td style="background-color:#dfdfe1">灰色</td>
-    <td style="background-color:#444444">黑色</td>
+    <td style="background-color:#444444; color:#eeeded">黑色</td>
   </tr>
   <tr>
     <td colspan="6" style="background-color:#f8e8a8">获得方式</td>
@@ -204,7 +204,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#ff6464" rowspan="2">紫铜</td>    
     <td style="background-color:#c0c0c0" rowspan="2">白银</td>
     <td style="background-color:#daa520" rowspan="2">黄金</td>
-    <td style="background-color:#444444; color:eeeded">黑色</td>
+    <td style="background-color:#444444; color:#eeeded">黑色</td>
   </tr>
   <tr style="font-weight: bold">
     <td style="background-color:#eeeded">白色</td>
