@@ -21,7 +21,7 @@ date: 2025-08-24 11:21 +0800
     text-align: center;
   }
   td:first-child {
-    width: 25%;  /* 第一列占比，防止被挤没 */
+    width: 20%;  /* 第一列占比，防止被挤没 */
     max-width: 3em;
     text-align: left;
     background: #f9f9f9;
