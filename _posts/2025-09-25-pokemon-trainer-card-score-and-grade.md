@@ -84,7 +84,11 @@ date: 2025-08-24 11:20 +0800
     <td colspan="5" style="background-color:#64d364">获得方式</td>
   </tr>
   <tr>
-    <td colspan="5" align="left">· 登入名人堂<br/>· 完成丰缘图鉴<br/>· 完成水静美术馆２Ｆ的全部5个画作<br/>· 对战塔50连胜</td>
+    <td colspan="5" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成丰缘图鉴</li>
+    <li>完成水静美术馆２Ｆ的全部5个画作</li>
+    <li>对战塔50连胜</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -109,7 +113,11 @@ date: 2025-08-24 11:20 +0800
     <td colspan="5" style="background-color:#ffa472">获得方式</td>
   </tr>
   <tr>
-    <td colspan="5" align="left">· 登入名人堂<br/>· 完成关都图鉴<br/>· 完成全国图鉴<br/>· 在迷你宝可梦跳跃中连跳200下；在嘟嘟利采树果中采集200个树果</td>
+    <td colspan="5" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成关都图鉴</li>
+    <li>完成全国图鉴</li>
+    <li>在迷你宝可梦跳跃中连跳200下；在嘟嘟利采树果中采集200个树果</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -134,7 +142,11 @@ date: 2025-08-24 11:20 +0800
     <td colspan="5" style="background-color:#59c159">获得方式</td>
   </tr>
   <tr>
-    <td colspan="5" align="left">· 登入名人堂<br/>· 完成丰缘图鉴<br/>· 完成水静美术馆２Ｆ的全部5个画作<br/>· 获得对战开拓区的全部金色象征</td>
+    <td colspan="5" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成丰缘图鉴</li>
+    <li>完成水静美术馆２Ｆ的全部5个画作</li>
+    <li>获得对战开拓区的全部金色象征</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -162,7 +174,10 @@ date: 2025-08-24 11:20 +0800
     <td colspan="6" style="background-color:#cfc059">获得方式</td>
   </tr>
   <tr>
-    <td colspan="6" align="left">· 登入名人堂<br/>· 完成全国图鉴<br/>· 获得超级华丽大赛的任意一个大师级别比赛优胜<br/>· 对战塔100连胜<br>· 在地下通道中夺取50个秘密基地旗子</td>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li><li>完成全国图鉴</li>
+    <li>获得超级华丽大赛的任意一个大师级别比赛优胜</li>
+    <li>对战塔100连胜<br>· 在地下通道中夺取50个秘密基地旗子</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -190,7 +205,12 @@ date: 2025-08-24 11:20 +0800
     <td colspan="6" style="background-color:#f8e8a8">获得方式</td>
   </tr>
   <tr>
-    <td colspan="6" align="left">· 登入名人堂<br/>· 完成全国图鉴<br/>· 收集5枚闪耀的叶片并从阿响/琴音处得到证书<br/>· 对战塔100连胜<br>· 打破宝可全能竞技赛巨蛋中的所有比赛项目的记录并获得友情室的进入资格</td>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成全国图鉴</li>
+    <li>收集5枚闪耀的叶片并从阿响/琴音处得到证书</li>
+    <li>对战塔100连胜</li>
+    <li>打破宝可全能竞技赛巨蛋中的所有比赛项目的记录并获得友情室的进入资格</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -213,6 +233,11 @@ date: 2025-08-24 11:20 +0800
     <td colspan="6" style="background-color:#858585">获得方式</td>
   </tr>
   <tr>
-    <td colspan="6" align="left">· 打败魁奇思和等离子队<br/>· 完成全国图鉴<br/>· 将连入之树的★黑色和☆白色等级升到30级以上<br/>· 收集音乐剧的全部100个物品<br>· 在对战地铁的超级单打线路和超级双打线路中打败地铁总管北尚与南厦</td>
+    <td colspan="6" align="left"><ul>
+    <li>打败魁奇思和等离子队</li>
+    <li>完成全国图鉴</li>
+    <li>将连入之树的★黑色和☆白色等级升到30级以上</li>
+    <li>收集音乐剧的全部100个物品</li>
+    <li>在对战地铁的超级单打线路和超级双打线路中打败地铁总管北尚与南厦</li></ul></td>
   </tr>
 </table>
