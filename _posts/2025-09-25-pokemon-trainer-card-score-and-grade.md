@@ -241,3 +241,110 @@ date: 2025-08-24 11:20 +0800
     <li>在对战地铁的超级单打线路和超级双打线路中打败地铁总管北尚与南厦</li></ul></td>
   </tr>
 </table>
+<p></p>
+<h3>黑2／白2</h3>
+<p>训练家卡升级条件有一项在日文版和海外版中有所不同，最高等级为黑色/白色。</p>
+<p></p>
+<table>
+  <tr style="font-weight: bold">
+    <td style="background-color:#6464FF" rowspan="2">普通</td>
+    <td style="background-color:#64d364" rowspan="2">青铜</td>
+    <td style="background-color:#FFAC59" rowspan="2">紫铜</td>    
+    <td style="background-color:#c0c0c0" rowspan="2">白银</td>
+    <td style="background-color:#daa520" rowspan="2">黄金</td>
+    <td style="background-color:#444444; color:#eeeded">黑色</td>
+  </tr>
+  <tr style="font-weight: bold">
+    <td style="background-color:#eeeded">白色</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color:#636161">获得方式</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成全国图鉴</li>
+    <li>完成好莱坞全部剧本并达成所有完美结局（不包括《哈奇酷侠的逆袭 归来》）</li>
+    <li>收集所有奖牌（日文版）</li>
+    <li>将连入之树的★黑色和☆白色等级升到30级以上（日文版、海外版）</li></ul></td>
+  </tr>
+</table>
+<p></p>
+<h3>X／Y</h3>
+<p>《Ｘ／Ｙ》起，训练家卡只有4个等级，宝可梦中心的姐姐的特殊对话则变为最高等级触发。</p>
+<p></p>
+<table>
+  <tr style="font-weight: bold">
+    <td style="background-color:#64d364" rowspan="2">普通</td>
+    <td style="background-color:#6464FF" rowspan="2">青铜</td>  
+    <td style="background-color:#c0c0c0" rowspan="2">白银</td>
+    <td style="background-color:#daa520" rowspan="2">黄金</td>
+  </tr>
+  <tr style="font-weight: bold">
+    <td style="background-color:#eeeded">白色</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color:#5a96c5">获得方式</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>遇见卡洛斯图鉴中除传说中的鸟类宝可梦、超梦、幻之宝可梦以外的所有宝可梦</li>
+    <li>在对战屋的任意超级对战中打败对战女城主</li></ul></td>
+  </tr>
+</table>
+<p></p>
+<h3>欧米伽红宝石／阿尔法蓝宝石</h3>
+<p></p>
+<table>
+  <tr style="font-weight: bold">
+    <td style="background-color:#6464FF" rowspan="2">普通</td>
+    <td style="background-color:#e0b192" rowspan="2">青铜</td>  
+    <td style="background-color:#c0c0c0" rowspan="2">白银</td>
+    <td style="background-color:#daa520" rowspan="2">黄金</td>
+  </tr>
+  <tr style="font-weight: bold">
+    <td style="background-color:#eeeded">白色</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color:#C87365">获得方式</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成丰缘图鉴，不包含烈空坐和幻之宝可梦</li>
+    <li>在对战屋的任意超级对战中打败对战女城主</li></ul></td>
+  </tr>
+</table>
+<p></p>
+<h3>晶灿钻石／明亮珍珠</h3>
+<p></p>
+<table>
+  <tr style="font-weight: bold">
+    <td style="background-color:#ff6464"></td>
+    <td style="background-color:#6464ff; color:yellow">★</td>
+    <td style="background-color:#c87365; color:yellow">★★</td>
+    <td style="background-color:#c0c0c0; color:yellow">★★★</td>
+    <td style="background-color:#daa520; color:yellow">★★★★</td>
+    <td style="background-color:#daa520; color:yellow">★★★★★</td>
+  </tr>
+  <tr style="font-weight: bold">
+    <td style="background-color:#ff6464">普通</td>
+    <td style="background-color:#6464ff">蓝钴</td>
+    <td style="background-color:#e0b192">青铜</td>    
+    <td style="background-color:#c0c0c0">白银</td>
+    <td style="background-color:#daa520">黄金</td>
+    <td style="background-color:#444444; color:#eeeded">黑色</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color:#E7ABBD">获得方式</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left"><ul>
+    <li>登入名人堂</li>
+    <li>完成全国图鉴</li>
+    <li>获得超级华丽大赛的任意一个大师级别比赛优胜</li>
+    <li>在地下大洞窟中获得100种宝可梦石像</li>
+    <li>对战塔100连胜</li></ul></td>
+  </tr>
+</table>
