@@ -160,7 +160,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#c87365; color:yellow">★★</td>
     <td style="background-color:#c0c0c0; color:yellow">★★★</td>
     <td style="background-color:#daa520; color:yellow">★★★★</td>
-    <td style="background-color:#daa520; color:yellow">★★★★★</td>
+    <td style="background-color:#444444; color:yellow">★★★★★</td>
   </tr>
   <tr style="font-weight: bold">
     <td style="background-color:#ff6464">普通</td>
@@ -191,7 +191,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#64d364; color:yellow">★★</td>
     <td style="background-color:#c689ba; color:yellow">★★★</td>
     <td style="background-color:#dfdfe1; color:yellow">★★★★</td>
-    <td style="background-color:#daa520; color:yellow">★★★★★</td>
+    <td style="background-color:#444444; color:yellow">★★★★★</td>
   </tr>
   <tr style="font-weight: bold">
     <td style="background-color:#ff6464">普通</td>
@@ -326,7 +326,7 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#c87365; color:yellow">★★</td>
     <td style="background-color:#c0c0c0; color:yellow">★★★</td>
     <td style="background-color:#daa520; color:yellow">★★★★</td>
-    <td style="background-color:#daa520; color:yellow">★★★★★</td>
+    <td style="background-color:#444444; color:yellow">★★★★★</td>
   </tr>
   <tr style="font-weight: bold">
     <td style="background-color:#ff6464">普通</td>
