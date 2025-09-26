@@ -280,14 +280,11 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#c0c0c0" rowspan="2">白银</td>
     <td style="background-color:#daa520" rowspan="2">黄金</td>
   </tr>
-  <tr style="font-weight: bold">
-    <td style="background-color:#eeeded">白色</td>
+  <tr>
+    <td colspan="4" style="background-color:#5a96c5">获得方式</td>
   </tr>
   <tr>
-    <td colspan="6" style="background-color:#5a96c5">获得方式</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="left"><ul>
+    <td colspan="4" align="left"><ul>
     <li>登入名人堂</li>
     <li>遇见卡洛斯图鉴中除传说中的鸟类宝可梦、超梦、幻之宝可梦以外的所有宝可梦</li>
     <li>在对战屋的任意超级对战中打败对战女城主</li></ul></td>
@@ -303,14 +300,11 @@ date: 2025-08-24 11:20 +0800
     <td style="background-color:#c0c0c0" rowspan="2">白银</td>
     <td style="background-color:#daa520" rowspan="2">黄金</td>
   </tr>
-  <tr style="font-weight: bold">
-    <td style="background-color:#eeeded">白色</td>
+  <tr>
+    <td colspan="4" style="background-color:#C87365">获得方式</td>
   </tr>
   <tr>
-    <td colspan="6" style="background-color:#C87365">获得方式</td>
-  </tr>
-  <tr>
-    <td colspan="6" align="left"><ul>
+    <td colspan="4" align="left"><ul>
     <li>登入名人堂</li>
     <li>完成丰缘图鉴，不包含烈空坐和幻之宝可梦</li>
     <li>在对战屋的任意超级对战中打败对战女城主</li></ul></td>
