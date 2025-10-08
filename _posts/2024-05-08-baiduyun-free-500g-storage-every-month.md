@@ -17,4 +17,4 @@ sticky: 1
 ---
 ### 注意：该活动目前来看是每个月都能领取的，大家每月失效之后可以重复领取。
 
-链接直达： [https://pan.baidu.com/comps/view/MV84NTZfMTAzMF8yODU2X29ubGluZQ==](https://pan.baidu.com/comps/view/MV84NTZfMTAzMF8yODU2X29ubGluZQ==)
+[链接直达](https://pan.baidu.com/comps/view/MV84NTZfMTAzMF8yODU2X29ubGluZQ==)
