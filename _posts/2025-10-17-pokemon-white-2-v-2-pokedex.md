@@ -29,7 +29,7 @@ date: 2025-10-17 11:15 +0800
 
 <table>
     <tr>
-        <td id="gen1" colspan="4">第一世代</td>
+        <td id="gen1" colspan="4" style="font-weight: bold; text-align: center;">第一世代</td>
     </tr>
     <tr>
         <td>编号</td>
@@ -944,7 +944,7 @@ date: 2025-10-17 11:15 +0800
         <td>矢车森林内部草地57级概率低</td>
     </tr>
     <tr>
-        <td id="gen2" colspan="4">第二世代</td>
+        <td id="gen2" colspan="4" style="font-weight: bold; text-align: center;">第二世代</td>
     </tr>
     <tr>
         <td>编号</td>
@@ -1553,7 +1553,7 @@ date: 2025-10-17 11:15 +0800
         <td>13号道路长草40级概率低</td>
     </tr>
     <tr>
-        <td id="gen3" colspan="4">第三世代</td>
+        <td id="gen3" colspan="4" style="font-weight: bold; text-align: center;">第三世代</td>
     </tr>
     <tr>
         <td>编号</td>
@@ -2372,7 +2372,7 @@ date: 2025-10-17 11:15 +0800
         <td>n的城堡入口50级概率低</td>
     </tr>
     <tr>
-        <td id="gen4" colspan="4">第四世代</td>
+        <td id="gen4" colspan="4" style="font-weight: bold; text-align: center;">第四世代</td>
     </tr>
     <tr>
         <td>编号</td>
@@ -3023,7 +3023,7 @@ date: 2025-10-17 11:15 +0800
         <td>奇迹大桥80级（影子遇到超低概率）如果遇到首席天鹅等级是57级的话，说明已经接近<a href="#493">阿尔宙斯</a>了</td>
     </tr>
     <tr>
-        <td id="gen5" colspan="4">第五世代</td>
+        <td id="gen5" colspan="4" style="font-weight: bold; text-align: center;">第五世代</td>
     </tr>
     <tr>
         <td>编号</td>
