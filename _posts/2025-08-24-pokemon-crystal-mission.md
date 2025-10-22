@@ -4,6 +4,7 @@ title: 口袋妖怪水晶版完全攻略
 tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 水晶]
 date: 2025-08-24 11:15 +0800
 ---
+
 <div class="c-article__content">
 <span class="T3">1.开始游戏，选择男生或女生。（男上女下）</span><br><span class="T3">
 2.出家门后，去博士家，他会问你话，你要答好。</span><br><span class="T3">
