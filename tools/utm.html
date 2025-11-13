@@ -95,12 +95,17 @@ permalink: utm.html
 
 <label>
   <input type="radio" name="utm_option" value="template1">
-  TikTok模板（utm_medium= <input type="text" id="medium1" placeholder="请输入 medium">）
+  Facebook发帖模板（utm_medium= <input type="text" id="medium1" placeholder="请输入 medium">）
 </label><br>
 
 <label>
   <input type="radio" name="utm_option" value="template2">
-  Pinterest模板（utm_medium= <input type="text" id="medium2" placeholder="请输入 medium">）
+  Instagram发帖模板（utm_medium= <input type="text" id="medium2" placeholder="请输入 medium">）
+</label><br>
+
+<label>
+  <input type="radio" name="utm_option" value="template3">
+  Pinterest发帖模板（utm_medium= <input type="text" id="medium3" placeholder="请输入 medium">）
 </label><br>
 
 <label>
@@ -198,15 +203,20 @@ permalink: utm.html
       let params = new URLSearchParams();
 
       if (selected === 'template1') {
-        params.set('utm_source', 'TikTok');
+        params.set('utm_source', 'Facebook');
         params.set('utm_medium', document.getElementById('medium1').value.trim());
-        params.set('utm_adset', '__AID_NAME__')
-        params.set('utm_ad', '__CID_NAME__')
+        params.set('utm_adset', 'Post')
+        params.set('utm_ad', '')
       } else if (selected === 'template2') {
+        params.set('utm_source', 'Instagram');
+        params.set('utm_medium', document.getElementById('medium2').value.trim());
+        params.set('utm_campaign', 'Post')
+        params.set('utm_content', '')
+      } else if (selected === 'template3') {
         params.set('utm_source', 'Pinterest');
         params.set('utm_medium', document.getElementById('medium2').value.trim());
-        params.set('utm_campaign', '{campaignid}')
-        params.set('utm_content', '{adid}')
+        params.set('utm_campaign', 'Post')
+        params.set('utm_content', '')
       } else if (selected === 'custom') {
         params.set('utm_source', document.getElementById('custom_source').value.trim());
         params.set('utm_medium', document.getElementById('custom_medium').value.trim());
