@@ -7,7 +7,7 @@ permalink: /search/
 <input type="text" id="search-input" placeholder="输入关键词或标签搜索，用空格或逗号分隔..." style="width:100%">
 <ul id="results"></ul>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.7.2/simple-jekyll-search.min.js"></script>
+<script src="/simple-jekyll-search.min.js"></script>
 <script>
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results');
