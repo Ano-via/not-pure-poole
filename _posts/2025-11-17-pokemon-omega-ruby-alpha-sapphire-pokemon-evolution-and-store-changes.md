@@ -305,7 +305,7 @@ date: 2025-11-17 11:15 +0800
             <td></td>
         </tr>
         <tr>
-            <th colspan="2">凯那市商店</td>
+            <th colspan="2">凯那市商店</th>
         </tr>
         <tr>
             <td>捕网球</td>
@@ -340,7 +340,7 @@ date: 2025-11-17 11:15 +0800
             <td>500</td>
         </tr>
         <tr>
-            <th colspan="2">绿荫镇商店</td>
+            <th colspan="2">绿荫镇商店</th>
         </tr>
         <tr>
             <td>日之石</td>
@@ -355,7 +355,7 @@ date: 2025-11-17 11:15 +0800
             <td></td>
         </tr>
         <tr>
-            <th colspan="2">秋叶镇商店</td>
+            <th colspan="2">秋叶镇商店</th>
         </tr>
         <tr>
             <td>光之石</td>
@@ -370,7 +370,7 @@ date: 2025-11-17 11:15 +0800
             <td></td>
         </tr>
         <tr>
-            <th colspan="2">水静市百货大厦2F</td>
+            <th colspan="2">水静市百货大厦2F</th>
         </tr>
         <tr>
             <td>叶之石</td>
