@@ -1,0 +1,225 @@
+---
+layout: default
+title: "Shopify商品文件转店匠商品文件"
+permalink: 2spl.html
+---
+
+
+<head>
+  <style>
+    .xlsx-tool {
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      padding: 30px;
+      min-height: 100vh;
+    }
+
+    .xlsx-tool-box {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .xlsx-tool-drop {
+      border: 2px dashed #4cafef;
+      padding: 50px;
+      border-radius: 12px;
+      color: #4cafef;
+      font-size: 18px;
+      background: #f8fbff;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .xlsx-tool-drop:hover {
+      background: #eef6ff;
+    }
+
+    .xlsx-tool-btn {
+      margin-top: 20px;
+      background: #4cafef;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .xlsx-tool-result {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #2e7d32;
+    }
+
+    .xlsx-tool input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="xlsx-tool">
+  <div class="xlsx-tool-box">
+    <h2>Excel 转换工具</h2>
+
+    <div class="xlsx-tool-drop" id="dropZone">
+      拖拽 Excel 文件到这里<br/>或点击选择
+    </div>
+
+    <input type="file" id="fileInput" accept=".xlsx"/>
+
+    <button class="xlsx-tool-btn" id="downloadBtn">下载转换后的文件</button>
+    <div class="xlsx-tool-result" id="resultText"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<script>
+/* ===== 表头数据 ===== */
+const header2 = [
+  "商品ID","创建时间","商品标题*","商品属性*","商品副标题","商品描述","SEO标题","SEO描述",
+  "SEO URL Handle","SEO URL 重定向","SEO关键词","商品上架","需要物流","商品收税","商品spu",
+  "启用虚拟销量","虚拟销量值","跟踪库存","库存规则*","专辑名称","标签","供应商名称",
+  "供应商URL","款式1","款式2","款式3","商品售价*","商品原价","成本价","商品SKU","商品重量",
+  "重量单位","商品条形码","商品库存","尺寸信息","原产地国别","HS（协调制度）代码",
+  "商品图片*","商品备注","款式备注","商品主图",
+  "如需导入元字段， 请在此行增添【元字段-命名空间和密钥】作为表头，例：元字段-test.111"
+];
+
+const header3 = [
+  "（此行导入时不可删除 ）商品 ID 是系统生成的唯一标识符，新增商品无需填写",
+  "创建时间的时区为当前店铺设置的时区",
+  "最多255字符(同一商品的子款式标题与商品标题需一致，且中间请勿插入其他商品)",
+  "1.多款式商品：同一个商品的首行标题填入「M」；非首行填「P」；单款式填「S」",
+  "最多600字符","上传不带样式，若需要样式，则输入html代码","最多5000字符","最多5000字符",
+  "最多支持输入255字符","创建URL重定向","多个关键词用英文逗号",
+  "Y=上架","Y=需要物流","Y=收税","最多100字符","是否启用虚拟销量",
+  "最多输入六位数自然数","是否跟踪库存","库存规则说明","专辑名称说明","标签说明",
+  "最多20字符","供应商URL","最多255字符","最多255字符","最多255字符","价格格式",
+  "原价格式","成本价格式","最多255字符","重量说明","单位说明","条码说明","库存说明",
+  "尺寸填写说明","国家代码说明","HS编码说明","图片填写说明","备注说明","款式备注说明",
+  "主图说明","元字段说明"
+];
+
+let outputWorkbook = null;
+let outputFileName = "";
+
+/* ===== 拖拽功能 ===== */
+const dropZone = document.getElementById("dropZone");
+const fileInput = document.getElementById("fileInput");
+const downloadBtn = document.getElementById("downloadBtn");
+const resultText = document.getElementById("resultText");
+
+dropZone.onclick = () => fileInput.click();
+
+dropZone.ondragover = e => {
+  e.preventDefault();
+  dropZone.style.background = "#eaf3ff";
+};
+
+dropZone.ondragleave = () => {
+  dropZone.style.background = "#f8fbff";
+};
+
+dropZone.ondrop = e => {
+  e.preventDefault();
+  dropZone.style.background = "#f8fbff";
+  handleFile(e.dataTransfer.files[0]);
+};
+
+fileInput.onchange = e => handleFile(e.target.files[0]);
+
+/* ===== 主逻辑 ===== */
+function handleFile(file) {
+  if (!file) return;
+
+  const reader = new FileReader();
+  const baseName = file.name.replace(/\.xlsx$/i, "");
+  outputFileName = baseName + "_converted.xlsx";
+
+  reader.onload = e => {
+    const data = new Uint8Array(e.target.result);
+    const wb = XLSX.read(data, { type: "array" });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
+
+    const out = [];
+    out.push(header2);
+    out.push(header3);
+
+    let lastB = "";
+    const aToY = {};
+
+    // 预处理 A → Y
+    for (let i = 1; i < rows.length; i++) {
+      const A = rows[i][0];
+      const Y = rows[i][24];
+      if (A && Y) {
+        const y = String(Y).trim();
+        if (y) {
+          if (!aToY[A]) aToY[A] = [];
+          if (!aToY[A].includes(y)) aToY[A].push(y);
+        }
+      }
+    }
+
+    // 主处理逻辑
+    for (let i = 1; i < rows.length; i++) {
+      const r = rows[i];
+      const A=r[0],B=r[1],C=r[2],D=r[3],F=r[5],H=r[7],I=r[8],
+            J=r[9],K=r[10],L=r[11],M=r[12],N=r[13],O=r[14],Q=r[16],
+            T=r[19],U=r[20],AR=r[43],AS=r[44],AV=r[47];
+
+      const yMerge = (aToY[A]||[]).join(",");
+
+      let newRow = [];
+
+      if (B) {
+        lastB = B;
+        newRow = ["","",B,"M","",C,"","","","","","Y","Y","Y",
+          AV,"","","","","",F,D,"",H,J,L,"","","","","","","","","","","","",yMerge
+        ];
+      } else {
+        newRow = ["","",lastB,"P","","","","","","","","","","","","","","","","","","","",
+          I,K,M,T,U,"",N,O,AS,"",Q,"","","",AR
+        ];
+      }
+
+      out.push(newRow);
+    }
+
+    // 删除 X 列（第24列）为空的行
+    const finalData = out.filter((row,i) => {
+      if (i < 2) return true;
+      const xVal = row[23];
+      return xVal !== "" && xVal != null;
+    });
+
+    // 生成新文件
+    const newWb = XLSX.utils.book_new();
+    const newWs = XLSX.utils.aoa_to_sheet(finalData);
+    XLSX.utils.book_append_sheet(newWb, newWs, "Sheet1");
+
+    outputWorkbook = newWb;
+
+    downloadBtn.style.display = "inline-block";
+    resultText.innerHTML = "转换完成：点击下载文件";
+  };
+
+  reader.readAsArrayBuffer(file);
+}
+
+/* ===== 下载 ===== */
+downloadBtn.onclick = () => {
+  XLSX.writeFile(outputWorkbook, outputFileName);
+};
+</script>
+
+</body>
