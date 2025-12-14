@@ -3,7 +3,7 @@ layout: post
 title: 口袋妖怪彩粉蝶登记本
 tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 未知图腾]
 date: 2025-07-21 11:15 +0800
-permalink: /unown
+permalink: /vivillon
 ---
 
 <style>
