@@ -14,18 +14,39 @@ date: 2025-10-17 11:15 +0800
     width: auto;
     display: block;
   }
-</style>
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
 
-<nav>
-  <h2>目录</h2>
-  <ul>
-    <li><a href="#gen1">第一世代</a></li>
-    <li><a href="#gen2">第二世代</a></li>
-    <li><a href="#gen3">第三世代</a></li>
-    <li><a href="#gen4">第四世代</a></li>
-    <li><a href="#gen5">第五世代</a></li>
-  </ul>
-</nav>
+    .floating-buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons button:hover {
+      background-color: #45a049;
+    }
+</style>
+<div class="floating-buttons">
+  <button onclick="location.hash='#gen1'">Gen 1</button>
+  <button onclick="location.hash='#gen2'">Gen 2</button>
+  <button onclick="location.hash='#gen3'">Gen 3</button>
+  <button onclick="location.hash='#gen4'">Gen 4</button>
+  <button onclick="location.hash='#gen5'">Gen 5</button>
+</div>
 
 <table>
     <tr>

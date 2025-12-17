@@ -14,19 +14,44 @@ date: 2025-11-17 11:16 +0800
     width: auto;
     display: block;
   }
+  .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .floating-buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons button:hover {
+      background-color: #45a049;
+    }
 </style>
+
+<div class="floating-buttons">
+  <button onclick="location.hash='#001'">Gen 1</button>
+  <button onclick="location.hash='#152'">Gen 2</button>
+  <button onclick="location.hash='#252'">Gen 3</button>
+  <button onclick="location.hash='#387'">Gen 4</button>
+  <button onclick="location.hash='#494'">Gen 5</button>
+</div>
+
 <p>磁场区在新紫堇，青苔岩石在橙华森林，冰之岩石在浅滩洞穴(退潮时)</p>
 <p>全图鉴需要叶之石4枚，火之石5枚，水之石7枚，雷之石5枚，日之石4枚，月之石6枚，光之石4枚，暗之石5枚，觉醒之石2枚</p>
-<nav>
-  <h2>目录</h2>
-  <ul>
-    <li><a href="#001">第一世代</a></li>
-    <li><a href="#152">第二世代</a></li>
-    <li><a href="#252">第三世代</a></li>
-    <li><a href="#387">第四世代</a></li>
-    <li><a href="#494">第五世代</a></li>
-  </ul>
-</nav>
+
 
 <table>
     <thead>
@@ -1444,7 +1469,7 @@ date: 2025-11-17 11:16 +0800
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiq2o3Mtlpd3dQWz3UsELyJAmd0rKpIUYB5JGOh60AZh8V6YPFS+HS0v21gcNt+TeED7M5znYQ2cbe2c8VuV4qbFJLOTX49Xum1+z+zXM9zxs3XKgKygHsCAUPylRgKAQa9d0e//tXRLDUfK8r7Xbxz+Xu3bNyhsZwM4z1xQBdooooAKrajfRaZpd3qEyu0VrC8zqgBYqqljjOOcCrNFAHz/NceI7jw3FFKlw2mxSeYkpVPsgO7ywuzZyBP0QtgL/yz2817tpt9Fqml2moQK6xXUKToHADBWUMM4zzg0lzpdjd6WdMmtYjZFBGIVG1VUfd24+7jAwRjGBjGKsQwxW8EcMMaRRRqEREUKqqBgAAdABQA+iiigD//2Q=="></td>
             <td>未知图腾</td>
             <td>觉醒祠堂(深处)</td>
-            <td>4个区域每个区域7种</td>
+            <td>4个区域每个区域7种 <a href="/unown" target="_blank">查看所有未知图腾</a></td>
         </tr>
         <tr>
             <td id="202">202</td>
@@ -4699,7 +4724,7 @@ date: 2025-11-17 11:16 +0800
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3m7uPsllPc+TLN5MbSeVCu53wM7VHcnoB61x48dS6imjaho1oJtLuLsWl95wPmQO5jEYBQso4k3HORxtJVjiu2rz34havFbGa2sQkt9PZzWl2pkCIsTplSx6l1JUgcgLI2dvmKSAbR8aQDx6PC/2KXJUj7TvGPM8vzdu3+7s/iz14xjmuorxbw5dibxW+sPbb7iD7XdxwxTrt3SO23c5H+rCvJubAwVUYyyq2V4qv9Q1PUEj1rUXe0aRSWaEiKBCeWWEHnaC3JyxAxupXOn6u5Jyg7pJN/NbHv1FQ2dv9ksoLbzppvJjWPzZm3O+Bjcx7k9SfWimcxNXEeKvBcV1fz67azWkUxRWukvf9UwTbh93OzCrzlWU4GV6k9vVPVNLs9Z06XT7+Ey2su3egdlzghhypBHIHegDyDQ9SuYdXiubVU+0srAxykvLI2PnWTbtYP8vJK5JUnBwzMugaRa+J/HbQXk8TR2yi5McA82OcKygoXbtllz8rBgW5HBPoY8DaW2tX17Lue1urVbb7DgLFEAEBK46cQxYxggqTnpt09F8O6V4eimj0u0EAmYNIxdnZiOmWYk4HOBnAyfU0HR7b93yJWf5mpRRRQc5//9k="></td>
             <td>彩粉蝶</td>
             <td>野生原野区</td>
-            <td>4个区域每个区域5种</td>
+            <td>4个区域每个区域5种 <a href="/vivillon" target="_blank">查看所有彩粉蝶</a></td>
         </tr>
         <tr>
             <td id="667">667</td>
