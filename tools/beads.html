@@ -1,0 +1,309 @@
+---
+layout: default
+title: "拼豆图纸生成器"
+permalink: beads.html
+---
+
+<head>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+<style>
+/* ================= 命名空间 beads- ================= */
+
+.beads-container {
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+.beads-controls {
+  margin-bottom: 12px;
+}
+
+.beads-controls input,
+.beads-controls button {
+  margin-right: 6px;
+}
+
+#beads-canvas {
+  border: 1px solid #999;
+  image-rendering: pixelated;
+  max-width: 100%;
+  display: block;
+}
+
+.beads-color-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beads-color-item {
+  display: flex;
+  align-items: center;
+  margin: 4px 14px 4px 0;
+  font-size: 12px;
+}
+
+.beads-swatch {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #000;
+  margin-right: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="beads-container">
+
+  <h2>🟩 拼豆图纸生成器</h2>
+
+  <div class="beads-controls">
+    <input type="file" id="beads-upload" accept="image/*"><br><br>
+
+    <label>每行格子数</label>
+    <input type="number" id="beads-cols" value="50" min="10" max="200">
+
+    <label>颜色阈值（20-30最佳）</label>
+    <input type="range" id="beads-threshold-range" min="1" max="60" value="20">
+    <input type="number" id="beads-threshold-number" min="1" max="60" value="20">
+
+    
+    <span id="beads-color-count">颜色数：0</span>
+    <button id="beads-download">下载图纸</button>
+  </div>
+  <div class="beads-export">
+    
+  
+    <canvas id="beads-canvas"></canvas>
+
+    <h3>🎨 颜色统计</h3>
+    <div id="beads-colors" class="beads-color-list"></div>
+    <h3>🌐 rwho.top/beads</h3>
+  </div>
+</div>
+
+<script>
+/* ================= JS 命名空间 beads ================= */
+
+(() => {
+
+const SYMBOLS = 'ABCDEFGHJKLMNPQRSTUVWXY3456789';
+const beadsMargin = 30;
+
+const beadsCanvas = document.getElementById('beads-canvas');
+const beadsCtx = beadsCanvas.getContext('2d');
+
+const beadsUpload = document.getElementById('beads-upload');
+const beadsColsInput = document.getElementById('beads-cols');
+const beadsThresholdRange = document.getElementById('beads-threshold-range');
+const beadsThresholdNumber = document.getElementById('beads-threshold-number');
+const beadsColorsBox = document.getElementById('beads-colors');
+const beadsColorCountLabel = document.getElementById('beads-color-count');
+const beadsDownloadBtn = document.getElementById('beads-download');
+
+const beadsImg = new Image();
+let beadsPixels = [];
+let beadsLastCounts = {};
+let beadsLastMap = {};
+let beadsImgLoaded = false;
+
+/* ===== 控件联动 ===== */
+beadsThresholdRange.oninput = () => {
+  beadsThresholdNumber.value = beadsThresholdRange.value;
+  beadsImgLoaded && beadsGenerate();
+};
+beadsThresholdNumber.oninput = () => {
+  beadsThresholdRange.value = beadsThresholdNumber.value;
+  beadsImgLoaded && beadsGenerate();
+};
+beadsColsInput.oninput = () => beadsImgLoaded && beadsGenerate();
+
+/* ===== 上传图片 ===== */
+beadsUpload.onchange = e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  beadsImg.onload = () => {
+    beadsImgLoaded = true;
+    beadsPreparePixels();
+    beadsGenerate();
+  };
+  beadsImg.src = URL.createObjectURL(file);
+};
+
+/* ===== 预处理像素 ===== */
+function beadsPreparePixels() {
+  const c = document.createElement('canvas');
+  c.width = beadsImg.width;
+  c.height = beadsImg.height;
+  const cx = c.getContext('2d');
+  cx.drawImage(beadsImg, 0, 0);
+  const d = cx.getImageData(0, 0, c.width, c.height).data;
+  beadsPixels = [];
+  for (let i = 0; i < d.length; i += 4) {
+    beadsPixels.push([d[i], d[i + 1], d[i + 2]]);
+  }
+}
+
+/* ===== 主生成逻辑 ===== */
+function beadsGenerate() {
+  const cols = +beadsColsInput.value;
+  const threshold = +beadsThresholdNumber.value;
+
+  const cell = beadsImg.width / cols;
+  const rows = Math.floor(beadsImg.height / cell);
+
+  beadsCanvas.width = cols * cell + beadsMargin;
+  beadsCanvas.height = rows * cell + beadsMargin;
+
+  const scaled = [];
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < cols; x++) {
+      scaled.push(
+        beadsPixels[
+          Math.floor(y * cell) * beadsImg.width +
+          Math.floor(x * cell)
+        ]
+      );
+    }
+  }
+
+  const palette = beadsClusterColors(scaled, threshold);
+  const counts = {};
+  const mapped = scaled.map(p => {
+    const c = beadsNearest(p, palette);
+    const k = c.join(',');
+    counts[k] = (counts[k] || 0) + 1;
+    return c;
+  });
+
+  const cmap = {};
+  Object.keys(counts).forEach((k, i) => cmap[k] = beadsTwoChar(i));
+
+  beadsLastCounts = counts;
+  beadsLastMap = cmap;
+
+  beadsCtx.clearRect(0, 0, beadsCanvas.width, beadsCanvas.height);
+
+  mapped.forEach((c, i) => {
+    const x = beadsMargin + (i % cols) * cell;
+    const y = beadsMargin + Math.floor(i / cols) * cell;
+    beadsCtx.fillStyle = `rgb(${c})`;
+    beadsCtx.fillRect(x, y, cell, cell);
+    beadsCtx.fillStyle = beadsTextColor(c);
+    beadsCtx.font = `${cell * 0.5}px Arial`;
+    beadsCtx.textAlign = 'center';
+    beadsCtx.textBaseline = 'middle';
+    beadsCtx.fillText(cmap[c.join(',')], x + cell / 2, y + cell / 2);
+  });
+
+  beadsDrawGrid(cols, rows, cell);
+  beadsDrawNumbers(cols, rows, cell);
+  beadsShowColors(counts, cmap);
+
+  beadsColorCountLabel.textContent = `颜色数：${palette.length}`;
+}
+
+/* ===== 下载（含统计 + 水印） ===== */
+beadsDownloadBtn.onclick = async () => {
+  const container = document.querySelector('.beads-export');
+
+  // 临时处理：避免滚动条 / 动画影响截图
+  const originalScroll = window.scrollY;
+  window.scrollTo(0, 0);
+
+  const canvas = await html2canvas(container, {
+    backgroundColor: '#ffffff',
+    scale: window.devicePixelRatio, // 高清
+    useCORS: true
+  });
+
+  window.scrollTo(0, originalScroll);
+
+  const a = document.createElement('a');
+  a.download = '拼豆图纸.png';
+  a.href = canvas.toDataURL('image/png');
+  a.click();
+};
+
+
+/* ===== 绘制工具 ===== */
+function beadsDrawGrid(w, h, cell) {
+  for (let i = 0; i <= w; i++) {
+    beadsCtx.lineWidth = i % 5 === 0 ? 1.5 : 0.5;
+    beadsCtx.beginPath();
+    beadsCtx.moveTo(beadsMargin + i * cell, beadsMargin);
+    beadsCtx.lineTo(beadsMargin + i * cell, beadsMargin + h * cell);
+    beadsCtx.stroke();
+  }
+  for (let j = 0; j <= h; j++) {
+    beadsCtx.lineWidth = j % 5 === 0 ? 1.5 : 0.5;
+    beadsCtx.beginPath();
+    beadsCtx.moveTo(beadsMargin, beadsMargin + j * cell);
+    beadsCtx.lineTo(beadsMargin + w * cell, beadsMargin + j * cell);
+    beadsCtx.stroke();
+  }
+}
+
+function beadsDrawNumbers(w, h, cell) {
+  beadsCtx.font = '12px Arial';
+  beadsCtx.textAlign = 'center';
+  for (let i = 0; i < w; i++)
+    beadsCtx.fillText(i + 1, beadsMargin + i * cell + cell / 2, beadsMargin / 2);
+  beadsCtx.textAlign = 'right';
+  for (let j = 0; j < h; j++)
+    beadsCtx.fillText(j + 1, beadsMargin - 5, beadsMargin + j * cell + cell / 2);
+}
+
+function beadsShowColors(counts, map) {
+  beadsColorsBox.innerHTML = '';
+  Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([c, n]) => {
+      const d = document.createElement('div');
+      d.className = 'beads-color-item';
+      d.innerHTML =
+        `<div class="beads-swatch" style="background:rgb(${c})"></div>` +
+        `<b>${map[c]}</b> × ${n}`;
+      beadsColorsBox.appendChild(d);
+    });
+}
+
+/* ===== 算法 ===== */
+function beadsTwoChar(i) {
+  return SYMBOLS[Math.floor(i / SYMBOLS.length) % SYMBOLS.length] +
+         SYMBOLS[i % SYMBOLS.length];
+}
+function beadsDist(a, b) {
+  return (a[0]-b[0])**2 + (a[1]-b[1])**2 + (a[2]-b[2])**2;
+}
+function beadsNearest(p, pal) {
+  return pal.reduce((a, b) => beadsDist(p, a) < beadsDist(p, b) ? a : b);
+}
+function beadsTextColor([r, g, b]) {
+  return (r*0.299 + g*0.587 + b*0.114) > 150 ? '#000' : '#fff';
+}
+function beadsClusterColors(pixels, t) {
+  const cs = [];
+  pixels.forEach(px => {
+    let f = false;
+    for (const c of cs) {
+      if (beadsDist(px, c) < t * t) {
+        c[0] = (c[0] + px[0]) / 2;
+        c[1] = (c[1] + px[1]) / 2;
+        c[2] = (c[2] + px[2]) / 2;
+        f = true;
+        break;
+      }
+    }
+    if (!f) cs.push([...px]);
+  });
+  return cs;
+}
+
+})();
+</script>
+
+</body>
