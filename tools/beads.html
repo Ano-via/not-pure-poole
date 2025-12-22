@@ -5,11 +5,10 @@ permalink: beads.html
 ---
 
 <head>
+<meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
 <style>
-/* ================= 命名空间 beads- ================= */
-
 .beads-container {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -133,41 +132,72 @@ beadsUpload.onchange = e => {
 };
 
 /* ===== 预处理像素 ===== */
+let beadsScaledWidth = 0;
+let beadsScaledHeight = 0;
+
 function beadsPreparePixels() {
+  const cols = +beadsColsInput.value;
+  const minCellPixel = 15;
+  let scale = 1;
+
+  if (beadsImg.width < cols * minCellPixel) {
+    scale = (cols * minCellPixel) / beadsImg.width;
+  }
+
+  beadsScaledWidth = Math.round(beadsImg.width * scale);
+  beadsScaledHeight = Math.round(beadsImg.height * scale);
+
   const c = document.createElement('canvas');
-  c.width = beadsImg.width;
-  c.height = beadsImg.height;
+  c.width = beadsScaledWidth;
+  c.height = beadsScaledHeight;
   const cx = c.getContext('2d');
-  cx.drawImage(beadsImg, 0, 0);
-  const d = cx.getImageData(0, 0, c.width, c.height).data;
+
+  // ✅ 填充白色背景，覆盖透明区域
+  cx.fillStyle = '#ffffff';
+  cx.fillRect(0, 0, beadsScaledWidth, beadsScaledHeight);
+
+  // 绘制图片
+  cx.imageSmoothingEnabled = true;
+  cx.imageSmoothingQuality = 'high';
+  cx.drawImage(beadsImg, 0, 0, beadsScaledWidth, beadsScaledHeight);
+
+  const d = cx.getImageData(0, 0, beadsScaledWidth, beadsScaledHeight).data;
   beadsPixels = [];
   for (let i = 0; i < d.length; i += 4) {
     beadsPixels.push([d[i], d[i + 1], d[i + 2]]);
   }
 }
 
+
+
+
 /* ===== 主生成逻辑 ===== */
 function beadsGenerate() {
   const cols = +beadsColsInput.value;
   const threshold = +beadsThresholdNumber.value;
 
-  const cell = beadsImg.width / cols;
-  const rows = Math.floor(beadsImg.height / cell);
+  // 使用放大后的图片尺寸
+  const cell = beadsScaledWidth / cols;
+  const rows = Math.floor(beadsScaledHeight / cell);
 
+  // 设置 canvas 尺寸
   beadsCanvas.width = cols * cell + beadsMargin;
   beadsCanvas.height = rows * cell + beadsMargin;
 
+
+  // 在生成 mapped 时使用 beadsScaledWidth/Height 计算索引
   const scaled = [];
   for (let y = 0; y < rows; y++) {
     for (let x = 0; x < cols; x++) {
-      scaled.push(
-        beadsPixels[
-          Math.floor(y * cell) * beadsImg.width +
-          Math.floor(x * cell)
-        ]
-      );
+      const px = beadsPixels[
+        Math.floor(y * cell) * beadsScaledWidth +
+        Math.floor(x * cell)
+      ];
+      scaled.push(px);
     }
   }
+
+
 
   const palette = beadsClusterColors(scaled, threshold);
   const counts = {};
@@ -306,3 +336,4 @@ function beadsClusterColors(pixels, t) {
 </script>
 
 </body>
+
