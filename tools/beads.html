@@ -1,339 +1,114 @@
----
-layout: default
-title: "拼豆图纸生成器"
-permalink: beads.html
----
-
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <meta charset="UTF-8">
+    <title>拼豆图纸生成器 - 专业编辑版</title>
+    <!-- 引入外部依赖库 -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
 
-<style>
-.beads-container {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
+    <style>
+        .beads-container { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; padding: 20px; color: #333; }
+        .beads-controls { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        
+        /* 编辑工具栏 */
+        .edit-toolbar { 
+            display: flex; align-items: center; gap: 15px; 
+            background: #e9ecef; padding: 12px; border-radius: 6px; margin: 15px 0;
+            border: 1px solid #dee2e6;
+        }
+        .tool-group { display: flex; align-items: center; gap: 5px; }
+        button { padding: 8px 15px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: white; transition: 0.2s; }
+        button:hover { background: #f8f9fa; }
+        button.active { background: #007bff; color: white; border-color: #0056b3; }
+        
+        #beads-canvas { 
+            border: 2px solid #333; image-rendering: pixelated; 
+            max-width: 100%; display: block; background: white; cursor: crosshair;
+        }
 
-.beads-controls {
-  margin-bottom: 12px;
-}
+        /* 布局 */
+        .beads-export { background: white; padding: 20px; border-radius: 8px; }
+        .beads-color-list { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; }
+        .beads-color-item { 
+            display: flex; align-items: center; background: #fff; 
+            padding: 5px 10px; border: 1px solid #eee; border-radius: 4px; font-size: 13px;
+        }
+        .beads-swatch { width: 18px; height: 18px; border: 1px solid #000; margin-right: 8px; border-radius: 2px; }
 
-.beads-controls input,
-.beads-controls button {
-  margin-right: 6px;
-}
-
-#beads-canvas {
-  border: 1px solid #999;
-  image-rendering: pixelated;
-  max-width: 100%;
-  display: block;
-}
-
-.beads-color-list {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.beads-color-item {
-  display: flex;
-  align-items: center;
-  margin: 4px 14px 4px 0;
-  font-size: 12px;
-}
-
-.beads-swatch {
-  width: 14px;
-  height: 14px;
-  border: 1px solid #000;
-  margin-right: 6px;
-}
-</style>
+        /* 裁剪 */
+        #crop-box { display: none; margin: 20px 0; background: #fff; padding: 15px; border: 2px dashed #007bff; border-radius: 8px; }
+        #image-to-crop { max-width: 100%; display: block; max-height: 500px; }
+        .crop-btn-group { margin-top: 15px; text-align: center; display: flex; justify-content: center; gap: 10px; }
+        .btn-confirm { background: #28a745; color: white; border: none; }
+    </style>
 </head>
 
 <body>
-
 <div class="beads-container">
+    <h2>🟩 拼豆图纸生成器 - 专业编辑版</h2>
 
-  <h2>🟩 拼豆图纸生成器</h2>
+    <div class="beads-controls">
+        <div class="tool-group">
+            <label>1. 上传图片：</label>
+            <input type="file" id="beads-upload" accept="image/*">
+        </div>
 
-  <div class="beads-controls">
-    <input type="file" id="beads-upload" accept="image/*"><br><br>
+        <div id="crop-box">
+            <img id="image-to-crop" src="">
+            <div class="crop-btn-group">
+                <button id="btn-crop-confirm" class="btn-confirm">✂️ 确认裁剪并生成</button>
+                <button id="btn-crop-cancel">取消</button>
+            </div>
+        </div>
 
-    <label>每行格子数</label>
-    <input type="number" id="beads-cols" value="50" min="10" max="200">
+        <div id="main-controls" style="margin-top:15px;">
+            <label>2. 色卡套装：</label>
+            <select id="beads-table-select">
+                <option value="tableMy">米玥/童趣 48色</option>
+                <option value="table24">MARD 24色</option>
+                <option value="table48">MARD 48色</option>
+                <option value="table72">MARD 72色</option>
+                <option value="table96">MARD 96色</option>
+                <option value="table120">MARD 120色</option>
+                <option value="table144">MARD 144色</option>
+                <option value="table216">MARD 216色</option>
+                <option value="table1" selected>MARD 291色</option>
+                <option value="tableCoco">Coco 278色</option>
+                <option value="tableManman">漫漫 278色</option>
+                <option value="tablePanpan">盼盼 278色</option>
+                <option value="tableMixiaowo">咪小窝 278色</option>
+            </select>
+            <label> 每行格子: </label>
+            <input type="number" id="beads-cols" value="50" min="10" max="150" style="width:60px">
+            <button id="beads-download" style="margin-left:20px; background:#6c757d; color:white">💾 下载图纸</button>
+        </div>
 
-    <label>颜色阈值（20-30最佳）</label>
-    <input type="range" id="beads-threshold-range" min="1" max="60" value="20">
-    <input type="number" id="beads-threshold-number" min="1" max="60" value="20">
+        <div class="edit-toolbar">
+            <div class="tool-group">
+                <strong>🖌️ 编辑操作:</strong>
+                <button id="btn-mirror-lr" style="color:#d63384; border-color:#d63384;">↔️ 左右镜像</button>
+              <span>|</span>
+                <button id="btn-mode-paint" class="active">改色模式</button>
+                <button id="btn-mode-pick">取色模式 (Q)</button>
+              
+            </div>
+            <div class="tool-group">
+                <label>当前色: <span id="current-bead-id" style="font-weight:bold; margin-right:5px;"></span></label>
+                <input type="color" id="current-paint-color" value="#ff0000">
+            </div>
+        </div>
+    </div>
 
-    
-    <span id="beads-color-count">颜色数：0</span>
-    <button id="beads-download">下载图纸</button>
-  </div>
-  <div class="beads-export">
-    
-  
-    <canvas id="beads-canvas"></canvas>
-
-    <h3>🎨 颜色统计</h3>
-    <div id="beads-colors" class="beads-color-list"></div>
-    <h3>🌐 rwho.top/beads</h3>
-  </div>
+    <div class="beads-export" id="result-area" style="display:none">
+        <canvas id="beads-canvas"></canvas>
+        <h3 id="color-count">🎨 颜色统计</h3>
+        <div id="beads-colors" class="beads-color-list"></div>
+      <h3>🌐 rwho.top/beads</h3>
+    </div>
 </div>
 
-<script>
-/* ================= JS 命名空间 beads ================= */
-
-(() => {
-
-const SYMBOLS = 'ABCDEFGHJKLMNPQRSTUVWXY3456789';
-const beadsMargin = 30;
-
-const beadsCanvas = document.getElementById('beads-canvas');
-const beadsCtx = beadsCanvas.getContext('2d');
-
-const beadsUpload = document.getElementById('beads-upload');
-const beadsColsInput = document.getElementById('beads-cols');
-const beadsThresholdRange = document.getElementById('beads-threshold-range');
-const beadsThresholdNumber = document.getElementById('beads-threshold-number');
-const beadsColorsBox = document.getElementById('beads-colors');
-const beadsColorCountLabel = document.getElementById('beads-color-count');
-const beadsDownloadBtn = document.getElementById('beads-download');
-
-const beadsImg = new Image();
-let beadsPixels = [];
-let beadsLastCounts = {};
-let beadsLastMap = {};
-let beadsImgLoaded = false;
-
-/* ===== 控件联动 ===== */
-beadsThresholdRange.oninput = () => {
-  beadsThresholdNumber.value = beadsThresholdRange.value;
-  beadsImgLoaded && beadsGenerate();
-};
-beadsThresholdNumber.oninput = () => {
-  beadsThresholdRange.value = beadsThresholdNumber.value;
-  beadsImgLoaded && beadsGenerate();
-};
-beadsColsInput.oninput = () => beadsImgLoaded && beadsGenerate();
-
-/* ===== 上传图片 ===== */
-beadsUpload.onchange = e => {
-  const file = e.target.files[0];
-  if (!file) return;
-  beadsImg.onload = () => {
-    beadsImgLoaded = true;
-    beadsPreparePixels();
-    beadsGenerate();
-  };
-  beadsImg.src = URL.createObjectURL(file);
-};
-
-/* ===== 预处理像素 ===== */
-let beadsScaledWidth = 0;
-let beadsScaledHeight = 0;
-
-function beadsPreparePixels() {
-  const cols = +beadsColsInput.value;
-  const minCellPixel = 15;
-  let scale = 1;
-
-  if (beadsImg.width < cols * minCellPixel) {
-    scale = (cols * minCellPixel) / beadsImg.width;
-  }
-
-  beadsScaledWidth = Math.round(beadsImg.width * scale);
-  beadsScaledHeight = Math.round(beadsImg.height * scale);
-
-  const c = document.createElement('canvas');
-  c.width = beadsScaledWidth;
-  c.height = beadsScaledHeight;
-  const cx = c.getContext('2d');
-
-  // ✅ 填充白色背景，覆盖透明区域
-  cx.fillStyle = '#ffffff';
-  cx.fillRect(0, 0, beadsScaledWidth, beadsScaledHeight);
-
-  // 绘制图片
-  cx.imageSmoothingEnabled = true;
-  cx.imageSmoothingQuality = 'high';
-  cx.drawImage(beadsImg, 0, 0, beadsScaledWidth, beadsScaledHeight);
-
-  const d = cx.getImageData(0, 0, beadsScaledWidth, beadsScaledHeight).data;
-  beadsPixels = [];
-  for (let i = 0; i < d.length; i += 4) {
-    beadsPixels.push([d[i], d[i + 1], d[i + 2]]);
-  }
-}
-
-
-
-
-/* ===== 主生成逻辑 ===== */
-function beadsGenerate() {
-  const cols = +beadsColsInput.value;
-  const threshold = +beadsThresholdNumber.value;
-
-  // 使用放大后的图片尺寸
-  const cell = beadsScaledWidth / cols;
-  const rows = Math.floor(beadsScaledHeight / cell);
-
-  // 设置 canvas 尺寸
-  beadsCanvas.width = cols * cell + beadsMargin;
-  beadsCanvas.height = rows * cell + beadsMargin;
-
-
-  // 在生成 mapped 时使用 beadsScaledWidth/Height 计算索引
-  const scaled = [];
-  for (let y = 0; y < rows; y++) {
-    for (let x = 0; x < cols; x++) {
-      const px = beadsPixels[
-        Math.floor(y * cell) * beadsScaledWidth +
-        Math.floor(x * cell)
-      ];
-      scaled.push(px);
-    }
-  }
-
-
-
-  const palette = beadsClusterColors(scaled, threshold);
-  const counts = {};
-  const mapped = scaled.map(p => {
-    const c = beadsNearest(p, palette);
-    const k = c.join(',');
-    counts[k] = (counts[k] || 0) + 1;
-    return c;
-  });
-
-  const cmap = {};
-  Object.keys(counts).forEach((k, i) => cmap[k] = beadsTwoChar(i));
-
-  beadsLastCounts = counts;
-  beadsLastMap = cmap;
-
-  beadsCtx.clearRect(0, 0, beadsCanvas.width, beadsCanvas.height);
-
-  mapped.forEach((c, i) => {
-    const x = beadsMargin + (i % cols) * cell;
-    const y = beadsMargin + Math.floor(i / cols) * cell;
-    beadsCtx.fillStyle = `rgb(${c})`;
-    beadsCtx.fillRect(x, y, cell, cell);
-    beadsCtx.fillStyle = beadsTextColor(c);
-    beadsCtx.font = `${cell * 0.5}px Arial`;
-    beadsCtx.textAlign = 'center';
-    beadsCtx.textBaseline = 'middle';
-    beadsCtx.fillText(cmap[c.join(',')], x + cell / 2, y + cell / 2);
-  });
-
-  beadsDrawGrid(cols, rows, cell);
-  beadsDrawNumbers(cols, rows, cell);
-  beadsShowColors(counts, cmap);
-
-  beadsColorCountLabel.textContent = `颜色数：${palette.length}`;
-}
-
-/* ===== 下载（含统计 + 水印） ===== */
-beadsDownloadBtn.onclick = async () => {
-  const container = document.querySelector('.beads-export');
-
-  // 临时处理：避免滚动条 / 动画影响截图
-  const originalScroll = window.scrollY;
-  window.scrollTo(0, 0);
-
-  const canvas = await html2canvas(container, {
-    backgroundColor: '#ffffff',
-    scale: window.devicePixelRatio, // 高清
-    useCORS: true
-  });
-
-  window.scrollTo(0, originalScroll);
-
-  const a = document.createElement('a');
-  a.download = '拼豆图纸.png';
-  a.href = canvas.toDataURL('image/png');
-  a.click();
-};
-
-
-/* ===== 绘制工具 ===== */
-function beadsDrawGrid(w, h, cell) {
-  for (let i = 0; i <= w; i++) {
-    beadsCtx.lineWidth = i % 5 === 0 ? 1.5 : 0.5;
-    beadsCtx.beginPath();
-    beadsCtx.moveTo(beadsMargin + i * cell, beadsMargin);
-    beadsCtx.lineTo(beadsMargin + i * cell, beadsMargin + h * cell);
-    beadsCtx.stroke();
-  }
-  for (let j = 0; j <= h; j++) {
-    beadsCtx.lineWidth = j % 5 === 0 ? 1.5 : 0.5;
-    beadsCtx.beginPath();
-    beadsCtx.moveTo(beadsMargin, beadsMargin + j * cell);
-    beadsCtx.lineTo(beadsMargin + w * cell, beadsMargin + j * cell);
-    beadsCtx.stroke();
-  }
-}
-
-function beadsDrawNumbers(w, h, cell) {
-  beadsCtx.font = '12px Arial';
-  beadsCtx.textAlign = 'center';
-  for (let i = 0; i < w; i++)
-    beadsCtx.fillText(i + 1, beadsMargin + i * cell + cell / 2, beadsMargin / 2);
-  beadsCtx.textAlign = 'right';
-  for (let j = 0; j < h; j++)
-    beadsCtx.fillText(j + 1, beadsMargin - 5, beadsMargin + j * cell + cell / 2);
-}
-
-function beadsShowColors(counts, map) {
-  beadsColorsBox.innerHTML = '';
-  Object.entries(counts)
-    .sort((a, b) => b[1] - a[1])
-    .forEach(([c, n]) => {
-      const d = document.createElement('div');
-      d.className = 'beads-color-item';
-      d.innerHTML =
-        `<div class="beads-swatch" style="background:rgb(${c})"></div>` +
-        `<b>${map[c]}</b> × ${n}`;
-      beadsColorsBox.appendChild(d);
-    });
-}
-
-/* ===== 算法 ===== */
-function beadsTwoChar(i) {
-  return SYMBOLS[Math.floor(i / SYMBOLS.length) % SYMBOLS.length] +
-         SYMBOLS[i % SYMBOLS.length];
-}
-function beadsDist(a, b) {
-  return (a[0]-b[0])**2 + (a[1]-b[1])**2 + (a[2]-b[2])**2;
-}
-function beadsNearest(p, pal) {
-  return pal.reduce((a, b) => beadsDist(p, a) < beadsDist(p, b) ? a : b);
-}
-function beadsTextColor([r, g, b]) {
-  return (r*0.299 + g*0.587 + b*0.114) > 150 ? '#000' : '#fff';
-}
-function beadsClusterColors(pixels, t) {
-  const cs = [];
-  pixels.forEach(px => {
-    let f = false;
-    for (const c of cs) {
-      if (beadsDist(px, c) < t * t) {
-        c[0] = (c[0] + px[0]) / 2;
-        c[1] = (c[1] + px[1]) / 2;
-        c[2] = (c[2] + px[2]) / 2;
-        f = true;
-        break;
-      }
-    }
-    if (!f) cs.push([...px]);
-  });
-  return cs;
-}
-
-})();
-</script>
-
+<script src="beads-logic.js"></script>
 </body>
-
+</html>
