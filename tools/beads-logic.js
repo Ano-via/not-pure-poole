@@ -760,43 +760,16 @@ function beadsDrawNumbersRightBottom(w,h,cell){
     function hexToRgb(hex) { return [parseInt(hex.slice(1,3),16), parseInt(hex.slice(3,5),16), parseInt(hex.slice(5,7),16)]; }
     function rgbToHex(r,g,b) { return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); }
 
-    beadsDownloadBtn.onclick = async () => {
-      const canvas = await html2canvas(
-          document.querySelector('.beads-export'),
-          { scale: 2, useCORS: true }
-      );
-
-      const imgData = canvas.toDataURL('image/png');
-
-      const isMobile = /iphone|ipad|android/i.test(navigator.userAgent);
-
-      if (isMobile) {
-          // 📱 手机 / iPad：打开新页面，长按保存
-          const win = window.open();
-          win.document.write(`
-              <html>
-              <head>
-                  <meta name="viewport" content="width=device-width, initial-scale=1">
-                  <title>保存图片</title>
-                  <style>
-                      body{margin:0;background:#000;text-align:center}
-                      img{max-width:100%;height:auto}
-                      p{color:#fff;font-size:14px}
-                  </style>
-              </head>
-              <body>
-                  <p>长按图片 → 保存到相册</p>
-                  <img src="${imgData}">
-              </body>
-              </html>
-          `);
-      } else {
-          // 💻 电脑端：直接下载
-          const a = document.createElement('a');
-          a.download = 'rwho.top拼豆图纸.png';
-          a.href = imgData;
-          a.click();
-      }
-  };
+    beadsDownloadBtn.onclick = async()=>{
+      const container=document.querySelector('.beads-export');
+      const originalScroll = window.scrollY;
+      window.scrollTo(0,0);
+      const canvas = await html2canvas(container,{backgroundColor:'#ffffff',scale:window.devicePixelRatio,useCORS:true});
+      window.scrollTo(0,originalScroll);
+      const a=document.createElement('a');
+      a.download='拼豆图纸.png';
+      a.href=canvas.toDataURL('image/png');
+      a.click();
+};
 
 })();
