@@ -793,7 +793,7 @@ function beadsDrawNumbersRightBottom(w,h,cell){
       } else {
           // 💻 电脑端：直接下载
           const a = document.createElement('a');
-          a.download = '拼豆图纸.png';
+          a.download = 'rwho.top拼豆图纸.png';
           a.href = imgData;
           a.click();
       }
