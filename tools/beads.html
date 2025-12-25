@@ -48,6 +48,96 @@ permalink: beads.html
         #image-to-crop { max-width: 100%; display: block; max-height: 500px; }
         .crop-btn-group { margin-top: 15px; text-align: center; display: flex; justify-content: center; gap: 10px; }
         .btn-confirm { background: #28a745; color: white; border: none; }
+        /* ================= 手机端适配优化 ================= */
+        @media (max-width: 768px) {
+
+            .beads-container {
+                padding: 10px;
+            }
+
+            .beads-controls,
+            .beads-export {
+                padding: 12px;
+            }
+
+            h2 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            /* 上传 & 主控区域改为纵向 */
+            .tool-group {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            #main-controls {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #main-controls label {
+                margin-right: 0;
+            }
+
+            #beads-cols {
+                width: 100%;
+            }
+
+            #beads-download {
+                margin-left: 0 !important;
+                width: 100%;
+            }
+
+            /* 编辑工具栏改为多行 */
+            .edit-toolbar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .edit-toolbar .tool-group {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .edit-toolbar button {
+                flex: 1;
+                min-width: 45%;
+            }
+
+            /* Canvas 自适应手机宽度 */
+            #beads-canvas {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            /* 颜色统计卡片更紧凑 */
+            .beads-color-list {
+                gap: 6px;
+            }
+
+            .beads-color-item {
+                font-size: 12px;
+                padding: 4px 6px;
+            }
+
+            /* 裁剪区图片高度限制 */
+            #image-to-crop {
+                max-height: 60vh;
+            }
+
+            /* 裁剪按钮纵向排列 */
+            .crop-btn-group {
+                flex-direction: column;
+            }
+
+            .crop-btn-group button {
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 
