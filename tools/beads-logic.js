@@ -476,7 +476,7 @@ let tableColors = allTableColors['table1'];
     const paintColorInput = document.getElementById('current-paint-color');
     const btnModePaint = document.getElementById('btn-mode-paint');
     const btnModePick = document.getElementById('btn-mode-pick');
-    const btnMirrorLR = document.getElementById('btn-mirror-lr'); // 新增
+    const btnMirrorLR = document.getElementById('btn-mirror-lr');
     const beadIdSpan = document.getElementById('current-bead-id');
 
     // 裁剪相关
@@ -498,14 +498,12 @@ let tableColors = allTableColors['table1'];
     let currentGrid = { cols: 0, rows: 0, cell: 0 };
 
     // ==========================================
-    // 新增：键盘快捷键 Q 监听
+    // 键盘快捷键 Q 监听
     // ==========================================
     window.addEventListener('keydown', (e) => {
-        // 如果正在输入数字或上传文件，不触发快捷键
         if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
-        
         if (e.key.toLowerCase() === 'q') {
-            btnModePick.click(); // 触发取色模式按钮点击
+            btnModePick.click(); 
         }
     });
 
@@ -514,7 +512,7 @@ let tableColors = allTableColors['table1'];
     btnModePick.onclick = () => { isPickMode = true; btnModePick.classList.add('active'); btnModePaint.classList.remove('active'); };
 
     // ==========================================
-    // 新增：左右镜像功能逻辑
+    // 左右镜像功能逻辑
     // ==========================================
     btnMirrorLR.onclick = () => {
         if (!mappedData || mappedData.length === 0) return;
@@ -522,11 +520,9 @@ let tableColors = allTableColors['table1'];
         const { cols, rows } = currentGrid;
         const newMappedData = new Array(mappedData.length);
         
-        // 遍历每一行，进行左右对调
         for (let r = 0; r < rows; r++) {
             for (let c = 0; c < cols; c++) {
                 const oldIndex = r * cols + c;
-                // 新的列位置 = 总列数 - 1 - 当前列
                 const newIndex = r * cols + (cols - 1 - c);
                 newMappedData[newIndex] = mappedData[oldIndex];
             }
@@ -671,7 +667,7 @@ let tableColors = allTableColors['table1'];
         });
 
         drawGridAndNumbers(cols, rows, cell);
-      	 beadsDrawNumbersRightBottom(cols,rows,cell);
+      	beadsDrawNumbersRightBottom(cols,rows,cell);
         showColorStats(counts);
     }
 
@@ -699,45 +695,42 @@ let tableColors = allTableColors['table1'];
         beadsCtx.textAlign = 'right';
         for (let j = 0; j < h; j++) beadsCtx.fillText(j + 1, beadsMargin - 5, beadsMargin + j * cell + cell / 2);
     }
-// ===== 新增右下角行列号 =====
-function beadsDrawNumbersRightBottom(w,h,cell){
-  const fontSize = Math.max(10, cell * 0.35);
-  beadsCtx.save();
-  beadsCtx.fillStyle = '#000';
-  beadsCtx.font = `${fontSize}px Arial`;
-  beadsCtx.textAlign = 'center';
-  beadsCtx.textBaseline = 'middle';
+    // 右下角行列号
+    function beadsDrawNumbersRightBottom(w,h,cell){
+        const fontSize = Math.max(10, cell * 0.35);
+        beadsCtx.save();
+        beadsCtx.fillStyle = '#000';
+        beadsCtx.font = `${fontSize}px Arial`;
+        beadsCtx.textAlign = 'center';
+        beadsCtx.textBaseline = 'middle';
 
-  // 列号（下）
-  for (let i = 0; i < w; i++) {
-    beadsCtx.fillText(
-      i + 1,
-      beadsMargin + i*cell + cell/2,
-      beadsMargin + h*cell + beadsMargin/2
-    );
-  }
+        // 列号（下）
+        for (let i = 0; i < w; i++) {
+            beadsCtx.fillText(
+                i + 1,
+                beadsMargin + i*cell + cell/2,
+                beadsMargin + h*cell + beadsMargin/2
+            );
+        }
 
-  // 行号（右）
-  beadsCtx.textAlign = 'right';
-  for (let j = 0; j < h; j++) {
-    beadsCtx.fillText(
-      j + 1,
-      beadsMargin + w*cell + beadsMargin/2,
-      beadsMargin + j*cell + cell/2
-    );
-  }
+        // 行号（右）
+        beadsCtx.textAlign = 'right';
+        for (let j = 0; j < h; j++) {
+            beadsCtx.fillText(
+                j + 1,
+                beadsMargin + w*cell + beadsMargin/2,
+                beadsMargin + j*cell + cell/2
+            );
+        }
 
-  beadsCtx.restore();
-}
+        beadsCtx.restore();
+    }
     function showColorStats(counts) {
         beadsColorsBox.innerHTML = '';
         const totalColors = Object.keys(counts).length;
-        
-        // --- 修改开始：获取当前选中的色卡名称并显示 ---
         const currentSetName = tableSelect.options[tableSelect.selectedIndex].text.split(' ')[0];
         document.getElementById('color-count').innerHTML =
             `🎨 颜色统计 | ${currentSetName} （共 ${totalColors} 色）`;
-        // --- 修改结束 ---
 
         Object.entries(counts).sort((a,b)=>b[1]-a[1]).forEach(([uid, n]) => {
             const c = tableColors.find(x => x.uid === uid);
@@ -760,50 +753,212 @@ function beadsDrawNumbersRightBottom(w,h,cell){
     function hexToRgb(hex) { return [parseInt(hex.slice(1,3),16), parseInt(hex.slice(3,5),16), parseInt(hex.slice(5,7),16)]; }
     function rgbToHex(r,g,b) { return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); }
 
+    // ==========================================
+    // 新增：DOM 导出逻辑 (替代 Canvas 导出)
+    // ==========================================
     beadsDownloadBtn.onclick = async () => {
-      const exportEl = document.querySelector('.beads-export');
+        const originalText = beadsDownloadBtn.innerText;
+        beadsDownloadBtn.innerText = '⌛ 生成中...';
+        beadsDownloadBtn.disabled = true;
 
-      // 1️⃣ 导出前放大文字
-      exportEl.classList.add('export-hq');
+        // 1. 生成用于导出的 DOM 结构
+        const exportDom = generateExportDOM();
+        
+        // 2. 将 DOM 添加到文档流中（在屏幕外）以便 html2canvas 渲染
+        exportDom.style.position = 'absolute';
+        exportDom.style.left = '-9999px';
+        exportDom.style.top = '0';
+        document.body.appendChild(exportDom);
+        
+        // 3. 渲染与下载
+        try {
+            const canvas = await html2canvas(exportDom, {
+                scale: 2, // 2倍缩放，保证高清
+                useCORS: true,
+                backgroundColor: '#ffffff'
+            });
+            
+            const imgData = canvas.toDataURL('image/png');
+            const isMobile = /iphone|ipad|android/i.test(navigator.userAgent);
 
-      const canvas = await html2canvas(exportEl, {
-          scale: 1,        // 关键：不再用 scale 放大
-          useCORS: true
-      });
+            if (isMobile) {
+                const win = window.open();
+                win.document.write(`
+                    <html>
+                    <head><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{margin:0;background:#333;text-align:center}img{max-width:100%;height:auto}p{color:#fff;padding:20px}</style></head>
+                    <body><p>长按图片保存到相册</p><img src="${imgData}"></body>
+                    </html>
+                `);
+            } else {
+                const a = document.createElement('a');
+                a.download = '拼豆图纸_DOM导出.png';
+                a.href = imgData;
+                a.click();
+            }
+        } catch(e) {
+            console.error(e);
+            alert('导出失败，请重试');
+        } finally {
+            document.body.removeChild(exportDom);
+            beadsDownloadBtn.innerText = originalText;
+            beadsDownloadBtn.disabled = false;
+        }
+    };
 
-      exportEl.classList.remove('export-hq');
+    // 辅助函数：构建高清 DOM 表格
+    function generateExportDOM() {
+        const { cols, rows } = currentGrid;
+        const cellSize = 24; // 导出时使用较大的固定尺寸，保证文字清晰
+        const margin = 40;
+        
+        // 外层容器
+        const wrap = document.createElement('div');
+        wrap.style.width = (cols * cellSize + margin * 2) + 'px';
+        wrap.style.backgroundColor = 'white';
+        wrap.style.padding = '30px';
+        wrap.style.fontFamily = 'Arial, sans-serif';
+        
+        /* 标题
+        const title = document.createElement('h2');
+        title.innerText = '拼豆图纸 - ' + document.getElementById('color-count').innerText.split('|')[1].trim();
+        title.style.textAlign = 'center';
+        title.style.marginBottom = '20px';
+        wrap.appendChild(title);
+        */
 
-      const imgData = canvas.toDataURL('image/png');
+        // 网格容器 (相对定位)
+        const gridContainer = document.createElement('div');
+        gridContainer.style.position = 'relative';
+        gridContainer.style.width = (cols * cellSize + margin * 2) + 'px';
+        gridContainer.style.height = (rows * cellSize + margin * 2) + 'px';
+        gridContainer.style.margin = '0 auto';
+        
+        // 1. 绘制豆豆单元格
+        mappedData.forEach((c, i) => {
+            if (!c) return;
+            const xIndex = i % cols;
+            const yIndex = Math.floor(i / cols);
+            
+            const cell = document.createElement('div');
+            cell.style.position = 'absolute';
+            cell.style.left = (margin + xIndex * cellSize) + 'px';
+            cell.style.top = (margin + yIndex * cellSize) + 'px';
+            cell.style.width = cellSize + 'px';
+            cell.style.height = cellSize + 'px';
+            cell.style.backgroundColor = `rgb(${c.r},${c.g},${c.b})`;
+            cell.style.boxSizing = 'border-box';
+            
+            // 文字 ID
+            const text = document.createElement('div');
+            text.innerText = c.id;
+            text.style.width = '100%';
+            text.style.height = '100%';
+            text.style.display = 'flex';
+            text.style.alignItems = 'center';
+            text.style.justifyContent = 'center';
+            text.style.fontSize = Math.floor(cellSize * 0.45) + 'px';
+            text.style.fontWeight = 'bold';
+            
+            // 亮度判断，决定文字颜色
+            const brightness = c.r*0.299 + c.g*0.587 + c.b*0.114;
+            text.style.color = brightness > 150 ? '#000' : '#fff';
+            
+            cell.appendChild(text);
+            gridContainer.appendChild(cell);
+        });
+        
+        // 2. 绘制网格线 (横向)
+        for(let r=0; r<=rows; r++) {
+            const line = document.createElement('div');
+            const isThick = r % 5 === 0;
+            line.style.position = 'absolute';
+            // 微调位置以居中对齐缝隙
+            line.style.left = margin + 'px';
+            line.style.top = (margin + r * cellSize - (isThick?1:0.5)) + 'px';
+            line.style.width = (cols * cellSize) + 'px';
+            line.style.height = isThick ? '2px' : '1px';
+            line.style.backgroundColor = isThick ? '#000' : 'rgba(0,0,0,0.3)';
+            line.style.zIndex = 10;
+            gridContainer.appendChild(line);
+            
+            // 数字 (左侧 & 右侧)
+            if (r < rows) {
+                const createNum = (align, leftPos) => {
+                    const num = document.createElement('div');
+                    num.innerText = (r + 1);
+                    num.style.position = 'absolute';
+                    num.style.left = leftPos;
+                    num.style.top = (margin + r * cellSize) + 'px';
+                    num.style.width = (margin - 5) + 'px';
+                    num.style.height = cellSize + 'px';
+                    num.style.lineHeight = cellSize + 'px';
+                    num.style.textAlign = align;
+                    num.style.fontSize = '12px';
+                    num.style.color = '#333';
+                    return num;
+                };
+                // 左侧数字
+                gridContainer.appendChild(createNum('right', '0px'));
+                // 右侧数字
+                gridContainer.appendChild(createNum('left', (margin + cols * cellSize + 5) + 'px'));
+            }
+        }
+        
+        // 3. 绘制网格线 (纵向)
+        for(let c=0; c<=cols; c++) {
+            const line = document.createElement('div');
+            const isThick = c % 5 === 0;
+            line.style.position = 'absolute';
+            line.style.left = (margin + c * cellSize - (isThick?1:0.5)) + 'px';
+            line.style.top = margin + 'px';
+            line.style.height = (rows * cellSize) + 'px';
+            line.style.width = isThick ? '2px' : '1px';
+            line.style.backgroundColor = isThick ? '#000' : 'rgba(0,0,0,0.3)';
+            line.style.zIndex = 10;
+            gridContainer.appendChild(line);
+            
+            // 数字 (顶部 & 底部)
+            if (c < cols) {
+                const createNum = (topPos) => {
+                    const num = document.createElement('div');
+                    num.innerText = (c + 1);
+                    num.style.position = 'absolute';
+                    num.style.left = (margin + c * cellSize) + 'px';
+                    num.style.top = topPos;
+                    num.style.width = cellSize + 'px';
+                    num.style.textAlign = 'center';
+                    num.style.fontSize = '12px';
+                    num.style.color = '#333';
+                    return num;
+                };
+                // 顶部数字
+                gridContainer.appendChild(createNum((margin - 20) + 'px'));
+                // 底部数字
+                gridContainer.appendChild(createNum((margin + rows * cellSize + 5) + 'px'));
+            }
+        }
 
-      const isMobile = /iphone|ipad|android/i.test(navigator.userAgent);
-
-      if (isMobile) {
-          // 📱 手机 / iPad：打开新页面，长按保存
-          const win = window.open();
-          win.document.write(`
-              <html>
-              <head>
-                  <meta name="viewport" content="width=device-width, initial-scale=1">
-                  <title>保存图片</title>
-                  <style>
-                      body{margin:0;background:#000;text-align:center}
-                      img{max-width:100%;height:auto}
-                      p{color:#fff;font-size:14px}
-                  </style>
-              </head>
-              <body>
-                  <p>长按图片 → 保存到相册</p>
-                  <img src="${imgData}">
-              </body>
-              </html>
-          `);
-      } else {
-          // 💻 电脑端：直接下载
-          const a = document.createElement('a');
-          a.download = '拼豆图纸.png';
-          a.href = imgData;
-          a.click();
-      }
-  };
+        wrap.appendChild(gridContainer);
+        
+        // 4. 颜色统计表
+        const statsTitle = document.createElement('h3');
+        statsTitle.innerHTML = document.getElementById('color-count').innerHTML;
+        statsTitle.style.marginTop = '20px';
+        wrap.appendChild(statsTitle);
+        
+        const colorBox = document.getElementById('beads-colors').cloneNode(true);
+        wrap.appendChild(colorBox);
+        
+        // 5. 水印
+        const wm = document.createElement('div');
+        wm.innerText = '🌐 rwho.top/beads';
+        wm.style.textAlign = 'right';
+        wm.style.color = '#999';
+        wm.style.marginTop = '20px';
+        wm.style.fontSize = '14px';
+        wrap.appendChild(wm);
+        
+        return wrap;
+    }
 
 })();
