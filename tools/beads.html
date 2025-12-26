@@ -8,6 +8,7 @@ permalink: beads.html
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>拼豆图纸生成器 - 专业编辑版</title>
     <!-- 引入外部依赖库 -->
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
@@ -15,195 +16,497 @@ permalink: beads.html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
 
     <style>
-        .beads-container { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; padding: 20px; color: #333; }
-        .beads-controls { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        
-        /* 编辑工具栏 */
-        .edit-toolbar { 
-            display: flex; align-items: center; gap: 15px; 
-            background: #e9ecef; padding: 12px; border-radius: 6px; margin: 15px 0;
-            border: 1px solid #dee2e6;
-        }
-        .tool-group { display: flex; align-items: center; gap: 5px; }
-        button { padding: 8px 15px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: white; transition: 0.2s; }
-        button:hover { background: #f8f9fa; }
-        button.active { background: #007bff; color: white; border-color: #0056b3; }
-        
-        #beads-canvas { 
-            border: 2px solid #333; image-rendering: pixelated; 
-            max-width: 100%; display: block; background: white; cursor: crosshair;
+        :root {
+            --primary-color: #4f46e5;
+            --primary-hover: #4338ca;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-sub: #6b7280;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
-        /* 布局 */
-        .beads-export { background: white; padding: 20px; border-radius: 8px; }
-        .beads-color-list { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; }
-        .beads-color-item { 
-            display: flex; align-items: center; background: #fff; 
-            padding: 5px 10px; border: 1px solid #eee; border-radius: 4px; font-size: 13px;
+        * { box-sizing: border-box; outline: none; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            color: var(--text-main);
+            line-height: 1.5;
         }
-        .beads-swatch { width: 18px; height: 18px; border: 1px solid #000; margin-right: 8px; border-radius: 2px; }
 
-        /* 裁剪 */
-        #crop-box { display: none; margin: 20px 0; background: #fff; padding: 15px; border: 2px dashed #007bff; border-radius: 8px; }
-        #image-to-crop { max-width: 100%; display: block; max-height: 500px; }
-        .crop-btn-group { margin-top: 15px; text-align: center; display: flex; justify-content: center; gap: 10px; }
-        .btn-confirm { background: #28a745; color: white; border: none; }
-        /* ================= 手机端适配优化 ================= */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 标题区 */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        header h2 {
+            margin: 0;
+            color: var(--text-main);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        header .badge {
+            font-size: 0.8rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: normal;
+        }
+
+        /* 卡片通用样式 */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        /* 1. 设置区域 */
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            align-items: end;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-sub);
+        }
+
+        /* 美化输入控件 */
+        select, input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            background: #fff;
+            transition: border-color 0.2s;
+        }
+        select:focus, input:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* 文件上传美化 */
+        .file-upload-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+        .file-upload-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .btn-upload {
+            display: block;
+            background: #fff;
+            border: 2px dashed var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .file-upload-wrapper:hover .btn-upload {
+            background: #eff6ff;
+        }
+
+        /* 裁剪区域 */
+        #crop-box {
+            display: none;
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid var(--border-color);
+        }
+        #image-to-crop {
+            display: block;
+            max-width: 100%;
+            max-height: 500px;
+            margin: 0 auto;
+        }
+        .crop-actions {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* 2. 编辑工具栏 */
+        .toolbar-card {
+            position: relative;
+            top: 10px;
+            z-index: 100;
+            border: 1px solid var(--primary-color);
+            background: #fff;
+            padding: 10px 15px;
+        }
+        
+        .toolbar-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tool-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+        
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: var(--primary-hover); }
+        
+        .btn-success { background: var(--success-color); color: white; }
+        .btn-success:hover { filter: brightness(90%); }
+
+        .btn-danger { background: var(--danger-color); color: white; }
+        
+        .btn-outline { background: white; border: 1px solid var(--border-color); color: var(--text-main); }
+        .btn-outline:hover { background: #f9fafb; border-color: #cbd5e1; }
+        
+        .btn-tool {
+            background: #f3f4f6;
+            color: var(--text-sub);
+        }
+        .btn-tool:hover { background: #e5e7eb; }
+        .btn-tool.active {
+            background: var(--text-main);
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .separator {
+            width: 1px;
+            height: 24px;
+            background: var(--border-color);
+            margin: 0 5px;
+        }
+
+        /* 颜色选择器 */
+        .color-picker-group {
+            display: flex;
+            align-items: center;
+            background: #f9fafb;
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+        input[type="color"] {
+            border: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background: none;
+            padding: 0;
+        }
+        #current-bead-id {
+            font-family: monospace;
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+
+        /* 3. 画布展示区 */
+        #result-area {
+            display: none; /* JS控制显示 */
+            text-align: center;
+        }
+        
+        .canvas-wrapper {
+            background-image: 
+                linear-gradient(45deg, #eee 25%, transparent 25%), 
+                linear-gradient(-45deg, #eee 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #eee 75%), 
+                linear-gradient(-45deg, transparent 75%, #eee 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: auto;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #beads-canvas {
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            image-rendering: pixelated;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* 颜色清单 */
+        .color-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        .color-list-header h3 { margin: 0; font-size: 1.1rem; }
+
+        .beads-color-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+        
+        .beads-color-item {
+            display: flex;
+            align-items: center;
+            background: #f9fafb;
+            padding: 6px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        .beads-color-item:hover {
+            border-color: var(--primary-color);
+            background: white;
+            transform: translateY(-1px);
+        }
+
+        .beads-swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .beads-info {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .beads-count {
+            color: var(--text-sub);
+            font-size: 11px;
+        }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* 移动端适配 */
         @media (max-width: 768px) {
-
-            .beads-container {
-                padding: 10px;
-            }
-
-            .beads-controls,
-            .beads-export {
-                padding: 12px;
-            }
-
-            h2 {
-                font-size: 18px;
-                text-align: center;
-            }
-
-            /* 上传 & 主控区域改为纵向 */
-            .tool-group {
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-
-            #main-controls {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            #main-controls label {
-                margin-right: 0;
-            }
-
-            #beads-cols {
-                width: 100%;
-            }
-
-            #beads-download {
-                margin-left: 0 !important;
-                width: 100%;
-            }
-
-            /* 编辑工具栏改为多行 */
-            .edit-toolbar {
+            body { padding: 10px; }
+            .card { padding: 15px; }
+            
+            .toolbar-flex {
                 flex-direction: column;
                 align-items: stretch;
-                gap: 10px;
             }
-
-            .edit-toolbar .tool-group {
+            
+            .tool-group {
                 justify-content: space-between;
-                flex-wrap: wrap;
             }
-
-            .edit-toolbar button {
-                flex: 1;
-                min-width: 45%;
+            
+            .btn {
+                flex: 1; /* 按钮均分宽度 */
+                padding: 10px;
             }
-
-            /* Canvas 自适应手机宽度 */
-            #beads-canvas {
-                width: 100% !important;
-                height: auto !important;
-            }
-
-            /* 颜色统计卡片更紧凑 */
-            .beads-color-list {
-                gap: 6px;
-            }
-
-            .beads-color-item {
-                font-size: 12px;
-                padding: 4px 6px;
-            }
-
-            /* 裁剪区图片高度限制 */
-            #image-to-crop {
-                max-height: 60vh;
-            }
-
-            /* 裁剪按钮纵向排列 */
-            .crop-btn-group {
-                flex-direction: column;
-            }
-
-            .crop-btn-group button {
+            
+            /* 颜色选择器在手机上占满一行 */
+            .color-picker-group {
                 width: 100%;
+                justify-content: center;
+            }
+
+            .beads-color-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            #beads-download {
+                width: 100%;
+                margin-top: 10px;
             }
         }
     </style>
 </head>
 
 <body>
-<div class="beads-container">
-    <h2>🟩 拼豆图纸生成器 - 专业编辑版</h2>
 
-    <div class="beads-controls">
-        <div class="tool-group">
-            <label>1. 上传图片：</label>
-            <input type="file" id="beads-upload" accept="image/*">
+<div class="container">
+    <header>
+        <h2>
+            <span>🟩</span> 拼豆图纸生成器
+            <span class="badge">PRO</span>
+        </h2>
+    </header>
+
+    <!-- 设置与上传卡片 -->
+    <div class="card">
+        <div class="settings-grid">
+            <!-- 上传 -->
+            <div class="form-group">
+                <label>1. 上传图片</label>
+                <div class="file-upload-wrapper">
+                    <span class="btn-upload">📷 点击选择图片</span>
+                    <input type="file" id="beads-upload" accept="image/*">
+                </div>
+            </div>
+
+            <!-- 色卡选择 -->
+            <div class="form-group">
+                <label>2. 色卡品牌</label>
+                <select id="beads-table-select">
+                    <option value="table1" selected>MARD 291色 (全)</option>
+                    <option value="tableMy">米玥/童趣 48色</option>
+                    <option value="table24">MARD 24色</option>
+                    <option value="table48">MARD 48色</option>
+                    <option value="table72">MARD 72色</option>
+                    <option value="tableCoco">Coco 278色</option>
+                    <option value="tableManman">漫漫 278色</option>
+                    <option value="tableMixiaowo">咪小窝 278色</option>
+                    <!-- 保留其他选项 -->
+                </select>
+            </div>
+
+            <!-- 尺寸设置 -->
+            <div class="form-group">
+                <label>每行格数 (宽度)</label>
+                <input type="number" id="beads-cols" value="50" min="10" max="150">
+            </div>
         </div>
 
+        <!-- 裁剪操作区 (JS控制显示) -->
         <div id="crop-box">
             <img id="image-to-crop" src="">
-            <div class="crop-btn-group">
-                <button id="btn-crop-confirm" class="btn-confirm">✂️ 确认裁剪并生成</button>
-                <button id="btn-crop-cancel">取消</button>
-            </div>
-        </div>
-
-        <div id="main-controls" style="margin-top:15px;">
-            <label>2. 色卡套装：</label>
-            <select id="beads-table-select">
-                <option value="tableMy">米玥/童趣 48色</option>
-                <option value="table24">MARD 24色</option>
-                <option value="table48">MARD 48色</option>
-                <option value="table72">MARD 72色</option>
-                <option value="table96">MARD 96色</option>
-                <option value="table120">MARD 120色</option>
-                <option value="table144">MARD 144色</option>
-                <option value="table216">MARD 216色</option>
-                <option value="table1" selected>MARD 291色</option>
-                <option value="tableCoco">Coco 278色</option>
-                <option value="tableManman">漫漫 278色</option>
-                <option value="tablePanpan">盼盼 278色</option>
-                <option value="tableMixiaowo">咪小窝 278色</option>
-            </select>
-            <label> 每行格子: </label>
-            <input type="number" id="beads-cols" value="50" min="10" max="150" style="width:60px">
-            <button id="beads-download" style="margin-left:20px; background:#6c757d; color:white">💾 下载图纸</button>
-        </div>
-
-        <div class="edit-toolbar">
-            <div class="tool-group">
-                <strong>🖌️ 编辑操作:</strong>
-                <button id="btn-mirror-lr" style="color:#d63384; border-color:#d63384;">↔️ 左右镜像</button>
-              <span>|</span>
-                <button id="btn-mode-paint" class="active">改色模式</button>
-                <button id="btn-mode-pick">取色模式 (Q)</button>
-              
-            </div>
-            <div class="tool-group">
-                <label>当前色: <span id="current-bead-id" style="font-weight:bold; margin-right:5px;"></span></label>
-                <input type="color" id="current-paint-color" value="#ff0000">
+            <div class="crop-actions">
+                <button id="btn-crop-confirm" class="btn btn-success">✂️ 裁剪并生成</button>
+                <button id="btn-crop-cancel" class="btn btn-danger">取消</button>
             </div>
         </div>
     </div>
 
-    <div class="beads-export" id="result-area" style="display:none">
-        <canvas id="beads-canvas"></canvas>
-        <h3 id="color-count">🎨 颜色统计</h3>
-        <div id="beads-colors" class="beads-color-list"></div>
-      <h3>🌐 rwho.top/beads</h3>
+    <!-- 结果展示区域 (初始隐藏) -->
+    <div id="result-area">
+        
+        <!-- 编辑工具栏 -->
+        <div class="card toolbar-card">
+            <div class="toolbar-flex">
+                <div class="tool-group">
+                    <button id="btn-mode-paint" class="btn btn-tool active" title="点击修改颜色">🖊️ 改色</button>
+                    <button id="btn-mode-pick" class="btn btn-tool" title="吸取画布颜色 (Q)">🧪 取色 (Q)</button>
+                    <div class="separator"></div>
+                    <button id="btn-mirror-lr" class="btn btn-outline" title="水平翻转图纸">↔️ 镜像</button>
+                </div>
+                
+                <div class="tool-group">
+                    <div class="color-picker-group">
+                        <span id="current-bead-id" title="当前色号">T1</span>
+                        <input type="color" id="current-paint-color" value="#ffffff" title="点击选择自定义颜色">
+                    </div>
+                    <button id="beads-download" class="btn btn-primary">💾 保存图纸</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 绘图画布 -->
+        <div class="canvas-wrapper">
+            <canvas id="beads-canvas"></canvas>
+        </div>
+
+        <!-- 颜色统计 -->
+        <div class="card">
+            <div class="color-list-header">
+                <h3 id="color-count">🎨 颜色清单</h3>
+            </div>
+            <div id="beads-colors" class="beads-color-list">
+                <!-- JS 将在这里生成颜色列表 -->
+            </div>
+        </div>
+        
+        <div class="footer-link">rwho.top/beads</div>
     </div>
 </div>
 
+<!-- 引用原有逻辑脚本 -->
 <script src="/tools/beads-logic.js"></script>
+
+<!-- 添加简单的交互增强脚本 (UI专用) -->
+<script>
+    // 文件上传按钮文字变化反馈
+    document.getElementById('beads-upload').addEventListener('change', function(e) {
+        const fileName = e.target.files[0]?.name;
+        const btn = document.querySelector('.btn-upload');
+        if (fileName) {
+            btn.textContent = '✅ 已选: ' + (fileName.length > 15 ? fileName.substr(0,12)+'...' : fileName);
+            btn.style.borderColor = 'var(--success-color)';
+            btn.style.color = 'var(--success-color)';
+        }
+    });
+
+    // 简单的按钮激活状态切换
+    const modeBtns = document.querySelectorAll('#btn-mode-paint, #btn-mode-pick');
+    modeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modeBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+</script>
+
 </body>
 </html>
