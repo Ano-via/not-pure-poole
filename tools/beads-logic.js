@@ -778,23 +778,44 @@ let tableColors = allTableColors['table1'];
                 backgroundColor: '#ffffff'
             });
             
-            const imgData = canvas.toDataURL('image/png');
+            // --- 修改开始：使用 Blob 和 ObjectURL ---
+            
+            // 将 canvas 转换为 Blob (使用 Promise 包装以便 await)
+            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+            
+            if (!blob) throw new Error('Blob generation failed');
+
+            // 生成 Blob URL (格式如 blob:http://localhost/...)
+            const imgUrl = URL.createObjectURL(blob);
+            
             const isMobile = /iphone|ipad|android/i.test(navigator.userAgent);
 
             if (isMobile) {
                 const win = window.open();
+                // 移动端新窗口中使用 Blob URL 作为 img src
                 win.document.write(`
                     <html>
                     <head><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{margin:0;background:#333;text-align:center}img{max-width:100%;height:auto}p{color:#fff;padding:20px}</style></head>
-                    <body><p>长按图片保存到相册</p><img src="${imgData}"></body>
+                    <body><p>长按图片保存到相册</p><img src="${imgUrl}" alt="拼豆图纸"></body>
                     </html>
                 `);
+                // 注意：在某些严格环境的移动端浏览器中，跨窗口访问 Blob URL 可能受限，
+                // 但通常在新窗口 document.write 中引用同一个 context 的 Blob URL 是可行的。
             } else {
                 const a = document.createElement('a');
                 a.download = '拼豆图纸_DOM导出.png';
-                a.href = imgData;
+                a.href = imgUrl; // 赋值为 Blob URL
+                document.body.appendChild(a); // 兼容性保险：部分浏览器要求元素在 DOM 中才能触发 click
                 a.click();
+                document.body.removeChild(a);
+
+                // 下载启动后释放 URL 对象，避免内存泄漏
+                setTimeout(() => {
+                    URL.revokeObjectURL(imgUrl);
+                }, 1000);
             }
+            // --- 修改结束 ---
+
         } catch(e) {
             console.error(e);
             alert('导出失败，请重试');
@@ -805,10 +826,10 @@ let tableColors = allTableColors['table1'];
         }
     };
 
-    // 辅助函数：构建高清 DOM 表格
+    // 辅助函数：构建高清 DOM 表格 (保持不变)
     function generateExportDOM() {
         const { cols, rows } = currentGrid;
-        const cellSize = 24; // 导出时使用较大的固定尺寸，保证文字清晰
+        const cellSize = 24; 
         const margin = 40;
         
         // 外层容器
@@ -817,14 +838,6 @@ let tableColors = allTableColors['table1'];
         wrap.style.backgroundColor = 'white';
         wrap.style.padding = '30px';
         wrap.style.fontFamily = 'Arial, sans-serif';
-        
-        /* 标题
-        const title = document.createElement('h2');
-        title.innerText = '拼豆图纸 - ' + document.getElementById('color-count').innerText.split('|')[1].trim();
-        title.style.textAlign = 'center';
-        title.style.marginBottom = '20px';
-        wrap.appendChild(title);
-        */
 
         // 网格容器 (相对定位)
         const gridContainer = document.createElement('div');
@@ -872,7 +885,6 @@ let tableColors = allTableColors['table1'];
             const line = document.createElement('div');
             const isThick = r % 5 === 0;
             line.style.position = 'absolute';
-            // 微调位置以居中对齐缝隙
             line.style.left = margin + 'px';
             line.style.top = (margin + r * cellSize - (isThick?1:0.5)) + 'px';
             line.style.width = (cols * cellSize) + 'px';
@@ -881,7 +893,6 @@ let tableColors = allTableColors['table1'];
             line.style.zIndex = 10;
             gridContainer.appendChild(line);
             
-            // 数字 (左侧 & 右侧)
             if (r < rows) {
                 const createNum = (align, leftPos) => {
                     const num = document.createElement('div');
@@ -897,9 +908,7 @@ let tableColors = allTableColors['table1'];
                     num.style.color = '#333';
                     return num;
                 };
-                // 左侧数字
                 gridContainer.appendChild(createNum('right', '0px'));
-                // 右侧数字
                 gridContainer.appendChild(createNum('left', (margin + cols * cellSize + 5) + 'px'));
             }
         }
@@ -917,7 +926,6 @@ let tableColors = allTableColors['table1'];
             line.style.zIndex = 10;
             gridContainer.appendChild(line);
             
-            // 数字 (顶部 & 底部)
             if (c < cols) {
                 const createNum = (topPos) => {
                     const num = document.createElement('div');
@@ -931,9 +939,7 @@ let tableColors = allTableColors['table1'];
                     num.style.color = '#333';
                     return num;
                 };
-                // 顶部数字
                 gridContainer.appendChild(createNum((margin - 20) + 'px'));
-                // 底部数字
                 gridContainer.appendChild(createNum((margin + rows * cellSize + 5) + 'px'));
             }
         }
