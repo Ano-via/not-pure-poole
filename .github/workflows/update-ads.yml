@@ -1,0 +1,24 @@
+name: Update ads.txt
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 每天凌晨 3 点运行
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch ads.txt
+        run: |
+          curl -L https://srv.adstxtmanager.com/19390/rwho.top -o ads.txt
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add ads.txt
+          git commit -m "Auto update ads.txt" || echo "No changes to commit"
+          git push
