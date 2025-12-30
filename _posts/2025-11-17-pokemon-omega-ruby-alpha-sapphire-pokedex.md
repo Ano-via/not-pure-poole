@@ -47,6 +47,7 @@ date: 2025-11-17 11:16 +0800
   <button onclick="location.hash='#252'">Gen 3</button>
   <button onclick="location.hash='#387'">Gen 4</button>
   <button onclick="location.hash='#494'">Gen 5</button>
+  <button onclick="location.hash='#650'">Gen 6</button>
 </div>
 
 <p>磁场区在新紫堇，青苔岩石在橙华森林，冰之岩石在浅滩洞穴(退潮时)</p>
