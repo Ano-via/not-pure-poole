@@ -1,0 +1,73 @@
+---
+layout: default
+title: "自动替换换行符为“|”"
+permalink: bar.html
+---
+
+<div class="nl2pipe-wrapper">
+  <textarea id="textarea1" placeholder="在这里输入，多行文本会自动处理"></textarea>
+  <textarea id="textarea2" placeholder="结果会自动显示并复制，点击也可复制" readonly></textarea>
+</div>
+
+<style>
+.nl2pipe-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.nl2pipe-wrapper textarea {
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.nl2pipe-wrapper textarea.copied {
+  background-color: #d4f8d4;
+  transition: background-color 0.3s ease;
+}
+</style>
+
+<script>
+(() => {
+  const t1 = document.getElementById('textarea1');
+  const t2 = document.getElementById('textarea2');
+  let timer = null;
+
+  // 统一复制 + 变色逻辑
+  const copyAndFlash = async (text) => {
+    if (!text) return;
+
+    try {
+      await navigator.clipboard.writeText(text);
+
+      t2.classList.add('copied');
+      clearTimeout(timer);
+
+      timer = setTimeout(() => {
+        t2.classList.remove('copied');
+      }, 3000);
+
+    } catch (e) {
+      console.warn('复制失败（可能不是 https 环境）', e);
+    }
+  };
+
+  // textarea1 输入 → 自动处理 + 复制
+  t1.addEventListener('input', () => {
+    const result = t1.value.replace(/\r?\n+/g, '|');
+    t2.value = result;
+    copyAndFlash(result);
+  });
+
+  // 点击 textarea2 → 手动复制
+  t2.addEventListener('click', () => {
+    t2.select(); // 方便用户看到选中效果
+    copyAndFlash(t2.value);
+  });
+
+})();
+</script>
