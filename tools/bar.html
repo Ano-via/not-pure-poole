@@ -5,24 +5,26 @@ permalink: bar.html
 ---
 
 <div class="nl2pipe-wrapper">
-  <textarea id="textarea1" placeholder="在这里输入，多行文本会自动处理"></textarea>
-  <textarea id="textarea2" placeholder="结果会自动显示并复制，点击也可复制" readonly></textarea>
+  <input type="file" id="xlsxInput" accept=".xlsx" />
+
+  <textarea id="textarea1" placeholder="Excel 处理结果会自动填充到这里"></textarea>
+  <textarea id="textarea2" placeholder="自动生成 | 并复制" readonly></textarea>
 </div>
+
+<!-- SheetJS -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
 <style>
 .nl2pipe-wrapper {
-  width: 100%;
   max-width: 600px;
 }
 
 .nl2pipe-wrapper textarea {
   width: 100%;
   min-height: 120px;
-  box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  resize: vertical;
+  margin-top: 10px;
+  box-sizing: border-box;
 }
 
 .nl2pipe-wrapper textarea.copied {
@@ -33,41 +35,65 @@ permalink: bar.html
 
 <script>
 (() => {
+  const fileInput = document.getElementById('xlsxInput');
   const t1 = document.getElementById('textarea1');
   const t2 = document.getElementById('textarea2');
   let timer = null;
 
-  // 统一复制 + 变色逻辑
+  /* 复制 + 变色 */
   const copyAndFlash = async (text) => {
     if (!text) return;
-
     try {
       await navigator.clipboard.writeText(text);
-
       t2.classList.add('copied');
       clearTimeout(timer);
-
-      timer = setTimeout(() => {
-        t2.classList.remove('copied');
-      }, 3000);
-
-    } catch (e) {
-      console.warn('复制失败（可能不是 https 环境）', e);
-    }
+      timer = setTimeout(() => t2.classList.remove('copied'), 3000);
+    } catch {}
   };
 
-  // textarea1 输入 → 自动处理 + 复制
+  /* textarea1 → textarea2 */
   t1.addEventListener('input', () => {
     const result = t1.value.replace(/\r?\n+/g, '|');
     t2.value = result;
     copyAndFlash(result);
   });
 
-  // 点击 textarea2 → 手动复制
+  /* 点击 textarea2 手动复制 */
   t2.addEventListener('click', () => {
-    t2.select(); // 方便用户看到选中效果
+    t2.select();
     copyAndFlash(t2.value);
   });
 
+  /* Excel 处理核心逻辑 */
+  fileInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      const workbook = XLSX.read(evt.target.result, { type: 'array' });
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+
+      const range = XLSX.utils.decode_range(sheet['!ref']);
+      const results = new Set();
+
+      for (let r = 2; r <= range.e.r; r++) { // 从第3行开始（0基）
+        const cell = sheet[XLSX.utils.encode_cell({ r, c: 29 })]; // AD 列 = 29
+        if (!cell || !cell.v) continue;
+
+        let val = String(cell.v).trim();
+        val = val.split('-')[0];
+        val = val.split('@')[0];
+        val = val.split('_')[0];
+
+        if (val) results.add(val);
+      }
+
+      t1.value = Array.from(results).join('\n');
+      t1.dispatchEvent(new Event('input')); // 自动触发后续流程
+    };
+
+    reader.readAsArrayBuffer(file);
+  });
 })();
 </script>
