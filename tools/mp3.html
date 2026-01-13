@@ -1,3 +1,10 @@
+---
+layout: default
+title: "自动替换换行符为“|”"
+permalink: bar.html
+---
+
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -5,6 +12,7 @@
   <title>现代在线音乐播放器</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* 保持 CSS 完全不变 */
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont;
       background: linear-gradient(135deg, #f8fafc, #e2e8f0);
@@ -93,6 +101,7 @@
 
   <div class="controls">
     <button onclick="prevSong()">上一首</button>
+    <button id="modeBtn" onclick="toggleMode()">列表循环</button>
     <button onclick="nextSong()">下一首</button>
   </div>
 
@@ -711,9 +720,13 @@ const playlistEl = document.getElementById('playlist');
 const lyricsEl = document.getElementById('lyrics');
 const titleEl = document.getElementById('songTitle');
 const coverEl = document.getElementById('cover');
+const modeBtn = document.getElementById('modeBtn');
 
 let currentIndex = 0;
 let currentLyrics = [];
+// 播放模式: 0-列表循环, 1-单曲循环, 2-随机播放
+let playMode = 0; 
+const modeTexts = ["列表循环", "单曲循环", "随机播放"];
 
 // 初始化播放列表
 songs.forEach((song, index) => {
@@ -724,22 +737,32 @@ songs.forEach((song, index) => {
   playlistEl.appendChild(div);
 });
 
+// 切换播放模式
+function toggleMode() {
+  playMode = (playMode + 1) % 3;
+  modeBtn.textContent = modeTexts[playMode];
+}
+
 function loadSong(index) {
   currentIndex = index;
   document.querySelectorAll('.song').forEach(el => el.classList.remove('active'));
-  playlistEl.children[index].classList.add('active');
+  if(playlistEl.children[index]) {
+      playlistEl.children[index].classList.add('active');
+  }
 
   const song = songs[index];
   titleEl.textContent = song.title;
   audio.src = song.src;
   coverEl.style.backgroundImage = `url('${song.cover}')`;
-  audio.play();
+  audio.play().catch(e => console.log("等待用户交互后播放"));
 
   fetch(song.lrcFile)
     .then(res => res.text())
     .then(text => {
       currentLyrics = parseLRC(text);
       renderLyrics();
+    }).catch(() => {
+      lyricsEl.innerHTML = '暂无歌词';
     });
 }
 
@@ -774,22 +797,43 @@ audio.addEventListener('timeupdate', () => {
       line.classList.remove('active');
     }
   });
-  // localStorage 保存进度
   localStorage.setItem('lastSongIndex', currentIndex);
   localStorage.setItem('lastTime', audio.currentTime);
 });
 
-// 自动播放下一首
-audio.addEventListener('ended', () => { nextSong(); });
+// 核心逻辑：播放结束后的处理
+audio.addEventListener('ended', () => {
+  if (playMode === 1) { 
+    // 单曲循环
+    audio.currentTime = 0;
+    audio.play();
+  } else if (playMode === 2) { 
+    // 随机播放
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * songs.length);
+    } while (songs.length > 1 && randomIndex === currentIndex);
+    loadSong(randomIndex);
+  } else {
+    // 列表循环
+    nextSong();
+  }
+});
 
-function nextSong() { loadSong((currentIndex + 1) % songs.length); }
-function prevSong() { loadSong((currentIndex - 1 + songs.length) % songs.length); }
+function nextSong() {
+  let nextIndex = (currentIndex + 1) % songs.length;
+  loadSong(nextIndex);
+}
 
-// 页面加载时恢复上次进度
+function prevSong() {
+  let prevIndex = (currentIndex - 1 + songs.length) % songs.length;
+  loadSong(prevIndex);
+}
+
 window.addEventListener('load', () => {
   const lastIndex = localStorage.getItem('lastSongIndex');
   const lastTime = localStorage.getItem('lastTime');
-  if (lastIndex !== null) {
+  if (lastIndex !== null && songs[lastIndex]) {
     loadSong(Number(lastIndex));
     audio.currentTime = lastTime ? Number(lastTime) : 0;
   } else {
