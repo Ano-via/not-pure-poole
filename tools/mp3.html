@@ -1,0 +1,1009 @@
+---
+layout: default
+title: "流光音乐播放器 - 隔离版"
+permalink: mp3.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>流光音乐播放器 - 隔离版</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* 使用特定的命名空间包裹所有样式，防止全局污染 */
+    .lrc-player-app {
+      --lp-primary: #4f46e5;
+      --lp-text-main: #1e293b;
+      --lp-text-dim: #64748b;
+      --lp-bg: rgba(255, 255, 255, 0.9);
+      
+      font-family: 'Inter', system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f1f5f9;
+    }
+
+    .lrc-player-container {
+      width: 380px;
+      background: var(--lp-bg);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--lp-text-main);
+    }
+
+    /* 内部元素全部带上前缀 lp- */
+    .lp-cover-box {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 20px;
+    }
+
+    .lp-cover {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-color: #e2e8f0;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: lp-rotate 20s linear infinite;
+      animation-play-state: paused;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 播放状态控制 */
+    .lrc-player-app.is-playing .lp-cover {
+      animation-play-state: running;
+    }
+
+    .lp-cover-icon {
+      font-size: 50px;
+      color: #94a3b8;
+      display: none;
+    }
+
+    .lp-cover.is-empty .lp-cover-icon {
+      display: block;
+    }
+
+    @keyframes lp-rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .lp-info { text-align: center; margin-bottom: 15px; }
+    .lp-title { font-size: 20px; font-weight: 600; margin: 0; color: var(--lp-text-main); }
+    .lp-artist { font-size: 14px; color: var(--lp-text-dim); margin: 4px 0 0; }
+
+    .lp-progress-wrapper { margin-bottom: 20px; }
+    .lp-progress-bar {
+      width: 100%;
+      height: 6px;
+      background: #e2e8f0;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+    .lp-progress-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--lp-primary);
+      border-radius: 10px;
+      pointer-events: none;
+    }
+    .lp-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--lp-text-dim);
+      margin-top: 6px;
+    }
+
+    .lp-controls {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .lp-btn {
+      background: none;
+      border: none;
+      color: var(--lp-text-dim);
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.2s;
+      padding: 8px;
+    }
+    .lp-btn:hover { color: var(--lp-primary); }
+    .lp-btn.active { color: var(--lp-primary); }
+
+    .lp-btn-main {
+      width: 50px;
+      height: 50px;
+      background: var(--lp-primary);
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
+    }
+
+    .lp-tabs {
+      display: flex;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 12px;
+    }
+    .lp-tab-item {
+      flex: 1;
+      text-align: center;
+      padding-bottom: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      color: var(--lp-text-dim);
+      border-bottom: 2px solid transparent;
+    }
+    .lp-tab-item.active {
+      color: var(--lp-primary);
+      border-bottom-color: var(--lp-primary);
+      font-weight: 600;
+    }
+
+    .lp-scroll-view {
+      height: 150px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .lp-scroll-view::-webkit-scrollbar { width: 4px; }
+    .lp-scroll-view::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+    .lp-lrc-line {
+      padding: 6px 0;
+      font-size: 14px;
+      color: var(--lp-text-dim);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .lp-lrc-line.active {
+      color: var(--lp-primary);
+      font-weight: 600;
+      transform: scale(1.05);
+    }
+    .lp-empty-tip {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .lp-list-item {
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .lp-list-item:hover { background: #f1f5f9; }
+    .lp-list-item.active {
+      background: #eff6ff;
+      color: var(--lp-primary);
+      font-weight: 600;
+    }
+    
+    .lp-hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<div class="lrc-player-app" id="lpApp">
+  <div class="lrc-player-container">
+    
+    <div class="lp-cover-box">
+      <div class="lp-cover" id="lpCover">
+        <i class="fas fa-music lp-cover-icon"></i>
+      </div>
+    </div>
+
+    <div class="lp-info">
+      <div class="lp-title" id="lpTitle">正在加载...</div>
+      <div class="lp-artist" id="lpArtist">艺术家</div>
+    </div>
+
+    <div class="lp-progress-wrapper">
+      <div class="lp-progress-bar" id="lpProgBar">
+        <div class="lp-progress-fill" id="lpProgFill"></div>
+      </div>
+      <div class="lp-time-row">
+        <span id="lpCurrentTime">00:00</span>
+        <span id="lpDuration">00:00</span>
+      </div>
+    </div>
+
+    <div class="lp-controls">
+      <button class="lp-btn" id="lpShuffle" onclick="lpToggleShuffle()">
+        <i class="fas fa-shuffle"></i>
+      </button>
+      <button class="lp-btn" onclick="lpPrev()">
+        <i class="fas fa-backward-step"></i>
+      </button>
+      <button class="lp-btn lp-btn-main" onclick="lpTogglePlay()">
+        <i class="fas fa-play" id="lpPlayIcon"></i>
+      </button>
+      <button class="lp-btn" onclick="lpNext()">
+        <i class="fas fa-forward-step"></i>
+      </button>
+      <button class="lp-btn" style="opacity:0.2"><i class="fas fa-list"></i></button>
+    </div>
+
+    <div class="lp-tabs">
+      <div class="lp-tab-item active" id="tabLrc" onclick="lpSwitchTab('lrc')">歌词</div>
+      <div class="lp-tab-item" id="tabList" onclick="lpSwitchTab('list')">列表</div>
+    </div>
+
+    <div id="lpLrcView" class="lp-scroll-view"></div>
+    <div id="lpListView" class="lp-scroll-view lp-hidden"></div>
+
+  </div>
+</div>
+
+<audio id="lpAudio"></audio>
+
+<script>
+const songs = [
+  { 
+    title: "Blank Space", 
+    artist: "Taylor Swift", 
+    src: "music/Blank Space - Taylor Swift.mp3", 
+    cover: "music/Blank Space - Taylor Swift.jpg",
+    lrcFile: "music/Blank Space - Taylor Swift.src"
+  },
+{ 
+    title: "Cruel Summer", 
+    artist: "Taylor Swift", 
+    src: "music/Cruel Summer - Taylor Swift.mp3", 
+    cover: "music/Cruel Summer - Taylor Swift.jpg",
+    lrcFile: "music/Cruel Summer - Taylor Swift.src"
+  },
+{ 
+    title: "Ferrari", 
+    artist: "Bebe Rexha", 
+    src: "music/Ferrari - Bebe Rexha.mp3", 
+    cover: "music/Ferrari - Bebe Rexha.jpg",
+    lrcFile: "music/Ferrari - Bebe Rexha.src"
+  },
+{ 
+    title: "Jar Of Love", 
+    artist: "曲婉婷", 
+    src: "music/Jar Of Love - 曲婉婷.mp3", 
+    cover: "music/Jar Of Love - 曲婉婷.jpg",
+    lrcFile: "music/Jar Of Love - 曲婉婷.src"
+  },
+{ 
+    title: "K歌之王", 
+    artist: "陈奕迅", 
+    src: "music/K歌之王 - 陈奕迅.mp3", 
+    cover: "music/K歌之王 - 陈奕迅.jpg",
+    lrcFile: "music/K歌之王 - 陈奕迅.src"
+  },
+{ 
+    title: "Style", 
+    artist: "Taylor Swift", 
+    src: "music/Style - Taylor Swift.mp3", 
+    cover: "music/Style - Taylor Swift.jpg",
+    lrcFile: "music/Style - Taylor Swift.src"
+  },
+{ 
+    title: "Wonderful U (Demo Version)", 
+    artist: "AGA", 
+    src: "music/Wonderful U (Demo Version) - AGA.mp3", 
+    cover: "music/Wonderful U (Demo Version) - AGA.jpg",
+    lrcFile: "music/Wonderful U (Demo Version) - AGA.src"
+  },
+{ 
+    title: "めざせポケモンマスター", 
+    artist: "松本梨香", 
+    src: "music/めざせポケモンマスター - 松本梨香.mp3", 
+    cover: "music/めざせポケモンマスター - 松本梨香.jpg",
+    lrcFile: "music/めざせポケモンマスター - 松本梨香.src"
+  },
+{ 
+    title: "一丝不挂", 
+    artist: "陈奕迅", 
+    src: "music/一丝不挂 - 陈奕迅.mp3", 
+    cover: "music/一丝不挂 - 陈奕迅.jpg",
+    lrcFile: "music/一丝不挂 - 陈奕迅.src"
+  },
+{ 
+    title: "一个人想着一个人", 
+    artist: "曾沛慈", 
+    src: "music/一个人想着一个人 - 曾沛慈.mp3", 
+    cover: "music/一个人想着一个人 - 曾沛慈.jpg",
+    lrcFile: "music/一个人想着一个人 - 曾沛慈.src"
+  },
+{ 
+    title: "七友", 
+    artist: "梁汉文", 
+    src: "music/七友 - 梁汉文.mp3", 
+    cover: "music/七友 - 梁汉文.jpg",
+    lrcFile: "music/七友 - 梁汉文.src"
+  },
+{ 
+    title: "下一站天后", 
+    artist: "Twins", 
+    src: "music/下一站天后 - Twins.mp3", 
+    cover: "music/下一站天后 - Twins.jpg",
+    lrcFile: "music/下一站天后 - Twins.src"
+  },
+{ 
+    title: "下雨天", 
+    artist: "南拳妈妈", 
+    src: "music/下雨天 - 南拳妈妈.mp3", 
+    cover: "music/下雨天 - 南拳妈妈.jpg",
+    lrcFile: "music/下雨天 - 南拳妈妈.src"
+  },
+{ 
+    title: "不浪漫罪名", 
+    artist: "王杰", 
+    src: "music/不浪漫罪名 - 王杰.mp3", 
+    cover: "music/不浪漫罪名 - 王杰.jpg",
+    lrcFile: "music/不浪漫罪名 - 王杰.src"
+  },
+{ 
+    title: "你在，不在", 
+    artist: "郭采洁", 
+    src: "music/你在，不在 - 郭采洁.mp3", 
+    cover: "music/你在，不在 - 郭采洁.jpg",
+    lrcFile: "music/你在，不在 - 郭采洁.src"
+  },
+{ 
+    title: "倒带", 
+    artist: "蔡依林", 
+    src: "music/倒带 - 蔡依林.mp3", 
+    cover: "music/倒带 - 蔡依林.jpg",
+    lrcFile: "music/倒带 - 蔡依林.src"
+  },
+{ 
+    title: "偶尔还是会想起你", 
+    artist: "牛奶咖啡", 
+    src: "music/偶尔还是会想起你 - 牛奶咖啡.mp3", 
+    cover: "music/偶尔还是会想起你 - 牛奶咖啡.jpg",
+    lrcFile: "music/偶尔还是会想起你 - 牛奶咖啡.src"
+  },
+{ 
+    title: "劲歌. 金曲2 (情歌王)", 
+    artist: "古巨基", 
+    src: "music/劲歌. 金曲2 (情歌王) - 古巨基.mp3", 
+    cover: "music/劲歌. 金曲2 (情歌王) - 古巨基.jpg",
+    lrcFile: "music/劲歌. 金曲2 (情歌王) - 古巨基.src"
+  },
+{ 
+    title: "劲歌金曲", 
+    artist: "古巨基", 
+    src: "music/劲歌金曲 - 古巨基.mp3", 
+    cover: "music/劲歌金曲 - 古巨基.jpg",
+    lrcFile: "music/劲歌金曲 - 古巨基.src"
+  },
+{ 
+    title: "十面埋伏", 
+    artist: "陈奕迅", 
+    src: "music/十面埋伏 - 陈奕迅.mp3", 
+    cover: "music/十面埋伏 - 陈奕迅.jpg",
+    lrcFile: "music/十面埋伏 - 陈奕迅.src"
+  },
+{ 
+    title: "友情岁月", 
+    artist: "郑伊健,陈小春,谢天华,钱嘉乐,林晓峰", 
+    src: "music/友情岁月 - 郑伊健,陈小春,谢天华,钱嘉乐,林晓峰.mp3", 
+    cover: "music/友情岁月 - 郑伊健,陈小春,谢天华,钱嘉乐,林晓峰.jpg",
+    lrcFile: "music/友情岁月 - 郑伊健,陈小春,谢天华,钱嘉乐,林晓峰.src"
+  },
+{ 
+    title: "喜帖街", 
+    artist: "谢安琪", 
+    src: "music/喜帖街 - 谢安琪.mp3", 
+    cover: "music/喜帖街 - 谢安琪.jpg",
+    lrcFile: "music/喜帖街 - 谢安琪.src"
+  },
+{ 
+    title: "喜欢你", 
+    artist: "G.E.M.邓紫棋", 
+    src: "music/喜欢你 - G.E.M.邓紫棋.mp3", 
+    cover: "music/喜欢你 - G.E.M.邓紫棋.jpg",
+    lrcFile: "music/喜欢你 - G.E.M.邓紫棋.src"
+  },
+{ 
+    title: "因为爱情(电影《将爱情进行到底》主题曲)", 
+    artist: "陈奕迅,王菲", 
+    src: "music/因为爱情(电影《将爱情进行到底》主题曲) - 陈奕迅,王菲.mp3", 
+    cover: "music/因为爱情(电影《将爱情进行到底》主题曲) - 陈奕迅,王菲.jpg",
+    lrcFile: "music/因为爱情(电影《将爱情进行到底》主题曲) - 陈奕迅,王菲.src"
+  },
+{ 
+    title: "圆", 
+    artist: "AGA", 
+    src: "music/圆 - AGA.mp3", 
+    cover: "music/圆 - AGA.jpg",
+    lrcFile: "music/圆 - AGA.src"
+  },
+{ 
+    title: "处处吻", 
+    artist: "杨千嬅", 
+    src: "music/处处吻 - 杨千嬅.mp3", 
+    cover: "music/处处吻 - 杨千嬅.jpg",
+    lrcFile: "music/处处吻 - 杨千嬅.src"
+  },
+{ 
+    title: "多一点喜欢", 
+    artist: "王舒", 
+    src: "music/多一点喜欢 - 王舒.mp3", 
+    cover: "music/多一点喜欢 - 王舒.jpg",
+    lrcFile: "music/多一点喜欢 - 王舒.src"
+  },
+{ 
+    title: "够钟", 
+    artist: "周柏豪", 
+    src: "music/够钟 - 周柏豪.mp3", 
+    cover: "music/够钟 - 周柏豪.jpg",
+    lrcFile: "music/够钟 - 周柏豪.src"
+  },
+{ 
+    title: "大哥", 
+    artist: "卫兰", 
+    src: "music/大哥 - 卫兰.mp3", 
+    cover: "music/大哥 - 卫兰.jpg",
+    lrcFile: "music/大哥 - 卫兰.src"
+  },
+{ 
+    title: "天梯", 
+    artist: "C Allstar", 
+    src: "music/天梯 - C Allstar.mp3", 
+    cover: "music/天梯 - C Allstar.jpg",
+    lrcFile: "music/天梯 - C Allstar.src"
+  },
+{ 
+    title: "好きだから", 
+    artist: "ユイカ", 
+    src: "music/好きだから - ユイカ.mp3", 
+    cover: "music/好きだから - ユイカ.jpg",
+    lrcFile: "music/好きだから - ユイカ.src"
+  },
+{ 
+    title: "好心分手", 
+    artist: "卢巧音,王力宏", 
+    src: "music/好心分手 - 卢巧音,王力宏.mp3", 
+    cover: "music/好心分手 - 卢巧音,王力宏.jpg",
+    lrcFile: "music/好心分手 - 卢巧音,王力宏.src"
+  },
+{ 
+    title: "好心好报", 
+    artist: "方力申,邓丽欣", 
+    src: "music/好心好报 - 方力申,邓丽欣.mp3", 
+    cover: "music/好心好报 - 方力申,邓丽欣.jpg",
+    lrcFile: "music/好心好报 - 方力申,邓丽欣.src"
+  },
+{ 
+    title: "如果的事", 
+    artist: "张韶涵,范玮琪", 
+    src: "music/如果的事 - 张韶涵,范玮琪.mp3", 
+    cover: "music/如果的事 - 张韶涵,范玮琪.jpg",
+    lrcFile: "music/如果的事 - 张韶涵,范玮琪.src"
+  },
+{ 
+    title: "孤雏", 
+    artist: "AGA", 
+    src: "music/孤雏 - AGA.mp3", 
+    cover: "music/孤雏 - AGA.jpg",
+    lrcFile: "music/孤雏 - AGA.src"
+  },
+{ 
+    title: "寂寞烟火", 
+    artist: "朱婧汐", 
+    src: "music/寂寞烟火 - 朱婧汐.mp3", 
+    cover: "music/寂寞烟火 - 朱婧汐.jpg",
+    lrcFile: "music/寂寞烟火 - 朱婧汐.src"
+  },
+{ 
+    title: "富士山下", 
+    artist: "陈奕迅", 
+    src: "music/富士山下 - 陈奕迅.mp3", 
+    cover: "music/富士山下 - 陈奕迅.jpg",
+    lrcFile: "music/富士山下 - 陈奕迅.src"
+  },
+{ 
+    title: "小幸运", 
+    artist: "田馥甄", 
+    src: "music/小幸运 - 田馥甄.mp3", 
+    cover: "music/小幸运 - 田馥甄.jpg",
+    lrcFile: "music/小幸运 - 田馥甄.src"
+  },
+{ 
+    title: "少女的祈祷", 
+    artist: "杨千嬅", 
+    src: "music/少女的祈祷 - 杨千嬅.mp3", 
+    cover: "music/少女的祈祷 - 杨千嬅.jpg",
+    lrcFile: "music/少女的祈祷 - 杨千嬅.src"
+  },
+{ 
+    title: "弥敦道", 
+    artist: "洪卓立", 
+    src: "music/弥敦道 - 洪卓立.mp3", 
+    cover: "music/弥敦道 - 洪卓立.jpg",
+    lrcFile: "music/弥敦道 - 洪卓立.src"
+  },
+{ 
+    title: "当你", 
+    artist: "王心凌", 
+    src: "music/当你 - 王心凌.mp3", 
+    cover: "music/当你 - 王心凌.jpg",
+    lrcFile: "music/当你 - 王心凌.src"
+  },
+{ 
+    title: "心墙", 
+    artist: "郭静", 
+    src: "music/心墙 - 郭静.mp3", 
+    cover: "music/心墙 - 郭静.jpg",
+    lrcFile: "music/心墙 - 郭静.src"
+  },
+{ 
+    title: "必杀技", 
+    artist: "古巨基", 
+    src: "music/必杀技 - 古巨基.mp3", 
+    cover: "music/必杀技 - 古巨基.jpg",
+    lrcFile: "music/必杀技 - 古巨基.src"
+  },
+{ 
+    title: "恋愛サーキュレーション", 
+    artist: "花澤香菜", 
+    src: "music/恋愛サーキュレーション - 花澤香菜.mp3", 
+    cover: "music/恋愛サーキュレーション - 花澤香菜.jpg",
+    lrcFile: "music/恋愛サーキュレーション - 花澤香菜.src"
+  },
+{ 
+    title: "恋爱大过天", 
+    artist: "Twins", 
+    src: "music/恋爱大过天 - Twins.mp3", 
+    cover: "music/恋爱大过天 - Twins.jpg",
+    lrcFile: "music/恋爱大过天 - Twins.src"
+  },
+{ 
+    title: "恶作剧", 
+    artist: "林依晨", 
+    src: "music/恶作剧 - 林依晨.mp3", 
+    cover: "music/恶作剧 - 林依晨.jpg",
+    lrcFile: "music/恶作剧 - 林依晨.src"
+  },
+{ 
+    title: "情歌", 
+    artist: "关心妍", 
+    src: "music/情歌 - 关心妍.mp3", 
+    cover: "music/情歌 - 关心妍.jpg",
+    lrcFile: "music/情歌 - 关心妍.src"
+  },
+{ 
+    title: "我们的歌", 
+    artist: "王力宏", 
+    src: "music/我们的歌 - 王力宏.mp3", 
+    cover: "music/我们的歌 - 王力宏.jpg",
+    lrcFile: "music/我们的歌 - 王力宏.src"
+  },
+{ 
+    title: "我们的爱", 
+    artist: "飞儿乐团", 
+    src: "music/我们的爱 - 飞儿乐团.mp3", 
+    cover: "music/我们的爱 - 飞儿乐团.jpg",
+    lrcFile: "music/我们的爱 - 飞儿乐团.src"
+  },
+{ 
+    title: "我怀念的", 
+    artist: "孙燕姿", 
+    src: "music/我怀念的 - 孙燕姿.mp3", 
+    cover: "music/我怀念的 - 孙燕姿.jpg",
+    lrcFile: "music/我怀念的 - 孙燕姿.src"
+  },
+{ 
+    title: "我的回忆不是我的", 
+    artist: "海鸣威", 
+    src: "music/我的回忆不是我的 - 海鸣威.mp3", 
+    cover: "music/我的回忆不是我的 - 海鸣威.jpg",
+    lrcFile: "music/我的回忆不是我的 - 海鸣威.src"
+  },
+{ 
+    title: "我知道 (电视剧《比赛开始》片尾曲)", 
+    artist: "BY2", 
+    src: "music/我知道 (电视剧《比赛开始》片尾曲) - BY2.mp3", 
+    cover: "music/我知道 (电视剧《比赛开始》片尾曲) - BY2.jpg",
+    lrcFile: "music/我知道 (电视剧《比赛开始》片尾曲) - BY2.src"
+  },
+{ 
+    title: "戒不掉", 
+    artist: "欧阳耀莹", 
+    src: "music/戒不掉 - 欧阳耀莹.mp3", 
+    cover: "music/戒不掉 - 欧阳耀莹.jpg",
+    lrcFile: "music/戒不掉 - 欧阳耀莹.src"
+  },
+{ 
+    title: "房间", 
+    artist: "刘瑞琦", 
+    src: "music/房间 - 刘瑞琦.mp3", 
+    cover: "music/房间 - 刘瑞琦.jpg",
+    lrcFile: "music/房间 - 刘瑞琦.src"
+  },
+{ 
+    title: "扉をあけて", 
+    artist: "ANZA", 
+    src: "music/扉をあけて - ANZA.mp3", 
+    cover: "music/扉をあけて - ANZA.jpg",
+    lrcFile: "music/扉をあけて - ANZA.src"
+  },
+{ 
+    title: "无人之境", 
+    artist: "陈奕迅", 
+    src: "music/无人之境 - 陈奕迅.mp3", 
+    cover: "music/无人之境 - 陈奕迅.jpg",
+    lrcFile: "music/无人之境 - 陈奕迅.src"
+  },
+{ 
+    title: "无人之岛", 
+    artist: "任然", 
+    src: "music/无人之岛 - 任然.mp3", 
+    cover: "music/无人之岛 - 任然.jpg",
+    lrcFile: "music/无人之岛 - 任然.src"
+  },
+{ 
+    title: "无条件", 
+    artist: "陈奕迅", 
+    src: "music/无条件 - 陈奕迅.mp3", 
+    cover: "music/无条件 - 陈奕迅.jpg",
+    lrcFile: "music/无条件 - 陈奕迅.src"
+  },
+{ 
+    title: "明年今日", 
+    artist: "陈奕迅", 
+    src: "music/明年今日 - 陈奕迅.mp3", 
+    cover: "music/明年今日 - 陈奕迅.jpg",
+    lrcFile: "music/明年今日 - 陈奕迅.src"
+  },
+{ 
+    title: "春娇与志明", 
+    artist: "街道办GDC,欧阳耀莹", 
+    src: "music/春娇与志明 - 街道办GDC,欧阳耀莹.mp3", 
+    cover: "music/春娇与志明 - 街道办GDC,欧阳耀莹.jpg",
+    lrcFile: "music/春娇与志明 - 街道办GDC,欧阳耀莹.src"
+  },
+{ 
+    title: "是非题", 
+    artist: "范玮琪", 
+    src: "music/是非题 - 范玮琪.mp3", 
+    cover: "music/是非题 - 范玮琪.jpg",
+    lrcFile: "music/是非题 - 范玮琪.src"
+  },
+{ 
+    title: "暖暖", 
+    artist: "梁静茹", 
+    src: "music/暖暖 - 梁静茹.mp3", 
+    cover: "music/暖暖 - 梁静茹.jpg",
+    lrcFile: "music/暖暖 - 梁静茹.src"
+  },
+{ 
+    title: "暗恋航空", 
+    artist: "官恩娜", 
+    src: "music/暗恋航空 - 官恩娜.mp3", 
+    cover: "music/暗恋航空 - 官恩娜.jpg",
+    lrcFile: "music/暗恋航空 - 官恩娜.src"
+  },
+{ 
+    title: "有点甜", 
+    artist: "汪苏泷+BY2", 
+    src: "music/有点甜 - 汪苏泷+BY2.mp3", 
+    cover: "music/有点甜 - 汪苏泷+BY2.jpg",
+    lrcFile: "music/有点甜 - 汪苏泷+BY2.src"
+  },
+{ 
+    title: "樱花树下", 
+    artist: "张敬轩", 
+    src: "music/樱花树下 - 张敬轩.mp3", 
+    cover: "music/樱花树下 - 张敬轩.jpg",
+    lrcFile: "music/樱花树下 - 张敬轩.src"
+  },
+{ 
+    title: "樱花草", 
+    artist: "Sweety", 
+    src: "music/樱花草 - Sweety.mp3", 
+    cover: "music/樱花草 - Sweety.jpg",
+    lrcFile: "music/樱花草 - Sweety.src"
+  },
+{ 
+    title: "沙龙", 
+    artist: "陈奕迅", 
+    src: "music/沙龙 - 陈奕迅.mp3", 
+    cover: "music/沙龙 - 陈奕迅.jpg",
+    lrcFile: "music/沙龙 - 陈奕迅.src"
+  },
+{ 
+    title: "爱与诚", 
+    artist: "古巨基", 
+    src: "music/爱与诚 - 古巨基.mp3", 
+    cover: "music/爱与诚 - 古巨基.jpg",
+    lrcFile: "music/爱与诚 - 古巨基.src"
+  },
+{ 
+    title: "爱的魔法", 
+    artist: "金莎", 
+    src: "music/爱的魔法 - 金莎.mp3", 
+    cover: "music/爱的魔法 - 金莎.jpg",
+    lrcFile: "music/爱的魔法 - 金莎.src"
+  },
+{ 
+    title: "猜不透", 
+    artist: "丁当", 
+    src: "music/猜不透 - 丁当.mp3", 
+    cover: "music/猜不透 - 丁当.jpg",
+    lrcFile: "music/猜不透 - 丁当.src"
+  },
+{ 
+    title: "相逢何必曾相识", 
+    artist: "蒋志光&韦绮姗", 
+    src: "music/相逢何必曾相识 - 蒋志光&韦绮姗.mp3", 
+    cover: "music/相逢何必曾相识 - 蒋志光&韦绮姗.jpg",
+    lrcFile: "music/相逢何必曾相识 - 蒋志光&韦绮姗.src"
+  },
+{ 
+    title: "睡公主", 
+    artist: "G.E.M.邓紫棋", 
+    src: "music/睡公主 - G.E.M.邓紫棋.mp3", 
+    cover: "music/睡公主 - G.E.M.邓紫棋.jpg",
+    lrcFile: "music/睡公主 - G.E.M.邓紫棋.src"
+  },
+{ 
+    title: "红绿灯", 
+    artist: "郑融", 
+    src: "music/红绿灯 - 郑融.mp3", 
+    cover: "music/红绿灯 - 郑融.jpg",
+    lrcFile: "music/红绿灯 - 郑融.src"
+  },
+{ 
+    title: "落花流水", 
+    artist: "陈奕迅", 
+    src: "music/落花流水 - 陈奕迅.mp3", 
+    cover: "music/落花流水 - 陈奕迅.jpg",
+    lrcFile: "music/落花流水 - 陈奕迅.src"
+  },
+{ 
+    title: "街灯晚餐", 
+    artist: "卫兰", 
+    src: "music/街灯晚餐 - 卫兰.mp3", 
+    cover: "music/街灯晚餐 - 卫兰.jpg",
+    lrcFile: "music/街灯晚餐 - 卫兰.src"
+  },
+{ 
+    title: "起风了", 
+    artist: "周深", 
+    src: "music/起风了 - 周深.mp3", 
+    cover: "music/起风了 - 周深.jpg",
+    lrcFile: "music/起风了 - 周深.src"
+  },
+{ 
+    title: "越难越爱", 
+    artist: "吴若希", 
+    src: "music/越难越爱 - 吴若希.mp3", 
+    cover: "music/越难越爱 - 吴若希.jpg",
+    lrcFile: "music/越难越爱 - 吴若希.src"
+  },
+{ 
+    title: "路过人间", 
+    artist: "郁可唯", 
+    src: "music/路过人间 - 郁可唯.mp3", 
+    cover: "music/路过人间 - 郁可唯.jpg",
+    lrcFile: "music/路过人间 - 郁可唯.src"
+  },
+{ 
+    title: "身骑白马", 
+    artist: "徐佳莹", 
+    src: "music/身骑白马 - 徐佳莹.mp3", 
+    cover: "music/身骑白马 - 徐佳莹.jpg",
+    lrcFile: "music/身骑白马 - 徐佳莹.src"
+  },
+{ 
+    title: "远在咫尺", 
+    artist: "陈奕迅", 
+    src: "music/远在咫尺 - 陈奕迅.mp3", 
+    cover: "music/远在咫尺 - 陈奕迅.jpg",
+    lrcFile: "music/远在咫尺 - 陈奕迅.src"
+  },
+{ 
+    title: "野孩子", 
+    artist: "杨千嬅", 
+    src: "music/野孩子 - 杨千嬅.mp3", 
+    cover: "music/野孩子 - 杨千嬅.jpg",
+    lrcFile: "music/野孩子 - 杨千嬅.src"
+  },
+{ 
+    title: "钟无艳", 
+    artist: "谢安琪", 
+    src: "music/钟无艳 - 谢安琪.mp3", 
+    cover: "music/钟无艳 - 谢安琪.jpg",
+    lrcFile: "music/钟无艳 - 谢安琪.src"
+  },
+{ 
+    title: "雨爱", 
+    artist: "杨丞琳", 
+    src: "music/雨爱 - 杨丞琳.mp3", 
+    cover: "music/雨爱 - 杨丞琳.jpg",
+    lrcFile: "music/雨爱 - 杨丞琳.src"
+  },
+{ 
+    title: "青花瓷", 
+    artist: "周杰伦", 
+    src: "music/青花瓷 - 周杰伦.mp3", 
+    cover: "music/青花瓷 - 周杰伦.jpg",
+    lrcFile: "music/青花瓷 - 周杰伦.src"
+  },
+{ 
+    title: "风吹一夏", 
+    artist: "DP龙猪,Swei水,Rays陈袁", 
+    src: "music/风吹一夏 - DP龙猪,Swei水,Rays陈袁.mp3", 
+    cover: "music/风吹一夏 - DP龙猪,Swei水,Rays陈袁.jpg",
+    lrcFile: "music/风吹一夏 - DP龙猪,Swei水,Rays陈袁.src"
+  },
+{ 
+    title: "高山低谷", 
+    artist: "林匡奕", 
+    src: "music/高山低谷 - 林匡奕.mp3", 
+    cover: "music/高山低谷 - 林匡奕.jpg",
+    lrcFile: "music/高山低谷 - 林匡奕.src"
+  }
+];
+
+const lpAudio = document.getElementById('lpAudio');
+const lpApp = document.getElementById('lpApp');
+const lpPlayIcon = document.getElementById('lpPlayIcon');
+const lpCover = document.getElementById('lpCover');
+const lpLrcView = document.getElementById('lpLrcView');
+const lpListView = document.getElementById('lpListView');
+const lpProgFill = document.getElementById('lpProgFill');
+
+let lpIndex = 0;
+let lpShuffle = false;
+let lpLrcData = [];
+
+function lpInit() {
+  lpRenderList();
+  lpLoad(lpIndex, false);
+}
+
+function lpLoad(idx, autoPlay = true) {
+  lpIndex = idx;
+  const s = songs[idx];
+  
+  document.getElementById('lpTitle').innerText = s.title || "未知曲目";
+  document.getElementById('lpArtist').innerText = s.artist || "未知艺术家";
+  
+  // 封面容错
+  if(s.cover) {
+    lpCover.style.backgroundImage = `url('${s.cover}')`;
+    lpCover.classList.remove('is-empty');
+  } else {
+    lpCover.style.backgroundImage = 'none';
+    lpCover.classList.add('is-empty');
+  }
+
+  lpAudio.src = s.src;
+  lpRenderList();
+  
+  // 歌词容错
+  if(s.lrc) {
+    fetch(s.lrc).then(r => r.text()).then(t => {
+      lpLrcData = lpParseLrc(t);
+      lpRenderLrc();
+    }).catch(() => { lpLrcData = []; lpRenderLrc(); });
+  } else {
+    lpLrcData = [];
+    lpRenderLrc();
+  }
+
+  if(autoPlay) lpPlay();
+}
+
+function lpParseLrc(text) {
+  const lines = text.split('\n');
+  const res = [];
+  lines.forEach(l => {
+    const m = l.match(/\[(\d+):(\d+\.\d+)\](.*)/);
+    if(m) res.push({ t: parseInt(m[1])*60 + parseFloat(m[2]), txt: m[3].trim() });
+  });
+  return res;
+}
+
+function lpRenderLrc() {
+  if(lpLrcData.length === 0) {
+    lpLrcView.innerHTML = '<div class="lp-empty-tip">暂无歌词封面</div>';
+    return;
+  }
+  lpLrcView.innerHTML = lpLrcData.map((l, i) => `<div class="lp-lrc-line" id="lp-lrc-${i}">${l.txt}</div>`).join('');
+}
+
+function lpTogglePlay() { lpAudio.paused ? lpPlay() : lpPause(); }
+function lpPlay() { lpAudio.play(); lpPlayIcon.className = 'fas fa-pause'; lpApp.classList.add('is-playing'); }
+function lpPause() { lpAudio.pause(); lpPlayIcon.className = 'fas fa-play'; lpApp.classList.remove('is-playing'); }
+
+function lpNext() {
+  let next = lpShuffle ? Math.floor(Math.random()*songs.length) : (lpIndex + 1) % songs.length;
+  lpLoad(next);
+}
+
+function lpPrev() {
+  lpLoad((lpIndex - 1 + songs.length) % songs.length);
+}
+
+function lpToggleShuffle() {
+  lpShuffle = !lpShuffle;
+  document.getElementById('lpShuffle').classList.toggle('active', lpShuffle);
+}
+
+lpAudio.ontimeupdate = () => {
+  if(!lpAudio.duration) return;
+  const cur = lpAudio.currentTime;
+  lpProgFill.style.width = (cur / lpAudio.duration * 100) + '%';
+  document.getElementById('lpCurrentTime').innerText = lpFormatTime(cur);
+  document.getElementById('lpDuration').innerText = lpFormatTime(lpAudio.duration);
+  
+  // 歌词高亮
+  for(let i=0; i<lpLrcData.length; i++) {
+    if(cur >= lpLrcData[i].t && (!lpLrcData[i+1] || cur < lpLrcData[i+1].t)) {
+      const line = document.getElementById(`lp-lrc-${i}`);
+      if(line && !line.classList.contains('active')) {
+        document.querySelectorAll('.lp-lrc-line').forEach(l => l.classList.remove('active'));
+        line.classList.add('active');
+        line.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+      break;
+    }
+  }
+};
+
+function lpFormatTime(s) {
+  const m = Math.floor(s/60), sec = Math.floor(s%60);
+  return `${m.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+}
+
+function lpRenderList() {
+  lpListView.innerHTML = songs.map((s, i) => `
+    <div class="lp-list-item ${i===lpIndex?'active':''}" onclick="lpLoad(${i})">
+      <span>${s.title||'未知'}</span>
+      <span style="opacity:0.5;font-size:11px">${s.artist||'--'}</span>
+    </div>
+  `).join('');
+}
+
+function lpSwitchTab(type) {
+  const isLrc = type === 'lrc';
+  document.getElementById('tabLrc').classList.toggle('active', isLrc);
+  document.getElementById('tabList').classList.toggle('active', !isLrc);
+  lpLrcView.classList.toggle('lp-hidden', !isLrc);
+  lpListView.classList.toggle('lp-hidden', isLrc);
+}
+
+document.getElementById('lpProgBar').onclick = (e) => {
+  lpAudio.currentTime = (e.offsetX / e.currentTarget.clientWidth) * lpAudio.duration;
+};
+
+lpAudio.onended = lpNext;
+lpInit();
+</script>
+</body>
+</html>
