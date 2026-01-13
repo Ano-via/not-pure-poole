@@ -1,267 +1,104 @@
----
-layout: default
-title: "流光音乐播放器 - 隔离版"
-permalink: mp3.html
----
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>流光音乐播放器 - 隔离版</title>
+  <title>现代在线音乐播放器</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* 使用特定的命名空间包裹所有样式，防止全局污染 */
-    .lrc-player-app {
-      --lp-primary: #4f46e5;
-      --lp-text-main: #1e293b;
-      --lp-text-dim: #64748b;
-      --lp-bg: rgba(255, 255, 255, 0.9);
-      
-      font-family: 'Inter', system-ui, sans-serif;
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+      color: #0f172a;
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: #f1f5f9;
+      padding: 30px;
     }
-
-    .lrc-player-container {
-      width: 380px;
-      background: var(--lp-bg);
-      backdrop-filter: blur(20px);
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      color: var(--lp-text-main);
+    .player {
+      width: 360px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(15,23,42,.15);
     }
-
-    /* 内部元素全部带上前缀 lp- */
-    .lp-cover-box {
-      position: relative;
+    .cover {
       width: 180px;
       height: 180px;
-      margin: 0 auto 20px;
-    }
-
-    .lp-cover {
-      width: 100%;
-      height: 100%;
       border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 16px;
       background-size: cover;
       background-position: center;
-      background-color: #e2e8f0;
-      border: 5px solid #fff;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      animation: lp-rotate 20s linear infinite;
-      animation-play-state: paused;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      animation: rotate 20s linear infinite;
+      box-shadow: 0 10px 25px rgba(99,102,241,.35);
     }
-
-    /* 播放状态控制 */
-    .lrc-player-app.is-playing .lp-cover {
-      animation-play-state: running;
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
-
-    .lp-cover-icon {
-      font-size: 50px;
-      color: #94a3b8;
-      display: none;
-    }
-
-    .lp-cover.is-empty .lp-cover-icon {
-      display: block;
-    }
-
-    @keyframes lp-rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .lp-info { text-align: center; margin-bottom: 15px; }
-    .lp-title { font-size: 20px; font-weight: 600; margin: 0; color: var(--lp-text-main); }
-    .lp-artist { font-size: 14px; color: var(--lp-text-dim); margin: 4px 0 0; }
-
-    .lp-progress-wrapper { margin-bottom: 20px; }
-    .lp-progress-bar {
-      width: 100%;
-      height: 6px;
-      background: #e2e8f0;
-      border-radius: 10px;
-      cursor: pointer;
-      position: relative;
-    }
-    .lp-progress-fill {
-      width: 0%;
-      height: 100%;
-      background: var(--lp-primary);
-      border-radius: 10px;
-      pointer-events: none;
-    }
-    .lp-time-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 11px;
-      color: var(--lp-text-dim);
-      margin-top: 6px;
-    }
-
-    .lp-controls {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .lp-btn {
-      background: none;
-      border: none;
-      color: var(--lp-text-dim);
-      cursor: pointer;
+    .title {
       font-size: 18px;
-      transition: 0.2s;
-      padding: 8px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #020617;
     }
-    .lp-btn:hover { color: var(--lp-primary); }
-    .lp-btn.active { color: var(--lp-primary); }
-
-    .lp-btn-main {
-      width: 50px;
-      height: 50px;
-      background: var(--lp-primary);
-      border-radius: 50%;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
-    }
-
-    .lp-tabs {
-      display: flex;
-      border-bottom: 1px solid #e2e8f0;
+    audio {
+      width: 100%;
       margin-bottom: 12px;
     }
-    .lp-tab-item {
-      flex: 1;
-      text-align: center;
-      padding-bottom: 8px;
-      font-size: 13px;
-      cursor: pointer;
-      color: var(--lp-text-dim);
-      border-bottom: 2px solid transparent;
-    }
-    .lp-tab-item.active {
-      color: var(--lp-primary);
-      border-bottom-color: var(--lp-primary);
-      font-weight: 600;
-    }
-
-    .lp-scroll-view {
-      height: 150px;
+    .playlist {
+      max-height: 160px;
       overflow-y: auto;
-      scrollbar-width: thin;
+      margin-bottom: 12px;
     }
-    .lp-scroll-view::-webkit-scrollbar { width: 4px; }
-    .lp-scroll-view::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-
-    .lp-lrc-line {
-      padding: 6px 0;
-      font-size: 14px;
-      color: var(--lp-text-dim);
-      text-align: center;
-      transition: 0.3s;
-    }
-    .lp-lrc-line.active {
-      color: var(--lp-primary);
-      font-weight: 600;
-      transform: scale(1.05);
-    }
-    .lp-empty-tip {
-      color: #94a3b8;
-      font-size: 13px;
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    .lp-list-item {
-      padding: 10px;
+    .song {
+      padding: 8px;
       border-radius: 8px;
-      font-size: 13px;
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 4px;
+      font-size: 14px;
     }
-    .lp-list-item:hover { background: #f1f5f9; }
-    .lp-list-item.active {
-      background: #eff6ff;
-      color: var(--lp-primary);
-      font-weight: 600;
+    .song:hover { background: #e0e7ff; }
+    .song.active { background: #6366f1; color: #fff; }
+    .lyrics {
+      background: #f8fafc;
+      border: 1px solid #c7d2fe;
+      border-radius: 14px;
+      padding: 10px;
+      height: 160px;
+      overflow-y: auto;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #1e293b;
     }
-    
-    .lp-hidden { display: none; }
+    .line.active { color: #4f46e5; font-weight: bold; }
+    .controls { display: flex; justify-content: space-around; margin-bottom: 12px; }
+    .controls button {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 999px;
+      background: #6366f1;
+      color: #fff;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .controls button:hover { background: #4f46e5; }
   </style>
 </head>
 <body>
+<div class="player">
+  <div class="cover" id="cover"></div>
+  <div class="title" id="songTitle">选择一首歌</div>
 
-<div class="lrc-player-app" id="lpApp">
-  <div class="lrc-player-container">
-    
-    <div class="lp-cover-box">
-      <div class="lp-cover" id="lpCover">
-        <i class="fas fa-music lp-cover-icon"></i>
-      </div>
-    </div>
+  <audio id="audio" controls></audio>
 
-    <div class="lp-info">
-      <div class="lp-title" id="lpTitle">正在加载...</div>
-      <div class="lp-artist" id="lpArtist">艺术家</div>
-    </div>
-
-    <div class="lp-progress-wrapper">
-      <div class="lp-progress-bar" id="lpProgBar">
-        <div class="lp-progress-fill" id="lpProgFill"></div>
-      </div>
-      <div class="lp-time-row">
-        <span id="lpCurrentTime">00:00</span>
-        <span id="lpDuration">00:00</span>
-      </div>
-    </div>
-
-    <div class="lp-controls">
-      <button class="lp-btn" id="lpShuffle" onclick="lpToggleShuffle()">
-        <i class="fas fa-shuffle"></i>
-      </button>
-      <button class="lp-btn" onclick="lpPrev()">
-        <i class="fas fa-backward-step"></i>
-      </button>
-      <button class="lp-btn lp-btn-main" onclick="lpTogglePlay()">
-        <i class="fas fa-play" id="lpPlayIcon"></i>
-      </button>
-      <button class="lp-btn" onclick="lpNext()">
-        <i class="fas fa-forward-step"></i>
-      </button>
-      <button class="lp-btn" style="opacity:0.2"><i class="fas fa-list"></i></button>
-    </div>
-
-    <div class="lp-tabs">
-      <div class="lp-tab-item active" id="tabLrc" onclick="lpSwitchTab('lrc')">歌词</div>
-      <div class="lp-tab-item" id="tabList" onclick="lpSwitchTab('list')">列表</div>
-    </div>
-
-    <div id="lpLrcView" class="lp-scroll-view"></div>
-    <div id="lpListView" class="lp-scroll-view lp-hidden"></div>
-
+  <div class="controls">
+    <button onclick="prevSong()">上一首</button>
+    <button onclick="nextSong()">下一首</button>
   </div>
-</div>
 
-<audio id="lpAudio"></audio>
+  <div class="playlist" id="playlist"></div>
+  <div class="lyrics" id="lyrics"></div>
+</div>
 
 <script>
 const songs = [
@@ -869,141 +706,96 @@ const songs = [
   }
 ];
 
-const lpAudio = document.getElementById('lpAudio');
-const lpApp = document.getElementById('lpApp');
-const lpPlayIcon = document.getElementById('lpPlayIcon');
-const lpCover = document.getElementById('lpCover');
-const lpLrcView = document.getElementById('lpLrcView');
-const lpListView = document.getElementById('lpListView');
-const lpProgFill = document.getElementById('lpProgFill');
+const audio = document.getElementById('audio');
+const playlistEl = document.getElementById('playlist');
+const lyricsEl = document.getElementById('lyrics');
+const titleEl = document.getElementById('songTitle');
+const coverEl = document.getElementById('cover');
 
-let lpIndex = 0;
-let lpShuffle = false;
-let lpLrcData = [];
+let currentIndex = 0;
+let currentLyrics = [];
 
-function lpInit() {
-  lpRenderList();
-  lpLoad(lpIndex, false);
+// 初始化播放列表
+songs.forEach((song, index) => {
+  const div = document.createElement('div');
+  div.className = 'song';
+  div.textContent = song.title;
+  div.onclick = () => loadSong(index);
+  playlistEl.appendChild(div);
+});
+
+function loadSong(index) {
+  currentIndex = index;
+  document.querySelectorAll('.song').forEach(el => el.classList.remove('active'));
+  playlistEl.children[index].classList.add('active');
+
+  const song = songs[index];
+  titleEl.textContent = song.title;
+  audio.src = song.src;
+  coverEl.style.backgroundImage = `url('${song.cover}')`;
+  audio.play();
+
+  fetch(song.lrcFile)
+    .then(res => res.text())
+    .then(text => {
+      currentLyrics = parseLRC(text);
+      renderLyrics();
+    });
 }
 
-function lpLoad(idx, autoPlay = true) {
-  lpIndex = idx;
-  const s = songs[idx];
-  
-  document.getElementById('lpTitle').innerText = s.title || "未知曲目";
-  document.getElementById('lpArtist').innerText = s.artist || "未知艺术家";
-  
-  // 封面容错
-  if(s.cover) {
-    lpCover.style.backgroundImage = `url('${s.cover}')`;
-    lpCover.classList.remove('is-empty');
-  } else {
-    lpCover.style.backgroundImage = 'none';
-    lpCover.classList.add('is-empty');
-  }
-
-  lpAudio.src = s.src;
-  lpRenderList();
-  
-  // 歌词容错
-  if(s.lrc) {
-    fetch(s.lrc).then(r => r.text()).then(t => {
-      lpLrcData = lpParseLrc(t);
-      lpRenderLrc();
-    }).catch(() => { lpLrcData = []; lpRenderLrc(); });
-  } else {
-    lpLrcData = [];
-    lpRenderLrc();
-  }
-
-  if(autoPlay) lpPlay();
+function parseLRC(lrc) {
+  return lrc.trim().split('\n').map(line => {
+    const match = line.match(/\[(\d+):(\d+\.\d+)\](.*)/);
+    if (!match) return null;
+    return { time: parseInt(match[1]) * 60 + parseFloat(match[2]), text: match[3] };
+  }).filter(Boolean);
 }
 
-function lpParseLrc(text) {
-  const lines = text.split('\n');
-  const res = [];
-  lines.forEach(l => {
-    const m = l.match(/\[(\d+):(\d+\.\d+)\](.*)/);
-    if(m) res.push({ t: parseInt(m[1])*60 + parseFloat(m[2]), txt: m[3].trim() });
+function renderLyrics() {
+  lyricsEl.innerHTML = '';
+  currentLyrics.forEach(l => {
+    const div = document.createElement('div');
+    div.className = 'line';
+    div.dataset.time = l.time;
+    div.textContent = l.text;
+    lyricsEl.appendChild(div);
   });
-  return res;
 }
 
-function lpRenderLrc() {
-  if(lpLrcData.length === 0) {
-    lpLrcView.innerHTML = '<div class="lp-empty-tip">暂无歌词封面</div>';
-    return;
-  }
-  lpLrcView.innerHTML = lpLrcData.map((l, i) => `<div class="lp-lrc-line" id="lp-lrc-${i}">${l.txt}</div>`).join('');
-}
-
-function lpTogglePlay() { lpAudio.paused ? lpPlay() : lpPause(); }
-function lpPlay() { lpAudio.play(); lpPlayIcon.className = 'fas fa-pause'; lpApp.classList.add('is-playing'); }
-function lpPause() { lpAudio.pause(); lpPlayIcon.className = 'fas fa-play'; lpApp.classList.remove('is-playing'); }
-
-function lpNext() {
-  let next = lpShuffle ? Math.floor(Math.random()*songs.length) : (lpIndex + 1) % songs.length;
-  lpLoad(next);
-}
-
-function lpPrev() {
-  lpLoad((lpIndex - 1 + songs.length) % songs.length);
-}
-
-function lpToggleShuffle() {
-  lpShuffle = !lpShuffle;
-  document.getElementById('lpShuffle').classList.toggle('active', lpShuffle);
-}
-
-lpAudio.ontimeupdate = () => {
-  if(!lpAudio.duration) return;
-  const cur = lpAudio.currentTime;
-  lpProgFill.style.width = (cur / lpAudio.duration * 100) + '%';
-  document.getElementById('lpCurrentTime').innerText = lpFormatTime(cur);
-  document.getElementById('lpDuration').innerText = lpFormatTime(lpAudio.duration);
-  
-  // 歌词高亮
-  for(let i=0; i<lpLrcData.length; i++) {
-    if(cur >= lpLrcData[i].t && (!lpLrcData[i+1] || cur < lpLrcData[i+1].t)) {
-      const line = document.getElementById(`lp-lrc-${i}`);
-      if(line && !line.classList.contains('active')) {
-        document.querySelectorAll('.lp-lrc-line').forEach(l => l.classList.remove('active'));
-        line.classList.add('active');
-        line.scrollIntoView({ block: 'center', behavior: 'smooth' });
-      }
-      break;
+audio.addEventListener('timeupdate', () => {
+  const currentTime = audio.currentTime;
+  const lines = document.querySelectorAll('.line');
+  lines.forEach((line, index) => {
+    const next = lines[index + 1];
+    if (currentTime >= line.dataset.time && (!next || currentTime < next.dataset.time)) {
+      line.classList.add('active');
+      line.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    } else {
+      line.classList.remove('active');
     }
+  });
+  // localStorage 保存进度
+  localStorage.setItem('lastSongIndex', currentIndex);
+  localStorage.setItem('lastTime', audio.currentTime);
+});
+
+// 自动播放下一首
+audio.addEventListener('ended', () => { nextSong(); });
+
+function nextSong() { loadSong((currentIndex + 1) % songs.length); }
+function prevSong() { loadSong((currentIndex - 1 + songs.length) % songs.length); }
+
+// 页面加载时恢复上次进度
+window.addEventListener('load', () => {
+  const lastIndex = localStorage.getItem('lastSongIndex');
+  const lastTime = localStorage.getItem('lastTime');
+  if (lastIndex !== null) {
+    loadSong(Number(lastIndex));
+    audio.currentTime = lastTime ? Number(lastTime) : 0;
+  } else {
+    loadSong(0);
   }
-};
-
-function lpFormatTime(s) {
-  const m = Math.floor(s/60), sec = Math.floor(s%60);
-  return `${m.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
-}
-
-function lpRenderList() {
-  lpListView.innerHTML = songs.map((s, i) => `
-    <div class="lp-list-item ${i===lpIndex?'active':''}" onclick="lpLoad(${i})">
-      <span>${s.title||'未知'}</span>
-      <span style="opacity:0.5;font-size:11px">${s.artist||'--'}</span>
-    </div>
-  `).join('');
-}
-
-function lpSwitchTab(type) {
-  const isLrc = type === 'lrc';
-  document.getElementById('tabLrc').classList.toggle('active', isLrc);
-  document.getElementById('tabList').classList.toggle('active', !isLrc);
-  lpLrcView.classList.toggle('lp-hidden', !isLrc);
-  lpListView.classList.toggle('lp-hidden', isLrc);
-}
-
-document.getElementById('lpProgBar').onclick = (e) => {
-  lpAudio.currentTime = (e.offsetX / e.currentTarget.clientWidth) * lpAudio.duration;
-};
-
-lpAudio.onended = lpNext;
-lpInit();
+});
 </script>
 </body>
 </html>
