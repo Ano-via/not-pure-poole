@@ -1,0 +1,168 @@
+---
+layout: default
+title: "换行大师"
+permalink: txt.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>换行大师</title>
+
+<style>
+/* ===== 命名空间隔离，防 CSS 冲突 ===== */
+.nl-tool * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.nl-tool {
+    max-width: 720px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+}
+
+.nl-tool-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.nl-tool-desc {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* textarea */
+.nl-tool-textarea {
+    width: 100%;
+    height: 160px;
+    resize: vertical;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.nl-tool-textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.12);
+}
+
+/* 按钮区域 */
+.nl-tool-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+}
+
+/* 按钮通用 */
+.nl-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* 三个风格按钮 */
+.nl-btn-comma {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #fff;
+}
+.nl-btn-comma:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(79,70,229,.35); }
+
+.nl-btn-semicolon {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+}
+.nl-btn-semicolon:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(5,150,105,.35); }
+
+.nl-btn-pipe {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+}
+.nl-btn-pipe:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(217,119,6,.35); }
+
+/* 底部工具 */
+.nl-tool-footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+
+/* 复制按钮 */
+.nl-copy-btn {
+    cursor: pointer;
+    color: #4f46e5;
+}
+.nl-copy-btn:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="nl-tool">
+    <div class="nl-tool-title">换行大师</div>
+    <div class="nl-tool-desc">每行一条数据，一键转换为分隔符格式</div>
+
+    <textarea 
+        id="nlTextarea" 
+        class="nl-tool-textarea" 
+        placeholder="示例：&#10;apple&#10;banana&#10;orange"></textarea>
+
+    <div class="nl-tool-actions">
+        <button class="nl-btn nl-btn-comma" onclick="nlReplace(',')">, 逗号分隔</button>
+        <button class="nl-btn nl-btn-semicolon" onclick="nlReplace(';')">; 分号分隔（适用于TK小店）</button>
+        <button class="nl-btn nl-btn-pipe" onclick="nlReplace('|')">| 竖线分隔</button>
+    </div>
+
+    <div class="nl-tool-footer">
+        <div id="nlCount">0 条数据</div>
+        <div class="nl-copy-btn" onclick="nlCopy()">复制结果</div>
+    </div>
+</div>
+
+<script>
+function nlReplace(symbol) {
+    const ta = document.getElementById('nlTextarea');
+    let lines = ta.value
+        .split(/\r?\n/)
+        .map(l => l.trim())
+        .filter(l => l !== '');
+
+    ta.value = lines.join(symbol);
+    document.getElementById('nlCount').innerText = `${lines.length} 条数据`;
+}
+
+function nlCopy() {
+    const ta = document.getElementById('nlTextarea');
+    ta.select();
+    document.execCommand('copy');
+}
+</script>
+
+</body>
+</html>
