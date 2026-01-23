@@ -5,7 +5,7 @@ tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 终极红宝石, 
 date: 2025-11-17 11:16 +0800
 ---
 <style>
-  td:nth-child(2) {
+  td:nth-child(3) {
     min-width: 64px;
   }
   td img {
