@@ -40,7 +40,7 @@ date: 2025-11-17 11:16 +0800
       background-color: #45a049;
     }
 </style>
-
+<p>在第七世代及之后的《宝可梦》系列中，不再包含完整的全国图鉴。就是说在游戏中看不了全国编号了，我加了个自编号方便大家对照</p>
 <div class="floating-buttons">
   <button onclick="location.hash='#001'">Gen 1</button>
   <button onclick="location.hash='#152'">Gen 2</button>
