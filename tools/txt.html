@@ -134,9 +134,24 @@ permalink: txt.html
         placeholder="示例：&#10;apple&#10;banana&#10;orange"></textarea>
 
     <div class="nl-tool-actions">
-        <button class="nl-btn nl-btn-comma" onclick="nlReplace(',')">, 逗号分隔</button>
-        <button class="nl-btn nl-btn-semicolon" onclick="nlReplace(';')">; 分号分隔（适用于TK小店）</button>
-        <button class="nl-btn nl-btn-pipe" onclick="nlReplace('|')">| 竖线分隔</button>
+        <button class="nl-btn nl-btn-comma"
+        data-label=", 逗号分隔"
+        onclick="nlReplace(this, ',')">
+    , 逗号分隔
+</button>
+
+<button class="nl-btn nl-btn-semicolon"
+        data-label="; 分号分隔（适用于TK小店）"
+        onclick="nlReplace(this, ';')">
+    ; 分号分隔（适用于TK小店）
+</button>
+
+<button class="nl-btn nl-btn-pipe"
+        data-label="| 竖线分隔"
+        onclick="nlReplace(this, '|')">
+    | 竖线分隔
+</button>
+
     </div>
 
     <div class="nl-tool-footer">
@@ -153,16 +168,74 @@ function nlReplace(symbol) {
         .map(l => l.trim())
         .filter(l => l !== '');
 
-    ta.value = lines.join(symbol);
+    const result = lines.join(symbol);
+    ta.value = result;
+
     document.getElementById('nlCount').innerText = `${lines.length} 条数据`;
+
+    // ✅ 自动复制
+    nlAutoCopy(result);
 }
 
-function nlCopy() {
+function nlAutoCopy(text) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text);
+    } else {
+        // 兼容老浏览器
+        const ta = document.getElementById('nlTextarea');
+        ta.select();
+        document.execCommand('copy');
+    }
+}
+  
+function nlReplace(btn, symbol) {
     const ta = document.getElementById('nlTextarea');
-    ta.select();
-    document.execCommand('copy');
+
+    let lines = ta.value
+        .split(/\r?\n/)
+        .map(l => l.trim())
+        .filter(l => l !== '');
+
+    const result = lines.join(symbol);
+    ta.value = result;
+
+    document.getElementById('nlCount').innerText = `${lines.length} 条数据`;
+
+    // ✅ 自动复制
+    nlAutoCopy(result);
+
+    // ✅ 按钮状态变化
+    nlButtonCopied(btn);
+}
+
+function nlAutoCopy(text) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text);
+    } else {
+        const ta = document.getElementById('nlTextarea');
+        ta.select();
+        document.execCommand('copy');
+    }
+}
+
+function nlButtonCopied(btn) {
+    // 防止重复点击打断状态
+    if (btn.dataset.locked === '1') return;
+
+    btn.dataset.locked = '1';
+    btn.dataset.originalText = btn.innerHTML;
+
+    btn.innerHTML = '已复制 ✔';
+    btn.style.opacity = '0.8';
+
+    setTimeout(() => {
+        btn.innerHTML = btn.dataset.label || btn.dataset.originalText;
+        btn.style.opacity = '';
+        btn.dataset.locked = '0';
+    }, 3000);
 }
 </script>
+
 
 </body>
 </html>
