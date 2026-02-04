@@ -53,10 +53,12 @@ date: 2026-01-26 11:16 +0800
 <div id="filters">
   <button onclick="filter('')">全部</button>
 
-  <button onclick="filter('Lv.')">等级进化</button>
+  <button onclick="filter('LV')">等级进化</button>
     <button onclick="filter('之石')">进化石</button>
     <button onclick="filter('生蛋')">生蛋</button>
-  	<button onclick="filter('复活')">复活</button>
+  	<button onclick="filter('复活')">复活</button>    
+    <button onclick="filter('亲密度进化')">亲密度进化</button>
+    <button onclick="filter('携带')">携带道具进化</button>
     <!-- 道路筛选按钮 -->
     <button onclick="filter('201')">201道路</button>
     <button onclick="filter('202')">202道路</button>
@@ -89,28 +91,27 @@ date: 2026-01-26 11:16 +0800
     <button onclick="filter('229')">229道路</button>
     <button onclick="filter('230')">230道路</button>
     <button onclick="filter('百代森林')">百代森林</button>
-    <button onclick="filter('滨海市')">滨海市</button>
+    <button onclick="filter('滨海市')">滨海市</button>    
+    <button onclick="filter('神和镇')">神和镇</button>
+    <button onclick="filter('水脉市')">水脉市</button>
     <button onclick="filter('大湿原')">大湿原</button>
     <button onclick="filter('多多罗铁工厂')">多多罗铁工厂</button>    
     <button onclick="filter('钢铁岛')">钢铁岛</button>
     <button onclick="filter('冠军之路被NPC堵住的洞内')">冠军之路被NPC堵住的洞内</button>
     <button onclick="filter('归途洞窟')">归途洞窟</button>
     <button onclick="filter('毁坏的世界')">毁坏的世界</button>
-    <button onclick="filter('立志湖')">立志湖</button>
+    <button onclick="filter('立志湖')">立志湖</button>    
+    <button onclick="filter('睿智湖')">睿智湖</button>    
+    <button onclick="filter('天冠山')">天冠山</button>
+    <button onclick="filter('严酷山')">严酷山</button>
     <button onclick="filter('迷幻洞窟')">迷幻洞窟</button>
     <button onclick="filter('迷失塔')">迷失塔</button>
     <button onclick="filter('切锋神殿')">切锋神殿</button>
-    <button onclick="filter('亲密度进化')">亲密度进化</button>
-    <button onclick="filter('睿智湖')">睿智湖</button>
     <button onclick="filter('森之洋馆餐厅')">森之洋馆餐厅</button>
     <button onclick="filter('山谷发电厂')">山谷发电厂</button>
-    <button onclick="filter('神和镇')">神和镇</button>
-    <button onclick="filter('水脉市')">水脉市</button>
     <button onclick="filter('送泉')">送泉</button>
     <button onclick="filter('随意遗迹')">随意遗迹</button>
-    <button onclick="filter('天冠山')">天冠山</button>
     <button onclick="filter('甜甜蜜树')">甜甜蜜树</button>
-    <button onclick="filter('严酷山')">严酷山</button>
     <button onclick="filter('最自豪的后院')">最自豪的后院</button>
 </div>
 
