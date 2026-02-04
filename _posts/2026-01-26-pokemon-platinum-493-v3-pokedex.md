@@ -99,9 +99,10 @@ date: 2026-01-26 11:16 +0800
     <button onclick="filter('钢铁岛')">钢铁岛</button>
     <button onclick="filter('冠军之路被NPC堵住的洞内')">冠军之路被NPC堵住的洞内</button>
     <button onclick="filter('归途洞窟')">归途洞窟</button>
-    <button onclick="filter('毁坏的世界')">毁坏的世界</button>
-    <button onclick="filter('立志湖')">立志湖</button>    
-    <button onclick="filter('睿智湖')">睿智湖</button>    
+    <button onclick="filter('毁坏的世界')">毁坏的世界</button>    
+    <button onclick="filter('立志湖')">立志湖 / 律诗湖</button>    
+    <button onclick="filter('睿智湖')">睿智湖</button>
+    <button onclick="filter('心齐湖')">心齐湖</button>      
     <button onclick="filter('天冠山')">天冠山</button>
     <button onclick="filter('严酷山')">严酷山</button>
     <button onclick="filter('迷幻洞窟')">迷幻洞窟</button>
@@ -110,7 +111,7 @@ date: 2026-01-26 11:16 +0800
     <button onclick="filter('森之洋馆餐厅')">森之洋馆餐厅</button>
     <button onclick="filter('山谷发电厂')">山谷发电厂</button>
     <button onclick="filter('送泉')">送泉</button>
-    <button onclick="filter('随意遗迹')">随意遗迹</button>
+    <button onclick="filter('遗迹')">遗迹</button>
     <button onclick="filter('甜甜蜜树')">甜甜蜜树</button>
     <button onclick="filter('最自豪的后院')">最自豪的后院</button>
 </div>
@@ -303,7 +304,7 @@ date: 2026-01-26 11:16 +0800
             <td id="030">030</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+snVfEml6LcQQX1yI2lI3N/DEpO0M5/hUt8oP1PRWI1q4LxHpU0/iidY7lNt3bIzu7ktb4ygUAEEK3VRkfN5pzxgiInLljc7qaaO3hkmmkSOKNS7u7AKqgZJJPQCmWt3bX1slzZ3EVxA+dssLh1bBwcEcHkEV5Lf3DaRNvnFvdmKUGN7vYEhRCI40UIFRSu0sDgbPNI6sxPeeDrmKLSIdLnuYxqMXmSPbO6+esbSEo0ijBDFWQksASWyeSapxaSb6ihUU3odJRRRUmgV5r40OqaTqF9cpAPsN60ZLRxuxztVN27cAkm5VHJUEbCh3Bs+lUyaGO4hkhmjSSKRSjo6gqykYIIPUGgmUVJWZ5cPsX2QX8gAitYFH2m0kZTAAqoI42GwiQhQDwCoZVIIYmtjwFpcFpqV8wiBktoUhWWIgRLvJZ0AUAFjsjcnqFZBgHJbbu/BOh3CYt7b7AwIZTZ4RFYZ+by8GMtgkbipIzwRgY1tL0230jTorK1UiKPceQBlmYsxwAAMkk4AAGcAAYFPoQqdpc1y3RRRSNT/2Q=="></td>
             <td>尼多娜</td>
-            <td>①由尼多兰LV.16进化<br>②221号道路,律诗湖(宝可追踪)</td>
+            <td>①由尼多兰LV.16进化<br>②221号道路,立志湖(宝可追踪)</td>
         </tr>
         <tr>
             <td id="031">031</td>
@@ -321,7 +322,7 @@ date: 2026-01-26 11:16 +0800
             <td id="033">033</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+s3UtdsdJvbC0u3dZb6Ty4tqEjOVXJ9BudF+rDsCRpV5p8RYo77VEgt5pZpmtmtZYkRnWAtypBxtUtn5gWBP7o4xzTSu7FQjzOx6JeXlvp9pJdXUgjhjHzMQT1OAABySSQABySQBzUWn6tYapGHsbuKf93HKVVvmVXXchZeq5HIyBXmlxq+p3kzpetNtMiXRtmIZEkJcLHx1VB5fA+83lsNpJLdF8NmsH0q8e2MC3BnxJDGgBiQDCYIABRsPICPlzI2MkE0NWCS5Xyvc7WiiikSFebeMtRisvE8019G9syWqrZTeVuWZQdzsWA7MQpVuQBkY8w16TVa506xvZoJrqzt55bdt8LyxKzRNkHKkjg8Dp6CmnZ3LhPklzI8VuJ5ZEWO+EywSwl995G7xTkbNzqcbShb5htJUBhyABntPAuia1Z6vJqF9Aba2ltdojL/6zdsZMg/MGQeYCGAwWOCQxx1OoeHrHU75bm5DMCixzRYUpOqksitkE4BZjhSN2cNuHFa1U5tqxUqrkrBRRRUGR//Z"></td>
             <td>尼多力诺</td>
-            <td>①由尼多朗LV.16进化<br>②221号道路,律诗湖(宝可追踪)</td>
+            <td>①由尼多朗LV.16进化<br>②221号道路,立志湖(宝可追踪)</td>
         </tr>
         <tr>
             <td id="034">034</td>
