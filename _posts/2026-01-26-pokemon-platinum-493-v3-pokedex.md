@@ -50,6 +50,70 @@ date: 2026-01-26 11:16 +0800
   <button onclick="location.hash='#387'">Gen 4</button>
 </div>
 
+<div id="filters">
+  <button onclick="filter('')">全部</button>
+
+  <button onclick="filter('Lv.')">等级进化</button>
+    <button onclick="filter('之石')">进化石</button>
+    <button onclick="filter('生蛋')">生蛋</button>
+  	<button onclick="filter('复活')">复活</button>
+    <!-- 道路筛选按钮 -->
+    <button onclick="filter('201')">201道路</button>
+    <button onclick="filter('202')">202道路</button>
+    <button onclick="filter('203')">203道路</button>
+    <button onclick="filter('204')">204道路</button>
+    <button onclick="filter('205')">205道路</button>
+    <button onclick="filter('206')">206道路</button>
+    <button onclick="filter('207')">207道路</button>
+    <button onclick="filter('208')">208道路</button>
+    <button onclick="filter('209')">209道路</button>
+    <button onclick="filter('210')">210道路</button>
+    <button onclick="filter('211')">211道路</button>
+    <button onclick="filter('212')">212道路</button>
+    <button onclick="filter('213')">213道路</button>
+    <button onclick="filter('214')">214道路</button>
+    <button onclick="filter('215')">215道路</button>
+    <button onclick="filter('216')">216道路</button>
+    <button onclick="filter('217')">217道路</button>
+    <button onclick="filter('218')">218道路</button>
+    <button onclick="filter('219')">219道路</button>
+    <button onclick="filter('220')">220道路</button>
+    <button onclick="filter('221')">221道路</button>
+    <button onclick="filter('222')">222道路</button>
+    <button onclick="filter('223')">223道路</button>
+    <button onclick="filter('224')">224道路</button>
+    <button onclick="filter('225')">225道路</button>
+    <button onclick="filter('226')">226道路</button>
+    <button onclick="filter('227')">227道路</button>
+    <button onclick="filter('228')">228道路</button>
+    <button onclick="filter('229')">229道路</button>
+    <button onclick="filter('230')">230道路</button>
+    <button onclick="filter('百代森林')">百代森林</button>
+    <button onclick="filter('滨海市')">滨海市</button>
+    <button onclick="filter('大湿原')">大湿原</button>
+    <button onclick="filter('多多罗铁工厂')">多多罗铁工厂</button>    
+    <button onclick="filter('钢铁岛')">钢铁岛</button>
+    <button onclick="filter('冠军之路被NPC堵住的洞内')">冠军之路被NPC堵住的洞内</button>
+    <button onclick="filter('归途洞窟')">归途洞窟</button>
+    <button onclick="filter('毁坏的世界')">毁坏的世界</button>
+    <button onclick="filter('立志湖')">立志湖</button>
+    <button onclick="filter('迷幻洞窟')">迷幻洞窟</button>
+    <button onclick="filter('迷失塔')">迷失塔</button>
+    <button onclick="filter('切锋神殿')">切锋神殿</button>
+    <button onclick="filter('亲密度进化')">亲密度进化</button>
+    <button onclick="filter('睿智湖')">睿智湖</button>
+    <button onclick="filter('森之洋馆餐厅')">森之洋馆餐厅</button>
+    <button onclick="filter('山谷发电厂')">山谷发电厂</button>
+    <button onclick="filter('神和镇')">神和镇</button>
+    <button onclick="filter('水脉市')">水脉市</button>
+    <button onclick="filter('送泉')">送泉</button>
+    <button onclick="filter('随意遗迹')">随意遗迹</button>
+    <button onclick="filter('天冠山')">天冠山</button>
+    <button onclick="filter('甜甜蜜树')">甜甜蜜树</button>
+    <button onclick="filter('严酷山')">严酷山</button>
+    <button onclick="filter('最自豪的后院')">最自豪的后院</button>
+</div>
+
 <table>
     <thead>
         <tr>
@@ -59,7 +123,7 @@ date: 2026-01-26 11:16 +0800
             <th>获得方式</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <td id="001">001</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iisXXfESaJcWsJs5rlp1kkIiZVKom0EjcQCcuvBI43HOQAU2krsTaSuzXlmigQPLIkallQF2ABZiAo+pJAHqTRDNFcQxzQyJJFIodHRgVZSMggjqDXiupeIbvxJexSX02yNJS0VpwYUBBVh0+f5Nw3NnJJ27QSK3fBXiC8s9dtdEMwuLO5eRdpABik2vMXVgMkMd2VOcE8EAYOKrxc+QyVeLnynqFFFFbmwV554siksPEN3qF+8n2K4tUjjneLMEQBI8uTHT5mLAsRu80qPu16HRUTgpx5WRUgpxcWeESX1rqGjxbRaSXCgv5FpGpNv8xwpkGQSeGJAUdevNdN8MYJTrV3eQRpNZSWwVrliGeOTcD5eRwCQSWUf3IycZGe91Tw9pmsuHvYZS2woTFcSQl1wRhtjDcMM2Ac43Njqc6MMMVvBHDDGkUUahERFCqqgYAAHQAVMKSi7kQoqMrofRRRWpsf/2Q=="></td>
@@ -3053,3 +3117,13 @@ date: 2026-01-26 11:16 +0800
 <br>8. 增加一些PM取得方式（增加多边兽可遇，丑丑鱼增加好钓竿钓取）；
 <br>9. 精灵联盟商店贩卖大师球（9800元），花蕊镇贩卖神奇糖果（9800元）； 
 </p>
+
+<script>
+function filter(keyword) {
+  const rows = document.querySelectorAll("#pokeTable tr");
+  rows.forEach(row => {
+    const way = row.cells[3].innerText;
+    row.style.display = keyword === "" || way.includes(keyword) ? "" : "none";
+  });
+}
+</script>
