@@ -101,7 +101,7 @@ date: 2026-01-26 11:16 +0800
     <button onclick="filter('归途洞窟')">归途洞窟</button>
     <button onclick="filter('毁坏的世界')">毁坏的世界</button>    
     <button onclick="filter('立志湖')">立志湖 / 律诗湖</button>    
-    <button onclick="filter('睿智湖')">睿智湖</button>
+    <button onclick="filter('睿智湖')">睿智湖 / 英知湖</button>
     <button onclick="filter('心齐湖')">心齐湖</button>      
     <button onclick="filter('天冠山')">天冠山</button>
     <button onclick="filter('严酷山')">严酷山</button>
