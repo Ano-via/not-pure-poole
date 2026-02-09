@@ -115,3 +115,23 @@ layout: default
   });
 </script>
 <!-- Copy Code End-->
+ <div id="comments"></div>
+<script src="https://unpkg.com/cwd-widget@0.0.x/dist/cwd.js"></script>
+
+<!-- 实例调用 -->
+<script>
+	const comments = new CWDComments({
+		el: '#comments',
+		apiBaseUrl: 'https://cwd-api.atticus-beta.workers.dev', // 换成你的 API 地址
+	});
+	comments.mount();
+
+	// 或者
+	// document.addEventListener('DOMContentLoaded', () => {
+	// 	const comments = new window.CWDComments({
+	// 		el: '#comments',
+	// 		apiBaseUrl: 'https://your-api.example.com',
+	// 	});
+	// 	comments.mount();
+	// });
+</script>
