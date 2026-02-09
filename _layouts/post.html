@@ -61,8 +61,10 @@ layout: default
   </ul>
 </aside>
 {% endif %}
+
 <!-- Gitalk 评论 start -->
 <!-- Link Gitalk 的支持文件 -->
+<!--
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
@@ -78,7 +80,9 @@ layout: default
   });
   gitalk.render('gitalk-container');
 </script>
+-->
 <!-- Gitalk end -->
+
 <!-- Copy Code Start -->
 <script>
   // 查找所有包含 class="highlight" 的 div 元素
@@ -115,7 +119,8 @@ layout: default
   });
 </script>
 <!-- Copy Code End-->
- <div id="comments"></div>
+<!-- CWD Comment Start-->
+<div id="comments"></div>
 <script src="https://unpkg.com/cwd-widget@0.0.x/dist/cwd.js"></script>
 
 <!-- 实例调用 -->
@@ -135,3 +140,4 @@ layout: default
 	// 	comments.mount();
 	// });
 </script>
+<!-- CWD Comment End-->
