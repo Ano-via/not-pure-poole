@@ -45,8 +45,9 @@ layout: default
   {% endif %}
 </article>
 
-<div id="container-2aef8649bc848337ea8822d1beb42c61"></div>
-{% if site.related_posts != empty %}
+
+{% assign related = page.related_posts | size %}
+{% if related > 0 %}
 <aside class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
