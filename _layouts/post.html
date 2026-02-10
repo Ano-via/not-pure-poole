@@ -46,8 +46,7 @@ layout: default
 </article>
 
 
-{% assign related = page.related_posts | size %}
-{% if related > 0 %}
+{% if site.related_posts and site.related_posts.size > 0 %}
 <aside class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
