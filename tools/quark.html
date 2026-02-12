@@ -1,0 +1,152 @@
+---
+layout: post
+title: "夸克网盘批量检测工具"
+permalink: quark.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  #quarkChecker { max-width: 800px; margin: auto; border:1px solid #ccc; padding: 15px; border-radius:5px; background:#fafafa; }
+  textarea { width: 100%; height: 150px; margin-bottom:10px; padding:5px; }
+  button { padding: 8px 15px; margin-right: 5px; cursor: pointer; }
+  .progress-bar { width: 100%; background: #eee; border-radius: 5px; overflow: hidden; margin: 10px 0; height: 20px; }
+  .progress { height: 100%; width: 0%; background: #4caf50; text-align: center; color: white; line-height: 20px; font-size:12px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { border: 1px solid #ccc; padding: 6px; text-align: left; }
+  th { background: #f2f2f2; }
+  .ok { color: green; }
+  .fail { color: red; }
+  .error { color: orange; }
+</style>
+</head>
+<body>
+
+<div id="quarkChecker">
+  <h2>夸克网盘批量检测工具</h2>
+  <p>请输入多个夸克网盘链接，每行一个：</p>
+  <textarea id="urls" placeholder="https://pan.quark.cn/s/xxxx\nhttps://pan.quark.cn/s/yyyy"></textarea>
+  <br>
+  <button onclick="startCheck()">开始检测</button>
+  <button onclick="copyResults()">复制结果</button>
+  <button onclick="exportCSV()">导出 CSV</button>
+
+  <div class="progress-bar"><div class="progress" id="progress">0%</div></div>
+
+  <table id="resultTable" style="display:none;">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>链接</th>
+        <th>状态</th>
+      </tr>
+    </thead>
+    <tbody id="resultBody"></tbody>
+  </table>
+</div>
+
+<script>
+const workerDomain = "https://withered-leaf-b36b.atticus-beta.workers.dev/"; // 替换成你的 Worker URL
+const concurrency = 5; // 并发请求数量
+
+function updateProgress(done, total) {
+  const percent = Math.round((done/total)*100);
+  const bar = document.getElementById("progress");
+  bar.style.width = percent + "%";
+  bar.textContent = percent + "%";
+}
+
+async function startCheck() {
+  const textarea = document.getElementById("urls");
+  const urls = textarea.value.trim().split("\n").filter(u => u.trim() !== "");
+  if(urls.length===0) return alert("请输入至少一个链接");
+
+  const table = document.getElementById("resultTable");
+  const tbody = document.getElementById("resultBody");
+  tbody.innerHTML = "";
+  table.style.display = "table";
+
+  let results = Array(urls.length).fill(null);
+  let doneCount = 0;
+
+  // 并发队列
+  async function workerTask(index) {
+    const url = urls[index].trim();
+    const row = document.createElement("tr");
+    const indexCell = document.createElement("td");
+    indexCell.textContent = index + 1;
+    const urlCell = document.createElement("td");
+    urlCell.textContent = url;
+    const statusCell = document.createElement("td");
+    statusCell.textContent = "检测中...";
+    row.appendChild(indexCell);
+    row.appendChild(urlCell);
+    row.appendChild(statusCell);
+    tbody.appendChild(row);
+
+    try {
+      const res = await fetch(`${workerDomain}?url=${encodeURIComponent(url)}`);
+      const data = await res.json();
+      if(data.status === 200){
+        statusCell.textContent = "✅ 链接正常";
+        statusCell.className = "ok";
+        results[index] = {url, status:"正常"};
+      } else if(data.status){
+        statusCell.textContent = `❌ 链接失效（状态码 ${data.status}）`;
+        statusCell.className = "fail";
+        results[index] = {url, status:`失效(${data.status})`};
+      } else {
+        statusCell.textContent = `⚠️ 错误: ${data.error}`;
+        statusCell.className = "error";
+        results[index] = {url, status:`错误(${data.error})`};
+      }
+    } catch(err){
+      statusCell.textContent = `⚠️ 请求失败: ${err.message}`;
+      statusCell.className = "error";
+      results[index] = {url, status:`请求失败(${err.message})`};
+    }
+    doneCount++;
+    updateProgress(doneCount, urls.length);
+  }
+
+  // 控制并发
+  let i = 0;
+  async function runQueue() {
+    const promises = [];
+    while(i < urls.length && promises.length < concurrency){
+      promises.push(workerTask(i++));
+    }
+    await Promise.all(promises);
+    if(i < urls.length){
+      await runQueue();
+    }
+  }
+
+  await runQueue();
+  console.log("检测完成", results);
+  window.quarkResults = results; // 保存结果用于复制/导出
+}
+
+// 复制结果
+function copyResults(){
+  if(!window.quarkResults) return alert("请先检测链接");
+  const text = window.quarkResults.map(r => `${r.url} -> ${r.status}`).join("\n");
+  navigator.clipboard.writeText(text).then(()=>alert("已复制到剪贴板"));
+}
+
+// 导出 CSV
+function exportCSV(){
+  if(!window.quarkResults) return alert("请先检测链接");
+  const csvContent = "链接,状态\n" + window.quarkResults.map(r=>`"${r.url}","${r.status}"`).join("\n");
+  const blob = new Blob([csvContent], {type:"text/csv;charset=utf-8;"});
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "quark_links.csv";
+  link.click();
+}
+</script>
+</body>
+</html>
