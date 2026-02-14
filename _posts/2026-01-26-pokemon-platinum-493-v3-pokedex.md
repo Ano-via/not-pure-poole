@@ -59,6 +59,7 @@ date: 2026-01-26 11:16 +0800
   	<button onclick="filter('复活')">复活</button>    
     <button onclick="filter('亲密度进化')">亲密度进化</button>
     <button onclick="filter('携带')">携带道具进化</button>
+    <button onclick="filter('大量出现')">真砂镇小光妹妹说大量出现</button>
     <!-- 道路筛选按钮 -->
     <button onclick="filter('201')">201道路</button>
     <button onclick="filter('202')">202道路</button>
