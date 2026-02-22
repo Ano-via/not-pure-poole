@@ -69,7 +69,11 @@ function updateProgress(done, total) {
 
 async function startCheck() {
   const textarea = document.getElementById("urls");
-  const urls = textarea.value.trim().split("\n").filter(u => u.trim() !== "");
+  const urls = textarea.value
+    .split("\n")
+    .map(u => u.trim())
+    .filter(u => u !== "" && u.includes("pan."));
+
   if(urls.length===0) return alert("请输入至少一个链接");
 
   const table = document.getElementById("resultTable");
