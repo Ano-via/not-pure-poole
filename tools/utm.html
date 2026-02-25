@@ -5,187 +5,248 @@ permalink: utm.html
 ---
 
 <style>
-  .platform-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    max-width: 100%;
-    margin-top: 10px;
+  /* 使用命名空间避免冲突 */
+  .utm-tool-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    color: #333;
   }
 
-  @media (max-width: 600px) {
-    .platform-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .platform-button {
+  .utm-tool-container h3 {
+    margin: 24px 0 12px;
+    font-size: 1.1rem;
+    color: #1a1a1a;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
+  }
+
+  .utm-tool-container h3:first-child { margin-top: 0; }
+
+  /* 输入框优化 */
+  .utm-tool-textarea, .utm-tool-input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    background: #f9f9f9;
+  }
+
+  .utm-tool-textarea:focus, .utm-tool-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+
+  /* UTM 选项卡布局 */
+  .utm-tool-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .utm-tool-radio-label {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.2s;
-    user-select: none;
+    transition: all 0.2s;
+    font-size: 14px;
+    background: #fff;
   }
 
-  .platform-button:hover {
-    background: #f0f0f0;
+  .utm-tool-radio-label:hover {
+    background: #f5f7fa;
+    border-color: #4a90e2;
   }
 
-  .platform-button img {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+  .utm-tool-radio-label input {
+    margin-right: 8px;
   }
 
-  #result a {
-    color: blue;
-    text-decoration: underline;
+  /* 统一 Medium 输入区 */
+  .utm-tool-medium-box {
+    background: #f0f4f8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
   }
 
-  textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-
-  .utm-inputs {
+  /* 自定义输入框 */
+  .utm-tool-custom-inputs {
     display: none;
-    margin-top: 5px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    margin-top: 10px;
   }
 
-  .copy-container {
+  /* 平台按钮网格 */
+  .utm-tool-platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 600px) {
+    .utm-tool-platform-grid { grid-template-columns: repeat(2, 1fr); }
+    .utm-tool-custom-inputs { grid-template-columns: 1fr; }
+  }
+
+  .utm-tool-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .utm-tool-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #4a90e2;
+  }
+
+  .utm-tool-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  /* 复制区域 */
+  .utm-tool-copy-container {
     position: relative;
+    margin-top: 10px;
   }
 
-  .copy-button {
+  .utm-tool-copy-btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px 10px;
+    top: 8px;
+    right: 8px;
+    padding: 6px 12px;
     font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 6px;
+    transition: background 0.3s;
+    z-index: 10;
   }
 
-  .copy-button:hover {
-    background-color: #45a049;
-  }
+  .utm-tool-copy-btn:hover { background-color: #45a049; }
+  .utm-tool-copy-btn.copied { background-color: #2196F3; }
 
-  .copy-button.copied {
-    background-color: #28a745;
+  #result a {
+    color: #4a90e2;
+    word-break: break-all;
+    font-size: 14px;
   }
 </style>
-<h3>输入链接：</h3>
-<textarea id="textarea1" rows="5" placeholder="在这里输入链接"></textarea>
 
-<h3>选择 UTM 模板：</h3>
+<div class="utm-tool-container">
+  <h3>输入链接</h3>
+  <textarea id="textarea1" class="utm-tool-textarea" rows="4" placeholder="在此粘贴您的原始链接..."></textarea>
 
-<label>
-  <input type="radio" name="utm_option" value="none" checked>
-  不添加UTM
-</label><br>
+  <h3>配置 UTM 参数</h3>
+  
+  <div class="utm-tool-medium-box">
+    <label style="font-size: 14px; font-weight: 500;">
+      统一 utm_medium：
+      <input type="text" id="utm-medium" class="utm-tool-input" style="width: auto; margin-left: 10px;" placeholder="如: 你的名字">
+    </label>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="template1">
-  Facebook发帖模板（utm_medium= <input type="text" id="medium1" placeholder="请输入 medium">）
-</label><br>
+  <div class="utm-tool-options">
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="none" checked> 不添加UTM</label>
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="template1"> Facebook 模板</label>
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="template2"> Instagram 模板</label>
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="template3"> Pinterest 模板</label>
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="template4"> TikTok 模板</label>
+    <label class="utm-tool-radio-label"><input type="radio" name="utm_option" value="custom"> ⚙️ 自定义</label>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="template2">
-  Instagram发帖模板（utm_medium= <input type="text" id="medium2" placeholder="请输入 medium">）
-</label><br>
+  <div class="utm-tool-custom-inputs" id="customInputs">
+    <input type="text" id="custom_source" class="utm-tool-input" placeholder="utm_source">
+    <input type="text" id="custom_medium" class="utm-tool-input" placeholder="utm_medium">
+    <input type="text" id="custom_campaign" class="utm-tool-input" placeholder="utm_campaign">
+    <input type="text" id="custom_content" class="utm-tool-input" placeholder="utm_content">
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="template3">
-  Pinterest发帖模板（utm_medium= <input type="text" id="medium3" placeholder="请输入 medium">）
-</label><br>
+  <h3>生成结果</h3>
+  <div class="utm-tool-copy-container">
+    <button class="utm-tool-copy-btn" id="copyButton" onclick="copyToClipboard()">复制链接</button>
+    <textarea id="longUrl" class="utm-tool-textarea" rows="4" readonly placeholder="生成后的长链接将显示在这里..."></textarea>
+  </div>
 
-<label>
-  <input type="radio" name="utm_option" value="custom">
-  自定义UTM
-</label>
-
-<div class="utm-inputs" id="customInputs">
-  <label>utm_source: <input type="text" id="custom_source"></label><br>
-  <label>utm_medium: <input type="text" id="custom_medium"></label><br>
-  <label>utm_campaign: <input type="text" id="custom_campaign"></label><br>
-  <label>utm_content: <input type="text" id="custom_content"></label>
+  <div class="utm-tool-platform-grid">
+    <div class="utm-tool-btn" onclick="shortenUrl('bitly')">
+      <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
+      <span>Bitly</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('tinyurl')">
+      <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
+      <span>TinyURL</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('reurl')">
+      <img src="https://reurl.cc/favicon.ico" alt="Reurl.cc" />
+      <span>Reurl</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('rebrandly')">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEVHcEwfavwfafofaPoeaPkfafoVZflYhfotbfkLYvkAWfn///9vlPvb4/7y9f+HpPxEefqyw/0gavwfDm/9AAAAE3RSTlMAJa/x/2T///////////////8mKZxbagAAAORJREFUeAF9kwWWhTAQBAPEpjvG3v+wO8M35EGhmYqLc26aF39hmSenBH9D0HL+lsnN93J2y71c3CkQ4y5xkjGlfJRRDEALgSxxL8EXNYlHu5FkiiZFJO5lzzmnxgaVKfdeRHZS9FPIrLLS6DjImMihkmzmu3xkgaIhmOyAVPIrW63VwqJyhQ3OEofednyHgsr1I3uyeuTVhJwlMlnhpWwfL8MG/ZEindZao34yio15NxRUbqzf2dpJjy1crBRZh7xXZYzsFSAlRC/IySN+1zPuV3qXft4mjxvscWs+burb4/Dn3D93vRRaPjGoCQAAAABJRU5ErkJggg==" alt="Rebrandly" />
+      <span>Rebrandly</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('cuttly')">
+      <img src="https://cutt.ly/img/favicon-64x64.png" alt="Cutt.ly" />
+      <span>Cutt.ly</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('isgd')">
+      <img src="https://is.gd/favicon.ico" alt="Is.gd" />
+      <span>Is.gd</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('vgd')">
+      <img src="https://v.gd/favicon.ico" alt="V.gd" />
+      <span>V.gd</span>
+    </div>
+    <div class="utm-tool-btn" onclick="shortenUrl('clck')">
+      <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
+      <span>Clck.ru</span>
+    </div>
+  </div>
+  
+  <p id="result" style="margin-top: 15px;"></p>
 </div>
-
-<h3>生成后的链接：</h3>
-
-<div class="copy-container">
-  <textarea id="longUrl" rows="5" readonly placeholder="这里显示生成后的链接..."></textarea><br />
-  <button class="copy-button" id="copyButton" onclick="copyToClipboard()">复制</button>
-</div>
-<div class="platform-grid">
-  <div class="platform-button" onclick="shortenUrl('bitly')">
-    <img src="https://d1ayxb9ooonjts.cloudfront.net/65c37d5e023d15b9ac39f1447e22911b.svg" alt="Bitly" />
-    <span>Bitly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('tinyurl')">
-    <img src="https://tinyurl.com/favicon.ico" alt="TinyURL" />
-    <span>TinyURL</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('reurl')">
-    <img src="https://reurl.cc/favicon.ico" alt="Reurl.cc" />
-    <span>Reurl</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('rebrandly')">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEVHcEwfavwfafofaPoeaPkfafoVZflYhfotbfkLYvkAWfn///9vlPvb4/7y9f+HpPxEefqyw/0gavwfDm/9AAAAE3RSTlMAJa/x/2T///////////////8mKZxbagAAAORJREFUeAF9kwWWhTAQBAPEpjvG3v+wO8M35EGhmYqLc26aF39hmSenBH9D0HL+lsnN93J2y71c3CkQ4y5xkjGlfJRRDEALgSxxL8EXNYlHu5FkiiZFJO5lzzmnxgaVKfdeRHZS9FPIrLLS6DjImMihkmzmu3xkgaIhmOyAVPIrW63VwqJyhQ3OEofednyHgsr1I3uyeuTVhJwlMlnhpWwfL8MG/ZEindZao34yio15NxRUbqzf2dpJjy1crBRZh7xXZYzsFSAlRC/IySN+1zPuV3qXft4mjxvscWs+burb4/Dn3D93vRRaPjGoCQAAAABJRU5ErkJggg==" alt="Rebrandly" />
-    <span>Rebrandly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('cuttly')">
-    <img src="https://cutt.ly/img/favicon-64x64.png" alt="Cutt.ly" />
-    <span>Cutt.ly</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('isgd')">
-    <img src="https://is.gd/favicon.ico" alt="Is.gd" />
-    <span>Is.gd</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('vgd')">
-    <img src="https://v.gd/favicon.ico" alt="V.gd" />
-    <span>V.gd</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('clck')">
-    <img src="https://yastatic.net/s3/clicker/_/favicon.ico" alt="Clck.ru" />
-    <span>Clck.ru</span>
-  </div>
-  <!-- Backup APIs
-  <div class="platform-button" onclick="shortenUrl('kutt')">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACsklEQVR4AcSTg84lWRRG1z5VY9u2zWgQjxEnYxvP0HHGxlOMbbO7w7ZtXHXd87V37t3pv/qv5kp28hX3OmJ3YwSe/q91Opl/LGtv+mB5Y5HB+gN507XnHHL8NtNBdtmYB/adxAAlEDkSdCARhSCQj2AwGwjH3xV7mnQogURECs3kWQjFu56F4lteYBtTq04gIDxJSIAIyKv+iUssaSBgPiHxt24jNmaFvAUpoQ7GouYzEK8VJPyRvFwIDS7NlDEP7FcBaVQCPhiiTBy8EEICr6GXXOTv2LdGQMTsoxGo4QwgUM4/xNmPAvUivh8UnEZcc3zzoqrTWvopEElppL6hy/C0hnc8BRFXUf70lWdOWcQWKAmcoNVpb6soElhhgJFlVNno9RPtnrGqW1D1h1vZ0KoIw5/Q67VeHpj2XCsgZdKmNwsTpYkCKEooDYr9oDBoV8aSVsGCFSWrO4aD+Tawjf/7+JUnT/wVZ1iiJJIFKSyHMYzBAXuKg/eqOOPQiuWtxJSFJYtWFCD5S5KWrVg869ncr7xhlIgCfmqbcNh+fY5cV4tXFYybsQftTgKUu51V977z4gWzwqijSUAA5oV5HrlkgHHkAZkbz+ly7MH9vKbbevDVR074PPZqeAybs0cB157Z5e6rO3tSDztOwAhY2nvvvd/+ZfzE25sLGIC2uwzSvvvt++FnP/5+aiMBMwN2WO1/7HHHv3ngQQenRgI7kpTshq9+/v2GUQvsrf4KBhFbR9Rg7L/f/s833IRqVlb/fP0s/PD7P8c3EDAvdsyeSIcdfvjNO+8Yiq1SFMX1DJOjwE4lmV0am+/sPRCK47/87qd9gdxgD+zQSkcfc8yxu2MPOGVZHjoKAYs/3zEYmNn+BEoCZiwClgH7u08NFt+xGJ0O0ry1Q06I+IynUU2K2SgBALKHpaeAPdrdAAAAAElFTkSuQmCC">
-    <span>Kutt.it</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('ulvis')">
-    <img src="https://ulvis.net/favicon.ico">
-    <span>Ulvis</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('cleanuri')">
-    <span>CleanURI</span>
-  </div>
-  <div class="platform-button" onclick="shortenUrl('spoo')">
-    <img src="https://spoo.me/static/images/favicon.png">
-    <span>Spoo.me</span>
-  </div>
-  -->
-</div>
-<p></p>
-<p id="result"></p>
 
 <script>
   document.querySelectorAll('input[name="utm_option"]').forEach(function (radio) {
     radio.addEventListener('change', updateUTM);
   });
 
-  document.querySelectorAll('#medium1, #medium2, #medium3, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function (input) {
+  document.querySelectorAll('#utm-medium, #custom_source, #custom_medium, #custom_campaign, #textarea1').forEach(function (input) {
     input.addEventListener('input', updateUTM);
   });
 
@@ -204,19 +265,24 @@ permalink: utm.html
 
       if (selected === 'template1') {
         params.set('utm_source', 'Facebook');
-        params.set('utm_medium', document.getElementById('medium1').value.trim());
+        params.set('utm_medium', document.getElementById('utm-medium').value.trim());
         params.set('utm_adset', 'Post')
         params.set('utm_ad', '')
       } else if (selected === 'template2') {
         params.set('utm_source', 'Instagram');
-        params.set('utm_medium', document.getElementById('medium2').value.trim());
+        params.set('utm_medium', document.getElementById('utm-medium').value.trim());
         params.set('utm_campaign', 'Post')
         params.set('utm_content', '')
       } else if (selected === 'template3') {
         params.set('utm_source', 'Pinterest');
-        params.set('utm_medium', document.getElementById('medium3').value.trim());
+        params.set('utm_medium', document.getElementById('utm-medium').value.trim());
         params.set('utm_campaign', 'Post')
         params.set('utm_content', '')
+      } else if (selected === 'template4') {
+        params.set('utm_source', 'Tiktok');
+        params.set('utm_medium', document.getElementById('utm-medium').value.trim());
+        params.set('utm_adset', '__AID_NAME__')
+        params.set('utm_ad', '__CID_NAME__')
       } else if (selected === 'custom') {
         params.set('utm_source', document.getElementById('custom_source').value.trim());
         params.set('utm_medium', document.getElementById('custom_medium').value.trim());
