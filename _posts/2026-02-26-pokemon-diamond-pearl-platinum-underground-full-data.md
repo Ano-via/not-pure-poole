@@ -10,14 +10,14 @@ date: 2026-01-26 11:15 +0800
 <table cellspacing="0" cellpadding="4" width="100%" border="0">
 <tbody>
 <tr>
-<td width="12%"><strong>第一节</strong></td>
-<td width="88%"><a href="#jichujieshao">基础介绍</a> | <a href="#yushihecheng">玉石合成</a> | <a href="#mimijidi">秘密基地&amp;夺旗游戏</a> | <a href="#xiangguanrenwu">相关任务</a> | <a href="#xianjinjieshao">陷阱介绍</a></td></tr>
+<td><a href="#jichujieshao">基础介绍</a> | <a href="#yushihecheng">玉石合成</a> | <a href="#mimijidi">秘密基地&amp;夺旗游戏</a> | <a href="#xiangguanrenwu">相关任务</a> | <a href="#xianjinjieshao">陷阱介绍</a></td></tr>
 <tr>
-<td><strong>第二节</strong></td>
 <td><a href="#dixiawupinliebiao">地下物品列表</a> （<a href="#jiaju">家具</a> | <a href="#jiajuxiansheng">家具先生</a> | <a href="#xianjin">陷阱</a> | <a href="#wajuedaoju">挖掘道具</a>） </td></tr>
 <tr>
-<td><strong>第三节</strong></td>
 <td><a href="#wajuewupinlieiao">挖掘物品列表</a> （<a href="#yushi">玉石</a> | <a href="#huashi">化石</a> | <a href="#shuxingshiban">属性石板</a> | <a href="#qitawupin">其他物品</a>） </td></tr></tbody></table>
+<p></p>
+<hr>
+<p></p>
 <h2 id="jichujieshao">基础介绍</h2>
 <div class="container1">
 <table cellspacing="0" cellpadding="4" width="100%" border="0">
