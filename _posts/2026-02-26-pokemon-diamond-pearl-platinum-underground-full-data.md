@@ -16,8 +16,6 @@ date: 2026-01-26 11:15 +0800
 <tr>
 <td><a href="#wajuewupinlieiao">挖掘物品列表</a> （<a href="#yushi">玉石</a> | <a href="#huashi">化石</a> | <a href="#shuxingshiban">属性石板</a> | <a href="#qitawupin">其他物品</a>） </td></tr></tbody></table>
 <p></p>
-<hr>
-<p></p>
 <h2 id="jichujieshao">基础介绍</h2>
 <div class="container1">
 <table cellspacing="0" cellpadding="4" width="100%" border="0">
