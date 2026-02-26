@@ -1163,7 +1163,7 @@ date: 2026-01-26 11:15 +0800
 <h2 id="wajuewupinliebiao">挖掘物品列表</h2>
 <h4 id="yushi">玉石</h4>
 <div class="container1">
-<table class="tblock" cellspacing="1" cellpadding="4" width="100%" bgcolor="#999999" border="0">
+<table class="tblock" cellspacing="1" cellpadding="4" width="100%" border="0">
 <tbody>
 <tr>
 <td width="80"><strong>图片</strong></td>
@@ -1222,7 +1222,7 @@ date: 2026-01-26 11:15 +0800
 <td>常见</td></tr></tbody></table></div>
 <h4 id="huashi">化石</h4>
 <div class="container1">
-<table class="tblock" cellspacing="1" cellpadding="4" width="100%" bgcolor="#999999" border="0">
+<table class="tblock" cellspacing="1" cellpadding="4" width="100%" border="0">
 <tbody>
 <tr>
 <td width="80"><strong>图片</strong></td>
@@ -1266,7 +1266,7 @@ date: 2026-01-26 11:15 +0800
 <td>钻石版是非常稀有，珍珠版是不常见 (图鉴升级后)<br><i>可能会旋转90, 180或270 度</i></td></tr></tbody></table></div>
 <h4 id="shuxingshiban">属性石板</h4>
 <div class="container1">
-<table class="tblock" cellspacing="1" cellpadding="4" width="100%" bgcolor="#999999" border="0">
+<table class="tblock" cellspacing="1" cellpadding="4" width="100%" border="0">
 <tbody>
 <tr>
 <td width="80"><strong>图片</strong></td>
@@ -1355,7 +1355,7 @@ date: 2026-01-26 11:15 +0800
 <td>非常稀有</td></tr></tbody></table></div>
 <h4 id="qitawupin">其他物品</h4>
 <div class="container1">
-<table class="tblock" cellspacing="1" cellpadding="4" width="100%" bgcolor="#999999" border="0">
+<table class="tblock" cellspacing="1" cellpadding="4" width="100%" border="0">
 <tbody>
 <tr>
 <td width="80"><strong>图片</strong></td>
