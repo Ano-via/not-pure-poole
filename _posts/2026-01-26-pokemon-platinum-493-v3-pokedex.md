@@ -96,7 +96,7 @@ date: 2026-01-26 11:16 +0800
     <button onclick="filter('滨海市')">滨海市</button>    
     <button onclick="filter('神和镇')">神和镇</button>
     <button onclick="filter('水脉市')">水脉市 / 美央市</button>
-    <button onclick="filter('大湿原')">大湿原（野濑市内右上角）</button>
+    <button onclick="filter('大湿')">大湿原（野濑市内右上角）</button>
     <button onclick="filter('多多罗铁工厂')">多多罗铁工厂</button>    
     <button onclick="filter('钢铁岛')">钢铁岛</button>
     <button onclick="filter('冠军之路被NPC堵住的洞内')">冠军之路被NPC堵住的洞内</button>
