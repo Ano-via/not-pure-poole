@@ -7,87 +7,174 @@ permalink: honey.html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>a 计算 b 和 c</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    input {
-      padding: 6px;
-      width: 200px;
-    }
-    button {
-      padding: 6px 12px;
-      margin-left: 10px;
-    }
-    .result {
-      margin-top: 15px;
-      font-size: 16px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>甜甜蜜树小卡比兽计算器</title>
+
+<style>
+/* 作用域容器，避免CSS冲突 */
+.snorlax-app {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f7f9fc;
+}
+
+.snorlax-app .card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.snorlax-app h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.snorlax-app .desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  background: #f1f4f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.snorlax-app .form-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.snorlax-app input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.snorlax-app input:focus {
+  border-color: #4CAF50;
+}
+
+.snorlax-app button {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4CAF50, #43a047);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.snorlax-app button:hover {
+  opacity: 0.9;
+}
+
+.snorlax-app .result {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #e8f5e9;
+  font-size: 15px;
+  color: #2e7d32;
+}
+
+.snorlax-app .error {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* 手机适配 */
+@media (max-width: 600px) {
+  .snorlax-app .form-group {
+    flex-direction: column;
+  }
+  .snorlax-app button {
+    width: 100%;
+  }
+}
+</style>
 </head>
+
 <body>
 
+<div class="snorlax-app">
+  <div class="card">
 
-<p>说明：
-<br>将甜甜蜜涂在树上6小时后，就可以遇见野生宝可梦。涂抹后24小时，野生宝可梦将离开，甜甜蜜也将失效。
-<br>神奥地区共有21棵甜甜蜜树。根据主角的ID No.，只有4棵树有机会出现小卡比兽。这意味着，除非从头开始游戏，否则有且只有这4棵甜甜蜜树能够吸引到小卡比兽，且这4棵甜甜蜜树出现较为稀有的宝可梦的几率也更高。
-<br>甜甜蜜树在出现宝可梦时会摇动，摇动次数越多出现稀有宝可梦的概率就越大，最多摇动3次。
-<br>涂抹甜甜蜜时就会确定这次能遇到的宝可梦种类，但重置游戏可以改变等级、性别、个体值、性格等随机值。
-<br>更改游戏主机的时间并不能影响甜甜蜜树的计时器。
-<br>有些情况下，即使在树上涂了甜甜蜜，也有可能不会遭遇任何宝可梦。可在涂蜜之后与树确认，若对话为“树上有甜甜蜜”，则说明涂蜜成功。若对话和涂蜜之前一样为“空气中有香甜气息……”，则说明不会遭遇任何宝可梦，可再次涂蜜直到对话改变。</p>
+    <h2>甜甜蜜树小卡比兽出现地点计算器</h2>
 
-<input type="number" id="inputA" placeholder="请输入游戏ID">
-<button onclick="calculate()">计算</button>
+    <div class="desc">
+      将甜甜蜜涂在树上6小时后即可遇见野生宝可梦，24小时后失效。<br>
+      神奥地区共有21棵甜甜蜜树，其中只有4棵能吸引小卡比兽。<br>
+      摇动次数越多，出现稀有宝可梦概率越高（最多3次）。<br>
+      涂抹甜甜蜜时即确定宝可梦种类，重置可改变个体值、性格等。<br>
+      修改主机时间不会影响计时。<br>
+      若对话为“树上有甜甜蜜”说明成功。否则可再次涂蜜直到对话改变。
+    </div>
 
-<div class="result" id="output"></div>
+    <div class="form-group">
+      <input type="number" id="inputA" placeholder="请输入游戏ID（ID No.）">
+      <button onclick="calculate()">计算</button>
+    </div>
+
+    <div class="result" id="output"></div>
+
+  </div>
+</div>
 
 <script>
-  const table = [
-    "205号道路南边",
-    "205号道路北边",
-    "206号道路",
-    "207号道路",
-    "208号道路",
-    "209号道路",
-    "210号道路南边",
-    "210号道路北边",
-    "211号道路东边",
-    "212号道路北边",
-    "212号道路南边",
-    "213号道路",
-    "214号道路",
-    "215号道路",
-    "218号道路",
-    "221号道路",
-    "222号道路",
-    "山谷发电厂",
-    "百代森林里的捷径",
-    "多多罗钢铁厂",
-    "花苑花田"
-  ];
+const table = [
+  "205号道路南边",
+  "205号道路北边",
+  "206号道路",
+  "207号道路",
+  "208号道路",
+  "209号道路",
+  "210号道路南边",
+  "210号道路北边",
+  "211号道路东边",
+  "212号道路北边",
+  "212号道路南边",
+  "213号道路",
+  "214号道路",
+  "215号道路",
+  "218号道路",
+  "221号道路",
+  "222号道路",
+  "山谷发电厂",
+  "百代森林里的捷径",
+  "多多罗钢铁厂",
+  "花苑花田"
+];
 
-  function calculate() {
-    const a = parseInt(document.getElementById("inputA").value);
+function calculate() {
+  const input = document.getElementById("inputA");
+  const output = document.getElementById("output");
+  const a = parseInt(input.value);
 
-    if (isNaN(a)) {
-      document.getElementById("output").innerText = "请输入有效的游戏ID";
-      return;
-    }
-
-    const b = Math.floor(a / 256) % 21;
-    const c = (a % 256) % 21;
-
-    const resultB = table[b];
-    const resultC = table[c];
-
-    document.getElementById("output").innerHTML = `
-      1. ${resultB}<br>
-      2. ${resultC}
-    `;
+  if (isNaN(a)) {
+    output.className = "result error";
+    output.innerText = "请输入有效的游戏ID";
+    return;
   }
+
+  const b = Math.floor(a / 256) % 21;
+  const c = (a % 256) % 21;
+
+  output.className = "result";
+  output.innerHTML = `
+    <strong>可出现地点：</strong><br>
+    1️⃣ ${table[b]}<br>
+    2️⃣ ${table[c]}
+  `;
+}
 </script>
 
 </body>
