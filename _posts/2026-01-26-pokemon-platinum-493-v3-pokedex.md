@@ -42,7 +42,8 @@ date: 2026-01-26 11:16 +0800
 </style>
 <p>注意：在白金原版中无法正常获得的宝可梦虽然在白金493版中可多次相遇，但概率较低，还请大家做好心理准备，实在肝不动了可以缓一缓，心情好了再继续刷。若实在受不了，可以放弃，去享受原版的快乐
 <br><br>告示：本表所有宝可梦,道具名称和地点称呼都以神奇宝贝百科网站的资料为参照，不熟悉请自行搜索掌握；本表的宝可梦获得方式通常忽略生蛋与配信，金手指等；
-<br><br>本表尚存在3个不确定问题“<a href="#349">349丑丑鱼</a>” “<a href="#370">370爱心鱼</a>”“<a href="#377">377雷吉洛克</a>”，都以红字加粗的格式标出。如有发现欢迎回复告知，一同完善本表，在此表示非常感谢！</p>
+<br><br>本表尚存在3个不确定问题“<a href="#349">349丑丑鱼</a>” “<a href="#370">370爱心鱼</a>”“<a href="#377">377雷吉洛克</a>”，都以红字加粗的格式标出。如有发现欢迎回复告知，一同完善本表，在此表示非常感谢！
+<br><br><a href="/honey.html">甜甜蜜树小卡比兽出现地点计算器</a></p>
 <div class="floating-buttons">
   <button onclick="location.hash='#001'">Gen 1</button>
   <button onclick="location.hash='#152'">Gen 2</button>
@@ -1265,7 +1266,7 @@ date: 2026-01-26 11:16 +0800
             <td id="190">190</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+sW78W6FZSSx3F+qPHIItojdjI+dpWMAfvCDwQmdp4OK2q888P6UrWFxPeu7/YLie2e5uvkQiNwXmyWOdzqXLHkEEZOMlrl+07Dikz0CGaK4hjmhkSSKRQ6OjAqykZBBHUGn15ndyzWGiyjSNQeK3SBbzTYIco0sspJUBRguu4ghCCMyEFSCoXoYvFV5bxC+1CzjNg6PIXsz5i26IR+8MhIEqMp3jaAwHG1jnETnCFrvcbizq6KKKokK5HxJbXNhrNtqlk+pJFcfur1bGHzegwr7AG+bplip+VAAynCv11FKSurAjySx1W60/W5tZj06TV7aJRcXN7cwgTxQvuVHhJKgKVDk4TsdzbcMvQeDYX1qJJLmEPo+nybtLQ4KghnC5IJ3mNPLUEEjcW5Zlyva29pbWnm/ZreKHzZDLJ5aBd7nqxx1J9amptRaV1qhthRRRQI//9k="></td>
             <td>长尾怪手</td>
-            <td>甜甜蜜树上涂蜜后调查</td>
+            <td><a href="/honey.html">甜甜蜜树上涂蜜后调查</a></td>
         </tr>
         <tr>
             <td id="191">191</td>
@@ -1409,7 +1410,7 @@ date: 2026-01-26 11:16 +0800
             <td id="214">214</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+sDxH4stPDNzp8V3DK6XbNueMZ8tF2gtjq3LrwO248kAHfrzr4j6lbS3Wn2Ed2HmtZftE9uFOIwFLeYX6AqgYbM5IkBxwKqNr+9sKTaWh1XhzxCNfS8LW32WS3m2CJpAzmMqCrkDpn5hxkZRsE4rbrxpb290rSPslpbWdvAHjE9zZK0EzxqGwZnQlyT94soByrABtxx6zpM6XOk2siahFqH7sK13Dt2zMOGYbSQMkHgdOlVUhyMmE1JaFyiiisyytqKXcmmXcdhKkV40LiCRxlUkIO0ng8A47H6V5j4i8JRaD4fuNVv3vNQ1WaaMQyi4fbbt28xzzIONm5gM5UKEzmvV6p6npVlrNk1pfw+bC3YMVIyCDhlIIyCQcHkEg8E1UZOLFJXR4yblrm1SNseXKVIEZ8x3IJIXJAA2kHIOQMnoSc7HhjXbzR7qKR51ktb5o57mPytiIzkxyMzEZV4/JkyclSkRbAyWXuNZ8G6ZqVun2W0sbO6jaMrOtopO1MAISu1guAB8rKeAM4yDZ0/w1p9rodtpd1b216kMZjJmt0w2WDtxg8Fgp5ySVBJY81vOtGUdF/Xf1MYUnF7mzRRRXMbn/9k="></td>
             <td>赫拉克罗斯</td>
-            <td>甜甜蜜树上涂蜜后调查</td>
+            <td><a href="/honey.html">甜甜蜜树上涂蜜后调查</a></td>
         </tr>
         <tr>
             <td id="215">215</td>
@@ -2597,7 +2598,7 @@ date: 2026-01-26 11:16 +0800
             <td id="412">412</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiub8aapquk6SlxpqxhGkEc0xQyPFuO1didyWIGfmwcfKwJKqTUVdibsWrjxRp0Hia08PhpJb643Z8sArCQhcBznglVJAGT0JwCCdqvnm0v9Rg8UR65EZLq+WU3LGZ13yjhWTOMLlTt44UHgcCvoCzu4L+yt7y2fzLe4jWWJ8EblYZBweRwe9CknoCaZNRRRTGFeY/FWWVL3TEuZ4U09kfYMtuSTIDSMCNmACiqSQQZG4IJx6dVW602xvnR7yyt7ho1dEM0SuVVxtcDI4DDg+o61Mo8ysKSurHz3axTGyjt45kRpFDRne4JI4YDngjPUgnGcYBYV6v8LRqS+FT9shdLR5mlsjKRvZGO4nGPulizBicnd0ACktm+FHh6UTqst/Gs0ZjIWYHGWzn5lOSBhRnIwAcb/mruaiEGm23uTGMr3kwooorUs//Z"></td>
             <td>结草儿</td>
-            <td>甜甜蜜树上涂蜜后调查</td>
+            <td><a href="/honey.html">甜甜蜜树上涂蜜后调查</a></td>
         </tr>
         <tr>
             <td id="413">413</td>
@@ -2615,7 +2616,7 @@ date: 2026-01-26 11:16 +0800
             <td id="415">415</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+mTTR28Mk00iRxRqXd3YBVUckknoBT684u9U12/s77TTKrzwkyXYntHKBo2BaBAmC8Ug2kBssUY/f3HZnVqwpR55uyHGLk7I9EhmiuIY5oZEkikUOjowKspGQQR1Bp9eWvrdzfR6S91pulvp9hcARBbprVFnVVeJ9iq5VUQMMbmUht3CgEdt/wAJKsqD7HpWo3kiqTPHCkYMDD+Bi7qpbvhS2Rg9GUmaeIpVXaErscoSjublFQ2l1DfWUF5bPvgnjWWN8EblYZBweRwe9FbEk1cp41s5Bb2+o2ysjRv5d5MjlP8AR9rnDkAkKH2/MASgLEYG6urorOrTVWDhLZlRk4yTR5DqtxJotnLYpdxT6fCFVVklABc7cIzHHy8s2zJ4UZODiuv8N+G5G0G1XULvUtjs8lxZzOuycs7Hcy7dyKwIPlAgD7rAndu3bXw7oljcpc2ejafb3CZ2yw2qIy5GDggZHBIrSrnwmEWHW9293a1/6/4curV9o7hRRRXYZH//2Q=="></td>
             <td>三蜜蜂</td>
-            <td>甜甜蜜树上涂蜜后调查</td>
+            <td><a href="/honey.html">甜甜蜜树上涂蜜后调查</a></td>
         </tr>
         <tr>
             <td id="416">416</td>
@@ -2645,7 +2646,7 @@ date: 2026-01-26 11:16 +0800
             <td id="420">420</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+mTTRW8Ek88iRQxqXeR2CqqgZJJPQAU+uZ8bzaR/YottVurqLzH8yFLTmV2Tn7pBXAOOXG1SVJIO0gYWb0irscfHvhoQCQ6i2S+0RfZpfN6Zz5e3ft/2sbc8ZzXQwzRXEEc8EiSwyKHSRGDKykZBBHUEV87+ZfyXE19dWfnWtnIm+2lZreSWNm2grtYsOSm4qzbWdM7hmvVfh/q0C2S6E9vLb3USyXKLJMJjIjPucllRACGkxjaBgjBPOM4OT+JChCtZucbW38jtqKKK0GFcB480bWLjVrbULK2lvrNbfbLCgUmEo+7coJ3EsDyEBz5a5DfLjv6KC6dSVOanHdHknhbTH8Ua0Tc222wtVkjvAEZAZCMeTydykNiTqSpjQnkq1d74f8Jaf4deWWB57m5kG03FyVLqnHyjaoAGRk8ZPGScDG9RQXVrzqybk9wooooMT//Z"></td>
             <td>樱花宝</td>
-            <td>甜甜蜜树上涂蜜后调查</td>
+            <td><a href="/honey.html">甜甜蜜树上涂蜜后调查</a></td>
         </tr>
         <tr>
             <td id="421">421</td>
@@ -2801,7 +2802,7 @@ date: 2026-01-26 11:16 +0800
             <td id="446">446</td>
             <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiszXdbg0KwW4lUvJLIIYY+QHcgnkgHAABJODwDgE4BErg3bVmnRXjFv/bWm3b6wmos9/M2Wdn+SdwAcSoD02uAFP3VYFcZGPWtJ1S31nTIb+13iKXPyyLhlYEqykeoII4yOOCRzVzpuO5nTqxndIu0UUVBoFc742jh/wCEce5eOSSe2lje1EYJ/fM3loCo+8p37WHOVJxziuipksUdxC8M0aSRSKVdHUFWU8EEHqKGrgeX3eqKkKJDYWkkse4AtJKRGc8jyWwFOe24gHucV1fgCV5PCsamIrHHNKscpYlp/mJZ2B5Dby4I7lSQACAEuPAGjT3CSpLqEOGzKq3bv5wwAAxcswGBj5Sp9+Bjo7S1hsbKCztk2QQRrFGmSdqqMAZPJ4FCUVFWvfzdzOMZKTbtbyRNRRRQaH//2Q=="></td>
             <td>小卡比兽</td>
-            <td>①甜甜蜜树上涂蜜后调查<br>②212道路豪宅下方草地</td>
+            <td>①<a href="/honey.html">甜甜蜜树上涂蜜后调查</a><br>②212道路豪宅下方草地</td>
         </tr>
         <tr>
             <td id="447">447</td>
