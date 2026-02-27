@@ -1,0 +1,94 @@
+---
+layout: post
+title: "甜甜蜜树小卡比兽出现地点计算器"
+permalink: honey.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>a 计算 b 和 c</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      padding: 6px;
+      width: 200px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-left: 10px;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+
+<p>说明：
+<br>将甜甜蜜涂在树上6小时后，就可以遇见野生宝可梦。涂抹后24小时，野生宝可梦将离开，甜甜蜜也将失效。
+<br>神奥地区共有21棵甜甜蜜树。根据主角的ID No.，只有4棵树有机会出现小卡比兽。这意味着，除非从头开始游戏，否则有且只有这4棵甜甜蜜树能够吸引到小卡比兽，且这4棵甜甜蜜树出现较为稀有的宝可梦的几率也更高。
+<br>甜甜蜜树在出现宝可梦时会摇动，摇动次数越多出现稀有宝可梦的概率就越大，最多摇动3次。
+<br>涂抹甜甜蜜时就会确定这次能遇到的宝可梦种类，但重置游戏可以改变等级、性别、个体值、性格等随机值。
+<br>更改游戏主机的时间并不能影响甜甜蜜树的计时器。
+<br>有些情况下，即使在树上涂了甜甜蜜，也有可能不会遭遇任何宝可梦。可在涂蜜之后与树确认，若对话为“树上有甜甜蜜”，则说明涂蜜成功。若对话和涂蜜之前一样为“空气中有香甜气息……”，则说明不会遭遇任何宝可梦，可再次涂蜜直到对话改变。</p>
+
+<input type="number" id="inputA" placeholder="请输入游戏ID">
+<button onclick="calculate()">计算</button>
+
+<div class="result" id="output"></div>
+
+<script>
+  const table = [
+    "205号道路南边",
+    "205号道路北边",
+    "206号道路",
+    "207号道路",
+    "208号道路",
+    "209号道路",
+    "210号道路南边",
+    "210号道路北边",
+    "211号道路东边",
+    "212号道路北边",
+    "212号道路南边",
+    "213号道路",
+    "214号道路",
+    "215号道路",
+    "218号道路",
+    "221号道路",
+    "222号道路",
+    "山谷发电厂",
+    "百代森林里的捷径",
+    "多多罗钢铁厂",
+    "花苑花田"
+  ];
+
+  function calculate() {
+    const a = parseInt(document.getElementById("inputA").value);
+
+    if (isNaN(a)) {
+      document.getElementById("output").innerText = "请输入有效的游戏ID";
+      return;
+    }
+
+    const b = Math.floor(a / 256) % 21;
+    const c = (a % 256) % 21;
+
+    const resultB = table[b];
+    const resultC = table[c];
+
+    document.getElementById("output").innerHTML = `
+      1. ${resultB}<br>
+      2. ${resultC}
+    `;
+  }
+</script>
+
+</body>
+</html>
