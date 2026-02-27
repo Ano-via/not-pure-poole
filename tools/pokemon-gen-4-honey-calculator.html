@@ -8,7 +8,6 @@ permalink: honey.html
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>甜甜蜜树小卡比兽计算器</title>
 
 <style>
 .snorlax-app {
@@ -103,7 +102,6 @@ permalink: honey.html
   color: #333;
 }
 
-/* 手机适配 */
 @media (max-width: 600px) {
   .snorlax-app .form-group {
     flex-direction: column;
@@ -114,12 +112,12 @@ permalink: honey.html
 }
 </style>
 </head>
-
 <body>
 
 <div class="snorlax-app">
   <div class="card">
 
+    <h2>甜甜蜜树小卡比兽计算器</h2>
 
     <div class="desc">
       将甜甜蜜涂在树上6小时后即可遇见野生宝可梦，24小时后失效。<br>
@@ -131,7 +129,8 @@ permalink: honey.html
     </div>
 
     <div class="form-group">
-      <input type="number" id="inputA" placeholder="请输入游戏ID（ID No.）">
+      <input type="number" id="inputA" placeholder="游戏ID / TID">
+      <input type="number" id="inputD" placeholder="里ID / SID（没有则留空）">
       <button onclick="calculate()">计算</button>
     </div>
 
@@ -169,35 +168,66 @@ const table = [
 ];
 
 function calculate() {
-  const input = document.getElementById("inputA");
   const output = document.getElementById("output");
-  const a = parseInt(input.value);
+  const inputAVal = document.getElementById("inputA").value.trim();
+  const inputDVal = document.getElementById("inputD").value.trim();
 
-  if (isNaN(a)) {
+  if(inputAVal === ""){
     output.className = "result error";
-    output.innerText = "请输入有效的游戏ID";
+    output.innerText = "请输入游戏ID / TID";
     return;
   }
 
-  const b = Math.floor(a / 256) % 21;
-  const c = (a % 256) % 21;
+  const a = parseInt(inputAVal);
+  if(isNaN(a)){
+    output.className = "result error";
+    output.innerText = "游戏ID / TID 无效";
+    return;
+  }
 
+  let nums = [
+    Math.floor(a/256)%21,
+    (a%256)%21
+  ];
+
+  // 如果 inputD 有值，计算其两个数值
+  if(inputDVal !== ""){
+    const d = parseInt(inputDVal);
+    if(isNaN(d)){
+      output.className = "result error";
+      output.innerText = "里ID / SID 无效";
+      return;
+    }
+    nums.push(Math.floor(d/256)%21);
+    nums.push((d%256)%21);
+
+    // 处理重复，出现重复的数值按出现顺序+1，21归0
+    for(let i=1; i<nums.length; i++){
+      for(let j=0; j<i; j++){
+        if(nums[i] === nums[j]){
+          nums[i] = (nums[i]+1)%21;
+          j=-1; // 重新检查前面是否重复
+        }
+      }
+    }
+  }
+
+  // 输出
   output.className = "result";
   output.innerHTML = `
-    <strong>可出现地点：</strong><br>
-    1️⃣ ${table[b]}<br>
-    2️⃣ ${table[c]}
+    <strong>最终出现地点：</strong><br>
+    ${nums.map((n,i)=> `${i+1}️⃣ ${table[n]}`).join("<br>")}
   `;
 }
 
 // 初始化全部地址列表
 const allAddressDiv = document.getElementById("allAddress");
-allAddressDiv.innerHTML = table.map((addr, i) => `${i+1}. ${addr}`).join("<br>");
+allAddressDiv.innerHTML = table.map((addr,i)=> `${i+1}. ${addr}`).join("<br>");
 
 function toggleAllAddress() {
   const div = document.getElementById("allAddress");
   const btn = document.getElementById("toggleAll");
-  if(div.style.display === "none" || div.style.display === "") {
+  if(div.style.display === "none" || div.style.display === ""){
     div.style.display = "block";
     btn.innerText = "隐藏全部地址";
   } else {
