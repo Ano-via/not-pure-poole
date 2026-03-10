@@ -1,0 +1,144 @@
+layout: post
+title: "宝可梦 30周年抽奖模拟"
+permalink: poke30.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* 老虎机外框 */
+        .slot-machine {
+            width: 200px;
+            height: 200px;
+            border: 8px solid #333;
+            border-radius: 15px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* 图片列表容器 */
+        .strip {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            transition: transform 3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+        }
+
+        .strip img {
+            width: 160px;
+            height: 160px;
+            padding: 20px;
+            object-fit: contain;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+
+        .result-id {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slot-machine">
+        <div class="strip" id="strip">
+            <img src="https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/0001.png" alt="pokemon">
+        </div>
+    </div>
+
+    <div class="result-id" id="result-id">准备好捕捉了吗？</div>
+    <button onclick="spin()" id="spin-btn">开始抽奖</button>
+
+    <script>
+        const baseUrl = "https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/";
+        const strip = document.getElementById('strip');
+        const btn = document.getElementById('spin-btn');
+        const resultText = document.getElementById('result-id');
+        
+        const IMG_COUNT = 1025;
+        const SPIN_SIZE = 20; // 每次滚动经过的图片数量
+
+        function formatID(id) {
+            // 将数字转为 0001 格式
+            return id.toString().padStart(4, '0');
+        }
+
+        function getRandomID() {
+            return Math.floor(Math.random() * IMG_COUNT) + 1;
+        }
+
+        function spin() {
+            btn.disabled = true;
+            resultText.innerText = "正在寻找...";
+
+            // 1. 准备随机序列
+            const sequence = [];
+            for (let i = 0; i < SPIN_SIZE; i++) {
+                sequence.push(getRandomID());
+            }
+
+            // 2. 渲染图片到条带中
+            // 保留当前最后一张作为新序列的第一张，确保动画连贯
+            const lastImg = strip.lastElementChild ? strip.lastElementChild.src : `${baseUrl}0001.png`;
+            
+            let htmlContent = `<img src="${lastImg}">`;
+            sequence.forEach(id => {
+                htmlContent += `<img src="${baseUrl}${formatID(id)}.png">`;
+            });
+            
+            // 重置位置（无动画）
+            strip.style.transition = 'none';
+            strip.style.transform = 'translateY(0)';
+            strip.innerHTML = htmlContent;
+
+            // 3. 触发强制重绘并执行动画
+            setTimeout(() => {
+                const targetY = -(SPIN_SIZE * 200); // 每张图片高 200px
+                strip.style.transition = 'transform 3s cubic-bezier(0.15, 0, 0.15, 1)';
+                strip.style.transform = `translateY(${targetY}px)`;
+            }, 50);
+
+            // 4. 动画结束后显示结果
+            setTimeout(() => {
+                const winnerID = sequence[sequence.length - 1];
+                resultText.innerText = `恭喜获得：No.${formatID(winnerID)}`;
+                btn.disabled = false;
+            }, 3100);
+        }
+    </script>
+</body>
+</html>
