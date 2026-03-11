@@ -7,10 +7,10 @@ permalink: poke30.html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<title>rwho.top/poke30</title>
 <meta charset="UTF-8">
 
 <style>
-/* 外层作用域，避免污染页面 */
 .pkm-slot-container{
     display:flex;
     flex-direction:column;
@@ -18,7 +18,6 @@ permalink: poke30.html
     font-family:Arial,sans-serif;
 }
 
-/* 老虎机窗口 */
 .pkm-slot-machine{
     width:200px;
     height:200px;
@@ -30,7 +29,6 @@ permalink: poke30.html
     box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
-/* 滚动条 */
 .pkm-slot-strip{
     position:absolute;
     top:0;
@@ -40,19 +38,15 @@ permalink: poke30.html
     flex-direction:column;
 }
 
-/* 每一格（关键结构） */
 .pkm-slot-cell{
     width:200px;
     height:200px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
-    flex-shrink:0;   /* 防止被压缩 */
+    flex-shrink:0;
 }
 
-/* 图片 */
 .pkm-slot-cell img{
     width:160px;
     height:160px;
@@ -60,7 +54,6 @@ permalink: poke30.html
     display:block;
 }
 
-/* 按钮 */
 .pkm-slot-btn{
     margin-top:20px;
     padding:10px 28px;
@@ -76,11 +69,19 @@ permalink: poke30.html
     background:#ccc;
 }
 
-/* 结果 */
 .pkm-slot-result{
     margin-top:15px;
     font-weight:bold;
     font-size:18px;
+}
+/* 底部网站标志 */
+.pkm-slot-footer {
+    margin-top:15px;
+    font-size:14px;
+    color:#999;
+}
+.pkm-slot-footer span {
+    font-weight:bold;
 }
 </style>
 </head>
@@ -91,25 +92,24 @@ permalink: poke30.html
 
     <div class="pkm-slot-machine">
         <div class="pkm-slot-strip" id="pkmStrip">
-            <div class="pkm-slot-cell">
-                <img src="https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/0001.png">
-            </div>    
+            <!-- 初始图片由 JS 随机生成 -->
         </div>
     </div>
 
-    <div class="pkm-slot-result" id="pkmResult">准备好捕捉了吗？</div>
-    <button class="pkm-slot-btn" onclick="pkmSpin()" id="pkmBtn">开始抽奖</button>
+    <button class="pkm-slot-btn" id="spinBtn">开始抽奖</button>
+
+    <div class="pkm-slot-result" id="result">准备好捕捉了吗？</div>
+
+    <div class="pkm-slot-footer">🌏 <span>rwho.top/poke30</span></div>
 
 </div>
 
 
 <script>
-
 const baseUrl="https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/";
-
 const strip=document.getElementById("pkmStrip");
-const btn=document.getElementById("pkmBtn");
-const result=document.getElementById("pkmResult");
+const btn=document.getElementById("spinBtn");
+const result=document.getElementById("result");
 
 const IMG_COUNT=1025;
 const SPIN_SIZE=20;
@@ -1155,25 +1155,32 @@ function getPokemonName(id){
     return pokemonNames[id] || "未知宝可梦";
 }
 
-function pkmSpin(){
+/* 页面加载时显示随机宝可梦及名字 */
+function showRandomInitial(){
+    const id = getRandomID();
+    const name = getPokemonName(id);
+    const html = `<div class="pkm-slot-cell"><img src="${baseUrl}${formatID(id)}.png"></div>`;
+    strip.innerHTML = html;
+    result.innerText = `恭喜获得：${name}`;
+}
 
+function pkmSpin(){
     btn.disabled=true;
     result.innerText="正在寻找...";
 
     const sequence=[];
-
     for(let i=0;i<SPIN_SIZE;i++){
         sequence.push(getRandomID());
     }
 
     const lastImg=strip.lastElementChild
-        ? strip.lastElementChild.src
+        ? strip.lastElementChild.querySelector("img").src
         : `${baseUrl}0001.png`;
 
-    let html=`<img src="${lastImg}">`;
+    let html=`<div class="pkm-slot-cell"><img src="${lastImg}"></div>`;
 
     sequence.forEach(id=>{
-        html+=`<img src="${baseUrl}${formatID(id)}.png">`;
+        html+=`<div class="pkm-slot-cell"><img src="${baseUrl}${formatID(id)}.png"></div>`;
     });
 
     strip.style.transition="none";
@@ -1181,29 +1188,24 @@ function pkmSpin(){
     strip.innerHTML=html;
 
     setTimeout(()=>{
-
         const targetY=-(SPIN_SIZE*200);
-
         strip.style.transition="transform 3s cubic-bezier(0.15,0,0.15,1)";
         strip.style.transform=`translateY(${targetY}px)`;
-
     },50);
 
-
     setTimeout(()=>{
-
         const winnerID=sequence[sequence.length-1];
-
         const name=getPokemonName(winnerID);
-
         result.innerText=`恭喜获得：${name}`;
-
         btn.disabled=false;
-
     },3100);
-
 }
 
+window.onload = () => {
+    showRandomInitial();
+};
+
+btn.addEventListener("click", pkmSpin);
 </script>
 
 </body>
