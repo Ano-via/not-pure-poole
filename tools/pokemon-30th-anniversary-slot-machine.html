@@ -10,52 +10,64 @@ permalink: poke30.html
 <meta charset="UTF-8">
 
 <style>
-/* 外层作用域，避免CSS污染 */
+/* 外层作用域，避免污染页面 */
 .pkm-slot-container{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
     font-family:Arial,sans-serif;
 }
 
-/* 老虎机外框 */
+/* 老虎机窗口 */
 .pkm-slot-machine{
     width:200px;
     height:200px;
+    overflow:hidden;
     border:8px solid #333;
     border-radius:15px;
-    background:white;
+    background:#fff;
     position:relative;
-    overflow:hidden;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
-/* 图片条 */
+/* 滚动条 */
 .pkm-slot-strip{
     position:absolute;
-    width:100%;
     top:0;
     left:0;
+    width:100%;
     display:flex;
     flex-direction:column;
 }
 
-.pkm-slot-strip img{
+/* 每一格（关键结构） */
+.pkm-slot-cell{
+    width:200px;
+    height:200px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;   /* 防止被压缩 */
+}
+
+/* 图片 */
+.pkm-slot-cell img{
     width:160px;
     height:160px;
-    padding:20px;
     object-fit:contain;
+    display:block;
 }
 
 /* 按钮 */
 .pkm-slot-btn{
-    margin-top:25px;
+    margin-top:20px;
     padding:10px 28px;
     font-size:18px;
     cursor:pointer;
     background:#ff0000;
-    color:white;
+    color:#fff;
     border:none;
     border-radius:6px;
 }
@@ -68,7 +80,6 @@ permalink: poke30.html
 .pkm-slot-result{
     margin-top:15px;
     font-weight:bold;
-    color:#444;
     font-size:18px;
 }
 </style>
@@ -80,7 +91,9 @@ permalink: poke30.html
 
     <div class="pkm-slot-machine">
         <div class="pkm-slot-strip" id="pkmStrip">
-            <img src="https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/0001.png">
+            <div class="pkm-slot-cell">
+                <img src="https://www.pokemon.co.jp/ex/30th_logo/assets/img/download/0001.png">
+            </div>    
         </div>
     </div>
 
