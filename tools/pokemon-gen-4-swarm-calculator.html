@@ -1,0 +1,160 @@
+---
+layout: post
+title: "晶灿钻石／明亮珍珠大量出现日历"
+permalink: swarm.html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:regular">
+  <link rel="stylesheet" href="https://lincoln-lm.github.io/JS-Finder/CSS/main.css">
+  <link rel="stylesheet" href="https://lincoln-lm.github.io/JS-Finder/CSS/states.css">
+  <link rel="stylesheet" href="https://lincoln-lm.github.io/JS-Finder/JS/fullcalendar/main.css">
+  <script src='https://lincoln-lm.github.io/JS-Finder/JS/fullcalendar/main.js'></script>
+  <script>
+    const offset = new Date().getTimezoneOffset();
+    const swarm_text = [
+        '201号道路<br>嘟嘟', '202号道路<br>蛇纹熊', '203号道路<br>卡拉卡拉', '206号道路<br>朝北鼻', '207号道路<br>小小象',
+        '208号道路<br>大肚腩', '209号道路<br>布鲁', '213号道路<br>阿勃梭鲁', '214号道路<br>跳跳猪', '215号道路<br>素利普',
+        '216号道路<br>信使鸟', '217号道路<br>小山猪', '218号道路<br>霹雳电球', '221号道路<br>大葱鸭', '222号道路<br>向尾喵',
+        '224号道路<br>天然雀', '225号道路<br>玛沙那', '226号道路<br>大钳蟹', '227号道路<br>晃晃斑', '228号道路<br>金属怪',
+        '229号道路<br>波波', '230号道路<br>太阳珊瑚', '心齐湖<br>溜溜糖球', '立志湖<br>大舌头', '睿智湖<br>迷唇娃',
+        '风力发电站<br>落雷兽', '百代森林<br>懒人獭', '火炼厂<br>小磁怪'
+    ];
+    // 宝可梦英文名（用于图片路径，保持不变）
+    const swarm_pokemon = [
+        'doduo','zigzagoon','cubone','nosepass','phanpy',
+        'dunsparce', 'snubbull', 'absol', 'spoink', 'drowzee',
+        'delibird','swinub','voltorb','farfetchd','skitty',
+        'natu', 'makuhita', 'krabby', 'spinda', 'beldum',
+        'pidgey','corsola','surskit','lickitung','smoochum',
+        'electrike','slakoth','magnemite'
+    ]
+
+    // 随机数生成函数（核心逻辑保持不变）
+    function ARNG(seed) {
+      seed = seed * 0x6C078965n + 0x1n;
+      return seed & 0xFFFFFFFFn;
+    }
+
+    function MRNGR(seed) {
+      seed = seed * 0xEEB9EB65n + 0xFC77A683n;
+      return seed & 0xFFFFFFFFn;
+    }
+
+    function MRNG(seed) {
+      seed = seed * 0x41C64E6Dn + 0x3039n;
+      return seed & 0xFFFFFFFFn;
+    }
+
+    function intabs(seed) {
+      if (seed & 0x80000000n) {
+        seed = 0x100000000n - seed;
+      }
+      return seed
+    }
+
+    var calendar;
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        eventContent: function(arg) {
+          let arrayOfDomNodes = []
+          // 事件标题
+          let titleEvent = document.createElement('div')
+          if (arg.event._def.title) {
+            titleEvent.innerHTML = arg.event._def.title;
+            titleEvent.classList = "fc-event-title fc-sticky";
+          }
+    
+          // 事件图片
+          let imgEventWrap = document.createElement('div')
+          if (arg.event.extendedProps.image_url) {
+            let imgEvent = `<img src="${arg.event.extendedProps.image_url}">`;
+            imgEventWrap.classList = "fc-event-img";
+            imgEventWrap.innerHTML = imgEvent;
+          }
+    
+          arrayOfDomNodes = [titleEvent,imgEventWrap];
+          return {domNodes: arrayOfDomNodes}
+       },
+      });
+      calendar.render();
+      var date = new Date();
+      date = new Date(date.getTime() - (offset*60*1000))
+      document.getElementById("start-date").value = date.toISOString().split('T')[0];
+      generate();
+    });
+
+    // 生成日历事件
+    function generate() {
+      var events = calendar.getEvents();
+      var len = events.length;
+      for (var i = 0; i < len; i++) {
+        events[i].remove();
+      }
+      var starting_seed = BigInt("0x" + document.getElementById("group-seed").value);
+      var starting_date = new Date(document.getElementById("start-date").value);
+      starting_date.setTime(starting_date.getTime() + (offset*60*1000));
+      var current_seed = starting_seed;
+      var current_date = starting_date;
+      var days = parseInt(document.getElementById("day-count").value);
+      for (var i = 0; i < days; i++) {
+        var daily = intabs(current_seed);
+        var swarm = daily % 0x1Cn;
+        var lotto = (MRNG(current_seed) >> 0xCn) % 100000n;
+
+        calendar.addEvent({
+          image_url:`https://github.com/msikma/pokesprite/raw/master/pokemon-gen8/regular/${swarm_pokemon[swarm]}.png`,
+          start: current_date,
+          allDay: true,
+        });
+
+        calendar.addEvent({
+          title: `\n抽奖号码<br>${lotto}`,
+          start: current_date,
+          allDay: true,
+        });
+
+        current_seed = ARNG(current_seed);
+        current_date.setDate(current_date.getDate() + 1);
+      }
+    }
+    </script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+  <div class="info">
+    <label for="start-date">群组种子日期:</label>
+    <input type="date" id="start-date" onchange="generate()">
+    <br>
+    <label for="group-seed">群组种子: 0x</label>
+    <input style="width:80px;" type="text" id="group-seed" value="00000000" onchange="generate()">
+    <br>
+    <label for="day-count">预测天数:</label>
+    <input style="width:80px;" type="number" id="day-count" value="10" onchange="generate()">
+  </div><br>
+  <div class="info">
+    <strong>使用方法</strong>
+    <ol>
+      <li>获取连续两天的抽奖号码（第二天应为当天）</li>
+      <li>获取当天的宝可梦大量出现信息</li>
+      <li>将上述信息填入<a href="/feebas">丑丑鱼计算器</a></li>
+      <li>点击"生成"按钮</li>
+      <li>复制丑丑鱼分布图下方<strong>"群组种子:"</strong>后的十六进制字符串</li>
+      <li>将该字符串填入此处的<strong>"群组种子"</strong>输入框，并填写获取该种子的日期（通常为当天）</li>
+      <li>将"预测天数"改为你想要预测的未来天数</li>
+    </ol>
+  </div>
+  <div id='calendar'></div>
+  </body>
+  <footer>    
+    <b>鸣谢:</b>
+    <ul>精灵立绘由 msikma 提供 - <a href="https://github.com/msikma/pokesprite">pokesprite</a></ul>
+    <ul>日历组件由 <a href="https://fullcalendar.io/">fullcalendar</a> 提供</ul>
+  </footer>
+</html>
