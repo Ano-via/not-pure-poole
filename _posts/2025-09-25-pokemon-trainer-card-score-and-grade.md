@@ -175,9 +175,11 @@ date: 2025-08-24 11:20 +0800
   </tr>
   <tr>
     <td colspan="6" align="left"><ul>
-    <li>登入名人堂</li><li>完成全国图鉴</li>
+    <li>登入名人堂</li>
+    <li>完成全国图鉴</li>
     <li>获得超级华丽大赛的任意一个大师级别比赛优胜</li>
-    <li>对战塔100连胜<br>· 在地下通道中夺取50个秘密基地旗子</li></ul></td>
+    <li>对战塔100连胜</li>
+    <li>在地下通道中夺取50个秘密基地旗子</li></ul></td>
   </tr>
 </table>
 <p></p>
@@ -275,10 +277,10 @@ date: 2025-08-24 11:20 +0800
 <p></p>
 <table>
   <tr style="font-weight: bold">
-    <td style="background-color:#64d364" rowspan="2">普通</td>
-    <td style="background-color:#6464FF" rowspan="2">青铜</td>  
-    <td style="background-color:#c0c0c0" rowspan="2">白银</td>
-    <td style="background-color:#daa520" rowspan="2">黄金</td>
+    <td style="background-color:#64d364">普通</td>
+    <td style="background-color:#6464FF">青铜</td>  
+    <td style="background-color:#c0c0c0">白银</td>
+    <td style="background-color:#daa520">黄金</td>
   </tr>
   <tr>
     <td colspan="4" style="background-color:#5a96c5">获得方式</td>
@@ -295,10 +297,10 @@ date: 2025-08-24 11:20 +0800
 <p></p>
 <table>
   <tr style="font-weight: bold">
-    <td style="background-color:#6464FF" rowspan="2">普通</td>
-    <td style="background-color:#e0b192" rowspan="2">青铜</td>  
-    <td style="background-color:#c0c0c0" rowspan="2">白银</td>
-    <td style="background-color:#daa520" rowspan="2">黄金</td>
+    <td style="background-color:#6464FF">普通</td>
+    <td style="background-color:#e0b192">青铜</td>  
+    <td style="background-color:#c0c0c0">白银</td>
+    <td style="background-color:#daa520">黄金</td>
   </tr>
   <tr>
     <td colspan="4" style="background-color:#C87365">获得方式</td>
