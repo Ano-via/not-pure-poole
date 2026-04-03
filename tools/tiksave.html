@@ -1,0 +1,112 @@
+---
+layout: post
+title: "TikTok视频下载器"
+permalink: tiksave.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TikTok Downloader</title>
+
+<style>
+
+/* 所有样式只在这个容器内生效 */
+#tt-downloader{
+    font-family: Arial;
+    background:#f5f5f5;
+    padding:40px;
+    text-align:center;
+}
+
+#tt-downloader .tt-container{
+    background:white;
+    padding:30px;
+    width:420px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+#tt-downloader input{
+    width:90%;
+    padding:10px;
+    margin:10px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+#tt-downloader button{
+    padding:10px 20px;
+    cursor:pointer;
+    border:none;
+    background:#ff0050;
+    color:white;
+    border-radius:5px;
+}
+
+#tt-downloader video{
+    margin-top:20px;
+    width:100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="tt-downloader">
+
+<div class="tt-container">
+
+<h2>TikTok Downloader</h2>
+
+<input id="tt-url" placeholder="Paste TikTok URL here">
+
+<br>
+
+<button onclick="ttDownload()">Get Video</button>
+
+<div id="tt-result"></div>
+
+</div>
+
+</div>
+
+<script>
+
+async function ttDownload(){
+
+let url = document.getElementById("tt-url").value
+
+let api = "https://www.tikwm.com/api/?url=" + encodeURIComponent(url)
+
+let res = await fetch(api)
+
+let data = await res.json()
+
+if(data.data){
+
+let video = data.data.play
+
+document.getElementById("tt-result").innerHTML = `
+<video controls src="${video}"></video>
+<br><br>
+<a href="${video}" download>
+<button>Download Video</button>
+</a>
+`
+
+}else{
+
+document.getElementById("tt-result").innerHTML="Failed"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
