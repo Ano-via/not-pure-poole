@@ -49,6 +49,7 @@ date: 2026-04-09 11:15 +0800
   <button onclick="location.hash='#650'">Gen 6</button>
   <button onclick="location.hash='#722'">Gen 7</button>
   <button onclick="location.hash='#810'">Gen 8</button>
+  <button onclick="location.hash='#xicui'">洗翠</button>
 </div>
 
 <div id="filters">
@@ -6838,7 +6839,7 @@ date: 2026-04-09 11:15 +0800
         </tr>
     </tbody>
 </table>
-<p>
+<p id="xicui">
 洗翠形态
 <br>1、在卡那兹市用<a href="#570">索罗亚</a>交换<a href="#570">洗翠索罗亚</a>。
 <br>2、在紫堇市用<a href="#100">霹雳电球</a>交换<a href="#100">洗翠霹雳电球</a>。
