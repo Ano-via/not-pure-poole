@@ -6870,7 +6870,7 @@ function filter(keyword) {
   const keywords = keyword.split("|");
 
   rows.forEach(row => {
-    const way = row.cells[3].innerText;
+    const way = row.cells[4].innerText;
     const match = keywords.some(k => way.includes(k));
 
     row.style.display = keyword === "" || match ? "" : "none";
