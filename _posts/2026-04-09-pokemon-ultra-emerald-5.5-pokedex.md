@@ -57,6 +57,7 @@ date: 2026-04-09 11:15 +0800
 
   <button onclick="filter('级进化')">等级进化</button>
     <button onclick="filter('之石')">进化石</button>
+    <button onclick="filter('通讯进化')">通讯进化</button>
     <button onclick="filter('生蛋')">生蛋</button>
   	<button onclick="filter('复活')">复活</button>    
     <button onclick="filter('亲密度')">亲密度进化</button>
