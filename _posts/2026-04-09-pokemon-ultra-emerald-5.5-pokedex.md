@@ -241,7 +241,7 @@ date: 2026-04-09 11:15 +0800
             <th>捕获方式</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <td>001</td>
             <td id="001">001</td>
