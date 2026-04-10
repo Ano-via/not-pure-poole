@@ -9,8 +9,9 @@ date: 2026-04-09 11:15 +0800
     min-width: 64px;
   }
   td img {
+    max-width: 48px;
     height: auto;
-    width: 48px;
+    width: auto;
     display: block;
   }
   .floating-buttons {
