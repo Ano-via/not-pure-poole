@@ -64,6 +64,9 @@ date: 2025-08-25 11:15 +0800
     <button onclick="filter('周四')">周四</button>
     <button onclick="filter('周五')">周五</button>
     <button onclick="filter('周六')">周六</button>
+    <button onclick="filter('大木博士')">大木博士讲座</button>
+    <button onclick="filter('芳缘')">芳缘广播</button>
+    <button onclick="filter('神奥')">神奥广播</button>
     <!-- 道路筛选按钮 -->
     <button onclick="filter('1号道路')">1号道路</button>
     <button onclick="filter('2号道路')">2号道路</button>
