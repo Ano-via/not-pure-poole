@@ -49,7 +49,7 @@ date: 2025-08-25 11:15 +0800
 </div>
 <div>
 <input id="numfilter" placeholder="123/456/789"></input>
-<button onclick="nofilter()">筛选特定编号</button>
+<button onclick="numfilter()">筛选特定编号</button>
 </div>
 <div id="filters">
   <button onclick="filter('')">全部</button>
