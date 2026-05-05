@@ -47,6 +47,10 @@ date: 2025-08-25 11:15 +0800
   <button onclick="location.hash='#252'">Gen 3</button>
   <button onclick="location.hash='#387'">Gen 4</button>
 </div>
+<div>
+<input id="numfilter" placeholder="123/456/789"></input>
+<button onclick="nofilter()">筛选特定编号</button>
+</div>
 <div id="filters">
   <button onclick="filter('')">全部</button>
 
@@ -3133,13 +3137,20 @@ date: 2025-08-25 11:15 +0800
 <script>
 function filter(keyword) {
   const rows = document.querySelectorAll("#pokeTable tr");
-
   const keywords = keyword.split("|");
-
   rows.forEach(row => {
     const way = row.cells[3].innerText;
     const match = keywords.some(k => way.includes(k));
-
+    row.style.display = keyword === "" || match ? "" : "none";
+  });
+}
+function numfilter() {
+  const rows = document.querySelectorAll("#pokeTable tr");
+  keyword = document.getElementById("numfilter").value;
+  const keywords = keyword.split("|");
+  rows.forEach(row => {
+    const way = row.cells[0].innerText;
+    const match = keywords.some(k => way.includes(k));
     row.style.display = keyword === "" || match ? "" : "none";
   });
 }
