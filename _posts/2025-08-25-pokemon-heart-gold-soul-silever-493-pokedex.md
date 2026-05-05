@@ -3147,7 +3147,7 @@ function filter(keyword) {
 function numfilter() {
   const rows = document.querySelectorAll("#pokeTable tr");
   keyword = document.getElementById("numfilter").value;
-  const keywords = keyword.split("|");
+  const keywords = keyword.split("/");
   rows.forEach(row => {
     const way = row.cells[0].innerText;
     const match = keywords.some(k => way.includes(k));
