@@ -47,6 +47,116 @@ date: 2025-08-25 11:15 +0800
   <button onclick="location.hash='#252'">Gen 3</button>
   <button onclick="location.hash='#387'">Gen 4</button>
 </div>
+<div id="filters">
+  <button onclick="filter('')">全部</button>
+
+  <button onclick="filter('级进化')">等级进化</button>
+    <button onclick="filter('之石')">进化石</button>
+    <button onclick="filter('通讯进化')">通讯进化</button>
+    <button onclick="filter('生蛋')">生蛋</button>
+  	<button onclick="filter('复活')">复活</button>    
+    <button onclick="filter('亲密度')">亲密度进化</button>
+    <button onclick="filter('携带')">携带道具进化</button>
+    <!-- 道路筛选按钮 -->
+    <button onclick="filter('1号道路')">1号道路</button>
+<button onclick="filter('2号道路')">2号道路</button>
+<button onclick="filter('3号道路')">3号道路</button>
+<button onclick="filter('4号道路')">4号道路</button>
+<button onclick="filter('5号道路')">5号道路</button>
+<button onclick="filter('6号道路')">6号道路</button>
+<button onclick="filter('7号道路')">7号道路</button>
+<button onclick="filter('8号道路')">8号道路</button>
+<button onclick="filter('9号道路')">9号道路</button>
+<button onclick="filter('10号道路')">10号道路</button>
+<button onclick="filter('11号道路')">11号道路</button>
+<button onclick="filter('12号道路')">12号道路</button>
+<button onclick="filter('13号道路')">13号道路</button>
+<button onclick="filter('14号道路')">14号道路</button>
+<button onclick="filter('15号道路')">15号道路</button>
+<button onclick="filter('16号道路')">16号道路</button>
+<button onclick="filter('17号道路')">17号道路</button>
+<button onclick="filter('18号道路')">18号道路</button>
+<button onclick="filter('19号道路')">19号道路</button>
+<button onclick="filter('19号水路')">19号水路</button>
+<button onclick="filter('22号道路')">22号道路</button>
+<button onclick="filter('24号道路')">24号道路</button>
+<button onclick="filter('25号道路')">25号道路</button>
+<button onclick="filter('26号道路')">26号道路</button>
+<button onclick="filter('27号道路')">27号道路</button>
+<button onclick="filter('27号道路瀑布洞穴')">27号道路瀑布洞穴</button>
+<button onclick="filter('28号道路')">28号道路</button>
+<button onclick="filter('29号道路')">29号道路</button>
+<button onclick="filter('30号道路')">30号道路</button>
+<button onclick="filter('31号道路')">31号道路</button>
+<button onclick="filter('32号道路')">32号道路</button>
+<button onclick="filter('33号道路')">33号道路</button>
+<button onclick="filter('34号道路')">34号道路</button>
+<button onclick="filter('35号道路')">35号道路</button>
+<button onclick="filter('36号道路')">36号道路</button>
+<button onclick="filter('37号道路')">37号道路</button>
+<button onclick="filter('38号道路')">38号道路</button>
+<button onclick="filter('39号道路')">39号道路</button>
+<button onclick="filter('40号水路')">40号水路</button>
+<button onclick="filter('41号水路')">41号水路</button>
+<button onclick="filter('42号道路')">42号道路</button>
+<button onclick="filter('43号道路')">43号道路</button>
+<button onclick="filter('44号道路')">44号道路</button>
+<button onclick="filter('45号道路')">45号道路</button>
+<button onclick="filter('46号道路')">46号道路</button>
+<button onclick="filter('47号道路')">47号道路</button>
+<button onclick="filter('47号道路左边的洞穴')">47号道路左边的洞穴</button>
+<button onclick="filter('48号道路')">48号道路</button>
+<button onclick="filter('阿露夫遗迹')">阿露夫遗迹</button>
+<button onclick="filter('白银山')">白银山</button>
+<button onclick="filter('白银山小洞穴')">白银山小洞穴</button>
+<button onclick="filter('冰天地洞穴')">冰天地洞穴</button>
+<button onclick="filter('彩虹市')">彩虹市</button>
+<button onclick="filter('彩虹市游戏中心')">彩虹市游戏中心</button>
+<button onclick="filter('常磐森林')">常磐森林</button>
+<button onclick="filter('常磐市')">常磐市</button>
+<button onclick="filter('呆呆兽之井')">呆呆兽之井</button>
+<button onclick="filter('地鼠洞穴')">地鼠洞穴</button>
+<button onclick="filter('断崖洞穴')">断崖洞穴</button>
+<button onclick="filter('愤怒湖')">愤怒湖</button>
+<button onclick="filter('冠军之路')">冠军之路</button>
+<button onclick="filter('黄金市游戏中心')">黄金市游戏中心</button>
+<button onclick="filter('吉野市')">吉野市</button>
+<button onclick="filter('焦塔')">焦塔</button>
+<button onclick="filter('桔梗市')">桔梗市</button>
+<button onclick="filter('卡吉镇火箭队基地')">卡吉镇火箭队基地</button>
+<button onclick="filter('连接洞穴')">连接洞穴</button>
+<button onclick="filter('龙之谷')">龙之谷</button>
+<button onclick="filter('喇叭芽之塔')">喇叭芽之塔</button>
+<button onclick="filter('铃铃塔')">铃铃塔</button>
+<button onclick="filter('满金市')">满金市</button>
+<button onclick="filter('月见山')">月见山</button>
+<button onclick="filter('尼比市')">尼比市</button>
+<button onclick="filter('尼比市博物馆')">尼比市博物馆</button>
+<button onclick="filter('桧皮市')">桧皮市</button>
+<button onclick="filter('浅红市')">浅红市</button>
+<button onclick="filter('浅葱市')">浅葱市</button>
+<button onclick="filter('三周目真新镇研究所')">三周目真新镇研究所</button>
+<button onclick="filter('烧焦塔')">烧焦塔</button>
+<button onclick="filter('狩猎区域')">狩猎区域</button>
+<button onclick="filter('双子岛')">双子岛</button>
+<button onclick="filter('桐森林')">桐森林</button>
+<button onclick="filter('漩涡岛')">漩涡岛</button>
+<button onclick="filter('岩山洞穴')">岩山洞穴</button>
+<button onclick="filter('研钵山')">研钵山</button>
+<button onclick="filter('英凯湖')">英凯湖</button>
+<button onclick="filter('湛蓝市')">湛蓝市</button>
+<button onclick="filter('真新镇')">真新镇</button>
+<button onclick="filter('自然公园')">自然公园</button>
+<button onclick="filter('枯叶市')">枯叶市</button>
+<button onclick="filter('枯叶市俱乐部')">枯叶市俱乐部</button>
+<button onclick="filter('希鲁夫公司')">希鲁夫公司</button>
+<button onclick="filter('红莲岛')">红莲岛</button>
+<button onclick="filter('华蓝洞穴')">华蓝洞穴</button>
+<button onclick="filter('华蓝市')">华蓝市</button>
+<button onclick="filter('黄金市')">黄金市</button>
+<button onclick="filter('若叶镇')">若叶镇</button>
+</div>
+
 <table>
     <thead>
         <tr>
@@ -56,7 +166,7 @@ date: 2025-08-25 11:15 +0800
             <th>捕捉地点</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <th id="001">001</th>
             <td><img src="data:image/gif;base64,R0lGODlhIAAgALMAAP////j4+Li4uJjISHiYSOBIKGBgWEBAQP///wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDAAIACwGAAwAFAARAAAEahDJSeVBt2p6Rs9bdRzEQIAhRhoG0Y4p6c6ti2ZyrRO25Y2zIK+GGxhPOd6QVzSaTsLgpWN6mkay2ZTk7BpzQGzp2CVhSYJRt6R+KlkGzPhbCARMrTxnfqjj3xosSm8GAQQBcRtwcBKMFBEAIfkECQwACAAsBgAMABQAEQAABGkQyUnluTXXM/rR2XUQA/GB1mgQ64pR58gS80qfCCfOtG2blk7p0qMVgTlhycQ7fjil5ZBYfI6UWJmBuBOShKPdDdohXcpGpoCoPBQCgVKLZTBYvgN3vGmv1NNHPSB1hIQBBAF9KH51FREAOw=="></td>
@@ -3017,3 +3127,17 @@ date: 2025-08-25 11:15 +0800
         </tr>
     </tbody>
 </table>
+<script>
+function filter(keyword) {
+  const rows = document.querySelectorAll("#pokeTable tr");
+
+  const keywords = keyword.split("|");
+
+  rows.forEach(row => {
+    const way = row.cells[4].innerText;
+    const match = keywords.some(k => way.includes(k));
+
+    row.style.display = keyword === "" || match ? "" : "none";
+  });
+}
+</script>
