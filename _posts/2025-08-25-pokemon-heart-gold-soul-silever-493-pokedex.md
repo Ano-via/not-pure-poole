@@ -49,7 +49,7 @@ date: 2025-08-25 11:15 +0800
 </div>
 <div>
 <input id="numfilter" placeholder="123/456/789" />
-<button onclick="numfilter()">筛选特定编号</button>
+<button onclick="real_numfilter()">筛选特定编号</button>
 </div>
 <div id="filters">
   <button onclick="filter('')">全部</button>
@@ -3147,14 +3147,17 @@ function filter(keyword) {
     row.style.display = keyword === "" || match ? "" : "none";
   });
 }
-function numfilter() {
-  const rows = document.querySelectorAll("#pokeTable tr");
-  keyword = document.getElementById("numfilter").value;
+function numfilter(keyword) {
   const keywords = keyword.split("/");
   rows.forEach(row => {
     const way = row.cells[0].innerText;
     const match = keywords.some(k => way.includes(k));
     row.style.display = keyword === "" || match ? "" : "none";
   });
+}
+function real_numfilter(){    
+  const rows = document.querySelectorAll("#pokeTable tr");
+  keyword = document.getElementById("numfilter").value;
+  numfilter(keyword);
 }
 </script>
