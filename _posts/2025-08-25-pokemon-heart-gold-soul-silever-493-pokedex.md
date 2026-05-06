@@ -3148,6 +3148,7 @@ function filter(keyword) {
   });
 }
 function numfilter(keyword) {
+  const rows = document.querySelectorAll("#pokeTable tr");
   const keywords = keyword.split("/");
   rows.forEach(row => {
     const way = row.cells[0].innerText;
@@ -3156,7 +3157,6 @@ function numfilter(keyword) {
   });
 }
 function real_numfilter(){    
-  const rows = document.querySelectorAll("#pokeTable tr");
   keyword = document.getElementById("numfilter").value;
   numfilter(keyword);
 }
