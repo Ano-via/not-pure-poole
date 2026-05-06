@@ -61,6 +61,7 @@ date: 2025-08-25 11:15 +0800
     <button onclick="filter('亲密度')">亲密度进化</button>
     <button onclick="filter('携带')">携带道具进化</button>
     <button onclick="filter('周二')">周二</button>
+    <button onclick="filter('周三')">周三</button>
     <button onclick="filter('周四')">周四</button>
     <button onclick="filter('周五')">周五</button>
     <button onclick="filter('周六')">周六</button>
