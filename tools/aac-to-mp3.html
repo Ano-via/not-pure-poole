@@ -1,0 +1,161 @@
+---
+layout: post
+title: "AAC 批量转 MP3"
+permalink: aac-to-mp3.html
+---
+<!DOCTYPE html>
+<html lang="zh">
+<style>
+  /* 亮色系现代 UI */
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      margin: 0;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  }
+
+  h1 { margin-top: 0; color: #1a1a1a; }
+  .description { color: #666; margin-bottom: 30px; }
+
+  .upload-area {
+      border: 2px dashed #ddd;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  button {
+      width: 100%;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background 0.3s;
+  }
+
+  button:hover { background: #0056b3; }
+  button:disabled { background: #ccc; cursor: not-allowed; }
+
+  .progress-bar {
+      margin: 20px 0;
+      font-weight: bold;
+      color: #007bff;
+  }
+
+  #log {
+      margin-top: 20px;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 12px;
+      color: #555;
+      border: 1px solid #eee;
+      white-space: pre-wrap;
+  }
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AAC 批量转 MP3</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>AAC 批量转 MP3</h1>
+    <p class="description">选择 AAC 文件，我们将为您将其转换为高音质 MP3 并打包下载。</p>
+
+    <div class="upload-area">
+        <input type="file" id="files" multiple accept=".aac"/>
+    </div>
+
+    <button onclick="startConvert()" id="startBtn">
+        开始转换并下载 ZIP
+    </button>
+
+    <div class="progress-bar" id="progress">等待操作...</div>
+
+    <div id="log"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+    // JS 逻辑保持不变...
+    const log = (msg) => {
+        const logBox = document.getElementById("log");
+        logBox.innerHTML += msg + "\n";
+        logBox.scrollTop = logBox.scrollHeight;
+    };
+
+    async function startConvert() {
+        const files = document.getElementById("files").files;
+        if(files.length === 0){ alert("请选择 AAC 文件"); return; }
+        
+        const progress = document.getElementById("progress");
+        const btn = document.getElementById("startBtn");
+        
+        btn.disabled = true;
+        progress.innerHTML = "正在加载 FFmpeg...";
+
+        const { FFmpeg } = FFmpegWASM;
+        const ffmpeg = new FFmpeg();
+        await ffmpeg.load();
+
+        log("FFmpeg 加载完成");
+        const zip = new JSZip();
+        let index = 0;
+
+        for(const file of files){
+            index++;
+            progress.innerHTML = `正在处理: ${index} / ${files.length}`;
+            log(`正在处理: ${file.name}`);
+
+            const inputName = file.name;
+            const outputName = file.name.replace(/\.aac$/i, ".mp3");
+            const data = await file.arrayBuffer();
+
+            await ffmpeg.writeFile(inputName, new Uint8Array(data));
+            await ffmpeg.exec(["-i", inputName, "-codec:a", "libmp3lame", "-q:a", "2", outputName]);
+
+            const mp3Data = await ffmpeg.readFile(outputName);
+            zip.file(outputName, mp3Data);
+            log(`已转换: ${outputName}`);
+
+            await ffmpeg.deleteFile(inputName);
+            await ffmpeg.deleteFile(outputName);
+        }
+
+        progress.innerHTML = "正在打包...";
+        const content = await zip.generateAsync({type:"blob"});
+        const url = URL.createObjectURL(content);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "mp3_files.zip";
+        a.click();
+
+        progress.innerHTML = "全部完成！";
+        btn.disabled = false;
+        log("转换结束，ZIP 已下载。");
+    }
+</script>
+</body>
+</html>
