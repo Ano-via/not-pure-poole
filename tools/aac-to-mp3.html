@@ -5,81 +5,76 @@ permalink: aac-to-mp3.html
 ---
 <!DOCTYPE html>
 <html lang="zh">
-<style>
-  /* 亮色系现代 UI */
-  body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7f6;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-      margin: 0;
-  }
-
-  .container {
-      width: 100%;
-      max-width: 600px;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  }
-
-  h1 { margin-top: 0; color: #1a1a1a; }
-  .description { color: #666; margin-bottom: 30px; }
-
-  .upload-area {
-      border: 2px dashed #ddd;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      margin-bottom: 20px;
-  }
-
-  button {
-      width: 100%;
-      background: #007bff;
-      color: #fff;
-      border: none;
-      padding: 15px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      transition: background 0.3s;
-  }
-
-  button:hover { background: #0056b3; }
-  button:disabled { background: #ccc; cursor: not-allowed; }
-
-  .progress-bar {
-      margin: 20px 0;
-      font-weight: bold;
-      color: #007bff;
-  }
-
-  #log {
-      margin-top: 20px;
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: 10px;
-      height: 200px;
-      overflow-y: auto;
-      font-size: 12px;
-      color: #555;
-      border: 1px solid #eee;
-      white-space: pre-wrap;
-  }
-</style>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AAC 批量转 MP3</title>
+    
+    <style>
+        .aac-converter-app {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        .aac-converter-app h1 { margin-top: 0; color: #1a1a1a; font-size: 24px; }
+        .aac-converter-app .description { color: #666; margin-bottom: 30px; font-size: 14px; }
+
+        .aac-converter-app .upload-area {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .aac-converter-app button {
+            width: 100%;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .aac-converter-app button:hover { background: #0056b3; }
+        .aac-converter-app button:disabled { background: #ccc; cursor: not-allowed; }
+
+        .aac-converter-app .progress-bar {
+            margin: 20px 0;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .aac-converter-app #log {
+            margin-top: 20px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            height: 200px;
+            overflow-y: auto;
+            font-size: 12px;
+            color: #555;
+            border: 1px solid #eee;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+<div class="aac-converter-app">
     <h1>AAC 批量转 MP3</h1>
     <p class="description">选择 AAC 文件，我们将为您将其转换为高音质 MP3 并打包下载。</p>
 
@@ -87,7 +82,7 @@ permalink: aac-to-mp3.html
         <input type="file" id="files" multiple accept=".aac"/>
     </div>
 
-    <button onclick="startConvert()" id="startBtn">
+    <button id="startBtn" onclick="startConvert()">
         开始转换并下载 ZIP
     </button>
 
@@ -99,7 +94,6 @@ permalink: aac-to-mp3.html
 <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
-    // JS 逻辑保持不变...
     const log = (msg) => {
         const logBox = document.getElementById("log");
         logBox.innerHTML += msg + "\n";
