@@ -7,189 +7,127 @@ permalink: pwd.html
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>密码生成器</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    /* 全局样式 */
-    body {
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 20px;
-        background-color: #f4f7f6;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* 容器 */
-    .password-generator-container {
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 400px; /* 限制最大宽度，在平板上看起来更好 */
-        box-sizing: border-box;
-    }
-
-    h2 {
-        color: #007bff;
-        margin-bottom: 30px;
-        font-size: 1.8em;
-    }
-
-    /* 结果输入框 */
-    .password-input {
-        width: calc(100% - 20px); /* 减去padding */
-        padding: 15px 10px;
-        font-size: 1.1em;
-        text-align: center;
-        margin-bottom: 25px;
-        border: 2px solid #ddd;
-        border-radius: 8px;
-        background-color: #e9ecef;
-        color: #555;
-        box-sizing: border-box;
-        -webkit-user-select: all; /* iOS Safari */
-        -moz-user-select: all;    /* Firefox */
-        -ms-user-select: all;     /* IE/Edge */
-        user-select: all;         /* Chrome/Opera */
-    }
-
-    .password-input:focus {
-        outline: none;
-        border-color: #007bff;
-        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-    }
-
-    /* 按钮组 */
-    .button-group {
-        display: flex;
-        flex-direction: column; /* 手机上按钮垂直排列 */
-        gap: 15px; /* 按钮之间的间距 */
-    }
-
-    button {
-        flex: 1; /* 让按钮在水平方向上等宽 */
-        padding: 15px 25px;
-        font-size: 1.1em;
-        cursor: pointer;
-        border: none;
-        border-radius: 8px;
-        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        color: #fff;
-        font-weight: bold;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    button:active {
-        transform: translateY(1px);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    /* 弱密码按钮 */
-    .btn-weak {
-        background-color: #ffc107; /* 警告色 */
-    }
-
-    .btn-weak:hover {
-        background-color: #e0a800;
-    }
-
-    /* 强密码按钮 */
-    .btn-strong {
-        background-color: #28a745; /* 成功色 */
-    }
-
-    .btn-strong:hover {
-        background-color: #218838;
-    }
-
-    /* 提示信息 */
-    .copy-message {
-        margin-top: 20px;
-        font-size: 0.9em;
-        color: #6c757d;
-        opacity: 0; /* 默认隐藏 */
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    .copy-message.show {
-        opacity: 1;
-    }
-
-    /* 媒体查询，适配桌面端 */
-    @media (min-width: 600px) {
-        .button-group {
-            flex-direction: row; /* 桌面端按钮水平排列 */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码生成器</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 命名空间：确保所有样式仅在 .password-tool-wrapper 内部生效 */
+        .password-tool-wrapper {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            /* 恢复默认的行高和颜色，防止被父级影响 */
+            line-height: 1.5;
+            color: #333;
         }
-    }
-</style>
+
+        .password-tool-wrapper * { box-sizing: border-box; }
+
+        .password-tool-wrapper h2 {
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+
+        .password-tool-wrapper .password-input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            color: #555;
+            user-select: all;
+        }
+
+        .password-tool-wrapper .button-group {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .password-tool-wrapper button {
+            flex: 1;
+            padding: 12px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            transition: transform 0.1s, filter 0.2s;
+        }
+
+        .password-tool-wrapper button:active { transform: translateY(2px); }
+        .password-tool-wrapper button:hover { filter: brightness(0.9); }
+
+        .password-tool-wrapper .btn-weak { background-color: #ffc107; }
+        .password-tool-wrapper .btn-strong { background-color: #28a745; }
+
+        .password-tool-wrapper .copy-message {
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #666;
+            height: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .password-tool-wrapper .copy-message.show { opacity: 1; }
+
+        /* 响应式调整 */
+        @media (min-width: 400px) {
+            .password-tool-wrapper .button-group { flex-direction: row; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="password-generator-container">
+<div class="password-tool-wrapper">
     <h2>密码生成器</h2>
-
-    <input type="text" id="result" class="password-input" placeholder="点击按钮生成密码" readonly>
-
+    <input type="text" id="result" class="password-input" placeholder="点击按钮生成" readonly>
     <div class="button-group">
-        <button onclick="generateWeak()" class="btn-weak">8位中等</button>
-        <button onclick="generateStrong()" class="btn-strong">16位复杂</button>
+        <button onclick="generatePwd(8)" class="btn-weak">8位中等</button>
+        <button onclick="generatePwd(16)" class="btn-strong">16位复杂</button>
     </div>
-
-    <p id="copyMessage" class="copy-message">密码已复制到剪贴板！</p>
+    <p id="copyMessage" class="copy-message">已自动复制到剪贴板！</p>
 </div>
 
 <script>
-// 显示复制成功的消息
-function showCopyMessage() {
-    const msgElement = document.getElementById("copyMessage");
-    msgElement.classList.add("show");
-    setTimeout(() => {
-        msgElement.classList.remove("show");
-    }, 2000); // 2秒后消失
-}
-
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        console.log("已复制:", text);
-        showCopyMessage(); // 复制成功后显示消息
-    }).catch(err => {
-        console.error('复制失败:', err);
-        // 可以添加一个备用方案，例如提示用户手动复制
-    });
-}
-
-// 弱密码：8位（数字 + 大写字母）
-function generateWeak() {
-    const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let pwd = "";
-    for (let i = 0; i < 8; i++) {
-        pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+    function showCopyMessage() {
+        const msg = document.getElementById("copyMessage");
+        msg.classList.add("show");
+        setTimeout(() => msg.classList.remove("show"), 2000);
     }
-    document.getElementById("result").value = pwd;
-    console.log("8位中等:", pwd);
-    copyToClipboard(pwd);
-}
 
-// 强密码：16位（数字 + 大小写字母 + 符号）
-function generateStrong() {
-    const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+[]{}<>?";
-    let pwd = "";
-    for (let i = 0; i < 16; i++) {
-        pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+    // 合并生成逻辑，增加可维护性
+    function generatePwd(length) {
+        const chars = length === 8 
+            ? "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+            : "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+[]{}<>?";
+        
+        let pwd = "";
+        for (let i = 0; i < length; i++) {
+            pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        
+        const input = document.getElementById("result");
+        input.value = pwd;
+        
+        navigator.clipboard.writeText(pwd).then(showCopyMessage);
     }
-    document.getElementById("result").value = pwd;
-    console.log("16位复杂:", pwd);
-    copyToClipboard(pwd);
-}
 </script>
 
 </body>
