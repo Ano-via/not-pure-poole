@@ -8,38 +8,38 @@ permalink: aac-to-mp3.html
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>音频批量转 MP3</title>
+<title>音频转MP3工具</title>
 
 <style>
-/* ===== 完全隔离CSS ===== */
+/* ===== 完全隔离 ===== */
 .aacx-app{
     font-family:'Segoe UI',system-ui,sans-serif;
-    background:#fff;
-    max-width:700px;
+    max-width:720px;
     margin:40px auto;
     padding:35px;
+    background:#fff;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.06);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .aacx-app *{box-sizing:border-box;}
 
 .aacx-title{
-    margin:0 0 10px;
     font-size:26px;
+    margin:0 0 10px;
 }
 
 .aacx-desc{
-    color:#666;
     font-size:14px;
+    color:#666;
     margin-bottom:20px;
 }
 
 .aacx-upload{
     border:2px dashed #ccc;
-    border-radius:16px;
     padding:40px 20px;
     text-align:center;
+    border-radius:16px;
     background:#fafafa;
     cursor:pointer;
     transition:.2s;
@@ -62,19 +62,21 @@ permalink: aac-to-mp3.html
 
 .aacx-btn{
     width:100%;
-    margin-top:20px;
-    padding:15px;
+    margin-top:12px;
+    padding:14px;
     border:none;
     border-radius:12px;
-    background:#007bff;
-    color:#fff;
     font-size:16px;
     font-weight:600;
     cursor:pointer;
-    transition:.25s;
+    background:#007bff;
+    color:#fff;
+    transition:.2s;
 }
 
 .aacx-btn:hover{background:#0056b3;}
+
+.aacx-btn.gray{background:#6c757d;}
 
 .aacx-progress{
     margin-top:15px;
@@ -102,10 +104,10 @@ permalink: aac-to-mp3.html
 <div class="aacx-app">
 
     <h1 class="aacx-title">音频批量转 MP3</h1>
-    <div class="aacx-desc">支持拖拽 / 多文件 / 自动打包 ZIP</div>
+    <div class="aacx-desc">拖拽 / 点击上传 / 单文件直下 / 多文件ZIP</div>
 
     <div class="aacx-upload" id="dropArea">
-        <div><b>拖拽文件到这里</b></div>
+        <b>拖拽文件到这里</b>
         <div style="margin-top:8px;color:#666;">或点击选择文件</div>
 
         <input id="aacx-files" type="file" multiple accept=".aac,.m4a,.wav,audio/*"/>
@@ -113,7 +115,9 @@ permalink: aac-to-mp3.html
 
     <div class="aacx-filelist" id="fileList">暂无文件</div>
 
-    <button class="aacx-btn" id="startBtn">开始转换并下载 ZIP</button>
+    <button class="aacx-btn" id="startBtn">开始转换</button>
+
+    <button class="aacx-btn gray" id="clearBtn">清空文件</button>
 
     <div class="aacx-progress" id="progress">等待操作...</div>
 
@@ -125,34 +129,46 @@ permalink: aac-to-mp3.html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
 <script>
+
 let filesList = [];
 
 const dropArea = document.getElementById("dropArea");
 const fileInput = document.getElementById("aacx-files");
 const fileList = document.getElementById("fileList");
 const startBtn = document.getElementById("startBtn");
+const clearBtn = document.getElementById("clearBtn");
 const progress = document.getElementById("progress");
 const logBox = document.getElementById("log");
 
-/* ===== 只保留关键log ===== */
+/* ===== log ===== */
 function log(msg, err=false){
     const t = new Date().toLocaleTimeString();
     logBox.innerHTML += `[${t}] ${err?"❌":"✔"} ${msg}\n`;
     logBox.scrollTop = logBox.scrollHeight;
 }
 
-/* ===== 文件列表 ===== */
+/* ===== 文件列表（关键：省略显示） ===== */
 function render(){
+
     if(!filesList.length){
         fileList.innerHTML = "暂无文件";
         return;
     }
-    fileList.innerHTML = filesList.map(f=>"• "+f.name).join("<br>");
+
+    if(filesList.length === 1){
+        fileList.innerHTML = "• " + filesList[0].name;
+        return;
+    }
+
+    fileList.innerHTML =
+        `• ${filesList[0].name} 等共 ${filesList.length} 个文件`;
 }
 
 /* ===== 添加文件 ===== */
 function add(files){
+
     const arr = [...files].filter(f=>/\.(aac|m4a|wav)$/i.test(f.name));
+
     filesList.push(...arr);
 
     filesList = filesList.filter((f,i,self)=>
@@ -163,7 +179,7 @@ function add(files){
     log(`添加 ${arr.length} 个文件`);
 }
 
-/* ===== 点击上传 ===== */
+/* ===== 上传 ===== */
 dropArea.onclick = ()=>fileInput.click();
 fileInput.onchange = e=>add(e.target.files);
 
@@ -181,6 +197,14 @@ dropArea.ondrop = e=>{
     e.preventDefault();
     dropArea.classList.remove("aacx-dragover");
     add(e.dataTransfer.files);
+};
+
+/* ===== 清空 ===== */
+clearBtn.onclick = ()=>{
+    filesList = [];
+    render();
+    progress.innerText = "等待操作...";
+    log("已清空文件");
 };
 
 /* ===== 转换 ===== */
@@ -214,7 +238,7 @@ async function toMp3(file){
     return new Blob(out,{type:"audio/mp3"});
 }
 
-/* ===== 主流程 ===== */
+/* ===== 主流程（核心：单文件不打包） ===== */
 startBtn.onclick = async ()=>{
 
     if(!filesList.length){
@@ -224,15 +248,14 @@ startBtn.onclick = async ()=>{
 
     startBtn.disabled = true;
 
-    const zip = new JSZip();
-
     let ok=0,fail=0;
 
-    for(let i=0;i<filesList.length;i++){
+    /* ===== 单文件 ===== */
+    if(filesList.length === 1){
 
-        const f = filesList[i];
+        const f = filesList[0];
 
-        progress.innerText=`处理中 ${i+1}/${filesList.length}`;
+        progress.innerText="处理中 1/1";
 
         try{
 
@@ -240,46 +263,84 @@ startBtn.onclick = async ()=>{
 
             const name = f.name.replace(/\.[^.]+$/,".mp3");
 
-            zip.file(name,mp3);
+            const url = URL.createObjectURL(mp3);
 
-            ok++;
+            const a=document.createElement("a");
+            a.href=url;
+            a.download=name;
+            a.click();
+
+            URL.revokeObjectURL(url);
+
+            ok=1;
 
             log("完成 "+name);
 
         }catch(e){
-            fail++;
+            fail=1;
             log("失败 "+f.name,true);
         }
     }
 
-    progress.innerText="生成ZIP...";
+    /* ===== 多文件 ===== */
+    else{
 
-    const blob = await zip.generateAsync({type:"blob"});
+        const zip = new JSZip();
 
-    const url = URL.createObjectURL(blob);
+        for(let i=0;i<filesList.length;i++){
 
-    const a=document.createElement("a");
-    a.href=url;
-    a.download="mp3.zip";
-    a.click();
+            const f = filesList[i];
 
-    URL.revokeObjectURL(url);
+            progress.innerText=`处理中 ${i+1}/${filesList.length}`;
 
+            try{
+
+                const mp3 = await toMp3(f);
+
+                const name = f.name.replace(/\.[^.]+$/,".mp3");
+
+                zip.file(name,mp3);
+
+                ok++;
+
+                log("完成 "+name);
+
+            }catch(e){
+                fail++;
+                log("失败 "+f.name,true);
+            }
+        }
+
+        progress.innerText="生成ZIP...";
+
+        const blob = await zip.generateAsync({type:"blob"});
+
+        const url = URL.createObjectURL(blob);
+
+        const a=document.createElement("a");
+        a.href=url;
+        a.download="mp3.zip";
+        a.click();
+
+        URL.revokeObjectURL(url);
+    }
+
+    /* ===== 完成UI ===== */
     progress.innerText=`完成 OK:${ok} FAIL:${fail}`;
 
     log(`全部完成 OK:${ok} FAIL:${fail}`);
 
-    /* ===== 按钮状态：绿色 √ 已完成 ===== */
     startBtn.style.background="#28a745";
     startBtn.innerText="√ 已完成";
 
     setTimeout(()=>{
         startBtn.style.background="#007bff";
-        startBtn.innerText="开始转换并下载 ZIP";
+        startBtn.innerText="开始转换";
     },3000);
 
     startBtn.disabled=false;
 };
+
 </script>
 
 </body>
