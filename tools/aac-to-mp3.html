@@ -8,12 +8,11 @@ permalink: aac-to-mp3.html
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>音频转MP3工具</title>
+<title>音频转MP3</title>
 
 <style>
-/* ===== 完全隔离 ===== */
 .aacx-app{
-    font-family:'Segoe UI',system-ui,sans-serif;
+    font-family:'Segoe UI',system-ui;
     max-width:720px;
     margin:40px auto;
     padding:35px;
@@ -22,79 +21,68 @@ permalink: aac-to-mp3.html
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-.aacx-app *{box-sizing:border-box;}
-
-.aacx-title{
-    font-size:26px;
-    margin:0 0 10px;
-}
-
-.aacx-desc{
-    font-size:14px;
-    color:#666;
-    margin-bottom:20px;
-}
-
 .aacx-upload{
     border:2px dashed #ccc;
-    padding:40px 20px;
+    padding:35px;
     text-align:center;
     border-radius:16px;
     background:#fafafa;
     cursor:pointer;
-    transition:.2s;
-}
-
-.aacx-upload.aacx-dragover{
-    border-color:#007bff;
-    background:#eef5ff;
-    transform:scale(1.01);
 }
 
 #aacx-files{display:none;}
 
 .aacx-filelist{
-    margin-top:15px;
+    margin-top:12px;
     font-size:13px;
     color:#444;
-    line-height:1.8;
 }
 
 .aacx-btn{
     width:100%;
-    margin-top:12px;
+    margin-top:10px;
     padding:14px;
     border:none;
     border-radius:12px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
     background:#007bff;
     color:#fff;
-    transition:.2s;
+    font-weight:600;
+    cursor:pointer;
 }
 
-.aacx-btn:hover{background:#0056b3;}
+.aacx-btn.gray{background:#666;}
 
-.aacx-btn.gray{background:#6c757d;}
-
-.aacx-progress{
+.aacx-progress-text{
     margin-top:15px;
-    font-size:14px;
-    color:#007bff;
     font-weight:bold;
+    color:#007bff;
+}
+
+/* ===== 进度条 ===== */
+.aacx-bar-bg{
+    width:100%;
+    height:14px;
+    background:#eee;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.aacx-bar{
+    height:100%;
+    width:0%;
+    background:#007bff;
+    transition:width .2s;
 }
 
 .aacx-log{
     margin-top:20px;
-    height:180px;
+    height:160px;
     overflow:auto;
-    background:#f8f9fa;
-    border:1px solid #eee;
-    padding:12px;
     font-size:12px;
     font-family:monospace;
-    white-space:pre-wrap;
+    background:#f8f9fa;
+    padding:10px;
 }
 </style>
 </head>
@@ -103,25 +91,25 @@ permalink: aac-to-mp3.html
 
 <div class="aacx-app">
 
-    <h1 class="aacx-title">音频批量转 MP3</h1>
-    <div class="aacx-desc">拖拽 / 点击上传 / 单文件直下 / 多文件ZIP</div>
+<h2>音频转 MP3</h2>
 
-    <div class="aacx-upload" id="dropArea">
-        <b>拖拽文件到这里</b>
-        <div style="margin-top:8px;color:#666;">或点击选择文件</div>
+<div class="aacx-upload" id="dropArea">
+    点击或拖拽上传
+    <input type="file" id="aacx-files" multiple accept=".aac,.m4a,.wav,audio/*">
+</div>
 
-        <input id="aacx-files" type="file" multiple accept=".aac,.m4a,.wav,audio/*"/>
-    </div>
+<div class="aacx-filelist" id="fileList">暂无文件</div>
 
-    <div class="aacx-filelist" id="fileList">暂无文件</div>
+<button class="aacx-btn" id="startBtn">开始转换</button>
+<button class="aacx-btn gray" id="clearBtn">清空</button>
 
-    <button class="aacx-btn" id="startBtn">开始转换</button>
+<div class="aacx-progress-text" id="progressText">等待操作...</div>
 
-    <button class="aacx-btn gray" id="clearBtn">清空文件</button>
+<div class="aacx-bar-bg">
+    <div class="aacx-bar" id="bar"></div>
+</div>
 
-    <div class="aacx-progress" id="progress">等待操作...</div>
-
-    <div class="aacx-log" id="log"></div>
+<div class="aacx-log" id="log"></div>
 
 </div>
 
@@ -130,140 +118,133 @@ permalink: aac-to-mp3.html
 
 <script>
 
-let filesList = [];
+let filesList=[];
 
-const dropArea = document.getElementById("dropArea");
-const fileInput = document.getElementById("aacx-files");
-const fileList = document.getElementById("fileList");
-const startBtn = document.getElementById("startBtn");
-const clearBtn = document.getElementById("clearBtn");
-const progress = document.getElementById("progress");
-const logBox = document.getElementById("log");
+const dropArea=document.getElementById("dropArea");
+const fileInput=document.getElementById("aacx-files");
+const fileList=document.getElementById("fileList");
+const logBox=document.getElementById("log");
+const progressText=document.getElementById("progressText");
+const bar=document.getElementById("bar");
+const startBtn=document.getElementById("startBtn");
+const clearBtn=document.getElementById("clearBtn");
 
 /* ===== log ===== */
-function log(msg, err=false){
-    const t = new Date().toLocaleTimeString();
-    logBox.innerHTML += `[${t}] ${err?"❌":"✔"} ${msg}\n`;
+function log(msg){
+    logBox.innerHTML += msg+"\n";
     logBox.scrollTop = logBox.scrollHeight;
 }
 
-/* ===== 文件列表（关键：省略显示） ===== */
+/* ===== UI ===== */
 function render(){
-
     if(!filesList.length){
-        fileList.innerHTML = "暂无文件";
+        fileList.innerHTML="暂无文件";
         return;
     }
-
-    if(filesList.length === 1){
-        fileList.innerHTML = "• " + filesList[0].name;
+    if(filesList.length===1){
+        fileList.innerHTML="• "+filesList[0].name;
         return;
     }
-
-    fileList.innerHTML =
-        `• ${filesList[0].name} 等共 ${filesList.length} 个文件`;
+    fileList.innerHTML=
+        `• ${filesList[0].name} 等共 ${filesList.length-1} 个文件`;
 }
 
-/* ===== 添加文件 ===== */
+/* ===== 添加 ===== */
 function add(files){
-
-    const arr = [...files].filter(f=>/\.(aac|m4a|wav)$/i.test(f.name));
-
+    const arr=[...files].filter(f=>/\.(aac|m4a|wav)$/i.test(f.name));
     filesList.push(...arr);
-
-    filesList = filesList.filter((f,i,self)=>
-        i===self.findIndex(x=>x.name===f.name&&x.size===f.size)
-    );
-
     render();
-    log(`添加 ${arr.length} 个文件`);
+    log("添加 "+arr.length+" 文件");
 }
-
-/* ===== 上传 ===== */
-dropArea.onclick = ()=>fileInput.click();
-fileInput.onchange = e=>add(e.target.files);
 
 /* ===== 拖拽 ===== */
-dropArea.ondragover = e=>{
+dropArea.onclick=()=>fileInput.click();
+fileInput.onchange=e=>add(e.target.files);
+
+dropArea.ondragover=e=>{
     e.preventDefault();
-    dropArea.classList.add("aacx-dragover");
+    dropArea.style.background="#eef5ff";
 };
 
-dropArea.ondragleave = ()=>{
-    dropArea.classList.remove("aacx-dragover");
+dropArea.ondragleave=()=>{
+    dropArea.style.background="#fafafa";
 };
 
-dropArea.ondrop = e=>{
+dropArea.ondrop=e=>{
     e.preventDefault();
-    dropArea.classList.remove("aacx-dragover");
     add(e.dataTransfer.files);
 };
 
 /* ===== 清空 ===== */
-clearBtn.onclick = ()=>{
-    filesList = [];
+clearBtn.onclick=()=>{
+    filesList=[];
     render();
-    progress.innerText = "等待操作...";
-    log("已清空文件");
+    setProgress(0);
+    log("清空文件");
 };
+
+/* ===== 进度条 ===== */
+function setProgress(p){
+    bar.style.width=p+"%";
+    progressText.innerText=`进度 ${p.toFixed(0)}%`;
+}
 
 /* ===== 转换 ===== */
 async function toMp3(file){
 
-    const ctx = new AudioContext();
-    const buf = await ctx.decodeAudioData(await file.arrayBuffer());
-    const data = buf.getChannelData(0);
+    const ctx=new AudioContext();
+    const buf=await ctx.decodeAudioData(await file.arrayBuffer());
+    const data=buf.getChannelData(0);
 
-    const enc = new lamejs.Mp3Encoder(1, buf.sampleRate, 128);
+    const enc=new lamejs.Mp3Encoder(1,buf.sampleRate,128);
 
-    let out = [];
+    let out=[];
 
     for(let i=0;i<data.length;i+=1152){
 
-        const chunk = data.subarray(i,i+1152);
-        const int16 = new Int16Array(chunk.length);
+        const chunk=data.subarray(i,i+1152);
+        const int16=new Int16Array(chunk.length);
 
         for(let j=0;j<chunk.length;j++){
             let s=Math.max(-1,Math.min(1,chunk[j]));
             int16[j]=s<0?s*0x8000:s*0x7fff;
         }
 
-        const buf2 = enc.encodeBuffer(int16);
+        const buf2=enc.encodeBuffer(int16);
         if(buf2.length) out.push(buf2);
     }
 
-    const end = enc.flush();
+    const end=enc.flush();
     if(end.length) out.push(end);
 
     return new Blob(out,{type:"audio/mp3"});
 }
 
-/* ===== 主流程（核心：单文件不打包） ===== */
-startBtn.onclick = async ()=>{
+/* ===== 主流程（带进度） ===== */
+startBtn.onclick=async()=>{
 
-    if(!filesList.length){
-        alert("请选择文件");
-        return;
-    }
+    if(!filesList.length) return;
 
-    startBtn.disabled = true;
+    startBtn.disabled=true;
 
     let ok=0,fail=0;
 
+    const total=filesList.length;
+
     /* ===== 单文件 ===== */
-    if(filesList.length === 1){
+    if(total===1){
 
-        const f = filesList[0];
-
-        progress.innerText="处理中 1/1";
+        setProgress(10);
 
         try{
 
-            const mp3 = await toMp3(f);
+            const mp3=await toMp3(filesList[0]);
 
-            const name = f.name.replace(/\.[^.]+$/,".mp3");
+            setProgress(80);
 
-            const url = URL.createObjectURL(mp3);
+            const name=filesList[0].name.replace(/\.[^.]+$/,".mp3");
+
+            const url=URL.createObjectURL(mp3);
 
             const a=document.createElement("a");
             a.href=url;
@@ -274,48 +255,46 @@ startBtn.onclick = async ()=>{
 
             ok=1;
 
-            log("完成 "+name);
-
         }catch(e){
             fail=1;
-            log("失败 "+f.name,true);
         }
+
+        setProgress(100);
     }
 
     /* ===== 多文件 ===== */
     else{
 
-        const zip = new JSZip();
+        const zip=new JSZip();
 
-        for(let i=0;i<filesList.length;i++){
+        for(let i=0;i<total;i++){
 
-            const f = filesList[i];
+            const f=filesList[i];
 
-            progress.innerText=`处理中 ${i+1}/${filesList.length}`;
+            const p=Math.round((i/total)*100);
+
+            setProgress(p);
 
             try{
 
-                const mp3 = await toMp3(f);
+                const mp3=await toMp3(f);
 
-                const name = f.name.replace(/\.[^.]+$/,".mp3");
+                const name=f.name.replace(/\.[^.]+$/,".mp3");
 
                 zip.file(name,mp3);
 
                 ok++;
 
-                log("完成 "+name);
-
             }catch(e){
                 fail++;
-                log("失败 "+f.name,true);
             }
         }
 
-        progress.innerText="生成ZIP...";
+        setProgress(90);
 
-        const blob = await zip.generateAsync({type:"blob"});
+        const blob=await zip.generateAsync({type:"blob"});
 
-        const url = URL.createObjectURL(blob);
+        const url=URL.createObjectURL(blob);
 
         const a=document.createElement("a");
         a.href=url;
@@ -323,12 +302,11 @@ startBtn.onclick = async ()=>{
         a.click();
 
         URL.revokeObjectURL(url);
+
+        setProgress(100);
     }
 
-    /* ===== 完成UI ===== */
-    progress.innerText=`完成 OK:${ok} FAIL:${fail}`;
-
-    log(`全部完成 OK:${ok} FAIL:${fail}`);
+    log(`完成 OK:${ok} FAIL:${fail}`);
 
     startBtn.style.background="#28a745";
     startBtn.innerText="√ 已完成";
