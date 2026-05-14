@@ -130,8 +130,23 @@ const startBtn=document.getElementById("startBtn");
 const clearBtn=document.getElementById("clearBtn");
 
 /* ===== log ===== */
-function log(msg){
-    logBox.innerHTML += msg+"\n";
+function log(msg, isError=false){
+
+    const div = document.createElement("div");
+
+    const time = new Date().toLocaleTimeString();
+
+    div.textContent =
+        `[${time}] ${isError ? "❌" : "✔"} ${msg}`;
+
+    div.style.padding = "2px 0";
+
+    if(isError){
+        div.style.color = "#d9534f";
+    }
+
+    logBox.appendChild(div);
+
     logBox.scrollTop = logBox.scrollHeight;
 }
 
