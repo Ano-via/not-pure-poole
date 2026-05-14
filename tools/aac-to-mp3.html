@@ -91,97 +91,178 @@ permalink: aac-to-mp3.html
     <div id="log"></div>
 </div>
 
-<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js"></script>
-<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
-const log = (msg) => {
-    document.getElementById("log").innerHTML += msg + "\n";
+const logBox = document.getElementById("log");
+
+function log(msg, isError = false){
+
+    const time = new Date().toLocaleTimeString();
+
+    logBox.innerHTML +=
+        `[${time}] ${isError ? '❌ ' : ''}${msg}\n`;
+
+    logBox.scrollTop = logBox.scrollHeight;
+}
+
+window.onerror = function(msg, src, line, col, err){
+
+    log(
+        `${msg}\n${src}:${line}:${col}\n${err?.stack || ''}`,
+        true
+    );
 };
 
-async function startConvert() {
+window.onunhandledrejection = function(e){
 
-    const files = document.getElementById("files").files;
+    log(
+        `Promise Error:\n${e.reason?.stack || e.reason}`,
+        true
+    );
+};
 
-    if(files.length === 0){
-        alert("请选择 AAC 文件");
-        return;
-    }
+const { createFFmpeg, fetchFile } = FFmpeg;
 
-    const progress = document.getElementById("progress");
+const ffmpeg = createFFmpeg({
+    log: true
+});
 
-    progress.innerHTML = "正在加载 FFmpeg...";
+async function startConvert(){
 
-    const ffmpeg = new FFmpegWASM.FFmpeg();
+    try{
 
-    await ffmpeg.load({
-        coreURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.js"
-    });
+        const files =
+            document.getElementById("files").files;
 
-    log("FFmpeg 加载完成");
+        if(!files.length){
 
-    const zip = new JSZip();
+            alert("请选择 AAC 文件");
 
-    let index = 0;
+            return;
+        }
 
-    for(const file of files){
+        const progress =
+            document.getElementById("progress");
 
-        index++;
+        progress.innerHTML = "加载 FFmpeg...";
 
-        progress.innerHTML = `处理中 ${index}/${files.length}`;
+        log("开始加载 FFmpeg");
 
-        log(`开始转换: ${file.name}`);
+        if(!ffmpeg.isLoaded()){
 
-        const inputName = file.name;
+            try{
 
-        const outputName = file.name.replace(/\.aac$/i, ".mp3");
+                await ffmpeg.load();
 
-        const data = await file.arrayBuffer();
+                log("FFmpeg 加载成功");
 
-        await ffmpeg.writeFile(
-            inputName,
-            new Uint8Array(data)
+            }catch(err){
+
+                log(
+                    "FFmpeg 加载失败:\n" +
+                    err.stack,
+                    true
+                );
+
+                return;
+            }
+        }
+
+        const zip = new JSZip();
+
+        let index = 0;
+
+        for(const file of files){
+
+            try{
+
+                index++;
+
+                progress.innerHTML =
+                    `转换中 ${index}/${files.length}`;
+
+                log(`开始处理: ${file.name}`);
+
+                const inputName = file.name;
+
+                const outputName =
+                    file.name.replace(/\.aac$/i, ".mp3");
+
+                ffmpeg.FS(
+                    'writeFile',
+                    inputName,
+                    await fetchFile(file)
+                );
+
+                log(`已写入: ${inputName}`);
+
+                await ffmpeg.run(
+                    '-i',
+                    inputName,
+                    '-codec:a',
+                    'libmp3lame',
+                    '-q:a',
+                    '2',
+                    outputName
+                );
+
+                log(`转换完成: ${outputName}`);
+
+                const data =
+                    ffmpeg.FS(
+                        'readFile',
+                        outputName
+                    );
+
+                zip.file(outputName, data);
+
+                ffmpeg.FS('unlink', inputName);
+                ffmpeg.FS('unlink', outputName);
+
+            }catch(err){
+
+                log(
+                    `文件失败: ${file.name}\n` +
+                    err.stack,
+                    true
+                );
+            }
+        }
+
+        progress.innerHTML = "打包 ZIP...";
+
+        log("开始生成 ZIP");
+
+        const blob =
+            await zip.generateAsync({
+                type:'blob'
+            });
+
+        const url =
+            URL.createObjectURL(blob);
+
+        const a =
+            document.createElement('a');
+
+        a.href = url;
+
+        a.download = 'mp3_files.zip';
+
+        a.click();
+
+        progress.innerHTML = "完成";
+
+        log("全部完成");
+
+    }catch(err){
+
+        log(
+            "全局错误:\n" +
+            err.stack,
+            true
         );
-
-        await ffmpeg.exec([
-            "-i",
-            inputName,
-            "-codec:a",
-            "libmp3lame",
-            "-q:a",
-            "2",
-            outputName
-        ]);
-
-        const mp3Data = await ffmpeg.readFile(outputName);
-
-        zip.file(outputName, mp3Data);
-
-        log(`完成: ${outputName}`);
-
-        await ffmpeg.deleteFile(inputName);
-        await ffmpeg.deleteFile(outputName);
     }
-
-    progress.innerHTML = "正在打包 ZIP...";
-
-    const content = await zip.generateAsync({
-        type:"blob"
-    });
-
-    const url = URL.createObjectURL(content);
-
-    const a = document.createElement("a");
-
-    a.href = url;
-
-    a.download = "mp3_files.zip";
-
-    a.click();
-
-    progress.innerHTML = "全部完成";
-
-    log("ZIP 下载完成");
 }
 </script>
 </body>
