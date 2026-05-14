@@ -91,65 +91,98 @@ permalink: aac-to-mp3.html
     <div id="log"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js"></script>
+<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
-    const log = (msg) => {
-        const logBox = document.getElementById("log");
-        logBox.innerHTML += msg + "\n";
-        logBox.scrollTop = logBox.scrollHeight;
-    };
+const log = (msg) => {
+    document.getElementById("log").innerHTML += msg + "\n";
+};
 
-    async function startConvert() {
-        const files = document.getElementById("files").files;
-        if(files.length === 0){ alert("请选择 AAC 文件"); return; }
-        
-        const progress = document.getElementById("progress");
-        const btn = document.getElementById("startBtn");
-        
-        btn.disabled = true;
-        progress.innerHTML = "正在加载 FFmpeg...";
+async function startConvert() {
 
-        const { FFmpeg } = FFmpegWASM;
-        const ffmpeg = new FFmpeg();
-        await ffmpeg.load();
+    const files = document.getElementById("files").files;
 
-        log("FFmpeg 加载完成");
-        const zip = new JSZip();
-        let index = 0;
-
-        for(const file of files){
-            index++;
-            progress.innerHTML = `正在处理: ${index} / ${files.length}`;
-            log(`正在处理: ${file.name}`);
-
-            const inputName = file.name;
-            const outputName = file.name.replace(/\.aac$/i, ".mp3");
-            const data = await file.arrayBuffer();
-
-            await ffmpeg.writeFile(inputName, new Uint8Array(data));
-            await ffmpeg.exec(["-i", inputName, "-codec:a", "libmp3lame", "-q:a", "2", outputName]);
-
-            const mp3Data = await ffmpeg.readFile(outputName);
-            zip.file(outputName, mp3Data);
-            log(`已转换: ${outputName}`);
-
-            await ffmpeg.deleteFile(inputName);
-            await ffmpeg.deleteFile(outputName);
-        }
-
-        progress.innerHTML = "正在打包...";
-        const content = await zip.generateAsync({type:"blob"});
-        const url = URL.createObjectURL(content);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "mp3_files.zip";
-        a.click();
-
-        progress.innerHTML = "全部完成！";
-        btn.disabled = false;
-        log("转换结束，ZIP 已下载。");
+    if(files.length === 0){
+        alert("请选择 AAC 文件");
+        return;
     }
+
+    const progress = document.getElementById("progress");
+
+    progress.innerHTML = "正在加载 FFmpeg...";
+
+    const ffmpeg = new FFmpegWASM.FFmpeg();
+
+    await ffmpeg.load({
+        coreURL: "https://unpkg.com/@ffmpeg/core@0.12.4/dist/umd/ffmpeg-core.js"
+    });
+
+    log("FFmpeg 加载完成");
+
+    const zip = new JSZip();
+
+    let index = 0;
+
+    for(const file of files){
+
+        index++;
+
+        progress.innerHTML = `处理中 ${index}/${files.length}`;
+
+        log(`开始转换: ${file.name}`);
+
+        const inputName = file.name;
+
+        const outputName = file.name.replace(/\.aac$/i, ".mp3");
+
+        const data = await file.arrayBuffer();
+
+        await ffmpeg.writeFile(
+            inputName,
+            new Uint8Array(data)
+        );
+
+        await ffmpeg.exec([
+            "-i",
+            inputName,
+            "-codec:a",
+            "libmp3lame",
+            "-q:a",
+            "2",
+            outputName
+        ]);
+
+        const mp3Data = await ffmpeg.readFile(outputName);
+
+        zip.file(outputName, mp3Data);
+
+        log(`完成: ${outputName}`);
+
+        await ffmpeg.deleteFile(inputName);
+        await ffmpeg.deleteFile(outputName);
+    }
+
+    progress.innerHTML = "正在打包 ZIP...";
+
+    const content = await zip.generateAsync({
+        type:"blob"
+    });
+
+    const url = URL.createObjectURL(content);
+
+    const a = document.createElement("a");
+
+    a.href = url;
+
+    a.download = "mp3_files.zip";
+
+    a.click();
+
+    progress.innerHTML = "全部完成";
+
+    log("ZIP 下载完成");
+}
 </script>
 </body>
 </html>
