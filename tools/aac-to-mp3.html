@@ -94,14 +94,14 @@ permalink: aac-to-mp3.html
 <h2>音频转 MP3</h2>
 
 <div class="aacx-upload" id="dropArea">
-    点击或拖拽上传
+    点击或拖拽上传，支持逐个添加
     <input type="file" id="aacx-files" multiple accept=".aac,.m4a,.wav,audio/*">
 </div>
 
 <div class="aacx-filelist" id="fileList">暂无文件</div>
 
 <button class="aacx-btn" id="startBtn">开始转换</button>
-<button class="aacx-btn gray" id="clearBtn">清空</button>
+<button class="aacx-btn gray" id="clearBtn">清空文件</button>
 
 <div class="aacx-progress-text" id="progressText">等待操作...</div>
 
@@ -321,7 +321,7 @@ startBtn.onclick=async()=>{
         setProgress(100);
     }
 
-    log(`完成 OK:${ok} FAIL:${fail}`);
+    log(`完成。 ${ok} 个成功； ${fail} 个失败`);
 
     startBtn.style.background="#28a745";
     startBtn.innerText="√ 已完成";
