@@ -49,10 +49,12 @@ date: 2026-05-12 11:16 +0800
   <button onclick="location.hash='#494'">Gen 5</button>
   <button onclick="location.hash='#650'">Gen 6</button>
 </div>
-
+<div>
+<input id="numfilter" placeholder="123/456/789" />
+<button onclick="real_numfilter()">筛选特定编号</button>
+</div>
 <div id="filters">
   <button onclick="filter('')">全部</button>
-
   <button onclick="filter('级进化')">等级进化</button>
     <button onclick="filter('之石')">进化石</button>
     <button onclick="filter('通讯进化')">通讯进化</button>
@@ -5897,5 +5899,18 @@ function filter(keyword) {
 
     row.style.display = keyword === "" || match ? "" : "none";
   });
+}
+function numfilter(keyword) {
+  const rows = document.querySelectorAll("#pokeTable tr");
+  const keywords = keyword.split("/");
+  rows.forEach(row => {
+    const way = row.cells[0].innerText;
+    const match = keywords.some(k => way.includes(k));
+    row.style.display = keyword === "" || match ? "" : "none";
+  });
+}
+function real_numfilter(){    
+  keyword = document.getElementById("numfilter").value;
+  numfilter(keyword);
 }
 </script>
