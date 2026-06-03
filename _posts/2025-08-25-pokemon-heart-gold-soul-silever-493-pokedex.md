@@ -48,7 +48,7 @@ date: 2025-08-25 11:15 +0800
   <button onclick="location.hash='#387'">Gen 4</button>
 </div>
 <div>
-<input id="numfilter" placeholder="123/456/789" />
+<input id="numfilter" placeholder="123,456,789" />
 <button onclick="real_numfilter()">筛选特定编号</button>
 </div>
 <div id="filters">
@@ -3150,7 +3150,7 @@ function filter(keyword) {
 }
 function numfilter(keyword) {
   const rows = document.querySelectorAll("#pokeTable tr");
-  const keywords = keyword.split("/");
+  const keywords = keyword.split(",");
   rows.forEach(row => {
     const way = row.cells[0].innerText;
     const match = keywords.some(k => way.includes(k));
