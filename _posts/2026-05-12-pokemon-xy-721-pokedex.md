@@ -100,6 +100,10 @@ date: 2026-05-12 11:16 +0800
     <button onclick="filter('蔚蓝湾')">蔚蓝湾</button>
     <button onclick="filter('遥香市')">遥香市</button>
     <button onclick="filter('终端洞窟')">终端洞窟</button>
+    <button onclick="filter('磁场区')">磁场区</button>
+    <button onclick="filter('青苔岩石')">青苔岩石</button>
+    <button onclick="filter('冰之岩石')">冰之岩石</button>
+    <button onclick="filter('剧情')">剧情</button>
 </div>
 
 <p></p>
