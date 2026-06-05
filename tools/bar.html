@@ -82,11 +82,15 @@ permalink: bar.html
         if (!cell || !cell.v) continue;
 
         let val = String(cell.v).trim();
-        val = val.split('-')[0];
-        val = val.split('@')[0];
-        val = val.split('_')[0];
 
-        if (val) results.add(val);
+        // 1. 统一处理分隔符（使用正则表达式更简洁）
+        val = val.split(/[-@_]/)[0];
+
+        // 2. 过滤掉无效值：只有当 val 存在，且不等于 "Aspicture" 或 "ASIT" 时才添加
+        const blacklist = ['Aspicture', 'ASIT'];
+        if (val && !blacklist.includes(val)) {
+            results.add(val);
+        }
       }
 
       t1.value = Array.from(results).join('\n');
