@@ -570,9 +570,13 @@ permalink: dict.html
             return result ? result.page : null;
         }
 
+        function getExt(index) {
+            return (index <= 4 || index >= 1895) ? ".webp" : ".png";
+        }
+
         function showImage() {
-            const imageName = pad(currentImageIndex, 4) + '.jpg';
-            document.getElementById('mainImage').src = 'https://ano-via.github.io/dict/images_tinypng/' + imageName;
+            const imageName = pad(currentImageIndex, 4) + getExt(currentImageIndex);
+            document.getElementById('mainImage').src = 'https://ano-via.github.io/dict/images_final/' + imageName;
         }
 
         function changeImage(offset) {
