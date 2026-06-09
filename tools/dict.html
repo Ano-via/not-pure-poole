@@ -613,5 +613,10 @@ permalink: dict.html
 
         document.getElementById('nextBtn').addEventListener('mouseenter', showButtons);
         document.getElementById('nextBtn').addEventListener('mouseleave', hideButtons);
+        document.getElementById("searchInput").addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                document.getElementById("searchBtn").click();
+            }
+        });
     </script>
 </body>
