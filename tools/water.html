@@ -9,12 +9,13 @@ permalink: water.html
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>图片水印打码工具</title>
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
     <style>
         #watermark-container {
             max-width: 500px;
-            margin: 30px auto;
+            /* 保持最大宽度 */
+            margin: 30px auto 30px 30px;
+            /* 修改这里，设置左外边距为30px，右外边距为auto实现左对齐 */
             font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
         }
 
@@ -50,7 +51,7 @@ permalink: water.html
         }
 
         #watermark-container p>* {
-        /*    vertical-align: middle;*/
+            vertical-align: middle;
         }
 
         #watermark-container input#text-input {
@@ -107,168 +108,177 @@ permalink: water.html
         </p>
         <p id="graph-output"></p>
     </div>
-</body>
-<script>
-    (function() {
-        var $, autoRefreshCheckbox, canvas, dataURItoBlob, drawText, file, generateFileName, graphOutput, imageInput, input, inputItems, makeStyle, readFile, redraw, refreshButton, textCtx;
 
-        $ = function(sel) {
-            return document.querySelector(sel);
-        };
+    <script>
+        (function() {
+            var $, autoRefreshCheckbox, canvas, dataURItoBlob, drawText, file, generateFileName, graphOutput, imageInput, input, inputItems, makeStyle, readFile, redraw, refreshButton, textCtx;
 
-        inputItems = ['text-input', 'color-input', 'alpha-input', 'space-input', 'size-input'];
-
-        input = {};
-
-        imageInput = $('#image-input');
-
-        graphOutput = $('#graph-output');
-
-        refreshButton = $('#refresh-button');
-
-        autoRefreshCheckbox = $('#auto-refresh-checkbox');
-
-        file = null;
-
-        canvas = null;
-
-        textCtx = null;
-
-        redraw = null;
-
-        dataURItoBlob = function(dataURI) {
-            var arr, binStr, i, k, len, ref;
-            binStr = atob((dataURI.split(','))[1]);
-            len = binStr.length;
-            arr = new Uint8Array(len);
-            for (i = k = 0, ref = len - 1; (0 <= ref ? k <= ref : k >= ref); i = 0 <= ref ? ++k : --k) {
-                arr[i] = binStr.charCodeAt(i);
-            }
-            return new Blob([arr], {
-                type: 'image/png'
-            });
-        };
-
-        generateFileName = function() {
-            var d, pad;
-            pad = function(n) {
-                if (n < 10) {
-                    return '0' + n;
-                } else {
-                    return n;
-                }
+            $ = function(sel) {
+                return document.querySelector(sel);
             };
-            d = new Date();
-            return '' + d.getFullYear() + '-' + (pad(d.getMonth() + 1)) + '-' + (pad(d.getDate())) + ' ' + (pad(d.getHours())) + (pad(d.getMinutes())) + (pad(d.getSeconds())) + '.png';
-        };
 
-        readFile = function() {
-            var fileReader;
-            if (file == null) {
-                return;
-            }
-            fileReader = new FileReader();
-            fileReader.onload = function() {
-                var img;
-                img = new Image();
-                img.onload = function() {
-                    var ctx;
-                    canvas = document.createElement('canvas');
-                    canvas.width = img.width;
-                    canvas.height = img.height;
-                    textCtx = null;
-                    ctx = canvas.getContext('2d');
-                    ctx.drawImage(img, 0, 0);
-                    redraw = function() {
-                        ctx.rotate(315 * Math.PI / 180);
-                        ctx.clearRect(0, 0, canvas.width, canvas.height);
-                        ctx.drawImage(img, 0, 0);
-                        return ctx.rotate(45 * Math.PI / 180);
-                    };
-                    drawText();
-                    graphOutput.innerHTML = '';
-                    graphOutput.appendChild(canvas);
-                    return canvas.addEventListener('click', function() {
-                        var blob, imageData, link;
-                        link = document.createElement('a');
-                        link.download = generateFileName();
-                        imageData = canvas.toDataURL('image/png');
-                        blob = dataURItoBlob(imageData);
-                        link.href = URL.createObjectURL(blob);
-                        graphOutput.appendChild(link);
-                        return setTimeout(function() {
-                            link.click();
-                            return graphOutput.removeChild(link);
-                        }, 100);
-                    });
+            inputItems = ['text-input', 'color-input', 'alpha-input', 'space-input', 'size-input'];
+
+            input = {};
+
+            imageInput = $('#image-input');
+
+            graphOutput = $('#graph-output');
+
+            refreshButton = $('#refresh-button');
+
+            autoRefreshCheckbox = $('#auto-refresh-checkbox');
+
+            file = null;
+
+            canvas = null;
+
+            textCtx = null;
+
+            redraw = null;
+
+            dataURItoBlob = function(dataURI) {
+                var arr, binStr, i, k, len, ref;
+                binStr = atob((dataURI.split(','))[1]);
+                len = binStr.length;
+                arr = new Uint8Array(len);
+                for (i = k = 0, ref = len - 1; (0 <= ref ? k <= ref : k >= ref); i = 0 <= ref ? ++k : --k) {
+                    arr[i] = binStr.charCodeAt(i);
+                }
+                return new Blob([arr], {
+                    type: 'image/png'
+                });
+            };
+
+            generateFileName = function() {
+                var d, pad;
+                pad = function(n) {
+                    if (n < 10) {
+                        return '0' + n;
+                    } else {
+                        return n;
+                    }
                 };
-                return img.src = fileReader.result;
+                d = new Date();
+                return '' + d.getFullYear() + '-' + (pad(d.getMonth() + 1)) + '-' + (pad(d.getDate())) + ' ' + (pad(d.getHours())) + (pad(d.getMinutes())) + (pad(d.getSeconds())) + '.png';
             };
-            return fileReader.readAsDataURL(file);
-        };
 
-        makeStyle = function() {
-            var match;
-            match = input['color-input'].value.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
-            return 'rgba(' + (parseInt(match[1], 16)) + ',' + (parseInt(match[2], 16)) + ',' + (parseInt(match[3], 16)) + ',' + input['alpha-input'].value + ')';
-        };
-
-        drawText = function() {
-            var i, j, k, l, margin, ref, ref1, ref2, step, textSize, width, x, y;
-            if (canvas == null) {
-                return;
-            }
-            textSize = input['size-input'].value * Math.max(15, (Math.min(canvas.width, canvas.height)) / 25);
-            if (textCtx != null) {
-                redraw();
-            } else {
-                textCtx = canvas.getContext('2d');
-                textCtx.rotate(45 * Math.PI / 180);
-            }
-            textCtx.fillStyle = makeStyle();
-            textCtx.font = 'bold ' + textSize + 'px -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif';
-            width = (textCtx.measureText(input['text-input'].value)).width;
-            step = Math.sqrt((Math.pow(canvas.width, 2)) + (Math.pow(canvas.height, 2)));
-            margin = (textCtx.measureText('啊')).width;
-            x = Math.ceil(step / (width + margin));
-            y = Math.ceil((step / (input['space-input'].value * textSize)) / 2);
-            for (i = k = 0, ref = x; (0 <= ref ? k <= ref : k >= ref); i = 0 <= ref ? ++k : --k) {
-                for (j = l = ref1 = -y, ref2 = y; (ref1 <= ref2 ? l <= ref2 : l >= ref2); j = ref1 <= ref2 ? ++l : --l) {
-                    textCtx.fillText(input['text-input'].value, (width + margin) * i, input['space-input'].value * textSize * j);
+            readFile = function() {
+                var fileReader;
+                if (file == null) {
+                    return;
                 }
-            }
-        };
+                fileReader = new FileReader();
+                fileReader.onload = function() {
+                    var img;
+                    img = new Image();
+                    img.onload = function() {
+                        var ctx;
+                        canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        textCtx = null;
+                        ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+                        redraw = function() {
+                            ctx.rotate(315 * Math.PI / 180);
+                            ctx.clearRect(0, 0, canvas.width, canvas.height);
+                            ctx.drawImage(img, 0, 0);
+                            return ctx.rotate(45 * Math.PI / 180);
+                        };
+                        drawText();
+                        graphOutput.innerHTML = '';
+                        graphOutput.appendChild(canvas);
+                        return canvas.addEventListener('click', function() {
+                            var blob, imageData, link;
+                            link = document.createElement('a');
+                            link.download = generateFileName();
+                            imageData = canvas.toDataURL('image/png');
+                            blob = dataURItoBlob(imageData);
+                            link.href = URL.createObjectURL(blob);
+                            graphOutput.appendChild(link);
+                            return setTimeout(function() {
+                                link.click();
+                                return graphOutput.removeChild(link);
+                            }, 100);
+                        });
+                    };
+                    return img.src = fileReader.result;
+                };
+                return fileReader.readAsDataURL(file);
+            };
 
-        imageInput.addEventListener('change', function() {
-            var ref;
-            file = this.files[0];
-            if ((ref = file.type) !== 'image/png' && ref !== 'image/jpeg' && ref !== 'image/gif') {
-                return alert('仅支持 png, jpg, gif 图片格式');
-            }
-            return readFile();
-        });
+            makeStyle = function() {
+                var match;
+                match = input['color-input'].value.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
+                return 'rgba(' + (parseInt(match[1], 16)) + ',' + (parseInt(match[2], 16)) + ',' + (parseInt(match[3], 16)) + ',' + input['alpha-input'].value + ')';
+            };
 
-        inputItems.forEach(function(item) {
-            var el;
-            el = $('#' + item);
-            input[item] = el;
-            autoRefreshCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    return refreshButton.setAttribute('disabled', 'disabled');
+            drawText = function() {
+                var i, j, k, l, margin, ref, ref1, ref2, step, textSize, width, x, y;
+                if (canvas == null) {
+                    return;
+                }
+                textSize = input['size-input'].value * Math.max(15, (Math.min(canvas.width, canvas.height)) / 25);
+                if (textCtx != null) {
+                    redraw();
                 } else {
-                    return refreshButton.removeAttribute('disabled');
+                    textCtx = canvas.getContext('2d');
+                    textCtx.rotate(45 * Math.PI / 180);
                 }
-            });
-            el.addEventListener('input', function() {
-                if (autoRefreshCheckbox.checked) {
-                    return drawText();
-                }
-            });
-            return refreshButton.addEventListener('click', drawText);
-        });
+                textCtx.fillStyle = makeStyle();
+                textCtx.font = 'bold ' + textSize + 'px -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif';
+                textCtx.textBaseline = 'middle'; // 将文本基线设置为中间
+                width = (textCtx.measureText(input['text-input'].value)).width;
+                step = Math.sqrt((Math.pow(canvas.width, 2)) + (Math.pow(canvas.height, 2)));
+                margin = (textCtx.measureText('啊')).width;
+                x = Math.ceil(step / (width + margin));
+                y = Math.ceil((step / (input['space-input'].value * textSize)) / 2);
 
-    }).call(this);
-</script>
+                // 调整起始绘制位置，使其更靠近左侧
+                const startX = -canvas.width * 0.5; // 根据画布宽度调整起始X坐标
+                const startY = -canvas.height * 0.5; // 根据画布高度调整起始Y坐标
+
+                for (i = k = 0, ref = x * 2; (0 <= ref ? k <= ref : k >= ref); i = 0 <= ref ? ++k : --k) { // 增加循环范围以覆盖更多区域
+                    for (j = l = ref1 = -y * 2, ref2 = y * 2; (ref1 <= ref2 ? l <= ref2 : l >= ref2); j = ref1 <= ref2 ? ++l : --l) { // 增加循环范围
+                        textCtx.fillText(input['text-input'].value, startX + (width + margin) * i, startY + input['space-input'].value * textSize * j);
+                    }
+                }
+            };
+
+            imageInput.addEventListener('change', function() {
+                var ref;
+                file = this.files[0];
+                if ((ref = file.type) !== 'image/png' && ref !== 'image/jpeg' && ref !== 'image/gif') {
+                    return alert('仅支持 png, jpg, gif 图片格式');
+                }
+                return readFile();
+            });
+
+            inputItems.forEach(function(item) {
+                var el;
+                el = $('#' + item);
+                input[item] = el;
+                autoRefreshCheckbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        return refreshButton.setAttribute('disabled', 'disabled');
+                    } else {
+                        return refreshButton.removeAttribute('disabled');
+                    }
+                });
+                el.addEventListener('input', function() {
+                    if (autoRefreshCheckbox.checked) {
+                        return drawText();
+                    }
+                });
+                return refreshButton.addEventListener('click', drawText);
+            });
+
+        }).call(this);
+    </script>
+</body>
+
+</html>
 
 
 </html>
