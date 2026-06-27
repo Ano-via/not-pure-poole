@@ -14,9 +14,7 @@ permalink: water.html
     <style>
         #watermark-container {
             max-width: 500px;
-            /* 保持最大宽度 */
-            /*margin: 30px auto 30px 30px;*/
-            /* 修改这里，设置左外边距为30px，右外边距为auto实现左对齐 */
+            margin: 30px auto 30px 30px;
             font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
         }
 
@@ -73,32 +71,61 @@ permalink: water.html
             border: 1px dashed #AAA;
             cursor: pointer;
         }
+
+        /* 新增样式 */
+        #watermark-container .watermark-mode-controls {
+            margin-bottom: 15px;
+        }
+
+        #watermark-container .watermark-mode-controls button {
+            margin-right: 10px;
+            padding: 5px 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #watermark-container .watermark-mode-controls button.active {
+            background-color: blue;
+            color: white;
+            border-color: blue;
+        }
     </style>
 </head>
 
 <body>
     <div id="watermark-container">
-        
         <article>安全地为你的图片加水印，无任何网络请求，特别适合各种敏感证件（身份证，驾照，护照等）。</article>
 
         <label for="image-input">第一步：先选择一张本地图片</label>
-        <p><input type="file" id="image-input" autocomplete="off"></p>
+        <p><input type="file" id="image-input" accept="image/jpeg,image/png,image/gif" autocomplete="off"></p>
 
 
         <label for="text-input">第二步：输入需要打水印的文字</label>
-        <p><input type="text" id="text-input" placeholder="请输入文字" autocomplete="off" maxlength="30">
+        <p>
+            <input type="text" id="text-input" placeholder="请输入文字" autocomplete="off" maxlength="30">
+        </p>
 
+        <!-- 新增水印模式选择 -->
+        <div class="watermark-mode-controls">
+            <button id="mode-phrase" class="active">短语模式</button>
+            <button id="mode-tile">平铺模式</button>
+        </div>
+
+        <p>
             <label for="color-input">颜色</label>
             <input type="color" id="color-input" pattern="#[0-9A-Fa-f]{6}" autocomplete="off" value="#FFFFFF"><br>
 
             <label for="alpha-input">透明度</label>
             <input type="range" id="alpha-input" min="0" max="1" step="0.05" autocomplete="off" value="0.15"><br>
 
-            <label for="space-input">间隔</label>
-            <input type="range" id="space-input" min="1" max="8" step="0.2" autocomplete="off" value="4"><br>
+            <label for="rotation-input">旋转角度</label>
+            <input type="range" id="rotation-input" min="-180" max="180" step="1" autocomplete="off" value="-45"><br>
+
+            <label for="space-input" class="tile-only">间隔</label>
+            <input type="range" id="space-input" min="1" max="8" step="0.2" autocomplete="off" value="4" class="tile-only"><br class="tile-only">
 
             <label for="size-input">字号</label>
-            <input type="range" id="size-input" min="0.5" max="3" step="0.05" autocomplete="off" value="1">
+            <input type="range" id="size-input" min="0.5" max="10" step="0.05" autocomplete="off" value="1">
         </p>
 
         <label for="text-input">第三步：点击图片下载</label>
@@ -113,12 +140,13 @@ permalink: water.html
     <script>
         (function() {
             var $, autoRefreshCheckbox, canvas, dataURItoBlob, drawText, file, generateFileName, graphOutput, imageInput, input, inputItems, makeStyle, readFile, redraw, refreshButton, textCtx;
+            var watermarkMode = 'phrase'; // 默认短语模式
 
             $ = function(sel) {
                 return document.querySelector(sel);
             };
 
-            inputItems = ['text-input', 'color-input', 'alpha-input', 'space-input', 'size-input'];
+            inputItems = ['text-input', 'color-input', 'alpha-input', 'rotation-input', 'space-input', 'size-input'];
 
             input = {};
 
@@ -137,6 +165,33 @@ permalink: water.html
             textCtx = null;
 
             redraw = null;
+
+            // 水印模式按钮
+            var modePhraseButton = $('#mode-phrase');
+            var modeTileButton = $('#mode-tile');
+            var tileOnlyElements = document.querySelectorAll('.tile-only');
+
+            function updateWatermarkMode(mode) {
+                watermarkMode = mode;
+                if (watermarkMode === 'phrase') {
+                    modePhraseButton.classList.add('active');
+                    modeTileButton.classList.remove('active');
+                    tileOnlyElements.forEach(el => el.style.display = 'none');
+                } else {
+                    modeTileButton.classList.add('active');
+                    modePhraseButton.classList.remove('active');
+                    tileOnlyElements.forEach(el => el.style.display = 'inline-block');
+                }
+                drawText(); // 切换模式后立即刷新水印
+            }
+
+            modePhraseButton.addEventListener('click', function() {
+                updateWatermarkMode('phrase');
+            });
+
+            modeTileButton.addEventListener('click', function() {
+                updateWatermarkMode('tile');
+            });
 
             dataURItoBlob = function(dataURI) {
                 var arr, binStr, i, k, len, ref;
@@ -182,10 +237,9 @@ permalink: water.html
                         ctx = canvas.getContext('2d');
                         ctx.drawImage(img, 0, 0);
                         redraw = function() {
-                            ctx.rotate(315 * Math.PI / 180);
+                            // 修正清除和重绘逻辑，确保旋转角度在绘制水印前被正确设置
                             ctx.clearRect(0, 0, canvas.width, canvas.height);
                             ctx.drawImage(img, 0, 0);
-                            return ctx.rotate(45 * Math.PI / 180);
                         };
                         drawText();
                         graphOutput.innerHTML = '';
@@ -216,34 +270,68 @@ permalink: water.html
             };
 
             drawText = function() {
-                var i, j, k, l, margin, ref, ref1, ref2, step, textSize, width, x, y;
                 if (canvas == null) {
                     return;
                 }
-                textSize = input['size-input'].value * Math.max(15, (Math.min(canvas.width, canvas.height)) / 25);
-                if (textCtx != null) {
-                    redraw();
-                } else {
+
+                if (textCtx == null) {
                     textCtx = canvas.getContext('2d');
-                    textCtx.rotate(45 * Math.PI / 180);
                 }
+
+                // 每次绘制前重置画布，并绘制原始图片
+                redraw();
+
                 textCtx.fillStyle = makeStyle();
-                textCtx.font = 'bold ' + textSize + 'px -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif';
+                textCtx.font = 'bold ' + (input['size-input'].value * Math.max(15, (Math.min(canvas.width, canvas.height)) / 25)) + 'px -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif';
                 textCtx.textBaseline = 'middle'; // 将文本基线设置为中间
-                width = (textCtx.measureText(input['text-input'].value)).width;
-                step = Math.sqrt((Math.pow(canvas.width, 2)) + (Math.pow(canvas.height, 2)));
-                margin = (textCtx.measureText('啊')).width;
-                x = Math.ceil(step / (width + margin));
-                y = Math.ceil((step / (input['space-input'].value * textSize)) / 2);
 
-                // 调整起始绘制位置，使其更靠近左侧
-                const startX = -canvas.width * 0.5; // 根据画布宽度调整起始X坐标
-                const startY = -canvas.height * 0.5; // 根据画布高度调整起始Y坐标
+                const textToDraw = input['text-input'].value;
+                if (!textToDraw) return; // 如果没有文字，则不绘制
 
-                for (i = k = 0, ref = x * 2; (0 <= ref ? k <= ref : k >= ref); i = 0 <= ref ? ++k : --k) { // 增加循环范围以覆盖更多区域
-                    for (j = l = ref1 = -y * 2, ref2 = y * 2; (ref1 <= ref2 ? l <= ref2 : l >= ref2); j = ref1 <= ref2 ? ++l : --l) { // 增加循环范围
-                        textCtx.fillText(input['text-input'].value, startX + (width + margin) * i, startY + input['space-input'].value * textSize * j);
+                const rotationDegrees = parseFloat(input['rotation-input'].value);
+                const rotationRadians = rotationDegrees * Math.PI / 180;
+
+                if (watermarkMode === 'phrase') {
+                    // 短语模式：只在图片中央或指定位置绘制一次
+                    textCtx.save(); // 保存当前状态
+                    textCtx.translate(canvas.width / 2, canvas.height / 2); // 移动到图片中心
+                    textCtx.rotate(rotationRadians); // 应用用户设定的旋转角度
+                    textCtx.textAlign = 'center'; // 文本居中对齐
+                    textCtx.fillText(textToDraw, 0, 0);
+                    textCtx.restore(); // 恢复之前保存的状态
+                } else {
+                    // 平铺模式
+                    textCtx.save(); // 保存当前状态
+                    textCtx.translate(canvas.width / 2, canvas.height / 2); // 移动到画布中心
+                    textCtx.rotate(rotationRadians); // 应用用户设定的旋转角度
+
+                    const textSize = input['size-input'].value * Math.max(15, (Math.min(canvas.width, canvas.height)) / 25);
+                    const width = (textCtx.measureText(textToDraw)).width;
+                    const textHeight = textSize; // 近似文本高度
+                    const effectiveSpace = input['space-input'].value * textSize;
+
+                    // 计算需要平铺的区域（考虑旋转后可能覆盖的范围）
+                    const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+                    const padding = diagonal * 0.1; // 增加一些内边距以确保覆盖
+                    const maxDim = Math.max(canvas.width, canvas.height) + padding;
+
+
+                    const numCols = Math.ceil(maxDim / (width + effectiveSpace));
+                    const numRows = Math.ceil(maxDim / (textHeight + effectiveSpace));
+
+
+                    // 调整起始绘制位置，使其平铺中心对齐
+                    const startX = -((numCols * (width + effectiveSpace)) / 2);
+                    const startY = -((numRows * (textHeight + effectiveSpace)) / 2);
+
+
+                    for (let i = 0; i < numCols * 2; i++) { // 扩大循环范围确保完全覆盖
+                        for (let j = 0; j < numRows * 2; j++) { // 扩大循环范围确保完全覆盖
+                            textCtx.fillText(textToDraw, startX + i * (width + effectiveSpace), startY + j * (textHeight + effectiveSpace));
+                        }
                     }
+
+                    textCtx.restore(); // 恢复之前保存的状态
                 }
             };
 
@@ -275,11 +363,11 @@ permalink: water.html
                 return refreshButton.addEventListener('click', drawText);
             });
 
+            // 初始化时设置水印模式
+            updateWatermarkMode(watermarkMode);
+
         }).call(this);
     </script>
 </body>
-
-</html>
-
 
 </html>
