@@ -171,8 +171,10 @@ permalink: utm.html
 
 <div class="utm-tool-container">
   <h3>输入链接</h3>
-  <textarea id="textarea1" class="utm-tool-textarea" rows="4" placeholder="在此粘贴您的原始链接..."></textarea>
-
+  <div class="utm-tool-copy-container">
+    <button class="utm-tool-copy-btn" id="cleanButton" onclick="removeUrlParameters()">清理参数</button>
+    <textarea id="textarea1" class="utm-tool-textarea" rows="4" placeholder="在此粘贴您的原始链接..."></textarea>
+  </div>  
   <h3>配置 UTM 参数</h3>
   
   <div class="utm-tool-medium-box">
@@ -374,5 +376,39 @@ permalink: utm.html
     } catch (err) {
       result.innerText = '请求失败：' + err;
     }
+  }
+
+  async function removeUrlParameters() {
+    const romove_url = document.getElementById('textarea1').value;
+    let urlObj = new URL(romove_url);
+    let params = new URLSearchParams(urlObj.search);
+
+    let allowedParams = new URLSearchParams();
+
+    for (let [key, value] of params.entries()) {
+        if (key === 'ids') {
+            allowedParams.append(key, value);
+        }
+    }
+
+    const temp_params = allowedParams.toString();
+    const newUrl = urlObj.origin + urlObj.pathname + (temp_params ? '?' + temp_params : '');
+    document.getElementById('textarea1').value = newUrl;
+    try {
+        await navigator.clipboard.writeText(newUrl);
+        console.log('Text copied to clipboard: ' + newUrl);
+    } catch (err) {
+        console.error('Failed to copy text: ', err);
+    }
+    let btn = document.getElementById('cleanButton');
+    btn.classList.add('cleaned');
+    btn.textContent = '√ 已清理';
+
+    // 3秒后恢复按钮文字
+    setTimeout(function () {
+      btn.classList.remove('cleaned');
+      btn.textContent = '清理参数';
+    }, 3000);
+    updateUTM();
   }
 </script>
