@@ -9,14 +9,15 @@ date: 2026-07-24 11:15 +0800
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宝可梦 去皮去伊地区分布</title>
-    <style> 
-        body {
+    <title>宝可梦 去皮去伊 - 完整遭遇数据（命名空间CSS）</title>
+    <style>
+        /* 所有样式限定在 .pokemon-encounter-app 下，避免全局冲突 */
+        .pokemon-encounter-app {
             font-family: "Microsoft YaHei", sans-serif;
             background: #f4f4f4;
             margin: 20px;
         }
-        .nav-buttons {
+        .pokemon-encounter-app .nav-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -26,7 +27,7 @@ date: 2026-07-24 11:15 +0800
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .nav-buttons a {
+        .pokemon-encounter-app .nav-buttons a {
             display: inline-block;
             padding: 8px 16px;
             background: #3b4cca;
@@ -36,8 +37,8 @@ date: 2026-07-24 11:15 +0800
             font-size: 14px;
             transition: background 0.3s;
         }
-        .nav-buttons a:hover { background: #2a3a9e; }
-        table {
+        .pokemon-encounter-app .nav-buttons a:hover { background: #2a3a9e; }
+        .pokemon-encounter-app table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 40px;
@@ -46,60 +47,68 @@ date: 2026-07-24 11:15 +0800
             border-radius: 8px;
             overflow: hidden;
         }
-        th {
+        .pokemon-encounter-app th {
             background: #3b4cca;
             color: white;
             padding: 12px 8px;
             text-align: center;
             font-size: 16px;
         }
-        td {
+        .pokemon-encounter-app td {
             padding: 8px 6px;
             text-align: center;
             border-bottom: 1px solid #eee;
             font-size: 14px;
         }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        tr:hover { background-color: #e6f0ff; }
-        .zone-header {
+        .pokemon-encounter-app tr:nth-child(even) { background-color: #f9f9f9; }
+        .pokemon-encounter-app tr:hover { background-color: #e6f0ff; }
+        .pokemon-encounter-app .zone-header {
             background: #ffcb05;
             color: #2a3a9e;
             font-size: 20px;
             font-weight: bold;
             text-align: center;
         }
-        .zone-header th {
+        .pokemon-encounter-app .zone-header th {
             background: #ffcb05;
             color: #2a3a9e;
             font-size: 22px;
         }
-        .capture-badge {
+        .pokemon-encounter-app .capture-badge {
             display: inline-block;
             padding: 2px 10px;
             border-radius: 12px;
             font-size: 12px;
             font-weight: bold;
         }
-        .badge-normal { background: #a8a878; color: white; }
-        .badge-water { background: #6890f0; color: white; }
-        .badge-sky { background: #a890f0; color: white; }
-        img {
+        .pokemon-encounter-app .badge-normal { background: #a8a878; color: white; }
+        .pokemon-encounter-app .badge-water { background: #6890f0; color: white; }
+        .pokemon-encounter-app .badge-sky { background: #a890f0; color: white; }
+        .pokemon-encounter-app img {
             vertical-align: middle;
             width: 40px;
             height: 40px;
         }
         @media (max-width: 600px) {
-            table { font-size: 12px; }
-            td, th { padding: 4px; }
-            img { width: 30px; height: 30px; }
+            .pokemon-encounter-app table { font-size: 12px; }
+            .pokemon-encounter-app td, .pokemon-encounter-app th { padding: 4px; }
+            .pokemon-encounter-app img { width: 30px; height: 30px; }
         }
-        .loading { text-align: center; padding: 50px; font-size: 20px; color: #3b4cca; }
+        .pokemon-encounter-app .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 20px;
+            color: #3b4cca;
+        }
     </style>
 </head>
 <body>
-    <div id="nav" class="nav-buttons"></div>
-    <div id="tables-container"></div>
-    <div id="loading" class="loading">⏳ 正在解析数据并生成表格…</div>
+    <div class="pokemon-encounter-app">
+        <h1 style="text-align:center; color:#3b4cca;">宝可梦 去皮去伊 - 完整遭遇数据（归一化+排序）</h1>
+        <div id="nav" class="nav-buttons"></div>
+        <div id="tables-container"></div>
+        <div id="loading" class="loading">⏳ 正在解析数据并生成表格…</div>
+    </div>
 
     <script>
         // ============================================================
