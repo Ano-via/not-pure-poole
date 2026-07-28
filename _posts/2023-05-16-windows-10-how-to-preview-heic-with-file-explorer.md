@@ -12,8 +12,8 @@ win10系统已经支持 **heic** 格式，通过 **Microsoft Store** 下载即�
 
 **下载HEIF / HEVC扩展库：**
 
-1. [HEIF图像扩展](https://apps.microsoft.com/store/detail/heif-image-extensions/9PMMSR1CGPWG?hl=en-us&gl=us)
-2. [来自设备制造商的HEVC 视频扩展](https://apps.microsoft.com/store/detail/hevc-video-extensions-from-device-manufacturer/9N4WGH0Z6VHQ?hl=en-us&gl=us)
+1. [HEIF图像扩展](https://apps.microsoft.com/store/detail/heif-image-extensions/9PMMSR1CGPWG?hl=en-us&gl=us) [备用链接](https://url00.ctfile.com/f/65647600-17569859797861-45c4ce?p=2821)
+2. [来自设备制造商的HEVC 视频扩展](https://apps.microsoft.com/store/detail/hevc-video-extensions-from-device-manufacturer/9N4WGH0Z6VHQ?hl=en-us&gl=us) [备用链接](https://url00.ctfile.com/f/65647600-17569859797840-4b396f?p=2821)
 
 ---
 如果你 **无法通过 Microsoft Store 下载**，你可能需要打开[这个网址](https://store.rg-adguard.net/)，然后将上述的网址站在输入框中，再下载后缀为 **appxbundle** 的文件并安装。
