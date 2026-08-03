@@ -4,26 +4,164 @@ title: "hashtag处理"
 permalink: hashtag.html
 ---
 
-<textarea id="myText" rows="10" cols="50">
-</textarea>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 使用命名空间 .tk- (TikTok) 防止 CSS 冲突 */
+        
+        /* 页面整体布局 */
+        .tk-page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5; /* 浅灰色背景 */
+        }
 
-<button onclick="replaceAndCopy()">处理并复制</button>
+        /* 主卡片容器 */
+        .tk-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* 文本域样式 */
+        .tk-textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.5;
+            resize: vertical; /* 允许垂直调整大小 */
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        /* 文本域聚焦状态 */
+        .tk-textarea:focus {
+            outline: none;
+            border-color: #fe2c55; /* TikTok 风格主题色 */
+        }
+
+        /* 按钮样式 */
+        .tk-button {
+            background-color: #fe2c55; /* TikTok 风格主题色 */
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(254, 44, 85, 0.3);
+        }
+
+        /* 按钮悬停状态 */
+        .tk-button:hover {
+            background-color: #e9264e;
+        }
+
+        /* 按钮点击状态 */
+        .tk-button:active {
+            transform: scale(0.98); /* 点击时轻微缩小 */
+        }
+
+        /* 提示框 (Snackbar) 样式 */
+        .tk-snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* 显示提示框时的状态 */
+        .tk-snackbar.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- 页面包裹层，用于居中 -->
+<div class="tk-page-wrapper">
+    <!-- 内容卡片容器 -->
+    <div class="tk-container">
+        <textarea id="myText" class="tk-textarea" placeholder="在此输入或粘贴文本..."></textarea>
+        <br>
+        <!-- 优化后的按钮 -->
+        <button class="tk-button" onclick="replaceAndCopy()">处理并复制</button>
+    </div>
+</div>
+
+<!-- 提示框元素 -->
+<div id="tkSnackbar" class="tk-snackbar">处理完成，已复制！</div>
 
 <script>
 async function replaceAndCopy() {
     let textarea = document.getElementById("myText");
 
+    // ---------------- 逻辑部分（保持不变） ----------------
     let endString = " #tiktokshopdealsforyoudays #dealsforyoudays #summerwins "; // 需要添加的字符串
 
     let text = textarea.value
-        .replace(/ [Xx]/g, "")  // 去掉 X/x
+        .replace(/ [Xx]/g, "")  // 去掉 X/x (保留了前面的空格匹配，更精准)
         .replace(/\s+/g, " ")   // 去掉换行，合并空格
         .trim() + endString;    // 最后添加字符串
+    // ---------------- ---------------- ----------------
 
     textarea.value = text;
 
-    await navigator.clipboard.writeText(text);
+    // 写入剪贴板
+    try {
+        await navigator.clipboard.writeText(text);
+        // 显示优化后的提示框
+        showSnackbar();
+    } catch (err) {
+        console.error('复制失败：', err);
+        alert('复制失败，请检查浏览器权限。');
+    }
+}
 
-    alert("处理完成，已复制！");
+// 显示 Snackbar 提示的函数
+function showSnackbar() {
+    let x = document.getElementById("tkSnackbar");
+    x.className = "tk-snackbar show";
+    // 3秒后隐藏
+    setTimeout(function(){ 
+        x.className = x.className.replace("show", ""); 
+    }, 3000);
 }
 </script>
+
+</body>
+</html>
