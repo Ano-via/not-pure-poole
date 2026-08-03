@@ -1,0 +1,29 @@
+---
+layout: post
+title: "hashtag处理"
+permalink: hashtag.html
+---
+
+<textarea id="myText" rows="10" cols="50">
+</textarea>
+
+<button onclick="replaceAndCopy()">处理并复制</button>
+
+<script>
+async function replaceAndCopy() {
+    let textarea = document.getElementById("myText");
+
+    let endString = " #tiktokshopdealsforyoudays #dealsforyoudays #summerwins "; // 需要添加的字符串
+
+    let text = textarea.value
+        .replace(/ [Xx]/g, "")  // 去掉 X/x
+        .replace(/\s+/g, " ")   // 去掉换行，合并空格
+        .trim() + endString;    // 最后添加字符串
+
+    textarea.value = text;
+
+    await navigator.clipboard.writeText(text);
+
+    alert("处理完成，已复制！");
+}
+</script>
