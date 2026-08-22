@@ -765,7 +765,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -778,7 +778,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -791,7 +791,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/007.png"></td>
             <td>杰尼龟</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -804,7 +804,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -817,7 +817,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -830,7 +830,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/001.png"></td>
             <td>妙蛙种子</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -843,7 +843,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
             <td>波波</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -856,7 +856,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -869,7 +869,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
             <td>波波</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -882,7 +882,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -895,7 +895,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -908,7 +908,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -921,7 +921,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/399.png"></td>
             <td>大牙狸</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -934,7 +934,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -947,7 +947,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -960,7 +960,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -973,7 +973,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -986,7 +986,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -999,7 +999,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -1012,7 +1012,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -1025,7 +1025,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1038,7 +1038,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1051,7 +1051,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1064,7 +1064,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1077,7 +1077,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -1090,7 +1090,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -1103,7 +1103,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -1116,7 +1116,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -1129,7 +1129,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -1142,7 +1142,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
             <td>可达鸭</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -1155,7 +1155,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -1168,7 +1168,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -1181,7 +1181,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1194,7 +1194,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1207,7 +1207,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1220,7 +1220,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -1233,7 +1233,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1246,7 +1246,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1259,7 +1259,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1272,7 +1272,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1285,7 +1285,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1298,7 +1298,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1311,7 +1311,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
             <td>可达鸭</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1324,7 +1324,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/008.png"></td>
             <td>卡咪龟</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1337,7 +1337,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
             <td>可达鸭</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1350,7 +1350,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
             <td>哥达鸭</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1363,7 +1363,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1376,7 +1376,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1389,7 +1389,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1402,7 +1402,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1415,7 +1415,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1428,7 +1428,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1441,7 +1441,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
             <td>哥达鸭</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1454,7 +1454,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
             <td>哥达鸭</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1467,7 +1467,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1480,7 +1480,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1493,7 +1493,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1506,7 +1506,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1519,7 +1519,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1532,7 +1532,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1545,7 +1545,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1558,7 +1558,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1571,7 +1571,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1584,7 +1584,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1597,7 +1597,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1610,7 +1610,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1623,7 +1623,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1636,7 +1636,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1649,7 +1649,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1662,7 +1662,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1675,7 +1675,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1688,7 +1688,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1701,7 +1701,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1714,7 +1714,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1727,7 +1727,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1740,7 +1740,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -1753,7 +1753,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1766,7 +1766,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1779,7 +1779,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/564.png"></td>
             <td>原盖海龟</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1792,7 +1792,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/564.png"></td>
             <td>原盖海龟</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1805,7 +1805,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/564.png"></td>
             <td>原盖海龟</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1818,7 +1818,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1831,7 +1831,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
             <td>玛瑙水母</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1844,7 +1844,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
             <td>玛瑙水母</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1857,7 +1857,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
             <td>毒刺水母</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1870,7 +1870,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
             <td>毒刺水母</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1883,7 +1883,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1896,7 +1896,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1909,7 +1909,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1922,7 +1922,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1935,7 +1935,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1948,7 +1948,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1961,7 +1961,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
             <td>呆呆兽</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -1974,7 +1974,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
             <td>呆呆兽</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -1987,7 +1987,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -2000,7 +2000,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>2</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -7148,7 +7148,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7161,7 +7161,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/067.png"></td>
             <td>豪力</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7174,7 +7174,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/557.png"></td>
             <td>石居蟹</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7187,7 +7187,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7200,7 +7200,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7213,7 +7213,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7226,7 +7226,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7239,7 +7239,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7252,7 +7252,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7265,7 +7265,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7278,7 +7278,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7291,7 +7291,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7304,7 +7304,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7317,7 +7317,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7330,7 +7330,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7343,7 +7343,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
             <td>凯罗斯</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7356,7 +7356,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
             <td>袋兽</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7369,7 +7369,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
             <td>凯罗斯</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7382,7 +7382,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
             <td>袋兽</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7395,7 +7395,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
             <td>袋兽</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7408,7 +7408,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7421,7 +7421,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7434,7 +7434,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7447,7 +7447,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/447.png"></td>
             <td>利欧路</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7460,7 +7460,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/553.png"></td>
             <td>流氓鳄</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7473,7 +7473,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7486,7 +7486,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7499,7 +7499,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7512,7 +7512,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7525,7 +7525,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7538,7 +7538,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7551,7 +7551,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7564,7 +7564,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7577,7 +7577,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7590,7 +7590,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7603,7 +7603,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7616,7 +7616,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7629,7 +7629,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7642,7 +7642,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/142.png"></td>
             <td>化石翼龙</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7655,7 +7655,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/141.png"></td>
             <td>镰刀盔</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7668,7 +7668,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7681,7 +7681,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/142.png"></td>
             <td>化石翼龙</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7694,7 +7694,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/141.png"></td>
             <td>镰刀盔</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7707,7 +7707,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7720,7 +7720,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7733,7 +7733,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7746,7 +7746,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7759,7 +7759,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/448.png"></td>
             <td>路卡利欧</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7772,7 +7772,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/066.png"></td>
             <td>腕力</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7785,7 +7785,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7798,7 +7798,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7811,7 +7811,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7824,7 +7824,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7837,7 +7837,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7850,7 +7850,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7863,7 +7863,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7876,7 +7876,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7889,7 +7889,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7902,7 +7902,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -7915,7 +7915,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7928,7 +7928,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -7941,7 +7941,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7954,7 +7954,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/217.png"></td>
             <td>圈圈熊</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -7967,7 +7967,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7980,7 +7980,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -7993,7 +7993,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/217.png"></td>
             <td>圈圈熊</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8006,7 +8006,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/143.png"></td>
             <td>卡比兽</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8019,7 +8019,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8032,7 +8032,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8045,7 +8045,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8058,7 +8058,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8071,7 +8071,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8084,7 +8084,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/449.png"></td>
             <td>沙河马</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8097,7 +8097,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8110,7 +8110,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8123,7 +8123,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8136,7 +8136,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8149,7 +8149,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8162,7 +8162,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8175,7 +8175,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8188,7 +8188,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8201,7 +8201,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8214,7 +8214,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8227,7 +8227,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8240,7 +8240,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8253,7 +8253,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8266,7 +8266,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/227.png"></td>
             <td>盔甲鸟</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8279,7 +8279,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/232.png"></td>
             <td>顿甲</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8292,7 +8292,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/219.png"></td>
             <td>熔岩蜗牛</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8305,7 +8305,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/227.png"></td>
             <td>盔甲鸟</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8318,7 +8318,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/232.png"></td>
             <td>顿甲</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8331,7 +8331,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/219.png"></td>
             <td>熔岩蜗牛</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8344,7 +8344,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8357,7 +8357,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8370,7 +8370,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>23</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8383,7 +8383,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/328.png"></td>
             <td>大颚蚁</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8396,7 +8396,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/068.png"></td>
             <td>怪力</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8409,7 +8409,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/553.png"></td>
             <td>流氓鳄</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8422,7 +8422,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8435,7 +8435,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8448,7 +8448,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8461,7 +8461,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8474,7 +8474,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8487,7 +8487,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8500,7 +8500,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8513,7 +8513,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8526,7 +8526,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8539,7 +8539,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8552,7 +8552,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8565,7 +8565,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8578,7 +8578,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/303.png"></td>
             <td>大嘴娃</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8591,7 +8591,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/248.png"></td>
             <td>班基拉斯</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8604,7 +8604,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8617,7 +8617,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/303.png"></td>
             <td>大嘴娃</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8630,7 +8630,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/248.png"></td>
             <td>班基拉斯</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8643,7 +8643,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8656,7 +8656,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8669,7 +8669,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8682,7 +8682,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/329.png"></td>
             <td>超音波幼虫</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8695,7 +8695,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/554.png"></td>
             <td>火红不倒翁</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8708,7 +8708,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8721,7 +8721,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8734,7 +8734,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8747,7 +8747,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/237.png"></td>
             <td>战舞郎</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8760,7 +8760,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8773,7 +8773,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/237.png"></td>
             <td>战舞郎</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8786,7 +8786,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8799,7 +8799,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8812,7 +8812,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8825,7 +8825,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8838,7 +8838,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8851,7 +8851,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8864,7 +8864,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -8877,7 +8877,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/306.png"></td>
             <td>波士可多拉</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8890,7 +8890,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -8903,7 +8903,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8916,7 +8916,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/306.png"></td>
             <td>波士可多拉</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8929,7 +8929,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8942,7 +8942,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8955,7 +8955,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8968,7 +8968,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -8981,7 +8981,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/330.png"></td>
             <td>沙漠蜻蜓</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -8994,7 +8994,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
             <td>小拳石</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9007,7 +9007,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9020,7 +9020,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/479.png"></td>
             <td>洛托姆</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9033,7 +9033,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9046,7 +9046,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9059,7 +9059,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9072,7 +9072,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9085,7 +9085,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9098,7 +9098,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9111,7 +9111,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9124,7 +9124,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9137,7 +9137,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9150,7 +9150,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9163,7 +9163,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9176,7 +9176,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/324.png"></td>
             <td>煤炭龟</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9189,7 +9189,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9202,7 +9202,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/324.png"></td>
             <td>煤炭龟</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9215,7 +9215,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9228,7 +9228,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/324.png"></td>
             <td>煤炭龟</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9241,7 +9241,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9254,7 +9254,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9267,7 +9267,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9280,7 +9280,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9293,7 +9293,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/362.png"></td>
             <td>冰鬼护</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9306,7 +9306,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9319,7 +9319,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/555.png"></td>
             <td>达摩狒狒</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9332,7 +9332,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9345,7 +9345,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9358,7 +9358,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9371,7 +9371,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9384,7 +9384,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9397,7 +9397,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9410,7 +9410,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9423,7 +9423,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9436,7 +9436,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9449,7 +9449,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9462,7 +9462,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9475,7 +9475,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9488,7 +9488,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/330.png"></td>
             <td>沙漠蜻蜓</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9501,7 +9501,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9514,7 +9514,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/330.png"></td>
             <td>沙漠蜻蜓</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9527,7 +9527,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9540,7 +9540,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/330.png"></td>
             <td>沙漠蜻蜓</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9553,7 +9553,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9566,7 +9566,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9579,7 +9579,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9592,7 +9592,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>24</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9605,7 +9605,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/556.png"></td>
             <td>沙铃仙人掌</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9618,7 +9618,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
             <td>隆隆石</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9631,7 +9631,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/555.png"></td>
             <td>达摩狒狒</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9644,7 +9644,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/101.png"></td>
             <td>顽皮雷弹</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9657,7 +9657,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9670,7 +9670,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9683,7 +9683,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9696,7 +9696,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/213.png"></td>
             <td>壶壶</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9709,7 +9709,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9722,7 +9722,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9735,7 +9735,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9748,7 +9748,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9761,7 +9761,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9774,7 +9774,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9787,7 +9787,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9800,7 +9800,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9813,7 +9813,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9826,7 +9826,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9839,7 +9839,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9852,7 +9852,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9865,7 +9865,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9878,7 +9878,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9891,7 +9891,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -9904,7 +9904,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/298.png"></td>
             <td>露力丽</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9917,7 +9917,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/558.png"></td>
             <td>岩殿居蟹</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9930,7 +9930,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -9943,7 +9943,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/100.png"></td>
             <td>霹雳电球</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -9956,7 +9956,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9969,7 +9969,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/213.png"></td>
             <td>壶壶</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9982,7 +9982,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -9995,7 +9995,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/213.png"></td>
             <td>壶壶</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10008,7 +10008,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10021,7 +10021,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10034,7 +10034,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10047,7 +10047,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10060,7 +10060,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10073,7 +10073,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10086,7 +10086,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10099,7 +10099,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10112,7 +10112,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/348.png"></td>
             <td>太古盔甲</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10125,7 +10125,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10138,7 +10138,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/348.png"></td>
             <td>太古盔甲</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10151,7 +10151,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10164,7 +10164,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10177,7 +10177,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10190,7 +10190,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10203,7 +10203,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/298.png"></td>
             <td>露力丽</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10216,7 +10216,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/076.png"></td>
             <td>隆隆岩</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10229,7 +10229,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10242,7 +10242,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10255,7 +10255,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10268,7 +10268,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10281,7 +10281,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10294,7 +10294,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10307,7 +10307,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10320,7 +10320,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10333,7 +10333,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10346,7 +10346,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10359,7 +10359,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10372,7 +10372,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10385,7 +10385,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10398,7 +10398,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10411,7 +10411,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10424,7 +10424,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10437,7 +10437,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10450,7 +10450,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10463,7 +10463,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10476,7 +10476,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10489,7 +10489,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10502,7 +10502,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/361.png"></td>
             <td>雪童子</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10515,7 +10515,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/564.png"></td>
             <td>原盖海龟</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10528,7 +10528,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/559.png"></td>
             <td>滑滑小子</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10541,7 +10541,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/478.png"></td>
             <td>雪妖女</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10554,7 +10554,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10567,7 +10567,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10580,7 +10580,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10593,7 +10593,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/641.png"></td>
             <td>龙卷云</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10606,7 +10606,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/641.png"></td>
             <td>龙卷云</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10619,7 +10619,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10632,7 +10632,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/641.png"></td>
             <td>龙卷云</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10645,7 +10645,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10658,7 +10658,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10671,7 +10671,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10684,7 +10684,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10697,7 +10697,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/411.png"></td>
             <td>护城龙</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10710,7 +10710,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10723,7 +10723,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/411.png"></td>
             <td>护城龙</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10736,7 +10736,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10749,7 +10749,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10762,7 +10762,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10775,7 +10775,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>25</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10788,7 +10788,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/299.png"></td>
             <td>朝北鼻</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10801,7 +10801,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/140.png"></td>
             <td>化石盔</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10814,7 +10814,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/560.png"></td>
             <td>头巾混混</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10827,7 +10827,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10840,7 +10840,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10853,7 +10853,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10866,7 +10866,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10879,7 +10879,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/642.png"></td>
             <td>雷电云</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10892,7 +10892,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10905,7 +10905,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10918,7 +10918,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/642.png"></td>
             <td>雷电云</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -10931,7 +10931,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10944,7 +10944,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -10957,7 +10957,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/611.png"></td>
             <td>斧牙龙</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10970,7 +10970,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -10983,7 +10983,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -10996,7 +10996,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>56</td>
             <td>56</td>
@@ -11009,7 +11009,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>57</td>
             <td>57</td>
@@ -11022,7 +11022,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>57</td>
             <td>57</td>
@@ -11035,7 +11035,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11048,7 +11048,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11061,7 +11061,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11074,7 +11074,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/561.png"></td>
             <td>象征鸟</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11087,7 +11087,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/562.png"></td>
             <td>哭哭面具</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11100,7 +11100,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11113,7 +11113,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/475.png"></td>
             <td>艾路雷朵</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11126,7 +11126,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11139,7 +11139,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11152,7 +11152,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11165,7 +11165,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11178,7 +11178,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11191,7 +11191,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11204,7 +11204,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11217,7 +11217,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11230,7 +11230,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11243,7 +11243,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11256,7 +11256,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11269,7 +11269,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11282,7 +11282,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/611.png"></td>
             <td>斧牙龙</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11295,7 +11295,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11308,7 +11308,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11321,7 +11321,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11334,7 +11334,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11347,7 +11347,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11360,7 +11360,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11373,7 +11373,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11386,7 +11386,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11399,7 +11399,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11412,7 +11412,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11425,7 +11425,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11438,7 +11438,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11451,7 +11451,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11464,7 +11464,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11477,7 +11477,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11490,7 +11490,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11503,7 +11503,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11516,7 +11516,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11529,7 +11529,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11542,7 +11542,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11555,7 +11555,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11568,7 +11568,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>3</td>
             <td>56</td>
             <td>56</td>
@@ -11581,7 +11581,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>3</td>
             <td>57</td>
             <td>57</td>
@@ -11594,7 +11594,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>3</td>
             <td>57</td>
             <td>57</td>
@@ -11607,7 +11607,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11620,7 +11620,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11633,7 +11633,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11646,7 +11646,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11659,7 +11659,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11672,7 +11672,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/563.png"></td>
             <td>死神棺</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11685,7 +11685,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/295.png"></td>
             <td>爆音怪</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11698,7 +11698,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11711,7 +11711,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11724,7 +11724,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11737,7 +11737,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11750,7 +11750,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11763,7 +11763,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11776,7 +11776,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11789,7 +11789,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11802,7 +11802,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -11815,7 +11815,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11828,7 +11828,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/611.png"></td>
             <td>斧牙龙</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11841,7 +11841,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/611.png"></td>
             <td>斧牙龙</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11854,7 +11854,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>2</td>
             <td>56</td>
             <td>56</td>
@@ -11867,7 +11867,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>2</td>
             <td>57</td>
             <td>57</td>
@@ -11880,7 +11880,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>2</td>
             <td>57</td>
             <td>57</td>
@@ -11893,7 +11893,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11906,7 +11906,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11919,7 +11919,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
             <td>26</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11932,7 +11932,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/198.png"></td>
             <td>黑暗鸦</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11945,7 +11945,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/138.png"></td>
             <td>菊石兽</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -11958,7 +11958,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -11971,7 +11971,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/031.png"></td>
             <td>尼多后</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11984,7 +11984,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/030.png"></td>
             <td>尼多娜</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -11997,7 +11997,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
             <td>尼多兰</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12010,7 +12010,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/005.png"></td>
             <td>火恐龙</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12023,7 +12023,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12036,7 +12036,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12049,7 +12049,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12062,7 +12062,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12075,7 +12075,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12088,7 +12088,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12101,7 +12101,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12114,7 +12114,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/610.png"></td>
             <td>牙牙</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12127,7 +12127,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/610.png"></td>
             <td>牙牙</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12140,7 +12140,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>57</td>
             <td>57</td>
@@ -12153,7 +12153,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>58</td>
             <td>58</td>
@@ -12166,7 +12166,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>58</td>
             <td>58</td>
@@ -12179,7 +12179,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12192,7 +12192,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12205,7 +12205,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>27</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12218,7 +12218,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/197.png"></td>
             <td>月亮伊布</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12231,7 +12231,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/137.png"></td>
             <td>多边兽</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12244,7 +12244,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12257,7 +12257,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/034.png"></td>
             <td>尼多王</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12270,7 +12270,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/033.png"></td>
             <td>尼多力诺</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12283,7 +12283,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
             <td>尼多兰</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12296,7 +12296,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/006.png"></td>
             <td>喷火龙</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12309,7 +12309,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12322,7 +12322,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12335,7 +12335,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12348,7 +12348,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12361,7 +12361,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12374,7 +12374,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12387,7 +12387,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/609.png"></td>
             <td>水晶灯火灵</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12400,7 +12400,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12413,7 +12413,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/609.png"></td>
             <td>水晶灯火灵</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12426,7 +12426,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12439,7 +12439,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12452,7 +12452,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12465,7 +12465,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12478,7 +12478,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12491,7 +12491,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12504,7 +12504,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12517,7 +12517,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/212.png"></td>
             <td>巨钳螳螂</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12530,7 +12530,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/399.png"></td>
             <td>大牙狸</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12543,7 +12543,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
             <td>喇叭芽</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12556,7 +12556,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12569,7 +12569,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12582,7 +12582,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12595,7 +12595,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12608,7 +12608,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12621,7 +12621,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12634,7 +12634,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12647,7 +12647,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12660,7 +12660,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/574.png"></td>
             <td>哥德宝宝</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12673,7 +12673,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12686,7 +12686,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/574.png"></td>
             <td>哥德宝宝</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12699,7 +12699,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/574.png"></td>
             <td>哥德宝宝</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12712,7 +12712,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/648.png"></td>
             <td>美洛耶塔</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12725,7 +12725,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/648.png"></td>
             <td>美洛耶塔</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12738,7 +12738,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/648.png"></td>
             <td>美洛耶塔</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12751,7 +12751,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12764,7 +12764,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12777,7 +12777,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12790,7 +12790,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12803,7 +12803,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -12816,7 +12816,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -12829,7 +12829,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
             <td>口呆花</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12842,7 +12842,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12855,7 +12855,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12868,7 +12868,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12881,7 +12881,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/007.png"></td>
             <td>杰尼龟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -12894,7 +12894,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/144.png"></td>
             <td>急冻鸟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12907,7 +12907,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12920,7 +12920,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/144.png"></td>
             <td>急冻鸟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -12933,7 +12933,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/236.png"></td>
             <td>无畏小子</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -12946,7 +12946,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/284.png"></td>
             <td>雨翅蛾</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -12959,7 +12959,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/264.png"></td>
             <td>直冲熊</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>64</td>
             <td>64</td>
@@ -12972,7 +12972,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/085.png"></td>
             <td>嘟嘟利</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -12985,7 +12985,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/084.png"></td>
             <td>嘟嘟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -12998,7 +12998,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13011,7 +13011,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13024,7 +13024,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13037,7 +13037,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/144.png"></td>
             <td>急冻鸟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13050,7 +13050,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/619.png"></td>
             <td>功夫鼬</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13063,7 +13063,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/144.png"></td>
             <td>急冻鸟</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13076,7 +13076,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/574.png"></td>
             <td>哥德宝宝</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13089,7 +13089,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13102,7 +13102,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/574.png"></td>
             <td>哥德宝宝</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13115,7 +13115,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13128,7 +13128,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13141,7 +13141,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13154,7 +13154,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13167,7 +13167,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13180,7 +13180,7 @@ date: 2026-08-22 11:16 +0800
             <td>#N/A</td>
             <td>#N/A</td>
             <td>27</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13193,7 +13193,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/196.png"></td>
             <td>太阳伊布</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13206,7 +13206,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/131.png"></td>
             <td>拉普拉斯</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13219,7 +13219,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
             <td>袋兽</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13232,7 +13232,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/071.png"></td>
             <td>大食花</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13245,7 +13245,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
             <td>六尾</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13258,7 +13258,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/038.png"></td>
             <td>九尾</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13271,7 +13271,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/008.png"></td>
             <td>卡咪龟</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13284,7 +13284,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13297,7 +13297,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13310,7 +13310,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13323,7 +13323,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13336,7 +13336,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13349,7 +13349,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -13362,7 +13362,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/416.png"></td>
             <td>蜂女王</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -13375,7 +13375,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/263.png"></td>
             <td>蛇纹熊</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>64</td>
             <td>64</td>
@@ -13388,7 +13388,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/253.png"></td>
             <td>森林蜥蜴</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13401,7 +13401,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/040.png"></td>
             <td>胖可丁</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13414,7 +13414,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
             <td>胖丁</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13427,7 +13427,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13440,7 +13440,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/143.png"></td>
             <td>卡比兽</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13453,7 +13453,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/253.png"></td>
             <td>森林蜥蜴</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13466,7 +13466,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13479,7 +13479,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13492,7 +13492,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13505,7 +13505,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/576.png"></td>
             <td>哥德小姐</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13518,7 +13518,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13531,7 +13531,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/576.png"></td>
             <td>哥德小姐</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13544,7 +13544,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/576.png"></td>
             <td>哥德小姐</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13557,7 +13557,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/646.png"></td>
             <td>酋雷姆</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13570,7 +13570,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/646.png"></td>
             <td>酋雷姆</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13583,7 +13583,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/646.png"></td>
             <td>酋雷姆</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13596,7 +13596,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13609,7 +13609,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13622,7 +13622,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13635,7 +13635,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/195.png"></td>
             <td>沼王</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13648,7 +13648,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13661,7 +13661,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13674,7 +13674,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/012.png"></td>
             <td>巴大蝶</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13687,7 +13687,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/011.png"></td>
             <td>铁甲蛹</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13700,7 +13700,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/010.png"></td>
             <td>绿毛虫</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13713,7 +13713,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13726,7 +13726,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13739,7 +13739,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13752,7 +13752,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13765,7 +13765,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13778,7 +13778,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -13791,7 +13791,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/194.png"></td>
             <td>乌波</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -13804,7 +13804,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/135.png"></td>
             <td>雷伊布</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -13817,7 +13817,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/262.png"></td>
             <td>大狼犬</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>64</td>
             <td>64</td>
@@ -13830,7 +13830,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/015.png"></td>
             <td>大针蜂</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13843,7 +13843,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/014.png"></td>
             <td>铁壳蛹</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13856,7 +13856,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/013.png"></td>
             <td>独角虫</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -13869,7 +13869,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13882,7 +13882,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13895,7 +13895,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13908,7 +13908,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13921,7 +13921,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13934,7 +13934,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -13947,7 +13947,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/577.png"></td>
             <td>单卵细胞球</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -13960,7 +13960,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13973,7 +13973,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -13986,7 +13986,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -13999,7 +13999,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14012,7 +14012,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14025,7 +14025,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14038,7 +14038,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14051,7 +14051,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14064,7 +14064,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/315.png"></td>
             <td>毒蔷薇</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14077,7 +14077,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/210.png"></td>
             <td>布鲁皇</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14090,7 +14090,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14103,7 +14103,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
             <td>大比鸟</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14116,7 +14116,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
             <td>比比鸟</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14129,7 +14129,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
             <td>波波</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14142,7 +14142,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/009.png"></td>
             <td>水箭龟</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14155,7 +14155,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14168,7 +14168,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14181,7 +14181,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14194,7 +14194,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14207,7 +14207,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14220,7 +14220,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/193.png"></td>
             <td>蜻蜻蜓</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -14233,7 +14233,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/136.png"></td>
             <td>火伊布</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -14246,7 +14246,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>64</td>
             <td>64</td>
@@ -14259,7 +14259,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/254.png"></td>
             <td>蜥蜴王</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14272,7 +14272,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
             <td>大嘴雀</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14285,7 +14285,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
             <td>烈雀</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14298,7 +14298,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/254.png"></td>
             <td>蜥蜴王</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14311,7 +14311,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14324,7 +14324,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14337,7 +14337,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14350,7 +14350,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14363,7 +14363,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14376,7 +14376,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/578.png"></td>
             <td>双卵细胞球</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14389,7 +14389,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14402,7 +14402,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/494.png"></td>
             <td>比克提尼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14415,7 +14415,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/494.png"></td>
             <td>比克提尼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14428,7 +14428,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14441,7 +14441,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14454,7 +14454,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14467,7 +14467,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14480,7 +14480,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14493,7 +14493,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14506,7 +14506,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14519,7 +14519,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/333.png"></td>
             <td>青绵鸟</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14532,7 +14532,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/024.png"></td>
             <td>阿柏怪</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14545,7 +14545,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/023.png"></td>
             <td>阿柏蛇</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14558,7 +14558,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/452.png"></td>
             <td>龙王蝎</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14571,7 +14571,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14584,7 +14584,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14597,7 +14597,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/452.png"></td>
             <td>龙王蝎</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14610,7 +14610,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14623,7 +14623,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14636,7 +14636,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -14649,7 +14649,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/191.png"></td>
             <td>向日种子</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -14662,7 +14662,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/415.png"></td>
             <td>三蜜蜂</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>63</td>
             <td>63</td>
@@ -14675,7 +14675,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/334.png"></td>
             <td>七夕青鸟</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>64</td>
             <td>64</td>
@@ -14688,7 +14688,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
             <td>拉达</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14701,7 +14701,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14714,7 +14714,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14727,7 +14727,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14740,7 +14740,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>65</td>
             <td>65</td>
@@ -14753,7 +14753,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14766,7 +14766,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14779,7 +14779,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14792,7 +14792,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>66</td>
             <td>66</td>
@@ -14805,7 +14805,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/579.png"></td>
             <td>人造细胞卵</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -14818,7 +14818,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14831,7 +14831,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/493.png"></td>
             <td>阿尔宙斯</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -14844,7 +14844,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/493.png"></td>
             <td>阿尔宙斯</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14857,7 +14857,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14870,7 +14870,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14883,7 +14883,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14896,7 +14896,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -14909,7 +14909,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -15351,7 +15351,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15364,7 +15364,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -15377,7 +15377,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15390,7 +15390,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15403,7 +15403,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15416,7 +15416,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15429,7 +15429,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15442,7 +15442,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
             <td>大钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15455,7 +15455,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
             <td>大钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15468,7 +15468,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
             <td>大钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15481,7 +15481,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15494,7 +15494,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15507,7 +15507,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15520,7 +15520,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15533,7 +15533,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/149.png"></td>
             <td>快龙</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15546,7 +15546,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -15559,7 +15559,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -15572,7 +15572,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
             <td>巨钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15585,7 +15585,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
             <td>巨钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15598,7 +15598,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
             <td>巨钳蟹</td>
             <td>28</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -15611,7 +15611,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15624,7 +15624,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -15637,7 +15637,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15650,7 +15650,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15663,7 +15663,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15676,7 +15676,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15689,7 +15689,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15702,7 +15702,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15715,7 +15715,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15728,7 +15728,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15741,7 +15741,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15754,7 +15754,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -15767,7 +15767,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15780,7 +15780,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15793,7 +15793,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/149.png"></td>
             <td>快龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15806,7 +15806,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15819,7 +15819,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15832,7 +15832,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15845,7 +15845,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15858,7 +15858,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
             <td>28</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15871,7 +15871,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -15884,7 +15884,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -15897,7 +15897,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15910,7 +15910,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15923,7 +15923,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15936,7 +15936,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15949,7 +15949,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -15962,7 +15962,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15975,7 +15975,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -15988,7 +15988,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16001,7 +16001,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -16014,7 +16014,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -16027,7 +16027,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16040,7 +16040,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16053,7 +16053,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/149.png"></td>
             <td>快龙</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16066,7 +16066,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16079,7 +16079,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16092,7 +16092,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16105,7 +16105,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16118,7 +16118,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>28</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16131,7 +16131,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -16144,7 +16144,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -16157,7 +16157,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16170,7 +16170,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16183,7 +16183,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16196,7 +16196,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16209,7 +16209,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16222,7 +16222,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16235,7 +16235,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16248,7 +16248,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16261,7 +16261,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -16274,7 +16274,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -16287,7 +16287,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16300,7 +16300,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16313,7 +16313,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/149.png"></td>
             <td>快龙</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16326,7 +16326,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16339,7 +16339,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>45</td>
             <td>60</td>
@@ -16352,7 +16352,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16365,7 +16365,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16378,7 +16378,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>28</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -16391,7 +16391,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/463.png"></td>
             <td>大舌舔</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -16404,7 +16404,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -16417,7 +16417,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/623.png"></td>
             <td>泥偶巨人</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -16430,7 +16430,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -16443,7 +16443,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/467.png"></td>
             <td>鸭嘴炎兽</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -16456,7 +16456,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/460.png"></td>
             <td>暴雪王</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -16469,7 +16469,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/478.png"></td>
             <td>雪妖女</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16482,7 +16482,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/640.png"></td>
             <td>毕力吉翁</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16495,7 +16495,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/477.png"></td>
             <td>黑夜魔灵</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16508,7 +16508,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/640.png"></td>
             <td>毕力吉翁</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16521,7 +16521,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/640.png"></td>
             <td>毕力吉翁</td>
             <td>29</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16534,7 +16534,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -16547,7 +16547,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/295.png"></td>
             <td>爆音怪</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -16560,7 +16560,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/623.png"></td>
             <td>泥偶巨人</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -16573,7 +16573,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/389.png"></td>
             <td>土台龟</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -16586,7 +16586,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/204.png"></td>
             <td>榛果球</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -16599,7 +16599,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/373.png"></td>
             <td>暴飞龙</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -16612,7 +16612,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/332.png"></td>
             <td>梦歌仙人掌</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16625,7 +16625,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/303.png"></td>
             <td>大嘴娃</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16638,7 +16638,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16651,7 +16651,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/332.png"></td>
             <td>梦歌仙人掌</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16664,7 +16664,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/303.png"></td>
             <td>大嘴娃</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16677,7 +16677,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
             <td>30</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>58</td>
             <td>58</td>
@@ -16690,7 +16690,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -16703,7 +16703,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/122.png"></td>
             <td>魔墙人偶</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -16716,7 +16716,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/097.png"></td>
             <td>引梦貘人</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>48</td>
             <td>48</td>
@@ -16729,7 +16729,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/229.png"></td>
             <td>黑鲁加</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>48</td>
             <td>48</td>
@@ -16742,7 +16742,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/205.png"></td>
             <td>佛烈托斯</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -16755,7 +16755,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/254.png"></td>
             <td>蜥蜴王</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -16768,7 +16768,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/122.png"></td>
             <td>魔墙人偶</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16781,7 +16781,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/162.png"></td>
             <td>大尾立</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16794,7 +16794,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/136.png"></td>
             <td>火伊布</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16807,7 +16807,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16820,7 +16820,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/162.png"></td>
             <td>大尾立</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16833,7 +16833,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/136.png"></td>
             <td>火伊布</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16846,7 +16846,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -16859,7 +16859,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>48</td>
             <td>48</td>
@@ -16872,7 +16872,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -16885,7 +16885,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/409.png"></td>
             <td>战槌龙</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -16898,7 +16898,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16911,7 +16911,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/409.png"></td>
             <td>战槌龙</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16924,7 +16924,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16937,7 +16937,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16950,7 +16950,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>31</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -16963,7 +16963,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
             <td>蔓藤怪</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -16976,7 +16976,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -16989,7 +16989,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/077.png"></td>
             <td>小火马</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17002,7 +17002,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17015,7 +17015,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17028,7 +17028,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/235.png"></td>
             <td>图图犬</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17041,7 +17041,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17054,7 +17054,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17067,7 +17067,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17080,7 +17080,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17093,7 +17093,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17106,7 +17106,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17119,7 +17119,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
             <td>蔓藤怪</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -17132,7 +17132,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -17145,7 +17145,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/078.png"></td>
             <td>烈焰马</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -17158,7 +17158,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
             <td>凯罗斯</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -17171,7 +17171,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/301.png"></td>
             <td>优雅猫</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -17184,7 +17184,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/234.png"></td>
             <td>惊角鹿</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -17197,7 +17197,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -17210,7 +17210,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -17223,7 +17223,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -17236,7 +17236,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -17249,7 +17249,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -17262,7 +17262,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -17275,7 +17275,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/608.png"></td>
             <td>灯火幽灵</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17288,7 +17288,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/608.png"></td>
             <td>灯火幽灵</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17301,7 +17301,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/244.png"></td>
             <td>炎帝</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17314,7 +17314,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/244.png"></td>
             <td>炎帝</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17327,7 +17327,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17340,7 +17340,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17353,7 +17353,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17366,7 +17366,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/465.png"></td>
             <td>巨蔓藤</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17379,7 +17379,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17392,7 +17392,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/465.png"></td>
             <td>巨蔓藤</td>
             <td>32</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17405,7 +17405,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/215.png"></td>
             <td>狃拉</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17418,7 +17418,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/209.png"></td>
             <td>布鲁</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17431,7 +17431,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17444,7 +17444,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/235.png"></td>
             <td>图图犬</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17457,7 +17457,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/314.png"></td>
             <td>甜甜萤</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17470,7 +17470,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/313.png"></td>
             <td>电萤虫</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17483,7 +17483,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17496,7 +17496,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17509,7 +17509,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17522,7 +17522,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17535,7 +17535,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17548,7 +17548,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17561,7 +17561,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17574,7 +17574,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17587,7 +17587,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/437.png"></td>
             <td>青铜钟</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17600,7 +17600,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17613,7 +17613,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17626,7 +17626,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/437.png"></td>
             <td>青铜钟</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17639,7 +17639,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17652,7 +17652,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -17665,7 +17665,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -17678,7 +17678,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -17691,7 +17691,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17704,7 +17704,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17717,7 +17717,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17730,7 +17730,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>35</td>
             <td>50</td>
@@ -17743,7 +17743,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>50</td>
@@ -17756,7 +17756,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17769,7 +17769,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17782,7 +17782,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17795,7 +17795,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -17808,7 +17808,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -17821,7 +17821,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17834,7 +17834,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17847,7 +17847,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -17860,7 +17860,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>50</td>
@@ -17873,7 +17873,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>50</td>
@@ -17886,7 +17886,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17899,7 +17899,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17912,7 +17912,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
             <td>33</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>50</td>
@@ -17925,7 +17925,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -17938,7 +17938,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17951,7 +17951,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
             <td>呆呆兽</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17964,7 +17964,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -17977,7 +17977,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -17990,7 +17990,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/280.png"></td>
             <td>拉鲁拉丝</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18003,7 +18003,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18016,7 +18016,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18029,7 +18029,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18042,7 +18042,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18055,7 +18055,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18068,7 +18068,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18081,7 +18081,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/277.png"></td>
             <td>大王燕</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18094,7 +18094,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18107,7 +18107,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/080.png"></td>
             <td>呆壳兽</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18120,7 +18120,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18133,7 +18133,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/281.png"></td>
             <td>奇鲁莉安</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18146,7 +18146,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18159,7 +18159,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18172,7 +18172,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18185,7 +18185,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18198,7 +18198,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18211,7 +18211,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18224,7 +18224,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18237,7 +18237,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/607.png"></td>
             <td>烛光灵</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18250,7 +18250,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/607.png"></td>
             <td>烛光灵</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18263,7 +18263,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/243.png"></td>
             <td>雷公</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18276,7 +18276,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/243.png"></td>
             <td>雷公</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18289,7 +18289,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18302,7 +18302,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/473.png"></td>
             <td>象牙猪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18315,7 +18315,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18328,7 +18328,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18341,7 +18341,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18354,7 +18354,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>34</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18367,7 +18367,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18380,7 +18380,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18393,7 +18393,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/128.png"></td>
             <td>肯泰罗</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18406,7 +18406,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18419,7 +18419,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18432,7 +18432,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18445,7 +18445,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18458,7 +18458,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18471,7 +18471,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18484,7 +18484,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18497,7 +18497,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18510,7 +18510,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18523,7 +18523,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18536,7 +18536,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18549,7 +18549,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/192.png"></td>
             <td>向日花怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18562,7 +18562,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18575,7 +18575,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/300.png"></td>
             <td>向尾喵</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18588,7 +18588,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/124.png"></td>
             <td>迷唇姐</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>51</td>
             <td>51</td>
@@ -18601,7 +18601,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18614,7 +18614,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>50</td>
@@ -18627,7 +18627,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18640,7 +18640,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18653,7 +18653,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>49</td>
             <td>49</td>
@@ -18666,7 +18666,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>52</td>
             <td>52</td>
@@ -18679,7 +18679,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/606.png"></td>
             <td>大宇怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18692,7 +18692,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/606.png"></td>
             <td>大宇怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18705,7 +18705,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/245.png"></td>
             <td>水君</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18718,7 +18718,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/245.png"></td>
             <td>水君</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18731,7 +18731,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18744,7 +18744,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/473.png"></td>
             <td>象牙猪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18757,7 +18757,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18770,7 +18770,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18783,7 +18783,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18796,7 +18796,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
             <td>35</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18809,7 +18809,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/215.png"></td>
             <td>狃拉</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18822,7 +18822,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/276.png"></td>
             <td>傲骨燕</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18835,7 +18835,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18848,7 +18848,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18861,7 +18861,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/312.png"></td>
             <td>负电拍拍</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18874,7 +18874,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/311.png"></td>
             <td>正电拍拍</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18887,7 +18887,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18900,7 +18900,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18913,7 +18913,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18926,7 +18926,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18939,7 +18939,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -18952,7 +18952,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -18965,7 +18965,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>44</td>
             <td>44</td>
@@ -18978,7 +18978,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>45</td>
@@ -18991,7 +18991,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/442.png"></td>
             <td>花岩怪</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -19004,7 +19004,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>46</td>
             <td>46</td>
@@ -19017,7 +19017,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -19030,7 +19030,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/442.png"></td>
             <td>花岩怪</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -19043,7 +19043,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -19056,7 +19056,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
             <td>36</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>47</td>
             <td>47</td>
@@ -19329,7 +19329,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>14</td>
             <td>14</td>
@@ -19342,7 +19342,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/568.png"></td>
             <td>破破袋</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>14</td>
             <td>14</td>
@@ -19355,7 +19355,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/568.png"></td>
             <td>破破袋</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19368,7 +19368,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19381,7 +19381,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>16</td>
             <td>16</td>
@@ -19394,7 +19394,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>16</td>
             <td>16</td>
@@ -19407,7 +19407,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
             <td>臭泥</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19420,7 +19420,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
             <td>臭泥</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19433,7 +19433,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19446,7 +19446,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19459,7 +19459,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19472,7 +19472,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>37</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19745,7 +19745,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>14</td>
             <td>14</td>
@@ -19758,7 +19758,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/317.png"></td>
             <td>吞食兽</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>14</td>
             <td>14</td>
@@ -19771,7 +19771,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/317.png"></td>
             <td>吞食兽</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19784,7 +19784,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19797,7 +19797,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/097.png"></td>
             <td>引梦貘人</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>16</td>
             <td>16</td>
@@ -19810,7 +19810,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/096.png"></td>
             <td>催眠貘</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>16</td>
             <td>16</td>
@@ -19823,7 +19823,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
             <td>臭泥</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>15</td>
@@ -19836,7 +19836,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
             <td>臭泥</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19849,7 +19849,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19862,7 +19862,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
             <td>大嘴蝠</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19875,7 +19875,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -19888,7 +19888,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
             <td>大嘴蝠</td>
             <td>38</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>17</td>
             <td>17</td>
@@ -21929,7 +21929,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -21942,7 +21942,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -21955,7 +21955,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -21968,7 +21968,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
             <td>毒刺水母</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -21981,7 +21981,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -21994,7 +21994,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22007,7 +22007,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22020,7 +22020,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22033,7 +22033,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22046,7 +22046,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22059,7 +22059,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22072,7 +22072,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22085,7 +22085,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/171.png"></td>
             <td>电灯怪</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22098,7 +22098,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22111,7 +22111,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22124,7 +22124,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22137,7 +22137,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22150,7 +22150,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/226.png"></td>
             <td>巨翅飞鱼</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22163,7 +22163,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22176,7 +22176,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22189,7 +22189,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22202,7 +22202,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22215,7 +22215,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/007.png"></td>
             <td>杰尼龟</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22228,7 +22228,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22241,7 +22241,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22254,7 +22254,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22267,7 +22267,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22280,7 +22280,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22293,7 +22293,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22306,7 +22306,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22319,7 +22319,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22332,7 +22332,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22345,7 +22345,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/171.png"></td>
             <td>电灯怪</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22358,7 +22358,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22371,7 +22371,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22384,7 +22384,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22397,7 +22397,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22410,7 +22410,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/226.png"></td>
             <td>巨翅飞鱼</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22423,7 +22423,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22436,7 +22436,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22449,7 +22449,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22462,7 +22462,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22475,7 +22475,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22488,7 +22488,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/008.png"></td>
             <td>卡咪龟</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22501,7 +22501,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/009.png"></td>
             <td>水箭龟</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22514,7 +22514,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22527,7 +22527,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22540,7 +22540,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22553,7 +22553,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/138.png"></td>
             <td>菊石兽</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22566,7 +22566,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/138.png"></td>
             <td>菊石兽</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22579,7 +22579,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22592,7 +22592,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22605,7 +22605,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/171.png"></td>
             <td>电灯怪</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22618,7 +22618,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22631,7 +22631,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22644,7 +22644,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22657,7 +22657,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22670,7 +22670,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/226.png"></td>
             <td>巨翅飞鱼</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22683,7 +22683,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22696,7 +22696,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22709,7 +22709,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22722,7 +22722,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22735,7 +22735,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/422.png"></td>
             <td>无壳海兔</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22748,7 +22748,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22761,7 +22761,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22774,7 +22774,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22787,7 +22787,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22800,7 +22800,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22813,7 +22813,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22826,7 +22826,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22839,7 +22839,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22852,7 +22852,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -22865,7 +22865,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/171.png"></td>
             <td>电灯怪</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22878,7 +22878,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22891,7 +22891,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -22904,7 +22904,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22917,7 +22917,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -22930,7 +22930,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/365.png"></td>
             <td>帝牙海狮</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22943,7 +22943,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -22956,7 +22956,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>43</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -42196,7 +42196,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42209,7 +42209,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42222,7 +42222,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42235,7 +42235,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42248,7 +42248,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42261,7 +42261,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42274,7 +42274,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42287,7 +42287,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/258.png"></td>
             <td>水跃鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42300,7 +42300,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/258.png"></td>
             <td>水跃鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42313,7 +42313,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/258.png"></td>
             <td>水跃鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42326,7 +42326,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42339,7 +42339,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42352,7 +42352,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/369.png"></td>
             <td>古空棘鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42365,7 +42365,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42378,7 +42378,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42391,7 +42391,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42404,7 +42404,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42417,7 +42417,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/259.png"></td>
             <td>沼跃鱼</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42430,7 +42430,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42443,7 +42443,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>104</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42599,7 +42599,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42612,7 +42612,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42625,7 +42625,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42638,7 +42638,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42651,7 +42651,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42664,7 +42664,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42677,7 +42677,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42690,7 +42690,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/259.png"></td>
             <td>沼跃鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42703,7 +42703,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/259.png"></td>
             <td>沼跃鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42716,7 +42716,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/259.png"></td>
             <td>沼跃鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -42729,7 +42729,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42742,7 +42742,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -42755,7 +42755,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/369.png"></td>
             <td>古空棘鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42768,7 +42768,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42781,7 +42781,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -42794,7 +42794,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42807,7 +42807,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42820,7 +42820,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42833,7 +42833,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -42846,7 +42846,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>105</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>20</td>
@@ -43288,7 +43288,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43301,7 +43301,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/441.png"></td>
             <td>聒噪鸟</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43314,7 +43314,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/172.png"></td>
             <td>皮丘</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43327,7 +43327,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43340,7 +43340,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
             <td>可达鸭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -43353,7 +43353,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43366,7 +43366,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -43379,7 +43379,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43392,7 +43392,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/065.png"></td>
             <td>胡地</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43405,7 +43405,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43418,7 +43418,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43431,7 +43431,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43444,7 +43444,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/390.png"></td>
             <td>小火焰猴</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43457,7 +43457,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43470,7 +43470,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/173.png"></td>
             <td>皮宝宝</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43483,7 +43483,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/622.png"></td>
             <td>泥偶小人</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43496,7 +43496,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
             <td>哥达鸭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -43509,7 +43509,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43522,7 +43522,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -43535,7 +43535,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43548,7 +43548,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43561,7 +43561,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43574,7 +43574,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43587,7 +43587,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43600,7 +43600,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43613,7 +43613,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -43626,7 +43626,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -43639,7 +43639,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/643.png"></td>
             <td>莱希拉姆</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -43652,7 +43652,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43665,7 +43665,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/351.png"></td>
             <td>飘浮泡泡</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43678,7 +43678,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43691,7 +43691,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43704,7 +43704,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43717,7 +43717,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43730,7 +43730,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43743,7 +43743,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43756,7 +43756,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/123.png"></td>
             <td>飞天螳螂</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43769,7 +43769,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43782,7 +43782,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/052.png"></td>
             <td>喵喵</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -43795,7 +43795,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43808,7 +43808,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -43821,7 +43821,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -43834,7 +43834,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/064.png"></td>
             <td>勇基拉</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43847,7 +43847,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43860,7 +43860,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43873,7 +43873,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43886,7 +43886,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/389.png"></td>
             <td>土台龟</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43899,7 +43899,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/439.png"></td>
             <td>魔尼尼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43912,7 +43912,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/169.png"></td>
             <td>叉字蝠</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43925,7 +43925,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43938,7 +43938,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/053.png"></td>
             <td>猫老大</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -43951,7 +43951,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -43964,7 +43964,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -43977,7 +43977,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -43990,7 +43990,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44003,7 +44003,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44016,7 +44016,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44029,7 +44029,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44042,7 +44042,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/589.png"></td>
             <td>骑士蜗牛</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44055,7 +44055,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/589.png"></td>
             <td>骑士蜗牛</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44068,7 +44068,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44081,7 +44081,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/642.png"></td>
             <td>雷电云</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44094,7 +44094,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44107,7 +44107,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/351.png"></td>
             <td>飘浮泡泡</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44120,7 +44120,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44133,7 +44133,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44146,7 +44146,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44159,7 +44159,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44172,7 +44172,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44185,7 +44185,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/440.png"></td>
             <td>小福蛋</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44198,7 +44198,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44211,7 +44211,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44224,7 +44224,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/167.png"></td>
             <td>圆丝蛛</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44237,7 +44237,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44250,7 +44250,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44263,7 +44263,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44276,7 +44276,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
             <td>毛球</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44289,7 +44289,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44302,7 +44302,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
             <td>毛球</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44315,7 +44315,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44328,7 +44328,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/388.png"></td>
             <td>树林龟</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44341,7 +44341,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/428.png"></td>
             <td>长耳兔</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44354,7 +44354,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/168.png"></td>
             <td>阿利多斯</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44367,7 +44367,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44380,7 +44380,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/108.png"></td>
             <td>大舌头</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -44393,7 +44393,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44406,7 +44406,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -44419,7 +44419,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44432,7 +44432,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44445,7 +44445,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44458,7 +44458,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44471,7 +44471,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44484,7 +44484,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/145.png"></td>
             <td>闪电鸟</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44497,7 +44497,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/145.png"></td>
             <td>闪电鸟</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44510,7 +44510,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44523,7 +44523,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/641.png"></td>
             <td>龙卷云</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44536,7 +44536,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44549,7 +44549,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/351.png"></td>
             <td>飘浮泡泡</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44562,7 +44562,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44575,7 +44575,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44588,7 +44588,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44601,7 +44601,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44614,7 +44614,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44627,7 +44627,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44640,7 +44640,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/124.png"></td>
             <td>迷唇姐</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44653,7 +44653,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44666,7 +44666,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/040.png"></td>
             <td>胖可丁</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44679,7 +44679,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44692,7 +44692,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44705,7 +44705,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44718,7 +44718,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
             <td>凯西</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44731,7 +44731,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44744,7 +44744,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44757,7 +44757,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44770,7 +44770,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/387.png"></td>
             <td>草苗龟</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44783,7 +44783,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/427.png"></td>
             <td>卷卷耳</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44796,7 +44796,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/174.png"></td>
             <td>宝宝丁</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44809,7 +44809,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/619.png"></td>
             <td>功夫鼬</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44822,7 +44822,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
             <td>胖丁</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -44835,7 +44835,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/544.png"></td>
             <td>车轮球</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44848,7 +44848,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>28</td>
             <td>28</td>
@@ -44861,7 +44861,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44874,7 +44874,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44887,7 +44887,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44900,7 +44900,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44913,7 +44913,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>29</td>
             <td>29</td>
@@ -44926,7 +44926,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>23</td>
             <td>23</td>
@@ -44939,7 +44939,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44952,7 +44952,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>24</td>
             <td>24</td>
@@ -44965,7 +44965,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/640.png"></td>
             <td>毕力吉翁</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>25</td>
             <td>25</td>
@@ -44978,7 +44978,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -44991,7 +44991,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/351.png"></td>
             <td>飘浮泡泡</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -45004,7 +45004,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -45017,7 +45017,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -45030,7 +45030,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -45043,7 +45043,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>26</td>
             <td>26</td>
@@ -45056,7 +45056,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45069,7 +45069,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -45082,7 +45082,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45095,7 +45095,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45108,7 +45108,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45121,7 +45121,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>10</td>
             <td>30</td>
@@ -45134,7 +45134,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45147,7 +45147,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45160,7 +45160,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45173,7 +45173,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45186,7 +45186,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45199,7 +45199,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45212,7 +45212,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45225,7 +45225,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45238,7 +45238,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45251,7 +45251,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45264,7 +45264,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45277,7 +45277,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45290,7 +45290,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45303,7 +45303,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45316,7 +45316,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45329,7 +45329,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -45342,7 +45342,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45355,7 +45355,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45368,7 +45368,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45381,7 +45381,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>10</td>
             <td>30</td>
@@ -45394,7 +45394,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45407,7 +45407,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45420,7 +45420,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45433,7 +45433,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45446,7 +45446,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45459,7 +45459,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45472,7 +45472,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45485,7 +45485,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45498,7 +45498,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45511,7 +45511,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45524,7 +45524,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45537,7 +45537,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45550,7 +45550,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45563,7 +45563,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45576,7 +45576,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45589,7 +45589,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -45602,7 +45602,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45615,7 +45615,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45628,7 +45628,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45641,7 +45641,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>1</td>
             <td>10</td>
             <td>30</td>
@@ -45654,7 +45654,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45667,7 +45667,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/270.png"></td>
             <td>莲叶童子</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45680,7 +45680,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/270.png"></td>
             <td>莲叶童子</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45693,7 +45693,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/270.png"></td>
             <td>莲叶童子</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45706,7 +45706,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45719,7 +45719,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45732,7 +45732,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45745,7 +45745,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45758,7 +45758,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45771,7 +45771,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45784,7 +45784,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45797,7 +45797,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45810,7 +45810,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45823,7 +45823,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -45836,7 +45836,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45849,7 +45849,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -45862,7 +45862,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45875,7 +45875,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45888,7 +45888,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -45901,7 +45901,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>1</td>
             <td>10</td>
             <td>30</td>
@@ -45914,7 +45914,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45927,7 +45927,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/271.png"></td>
             <td>莲帽小童</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45940,7 +45940,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/271.png"></td>
             <td>莲帽小童</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45953,7 +45953,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/271.png"></td>
             <td>莲帽小童</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -45966,7 +45966,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45979,7 +45979,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -45992,7 +45992,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46005,7 +46005,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46018,7 +46018,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46031,7 +46031,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46044,7 +46044,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46057,7 +46057,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46070,7 +46070,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46083,7 +46083,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46096,7 +46096,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -46109,7 +46109,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -46122,7 +46122,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46135,7 +46135,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46148,7 +46148,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46161,7 +46161,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>1</td>
             <td>10</td>
             <td>30</td>
@@ -46174,7 +46174,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -46187,7 +46187,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -46200,7 +46200,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -46213,7 +46213,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -46226,7 +46226,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -46239,7 +46239,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -46252,7 +46252,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46265,7 +46265,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46278,7 +46278,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -46291,7 +46291,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46304,7 +46304,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46317,7 +46317,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46330,7 +46330,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -46343,7 +46343,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>107</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>10</td>
             <td>35</td>
@@ -47136,7 +47136,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47149,7 +47149,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47162,7 +47162,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/165.png"></td>
             <td>芭瓢虫</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47175,7 +47175,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/291.png"></td>
             <td>铁面忍者</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47188,7 +47188,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
             <td>大嘴蝠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47201,7 +47201,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47214,7 +47214,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47227,7 +47227,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47240,7 +47240,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47253,7 +47253,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47266,7 +47266,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47279,7 +47279,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47292,7 +47292,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/397.png"></td>
             <td>姆克鸟</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47305,7 +47305,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/360.png"></td>
             <td>小果然</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47318,7 +47318,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/166.png"></td>
             <td>安瓢虫</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -47331,7 +47331,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/292.png"></td>
             <td>脱壳忍者</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -47344,7 +47344,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
             <td>臭臭花</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47357,7 +47357,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/043.png"></td>
             <td>走路草</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47370,7 +47370,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47383,7 +47383,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47396,7 +47396,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47409,7 +47409,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47422,7 +47422,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47435,7 +47435,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47448,7 +47448,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47461,7 +47461,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47474,7 +47474,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/385.png"></td>
             <td>基拉祈</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47487,7 +47487,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/385.png"></td>
             <td>基拉祈</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47500,7 +47500,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/385.png"></td>
             <td>基拉祈</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47513,7 +47513,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/385.png"></td>
             <td>基拉祈</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47526,7 +47526,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47539,7 +47539,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47552,7 +47552,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47565,7 +47565,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/275.png"></td>
             <td>狡猾天狗</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47578,7 +47578,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47591,7 +47591,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/180.png"></td>
             <td>茸茸羊</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47604,7 +47604,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/523.png"></td>
             <td>雷电斑马</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47617,7 +47617,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/047.png"></td>
             <td>派拉斯特</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47630,7 +47630,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/046.png"></td>
             <td>派拉斯</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47643,7 +47643,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47656,7 +47656,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47669,7 +47669,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47682,7 +47682,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47695,7 +47695,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47708,7 +47708,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47721,7 +47721,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/274.png"></td>
             <td>长鼻叶</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47734,7 +47734,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/546.png"></td>
             <td>木棉球</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47747,7 +47747,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/164.png"></td>
             <td>猫头夜鹰</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -47760,7 +47760,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/289.png"></td>
             <td>请假王</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -47773,7 +47773,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/163.png"></td>
             <td>咕咕</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47786,7 +47786,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/045.png"></td>
             <td>霸王花</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47799,7 +47799,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47812,7 +47812,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -47825,7 +47825,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47838,7 +47838,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47851,7 +47851,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47864,7 +47864,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -47877,7 +47877,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -47890,7 +47890,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47903,7 +47903,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -47916,7 +47916,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -47929,7 +47929,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47942,7 +47942,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47955,7 +47955,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47968,7 +47968,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47981,7 +47981,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -47994,7 +47994,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48007,7 +48007,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48020,7 +48020,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48033,7 +48033,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/181.png"></td>
             <td>电龙</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48046,7 +48046,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/290.png"></td>
             <td>土居忍士</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48059,7 +48059,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48072,7 +48072,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
             <td>毛球</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48085,7 +48085,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48098,7 +48098,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48111,7 +48111,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/059.png"></td>
             <td>风速狗</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48124,7 +48124,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48137,7 +48137,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48150,7 +48150,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48163,7 +48163,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/398.png"></td>
             <td>姆克鹰</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48176,7 +48176,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/407.png"></td>
             <td>罗丝雷朵</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48189,7 +48189,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/162.png"></td>
             <td>大尾立</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -48202,7 +48202,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/523.png"></td>
             <td>雷电斑马</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -48215,7 +48215,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/161.png"></td>
             <td>尾立</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -48228,7 +48228,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/288.png"></td>
             <td>过动猿</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48241,7 +48241,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -48254,7 +48254,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -48267,7 +48267,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48280,7 +48280,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48293,7 +48293,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48306,7 +48306,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48319,7 +48319,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48332,7 +48332,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48345,7 +48345,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/487.png"></td>
             <td>骑拉帝纳</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48358,7 +48358,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/487.png"></td>
             <td>骑拉帝纳</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48371,7 +48371,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48384,7 +48384,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48397,7 +48397,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48410,7 +48410,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48423,7 +48423,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48436,7 +48436,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48449,7 +48449,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/613.png"></td>
             <td>喷嚏熊</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48462,7 +48462,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48475,7 +48475,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48488,7 +48488,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/523.png"></td>
             <td>雷电斑马</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48501,7 +48501,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48514,7 +48514,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/056.png"></td>
             <td>猴怪</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48527,7 +48527,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48540,7 +48540,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48553,7 +48553,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/543.png"></td>
             <td>百足蜈蚣</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48566,7 +48566,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48579,7 +48579,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/543.png"></td>
             <td>百足蜈蚣</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48592,7 +48592,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
             <td>卡蒂狗</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48605,7 +48605,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/182.png"></td>
             <td>美丽花</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48618,7 +48618,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/405.png"></td>
             <td>伦琴猫</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48631,7 +48631,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/406.png"></td>
             <td>含羞苞</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -48644,7 +48644,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/545.png"></td>
             <td>蜈蚣王</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>34</td>
             <td>34</td>
@@ -48657,7 +48657,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/287.png"></td>
             <td>懒人獭</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48670,7 +48670,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/057.png"></td>
             <td>火暴猴</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48683,7 +48683,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -48696,7 +48696,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>35</td>
             <td>35</td>
@@ -48709,7 +48709,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/613.png"></td>
             <td>喷嚏熊</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48722,7 +48722,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48735,7 +48735,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/613.png"></td>
             <td>喷嚏熊</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48748,7 +48748,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>36</td>
             <td>36</td>
@@ -48761,7 +48761,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>30</td>
             <td>30</td>
@@ -48774,7 +48774,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48787,7 +48787,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/486.png"></td>
             <td>雷吉奇卡斯</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>31</td>
             <td>31</td>
@@ -48800,7 +48800,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/485.png"></td>
             <td>席多蓝恩</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48813,7 +48813,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>32</td>
             <td>32</td>
@@ -48826,7 +48826,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/486.png"></td>
             <td>雷吉奇卡斯</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48839,7 +48839,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/486.png"></td>
             <td>雷吉奇卡斯</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48852,7 +48852,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48865,7 +48865,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -48878,7 +48878,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
             <td>111</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>33</td>
             <td>33</td>
@@ -49476,7 +49476,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -49489,7 +49489,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -49502,7 +49502,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/160.png"></td>
             <td>大力鳄</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49515,7 +49515,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/096.png"></td>
             <td>催眠貘</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49528,7 +49528,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49541,7 +49541,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49554,7 +49554,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49567,7 +49567,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49580,7 +49580,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49593,7 +49593,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49606,7 +49606,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49619,7 +49619,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49632,7 +49632,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -49645,7 +49645,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/544.png"></td>
             <td>车轮球</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -49658,7 +49658,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/159.png"></td>
             <td>蓝鳄</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49671,7 +49671,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49684,7 +49684,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -49697,7 +49697,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/160.png"></td>
             <td>大力鳄</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49710,7 +49710,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49723,7 +49723,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -49736,7 +49736,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49749,7 +49749,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49762,7 +49762,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49775,7 +49775,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -49788,7 +49788,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49801,7 +49801,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49814,7 +49814,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/454.png"></td>
             <td>毒骷蛙</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49827,7 +49827,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/454.png"></td>
             <td>毒骷蛙</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49840,7 +49840,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/454.png"></td>
             <td>毒骷蛙</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49853,7 +49853,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49866,7 +49866,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49879,7 +49879,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/278.png"></td>
             <td>长翅鸥</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49892,7 +49892,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/278.png"></td>
             <td>长翅鸥</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49905,7 +49905,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/278.png"></td>
             <td>长翅鸥</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49918,7 +49918,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49931,7 +49931,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49944,7 +49944,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49957,7 +49957,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49970,7 +49970,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -49983,7 +49983,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -49996,7 +49996,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50009,7 +50009,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -50022,7 +50022,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -50035,7 +50035,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -50048,7 +50048,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50061,7 +50061,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50074,7 +50074,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50087,7 +50087,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50100,7 +50100,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50113,7 +50113,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50126,7 +50126,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50139,7 +50139,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50152,7 +50152,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50165,7 +50165,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50178,7 +50178,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50191,7 +50191,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50204,7 +50204,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50217,7 +50217,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50230,7 +50230,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50243,7 +50243,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50256,7 +50256,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50269,7 +50269,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50282,7 +50282,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50295,7 +50295,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50308,7 +50308,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50321,7 +50321,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50334,7 +50334,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/445.png"></td>
             <td>烈咬陆鲨</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50347,7 +50347,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/445.png"></td>
             <td>烈咬陆鲨</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50360,7 +50360,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/445.png"></td>
             <td>烈咬陆鲨</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50373,7 +50373,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50386,7 +50386,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50399,7 +50399,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50412,7 +50412,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50425,7 +50425,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50438,7 +50438,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50451,7 +50451,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50464,7 +50464,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50477,7 +50477,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50490,7 +50490,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50503,7 +50503,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50516,7 +50516,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50529,7 +50529,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50542,7 +50542,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50555,7 +50555,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50568,7 +50568,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50581,7 +50581,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50594,7 +50594,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/444.png"></td>
             <td>尖牙陆鲨</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50607,7 +50607,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/444.png"></td>
             <td>尖牙陆鲨</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50620,7 +50620,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/444.png"></td>
             <td>尖牙陆鲨</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50633,7 +50633,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50646,7 +50646,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50659,7 +50659,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/284.png"></td>
             <td>雨翅蛾</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50672,7 +50672,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/284.png"></td>
             <td>雨翅蛾</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50685,7 +50685,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/284.png"></td>
             <td>雨翅蛾</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50698,7 +50698,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50711,7 +50711,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50724,7 +50724,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50737,7 +50737,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50750,7 +50750,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50763,7 +50763,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50776,7 +50776,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -50789,7 +50789,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50802,7 +50802,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -50815,7 +50815,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>116</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -51088,7 +51088,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -51101,7 +51101,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -51114,7 +51114,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/113.png"></td>
             <td>吉利蛋</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51127,7 +51127,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51140,7 +51140,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51153,7 +51153,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/549.png"></td>
             <td>裙儿小姐</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51166,7 +51166,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51179,7 +51179,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51192,7 +51192,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51205,7 +51205,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51218,7 +51218,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51231,7 +51231,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51244,7 +51244,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -51257,7 +51257,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/543.png"></td>
             <td>百足蜈蚣</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>54</td>
             <td>54</td>
@@ -51270,7 +51270,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/158.png"></td>
             <td>小锯鳄</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51283,7 +51283,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51296,7 +51296,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>55</td>
             <td>55</td>
@@ -51309,7 +51309,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/549.png"></td>
             <td>裙儿小姐</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51322,7 +51322,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51335,7 +51335,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>56</td>
             <td>56</td>
@@ -51348,7 +51348,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51361,7 +51361,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51374,7 +51374,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51387,7 +51387,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>57</td>
             <td>57</td>
@@ -51400,7 +51400,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51413,7 +51413,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51426,7 +51426,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/443.png"></td>
             <td>圆陆鲨</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51439,7 +51439,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/443.png"></td>
             <td>圆陆鲨</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51452,7 +51452,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/443.png"></td>
             <td>圆陆鲨</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51465,7 +51465,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51478,7 +51478,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51491,7 +51491,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51504,7 +51504,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51517,7 +51517,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51530,7 +51530,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51543,7 +51543,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51556,7 +51556,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51569,7 +51569,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51582,7 +51582,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51595,7 +51595,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51608,7 +51608,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51621,7 +51621,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51634,7 +51634,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51647,7 +51647,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51660,7 +51660,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51673,7 +51673,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51686,7 +51686,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51699,7 +51699,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51712,7 +51712,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51725,7 +51725,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51738,7 +51738,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51751,7 +51751,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51764,7 +51764,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51777,7 +51777,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51790,7 +51790,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51803,7 +51803,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51816,7 +51816,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51829,7 +51829,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51842,7 +51842,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51855,7 +51855,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51868,7 +51868,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51881,7 +51881,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51894,7 +51894,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51907,7 +51907,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Summer</td>
+            <td>夏</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51920,7 +51920,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51933,7 +51933,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51946,7 +51946,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/422.png"></td>
             <td>无壳海兔</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51959,7 +51959,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/422.png"></td>
             <td>无壳海兔</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51972,7 +51972,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/422.png"></td>
             <td>无壳海兔</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -51985,7 +51985,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -51998,7 +51998,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52011,7 +52011,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52024,7 +52024,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52037,7 +52037,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52050,7 +52050,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52063,7 +52063,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52076,7 +52076,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52089,7 +52089,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52102,7 +52102,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52115,7 +52115,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52128,7 +52128,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52141,7 +52141,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52154,7 +52154,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52167,7 +52167,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Autumn</td>
+            <td>秋</td>
             <td>0</td>
             <td>60</td>
             <td>60</td>
@@ -52180,7 +52180,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52193,7 +52193,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52206,7 +52206,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52219,7 +52219,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52232,7 +52232,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52245,7 +52245,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52258,7 +52258,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52271,7 +52271,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52284,7 +52284,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52297,7 +52297,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52310,7 +52310,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52323,7 +52323,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52336,7 +52336,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52349,7 +52349,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52362,7 +52362,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52375,7 +52375,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52388,7 +52388,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -52401,7 +52401,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52414,7 +52414,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -52427,7 +52427,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
             <td>117</td>
-            <td>Winter</td>
+            <td>冬</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -53571,7 +53571,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -53584,7 +53584,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -53597,7 +53597,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53610,7 +53610,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/341.png"></td>
             <td>龙虾小兵</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53623,7 +53623,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/341.png"></td>
             <td>龙虾小兵</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53636,7 +53636,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>25</td>
             <td>40</td>
@@ -53649,7 +53649,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -53662,7 +53662,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -53675,7 +53675,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -53688,7 +53688,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -53701,7 +53701,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -53714,7 +53714,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -53727,7 +53727,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53740,7 +53740,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/342.png"></td>
             <td>铁螯龙虾</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53753,7 +53753,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/342.png"></td>
             <td>铁螯龙虾</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -53766,7 +53766,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -53779,7 +53779,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -53792,7 +53792,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -53805,7 +53805,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -53818,7 +53818,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>119</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -54923,7 +54923,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -54936,7 +54936,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -54949,7 +54949,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -54962,7 +54962,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -54975,7 +54975,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -54988,7 +54988,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -55001,7 +55001,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -55014,7 +55014,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>30</td>
             <td>40</td>
@@ -55027,7 +55027,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55040,7 +55040,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55053,7 +55053,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -55066,7 +55066,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -55079,7 +55079,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55092,7 +55092,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
             <td>刺甲贝</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55105,7 +55105,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
             <td>刺甲贝</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55118,7 +55118,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -55131,7 +55131,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -55144,7 +55144,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55157,7 +55157,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55170,7 +55170,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>121</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55859,7 +55859,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -55872,7 +55872,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -55885,7 +55885,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55898,7 +55898,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55911,7 +55911,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -55924,7 +55924,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>25</td>
             <td>40</td>
@@ -55937,7 +55937,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -55950,7 +55950,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55963,7 +55963,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55976,7 +55976,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -55989,7 +55989,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -56002,7 +56002,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -56015,7 +56015,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56028,7 +56028,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56041,7 +56041,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56054,7 +56054,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -56067,7 +56067,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>25</td>
             <td>40</td>
@@ -56080,7 +56080,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56093,7 +56093,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56106,7 +56106,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>122</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56808,7 +56808,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -56821,7 +56821,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -56834,7 +56834,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56847,7 +56847,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56860,7 +56860,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56873,7 +56873,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>25</td>
             <td>40</td>
@@ -56886,7 +56886,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -56899,7 +56899,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56912,7 +56912,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56925,7 +56925,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -56938,7 +56938,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -56951,7 +56951,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -56964,7 +56964,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56977,7 +56977,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -56990,7 +56990,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -57003,7 +57003,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -57016,7 +57016,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -57029,7 +57029,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -57042,7 +57042,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -57055,7 +57055,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>123</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -58667,7 +58667,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -58680,7 +58680,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -58693,7 +58693,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/395.png"></td>
             <td>帝王拿波</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58706,7 +58706,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/395.png"></td>
             <td>帝王拿波</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58719,7 +58719,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/395.png"></td>
             <td>帝王拿波</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58732,7 +58732,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>10</td>
             <td>25</td>
@@ -58745,7 +58745,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>25</td>
@@ -58758,7 +58758,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>25</td>
@@ -58771,7 +58771,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>25</td>
@@ -58784,7 +58784,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>25</td>
@@ -58797,7 +58797,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -58810,7 +58810,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -58823,7 +58823,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58836,7 +58836,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58849,7 +58849,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -58862,7 +58862,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -58875,7 +58875,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -58888,7 +58888,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -58901,7 +58901,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -58914,7 +58914,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>126</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>10</td>
             <td>30</td>
@@ -59369,7 +59369,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59382,7 +59382,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59395,7 +59395,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59408,7 +59408,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/222.png"></td>
             <td>太阳珊瑚</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59421,7 +59421,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/222.png"></td>
             <td>太阳珊瑚</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59434,7 +59434,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -59447,7 +59447,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -59460,7 +59460,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59473,7 +59473,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59486,7 +59486,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59499,7 +59499,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59512,7 +59512,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59525,7 +59525,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59538,7 +59538,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/230.png"></td>
             <td>刺龙王</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59551,7 +59551,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/230.png"></td>
             <td>刺龙王</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -59564,7 +59564,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -59577,7 +59577,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -59590,7 +59590,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59603,7 +59603,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59616,7 +59616,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>127</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -59941,7 +59941,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -59954,7 +59954,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -59967,7 +59967,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -59980,7 +59980,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -59993,7 +59993,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60006,7 +60006,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>5</td>
             <td>15</td>
@@ -60019,7 +60019,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>5</td>
             <td>15</td>
@@ -60032,7 +60032,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60045,7 +60045,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60058,7 +60058,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60071,7 +60071,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -60084,7 +60084,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -60097,7 +60097,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60110,7 +60110,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60123,7 +60123,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60136,7 +60136,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60149,7 +60149,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60162,7 +60162,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60175,7 +60175,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60188,7 +60188,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
             <td>128</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60630,7 +60630,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -60643,7 +60643,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -60656,7 +60656,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60669,7 +60669,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60682,7 +60682,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60695,7 +60695,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>5</td>
             <td>15</td>
@@ -60708,7 +60708,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/298.png"></td>
             <td>露力丽</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60721,7 +60721,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60734,7 +60734,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60747,7 +60747,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60760,7 +60760,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -60773,7 +60773,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -60786,7 +60786,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60799,7 +60799,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60812,7 +60812,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -60825,7 +60825,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60838,7 +60838,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60851,7 +60851,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60864,7 +60864,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -60877,7 +60877,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>129</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>5</td>
             <td>15</td>
@@ -61319,7 +61319,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -61332,7 +61332,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -61345,7 +61345,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61358,7 +61358,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61371,7 +61371,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61384,7 +61384,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>15</td>
             <td>40</td>
@@ -61397,7 +61397,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61410,7 +61410,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61423,7 +61423,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61436,7 +61436,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61449,7 +61449,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -61462,7 +61462,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -61475,7 +61475,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61488,7 +61488,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61501,7 +61501,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -61514,7 +61514,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61527,7 +61527,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>15</td>
             <td>40</td>
@@ -61540,7 +61540,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>45</td>
@@ -61553,7 +61553,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>45</td>
@@ -61566,7 +61566,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
             <td>130</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>45</td>
@@ -62008,7 +62008,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62021,7 +62021,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>60</td>
@@ -62034,7 +62034,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/367.png"></td>
             <td>猎斑鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62047,7 +62047,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/367.png"></td>
             <td>猎斑鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62060,7 +62060,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/367.png"></td>
             <td>猎斑鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62073,7 +62073,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>40</td>
             <td>55</td>
@@ -62086,7 +62086,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>55</td>
@@ -62099,7 +62099,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62112,7 +62112,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62125,7 +62125,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62138,7 +62138,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62151,7 +62151,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62164,7 +62164,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62177,7 +62177,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62190,7 +62190,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62203,7 +62203,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>55</td>
@@ -62216,7 +62216,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>55</td>
@@ -62229,7 +62229,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62242,7 +62242,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62255,7 +62255,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
             <td>131</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>55</td>
@@ -62268,7 +62268,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62281,7 +62281,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62294,7 +62294,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62307,7 +62307,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62320,7 +62320,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62333,7 +62333,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -62346,7 +62346,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -62359,7 +62359,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>1</td>
             <td>30</td>
             <td>40</td>
@@ -62372,7 +62372,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -62385,7 +62385,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -62398,7 +62398,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62411,7 +62411,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62424,7 +62424,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62437,7 +62437,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
             <td>刺甲贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62450,7 +62450,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
             <td>刺甲贝</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62463,7 +62463,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -62476,7 +62476,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>25</td>
             <td>40</td>
@@ -62489,7 +62489,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -62502,7 +62502,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -62515,7 +62515,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
             <td>132</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>40</td>
@@ -62528,7 +62528,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62541,7 +62541,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62554,7 +62554,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/365.png"></td>
             <td>帝牙海狮</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62567,7 +62567,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/365.png"></td>
             <td>帝牙海狮</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62580,7 +62580,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/365.png"></td>
             <td>帝牙海狮</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62593,7 +62593,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -62606,7 +62606,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -62619,7 +62619,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62632,7 +62632,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62645,7 +62645,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62658,7 +62658,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62671,7 +62671,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62684,7 +62684,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62697,7 +62697,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/230.png"></td>
             <td>刺龙王</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62710,7 +62710,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/230.png"></td>
             <td>刺龙王</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>60</td>
             <td>70</td>
@@ -62723,7 +62723,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/249.png"></td>
             <td>洛奇亚</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -62736,7 +62736,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/249.png"></td>
             <td>洛奇亚</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>45</td>
             <td>60</td>
@@ -62749,7 +62749,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62762,7 +62762,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62775,7 +62775,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>133</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>60</td>
@@ -62788,7 +62788,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62801,7 +62801,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62814,7 +62814,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62827,7 +62827,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62840,7 +62840,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62853,7 +62853,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>45</td>
@@ -62866,7 +62866,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>45</td>
@@ -62879,7 +62879,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
@@ -62892,7 +62892,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
@@ -62905,7 +62905,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
@@ -62918,7 +62918,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62931,7 +62931,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>40</td>
             <td>60</td>
@@ -62944,7 +62944,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62957,7 +62957,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62970,7 +62970,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>50</td>
             <td>70</td>
@@ -62983,7 +62983,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>45</td>
@@ -62996,7 +62996,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/249.png"></td>
             <td>洛奇亚</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>30</td>
             <td>45</td>
@@ -63009,7 +63009,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/226.png"></td>
             <td>巨翅飞鱼</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
@@ -63022,7 +63022,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/249.png"></td>
             <td>洛奇亚</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
@@ -63035,7 +63035,7 @@ date: 2026-08-22 11:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
             <td>134</td>
-            <td>Spring</td>
+            <td>春</td>
             <td>0</td>
             <td>35</td>
             <td>45</td>
