@@ -8,6 +8,9 @@ date: 2026-08-23 10:16 +0800
   td:nth-child(2) {
     min-width: 64px;
   }
+  td:nth-child(4) {
+    max-width: 60%;
+  }
   td img {
     max-height: 100px;
     height: auto;
