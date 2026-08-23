@@ -10,7 +10,7 @@ date: 2026-08-23 10:16 +0800
   }
   
   td img {
-    max-height: 100px/n
+    max-height: 100px<br>
     height: auto;
     width: auto;
     display: block;
@@ -211,64 +211,64 @@ date: 2026-08-23 10:16 +0800
             <td id="001">001</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/001.png"></td>
             <td>妙蛙种子</td>
-            <td>001/n002/n128</td>
-            <td>摇草/n普草</td>
+            <td>001<br>002<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="002">002</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/002.png"></td>
             <td>妙蛙草</td>
-            <td>001/n006</td>
-            <td>普草/n长草</td>
+            <td>001<br>006</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="003">003</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/003.png"></td>
             <td>妙蛙花</td>
-            <td>001/n008</td>
-            <td>摇草/n普草</td>
+            <td>001<br>008</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="004">004</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/004.png"></td>
             <td>小火龙</td>
-            <td>001/n009/n128</td>
-            <td>摇草/n普草</td>
+            <td>001<br>009<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="005">005</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/005.png"></td>
             <td>火恐龙</td>
-            <td>001/n027</td>
-            <td>普草/n长草</td>
+            <td>001<br>027</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="006">006</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/006.png"></td>
             <td>喷火龙</td>
-            <td>001/n027</td>
-            <td>摇草/n普草</td>
+            <td>001<br>027</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="007">007</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/007.png"></td>
             <td>杰尼龟</td>
-            <td>000/n002/n027/n043/n128</td>
-            <td>冲浪/n摇草/n普草/n普钓</td>
+            <td>000<br>002<br>027<br>043<br>128</td>
+            <td>冲浪<br>摇草<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="008">008</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/008.png"></td>
             <td>卡咪龟</td>
-            <td>000/n002/n028/n043</td>
-            <td>冲浪/n普草/n普钓</td>
+            <td>000<br>002<br>028<br>043</td>
+            <td>冲浪<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="009">009</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/009.png"></td>
             <td>水箭龟</td>
-            <td>000/n002/n028/n043</td>
-            <td>冲浪点/n普草/n普钓</td>
+            <td>000<br>002<br>028<br>043</td>
+            <td>冲浪点<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="010">010</td>
@@ -316,7 +316,7 @@ date: 2026-08-23 10:16 +0800
             <td id="016">016</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
             <td>波波</td>
-            <td>002/n028</td>
+            <td>002<br>028</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -337,15 +337,15 @@ date: 2026-08-23 10:16 +0800
             <td id="019">019</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
             <td>小拉达</td>
-            <td>001/n028/n037/n038/n039/n040/n041/n081</td>
-            <td>普草/n长草</td>
+            <td>001<br>028<br>037<br>038<br>039<br>040<br>041<br>081</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="020">020</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
             <td>拉达</td>
-            <td>006/n028/n061/n066/n067/n068/n069/n070/n082</td>
-            <td>普草/n长草</td>
+            <td>006<br>028<br>061<br>066<br>067<br>068<br>069<br>070<br>082</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="021">021</td>
@@ -379,50 +379,50 @@ date: 2026-08-23 10:16 +0800
             <td id="025">025</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/025.png"></td>
             <td>皮卡丘</td>
-            <td>020/n022</td>
+            <td>020<br>022</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="026">026</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/026.png"></td>
             <td>雷丘</td>
-            <td>021/n022</td>
+            <td>021<br>022</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="027">027</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/027.png"></td>
             <td>穿山鼠</td>
-            <td>010/n011/n012/n013</td>
+            <td>010<br>011<br>012<br>013</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="028">028</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/028.png"></td>
             <td>穿山王</td>
-            <td>014/n015/n016/n124</td>
+            <td>014<br>015<br>016<br>124</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="029">029</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
             <td>尼多兰</td>
-            <td>027/n040</td>
+            <td>027<br>040</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="030">030</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/030.png"></td>
             <td>尼多娜</td>
-            <td>027/n039</td>
+            <td>027<br>039</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="031">031</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/031.png"></td>
             <td>尼多后</td>
-            <td>020/n027/n072</td>
-            <td>摇草/n普草</td>
+            <td>020<br>027<br>072</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="032">032</td>
@@ -435,112 +435,112 @@ date: 2026-08-23 10:16 +0800
             <td id="033">033</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/033.png"></td>
             <td>尼多力诺</td>
-            <td>027/n039</td>
+            <td>027<br>039</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="034">034</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/034.png"></td>
             <td>尼多王</td>
-            <td>020/n027/n072</td>
-            <td>摇草/n普草</td>
+            <td>020<br>027<br>072</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="035">035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>027/n032/n033/n034/n035/n036/n072</td>
-            <td>普草/n长草</td>
+            <td>027<br>032<br>033<br>034<br>035<br>036<br>072</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="036">036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>027/n032/n034/n035/n072</td>
-            <td>摇草/n普草</td>
+            <td>027<br>032<br>034<br>035<br>072</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="037">037</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
             <td>六尾</td>
-            <td>028/n072/n123</td>
-            <td>普草/n长草</td>
+            <td>028<br>072<br>123</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="038">038</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/038.png"></td>
             <td>九尾</td>
-            <td>028/n072/n123</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>072<br>123</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="039">039</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
             <td>胖丁</td>
-            <td>006/n007/n028/n072/n099/n100/n107</td>
-            <td>普草/n长草</td>
+            <td>006<br>007<br>028<br>072<br>099<br>100<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="040">040</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/040.png"></td>
             <td>胖可丁</td>
-            <td>006/n028/n072/n099/n100/n107</td>
-            <td>摇草/n普草/n长草</td>
+            <td>006<br>028<br>072<br>099<br>100<br>107</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="041">041</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
             <td>超音蝠</td>
-            <td>037/n038/n039/n040/n041/n111</td>
+            <td>037<br>038<br>039<br>040<br>041<br>111</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="042">042</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
             <td>大嘴蝠</td>
-            <td>006/n007/n038/n039/n040/n061/n062/n064/n065/n069/n070/n090/n091/n111/n113/n115</td>
-            <td>普草/n长草</td>
+            <td>大多数洞穴</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="043">043</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/043.png"></td>
             <td>走路草</td>
-            <td>097/n111</td>
-            <td>普草/n长草</td>
+            <td>097<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="044">044</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
             <td>臭臭花</td>
-            <td>099/n111</td>
-            <td>普草/n长草</td>
+            <td>099<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="045">045</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/045.png"></td>
             <td>霸王花</td>
-            <td>100/n111</td>
-            <td>普草/n长草</td>
+            <td>100<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="046">046</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/046.png"></td>
             <td>派拉斯</td>
-            <td>101/n103/n111</td>
+            <td>101<br>103<br>111</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="047">047</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/047.png"></td>
             <td>派拉斯特</td>
-            <td>106/n111</td>
+            <td>106<br>111</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="048">048</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
             <td>毛球</td>
-            <td>107/n111</td>
+            <td>107<br>111</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -548,238 +548,238 @@ date: 2026-08-23 10:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
             <td>摩鲁蛾</td>
             <td id="111">111</td>
-            <td>摇草/n普草/n长草</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="050">050</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/050.png"></td>
             <td>地鼠</td>
-            <td>102/n108</td>
+            <td>102<br>108</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="051">051</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/051.png"></td>
             <td>三地鼠</td>
-            <td>020/n108/n110</td>
-            <td>摇草/n普草</td>
+            <td>020<br>108<br>110</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="052">052</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/052.png"></td>
             <td>喵喵</td>
-            <td>107/n115</td>
+            <td>107<br>115</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="053">053</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/053.png"></td>
             <td>猫老大</td>
-            <td>107/n115</td>
-            <td>普草/n长草</td>
+            <td>107<br>115</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="054">054</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
             <td>可达鸭</td>
-            <td>002/n045/n107</td>
-            <td>冲浪/n普草</td>
+            <td>002<br>045<br>107</td>
+            <td>冲浪<br>普草</td>
         </tr>
         <tr>
             <td id="055">055</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
             <td>哥达鸭</td>
-            <td>002/n093/n094/n095/n097/n107/n119/n122/n123/n130/n131</td>
-            <td>冲浪/n冲浪点/n普草/n长草</td>
+            <td>002<br>093<br>094<br>095<br>097<br>107<br>119<br>122<br>123<br>130<br>131</td>
+            <td>冲浪<br>冲浪点<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="056">056</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/056.png"></td>
             <td>猴怪</td>
-            <td>111/n113</td>
+            <td>111<br>113</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="057">057</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/057.png"></td>
             <td>火暴猴</td>
-            <td>111/n112</td>
-            <td>普草/n长草</td>
+            <td>111<br>112</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="058">058</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
             <td>卡蒂狗</td>
-            <td>047/n073/n111</td>
-            <td>普草/n长草</td>
+            <td>047<br>073<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="059">059</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/059.png"></td>
             <td>风速狗</td>
-            <td>073/n111</td>
+            <td>073<br>111</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="060">060</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
-            <td>002/n033/n036/n071/n073/n075/n078/n079/n082/n085/n086/n102/n103/n107/n126/n128/n129/n131</td>
-            <td>冲浪/n普草/n普钓</td>
+            <td>002<br>033<br>036<br>071<br>073<br>075<br>078<br>079<br>082<br>085<br>086<br>102<br>103<br>107<br>126<br>128<br>129<br>131</td>
+            <td>冲浪<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="061">061</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
-            <td>002/n033/n036/n043/n071/n073/n075/n078/n079/n082/n085/n086/n102/n103/n107/n111/n126/n128/n129/n131</td>
-            <td>冲浪/n普草/n普钓/n钓鱼点</td>
+            <td>002<br>033<br>036<br>043<br>071<br>073<br>075<br>078<br>079<br>082<br>085<br>086<br>102<br>103<br>107<br>111<br>126<br>128<br>129<br>131</td>
+            <td>冲浪<br>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="062">062</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
-            <td>002/n033/n036/n043/n071/n075/n078/n082/n085/n086/n102/n103/n111/n131</td>
-            <td>冲浪点/n普草/n普钓/n钓鱼点</td>
+            <td>002<br>033<br>036<br>043<br>071<br>075<br>078<br>082<br>085<br>086<br>102<br>103<br>111<br>131</td>
+            <td>冲浪点<br>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="063">063</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
             <td>凯西</td>
-            <td>009/n107</td>
+            <td>009<br>107</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="064">064</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/064.png"></td>
             <td>勇基拉</td>
-            <td>009/n107</td>
-            <td>普草/n长草</td>
+            <td>009<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="065">065</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/065.png"></td>
             <td>胡地</td>
-            <td>009/n107</td>
-            <td>普草/n长草</td>
+            <td>009<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="066">066</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/066.png"></td>
             <td>腕力</td>
-            <td>023/n094</td>
+            <td>023<br>094</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="067">067</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/067.png"></td>
             <td>豪力</td>
-            <td>023/n093</td>
+            <td>023<br>093</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="068">068</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/068.png"></td>
             <td>怪力</td>
-            <td>021/n024/n092</td>
-            <td>摇草/n普草</td>
+            <td>021<br>024<br>092</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="069">069</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
             <td>喇叭芽</td>
-            <td>027/n084</td>
+            <td>027<br>084</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="070">070</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
             <td>口呆花</td>
-            <td>027/n083</td>
+            <td>027<br>083</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="071">071</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/071.png"></td>
             <td>大食花</td>
-            <td>028/n082</td>
+            <td>028<br>082</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="072">072</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
             <td>玛瑙水母</td>
-            <td>002/n099</td>
+            <td>002<br>099</td>
             <td>冲浪</td>
         </tr>
         <tr>
             <td id="073">073</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
             <td>毒刺水母</td>
-            <td>002/n043/n101</td>
-            <td>冲浪/n普钓</td>
+            <td>002<br>043<br>101</td>
+            <td>冲浪<br>普钓</td>
         </tr>
         <tr>
             <td id="074">074</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
             <td>小拳石</td>
-            <td>024/n108</td>
+            <td>024<br>108</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="075">075</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
             <td>隆隆石</td>
-            <td>025/n109</td>
+            <td>025<br>109</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="076">076</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/076.png"></td>
             <td>隆隆岩</td>
-            <td>021/n025/n104</td>
-            <td>摇草/n普草</td>
+            <td>021<br>025<br>104</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="077">077</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/077.png"></td>
             <td>小火马</td>
-            <td>032/n101</td>
+            <td>032<br>101</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="078">078</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/078.png"></td>
             <td>烈焰马</td>
-            <td>032/n099</td>
-            <td>普草/n长草</td>
+            <td>032<br>099</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="079">079</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
             <td>呆呆兽</td>
-            <td>002/n034</td>
-            <td>冲浪点/n普草</td>
+            <td>002<br>034</td>
+            <td>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="080">080</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/080.png"></td>
             <td>呆壳兽</td>
-            <td>003/n034</td>
-            <td>冲浪点/n长草</td>
+            <td>003<br>034</td>
+            <td>冲浪点<br>长草</td>
         </tr>
         <tr>
             <td id="081">081</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/081.png"></td>
             <td>小磁怪</td>
-            <td>021/n046/n047</td>
-            <td>普草/n长草</td>
+            <td>021<br>046<br>047</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="082">082</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/082.png"></td>
             <td>三合一磁怪</td>
-            <td>020/n021/n042</td>
-            <td>摇草/n普草</td>
+            <td>020<br>021<br>042</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="083">083</td>
@@ -806,113 +806,113 @@ date: 2026-08-23 10:16 +0800
             <td id="086">086</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
-            <td>003/n033/n036/n073/n093</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>003<br>033<br>036<br>073<br>093</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="087">087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>004/n033/n036/n073/n093</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>004<br>033<br>036<br>073<br>093</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="088">088</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
             <td>臭泥</td>
-            <td>037/n038/n039/n040/n041/n073</td>
-            <td>冲浪/n冲浪点/n普草/n普钓/n钓鱼点/n长草</td>
+            <td>037<br>038<br>039<br>040<br>041<br>073</td>
+            <td>冲浪<br>冲浪点<br>普草<br>普钓<br>钓鱼点<br>长草</td>
         </tr>
         <tr>
             <td id="089">089</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/089.png"></td>
             <td>臭臭泥</td>
-            <td>037/n038/n039/n040/n041/n073/n118</td>
-            <td>冲浪点/n普草/n钓鱼点/n长草</td>
+            <td>037<br>038<br>039<br>040<br>041<br>073<br>118</td>
+            <td>冲浪点<br>普草<br>钓鱼点<br>长草</td>
         </tr>
         <tr>
             <td id="090">090</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
             <td>大舌贝</td>
-            <td>005/n093/n121/n132</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>005<br>093<br>121<br>132</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="091">091</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
             <td>刺甲贝</td>
-            <td>005/n009/n093/n121/n132</td>
-            <td>冲浪/n钓鱼点</td>
+            <td>005<br>009<br>093<br>121<br>132</td>
+            <td>冲浪<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="092">092</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/092.png"></td>
             <td>鬼斯</td>
-            <td>062/n071</td>
+            <td>062<br>071</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="093">093</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/093.png"></td>
             <td>鬼斯通</td>
-            <td>063/n071</td>
+            <td>063<br>071</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="094">094</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/094.png"></td>
             <td>耿鬼</td>
-            <td>064/n069</td>
+            <td>064<br>069</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="095">095</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
             <td>大岩蛇</td>
-            <td>022/n023/n024/n025/n026/n059/n074/n075/n077/n080/n081/n082/n083/n084/n085/n086/n087/n088/n089/n090/n091/n092</td>
-            <td>摇草/n普草</td>
+            <td>022<br>023<br>024<br>025<br>026<br>059<br>074<br>075<br>077<br>080<br>081<br>082<br>083<br>084<br>085<br>086<br>087<br>088<br>089<br>090<br>091<br>092</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="096">096</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/096.png"></td>
             <td>催眠貘</td>
-            <td>038/n094/n116</td>
+            <td>038<br>094<br>116</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="097">097</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/097.png"></td>
             <td>引梦貘人</td>
-            <td>031/n038/n091</td>
+            <td>031<br>038<br>091</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="098">098</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
             <td>大钳蟹</td>
-            <td>004/n028/n128</td>
-            <td>冲浪/n普草/n普钓/n钓鱼点</td>
+            <td>004<br>028<br>128</td>
+            <td>冲浪<br>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="099">099</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
             <td>巨钳蟹</td>
-            <td>004/n028</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>004<br>028</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="100">100</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/100.png"></td>
             <td>霹雳电球</td>
-            <td>025/n048/n076/n128</td>
-            <td>摇草/n普草/n长草</td>
+            <td>025<br>048<br>076<br>128</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="101">101</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/101.png"></td>
             <td>顽皮雷弹</td>
-            <td>025/n048/n076</td>
-            <td>摇草/n普草/n长草</td>
+            <td>025<br>048<br>076</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="102">102</td>
@@ -932,15 +932,15 @@ date: 2026-08-23 10:16 +0800
             <td id="104">104</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/104.png"></td>
             <td>卡拉卡拉</td>
-            <td>022/n118</td>
-            <td>摇草/n普草</td>
+            <td>022<br>118</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="105">105</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/105.png"></td>
             <td>嘎啦嘎啦</td>
-            <td>022/n118</td>
-            <td>摇草/n长草</td>
+            <td>022<br>118</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="106">106</td>
@@ -960,120 +960,120 @@ date: 2026-08-23 10:16 +0800
             <td id="108">108</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/108.png"></td>
             <td>大舌头</td>
-            <td>100/n105/n107</td>
-            <td>普草/n长草</td>
+            <td>100<br>105<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="109">109</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/109.png"></td>
             <td>瓦斯弹</td>
-            <td>047/n100</td>
-            <td>普草/n长草</td>
+            <td>047<br>100</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="110">110</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/110.png"></td>
             <td>双弹瓦斯</td>
-            <td>042/n099</td>
+            <td>042<br>099</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="111">111</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/111.png"></td>
             <td>独角犀牛</td>
-            <td>022/n080/n081/n128</td>
-            <td>摇草/n普草</td>
+            <td>022<br>080<br>081<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="112">112</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/112.png"></td>
             <td>钻角犀兽</td>
-            <td>022/n102/n124</td>
-            <td>摇草/n普草</td>
+            <td>022<br>102<br>124</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="113">113</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/113.png"></td>
             <td>吉利蛋</td>
-            <td>117/n124</td>
-            <td>普草/n长草</td>
+            <td>117<br>124</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="114">114</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
             <td>蔓藤怪</td>
-            <td>032/n121/n126</td>
-            <td>普草/n长草</td>
+            <td>032<br>121<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="115">115</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
             <td>袋兽</td>
-            <td>023/n028/n126</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>028<br>126</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="116">116</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
             <td>墨海马</td>
-            <td>028/n042/n127/n133</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>028<br>042<br>127<br>133</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="117">117</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
             <td>海刺龙</td>
-            <td>028/n042/n127/n133</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>028<br>042<br>127<br>133</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="118">118</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
             <td>角金鱼</td>
-            <td>000/n003/n009/n028/n101/n119/n122/n123/n130</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>000<br>003<br>009<br>028<br>101<br>119<br>122<br>123<br>130</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="119">119</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
             <td>金鱼王</td>
-            <td>000/n003/n009/n028/n101/n119/n122/n123/n130</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>000<br>003<br>009<br>028<br>101<br>119<br>122<br>123<br>130</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="120">120</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
             <td>海星星</td>
-            <td>005/n028/n121/n132</td>
-            <td>冲浪/n冲浪点</td>
+            <td>005<br>028<br>121<br>132</td>
+            <td>冲浪<br>冲浪点</td>
         </tr>
         <tr>
             <td id="121">121</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
             <td>宝石海星</td>
-            <td>005/n028/n121/n132</td>
+            <td>005<br>028<br>121<br>132</td>
             <td>冲浪点</td>
         </tr>
         <tr>
             <td id="122">122</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/122.png"></td>
             <td>魔墙人偶</td>
-            <td>031/n125</td>
+            <td>031<br>125</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="123">123</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/123.png"></td>
             <td>飞天螳螂</td>
-            <td>076/n107/n125/n128</td>
-            <td>普草/n长草</td>
+            <td>076<br>107<br>125<br>128</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="124">124</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/124.png"></td>
             <td>迷唇姐</td>
-            <td>035/n088/n089/n107</td>
-            <td>普草/n长草</td>
+            <td>035<br>088<br>089<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="125">125</td>
@@ -1093,8 +1093,8 @@ date: 2026-08-23 10:16 +0800
             <td id="127">127</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
             <td>凯罗斯</td>
-            <td>023/n032/n047/n113/n115/n120/n126</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>032<br>047<br>113<br>115<br>120<br>126</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="128">128</td>
@@ -1107,43 +1107,43 @@ date: 2026-08-23 10:16 +0800
             <td id="129">129</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
-            <td>033/n095</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>033<br>095</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="130">130</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/130.png"></td>
             <td>暴鲤龙</td>
-            <td>036/n095</td>
-            <td>冲浪/n钓鱼点</td>
+            <td>036<br>095</td>
+            <td>冲浪<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="131">131</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/131.png"></td>
             <td>拉普拉斯</td>
-            <td>028/n042/n097</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>028<br>042<br>097</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="132">132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>027/n034/n035</td>
-            <td>普草/n长草</td>
+            <td>027<br>034<br>035</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="133">133</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/133.png"></td>
             <td>伊布</td>
-            <td>001/n113</td>
-            <td>普草/n长草</td>
+            <td>001<br>113</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="134">134</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/134.png"></td>
             <td>水伊布</td>
-            <td>002/n028/n043</td>
-            <td>冲浪/n普草/n长草</td>
+            <td>002<br>028<br>043</td>
+            <td>冲浪<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="135">135</td>
@@ -1156,8 +1156,8 @@ date: 2026-08-23 10:16 +0800
             <td id="136">136</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/136.png"></td>
             <td>火伊布</td>
-            <td>028/n031</td>
-            <td>普草/n长草</td>
+            <td>028<br>031</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="137">137</td>
@@ -1170,106 +1170,106 @@ date: 2026-08-23 10:16 +0800
             <td id="138">138</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/138.png"></td>
             <td>菊石兽</td>
-            <td>027/n043</td>
-            <td>冲浪/n普草</td>
+            <td>027<br>043</td>
+            <td>冲浪<br>普草</td>
         </tr>
         <tr>
             <td id="139">139</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/139.png"></td>
             <td>多刺菊石兽</td>
-            <td>023/n026/n043</td>
-            <td>冲浪/n摇草/n普草</td>
+            <td>023<br>026<br>043</td>
+            <td>冲浪<br>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="140">140</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/140.png"></td>
             <td>化石盔</td>
-            <td>015/n026</td>
+            <td>015<br>026</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="141">141</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/141.png"></td>
             <td>镰刀盔</td>
-            <td>014/n023</td>
-            <td>摇草/n普草</td>
+            <td>014<br>023</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="142">142</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/142.png"></td>
             <td>化石翼龙</td>
-            <td>013/n023</td>
-            <td>摇草/n普草</td>
+            <td>013<br>023</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="143">143</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/143.png"></td>
             <td>卡比兽</td>
-            <td>009/n023/n028</td>
-            <td>摇草/n普草/n长草</td>
+            <td>009<br>023<br>028</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="144">144</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/144.png"></td>
             <td>急冻鸟</td>
-            <td>027/n121</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>121</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="145">145</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/145.png"></td>
             <td>闪电鸟</td>
-            <td>020/n022/n107</td>
-            <td>摇草/n普草</td>
+            <td>020<br>022<br>107</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="146">146</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/146.png"></td>
             <td>火焰鸟</td>
-            <td>057/n058/n101</td>
-            <td>摇草/n普草</td>
+            <td>057<br>058<br>101</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="147">147</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
             <td>迷你龙</td>
-            <td>028/n097</td>
-            <td>普草/n普钓/n钓鱼点</td>
+            <td>028<br>097</td>
+            <td>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="148">148</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
             <td>哈克龙</td>
-            <td>028/n071/n097</td>
-            <td>冲浪/n钓鱼点/n长草</td>
+            <td>028<br>071<br>097</td>
+            <td>冲浪<br>钓鱼点<br>长草</td>
         </tr>
         <tr>
             <td id="149">149</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/149.png"></td>
             <td>快龙</td>
-            <td>028/n073/n097</td>
-            <td>冲浪/n摇草/n钓鱼点</td>
+            <td>028<br>073<br>097</td>
+            <td>冲浪<br>摇草<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="150">150</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/150.png"></td>
             <td>超梦</td>
-            <td>121/n122</td>
-            <td>摇草/n普草/n长草</td>
+            <td>121<br>122</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="151">151</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/151.png"></td>
             <td>梦幻</td>
-            <td>106/n120</td>
-            <td>摇草/n普草/n长草</td>
+            <td>106<br>120</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="152">152</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/152.png"></td>
             <td>菊草叶</td>
-            <td>123/n128</td>
-            <td>摇草/n长草</td>
+            <td>123<br>128</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="153">153</td>
@@ -1289,8 +1289,8 @@ date: 2026-08-23 10:16 +0800
             <td id="155">155</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/155.png"></td>
             <td>火球鼠</td>
-            <td>060/n128</td>
-            <td>摇草/n普草</td>
+            <td>060<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="156">156</td>
@@ -1310,22 +1310,22 @@ date: 2026-08-23 10:16 +0800
             <td id="158">158</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/158.png"></td>
             <td>小锯鳄</td>
-            <td>075/n117/n128</td>
-            <td>冲浪/n摇草/n普草</td>
+            <td>075<br>117<br>128</td>
+            <td>冲浪<br>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="159">159</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/159.png"></td>
             <td>蓝鳄</td>
-            <td>075/n078/n116</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>075<br>078<br>116</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="160">160</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/160.png"></td>
             <td>大力鳄</td>
-            <td>078/n079/n116</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>078<br>079<br>116</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="161">161</td>
@@ -1338,8 +1338,8 @@ date: 2026-08-23 10:16 +0800
             <td id="162">162</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/162.png"></td>
             <td>大尾立</td>
-            <td>031/n111</td>
-            <td>普草/n长草</td>
+            <td>031<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="163">163</td>
@@ -1352,8 +1352,8 @@ date: 2026-08-23 10:16 +0800
             <td id="164">164</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/164.png"></td>
             <td>猫头夜鹰</td>
-            <td>095/n111</td>
-            <td>普草/n长草</td>
+            <td>095<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="165">165</td>
@@ -1366,8 +1366,8 @@ date: 2026-08-23 10:16 +0800
             <td id="166">166</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/166.png"></td>
             <td>安瓢虫</td>
-            <td>066/n111</td>
-            <td>普草/n长草</td>
+            <td>066<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="167">167</td>
@@ -1387,22 +1387,22 @@ date: 2026-08-23 10:16 +0800
             <td id="169">169</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/169.png"></td>
             <td>叉字蝠</td>
-            <td>006/n063/n107</td>
-            <td>摇草/n普草/n长草</td>
+            <td>006<br>063<br>107</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="170">170</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/170.png"></td>
             <td>灯笼鱼</td>
-            <td>043/n082</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>043<br>082</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="171">171</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/171.png"></td>
             <td>电灯怪</td>
-            <td>043/n082/n085</td>
-            <td>冲浪/n冲浪点/n钓鱼点</td>
+            <td>043<br>082<br>085</td>
+            <td>冲浪<br>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="172">172</td>
@@ -1415,28 +1415,28 @@ date: 2026-08-23 10:16 +0800
             <td id="173">173</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/173.png"></td>
             <td>皮宝宝</td>
-            <td>106/n107</td>
+            <td>106<br>107</td>
             <td>长草</td>
         </tr>
         <tr>
             <td id="174">174</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/174.png"></td>
             <td>宝宝丁</td>
-            <td>106/n107</td>
-            <td>普草/n长草</td>
+            <td>106<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="175">175</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/175.png"></td>
             <td>波克比</td>
-            <td>128/n129</td>
+            <td>128<br>129</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="176">176</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/176.png"></td>
             <td>波克基古</td>
-            <td>127/n129</td>
+            <td>127<br>129</td>
             <td>长草</td>
         </tr>
         <tr>
@@ -1457,15 +1457,15 @@ date: 2026-08-23 10:16 +0800
             <td id="179">179</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/179.png"></td>
             <td>咩利羊</td>
-            <td>045/n119</td>
-            <td>普草/n长草</td>
+            <td>045<br>119</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="180">180</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/180.png"></td>
             <td>茸茸羊</td>
-            <td>111/n118</td>
-            <td>普草/n长草</td>
+            <td>111<br>118</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="181">181</td>
@@ -1485,29 +1485,29 @@ date: 2026-08-23 10:16 +0800
             <td id="183">183</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/183.png"></td>
             <td>玛力露</td>
-            <td>002/n009/n071/n075/n078/n082/n086/n097/n107/n119/n123/n129/n130</td>
-            <td>冲浪/n冲浪点/n普草/n长草</td>
+            <td>002<br>009<br>071<br>075<br>078<br>082<br>086<br>097<br>107<br>119<br>123<br>129<br>130</td>
+            <td>冲浪<br>冲浪点<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="184">184</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/184.png"></td>
             <td>玛力露丽</td>
-            <td>009/n071/n075/n078/n082/n086/n097/n107/n116/n117/n119/n123/n129/n130</td>
-            <td>冲浪/n冲浪点/n摇草/n普草</td>
+            <td>009<br>071<br>075<br>078<br>082<br>086<br>097<br>107<br>116<br>117<br>119<br>123<br>129<br>130</td>
+            <td>冲浪<br>冲浪点<br>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="185">185</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/185.png"></td>
             <td>树才怪</td>
-            <td>012/n125</td>
-            <td>普草/n长草</td>
+            <td>012<br>125</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="186">186</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/186.png"></td>
             <td>蚊香蛙皇</td>
-            <td>073/n079/n085/n107/n116/n126/n128/n129</td>
-            <td>冲浪点/n普草/n钓鱼点</td>
+            <td>073<br>079<br>085<br>107<br>116<br>126<br>128<br>129</td>
+            <td>冲浪点<br>普草<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="187">187</td>
@@ -1541,8 +1541,8 @@ date: 2026-08-23 10:16 +0800
             <td id="191">191</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/191.png"></td>
             <td>向日种子</td>
-            <td>028/n129</td>
-            <td>普草/n长草</td>
+            <td>028<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="192">192</td>
@@ -1555,22 +1555,22 @@ date: 2026-08-23 10:16 +0800
             <td id="193">193</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/193.png"></td>
             <td>蜻蜻蜓</td>
-            <td>008/n028/n101</td>
-            <td>普草/n长草</td>
+            <td>008<br>028<br>101</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="194">194</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/194.png"></td>
             <td>乌波</td>
-            <td>028/n093</td>
-            <td>冲浪/n长草</td>
+            <td>028<br>093</td>
+            <td>冲浪<br>长草</td>
         </tr>
         <tr>
             <td id="195">195</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/195.png"></td>
             <td>沼王</td>
-            <td>028/n093/n095/n097</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>028<br>093<br>095<br>097</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="196">196</td>
@@ -1597,8 +1597,8 @@ date: 2026-08-23 10:16 +0800
             <td id="199">199</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/199.png"></td>
             <td>呆呆王</td>
-            <td>006/n099</td>
-            <td>冲浪/n长草</td>
+            <td>006<br>099</td>
+            <td>冲浪<br>长草</td>
         </tr>
         <tr>
             <td id="200">200</td>
@@ -1611,7 +1611,7 @@ date: 2026-08-23 10:16 +0800
             <td id="201">201</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/201.png"></td>
             <td>未知图腾</td>
-            <td>067/n068</td>
+            <td>067<br>068</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -1625,43 +1625,43 @@ date: 2026-08-23 10:16 +0800
             <td id="203">203</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/203.png"></td>
             <td>麒麟奇</td>
-            <td>069/n095/n121</td>
-            <td>普草/n长草</td>
+            <td>069<br>095<br>121</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="204">204</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/204.png"></td>
             <td>榛果球</td>
-            <td>030/n126</td>
-            <td>普草/n长草</td>
+            <td>030<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="205">205</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/205.png"></td>
             <td>佛烈托斯</td>
-            <td>031/n099</td>
+            <td>031<br>099</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="206">206</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/206.png"></td>
             <td>土龙弟弟</td>
-            <td>045/n073/n079/n095/n097/n099/n100/n127/n129</td>
-            <td>摇草/n普草</td>
+            <td>045<br>073<br>079<br>095<br>097<br>099<br>100<br>127<br>129</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="207">207</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/207.png"></td>
             <td>天蝎</td>
-            <td>100/n119/n124/n131</td>
-            <td>普草/n长草</td>
+            <td>100<br>119<br>124<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="208">208</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/208.png"></td>
             <td>大钢蛇</td>
-            <td>023/n024/n025/n026/n083/n084/n085/n086/n087/n088/n089/n090/n091/n092</td>
-            <td>摇草/n普草</td>
+            <td>023<br>024<br>025<br>026<br>083<br>084<br>085<br>086<br>087<br>088<br>089<br>090<br>091<br>092</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="209">209</td>
@@ -1681,21 +1681,21 @@ date: 2026-08-23 10:16 +0800
             <td id="211">211</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/211.png"></td>
             <td>千针鱼</td>
-            <td>004/n042/n099/n104/n105</td>
-            <td>冲浪点/n普钓/n钓鱼点</td>
+            <td>004<br>042<br>099<br>104<br>105</td>
+            <td>冲浪点<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="212">212</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/212.png"></td>
             <td>巨钳螳螂</td>
-            <td>027/n076</td>
+            <td>027<br>076</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="213">213</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/213.png"></td>
             <td>壶壶</td>
-            <td>025/n094</td>
+            <td>025<br>094</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -1709,7 +1709,7 @@ date: 2026-08-23 10:16 +0800
             <td id="215">215</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/215.png"></td>
             <td>狃拉</td>
-            <td>033/n036/n046</td>
+            <td>033<br>036<br>046</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -1717,14 +1717,14 @@ date: 2026-08-23 10:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/216.png"></td>
             <td>熊宝宝</td>
             <td id="048">048</td>
-            <td>普草/n长草</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="217">217</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/217.png"></td>
             <td>圈圈熊</td>
-            <td>023/n049</td>
-            <td>摇草/n普草</td>
+            <td>023<br>049</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="218">218</td>
@@ -1737,8 +1737,8 @@ date: 2026-08-23 10:16 +0800
             <td id="219">219</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/219.png"></td>
             <td>熔岩蜗牛</td>
-            <td>023/n050</td>
-            <td>摇草/n普草</td>
+            <td>023<br>050</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="220">220</td>
@@ -1751,50 +1751,50 @@ date: 2026-08-23 10:16 +0800
             <td id="221">221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>033/n034/n035/n036/n052</td>
-            <td>普草/n长草</td>
+            <td>033<br>034<br>035<br>036<br>052</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="222">222</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/222.png"></td>
             <td>太阳珊瑚</td>
-            <td>005/n073/n101/n127</td>
-            <td>冲浪/n冲浪点/n普钓/n长草</td>
+            <td>005<br>073<br>101<br>127</td>
+            <td>冲浪<br>冲浪点<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="223">223</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/223.png"></td>
             <td>铁炮鱼</td>
-            <td>043/n102/n134</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>043<br>102<br>134</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="224">224</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/224.png"></td>
             <td>章鱼桶</td>
-            <td>043/n102/n134</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>043<br>102<br>134</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="225">225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>032/n033/n034/n035/n036/n079/n130</td>
-            <td>普草/n长草</td>
+            <td>032<br>033<br>034<br>035<br>036<br>079<br>130</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="226">226</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/226.png"></td>
             <td>巨翅飞鱼</td>
-            <td>043/n103/n134</td>
-            <td>冲浪/n冲浪点</td>
+            <td>043<br>103<br>134</td>
+            <td>冲浪<br>冲浪点</td>
         </tr>
         <tr>
             <td id="227">227</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/227.png"></td>
             <td>盔甲鸟</td>
-            <td>023/n048/n079</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>048<br>079</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="228">228</td>
@@ -1807,15 +1807,15 @@ date: 2026-08-23 10:16 +0800
             <td id="229">229</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/229.png"></td>
             <td>黑鲁加</td>
-            <td>031/n048/n070</td>
-            <td>普草/n长草</td>
+            <td>031<br>048<br>070</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="230">230</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/230.png"></td>
             <td>刺龙王</td>
-            <td>042/n103/n127/n133</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>042<br>103<br>127<br>133</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="231">231</td>
@@ -1828,8 +1828,8 @@ date: 2026-08-23 10:16 +0800
             <td id="232">232</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/232.png"></td>
             <td>顿甲</td>
-            <td>023/n051/n102</td>
-            <td>摇草/n普草</td>
+            <td>023<br>051<br>102</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="233">233</td>
@@ -1849,7 +1849,7 @@ date: 2026-08-23 10:16 +0800
             <td id="235">235</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/235.png"></td>
             <td>图图犬</td>
-            <td>032/n033</td>
+            <td>032<br>033</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -1877,8 +1877,8 @@ date: 2026-08-23 10:16 +0800
             <td id="239">239</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/239.png"></td>
             <td>电击怪</td>
-            <td>007/n046/n047</td>
-            <td>普草/n长草</td>
+            <td>007<br>046<br>047</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="240">240</td>
@@ -1905,22 +1905,22 @@ date: 2026-08-23 10:16 +0800
             <td id="243">243</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/243.png"></td>
             <td>雷公</td>
-            <td>021/n034</td>
-            <td>摇草/n普草</td>
+            <td>021<br>034</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="244">244</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/244.png"></td>
             <td>炎帝</td>
-            <td>032/n056/n059</td>
-            <td>摇草/n普草</td>
+            <td>032<br>056<br>059</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="245">245</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/245.png"></td>
             <td>水君</td>
-            <td>004/n035</td>
-            <td>冲浪/n冲浪点/n摇草</td>
+            <td>004<br>035</td>
+            <td>冲浪<br>冲浪点<br>摇草</td>
         </tr>
         <tr>
             <td id="246">246</td>
@@ -1933,43 +1933,43 @@ date: 2026-08-23 10:16 +0800
             <td id="247">247</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/247.png"></td>
             <td>沙基拉斯</td>
-            <td>012/n124</td>
-            <td>普草/n长草</td>
+            <td>012<br>124</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="248">248</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/248.png"></td>
             <td>班基拉斯</td>
-            <td>018/n024/n091/n124</td>
-            <td>摇草/n普草</td>
+            <td>018<br>024<br>091<br>124</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="249">249</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/249.png"></td>
             <td>洛奇亚</td>
-            <td>130/n133/n134</td>
-            <td>冲浪点/n摇草</td>
+            <td>130<br>133<br>134</td>
+            <td>冲浪点<br>摇草</td>
         </tr>
         <tr>
             <td id="250">250</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/250.png"></td>
             <td>凤王</td>
-            <td>048/n127</td>
-            <td>摇草/n普草/n长草</td>
+            <td>048<br>127</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="251">251</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/251.png"></td>
             <td>时拉比</td>
-            <td>047/n123</td>
-            <td>摇草/n普草/n长草</td>
+            <td>047<br>123</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="252">252</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/252.png"></td>
             <td>木守宫</td>
-            <td>009/n128</td>
-            <td>普草/n长草</td>
+            <td>009<br>128</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="253">253</td>
@@ -1982,15 +1982,15 @@ date: 2026-08-23 10:16 +0800
             <td id="254">254</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/254.png"></td>
             <td>蜥蜴王</td>
-            <td>028/n031</td>
-            <td>普草/n长草</td>
+            <td>028<br>031</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="255">255</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/255.png"></td>
             <td>火稚鸡</td>
-            <td>099/n128</td>
-            <td>普草/n长草</td>
+            <td>099<br>128</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="256">256</td>
@@ -2011,21 +2011,21 @@ date: 2026-08-23 10:16 +0800
             <td><img src="https://www.serebii.net/pokedex-xy/icon/258.png"></td>
             <td>水跃鱼</td>
             <td id="104">104</td>
-            <td>冲浪/n普草</td>
+            <td>冲浪<br>普草</td>
         </tr>
         <tr>
             <td id="259">259</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/259.png"></td>
             <td>沼跃鱼</td>
-            <td>104/n105</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>104<br>105</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="260">260</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/260.png"></td>
             <td>巨沼怪</td>
-            <td>030/n105/n107</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>030<br>105<br>107</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="261">261</td>
@@ -2059,14 +2059,14 @@ date: 2026-08-23 10:16 +0800
             <td id="265">265</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/265.png"></td>
             <td>刺尾虫</td>
-            <td>046/n076</td>
-            <td>普草/n长草</td>
+            <td>046<br>076</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="266">266</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/266.png"></td>
             <td>甲壳茧</td>
-            <td>076/n126</td>
+            <td>076<br>126</td>
             <td>长草</td>
         </tr>
         <tr>
@@ -2080,7 +2080,7 @@ date: 2026-08-23 10:16 +0800
             <td id="268">268</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/268.png"></td>
             <td>盾甲茧</td>
-            <td>076/n126</td>
+            <td>076<br>126</td>
             <td>长草</td>
         </tr>
         <tr>
@@ -2094,8 +2094,8 @@ date: 2026-08-23 10:16 +0800
             <td id="270">270</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/270.png"></td>
             <td>莲叶童子</td>
-            <td>107/n118</td>
-            <td>冲浪/n长草</td>
+            <td>107<br>118</td>
+            <td>冲浪<br>长草</td>
         </tr>
         <tr>
             <td id="271">271</td>
@@ -2108,8 +2108,8 @@ date: 2026-08-23 10:16 +0800
             <td id="272">272</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/272.png"></td>
             <td>乐天河童</td>
-            <td>107/n117</td>
-            <td>冲浪/n冲浪点/n普草</td>
+            <td>107<br>117</td>
+            <td>冲浪<br>冲浪点<br>普草</td>
         </tr>
         <tr>
             <td id="273">273</td>
@@ -2122,15 +2122,15 @@ date: 2026-08-23 10:16 +0800
             <td id="274">274</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/274.png"></td>
             <td>长鼻叶</td>
-            <td>095/n111/n112</td>
-            <td>普草/n长草</td>
+            <td>095<br>111<br>112</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="275">275</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/275.png"></td>
             <td>狡猾天狗</td>
-            <td>095/n111</td>
-            <td>摇草/n普草</td>
+            <td>095<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="276">276</td>
@@ -2150,15 +2150,15 @@ date: 2026-08-23 10:16 +0800
             <td id="278">278</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/278.png"></td>
             <td>长翅鸥</td>
-            <td>096/n116</td>
-            <td>冲浪/n摇草</td>
+            <td>096<br>116</td>
+            <td>冲浪<br>摇草</td>
         </tr>
         <tr>
             <td id="279">279</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
-            <td>032/n098/n116/n121/n130</td>
-            <td>冲浪/n摇草/n普草/n长草</td>
+            <td>032<br>098<br>116<br>121<br>130</td>
+            <td>冲浪<br>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="280">280</td>
@@ -2178,22 +2178,22 @@ date: 2026-08-23 10:16 +0800
             <td id="282">282</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
-            <td>026/n034/n035</td>
-            <td>普草/n长草</td>
+            <td>026<br>034<br>035</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="283">283</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
-            <td>026/n034/n116</td>
-            <td>冲浪/n普草</td>
+            <td>026<br>034<br>116</td>
+            <td>冲浪<br>普草</td>
         </tr>
         <tr>
             <td id="284">284</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/284.png"></td>
             <td>雨翅蛾</td>
-            <td>027/n116</td>
-            <td>冲浪/n长草</td>
+            <td>027<br>116</td>
+            <td>冲浪<br>长草</td>
         </tr>
         <tr>
             <td id="285">285</td>
@@ -2213,22 +2213,22 @@ date: 2026-08-23 10:16 +0800
             <td id="287">287</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/287.png"></td>
             <td>懒人獭</td>
-            <td>111/n113</td>
-            <td>普草/n长草</td>
+            <td>111<br>113</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="288">288</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/288.png"></td>
             <td>过动猿</td>
-            <td>009/n111</td>
-            <td>普草/n长草</td>
+            <td>009<br>111</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="289">289</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/289.png"></td>
             <td>请假王</td>
-            <td>009/n111</td>
-            <td>摇草/n长草</td>
+            <td>009<br>111</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="290">290</td>
@@ -2269,7 +2269,7 @@ date: 2026-08-23 10:16 +0800
             <td id="295">295</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/295.png"></td>
             <td>爆音怪</td>
-            <td>019/n026/n030/n086/n109</td>
+            <td>019<br>026<br>030<br>086<br>109</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -2283,36 +2283,36 @@ date: 2026-08-23 10:16 +0800
             <td id="297">297</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/297.png"></td>
             <td>铁掌力士</td>
-            <td>018/n093</td>
+            <td>018<br>093</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="298">298</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/298.png"></td>
             <td>露力丽</td>
-            <td>025/n045/n117/n129</td>
-            <td>冲浪/n普草</td>
+            <td>025<br>045<br>117<br>129</td>
+            <td>冲浪<br>普草</td>
         </tr>
         <tr>
             <td id="299">299</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/299.png"></td>
             <td>朝北鼻</td>
-            <td>020/n022/n026/n084/n085/n086/n087/n088/n089/n090/n091</td>
+            <td>020<br>022<br>026<br>084<br>085<br>086<br>087<br>088<br>089<br>090<br>091</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="300">300</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/300.png"></td>
             <td>向尾喵</td>
-            <td>001/n035</td>
-            <td>普草/n长草</td>
+            <td>001<br>035</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="301">301</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/301.png"></td>
             <td>优雅猫</td>
-            <td>001/n032</td>
-            <td>摇草/n长草</td>
+            <td>001<br>032</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="302">302</td>
@@ -2325,29 +2325,29 @@ date: 2026-08-23 10:16 +0800
             <td id="303">303</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/303.png"></td>
             <td>大嘴娃</td>
-            <td>024/n030/n075</td>
-            <td>摇草/n普草</td>
+            <td>024<br>030<br>075</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="304">304</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/304.png"></td>
             <td>可可多拉</td>
-            <td>074/n108/n109/n110</td>
+            <td>074<br>108<br>109<br>110</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="305">305</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/305.png"></td>
             <td>可多拉</td>
-            <td>075/n084/n085/n086/n087/n088/n089/n090/n092</td>
+            <td>075<br>084<br>085<br>086<br>087<br>088<br>089<br>090<br>092</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="306">306</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/306.png"></td>
             <td>波士可多拉</td>
-            <td>018/n024/n074</td>
-            <td>摇草/n普草</td>
+            <td>018<br>024<br>074</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="307">307</td>
@@ -2409,8 +2409,8 @@ date: 2026-08-23 10:16 +0800
             <td id="315">315</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/315.png"></td>
             <td>毒蔷薇</td>
-            <td>028/n072/n120/n126</td>
-            <td>普草/n长草</td>
+            <td>028<br>072<br>120<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="316">316</td>
@@ -2430,50 +2430,50 @@ date: 2026-08-23 10:16 +0800
             <td id="318">318</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/318.png"></td>
             <td>利牙鱼</td>
-            <td>097/n117/n119/n121</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>097<br>117<br>119<br>121</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="319">319</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/319.png"></td>
             <td>巨牙鲨</td>
-            <td>097/n117/n119</td>
-            <td>冲浪/n钓鱼点</td>
+            <td>097<br>117<br>119</td>
+            <td>冲浪<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="320">320</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/320.png"></td>
             <td>吼吼鲸</td>
-            <td>043/n122</td>
-            <td>冲浪/n冲浪点</td>
+            <td>043<br>122</td>
+            <td>冲浪<br>冲浪点</td>
         </tr>
         <tr>
             <td id="321">321</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/321.png"></td>
             <td>吼鲸王</td>
-            <td>043/n123/n126</td>
-            <td>冲浪/n冲浪点</td>
+            <td>043<br>123<br>126</td>
+            <td>冲浪<br>冲浪点</td>
         </tr>
         <tr>
             <td id="322">322</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/322.png"></td>
             <td>呆火驼</td>
-            <td>048/n049/n051/n052/n054/n055/n056/n057/n059/n060</td>
+            <td>048<br>049<br>051<br>052<br>054<br>055<br>056<br>057<br>059<br>060</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="323">323</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/323.png"></td>
             <td>喷火驼</td>
-            <td>048/n049/n050/n051/n052/n053/n054/n055/n056/n057/n058/n059/n060</td>
-            <td>普草/n长草</td>
+            <td>048<br>049<br>050<br>051<br>052<br>053<br>054<br>055<br>056<br>057<br>058<br>059<br>060</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="324">324</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/324.png"></td>
             <td>煤炭龟</td>
-            <td>024/n049/n050</td>
-            <td>摇草/n普草</td>
+            <td>024<br>049<br>050</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="325">325</td>
@@ -2500,22 +2500,22 @@ date: 2026-08-23 10:16 +0800
             <td id="328">328</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/328.png"></td>
             <td>大颚蚁</td>
-            <td>011/n024/n048</td>
+            <td>011<br>024<br>048</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="329">329</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/329.png"></td>
             <td>超音波幼虫</td>
-            <td>024/n048</td>
-            <td>普草/n长草</td>
+            <td>024<br>048</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="330">330</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/330.png"></td>
             <td>沙漠蜻蜓</td>
             <td id="024">024</td>
-            <td>摇草/n普草</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="331">331</td>
@@ -2528,84 +2528,84 @@ date: 2026-08-23 10:16 +0800
             <td id="332">332</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/332.png"></td>
             <td>梦歌仙人掌</td>
-            <td>015/n030</td>
+            <td>015<br>030</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="333">333</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/333.png"></td>
             <td>青绵鸟</td>
-            <td>028/n122/n123</td>
+            <td>028<br>122<br>123</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="334">334</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/334.png"></td>
             <td>七夕青鸟</td>
-            <td>028/n073/n079/n095/n122/n123</td>
-            <td>普草/n长草</td>
+            <td>028<br>073<br>079<br>095<br>122<br>123</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="335">335</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/335.png"></td>
             <td>猫鼬斩</td>
-            <td>028/n097/n111/n119</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>097<br>111<br>119</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="336">336</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/336.png"></td>
             <td>饭匙蛇</td>
-            <td>028/n097/n111/n119</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>097<br>111<br>119</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="337">337</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
-            <td>017/n018/n025/n032/n035/n121/n130</td>
-            <td>摇草/n普草/n长草</td>
+            <td>017<br>018<br>025<br>032<br>035<br>121<br>130</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="338">338</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
-            <td>017/n018/n025/n032/n035/n121/n130</td>
-            <td>摇草/n普草/n长草</td>
+            <td>017<br>018<br>025<br>032<br>035<br>121<br>130</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="339">339</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/339.png"></td>
             <td>泥泥鳅</td>
-            <td>002/n116/n117/n127/n128/n129</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>002<br>116<br>117<br>127<br>128<br>129</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="340">340</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/340.png"></td>
             <td>鲶鱼王</td>
-            <td>002/n116/n117/n128</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>002<br>116<br>117<br>128</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="341">341</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/341.png"></td>
             <td>龙虾小兵</td>
-            <td>000/n101/n119</td>
-            <td>冲浪/n冲浪点/n普钓</td>
+            <td>000<br>101<br>119</td>
+            <td>冲浪<br>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="342">342</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/342.png"></td>
             <td>铁螯龙虾</td>
-            <td>000/n101/n119</td>
-            <td>冲浪点/n钓鱼点</td>
+            <td>000<br>101<br>119</td>
+            <td>冲浪点<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="343">343</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/343.png"></td>
             <td>天秤偶</td>
-            <td>011/n018/n019</td>
+            <td>011<br>018<br>019</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -2640,36 +2640,36 @@ date: 2026-08-23 10:16 +0800
             <td id="348">348</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/348.png"></td>
             <td>太古盔甲</td>
-            <td>017/n018/n025</td>
-            <td>摇草/n普草</td>
+            <td>017<br>018<br>025</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="349">349</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/349.png"></td>
             <td>丑丑鱼</td>
-            <td>099/n117/n130</td>
-            <td>冲浪/n普钓/n钓鱼点</td>
+            <td>099<br>117<br>130</td>
+            <td>冲浪<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="350">350</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/350.png"></td>
             <td>美纳斯</td>
-            <td>099/n117/n131</td>
-            <td>冲浪/n钓鱼点</td>
+            <td>099<br>117<br>131</td>
+            <td>冲浪<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="351">351</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/351.png"></td>
             <td>飘浮泡泡</td>
-            <td>047/n107</td>
-            <td>摇草/n普草</td>
+            <td>047<br>107</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="352">352</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/352.png"></td>
             <td>变隐龙</td>
-            <td>095/n114/n115</td>
-            <td>普草/n长草</td>
+            <td>095<br>114<br>115</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="353">353</td>
@@ -2682,7 +2682,7 @@ date: 2026-08-23 10:16 +0800
             <td id="354">354</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/354.png"></td>
             <td>诅咒娃娃</td>
-            <td>061/n062/n063/n064/n065/n067/n068/n069/n070/n071/n078</td>
+            <td>061<br>062<br>063<br>064<br>065<br>067<br>068<br>069<br>070<br>071<br>078</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -2703,22 +2703,22 @@ date: 2026-08-23 10:16 +0800
             <td id="357">357</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/357.png"></td>
             <td>热带龙</td>
-            <td>099/n127</td>
-            <td>普草/n长草</td>
+            <td>099<br>127</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="358">358</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/358.png"></td>
             <td>风铃铃</td>
-            <td>066/n101</td>
-            <td>普草/n长草</td>
+            <td>066<br>101</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="359">359</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/359.png"></td>
             <td>阿勃梭鲁</td>
-            <td>065/n121/n122</td>
-            <td>普草/n长草</td>
+            <td>065<br>121<br>122</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="360">360</td>
@@ -2745,57 +2745,57 @@ date: 2026-08-23 10:16 +0800
             <td id="363">363</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/363.png"></td>
             <td>海豹球</td>
-            <td>043/n102/n132/n133</td>
-            <td>冲浪/n普钓</td>
+            <td>043<br>102<br>132<br>133</td>
+            <td>冲浪<br>普钓</td>
         </tr>
         <tr>
             <td id="364">364</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/364.png"></td>
             <td>海魔狮</td>
-            <td>043/n101/n134</td>
-            <td>冲浪/n冲浪点/n普钓</td>
+            <td>043<br>101<br>134</td>
+            <td>冲浪<br>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="365">365</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/365.png"></td>
             <td>帝牙海狮</td>
-            <td>043/n097/n133</td>
-            <td>冲浪点/n普钓</td>
+            <td>043<br>097<br>133</td>
+            <td>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="366">366</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/366.png"></td>
             <td>珍珠贝</td>
-            <td>095/n104/n105/n132</td>
+            <td>095<br>104<br>105<br>132</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="367">367</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/367.png"></td>
             <td>猎斑鱼</td>
-            <td>093/n131</td>
+            <td>093<br>131</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="368">368</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/368.png"></td>
             <td>樱花鱼</td>
-            <td>086/n104/n105/n130</td>
-            <td>普钓/n钓鱼点</td>
+            <td>086<br>104<br>105<br>130</td>
+            <td>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="369">369</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/369.png"></td>
             <td>古空棘鱼</td>
-            <td>085/n104/n105</td>
-            <td>普钓/n钓鱼点</td>
+            <td>085<br>104<br>105</td>
+            <td>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="370">370</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/370.png"></td>
             <td>爱心鱼</td>
-            <td>005/n082/n093/n121/n132/n134</td>
-            <td>普钓/n钓鱼点</td>
+            <td>005<br>082<br>093<br>121<br>132<br>134</td>
+            <td>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="371">371</td>
@@ -2815,7 +2815,7 @@ date: 2026-08-23 10:16 +0800
             <td id="373">373</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/373.png"></td>
             <td>暴飞龙</td>
-            <td>030/n054</td>
+            <td>030<br>054</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -2829,92 +2829,92 @@ date: 2026-08-23 10:16 +0800
             <td id="375">375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>034/n057</td>
-            <td>普草/n长草</td>
+            <td>034<br>057</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="376">376</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
-            <td>025/n034/n035/n058/n102</td>
-            <td>摇草/n普草</td>
+            <td>025<br>034<br>035<br>058<br>102</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="377">377</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/377.png"></td>
             <td>雷吉洛克</td>
-            <td>049/n058</td>
-            <td>摇草/n普草</td>
+            <td>049<br>058</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="378">378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>035/n057</td>
-            <td>摇草/n普草/n长草</td>
+            <td>035<br>057</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="379">379</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/379.png"></td>
             <td>雷吉斯奇鲁</td>
-            <td>052/n056</td>
-            <td>摇草/n普草</td>
+            <td>052<br>056</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="380">380</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/380.png"></td>
             <td>拉帝亚斯</td>
-            <td>045/n046/n073</td>
-            <td>摇草/n普草</td>
+            <td>045<br>046<br>073</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="381">381</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/381.png"></td>
             <td>拉帝欧斯</td>
-            <td>006/n095</td>
-            <td>摇草/n普草/n长草</td>
+            <td>006<br>095</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="382">382</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/382.png"></td>
             <td>盖欧卡</td>
-            <td>009/n079/n095</td>
-            <td>冲浪/n冲浪点/n普钓</td>
+            <td>009<br>079<br>095</td>
+            <td>冲浪<br>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="383">383</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/383.png"></td>
             <td>固拉多</td>
-            <td>060/n099</td>
-            <td>摇草/n普草</td>
+            <td>060<br>099</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="384">384</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/384.png"></td>
             <td>烈空坐</td>
-            <td>055/n101</td>
-            <td>摇草/n普草</td>
+            <td>055<br>101</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="385">385</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/385.png"></td>
             <td>基拉祈</td>
-            <td>054/n100/n111</td>
-            <td>摇草/n普草</td>
+            <td>054<br>100<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="386">386</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/386.png"></td>
             <td>代欧奇希斯</td>
-            <td>026/n027/n051/n111/n112</td>
-            <td>摇草/n普草</td>
+            <td>026<br>027<br>051<br>111<br>112</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="387">387</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/387.png"></td>
             <td>草苗龟</td>
-            <td>107/n128</td>
-            <td>摇草/n长草</td>
+            <td>107<br>128</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="388">388</td>
@@ -2927,15 +2927,15 @@ date: 2026-08-23 10:16 +0800
             <td id="389">389</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/389.png"></td>
             <td>土台龟</td>
-            <td>030/n107</td>
-            <td>普草/n长草</td>
+            <td>030<br>107</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="390">390</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/390.png"></td>
             <td>小火焰猴</td>
-            <td>055/n107/n128</td>
-            <td>摇草/n普草/n长草</td>
+            <td>055<br>107<br>128</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="391">391</td>
@@ -2955,22 +2955,22 @@ date: 2026-08-23 10:16 +0800
             <td id="393">393</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/393.png"></td>
             <td>波加曼</td>
-            <td>073/n079/n128</td>
-            <td>摇草/n普草/n普钓</td>
+            <td>073<br>079<br>128</td>
+            <td>摇草<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="394">394</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/394.png"></td>
             <td>波皇子</td>
-            <td>075/n080/n123/n129</td>
-            <td>普草/n普钓</td>
+            <td>075<br>080<br>123<br>129</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="395">395</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/395.png"></td>
             <td>帝王拿波</td>
-            <td>078/n080/n126</td>
-            <td>普草/n普钓</td>
+            <td>078<br>080<br>126</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="396">396</td>
@@ -2997,15 +2997,15 @@ date: 2026-08-23 10:16 +0800
             <td id="399">399</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/399.png"></td>
             <td>大牙狸</td>
-            <td>002/n027/n041/n071</td>
+            <td>002<br>027<br>041<br>071</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="400">400</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/400.png"></td>
             <td>大尾狸</td>
-            <td>006/n030/n041/n071/n122</td>
-            <td>普草/n普钓/n长草</td>
+            <td>006<br>030<br>041<br>071<br>122</td>
+            <td>普草<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="401">401</td>
@@ -3018,7 +3018,7 @@ date: 2026-08-23 10:16 +0800
             <td id="402">402</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/402.png"></td>
             <td>音箱蟀</td>
-            <td>076/n125</td>
+            <td>076<br>125</td>
             <td>长草</td>
         </tr>
         <tr>
@@ -3053,8 +3053,8 @@ date: 2026-08-23 10:16 +0800
             <td id="407">407</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/407.png"></td>
             <td>罗丝雷朵</td>
-            <td>072/n111/n120/n126</td>
-            <td>摇草/n长草</td>
+            <td>072<br>111<br>120<br>126</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="408">408</td>
@@ -3067,8 +3067,8 @@ date: 2026-08-23 10:16 +0800
             <td id="409">409</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/409.png"></td>
             <td>战槌龙</td>
-            <td>031/n075</td>
-            <td>摇草/n普草</td>
+            <td>031<br>075</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="410">410</td>
@@ -3081,8 +3081,8 @@ date: 2026-08-23 10:16 +0800
             <td id="411">411</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/411.png"></td>
             <td>护城龙</td>
-            <td>025/n077</td>
-            <td>摇草/n普草</td>
+            <td>025<br>077</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="412">412</td>
@@ -3095,8 +3095,8 @@ date: 2026-08-23 10:16 +0800
             <td id="413">413</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/413.png"></td>
             <td>结草贵妇</td>
-            <td>048/n122/n123</td>
-            <td>普草/n长草</td>
+            <td>048<br>122<br>123</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="414">414</td>
@@ -3109,15 +3109,15 @@ date: 2026-08-23 10:16 +0800
             <td id="415">415</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/415.png"></td>
             <td>三蜜蜂</td>
-            <td>028/n120/n126</td>
-            <td>普草/n长草</td>
+            <td>028<br>120<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="416">416</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/416.png"></td>
             <td>蜂女王</td>
-            <td>028/n120/n126</td>
-            <td>摇草/n长草</td>
+            <td>028<br>120<br>126</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="417">417</td>
@@ -3130,15 +3130,15 @@ date: 2026-08-23 10:16 +0800
             <td id="418">418</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/418.png"></td>
             <td>泳圈鼬</td>
-            <td>073/n079/n095/n119/n121/n122/n126/n131</td>
-            <td>冲浪/n冲浪点/n普钓</td>
+            <td>073<br>079<br>095<br>119<br>121<br>122<br>126<br>131</td>
+            <td>冲浪<br>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="419">419</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/419.png"></td>
             <td>浮潜鼬</td>
-            <td>073/n079/n095/n119/n122/n126/n131</td>
-            <td>冲浪点/n普钓</td>
+            <td>073<br>079<br>095<br>119<br>122<br>126<br>131</td>
+            <td>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="420">420</td>
@@ -3158,14 +3158,14 @@ date: 2026-08-23 10:16 +0800
             <td id="422">422</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/422.png"></td>
             <td>无壳海兔</td>
-            <td>009/n043/n117</td>
+            <td>009<br>043<br>117</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="423">423</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
-            <td>033/n043/n117</td>
+            <td>033<br>043<br>117</td>
             <td>普钓</td>
         </tr>
         <tr>
@@ -3186,8 +3186,8 @@ date: 2026-08-23 10:16 +0800
             <td id="426">426</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/426.png"></td>
             <td>随风球</td>
-            <td>048/n114/n121/n122</td>
-            <td>普草/n长草</td>
+            <td>048<br>114<br>121<br>122</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="427">427</td>
@@ -3207,14 +3207,14 @@ date: 2026-08-23 10:16 +0800
             <td id="429">429</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/429.png"></td>
             <td>梦妖魔</td>
-            <td>070/n071/n078</td>
+            <td>070<br>071<br>078</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="430">430</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/430.png"></td>
             <td>乌鸦头头</td>
-            <td>066/n069</td>
+            <td>066<br>069</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -3242,35 +3242,35 @@ date: 2026-08-23 10:16 +0800
             <td id="434">434</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/434.png"></td>
             <td>臭鼬噗</td>
-            <td>053/n054</td>
+            <td>053<br>054</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="435">435</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/435.png"></td>
             <td>坦克臭鼬</td>
-            <td>056/n057</td>
+            <td>056<br>057</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="436">436</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/436.png"></td>
             <td>铜镜怪</td>
-            <td>021/n123</td>
+            <td>021<br>123</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="437">437</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/437.png"></td>
             <td>青铜钟</td>
-            <td>015/n017/n033/n123</td>
-            <td>摇草/n普草/n长草</td>
+            <td>015<br>017<br>033<br>123</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="438">438</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/438.png"></td>
             <td>盆才怪</td>
-            <td>013/n104</td>
+            <td>013<br>104</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -3298,29 +3298,29 @@ date: 2026-08-23 10:16 +0800
             <td id="442">442</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/442.png"></td>
             <td>花岩怪</td>
-            <td>036/n084</td>
-            <td>摇草/n普草</td>
+            <td>036<br>084</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="443">443</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/443.png"></td>
             <td>圆陆鲨</td>
-            <td>083/n117</td>
-            <td>普草/n普钓</td>
+            <td>083<br>117</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="444">444</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/444.png"></td>
             <td>尖牙陆鲨</td>
-            <td>082/n116</td>
-            <td>普草/n普钓</td>
+            <td>082<br>116</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="445">445</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/445.png"></td>
             <td>烈咬陆鲨</td>
-            <td>049/n085/n116</td>
-            <td>摇草/n普草/n普钓</td>
+            <td>049<br>085<br>116</td>
+            <td>摇草<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="446">446</td>
@@ -3333,7 +3333,7 @@ date: 2026-08-23 10:16 +0800
             <td id="447">447</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/447.png"></td>
             <td>利欧路</td>
-            <td>023/n045</td>
+            <td>023<br>045</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -3347,7 +3347,7 @@ date: 2026-08-23 10:16 +0800
             <td id="449">449</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/449.png"></td>
             <td>沙河马</td>
-            <td>023/n024</td>
+            <td>023<br>024</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -3361,57 +3361,57 @@ date: 2026-08-23 10:16 +0800
             <td id="451">451</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/451.png"></td>
             <td>钳尾蝎</td>
-            <td>049/n051/n053/n055/n056/n057/n058/n059/n060</td>
+            <td>049<br>051<br>053<br>055<br>056<br>057<br>058<br>059<br>060</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="452">452</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/452.png"></td>
             <td>龙王蝎</td>
-            <td>028/n058</td>
+            <td>028<br>058</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="453">453</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/453.png"></td>
             <td>不良蛙</td>
-            <td>002/n081/n116/n117</td>
-            <td>普草/n普钓</td>
+            <td>002<br>081<br>116<br>117</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="454">454</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/454.png"></td>
             <td>毒骷蛙</td>
-            <td>008/n082/n116</td>
-            <td>普草/n普钓/n长草</td>
+            <td>008<br>082<br>116</td>
+            <td>普草<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="455">455</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/455.png"></td>
             <td>尖牙笼</td>
-            <td>118/n127</td>
-            <td>摇草/n普草/n长草</td>
+            <td>118<br>127</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="456">456</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/456.png"></td>
             <td>荧光鱼</td>
-            <td>004/n028/n042/n104/n105/n107/n127/n133</td>
+            <td>004<br>028<br>042<br>104<br>105<br>107<br>127<br>133</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="457">457</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/457.png"></td>
             <td>霓虹鱼</td>
-            <td>004/n028/n042/n104/n105/n107/n127/n133</td>
-            <td>普钓/n钓鱼点</td>
+            <td>004<br>028<br>042<br>104<br>105<br>107<br>127<br>133</td>
+            <td>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="458">458</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/458.png"></td>
             <td>小球飞鱼</td>
-            <td>028/n043/n107/n134</td>
-            <td>冲浪/n普钓</td>
+            <td>028<br>043<br>107<br>134</td>
+            <td>冲浪<br>普钓</td>
         </tr>
         <tr>
             <td id="459">459</td>
@@ -3424,8 +3424,8 @@ date: 2026-08-23 10:16 +0800
             <td id="460">460</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/460.png"></td>
             <td>暴雪王</td>
-            <td>029/n095</td>
-            <td>普草/n长草</td>
+            <td>029<br>095</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="461">461</td>
@@ -3438,29 +3438,29 @@ date: 2026-08-23 10:16 +0800
             <td id="462">462</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/462.png"></td>
             <td>自爆磁怪</td>
-            <td>042/n051/n088</td>
-            <td>摇草/n普草</td>
+            <td>042<br>051<br>088</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="463">463</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/463.png"></td>
             <td>大舌舔</td>
-            <td>029/n052/n084/n100</td>
-            <td>摇草/n普草</td>
+            <td>029<br>052<br>084<br>100</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="464">464</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/464.png"></td>
             <td>超甲狂犀</td>
-            <td>053/n089</td>
-            <td>摇草/n普草</td>
+            <td>053<br>089</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="465">465</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/465.png"></td>
             <td>巨蔓藤</td>
-            <td>032/n090/n121</td>
-            <td>摇草/n普草</td>
+            <td>032<br>090<br>121</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="466">466</td>
@@ -3473,7 +3473,7 @@ date: 2026-08-23 10:16 +0800
             <td id="467">467</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/467.png"></td>
             <td>鸭嘴炎兽</td>
-            <td>029/n092</td>
+            <td>029<br>092</td>
             <td>普草</td>
         </tr>
         <tr>
@@ -3487,8 +3487,8 @@ date: 2026-08-23 10:16 +0800
             <td id="469">469</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/469.png"></td>
             <td>远古巨蜓</td>
-            <td>008/n048/n079/n101</td>
-            <td>摇草/n普草</td>
+            <td>008<br>048<br>079<br>101</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="470">470</td>
@@ -3508,169 +3508,169 @@ date: 2026-08-23 10:16 +0800
             <td id="472">472</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/472.png"></td>
             <td>天蝎王</td>
-            <td>079/n119/n124/n131</td>
-            <td>摇草/n普草</td>
+            <td>079<br>119<br>124<br>131</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="473">473</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/473.png"></td>
             <td>象牙猪</td>
-            <td>034/n035/n054/n079/n086</td>
-            <td>摇草/n普草</td>
+            <td>034<br>035<br>054<br>079<br>086</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="474">474</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/474.png"></td>
             <td>多边兽Ｚ</td>
-            <td>078/n088</td>
+            <td>078<br>088</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="475">475</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/475.png"></td>
             <td>艾路雷朵</td>
-            <td>026/n089</td>
+            <td>026<br>089</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="476">476</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/476.png"></td>
             <td>大朝北鼻</td>
-            <td>055/n077/n090</td>
-            <td>摇草/n普草</td>
+            <td>055<br>077<br>090</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="477">477</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/477.png"></td>
             <td>黑夜魔灵</td>
-            <td>029/n059/n076/n091</td>
-            <td>摇草/n普草</td>
+            <td>029<br>059<br>076<br>091</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="478">478</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/478.png"></td>
             <td>雪妖女</td>
-            <td>025/n029/n060/n076/n093</td>
-            <td>摇草/n普草</td>
+            <td>025<br>029<br>060<br>076<br>093</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="479">479</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/479.png"></td>
             <td>洛托姆</td>
-            <td>024/n076/n114</td>
+            <td>024<br>076<br>114</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="480">480</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/480.png"></td>
             <td>由克希</td>
-            <td>063/n131</td>
-            <td>摇草/n普草</td>
+            <td>063<br>131</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="481">481</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/481.png"></td>
             <td>艾姆利多</td>
-            <td>064/n129</td>
-            <td>摇草/n普草</td>
+            <td>064<br>129</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="482">482</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/482.png"></td>
             <td>亚克诺姆</td>
-            <td>065/n125</td>
-            <td>摇草/n普草</td>
+            <td>065<br>125</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="483">483</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/483.png"></td>
             <td>帝牙卢卡</td>
-            <td>113/n124</td>
-            <td>摇草/n普草</td>
+            <td>113<br>124</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="484">484</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/484.png"></td>
             <td>帕路奇亚</td>
-            <td>114/n121</td>
-            <td>摇草/n普草</td>
+            <td>114<br>121</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="485">485</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/485.png"></td>
             <td>席多蓝恩</td>
-            <td>050/n111/n119</td>
-            <td>摇草/n普草</td>
+            <td>050<br>111<br>119</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="486">486</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/486.png"></td>
             <td>雷吉奇卡斯</td>
-            <td>053/n111</td>
-            <td>摇草/n普草</td>
+            <td>053<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="487">487</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/487.png"></td>
             <td>骑拉帝纳</td>
-            <td>061/n111</td>
-            <td>摇草/n普草</td>
+            <td>061<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="488">488</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/488.png"></td>
             <td>克雷色利亚</td>
-            <td>062/n079</td>
-            <td>摇草/n普草</td>
+            <td>062<br>079</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="489">489</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/489.png"></td>
             <td>霏欧纳</td>
-            <td>028/n131</td>
-            <td>冲浪点/n普钓</td>
+            <td>028<br>131</td>
+            <td>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="490">490</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/490.png"></td>
             <td>玛纳霏</td>
-            <td>028/n130</td>
-            <td>冲浪点/n普钓</td>
+            <td>028<br>130</td>
+            <td>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="491">491</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/491.png"></td>
             <td>达克莱伊</td>
-            <td>066/n072</td>
-            <td>摇草/n普草</td>
+            <td>066<br>072</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="492">492</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/492.png"></td>
             <td>谢米</td>
-            <td>042/n122</td>
-            <td>摇草/n普草</td>
+            <td>042<br>122</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="493">493</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/493.png"></td>
             <td>阿尔宙斯</td>
-            <td>028/n118</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>118</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="494">494</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/494.png"></td>
             <td>比克提尼</td>
-            <td>028/n050/n052</td>
-            <td>摇草/n普草</td>
+            <td>028<br>050<br>052</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="495">495</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/495.png"></td>
             <td>藤藤蛇</td>
-            <td>001/n128</td>
-            <td>摇草/n普草</td>
+            <td>001<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="496">496</td>
@@ -3690,8 +3690,8 @@ date: 2026-08-23 10:16 +0800
             <td id="498">498</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/498.png"></td>
             <td>暖暖猪</td>
-            <td>092/n128</td>
-            <td>摇草/n普草</td>
+            <td>092<br>128</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="499">499</td>
@@ -3711,77 +3711,77 @@ date: 2026-08-23 10:16 +0800
             <td id="501">501</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/501.png"></td>
             <td>水水獭</td>
-            <td>005/n103/n107/n128</td>
-            <td>摇草/n普钓</td>
+            <td>005<br>103<br>107<br>128</td>
+            <td>摇草<br>普钓</td>
         </tr>
         <tr>
             <td id="502">502</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/502.png"></td>
             <td>双刃丸</td>
-            <td>005/n102</td>
+            <td>005<br>102</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="503">503</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/503.png"></td>
             <td>大剑鬼</td>
-            <td>009/n101</td>
-            <td>普钓/n钓鱼点</td>
+            <td>009<br>101</td>
+            <td>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="504">504</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/504.png"></td>
             <td>探探鼠</td>
-            <td>045/n046/n047/n121/n128/n129</td>
-            <td>普草/n长草</td>
+            <td>045<br>046<br>047<br>121<br>128<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="505">505</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/505.png"></td>
             <td>步哨鼠</td>
-            <td>006/n007/n042/n099/n100/n101/n111/n118/n127</td>
-            <td>摇草/n普草/n长草</td>
+            <td>006<br>007<br>042<br>099<br>100<br>101<br>111<br>118<br>127</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="506">506</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/506.png"></td>
             <td>小约克</td>
-            <td>045/n123</td>
-            <td>普草/n长草</td>
+            <td>045<br>123</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="507">507</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/507.png"></td>
             <td>哈约克</td>
-            <td>042/n099/n100/n101/n120</td>
-            <td>普草/n长草</td>
+            <td>042<br>099<br>100<br>101<br>120</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="508">508</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/508.png"></td>
             <td>长毛狗</td>
-            <td>042/n099/n100/n101/n118</td>
-            <td>摇草/n长草</td>
+            <td>042<br>099<br>100<br>101<br>118</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="509">509</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/509.png"></td>
             <td>扒手猫</td>
-            <td>101/n128/n129</td>
-            <td>普草/n长草</td>
+            <td>101<br>128<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="510">510</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/510.png"></td>
             <td>酷豹</td>
-            <td>006/n007/n100/n106/n118/n125</td>
-            <td>普草/n长草</td>
+            <td>006<br>007<br>100<br>106<br>118<br>125</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="511">511</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/511.png"></td>
             <td>花椰猴</td>
-            <td>009/n122/n126</td>
+            <td>009<br>122<br>126</td>
             <td>摇草</td>
         </tr>
         <tr>
@@ -3795,7 +3795,7 @@ date: 2026-08-23 10:16 +0800
             <td id="513">513</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/513.png"></td>
             <td>爆香猴</td>
-            <td>009/n119/n126</td>
+            <td>009<br>119<br>126</td>
             <td>摇草</td>
         </tr>
         <tr>
@@ -3809,7 +3809,7 @@ date: 2026-08-23 10:16 +0800
             <td id="515">515</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/515.png"></td>
             <td>冷水猴</td>
-            <td>009/n123/n126</td>
+            <td>009<br>123<br>126</td>
             <td>摇草</td>
         </tr>
         <tr>
@@ -3823,8 +3823,8 @@ date: 2026-08-23 10:16 +0800
             <td id="517">517</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/517.png"></td>
             <td>食梦梦</td>
-            <td>006/n007</td>
-            <td>普草/n长草</td>
+            <td>006<br>007</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="518">518</td>
@@ -3837,21 +3837,21 @@ date: 2026-08-23 10:16 +0800
             <td id="519">519</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/519.png"></td>
             <td>豆豆鸽</td>
-            <td>001/n045/n046/n129</td>
-            <td>普草/n长草</td>
+            <td>001<br>045<br>046<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="520">520</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/520.png"></td>
             <td>咕咕鸽</td>
-            <td>027/n028/n073/n079/n101/n107/n111/n120/n129</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>028<br>073<br>079<br>101<br>107<br>111<br>120<br>129</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="521">521</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/521.png"></td>
             <td>高傲雉鸡</td>
-            <td>027/n028/n073/n079/n101/n107/n111/n120/n127</td>
+            <td>027<br>028<br>073<br>079<br>101<br>107<br>111<br>120<br>127</td>
             <td>摇草</td>
         </tr>
         <tr>
@@ -3865,162 +3865,162 @@ date: 2026-08-23 10:16 +0800
             <td id="523">523</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/523.png"></td>
             <td>雷电斑马</td>
-            <td>101/n111/n125</td>
-            <td>摇草/n普草/n长草</td>
+            <td>101<br>111<br>125</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="524">524</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/524.png"></td>
             <td>石丸子</td>
-            <td>045/n081</td>
-            <td>摇草/n普草</td>
+            <td>045<br>081</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="525">525</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/525.png"></td>
             <td>地幔岩</td>
-            <td>020/n022/n023/n024/n031/n051/n053/n056/n057/n058/n059/n060/n074/n075/n082/n083/n084/n085/n086/n087/n088/n089/n090/n091/n092/n093/n094/n102/n103/n110</td>
-            <td>摇草/n普草</td>
+            <td>020<br>022<br>023<br>024<br>031<br>051<br>053<br>056<br>057<br>058<br>059<br>060<br>074<br>075<br>082<br>083<br>084<br>085<br>086<br>087<br>088<br>089<br>090<br>091<br>092<br>093<br>094<br>102<br>103<br>110</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="526">526</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/526.png"></td>
             <td>庞岩怪</td>
-            <td>019/n055/n074</td>
-            <td>摇草/n普草</td>
+            <td>019<br>055<br>074</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="527">527</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/527.png"></td>
             <td>滚滚蝙蝠</td>
-            <td>023/n024/n025/n026/n049/n052/n053/n056/n057/n058/n059/n060/n081/n082/n083/n085/n086/n087/n090/n093/n094/n102/n103/n108/n109/n110</td>
+            <td>023<br>024<br>025<br>026<br>049<br>052<br>053<br>056<br>057<br>058<br>059<br>060<br>081<br>082<br>083<br>085<br>086<br>087<br>090<br>093<br>094<br>102<br>103<br>108<br>109<br>110</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="528">528</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/528.png"></td>
             <td>心蝙蝠</td>
-            <td>083/n084</td>
+            <td>083<br>084</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="529">529</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/529.png"></td>
             <td>螺钉地鼠</td>
-            <td>020/n021/n022/n081/n082/n083/n084/n108/n109/n110</td>
+            <td>020<br>021<br>022<br>081<br>082<br>083<br>084<br>108<br>109<br>110</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="530">530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>019/n023/n024/n025/n026/n031/n033/n036/n049/n050/n051/n052/n053/n054/n055/n056/n057/n058/n059/n060/n074/n075/n077/n080/n083/n084/n085/n086/n087/n088/n089/n090/n091/n092/n093/n094/n102/n103</td>
-            <td>摇草/n普草</td>
+            <td>大多数洞穴</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="531">531</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
-            <td>001/n006/n008/n009/n027/n028/n032/n034/n035/n042/n045/n046/n047/n048/n073/n076/n079/n095/n097/n111/n118/n119/n121/n122/n125/n127/n129/n130/n131</td>
+            <td>大多数草地</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="532">532</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/532.png"></td>
             <td>搬运小匠</td>
-            <td>076/n081/n124</td>
-            <td>普草/n长草</td>
+            <td>076<br>081<br>124</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="533">533</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/533.png"></td>
             <td>铁骨土人</td>
-            <td>008/n023/n025/n026/n076/n082/n083/n116</td>
-            <td>普草/n长草</td>
+            <td>008<br>023<br>025<br>026<br>076<br>082<br>083<br>116</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="534">534</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/534.png"></td>
             <td>修建老匠</td>
-            <td>019/n095/n102/n108</td>
+            <td>019<br>095<br>102<br>108</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="535">535</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/535.png"></td>
             <td>圆蝌蚪</td>
-            <td>003/n097</td>
+            <td>003<br>097</td>
             <td>普钓</td>
         </tr>
         <tr>
             <td id="536">536</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/536.png"></td>
             <td>蓝蟾蜍</td>
-            <td>002/n003/n008/n095/n116/n117</td>
-            <td>冲浪/n冲浪点/n普草/n普钓/n长草</td>
+            <td>002<br>003<br>008<br>095<br>116<br>117</td>
+            <td>冲浪<br>冲浪点<br>普草<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="537">537</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/537.png"></td>
             <td>蟾蜍王</td>
-            <td>002/n003/n008/n093/n116/n117</td>
-            <td>冲浪点/n摇草/n普钓/n钓鱼点</td>
+            <td>002<br>003<br>008<br>093<br>116<br>117</td>
+            <td>冲浪点<br>摇草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="538">538</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/538.png"></td>
             <td>投摔鬼</td>
-            <td>008/n076/n094/n124/n127/n131</td>
-            <td>普草/n长草</td>
+            <td>008<br>076<br>094<br>124<br>127<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="539">539</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/539.png"></td>
             <td>打击鬼</td>
-            <td>008/n076/n094/n124/n127/n131</td>
-            <td>摇草/n普草</td>
+            <td>008<br>076<br>094<br>124<br>127<br>131</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="540">540</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/540.png"></td>
             <td>虫宝包</td>
-            <td>120/n129</td>
-            <td>普草/n长草</td>
+            <td>120<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="541">541</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/541.png"></td>
             <td>宝包茧</td>
-            <td>009/n107/n126/n127</td>
-            <td>普草/n长草</td>
+            <td>009<br>107<br>126<br>127</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="542">542</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/542.png"></td>
             <td>保姆虫</td>
-            <td>107/n120/n126/n127</td>
-            <td>摇草/n普草</td>
+            <td>107<br>120<br>126<br>127</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="543">543</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/543.png"></td>
             <td>百足蜈蚣</td>
-            <td>111/n117/n126/n129</td>
-            <td>普草/n长草</td>
+            <td>111<br>117<br>126<br>129</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="544">544</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/544.png"></td>
             <td>车轮球</td>
-            <td>009/n107/n116/n126</td>
-            <td>普草/n长草</td>
+            <td>009<br>107<br>116<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="545">545</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/545.png"></td>
             <td>蜈蚣王</td>
-            <td>009/n111</td>
-            <td>摇草/n长草</td>
+            <td>009<br>111</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="546">546</td>
@@ -4040,127 +4040,127 @@ date: 2026-08-23 10:16 +0800
             <td id="548">548</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/548.png"></td>
             <td>百合根娃娃</td>
-            <td>001/n009/n072/n106/n123/n126</td>
-            <td>普草/n长草</td>
+            <td>001<br>009<br>072<br>106<br>123<br>126</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="549">549</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/549.png"></td>
             <td>裙儿小姐</td>
-            <td>001/n009/n072/n117/n123/n126</td>
-            <td>摇草/n普草/n长草</td>
+            <td>001<br>009<br>072<br>117<br>123<br>126</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="550">550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>000/n003/n005/n009/n028/n033/n036/n071/n073/n075/n078/n079/n082/n085/n086/n095/n097/n099/n101/n102/n103/n107/n119/n121/n122/n123/n126/n128/n129/n130/n131/n132</td>
-            <td>冲浪/n冲浪点/n普钓/n钓鱼点</td>
+            <td>大多数水域</td>
+            <td>冲浪<br>冲浪点<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="551">551</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/551.png"></td>
             <td>黑眼鳄</td>
-            <td>010/n012/n013/n014/n017/n104/n105</td>
+            <td>010<br>012<br>013<br>014<br>017<br>104<br>105</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="552">552</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/552.png"></td>
             <td>混混鳄</td>
-            <td>011/n014/n015/n016/n017</td>
+            <td>011<br>014<br>015<br>016<br>017</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="553">553</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/553.png"></td>
             <td>流氓鳄</td>
-            <td>023/n024</td>
+            <td>023<br>024</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="554">554</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/554.png"></td>
             <td>火红不倒翁</td>
-            <td>010/n024/n104/n105</td>
+            <td>010<br>024<br>104<br>105</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="555">555</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/555.png"></td>
             <td>达摩狒狒</td>
-            <td>024/n025</td>
+            <td>024<br>025</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="556">556</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/556.png"></td>
             <td>沙铃仙人掌</td>
-            <td>010/n011/n025</td>
+            <td>010<br>011<br>025</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="557">557</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/557.png"></td>
             <td>石居蟹</td>
-            <td>010/n011/n023</td>
+            <td>010<br>011<br>023</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="558">558</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/558.png"></td>
             <td>岩殿居蟹</td>
-            <td>025/n075/n127</td>
-            <td>摇草/n普草/n长草</td>
+            <td>025<br>075<br>127</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="559">559</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/559.png"></td>
             <td>滑滑小子</td>
-            <td>010/n025/n104/n105</td>
+            <td>010<br>025<br>104<br>105</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="560">560</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/560.png"></td>
             <td>头巾混混</td>
-            <td>026/n042/n099/n124/n127</td>
-            <td>普草/n长草</td>
+            <td>026<br>042<br>099<br>124<br>127</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="561">561</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/561.png"></td>
             <td>象征鸟</td>
-            <td>011/n026</td>
+            <td>011<br>026</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="562">562</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/562.png"></td>
             <td>哭哭面具</td>
-            <td>012/n013/n014/n015/n016/n017/n026</td>
+            <td>012<br>013<br>014<br>015<br>016<br>017<br>026</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="563">563</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/563.png"></td>
             <td>死神棺</td>
-            <td>026/n077</td>
-            <td>摇草/n普草</td>
+            <td>026<br>077</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="564">564</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/564.png"></td>
             <td>原盖海龟</td>
-            <td>002/n025/n085</td>
-            <td>普草/n普钓</td>
+            <td>002<br>025<br>085</td>
+            <td>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="565">565</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
-            <td>002/n026/n036/n080/n082</td>
-            <td>摇草/n普草/n普钓/n钓鱼点</td>
+            <td>002<br>026<br>036<br>080<br>082</td>
+            <td>摇草<br>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="566">566</td>
@@ -4173,22 +4173,22 @@ date: 2026-08-23 10:16 +0800
             <td id="567">567</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/567.png"></td>
             <td>始祖大鸟</td>
-            <td>015/n016/n081</td>
-            <td>摇草/n普草</td>
+            <td>015<br>016<br>081</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="568">568</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/568.png"></td>
             <td>破破袋</td>
-            <td>037/n038/n039/n040/n106/n125</td>
-            <td>普草/n普钓/n长草</td>
+            <td>037<br>038<br>039<br>040<br>106<br>125</td>
+            <td>普草<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="569">569</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/569.png"></td>
             <td>灰尘山</td>
-            <td>037/n038/n039/n040/n041/n118</td>
-            <td>普草/n普钓/n长草</td>
+            <td>037<br>038<br>039<br>040<br>041<br>118</td>
+            <td>普草<br>普钓<br>长草</td>
         </tr>
         <tr>
             <td id="570">570</td>
@@ -4201,21 +4201,21 @@ date: 2026-08-23 10:16 +0800
             <td id="571">571</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/571.png"></td>
             <td>索罗亚克</td>
-            <td>006/n082</td>
+            <td>006<br>082</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="572">572</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/572.png"></td>
             <td>泡沫栗鼠</td>
-            <td>008/n104/n105/n106/n118/n125</td>
-            <td>摇草/n普草/n长草</td>
+            <td>008<br>104<br>105<br>106<br>118<br>125</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="573">573</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/573.png"></td>
             <td>奇诺栗鼠</td>
-            <td>009/n106/n118/n125</td>
+            <td>009<br>106<br>118<br>125</td>
             <td>摇草</td>
         </tr>
         <tr>
@@ -4229,29 +4229,29 @@ date: 2026-08-23 10:16 +0800
             <td id="576">576</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/576.png"></td>
             <td>哥德小姐</td>
-            <td>028/n103</td>
-            <td>摇草/n普草</td>
+            <td>028<br>103</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="577">577</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/577.png"></td>
             <td>单卵细胞球</td>
-            <td>028/n061/n062/n063/n064/n065/n067/n070/n106/n125</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>061<br>062<br>063<br>064<br>065<br>067<br>070<br>106<br>125</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="578">578</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/578.png"></td>
             <td>双卵细胞球</td>
-            <td>028/n061/n062/n063/n064/n065/n066/n067/n068/n069/n070/n118</td>
-            <td>摇草/n普草/n长草</td>
+            <td>028<br>061<br>062<br>063<br>064<br>065<br>066<br>067<br>068<br>069<br>070<br>118</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="579">579</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/579.png"></td>
             <td>人造细胞卵</td>
-            <td>028/n103/n118</td>
-            <td>摇草/n普草</td>
+            <td>028<br>103<br>118</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="580">580</td>
@@ -4278,162 +4278,162 @@ date: 2026-08-23 10:16 +0800
             <td id="583">583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>027/n028/n032/n033/n036/n111</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>028<br>032<br>033<br>036<br>111</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="584">584</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
-            <td>027/n028/n032/n102/n111</td>
-            <td>摇草/n普草</td>
+            <td>027<br>028<br>032<br>102<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="585">585</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/585.png"></td>
             <td>四季鹿</td>
-            <td>107/n111</td>
-            <td>摇草/n普草</td>
+            <td>107<br>111</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="586">586</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/586.png"></td>
             <td>萌芽鹿</td>
-            <td>027/n028/n111</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>028<br>111</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="587">587</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/587.png"></td>
             <td>电飞鼠</td>
-            <td>027/n028/n097/n106/n107/n111/n118/n119/n120/n121/n122/n123/n124/n125/n126/n130/n131</td>
+            <td>027<br>028<br>097<br>106<br>107<br>111<br>118<br>119<br>120<br>121<br>122<br>123<br>124<br>125<br>126<br>130<br>131</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="588">588</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/588.png"></td>
             <td>盖盖虫</td>
-            <td>002/n107/n117/n119</td>
-            <td>普草/n长草</td>
+            <td>002<br>107<br>117<br>119</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="589">589</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/589.png"></td>
             <td>骑士蜗牛</td>
-            <td>101/n107</td>
-            <td>摇草/n长草</td>
+            <td>101<br>107</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="590">590</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/590.png"></td>
             <td>哎呀球菇</td>
-            <td>107/n111</td>
-            <td>摇草/n普草/n长草</td>
+            <td>107<br>111</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="591">591</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/591.png"></td>
             <td>败露球菇</td>
-            <td>099/n106/n119/n130/n131</td>
-            <td>摇草/n普草/n长草</td>
+            <td>099<br>106<br>119<br>130<br>131</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="592">592</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/592.png"></td>
             <td>轻飘飘</td>
-            <td>002/n004/n005/n042/n043/n079/n093/n104/n105/n121/n127/n132/n133/n134</td>
-            <td>冲浪/n普钓</td>
+            <td>002<br>004<br>005<br>042<br>043<br>079<br>093<br>104<br>105<br>121<br>127<br>132<br>133<br>134</td>
+            <td>冲浪<br>普钓</td>
         </tr>
         <tr>
             <td id="593">593</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/593.png"></td>
             <td>胖嘟嘟</td>
-            <td>002/n004/n005/n042/n043/n078/n093/n104/n105/n121/n127/n132/n133/n134</td>
-            <td>冲浪点/n普钓/n钓鱼点</td>
+            <td>002<br>004<br>005<br>042<br>043<br>078<br>093<br>104<br>105<br>121<br>127<br>132<br>133<br>134</td>
+            <td>冲浪点<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="594">594</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/594.png"></td>
             <td>保姆曼波</td>
-            <td>002/n004/n042/n075/n104/n105/n127/n133/n134</td>
-            <td>冲浪点/n普钓</td>
+            <td>002<br>004<br>042<br>075<br>104<br>105<br>127<br>133<br>134</td>
+            <td>冲浪点<br>普钓</td>
         </tr>
         <tr>
             <td id="595">595</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/595.png"></td>
             <td>电电虫</td>
-            <td>020/n021/n022/n100</td>
-            <td>摇草/n普草</td>
+            <td>020<br>021<br>022<br>100</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="596">596</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/596.png"></td>
             <td>电蜘蛛</td>
-            <td>097/n101</td>
+            <td>097<br>101</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="597">597</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/597.png"></td>
             <td>种子铁球</td>
-            <td>020/n021/n022/n079</td>
-            <td>摇草/n普草</td>
+            <td>020<br>021<br>022<br>079</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="598">598</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/598.png"></td>
             <td>坚果哑铃</td>
-            <td>076/n085</td>
+            <td>076<br>085</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="599">599</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/599.png"></td>
             <td>齿轮儿</td>
-            <td>020/n021/n022</td>
+            <td>020<br>021<br>022</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="600">600</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/600.png"></td>
             <td>齿轮组</td>
-            <td>042/n073</td>
-            <td>摇草/n普草</td>
+            <td>042<br>073</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="601">601</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/601.png"></td>
             <td>齿轮怪</td>
-            <td>042/n072/n086</td>
+            <td>042<br>072<br>086</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="602">602</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/602.png"></td>
             <td>麻麻小鱼</td>
-            <td>002/n020/n021/n022/n048/n073/n093</td>
-            <td>摇草/n普草/n普钓</td>
+            <td>002<br>020<br>021<br>022<br>048<br>073<br>093</td>
+            <td>摇草<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="603">603</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/603.png"></td>
             <td>麻麻鳗</td>
-            <td>002/n047/n071/n094</td>
-            <td>摇草/n普草/n普钓</td>
+            <td>002<br>047<br>071<br>094</td>
+            <td>摇草<br>普草<br>普钓</td>
         </tr>
         <tr>
             <td id="604">604</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/604.png"></td>
             <td>麻麻鳗鱼王</td>
-            <td>002/n046/n087</td>
-            <td>摇草/n钓鱼点</td>
+            <td>002<br>046<br>087</td>
+            <td>摇草<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="605">605</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/605.png"></td>
             <td>小灰怪</td>
-            <td>042/n113/n114/n115</td>
-            <td>摇草/n普草</td>
+            <td>042<br>113<br>114<br>115</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="606">606</td>
@@ -4446,8 +4446,8 @@ date: 2026-08-23 10:16 +0800
             <td id="607">607</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/607.png"></td>
             <td>烛光灵</td>
-            <td>034/n061/n062/n063/n065/n068/n070/n112/n114/n115</td>
-            <td>摇草/n普草</td>
+            <td>034<br>061<br>062<br>063<br>065<br>068<br>070<br>112<br>114<br>115</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="608">608</td>
@@ -4460,57 +4460,57 @@ date: 2026-08-23 10:16 +0800
             <td id="609">609</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/609.png"></td>
             <td>水晶灯火灵</td>
-            <td>027/n088</td>
+            <td>027<br>088</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="610">610</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/610.png"></td>
             <td>牙牙</td>
-            <td>027/n108/n109/n110</td>
-            <td>摇草/n普草</td>
+            <td>027<br>108<br>109<br>110</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="611">611</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/611.png"></td>
             <td>斧牙龙</td>
-            <td>026/n095</td>
-            <td>摇草/n普草/n长草</td>
+            <td>026<br>095</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="612">612</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/612.png"></td>
             <td>双斧战龙</td>
-            <td>026/n089</td>
+            <td>026<br>089</td>
             <td>摇草</td>
         </tr>
         <tr>
             <td id="613">613</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/613.png"></td>
             <td>喷嚏熊</td>
-            <td>111/n131</td>
-            <td>普草/n长草</td>
+            <td>111<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="614">614</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/614.png"></td>
             <td>冻原熊</td>
-            <td>023/n024/n025/n026/n027/n028/n090/n131</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>024<br>025<br>026<br>027<br>028<br>090<br>131</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="615">615</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/615.png"></td>
             <td>几何雪花</td>
-            <td>023/n024/n025/n026/n091/n130</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>024<br>025<br>026<br>091<br>130</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="616">616</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/616.png"></td>
             <td>小嘴蜗</td>
-            <td>002/n107/n116/n117/n119</td>
-            <td>普草/n长草</td>
+            <td>002<br>107<br>116<br>117<br>119</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="617">617</td>
@@ -4523,29 +4523,29 @@ date: 2026-08-23 10:16 +0800
             <td id="618">618</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/618.png"></td>
             <td>泥巴鱼</td>
-            <td>000/n002/n116/n117</td>
-            <td>冲浪/n冲浪点/n普草/n普钓/n钓鱼点</td>
+            <td>000<br>002<br>116<br>117</td>
+            <td>冲浪<br>冲浪点<br>普草<br>普钓<br>钓鱼点</td>
         </tr>
         <tr>
             <td id="619">619</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/619.png"></td>
             <td>功夫鼬</td>
-            <td>027/n107/n109/n122/n130/n131</td>
-            <td>普草/n长草</td>
+            <td>027<br>107<br>109<br>122<br>130<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="620">620</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/620.png"></td>
             <td>师父鼬</td>
-            <td>027/n028/n029/n094/n107/n131</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>028<br>029<br>094<br>107<br>131</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="621">621</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/621.png"></td>
             <td>赤面龙</td>
-            <td>027/n028/n029/n077/n080/n093/n107</td>
-            <td>摇草/n普草/n长草</td>
+            <td>027<br>028<br>029<br>077<br>080<br>093<br>107</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="622">622</td>
@@ -4558,36 +4558,36 @@ date: 2026-08-23 10:16 +0800
             <td id="623">623</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/623.png"></td>
             <td>泥偶巨人</td>
-            <td>029/n030/n071/n078/n099/n103</td>
-            <td>摇草/n普草/n长草</td>
+            <td>029<br>030<br>071<br>078<br>099<br>103</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="624">624</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/624.png"></td>
             <td>驹刀小兵</td>
-            <td>093/n094/n118</td>
-            <td>普草/n长草</td>
+            <td>093<br>094<br>118</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="625">625</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/625.png"></td>
             <td>劈斩司令</td>
-            <td>089/n091/n102</td>
-            <td>摇草/n普草</td>
+            <td>089<br>091<br>102</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="626">626</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/626.png"></td>
             <td>爆炸头水牛</td>
-            <td>077/n087/n131</td>
-            <td>普草/n长草</td>
+            <td>077<br>087<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="627">627</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/627.png"></td>
             <td>毛头小鹰</td>
-            <td>062/n073/n131</td>
-            <td>普草/n长草</td>
+            <td>062<br>073<br>131</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="628">628</td>
@@ -4600,50 +4600,50 @@ date: 2026-08-23 10:16 +0800
             <td id="629">629</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/629.png"></td>
             <td>秃鹰丫头</td>
-            <td>058/n072/n078</td>
+            <td>058<br>072<br>078</td>
             <td>普草</td>
         </tr>
         <tr>
             <td id="630">630</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/630.png"></td>
             <td>秃鹰娜</td>
-            <td>057/n072/n078</td>
-            <td>普草/n长草</td>
+            <td>057<br>072<br>078</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="631">631</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/631.png"></td>
             <td>熔蚁兽</td>
-            <td>023/n024/n025/n026/n072/n108</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>024<br>025<br>026<br>072<br>108</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="632">632</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/632.png"></td>
             <td>铁蚁</td>
-            <td>023/n024/n025/n026/n072/n084/n085/n087/n108</td>
-            <td>摇草/n普草/n长草</td>
+            <td>023<br>024<br>025<br>026<br>072<br>084<br>085<br>087<br>108</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="633">633</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/633.png"></td>
             <td>单首龙</td>
-            <td>072/n099</td>
-            <td>普草/n长草</td>
+            <td>072<br>099</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="634">634</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/634.png"></td>
             <td>双首暴龙</td>
-            <td>077/n080/n097</td>
-            <td>普草/n长草</td>
+            <td>077<br>080<br>097</td>
+            <td>普草<br>长草</td>
         </tr>
         <tr>
             <td id="635">635</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/635.png"></td>
             <td>三首恶龙</td>
-            <td>079/n109</td>
-            <td>摇草/n长草</td>
+            <td>079<br>109</td>
+            <td>摇草<br>长草</td>
         </tr>
         <tr>
             <td id="636">636</td>
@@ -4656,92 +4656,92 @@ date: 2026-08-23 10:16 +0800
             <td id="637">637</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/637.png"></td>
             <td>火神蛾</td>
-            <td>054/n110/n122</td>
-            <td>摇草/n普草/n长草</td>
+            <td>054<br>110<br>122</td>
+            <td>摇草<br>普草<br>长草</td>
         </tr>
         <tr>
             <td id="638">638</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/638.png"></td>
             <td>勾帕路翁</td>
-            <td>017/n120</td>
-            <td>摇草/n普草</td>
+            <td>017<br>120</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="639">639</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/639.png"></td>
             <td>代拉基翁</td>
-            <td>018/n019/n118</td>
-            <td>摇草/n普草</td>
+            <td>018<br>019<br>118</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="640">640</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/640.png"></td>
             <td>毕力吉翁</td>
-            <td>016/n029/n107</td>
-            <td>摇草/n普草</td>
+            <td>016<br>029<br>107</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="641">641</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/641.png"></td>
             <td>龙卷云</td>
-            <td>006/n025/n100/n107</td>
-            <td>摇草/n普草</td>
+            <td>006<br>025<br>100<br>107</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="642">642</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/642.png"></td>
             <td>雷电云</td>
-            <td>008/n026/n099/n107</td>
-            <td>摇草/n普草</td>
+            <td>008<br>026<br>099<br>107</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="643">643</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/643.png"></td>
             <td>莱希拉姆</td>
-            <td>107/n112</td>
-            <td>摇草/n普草</td>
+            <td>107<br>112</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="644">644</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/644.png"></td>
             <td>捷克罗姆</td>
-            <td>076/n112</td>
-            <td>摇草/n普草</td>
+            <td>076<br>112</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="645">645</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/645.png"></td>
             <td>土地云</td>
-            <td>026/n028/n048/n097</td>
-            <td>摇草/n普草</td>
+            <td>026<br>028<br>048<br>097</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="646">646</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/646.png"></td>
             <td>酋雷姆</td>
-            <td>028/n112</td>
-            <td>摇草/n普草</td>
+            <td>028<br>112</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="647">647</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/647.png"></td>
             <td>凯路迪欧</td>
-            <td>026/n027</td>
-            <td>摇草/n普草</td>
+            <td>026<br>027</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="648">648</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/648.png"></td>
             <td>美洛耶塔</td>
-            <td>027/n068</td>
-            <td>摇草/n普草</td>
+            <td>027<br>068</td>
+            <td>摇草<br>普草</td>
         </tr>
         <tr>
             <td id="649">649</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/649.png"></td>
             <td>盖诺赛克特</td>
-            <td>026/n027</td>
-            <td>摇草/n普草</td>
+            <td>026<br>027</td>
+            <td>摇草<br>普草</td>
         </tr>
     </tbody>
 </table>
