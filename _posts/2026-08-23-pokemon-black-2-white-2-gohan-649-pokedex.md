@@ -205,7 +205,7 @@ date: 2026-08-23 10:16 +0800
             <th>捕获方式</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <td>001</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/001.png"></td>

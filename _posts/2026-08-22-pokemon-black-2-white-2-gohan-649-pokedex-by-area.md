@@ -193,7 +193,7 @@ date: 2026-08-22 11:16 +0800
             <th>捕获方式</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <td>118</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
