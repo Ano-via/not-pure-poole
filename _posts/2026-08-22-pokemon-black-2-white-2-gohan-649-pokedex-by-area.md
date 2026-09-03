@@ -40,6 +40,11 @@ date: 2026-08-22 11:16 +0800
       background-color: #45a049;
     }
 </style>
+<div>
+<input id="numfilter" placeholder="123,456,789" />
+<button onclick="real_numfilter()">筛选特定编号</button>
+<button onclick="resetFilters()">重置筛选</button>
+</div>
 <div id="filters">
   <button onclick="filter('')">全部</button>
   <button onclick="filter('三曜市')">三曜市</button>
