@@ -57832,6 +57832,7 @@ date: 2026-08-22 11:16 +0800
     </tbody>
 </table>
 ```html
+```html
 <script>
 /* =========================================================
  * 表格筛选
@@ -58288,3 +58289,57 @@ if (document.readyState === "loading") {
     initTableFilter();
 }
 </script>
+```
+
+### 季节按钮这样调用
+
+```html
+<button onclick="filterSeason('春')">春</button>
+<button onclick="filterSeason('夏')">夏</button>
+<button onclick="filterSeason('秋')">秋</button>
+<button onclick="filterSeason('冬')">冬</button>
+
+<button onclick="filterSeason('')">全部</button>
+```
+
+例如点击 **春**，第五列的判断就是：
+
+```js
+item.season.includes("春") ||
+item.season.includes("-")
+```
+
+所以：
+
+```text
+春     ✅
+春-    ✅
+春夏   ✅
+-      ✅
+夏     ❌
+秋     ❌
+冬     ❌
+夏-    ✅
+```
+
+同时它仍然会和你原来的编号、方式筛选叠加：
+
+```text
+第4列 = 方式
+        ↓
+      AND
+        ↓
+第1列 = 编号
+        ↓
+      AND
+        ↓
+第5列 = 春 或 -
+```
+
+另外，如果你的表格后面还会**动态新增数据**，新增数据不会自动进入缓存。这时候调用：
+
+```js
+refreshFilterCache();
+```
+
+即可重新缓存整个表格。
