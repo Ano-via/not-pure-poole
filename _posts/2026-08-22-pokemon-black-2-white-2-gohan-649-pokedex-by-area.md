@@ -57829,50 +57829,144 @@ date: 2026-08-22 11:16 +0800
 let currentWayFilter = "";
 let currentNumFilter = "";
 
+let tableRows = [];
+let rowData = [];
+
+/**
+ * 初始化 / 刷新缓存
+ */
+function initFilterCache() {
+    const tbody = document.querySelector("#pokeTable");
+
+    if (!tbody) return;
+
+    tableRows = Array.from(tbody.rows);
+
+    rowData = tableRows.map(row => ({
+        row: row,
+        num: row.cells[0]?.textContent || "",
+        way: row.cells[3]?.textContent || ""
+    }));
+}
+
+
+/**
+ * 执行筛选
+ */
 function applyFilters() {
-    const rows = document.querySelectorAll("#pokeTable tr");
+
+    // 如果表格发生变化，重新缓存
+    if (!tableRows.length) {
+        initFilterCache();
+    }
 
     const numKeywords = currentNumFilter
-        ? currentNumFilter.split(/[,，/|;；]+/)
+        ? currentNumFilter
+            .split(/[,，/|;；]+/)
+            .map(k => k.trim())
+            .filter(Boolean)
         : [];
 
-    rows.forEach(row => {
-        const num = row.cells[0].innerText;
-        const way = row.cells[3].innerText;
+    const hasWayFilter = currentWayFilter !== "";
+    const hasNumFilter = numKeywords.length > 0;
+
+    // 没有任何筛选时，直接全部显示
+    if (!hasWayFilter && !hasNumFilter) {
+
+        for (const item of rowData) {
+            item.row.hidden = false;
+        }
+
+        return;
+    }
+
+    // 执行筛选
+    for (const item of rowData) {
+
+        let wayMatch = true;
+        let numMatch = true;
 
         // 方式筛选
-        const wayMatch =
-            currentWayFilter === "" ||
-            way.includes(currentWayFilter);
+        if (hasWayFilter) {
+            wayMatch = item.way.includes(currentWayFilter);
+        }
 
         // 编号筛选
-        const numMatch =
-            currentNumFilter === "" ||
-            numKeywords.some(k => num.includes(k));
+        if (hasNumFilter) {
+            numMatch = false;
 
-        // 两个条件同时满足
-        row.style.display = wayMatch && numMatch ? "" : "none";
-    });
+            for (const keyword of numKeywords) {
+                if (item.num.includes(keyword)) {
+                    numMatch = true;
+                    break;
+                }
+            }
+        }
+
+        item.row.hidden = !(wayMatch && numMatch);
+    }
 }
 
+
+/**
+ * 方式筛选
+ */
 function filter(keyword) {
-    currentWayFilter = keyword;
+
+    currentWayFilter = keyword || "";
+
     applyFilters();
 }
 
+
+/**
+ * 编号筛选
+ */
 function real_numfilter() {
-    currentNumFilter =
-        document.getElementById("numfilter").value.trim();
+
+    const input = document.getElementById("numfilter");
+
+    currentNumFilter = input
+        ? input.value.trim()
+        : "";
+
     applyFilters();
 }
+
+
+/**
+ * 重置筛选
+ */
 function resetFilters() {
+
     currentWayFilter = "";
     currentNumFilter = "";
 
-    // 清空输入框
-    document.getElementById("numfilter").value = "";
+    const input = document.getElementById("numfilter");
 
-    // 显示全部
-    applyFilters();
+    if (input) {
+        input.value = "";
+    }
+
+    // 不需要再复杂判断
+    for (const item of rowData) {
+        item.row.hidden = false;
+    }
+}
+
+
+/**
+ * 页面加载后初始化
+ */
+function initTableFilter() {
+    initFilterCache();
+}
+
+
+// DOM加载完成
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initTableFilter);
+} else {
+    initTableFilter();
 }
 </script>
