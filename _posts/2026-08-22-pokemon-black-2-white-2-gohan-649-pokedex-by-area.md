@@ -41,7 +41,7 @@ date: 2026-08-22 11:16 +0800
     }
 </style>
 <div>
-<input id="numfilter" placeholder="123,456,789" onkeydown="if(event.key === 'Enter') real_numfilter()/>
+<input id="numfilter" placeholder="123,456,789" />
 <button onclick="real_numfilter()">筛选特定编号</button>
 <button onclick="resetFilters()">重置筛选</button>
 </div>
