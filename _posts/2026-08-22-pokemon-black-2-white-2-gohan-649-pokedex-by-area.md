@@ -45,45 +45,102 @@ date: 2026-08-22 11:16 +0800
 <button onclick="real_numfilter()">筛选特定编号</button>
 <button onclick="resetFilters()">重置筛选</button>
 </div>
-<p></p>
 <div id="filters">
-<button onclick="filterSeason('')">全部季节</button>
-<button onclick="filterSeason('春')">春</button> 
-<button onclick="filterSeason('夏')">夏</button> 
-<button onclick="filterSeason('秋')">秋</button> 
-<button onclick="filterSeason('冬')">冬</button> 
-<p></p>
-  <button onclick="filter('')">全部地点</button>
+  <button onclick="filter('')">全部</button>
   <button onclick="filter('三曜市')">三曜市</button>
   <button onclick="filter('飞云市')">飞云市</button>
   <button onclick="filter('雪花市')">雪花市</button>
   <button onclick="filter('桧扇市')">桧扇市</button>
   <button onclick="filter('立涌市')">立涌市</button>
   <button onclick="filter('青海波市')">青海波市</button>
-  <button onclick="filter('梦的遗址')">梦的遗址</button>
-  <button onclick="filter('矢车森林')">矢车森林</button>
-  <button onclick="filter('荒野名胜区')">荒野名胜区</button>
-  <button onclick="filter('古代城堡')">古代城堡</button>
-  <button onclick="filter('电气石洞穴')">电气石洞穴</button>
-  <button onclick="filter('螺旋山')">螺旋山</button>
-  <button onclick="filter('龙螺旋之塔')">龙螺旋之塔</button>
+  <button onclick="filter('梦的遗址（１）')">梦的遗址（１）</button>
+  <button onclick="filter('梦的遗址（２）')">梦的遗址（２）</button>
+  <button onclick="filter('矢车森林（１）')">矢车森林（１）</button>
+  <button onclick="filter('矢车森林（２）')">矢车森林（２）</button>
+  <button onclick="filter('荒野名胜区（１）')">荒野名胜区（１）</button>
+  <button onclick="filter('荒野名胜区（２）')">荒野名胜区（２）</button>
+  <button onclick="filter('古代城堡（１）')">古代城堡（１）</button>
+  <button onclick="filter('古代城堡（２）')">古代城堡（２）</button>
+  <button onclick="filter('古代城堡（３）')">古代城堡（３）</button>
+  <button onclick="filter('古代城堡（４）')">古代城堡（４）</button>
+  <button onclick="filter('古代城堡（５）')">古代城堡（５）</button>
+  <button onclick="filter('古代城堡（６）')">古代城堡（６）</button>
+  <button onclick="filter('古代城堡（７）')">古代城堡（７）</button>
+  <button onclick="filter('古代城堡（８）')">古代城堡（８）</button>
+  <button onclick="filter('电气石洞穴（１）')">电气石洞穴（１）</button>
+  <button onclick="filter('电气石洞穴（２）')">电气石洞穴（２）</button>
+  <button onclick="filter('电气石洞穴（３）')">电气石洞穴（３）</button>
+  <button onclick="filter('螺旋山（１）')">螺旋山（１）</button>
+  <button onclick="filter('螺旋山（２）')">螺旋山（２）</button>
+  <button onclick="filter('螺旋山（３）')">螺旋山（３）</button>
+  <button onclick="filter('螺旋山（４）')">螺旋山（４）</button>
+  <button onclick="filter('龙螺旋之塔（１）')">龙螺旋之塔（１）</button>
+  <button onclick="filter('龙螺旋之塔（２）')">龙螺旋之塔（２）</button>
+  <button onclick="filter('龙螺旋之塔（３）')">龙螺旋之塔（３）</button>
+  <button onclick="filter('龙螺旋之塔（４）')">龙螺旋之塔（４）</button>
   <button onclick="filter('冠军之路')">冠军之路</button>
-  <button onclick="filter('巨人洞穴')">巨人洞穴</button>
-  <button onclick="filter('飞云下水道')">飞云下水道</button>
+  <button onclick="filter('巨大洞穴（１）')">巨大洞穴（１）</button>
+  <button onclick="filter('巨大洞穴（２）')">巨大洞穴（２）</button>
+  <button onclick="filter('巨大洞穴（３）')">巨大洞穴（３）</button>
+  <button onclick="filter('巨大洞穴（４）')">巨大洞穴（４）</button>
+  <button onclick="filter('巨大洞穴（５）')">巨大洞穴（５）</button>
+  <button onclick="filter('飞云下水道（５）')">飞云下水道（５）</button>
+  <button onclick="filter('飞云下水道（４）')">飞云下水道（４）</button>
+  <button onclick="filter('飞云下水道（３）')">飞云下水道（３）</button>
+  <button onclick="filter('飞云下水道（２）')">飞云下水道（２）</button>
+  <button onclick="filter('飞云下水道（１）')">飞云下水道（１）</button>
   <button onclick="filter('P2实验室')">P2实验室</button>
   <button onclick="filter('涟漪湾')">涟漪湾</button>
-  <button onclick="filter('算木牧场')">算木牧场</button>
+  <button onclick="filter('算木牧场（１）')">算木牧场（１）</button>
+  <button onclick="filter('算木牧场（２）')">算木牧场（２）</button>
   <button onclick="filter('立涌工业区')">立涌工业区</button>
-  <button onclick="filter('反转山')">反转山</button>
-  <button onclick="filter('陌生人之屋')">陌生人之屋</button>
-  <button onclick="filter('冠军之路')">冠军之路</button>
-  <button onclick="filter('古代小径')">古代小径</button>
-  <button onclick="filter('菊老大之路')">菊老大之路</button>
-  <button onclick="filter('地下遗迹')">地下遗迹</button>
+  <button onclick="filter('反转山（１）')">反转山（１）</button>
+  <button onclick="filter('反转山（２）')">反转山（２）</button>
+  <button onclick="filter('反转山（３）')">反转山（３）</button>
+  <button onclick="filter('反转山（４）')">反转山（４）</button>
+  <button onclick="filter('反转山（５）')">反转山（５）</button>
+  <button onclick="filter('反转山（６）')">反转山（６）</button>
+  <button onclick="filter('反转山（７）')">反转山（７）</button>
+  <button onclick="filter('反转山（８）')">反转山（８）</button>
+  <button onclick="filter('反转山（９）')">反转山（９）</button>
+  <button onclick="filter('反转山（１０）')">反转山（１０）</button>
+  <button onclick="filter('反转山（１１）')">反转山（１１）</button>
+  <button onclick="filter('反转山（１２）')">反转山（１２）</button>
+  <button onclick="filter('反转山（１３）')">反转山（１３）</button>
+  <button onclick="filter('陌生人之屋（１）')">陌生人之屋（１）</button>
+  <button onclick="filter('陌生人之屋（２）')">陌生人之屋（２）</button>
+  <button onclick="filter('陌生人之屋（３）')">陌生人之屋（３）</button>
+  <button onclick="filter('陌生人之屋（４）')">陌生人之屋（４）</button>
+  <button onclick="filter('陌生人之屋（５）')">陌生人之屋（５）</button>
+  <button onclick="filter('陌生人之屋（６）')">陌生人之屋（６）</button>
+  <button onclick="filter('陌生人之屋（７）')">陌生人之屋（７）</button>
+  <button onclick="filter('陌生人之屋（８）')">陌生人之屋（８）</button>
+  <button onclick="filter('陌生人之屋（９）')">陌生人之屋（９）</button>
+  <button onclick="filter('陌生人之屋（１０）')">陌生人之屋（１０）</button>
+  <button onclick="filter('冠军之路（１）')">冠军之路（１）</button>
+  <button onclick="filter('冠军之路（２）')">冠军之路（２）</button>
+  <button onclick="filter('冠军之路（３）')">冠军之路（３）</button>
+  <button onclick="filter('冠军之路（４）')">冠军之路（４）</button>
+  <button onclick="filter('冠军之路（５）')">冠军之路（５）</button>
+  <button onclick="filter('冠军之路（６）')">冠军之路（６）</button>
+  <button onclick="filter('冠军之路（７）')">冠军之路（７）</button>
+  <button onclick="filter('冠军之路（８）')">冠军之路（８）</button>
+  <button onclick="filter('冠军之路（９）')">冠军之路（９）</button>
+  <button onclick="filter('冠军之路（１０）')">冠军之路（１０）</button>
+  <button onclick="filter('古代小径（１）')">古代小径（１）</button>
+  <button onclick="filter('古代小径（２）')">古代小径（２）</button>
+  <button onclick="filter('古代小径（３）')">古代小径（３）</button>
+  <button onclick="filter('菊老大之路（１）')">菊老大之路（１）</button>
+  <button onclick="filter('菊老大之路（２）')">菊老大之路（２）</button>
+  <button onclick="filter('菊老大之路（３）')">菊老大之路（３）</button>
+  <button onclick="filter('地下遗迹（１）')">地下遗迹（１）</button>
+  <button onclick="filter('地下遗迹（２）')">地下遗迹（２）</button>
+  <button onclick="filter('地下遗迹（３）')">地下遗迹（３）</button>
   <button onclick="filter('岩山之间')">岩山之间</button>
   <button onclick="filter('冰川之间')">冰川之间</button>
   <button onclick="filter('铁之间')">铁之间</button>
-  <button onclick="filter('海滨洞穴')">海滨洞穴</button>
+  <button onclick="filter('海滨洞穴（１）')">海滨洞穴（１）</button>
+  <button onclick="filter('海滨洞穴（２）')">海滨洞穴（２）</button>
   <button onclick="filter('自然保护区')">自然保护区</button>
   <button onclick="filter('帆巴吊桥')">帆巴吊桥</button>
   <button onclick="filter('村庄桥')">村庄桥</button>
@@ -91,14 +148,20 @@ date: 2026-08-22 11:16 +0800
   <button onclick="filter('１号道路')">１号道路</button>
   <button onclick="filter('２号道路')">２号道路</button>
   <button onclick="filter('３号道路')">３号道路</button>
-  <button onclick="filter('泉源洞穴')">泉源洞穴</button>
-  <button onclick="filter('４号道路')">４号道路</button>
+  <button onclick="filter('泉源洞穴（１）')">泉源洞穴（１）</button>
+  <button onclick="filter('泉源洞穴（２）')">泉源洞穴（２）</button>
+  <button onclick="filter('４号道路（１）')">４号道路（１）</button>
+  <button onclick="filter('４号道路（２）')">４号道路（２）</button>
   <button onclick="filter('５号道路')">５号道路</button>
   <button onclick="filter('６号道路')">６号道路</button>
-  <button onclick="filter('吹寄洞穴')">吹寄洞穴</button>
+  <button onclick="filter('吹寄洞穴（１）')">吹寄洞穴（１）</button>
+  <button onclick="filter('吹寄洞穴（２）')">吹寄洞穴（２）</button>
   <button onclick="filter('引导之间')">引导之间</button>
   <button onclick="filter('７号道路')">７号道路</button>
-  <button onclick="filter('天堂之塔')">天堂之塔</button>
+  <button onclick="filter('天堂之塔（１）')">天堂之塔（１）</button>
+  <button onclick="filter('天堂之塔（２）')">天堂之塔（２）</button>
+  <button onclick="filter('天堂之塔（３）')">天堂之塔（３）</button>
+  <button onclick="filter('天堂之塔（４）')">天堂之塔（４）</button>
   <button onclick="filter('８号道路')">８号道路</button>
   <button onclick="filter('雪花湿地')">雪花湿地</button>
   <button onclick="filter('９号道路')">９号道路</button>
@@ -15224,7 +15287,7 @@ date: 2026-08-22 11:16 +0800
             <td>114</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
             <td>蔓藤怪</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15236,7 +15299,7 @@ date: 2026-08-22 11:16 +0800
             <td>279</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15248,7 +15311,7 @@ date: 2026-08-22 11:16 +0800
             <td>077</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/077.png"></td>
             <td>小火马</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15260,7 +15323,7 @@ date: 2026-08-22 11:16 +0800
             <td>337</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15272,7 +15335,7 @@ date: 2026-08-22 11:16 +0800
             <td>338</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15284,7 +15347,7 @@ date: 2026-08-22 11:16 +0800
             <td>235</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/235.png"></td>
             <td>图图犬</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15296,7 +15359,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15308,7 +15371,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15320,7 +15383,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15332,7 +15395,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15344,7 +15407,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15356,7 +15419,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15368,7 +15431,7 @@ date: 2026-08-22 11:16 +0800
             <td>114</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
             <td>蔓藤怪</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -15380,7 +15443,7 @@ date: 2026-08-22 11:16 +0800
             <td>279</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/279.png"></td>
             <td>大嘴鸥</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15392,7 +15455,7 @@ date: 2026-08-22 11:16 +0800
             <td>078</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/078.png"></td>
             <td>烈焰马</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15404,7 +15467,7 @@ date: 2026-08-22 11:16 +0800
             <td>127</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
             <td>凯罗斯</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15416,7 +15479,7 @@ date: 2026-08-22 11:16 +0800
             <td>301</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/301.png"></td>
             <td>优雅猫</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -15428,7 +15491,7 @@ date: 2026-08-22 11:16 +0800
             <td>234</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/234.png"></td>
             <td>惊角鹿</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15440,7 +15503,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15452,7 +15515,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -15464,7 +15527,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -15476,7 +15539,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -15488,7 +15551,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -15500,7 +15563,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -15512,7 +15575,7 @@ date: 2026-08-22 11:16 +0800
             <td>608</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/608.png"></td>
             <td>灯火幽灵</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15524,7 +15587,7 @@ date: 2026-08-22 11:16 +0800
             <td>608</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/608.png"></td>
             <td>灯火幽灵</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15536,7 +15599,7 @@ date: 2026-08-22 11:16 +0800
             <td>244</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/244.png"></td>
             <td>炎帝</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15548,7 +15611,7 @@ date: 2026-08-22 11:16 +0800
             <td>244</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/244.png"></td>
             <td>炎帝</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15560,7 +15623,7 @@ date: 2026-08-22 11:16 +0800
             <td>531</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15572,7 +15635,7 @@ date: 2026-08-22 11:16 +0800
             <td>036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15584,7 +15647,7 @@ date: 2026-08-22 11:16 +0800
             <td>584</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15596,7 +15659,7 @@ date: 2026-08-22 11:16 +0800
             <td>465</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/465.png"></td>
             <td>巨蔓藤</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15608,7 +15671,7 @@ date: 2026-08-22 11:16 +0800
             <td>584</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/584.png"></td>
             <td>双倍多多冰</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15620,7 +15683,7 @@ date: 2026-08-22 11:16 +0800
             <td>465</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/465.png"></td>
             <td>巨蔓藤</td>
-            <td>巨人洞穴（１）</td>
+            <td>巨大洞穴（１）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15632,7 +15695,7 @@ date: 2026-08-22 11:16 +0800
             <td>215</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/215.png"></td>
             <td>狃拉</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15644,7 +15707,7 @@ date: 2026-08-22 11:16 +0800
             <td>209</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/209.png"></td>
             <td>布鲁</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15656,7 +15719,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15668,7 +15731,7 @@ date: 2026-08-22 11:16 +0800
             <td>235</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/235.png"></td>
             <td>图图犬</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15680,7 +15743,7 @@ date: 2026-08-22 11:16 +0800
             <td>314</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/314.png"></td>
             <td>甜甜萤</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15692,7 +15755,7 @@ date: 2026-08-22 11:16 +0800
             <td>313</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/313.png"></td>
             <td>电萤虫</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15704,7 +15767,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15716,7 +15779,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15728,7 +15791,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15740,7 +15803,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15752,7 +15815,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15764,7 +15827,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15776,7 +15839,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -15788,7 +15851,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -15800,7 +15863,7 @@ date: 2026-08-22 11:16 +0800
             <td>437</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/437.png"></td>
             <td>青铜钟</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15812,7 +15875,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -15824,7 +15887,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15836,7 +15899,7 @@ date: 2026-08-22 11:16 +0800
             <td>437</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/437.png"></td>
             <td>青铜钟</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15848,7 +15911,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15860,7 +15923,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -15872,7 +15935,7 @@ date: 2026-08-22 11:16 +0800
             <td>060</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -15884,7 +15947,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>蓝条纹</td>
             <td>40</td>
@@ -15896,7 +15959,7 @@ date: 2026-08-22 11:16 +0800
             <td>060</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -15908,7 +15971,7 @@ date: 2026-08-22 11:16 +0800
             <td>423</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>西海</td>
             <td>50</td>
@@ -15920,7 +15983,7 @@ date: 2026-08-22 11:16 +0800
             <td>423</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/423.png"></td>
             <td>海兔兽</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>西海</td>
             <td>50</td>
@@ -15932,7 +15995,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>蓝条纹</td>
             <td>35</td>
@@ -15944,7 +16007,7 @@ date: 2026-08-22 11:16 +0800
             <td>086</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>35</td>
@@ -15956,7 +16019,7 @@ date: 2026-08-22 11:16 +0800
             <td>129</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -15968,7 +16031,7 @@ date: 2026-08-22 11:16 +0800
             <td>129</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -15980,7 +16043,7 @@ date: 2026-08-22 11:16 +0800
             <td>129</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
             <td>鲤鱼王</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -15992,7 +16055,7 @@ date: 2026-08-22 11:16 +0800
             <td>061</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -16004,7 +16067,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>红条纹</td>
             <td>40</td>
@@ -16016,7 +16079,7 @@ date: 2026-08-22 11:16 +0800
             <td>061</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16028,7 +16091,7 @@ date: 2026-08-22 11:16 +0800
             <td>062</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16040,7 +16103,7 @@ date: 2026-08-22 11:16 +0800
             <td>062</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16052,7 +16115,7 @@ date: 2026-08-22 11:16 +0800
             <td>086</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>35</td>
@@ -16064,7 +16127,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>红条纹</td>
             <td>35</td>
@@ -16076,7 +16139,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -16088,7 +16151,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -16100,7 +16163,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（２）</td>
+            <td>巨大洞穴（２）</td>
             <td>春</td>
             <td>-</td>
             <td>40</td>
@@ -16112,7 +16175,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16124,7 +16187,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16136,7 +16199,7 @@ date: 2026-08-22 11:16 +0800
             <td>079</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
             <td>呆呆兽</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16148,7 +16211,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16160,7 +16223,7 @@ date: 2026-08-22 11:16 +0800
             <td>283</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/283.png"></td>
             <td>溜溜糖球</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16172,7 +16235,7 @@ date: 2026-08-22 11:16 +0800
             <td>280</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/280.png"></td>
             <td>拉鲁拉丝</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16184,7 +16247,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16196,7 +16259,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16208,7 +16271,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16220,7 +16283,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16232,7 +16295,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16244,7 +16307,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16256,7 +16319,7 @@ date: 2026-08-22 11:16 +0800
             <td>277</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/277.png"></td>
             <td>大王燕</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16268,7 +16331,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16280,7 +16343,7 @@ date: 2026-08-22 11:16 +0800
             <td>080</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/080.png"></td>
             <td>呆壳兽</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16292,7 +16355,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16304,7 +16367,7 @@ date: 2026-08-22 11:16 +0800
             <td>281</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/281.png"></td>
             <td>奇鲁莉安</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16316,7 +16379,7 @@ date: 2026-08-22 11:16 +0800
             <td>282</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16328,7 +16391,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16340,7 +16403,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16352,7 +16415,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16364,7 +16427,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16376,7 +16439,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16388,7 +16451,7 @@ date: 2026-08-22 11:16 +0800
             <td>375</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/375.png"></td>
             <td>金属怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16400,7 +16463,7 @@ date: 2026-08-22 11:16 +0800
             <td>607</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/607.png"></td>
             <td>烛光灵</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16412,7 +16475,7 @@ date: 2026-08-22 11:16 +0800
             <td>607</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/607.png"></td>
             <td>烛光灵</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16424,7 +16487,7 @@ date: 2026-08-22 11:16 +0800
             <td>243</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/243.png"></td>
             <td>雷公</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16436,7 +16499,7 @@ date: 2026-08-22 11:16 +0800
             <td>243</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/243.png"></td>
             <td>雷公</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16448,7 +16511,7 @@ date: 2026-08-22 11:16 +0800
             <td>531</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16460,7 +16523,7 @@ date: 2026-08-22 11:16 +0800
             <td>473</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/473.png"></td>
             <td>象牙猪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16472,7 +16535,7 @@ date: 2026-08-22 11:16 +0800
             <td>036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16484,7 +16547,7 @@ date: 2026-08-22 11:16 +0800
             <td>376</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16496,7 +16559,7 @@ date: 2026-08-22 11:16 +0800
             <td>036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16508,7 +16571,7 @@ date: 2026-08-22 11:16 +0800
             <td>376</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
-            <td>巨人洞穴（３）</td>
+            <td>巨大洞穴（３）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16520,7 +16583,7 @@ date: 2026-08-22 11:16 +0800
             <td>282</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/282.png"></td>
             <td>沙奈朵</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16532,7 +16595,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16544,7 +16607,7 @@ date: 2026-08-22 11:16 +0800
             <td>128</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/128.png"></td>
             <td>肯泰罗</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16556,7 +16619,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16568,7 +16631,7 @@ date: 2026-08-22 11:16 +0800
             <td>337</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/337.png"></td>
             <td>月石</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16580,7 +16643,7 @@ date: 2026-08-22 11:16 +0800
             <td>338</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/338.png"></td>
             <td>太阳岩</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16592,7 +16655,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16604,7 +16667,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16616,7 +16679,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16628,7 +16691,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16640,7 +16703,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16652,7 +16715,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16664,7 +16727,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16676,7 +16739,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16688,7 +16751,7 @@ date: 2026-08-22 11:16 +0800
             <td>192</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/192.png"></td>
             <td>向日花怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16700,7 +16763,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16712,7 +16775,7 @@ date: 2026-08-22 11:16 +0800
             <td>300</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/300.png"></td>
             <td>向尾喵</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16724,7 +16787,7 @@ date: 2026-08-22 11:16 +0800
             <td>124</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/124.png"></td>
             <td>迷唇姐</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>51</td>
@@ -16736,7 +16799,7 @@ date: 2026-08-22 11:16 +0800
             <td>132</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
             <td>百变怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16748,7 +16811,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>50</td>
@@ -16760,7 +16823,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16772,7 +16835,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16784,7 +16847,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>49</td>
@@ -16796,7 +16859,7 @@ date: 2026-08-22 11:16 +0800
             <td>378</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/378.png"></td>
             <td>雷吉艾斯</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>52</td>
@@ -16808,7 +16871,7 @@ date: 2026-08-22 11:16 +0800
             <td>606</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/606.png"></td>
             <td>大宇怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16820,7 +16883,7 @@ date: 2026-08-22 11:16 +0800
             <td>606</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/606.png"></td>
             <td>大宇怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16832,7 +16895,7 @@ date: 2026-08-22 11:16 +0800
             <td>245</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/245.png"></td>
             <td>水君</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16844,7 +16907,7 @@ date: 2026-08-22 11:16 +0800
             <td>245</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/245.png"></td>
             <td>水君</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16856,7 +16919,7 @@ date: 2026-08-22 11:16 +0800
             <td>531</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/531.png"></td>
             <td>差不多娃娃</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16868,7 +16931,7 @@ date: 2026-08-22 11:16 +0800
             <td>473</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/473.png"></td>
             <td>象牙猪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16880,7 +16943,7 @@ date: 2026-08-22 11:16 +0800
             <td>036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16892,7 +16955,7 @@ date: 2026-08-22 11:16 +0800
             <td>376</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16904,7 +16967,7 @@ date: 2026-08-22 11:16 +0800
             <td>036</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
             <td>皮可西</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16916,7 +16979,7 @@ date: 2026-08-22 11:16 +0800
             <td>376</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/376.png"></td>
             <td>巨金怪</td>
-            <td>巨人洞穴（４）</td>
+            <td>巨大洞穴（４）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -16928,7 +16991,7 @@ date: 2026-08-22 11:16 +0800
             <td>215</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/215.png"></td>
             <td>狃拉</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16940,7 +17003,7 @@ date: 2026-08-22 11:16 +0800
             <td>276</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/276.png"></td>
             <td>傲骨燕</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16952,7 +17015,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -16964,7 +17027,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -16976,7 +17039,7 @@ date: 2026-08-22 11:16 +0800
             <td>312</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/312.png"></td>
             <td>负电拍拍</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -16988,7 +17051,7 @@ date: 2026-08-22 11:16 +0800
             <td>311</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/311.png"></td>
             <td>正电拍拍</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17000,7 +17063,7 @@ date: 2026-08-22 11:16 +0800
             <td>035</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
             <td>皮皮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17012,7 +17075,7 @@ date: 2026-08-22 11:16 +0800
             <td>583</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/583.png"></td>
             <td>多多冰</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17024,7 +17087,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17036,7 +17099,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17048,7 +17111,7 @@ date: 2026-08-22 11:16 +0800
             <td>221</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/221.png"></td>
             <td>长毛猪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17060,7 +17123,7 @@ date: 2026-08-22 11:16 +0800
             <td>225</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/225.png"></td>
             <td>信使鸟</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17072,7 +17135,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>44</td>
@@ -17084,7 +17147,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>45</td>
@@ -17096,7 +17159,7 @@ date: 2026-08-22 11:16 +0800
             <td>442</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/442.png"></td>
             <td>花岩怪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17108,7 +17171,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>46</td>
@@ -17120,7 +17183,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17132,7 +17195,7 @@ date: 2026-08-22 11:16 +0800
             <td>442</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/442.png"></td>
             <td>花岩怪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17144,7 +17207,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17156,7 +17219,7 @@ date: 2026-08-22 11:16 +0800
             <td>530</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/530.png"></td>
             <td>龙头地鼠</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>春</td>
             <td>-</td>
             <td>47</td>
@@ -17168,7 +17231,7 @@ date: 2026-08-22 11:16 +0800
             <td>060</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17180,7 +17243,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>蓝条纹</td>
             <td>40</td>
@@ -17192,7 +17255,7 @@ date: 2026-08-22 11:16 +0800
             <td>060</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
             <td>蚊香蝌蚪</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17204,7 +17267,7 @@ date: 2026-08-22 11:16 +0800
             <td>565</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17216,7 +17279,7 @@ date: 2026-08-22 11:16 +0800
             <td>565</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/565.png"></td>
             <td>肋骨海龟</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17228,7 +17291,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>蓝条纹</td>
             <td>35</td>
@@ -17240,7 +17303,7 @@ date: 2026-08-22 11:16 +0800
             <td>086</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>35</td>
@@ -17252,7 +17315,7 @@ date: 2026-08-22 11:16 +0800
             <td>130</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/130.png"></td>
             <td>暴鲤龙</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17264,7 +17327,7 @@ date: 2026-08-22 11:16 +0800
             <td>130</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/130.png"></td>
             <td>暴鲤龙</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17276,7 +17339,7 @@ date: 2026-08-22 11:16 +0800
             <td>130</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/130.png"></td>
             <td>暴鲤龙</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17288,7 +17351,7 @@ date: 2026-08-22 11:16 +0800
             <td>061</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17300,7 +17363,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>红条纹</td>
             <td>40</td>
@@ -17312,7 +17375,7 @@ date: 2026-08-22 11:16 +0800
             <td>061</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
             <td>蚊香君</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17324,7 +17387,7 @@ date: 2026-08-22 11:16 +0800
             <td>062</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17336,7 +17399,7 @@ date: 2026-08-22 11:16 +0800
             <td>062</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
             <td>蚊香泳士</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>50</td>
@@ -17348,7 +17411,7 @@ date: 2026-08-22 11:16 +0800
             <td>086</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
             <td>小海狮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>35</td>
@@ -17360,7 +17423,7 @@ date: 2026-08-22 11:16 +0800
             <td>550</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/550.png"></td>
             <td>野蛮鲈鱼</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>红条纹</td>
             <td>35</td>
@@ -17372,7 +17435,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17384,7 +17447,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -17396,7 +17459,7 @@ date: 2026-08-22 11:16 +0800
             <td>087</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
             <td>白海狮</td>
-            <td>巨人洞穴（５）</td>
+            <td>巨大洞穴（５）</td>
             <td>-</td>
             <td>-</td>
             <td>40</td>
@@ -57762,130 +57825,40 @@ date: 2026-08-22 11:16 +0800
         </tr>
     </tbody>
 </table>
-```html
 <script>
-/* =========================================================
- * 表格筛选
- *
- * 第1列：编号 num
- * 第4列：方式 way
- * 第5列：season
- *
- * 筛选逻辑：
- *
- * 方式：
- *   第4列包含选择的方式
- *
- * 编号：
- *   第1列包含任意一个关键词
- *   多个关键词支持：
- *   , ， / | ; ；
- *
- * 季节：
- *   只有选择 春 / 夏 / 秋 / 冬 时才进行筛选
- *
- *   例如选择「春」：
- *   第5列包含「春」
- *   OR
- *   第5列包含「-」
- *
- * 最终：
- *   方式 AND 编号 AND 季节
- * ========================================================= */
-
-
-/* =========================================================
- * 当前筛选条件
- * ========================================================= */
-
 let currentWayFilter = "";
 let currentNumFilter = "";
-let currentSeasonFilter = "";
-
-
-/* =========================================================
- * 表格缓存
- * ========================================================= */
 
 let tableRows = [];
 let rowData = [];
 
-
-/* =========================================================
+/**
  * 初始化 / 刷新缓存
- * ========================================================= */
-
+ */
 function initFilterCache() {
-
     const tbody = document.querySelector("#pokeTable");
 
-    if (!tbody) {
-        console.warn("未找到 #pokeTable");
-        return;
-    }
+    if (!tbody) return;
 
-
-    /*
-     * 获取所有行
-     */
     tableRows = Array.from(tbody.rows);
 
-
-    /*
-     * 缓存需要筛选的数据
-     *
-     * 后面筛选时不再读取 innerText
-     */
     rowData = tableRows.map(row => ({
-
         row: row,
-
-        /*
-         * 第1列：编号
-         */
-        num:
-            row.cells[0]?.textContent.trim() || "",
-
-        /*
-         * 第4列：方式
-         */
-        way:
-            row.cells[3]?.textContent.trim() || "",
-
-        /*
-         * 第5列：season
-         */
-        season:
-            row.cells[4]?.textContent.trim() || ""
+        num: row.cells[0]?.textContent || "",
+        way: row.cells[3]?.textContent || ""
     }));
 }
 
 
-/* =========================================================
+/**
  * 执行筛选
- * ========================================================= */
-
+ */
 function applyFilters() {
 
-    /*
-     * 如果还没有缓存，先初始化
-     */
+    // 如果表格发生变化，重新缓存
     if (!tableRows.length) {
         initFilterCache();
     }
-
-
-    /*
-     * 没有表格
-     */
-    if (!rowData.length) {
-        return;
-    }
-
-
-    /* =====================================================
-     * 编号关键词
-     * ===================================================== */
 
     const numKeywords = currentNumFilter
         ? currentNumFilter
@@ -57894,44 +57867,11 @@ function applyFilters() {
             .filter(Boolean)
         : [];
 
+    const hasWayFilter = currentWayFilter !== "";
+    const hasNumFilter = numKeywords.length > 0;
 
-    /* =====================================================
-     * 判断哪些筛选条件正在使用
-     * ===================================================== */
-
-    const hasWayFilter =
-        currentWayFilter !== "";
-
-
-    const hasNumFilter =
-        numKeywords.length > 0;
-
-
-    /*
-     * 只有春夏秋冬才启用 season 筛选
-     */
-    const validSeasons = [
-        "春",
-        "夏",
-        "秋",
-        "冬"
-    ];
-
-
-    const hasSeasonFilter =
-        validSeasons.includes(currentSeasonFilter);
-
-
-    /* =====================================================
-     * 如果没有任何筛选
-     * 直接全部显示
-     * ===================================================== */
-
-    if (
-        !hasWayFilter &&
-        !hasNumFilter &&
-        !hasSeasonFilter
-    ) {
+    // 没有任何筛选时，直接全部显示
+    if (!hasWayFilter && !hasNumFilter) {
 
         for (const item of rowData) {
             item.row.hidden = false;
@@ -57940,282 +57880,93 @@ function applyFilters() {
         return;
     }
 
-
-    /* =====================================================
-     * 开始筛选
-     * ===================================================== */
-
+    // 执行筛选
     for (const item of rowData) {
 
         let wayMatch = true;
         let numMatch = true;
-        let seasonMatch = true;
 
-
-        /* =================================================
-         * 方式筛选
-         *
-         * 第4列包含当前方式
-         * ================================================= */
-
+        // 方式筛选
         if (hasWayFilter) {
-
-            wayMatch =
-                item.way.includes(currentWayFilter);
+            wayMatch = item.way.includes(currentWayFilter);
         }
 
-
-        /* =================================================
-         * 编号筛选
-         *
-         * 第1列只要包含任意一个关键词即可
-         *
-         * 例如：
-         *
-         * 123,456,789
-         *
-         * 第1列：
-         *
-         * 12345 → 显示
-         * 45678 → 显示
-         * 99999 → 隐藏
-         * ================================================= */
-
+        // 编号筛选
         if (hasNumFilter) {
-
             numMatch = false;
 
             for (const keyword of numKeywords) {
-
                 if (item.num.includes(keyword)) {
-
                     numMatch = true;
-
                     break;
                 }
             }
         }
 
-
-        /* =================================================
-         * Season 筛选
-         *
-         * 例如：
-         *
-         * currentSeasonFilter = "春"
-         *
-         * 第5列：
-         *
-         * 春      → 显示
-         * 春夏    → 显示
-         * 春-     → 显示
-         * -       → 显示
-         *
-         * 夏      → 隐藏
-         * 秋      → 隐藏
-         * 冬      → 隐藏
-         *
-         * 注意：
-         * 「-」属于通配项
-         * ================================================= */
-
-        if (hasSeasonFilter) {
-
-            seasonMatch =
-                item.season.includes(currentSeasonFilter) ||
-                item.season.includes("-");
-        }
-
-
-        /* =================================================
-         * 最终结果
-         *
-         * 方式 AND 编号 AND 季节
-         * ================================================= */
-
-        item.row.hidden =
-            !(wayMatch && numMatch && seasonMatch);
+        item.row.hidden = !(wayMatch && numMatch);
     }
 }
 
 
-/* =========================================================
+/**
  * 方式筛选
- *
- * 原来的：
- *
- * filter("短袖")
- *
- * ========================================================= */
-
+ */
 function filter(keyword) {
 
-    currentWayFilter =
-        keyword || "";
+    currentWayFilter = keyword || "";
 
     applyFilters();
 }
 
 
-/* =========================================================
+/**
  * 编号筛选
- *
- * 从：
- *
- * #numfilter
- *
- * 获取编号关键词
- * ========================================================= */
-
+ */
 function real_numfilter() {
 
-    const input =
-        document.getElementById("numfilter");
+    const input = document.getElementById("numfilter");
 
-
-    currentNumFilter =
-        input
-            ? input.value.trim()
-            : "";
-
+    currentNumFilter = input
+        ? input.value.trim()
+        : "";
 
     applyFilters();
 }
 
 
-/* =========================================================
- * Season 筛选
- *
- * 使用：
- *
- * filterSeason("春")
- * filterSeason("夏")
- * filterSeason("秋")
- * filterSeason("冬")
- *
- * 如果传入其他值：
- *
- * filterSeason("")
- * filterSeason("全部")
- *
- * 则不筛选季节
- * ========================================================= */
-
-function filterSeason(season) {
-
-    const validSeasons = [
-        "春",
-        "夏",
-        "秋",
-        "冬"
-    ];
-
-
-    /*
-     * 只有春夏秋冬才启用 season 筛选
-     */
-    if (validSeasons.includes(season)) {
-
-        currentSeasonFilter =
-            season;
-
-    } else {
-
-        /*
-         * 其他值 = 不筛选季节
-         */
-        currentSeasonFilter = "";
-    }
-
-
-    applyFilters();
-}
-
-
-/* =========================================================
- * 重置所有筛选
- * ========================================================= */
-
+/**
+ * 重置筛选
+ */
 function resetFilters() {
 
-    /*
-     * 清空筛选状态
-     */
     currentWayFilter = "";
     currentNumFilter = "";
-    currentSeasonFilter = "";
 
-
-    /*
-     * 清空编号输入框
-     */
-    const input =
-        document.getElementById("numfilter");
-
+    const input = document.getElementById("numfilter");
 
     if (input) {
         input.value = "";
     }
 
-
-    /*
-     * 全部显示
-     *
-     * 不需要重新执行筛选
-     */
+    // 不需要再复杂判断
     for (const item of rowData) {
-
         item.row.hidden = false;
     }
 }
 
 
-/* =========================================================
- * 如果表格数据发生变化
- *
- * 可以手动调用：
- *
- * refreshFilterCache()
- *
- * ========================================================= */
-
-function refreshFilterCache() {
-
-    tableRows = [];
-    rowData = [];
-
-    initFilterCache();
-
-    /*
-     * 刷新缓存后重新应用当前筛选
-     */
-    applyFilters();
-}
-
-
-/* =========================================================
- * 页面初始化
- * ========================================================= */
-
+/**
+ * 页面加载后初始化
+ */
 function initTableFilter() {
-
     initFilterCache();
 }
 
 
-/* =========================================================
- * DOM 加载完成
- * ========================================================= */
-
+// DOM加载完成
 if (document.readyState === "loading") {
-
-    document.addEventListener(
-        "DOMContentLoaded",
-        initTableFilter
-    );
-
+    document.addEventListener("DOMContentLoaded", initTableFilter);
 } else {
-
     initTableFilter();
 }
 </script>
