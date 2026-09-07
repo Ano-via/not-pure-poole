@@ -57833,129 +57833,34 @@ date: 2026-08-22 11:16 +0800
     </tbody>
 </table>
 ```html
+```html
 <script>
-/* =========================================================
- * 表格筛选
- *
- * 第1列：编号 num
- * 第4列：方式 way
- * 第5列：season
- *
- * 筛选逻辑：
- *
- * 方式：
- *   第4列包含选择的方式
- *
- * 编号：
- *   第1列包含任意一个关键词
- *   多个关键词支持：
- *   , ， / | ; ；
- *
- * 季节：
- *   只有选择 春 / 夏 / 秋 / 冬 时才进行筛选
- *
- *   例如选择「春」：
- *   第5列包含「春」
- *   OR
- *   第5列包含「-」
- *
- * 最终：
- *   方式 AND 编号 AND 季节
- * ========================================================= */
-
-
-/* =========================================================
- * 当前筛选条件
- * ========================================================= */
-
 let currentWayFilter = "";
 let currentNumFilter = "";
 let currentSeasonFilter = "";
 
-
-/* =========================================================
- * 表格缓存
- * ========================================================= */
-
 let tableRows = [];
 let rowData = [];
 
-
-/* =========================================================
- * 初始化 / 刷新缓存
- * ========================================================= */
-
 function initFilterCache() {
-
     const tbody = document.querySelector("#pokeTable");
 
-    if (!tbody) {
-        console.warn("未找到 #pokeTable");
-        return;
-    }
+    if (!tbody) return;
 
-
-    /*
-     * 获取所有行
-     */
     tableRows = Array.from(tbody.rows);
 
-
-    /*
-     * 缓存需要筛选的数据
-     *
-     * 后面筛选时不再读取 innerText
-     */
     rowData = tableRows.map(row => ({
-
         row: row,
-
-        /*
-         * 第1列：编号
-         */
-        num:
-            row.cells[0]?.textContent.trim() || "",
-
-        /*
-         * 第4列：方式
-         */
-        way:
-            row.cells[3]?.textContent.trim() || "",
-
-        /*
-         * 第5列：season
-         */
-        season:
-            row.cells[4]?.textContent.trim() || ""
+        num: row.cells[0]?.textContent.trim() || "",
+        way: row.cells[3]?.textContent.trim() || "",
+        season: row.cells[4]?.textContent.trim() || ""
     }));
 }
 
-
-/* =========================================================
- * 执行筛选
- * ========================================================= */
-
 function applyFilters() {
-
-    /*
-     * 如果还没有缓存，先初始化
-     */
     if (!tableRows.length) {
         initFilterCache();
     }
-
-
-    /*
-     * 没有表格
-     */
-    if (!rowData.length) {
-        return;
-    }
-
-
-    /* =====================================================
-     * 编号关键词
-     * ===================================================== */
 
     const numKeywords = currentNumFilter
         ? currentNumFilter
@@ -57964,329 +57869,99 @@ function applyFilters() {
             .filter(Boolean)
         : [];
 
+    const hasWayFilter = currentWayFilter !== "";
+    const hasNumFilter = numKeywords.length > 0;
+    const validSeasons = ["春", "夏", "秋", "冬"];
+    const hasSeasonFilter = validSeasons.includes(currentSeasonFilter);
 
-    /* =====================================================
-     * 判断哪些筛选条件正在使用
-     * ===================================================== */
-
-    const hasWayFilter =
-        currentWayFilter !== "";
-
-
-    const hasNumFilter =
-        numKeywords.length > 0;
-
-
-    /*
-     * 只有春夏秋冬才启用 season 筛选
-     */
-    const validSeasons = [
-        "春",
-        "夏",
-        "秋",
-        "冬"
-    ];
-
-
-    const hasSeasonFilter =
-        validSeasons.includes(currentSeasonFilter);
-
-
-    /* =====================================================
-     * 如果没有任何筛选
-     * 直接全部显示
-     * ===================================================== */
-
-    if (
-        !hasWayFilter &&
-        !hasNumFilter &&
-        !hasSeasonFilter
-    ) {
-
+    if (!hasWayFilter && !hasNumFilter && !hasSeasonFilter) {
         for (const item of rowData) {
             item.row.hidden = false;
         }
-
         return;
     }
 
-
-    /* =====================================================
-     * 开始筛选
-     * ===================================================== */
-
     for (const item of rowData) {
-
         let wayMatch = true;
         let numMatch = true;
         let seasonMatch = true;
 
-
-        /* =================================================
-         * 方式筛选
-         *
-         * 第4列包含当前方式
-         * ================================================= */
-
         if (hasWayFilter) {
-
-            wayMatch =
-                item.way.includes(currentWayFilter);
+            wayMatch = item.way.includes(currentWayFilter);
         }
 
-
-        /* =================================================
-         * 编号筛选
-         *
-         * 第1列只要包含任意一个关键词即可
-         *
-         * 例如：
-         *
-         * 123,456,789
-         *
-         * 第1列：
-         *
-         * 12345 → 显示
-         * 45678 → 显示
-         * 99999 → 隐藏
-         * ================================================= */
-
         if (hasNumFilter) {
-
             numMatch = false;
 
             for (const keyword of numKeywords) {
-
                 if (item.num.includes(keyword)) {
-
                     numMatch = true;
-
                     break;
                 }
             }
         }
 
-
-        /* =================================================
-         * Season 筛选
-         *
-         * 例如：
-         *
-         * currentSeasonFilter = "春"
-         *
-         * 第5列：
-         *
-         * 春      → 显示
-         * 春夏    → 显示
-         * 春-     → 显示
-         * -       → 显示
-         *
-         * 夏      → 隐藏
-         * 秋      → 隐藏
-         * 冬      → 隐藏
-         *
-         * 注意：
-         * 「-」属于通配项
-         * ================================================= */
-
         if (hasSeasonFilter) {
-
             seasonMatch =
                 item.season.includes(currentSeasonFilter) ||
                 item.season.includes("-");
         }
 
-
-        /* =================================================
-         * 最终结果
-         *
-         * 方式 AND 编号 AND 季节
-         * ================================================= */
-
-        item.row.hidden =
-            !(wayMatch && numMatch && seasonMatch);
+        item.row.hidden = !(wayMatch && numMatch && seasonMatch);
     }
 }
 
-
-/* =========================================================
- * 方式筛选
- *
- * 原来的：
- *
- * filter("短袖")
- *
- * ========================================================= */
-
 function filter(keyword) {
-
-    currentWayFilter =
-        keyword || "";
-
+    currentWayFilter = keyword || "";
     applyFilters();
 }
-
-
-/* =========================================================
- * 编号筛选
- *
- * 从：
- *
- * #numfilter
- *
- * 获取编号关键词
- * ========================================================= */
 
 function real_numfilter() {
+    const input = document.getElementById("numfilter");
 
-    const input =
-        document.getElementById("numfilter");
-
-
-    currentNumFilter =
-        input
-            ? input.value.trim()
-            : "";
-
+    currentNumFilter = input
+        ? input.value.trim()
+        : "";
 
     applyFilters();
 }
 
-
-/* =========================================================
- * Season 筛选
- *
- * 使用：
- *
- * filterSeason("春")
- * filterSeason("夏")
- * filterSeason("秋")
- * filterSeason("冬")
- *
- * 如果传入其他值：
- *
- * filterSeason("")
- * filterSeason("全部")
- *
- * 则不筛选季节
- * ========================================================= */
-
 function filterSeason(season) {
+    const validSeasons = ["春", "夏", "秋", "冬"];
 
-    const validSeasons = [
-        "春",
-        "夏",
-        "秋",
-        "冬"
-    ];
-
-
-    /*
-     * 只有春夏秋冬才启用 season 筛选
-     */
     if (validSeasons.includes(season)) {
-
-        currentSeasonFilter =
-            season;
-
+        currentSeasonFilter = season;
     } else {
-
-        /*
-         * 其他值 = 不筛选季节
-         */
         currentSeasonFilter = "";
     }
 
-
     applyFilters();
 }
 
-
-/* =========================================================
- * 重置所有筛选
- * ========================================================= */
-
 function resetFilters() {
-
-    /*
-     * 清空筛选状态
-     */
     currentWayFilter = "";
     currentNumFilter = "";
     currentSeasonFilter = "";
 
-
-    /*
-     * 清空编号输入框
-     */
-    const input =
-        document.getElementById("numfilter");
-
+    const input = document.getElementById("numfilter");
 
     if (input) {
         input.value = "";
     }
 
-
-    /*
-     * 全部显示
-     *
-     * 不需要重新执行筛选
-     */
     for (const item of rowData) {
-
         item.row.hidden = false;
     }
 }
 
-
-/* =========================================================
- * 如果表格数据发生变化
- *
- * 可以手动调用：
- *
- * refreshFilterCache()
- *
- * ========================================================= */
-
-function refreshFilterCache() {
-
-    tableRows = [];
-    rowData = [];
-
-    initFilterCache();
-
-    /*
-     * 刷新缓存后重新应用当前筛选
-     */
-    applyFilters();
-}
-
-
-/* =========================================================
- * 页面初始化
- * ========================================================= */
-
 function initTableFilter() {
-
     initFilterCache();
 }
-
-
-/* =========================================================
- * DOM 加载完成
- * ========================================================= */
 
 if (document.readyState === "loading") {
-
-    document.addEventListener(
-        "DOMContentLoaded",
-        initTableFilter
-    );
-
+    document.addEventListener("DOMContentLoaded", initTableFilter);
 } else {
-
     initTableFilter();
 }
 </script>
-
+```
