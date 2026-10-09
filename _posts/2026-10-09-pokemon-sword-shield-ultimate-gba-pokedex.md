@@ -87,7 +87,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/002.png"></td>
             <td>妙蛙草</td>
             <td>Ivysaur</td>
-            <td>进化方式：由 Bulbasaur 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Bulbasaur 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="003">003</td>
@@ -115,7 +115,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/005.png"></td>
             <td>火恐龙</td>
             <td>Charmeleon</td>
-            <td>进化方式：由 Charmander 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Charmander 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="006">006</td>
@@ -150,7 +150,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/008.png"></td>
             <td>卡咪龟</td>
             <td>Wartortle</td>
-            <td>进化方式：由 Squirtle 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Squirtle 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="009">009</td>
@@ -178,7 +178,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/011.png"></td>
             <td>铁甲蛹</td>
             <td>Metapod</td>
-            <td>进化方式：由 Caterpie 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Caterpie 进化（升级至等级 7）</td>
         </tr>
         <tr>
             <td id="012">012</td>
@@ -199,7 +199,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/014.png"></td>
             <td>铁壳蛹</td>
             <td>Kakuna</td>
-            <td>进化方式：由 Weedle 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Weedle 进化（升级至等级 7）</td>
         </tr>
         <tr>
             <td id="015">015</td>
@@ -227,7 +227,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/017.png"></td>
             <td>比比鸟</td>
             <td>Pidgeotto</td>
-            <td>进化方式：由 Pidgey 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Pidgey 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="018">018</td>
@@ -346,7 +346,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/028.png"></td>
             <td>穿山王</td>
             <td>Sandslash</td>
-            <td>进化方式：由 Sandshrew 进化（升级至等级 22）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sandshrew 进化（升级至等级 22）</td>
         </tr>
         <tr>
             <td id="029">029</td>
@@ -360,7 +360,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/030.png"></td>
             <td>尼多娜</td>
             <td>Nidorina</td>
-            <td>进化方式：由 Nidoran♀ 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Nidoran♀ 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="031">031</td>
@@ -381,7 +381,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/033.png"></td>
             <td>尼多力诺</td>
             <td>Nidorino</td>
-            <td>进化方式：由 Nidoran♂ 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Nidoran♂ 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="034">034</td>
@@ -423,7 +423,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/038.png"></td>
             <td>九尾</td>
             <td>Ninetales Alolan</td>
-            <td>进化方式：由 Vulpix-Alola 进化（使用Item: Ice Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Vulpix-Alola 进化（使用Item: Ice Stone）</td>
         </tr>
         <tr>
             <td id="038">038</td>
@@ -437,14 +437,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/039.png"></td>
             <td>胖丁</td>
             <td>Jigglypuff</td>
-            <td>进化方式：由 Igglybuff 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Igglybuff 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="040">040</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/040.png"></td>
             <td>胖可丁</td>
             <td>Wigglytuff</td>
-            <td>进化方式：由 Jigglypuff 进化（使用Item: Moon Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Jigglypuff 进化（使用Item: Moon Stone）</td>
         </tr>
         <tr>
             <td id="041">041</td>
@@ -479,7 +479,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/045.png"></td>
             <td>霸王花</td>
             <td>Vileplume</td>
-            <td>进化方式：由 Gloom 进化（使用Item: Leaf Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Gloom 进化（使用Item: Leaf Stone）</td>
         </tr>
         <tr>
             <td id="046">046</td>
@@ -507,7 +507,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>Venomoth</td>
-            <td>进化方式：由 Venonat 进化（升级至等级 31）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Venonat 进化（升级至等级 31）</td>
         </tr>
         <tr>
             <td id="050">050</td>
@@ -528,7 +528,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/051.png"></td>
             <td>三地鼠</td>
             <td>Dugtrio Alolan</td>
-            <td>进化方式：由 Diglett-Alola 进化（升级至等级 26）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Diglett-Alola 进化（升级至等级 26）</td>
         </tr>
         <tr>
             <td id="051">051</td>
@@ -563,7 +563,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/053.png"></td>
             <td>猫老大</td>
             <td>Persian Alolan</td>
-            <td>进化方式：由 Meowth-Alola 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Meowth-Alola 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="053">053</td>
@@ -612,7 +612,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/059.png"></td>
             <td>风速狗</td>
             <td>Arcanine</td>
-            <td>进化方式：由 Growlithe 进化（使用Item: Fire Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Growlithe 进化（使用Item: Fire Stone）</td>
         </tr>
         <tr>
             <td id="060">060</td>
@@ -696,7 +696,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/070.png"></td>
             <td>口呆花</td>
             <td>Weepinbell</td>
-            <td>进化方式：由 Bellsprout 进化（升级至等级 21）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Bellsprout 进化（升级至等级 21）</td>
         </tr>
         <tr>
             <td id="071">071</td>
@@ -717,7 +717,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/073.png"></td>
             <td>毒刺水母</td>
             <td>Tentacruel</td>
-            <td>进化方式：由 Tentacool 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tentacool 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="074">074</td>
@@ -752,7 +752,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/076.png"></td>
             <td>隆隆岩</td>
             <td>Golem Alolan</td>
-            <td>进化方式：由 Graveler-Alola 进化（使用Item: Link Cable）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Graveler-Alola 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="076">076</td>
@@ -864,7 +864,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/085.png"></td>
             <td>嘟嘟利</td>
             <td>Dodrio</td>
-            <td>进化方式：由 Doduo 进化（升级至等级 31）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Doduo 进化（升级至等级 31）</td>
         </tr>
         <tr>
             <td id="086">086</td>
@@ -899,7 +899,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/089.png"></td>
             <td>臭臭泥</td>
             <td>Muk Alolan</td>
-            <td>进化方式：由 Grimer-Alola 进化（升级至等级 38）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Grimer-Alola 进化（升级至等级 38）</td>
         </tr>
         <tr>
             <td id="089">089</td>
@@ -920,7 +920,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/091.png"></td>
             <td>刺甲贝</td>
             <td>Cloyster</td>
-            <td>进化方式：由 Shellder 进化（使用Item: Water Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Shellder 进化（使用Item: Water Stone）</td>
         </tr>
         <tr>
             <td id="092">092</td>
@@ -1004,7 +1004,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/1011.png"></td>
             <td>裹蜜虫</td>
             <td>Dipplin</td>
-            <td>进化方式：由 Applin 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Applin 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td>1018</td>
@@ -1018,7 +1018,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/1019.png"></td>
             <td>蜜集大蛇</td>
             <td>Hydrapple</td>
-            <td>进化方式：由 Dipplin 进化（升级至等级 44）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Dipplin 进化（升级至等级 44）</td>
         </tr>
         <tr>
             <td id="102">102</td>
@@ -1039,7 +1039,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/103.png"></td>
             <td>椰蛋树</td>
             <td>Exeggutor</td>
-            <td>进化方式：由 Exeggcute 进化（使用Item: Leaf Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Exeggcute 进化（使用Item: Leaf Stone）</td>
         </tr>
         <tr>
             <td id="104">104</td>
@@ -1053,7 +1053,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/105.png"></td>
             <td>嘎啦嘎啦</td>
             <td>Marowak Alolan</td>
-            <td>进化方式：由 Cubone 进化（使用Item: Fire Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Cubone 进化（使用Item: Fire Stone）</td>
         </tr>
         <tr>
             <td id="105">105</td>
@@ -1305,14 +1305,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/135.png"></td>
             <td>雷伊布</td>
             <td>Jolteon</td>
-            <td>进化方式：由 Eevee 进化（使用Item: Thunder Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eevee 进化（使用Item: Thunder Stone）</td>
         </tr>
         <tr>
             <td id="136">136</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/136.png"></td>
             <td>火伊布</td>
             <td>Flareon</td>
-            <td>进化方式：由 Eevee 进化（使用Item: Fire Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eevee 进化（使用Item: Fire Stone）</td>
         </tr>
         <tr>
             <td id="137">137</td>
@@ -1473,7 +1473,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/153.png"></td>
             <td>月桂叶</td>
             <td>Bayleef</td>
-            <td>进化方式：由 Chikorita 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Chikorita 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="154">154</td>
@@ -1494,7 +1494,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/156.png"></td>
             <td>火岩鼠</td>
             <td>Quilava</td>
-            <td>进化方式：由 Cyndaquil 进化（升级至等级 14）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Cyndaquil 进化（升级至等级 14）</td>
         </tr>
         <tr>
             <td id="157">157</td>
@@ -1515,7 +1515,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/159.png"></td>
             <td>蓝鳄</td>
             <td>Croconaw</td>
-            <td>进化方式：由 Totodile 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Totodile 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="160">160</td>
@@ -1634,7 +1634,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/176.png"></td>
             <td>波克基古</td>
             <td>Togetic</td>
-            <td>进化方式：由 Togepi 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Togepi 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="177">177</td>
@@ -1648,7 +1648,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/178.png"></td>
             <td>天然鸟</td>
             <td>Xatu</td>
-            <td>进化方式：由 Natu 进化（升级至等级 25）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Natu 进化（升级至等级 25）</td>
         </tr>
         <tr>
             <td id="179">179</td>
@@ -1732,7 +1732,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/189.png"></td>
             <td>毽子棉</td>
             <td>Jumpluff</td>
-            <td>进化方式：由 Skiploom 进化（升级至等级 27）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Skiploom 进化（升级至等级 27）</td>
         </tr>
         <tr>
             <td id="190">190</td>
@@ -1781,14 +1781,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/196.png"></td>
             <td>太阳伊布</td>
             <td>Espeon</td>
-            <td>进化方式：由 Eevee 进化（等级 Up: Happiness + Daytime + 等级 Up OR Sun Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eevee 进化（等级 Up: Happiness + Daytime + 等级 Up OR Sun Stone）</td>
         </tr>
         <tr>
             <td id="197">197</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/197.png"></td>
             <td>月亮伊布</td>
             <td>Umbreon</td>
-            <td>进化方式：由 Eevee 进化（等级 Up: Happiness + Nighttime + 等级 Up OR Moon Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eevee 进化（等级 Up: Happiness + Nighttime + 等级 Up OR Moon Stone）</td>
         </tr>
         <tr>
             <td id="198">198</td>
@@ -1802,14 +1802,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/199.png"></td>
             <td>呆呆王</td>
             <td>Slowking Galarian</td>
-            <td>进化方式：由 Slowpoke-Galar 进化（使用Item: Galar Wreath）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Slowpoke-Galar 进化（使用Item: Galar Wreath）</td>
         </tr>
         <tr>
             <td id="199">199</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/199.png"></td>
             <td>呆呆王</td>
             <td>Slowking</td>
-            <td>进化方式：由 Slowpoke 进化（使用Item: King's Rock）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Slowpoke 进化（使用Item: King's Rock）</td>
         </tr>
         <tr>
             <td id="200">200</td>
@@ -2110,7 +2110,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/237.png"></td>
             <td>战舞郎</td>
             <td>Hitmontop</td>
-            <td>进化方式：由 Tyrogue 进化（等级 Up: Attack = Defense + 等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tyrogue 进化（等级 Up: Attack = Defense + 等级 20）</td>
         </tr>
         <tr>
             <td id="238">238</td>
@@ -2145,7 +2145,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/242.png"></td>
             <td>幸福蛋</td>
             <td>Blissey</td>
-            <td>进化方式：由 Chansey 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Chansey 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="243">243</td>
@@ -2180,7 +2180,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/247.png"></td>
             <td>沙基拉斯</td>
             <td>Pupitar</td>
-            <td>进化方式：由 Larvitar 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Larvitar 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="248">248</td>
@@ -2229,7 +2229,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/253.png"></td>
             <td>森林蜥蜴</td>
             <td>Grovyle</td>
-            <td>进化方式：由 Treecko 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Treecko 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="254">254</td>
@@ -2257,7 +2257,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/256.png"></td>
             <td>力壮鸡</td>
             <td>Combusken</td>
-            <td>进化方式：由 Torchic 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Torchic 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="257">257</td>
@@ -2285,7 +2285,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/259.png"></td>
             <td>沼跃鱼</td>
             <td>Marshtomp</td>
-            <td>进化方式：由 Mudkip 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Mudkip 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="260">260</td>
@@ -2334,7 +2334,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/264.png"></td>
             <td>直冲熊</td>
             <td>Linoone Galarian</td>
-            <td>进化方式：由 Zigzagoon-Galar 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Zigzagoon-Galar 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="264">264</td>
@@ -2355,7 +2355,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/266.png"></td>
             <td>甲壳茧</td>
             <td>Silcoon</td>
-            <td>进化方式：由 Wurmple 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Wurmple 进化（升级至等级 7）</td>
         </tr>
         <tr>
             <td id="267">267</td>
@@ -2369,7 +2369,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/268.png"></td>
             <td>盾甲茧</td>
             <td>Cascoon</td>
-            <td>进化方式：由 Wurmple 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Wurmple 进化（升级至等级 7）</td>
         </tr>
         <tr>
             <td id="269">269</td>
@@ -2397,7 +2397,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/272.png"></td>
             <td>乐天河童</td>
             <td>Ludicolo</td>
-            <td>进化方式：由 Lombre 进化（使用Item: Water Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Lombre 进化（使用Item: Water Stone）</td>
         </tr>
         <tr>
             <td id="273">273</td>
@@ -2418,7 +2418,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/275.png"></td>
             <td>狡猾天狗</td>
             <td>Shiftry</td>
-            <td>进化方式：由 Nuzleaf 进化（使用Item: Leaf Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Nuzleaf 进化（使用Item: Leaf Stone）</td>
         </tr>
         <tr>
             <td id="276">276</td>
@@ -2432,7 +2432,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/277.png"></td>
             <td>大王燕</td>
             <td>Swellow</td>
-            <td>进化方式：由 Taillow 进化（升级至等级 22）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Taillow 进化（升级至等级 22）</td>
         </tr>
         <tr>
             <td id="278">278</td>
@@ -2460,7 +2460,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/281.png"></td>
             <td>奇鲁莉安</td>
             <td>Kirlia</td>
-            <td>进化方式：由 Ralts 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Ralts 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="282">282</td>
@@ -2516,14 +2516,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/288.png"></td>
             <td>过动猿</td>
             <td>Vigoroth</td>
-            <td>进化方式：由 Slakoth 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Slakoth 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="289">289</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/289.png"></td>
             <td>请假王</td>
             <td>Slaking</td>
-            <td>进化方式：由 Vigoroth 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Vigoroth 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="290">290</td>
@@ -2537,7 +2537,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/291.png"></td>
             <td>铁面忍者</td>
             <td>Ninjask</td>
-            <td>进化方式：由 Nincada 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Nincada 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="292">292</td>
@@ -2565,7 +2565,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/295.png"></td>
             <td>爆音怪</td>
             <td>Exploud</td>
-            <td>进化方式：由 Loudred 进化（升级至等级 40）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Loudred 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="296">296</td>
@@ -2957,7 +2957,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/342.png"></td>
             <td>铁螯龙虾</td>
             <td>Crawdaunt</td>
-            <td>进化方式：由 Corphish 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Corphish 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="343">343</td>
@@ -3132,7 +3132,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/364.png"></td>
             <td>海魔狮</td>
             <td>Sealeo</td>
-            <td>进化方式：由 Spheal 进化（升级至等级 32）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Spheal 进化（升级至等级 32）</td>
         </tr>
         <tr>
             <td id="365">365</td>
@@ -3370,14 +3370,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/388.png"></td>
             <td>树林龟</td>
             <td>Grotle</td>
-            <td>进化方式：由 Turtwig 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Turtwig 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="389">389</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/389.png"></td>
             <td>土台龟</td>
             <td>Torterra</td>
-            <td>进化方式：由 Grotle 进化（升级至等级 32）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Grotle 进化（升级至等级 32）</td>
         </tr>
         <tr>
             <td id="390">390</td>
@@ -3391,14 +3391,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/391.png"></td>
             <td>猛火猴</td>
             <td>Monferno</td>
-            <td>进化方式：由 Chimchar 进化（升级至等级 14）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Chimchar 进化（升级至等级 14）</td>
         </tr>
         <tr>
             <td id="392">392</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/392.png"></td>
             <td>烈焰猴</td>
             <td>Infernape</td>
-            <td>进化方式：由 Monferno 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Monferno 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="393">393</td>
@@ -3412,14 +3412,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/394.png"></td>
             <td>波皇子</td>
             <td>Prinplup</td>
-            <td>进化方式：由 Piplup 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Piplup 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="395">395</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/395.png"></td>
             <td>帝王拿波</td>
             <td>Empoleon</td>
-            <td>进化方式：由 Prinplup 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Prinplup 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="396">396</td>
@@ -3440,7 +3440,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/398.png"></td>
             <td>姆克鹰</td>
             <td>Staraptor</td>
-            <td>进化方式：由 Staravia 进化（升级至等级 34）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Staravia 进化（升级至等级 34）</td>
         </tr>
         <tr>
             <td id="399">399</td>
@@ -3482,14 +3482,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/404.png"></td>
             <td>勒克猫</td>
             <td>Luxio</td>
-            <td>进化方式：由 Shinx 进化（升级至等级 15）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Shinx 进化（升级至等级 15）</td>
         </tr>
         <tr>
             <td id="405">405</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/405.png"></td>
             <td>伦琴猫</td>
             <td>Luxray</td>
-            <td>进化方式：由 Luxio 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Luxio 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="406">406</td>
@@ -3503,7 +3503,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/407.png"></td>
             <td>罗丝雷朵</td>
             <td>Roserade</td>
-            <td>进化方式：由 Roselia 进化（使用Item: Shiny Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Roselia 进化（使用Item: Shiny Stone）</td>
         </tr>
         <tr>
             <td id="408">408</td>
@@ -3573,14 +3573,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/413.png"></td>
             <td>结草贵妇</td>
             <td>Wormadam</td>
-            <td>进化方式：由 Burmy 进化（等级 Up: Female + 等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Burmy 进化（等级 Up: Female + 等级 20）</td>
         </tr>
         <tr>
             <td id="414">414</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/414.png"></td>
             <td>绅士蛾</td>
             <td>Mothim</td>
-            <td>进化方式：由 Burmy 进化（等级 Up: Male + 等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Burmy 进化（等级 Up: Male + 等级 20）</td>
         </tr>
         <tr>
             <td id="415">415</td>
@@ -3615,7 +3615,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/419.png"></td>
             <td>浮潜鼬</td>
             <td>Floatzel</td>
-            <td>进化方式：由 Buizel 进化（升级至等级 26）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Buizel 进化（升级至等级 26）</td>
         </tr>
         <tr>
             <td id="420">420</td>
@@ -3650,7 +3650,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/424.png"></td>
             <td>双尾怪手</td>
             <td>Ambipom</td>
-            <td>进化方式：由 Aipom 进化（等级 Up: Learn Double Hit (等级 32) + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Aipom 进化（等级 Up: Learn Double Hit (等级 32) + 等级 Up）</td>
         </tr>
         <tr>
             <td id="425">425</td>
@@ -3664,7 +3664,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/426.png"></td>
             <td>随风球</td>
             <td>Drifblim</td>
-            <td>进化方式：由 Drifloon 进化（升级至等级 28）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Drifloon 进化（升级至等级 28）</td>
         </tr>
         <tr>
             <td id="427">427</td>
@@ -3867,7 +3867,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/452.png"></td>
             <td>龙王蝎</td>
             <td>Drapion</td>
-            <td>进化方式：由 Skorupi 进化（升级至等级 40）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Skorupi 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="453">453</td>
@@ -3951,7 +3951,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/463.png"></td>
             <td>大舌舔</td>
             <td>Lickilicky</td>
-            <td>进化方式：由 Lickitung 进化（等级 Up: Learn Rollout (等级 33) + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Lickitung 进化（等级 Up: Learn Rollout (等级 33) + 等级 Up）</td>
         </tr>
         <tr>
             <td id="464">464</td>
@@ -3965,7 +3965,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/465.png"></td>
             <td>巨蔓藤</td>
             <td>Tangrowth</td>
-            <td>进化方式：由 Tangela 进化（等级 Up: Learn Ancient Power (等级 38) + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tangela 进化（等级 Up: Learn Ancient Power (等级 38) + 等级 Up）</td>
         </tr>
         <tr>
             <td id="466">466</td>
@@ -4000,7 +4000,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/470.png"></td>
             <td>叶伊布</td>
             <td>Leafeon</td>
-            <td>进化方式：由 Eevee 进化（使用Item: Leaf Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eevee 进化（使用Item: Leaf Stone）</td>
         </tr>
         <tr>
             <td id="471">471</td>
@@ -4014,7 +4014,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/472.png"></td>
             <td>天蝎王</td>
             <td>Gliscor</td>
-            <td>进化方式：由 Gligar 进化（使用Item: Razor Fang）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Gligar 进化（使用Item: Razor Fang）</td>
         </tr>
         <tr>
             <td id="473">473</td>
@@ -4217,7 +4217,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/492.png"></td>
             <td>谢米</td>
             <td>Shaymin Sky</td>
-            <td>进化方式：由 Shaymin 进化（使用Item: Gracidea）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Shaymin 进化（使用Item: Gracidea）</td>
         </tr>
         <tr>
             <td id="492">492</td>
@@ -4252,14 +4252,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/496.png"></td>
             <td>青藤蛇</td>
             <td>Servine</td>
-            <td>进化方式：由 Snivy 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Snivy 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="497">497</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/497.png"></td>
             <td>君主蛇</td>
             <td>Serperior</td>
-            <td>进化方式：由 Servine 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Servine 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="498">498</td>
@@ -4273,14 +4273,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/499.png"></td>
             <td>炒炒猪</td>
             <td>Pignite</td>
-            <td>进化方式：由 Tepig 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tepig 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="500">500</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/500.png"></td>
             <td>炎武王</td>
             <td>Emboar</td>
-            <td>进化方式：由 Pignite 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Pignite 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="501">501</td>
@@ -4294,7 +4294,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/502.png"></td>
             <td>双刃丸</td>
             <td>Dewott</td>
-            <td>进化方式：由 Oshawott 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Oshawott 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="503">503</td>
@@ -4315,7 +4315,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/505.png"></td>
             <td>步哨鼠</td>
             <td>Watchog</td>
-            <td>进化方式：由 Patrat 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Patrat 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="506">506</td>
@@ -4329,7 +4329,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/507.png"></td>
             <td>哈约克</td>
             <td>Herdier</td>
-            <td>进化方式：由 Lillipup 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Lillipup 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="508">508</td>
@@ -4406,7 +4406,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/518.png"></td>
             <td>梦梦蚀</td>
             <td>Musharna</td>
-            <td>进化方式：由 Munna 进化（使用Item: Moon Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Munna 进化（使用Item: Moon Stone）</td>
         </tr>
         <tr>
             <td id="519">519</td>
@@ -4574,7 +4574,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/541.png"></td>
             <td>宝包茧</td>
             <td>Swadloon</td>
-            <td>进化方式：由 Sewaddle 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sewaddle 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="542">542</td>
@@ -4595,14 +4595,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/544.png"></td>
             <td>车轮球</td>
             <td>Whirlipede</td>
-            <td>进化方式：由 Venipede 进化（升级至等级 22）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Venipede 进化（升级至等级 22）</td>
         </tr>
         <tr>
             <td id="545">545</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/545.png"></td>
             <td>蜈蚣王</td>
             <td>Scolipede</td>
-            <td>进化方式：由 Whirlipede 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Whirlipede 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="546">546</td>
@@ -4658,14 +4658,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/552.png"></td>
             <td>混混鳄</td>
             <td>Krokorok</td>
-            <td>进化方式：由 Sandile 进化（升级至等级 29）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sandile 进化（升级至等级 29）</td>
         </tr>
         <tr>
             <td id="553">553</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/553.png"></td>
             <td>流氓鳄</td>
             <td>Krookodile</td>
-            <td>进化方式：由 Krokorok 进化（升级至等级 40）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Krokorok 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="554">554</td>
@@ -4742,7 +4742,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/560.png"></td>
             <td>头巾混混</td>
             <td>Scrafty</td>
-            <td>进化方式：由 Scraggy 进化（升级至等级 39）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Scraggy 进化（升级至等级 39）</td>
         </tr>
         <tr>
             <td id="561">561</td>
@@ -4826,7 +4826,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/571.png"></td>
             <td>索罗亚克</td>
             <td>Zoroark</td>
-            <td>进化方式：由 Zorua 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Zorua 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="572">572</td>
@@ -4854,7 +4854,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/575.png"></td>
             <td>哥德小童</td>
             <td>Gothorita</td>
-            <td>进化方式：由 Gothita 进化（升级至等级 32）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Gothita 进化（升级至等级 32）</td>
         </tr>
         <tr>
             <td id="576">576</td>
@@ -4875,14 +4875,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/578.png"></td>
             <td>双卵细胞球</td>
             <td>Duosion</td>
-            <td>进化方式：由 Solosis 进化（升级至等级 32）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Solosis 进化（升级至等级 32）</td>
         </tr>
         <tr>
             <td id="579">579</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/579.png"></td>
             <td>人造细胞卵</td>
             <td>Reuniclus</td>
-            <td>进化方式：由 Duosion 进化（升级至等级 41）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Duosion 进化（升级至等级 41）</td>
         </tr>
         <tr>
             <td id="580">580</td>
@@ -4931,7 +4931,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/586.png"></td>
             <td>萌芽鹿</td>
             <td>Sawsbuck</td>
-            <td>进化方式：由 Deerling 进化（升级至等级 34）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Deerling 进化（升级至等级 34）</td>
         </tr>
         <tr>
             <td id="587">587</td>
@@ -4952,7 +4952,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/589.png"></td>
             <td>骑士蜗牛</td>
             <td>Escavalier</td>
-            <td>进化方式：由 Karrablast 进化（使用Item: Link Cable）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Karrablast 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="590">590</td>
@@ -5050,14 +5050,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/603.png"></td>
             <td>麻麻鳗</td>
             <td>Eelektrik</td>
-            <td>进化方式：由 Tynamo 进化（升级至等级 39）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tynamo 进化（升级至等级 39）</td>
         </tr>
         <tr>
             <td id="604">604</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/604.png"></td>
             <td>麻麻鳗鱼王</td>
             <td>Eelektross</td>
-            <td>进化方式：由 Eelektrik 进化（使用Item: Thunder Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Eelektrik 进化（使用Item: Thunder Stone）</td>
         </tr>
         <tr>
             <td id="605">605</td>
@@ -5085,7 +5085,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/608.png"></td>
             <td>灯火幽灵</td>
             <td>Lampent</td>
-            <td>进化方式：由 Litwick 进化（升级至等级 41）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Litwick 进化（升级至等级 41）</td>
         </tr>
         <tr>
             <td id="609">609</td>
@@ -5106,7 +5106,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/611.png"></td>
             <td>斧牙龙</td>
             <td>Fraxure</td>
-            <td>进化方式：由 Axew 进化（升级至等级 38）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Axew 进化（升级至等级 38）</td>
         </tr>
         <tr>
             <td id="612">612</td>
@@ -5148,7 +5148,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/617.png"></td>
             <td>敏捷虫</td>
             <td>Accelgor</td>
-            <td>进化方式：由 Shelmet 进化（使用Item: Link Cable）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Shelmet 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="618">618</td>
@@ -5176,7 +5176,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/620.png"></td>
             <td>师父鼬</td>
             <td>Mienshao</td>
-            <td>进化方式：由 Mienfoo 进化（升级至等级 50）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Mienfoo 进化（升级至等级 50）</td>
         </tr>
         <tr>
             <td id="621">621</td>
@@ -5232,7 +5232,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/628.png"></td>
             <td>勇士雄鹰</td>
             <td>Braviary</td>
-            <td>进化方式：由 Rufflet 进化（升级至等级 54）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Rufflet 进化（升级至等级 54）</td>
         </tr>
         <tr>
             <td id="629">629</td>
@@ -5295,7 +5295,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/637.png"></td>
             <td>火神蛾</td>
             <td>Volcarona</td>
-            <td>进化方式：由 Larvesta 进化（升级至等级 59）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Larvesta 进化（升级至等级 59）</td>
         </tr>
         <tr>
             <td id="638">638</td>
@@ -5323,7 +5323,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/641.png"></td>
             <td>龙卷云</td>
             <td>Tornadus Therian</td>
-            <td>进化方式：由 Tornadus 进化（使用Item: Reveal Glass）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tornadus 进化（使用Item: Reveal Glass）</td>
         </tr>
         <tr>
             <td id="641">641</td>
@@ -5337,7 +5337,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/642.png"></td>
             <td>雷电云</td>
             <td>Thundurus Therian</td>
-            <td>进化方式：由 Thundurus 进化（使用Item: Reveal Glass）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Thundurus 进化（使用Item: Reveal Glass）</td>
         </tr>
         <tr>
             <td id="642">642</td>
@@ -5365,7 +5365,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/645.png"></td>
             <td>土地云</td>
             <td>Landorus Therian</td>
-            <td>进化方式：由 Landorus 进化（使用Item: Reveal Glass）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Landorus 进化（使用Item: Reveal Glass）</td>
         </tr>
         <tr>
             <td id="645">645</td>
@@ -5421,14 +5421,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/651.png"></td>
             <td>胖胖哈力</td>
             <td>Quilladin</td>
-            <td>进化方式：由 Chespin 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Chespin 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="652">652</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/652.png"></td>
             <td>布里卡隆</td>
             <td>Chesnaught</td>
-            <td>进化方式：由 Quilladin 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Quilladin 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="653">653</td>
@@ -5442,14 +5442,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/654.png"></td>
             <td>长尾火狐</td>
             <td>Braixen</td>
-            <td>进化方式：由 Fennekin 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Fennekin 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="655">655</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/655.png"></td>
             <td>妖火红狐</td>
             <td>Delphox</td>
-            <td>进化方式：由 Braixen 进化（升级至等级 36）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Braixen 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="656">656</td>
@@ -5463,7 +5463,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/657.png"></td>
             <td>呱头蛙</td>
             <td>Frogadier</td>
-            <td>进化方式：由 Froakie 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Froakie 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="658">658</td>
@@ -5484,7 +5484,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/660.png"></td>
             <td>掘地兔</td>
             <td>Diggersby</td>
-            <td>进化方式：由 Bunnelby 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Bunnelby 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="661">661</td>
@@ -5519,7 +5519,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/665.png"></td>
             <td>粉蝶蛹</td>
             <td>Spewpa</td>
-            <td>进化方式：由 Scatterbug 进化（升级至等级 9）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Scatterbug 进化（升级至等级 9）</td>
         </tr>
         <tr>
             <td id="666">666</td>
@@ -5554,14 +5554,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/670.png"></td>
             <td>花叶蒂</td>
             <td>Floette</td>
-            <td>进化方式：由 Flabébé 进化（升级至等级 19）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Flabébé 进化（升级至等级 19）</td>
         </tr>
         <tr>
             <td id="671">671</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/671.png"></td>
             <td>花洁夫人</td>
             <td>Florges</td>
-            <td>进化方式：由 Floette 进化（使用Item: Shiny Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Floette 进化（使用Item: Shiny Stone）</td>
         </tr>
         <tr>
             <td id="672">672</td>
@@ -5638,7 +5638,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/681.png"></td>
             <td>坚盾剑怪</td>
             <td>Aegislash</td>
-            <td>进化方式：由 Doublade 进化（使用Item: Dusk Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Doublade 进化（使用Item: Dusk Stone）</td>
         </tr>
         <tr>
             <td id="682">682</td>
@@ -5680,7 +5680,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/687.png"></td>
             <td>乌贼王</td>
             <td>Malamar</td>
-            <td>进化方式：由 Inkay 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Inkay 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="688">688</td>
@@ -5694,7 +5694,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/689.png"></td>
             <td>龟足巨铠</td>
             <td>Barbaracle</td>
-            <td>进化方式：由 Binacle 进化（升级至等级 39）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Binacle 进化（升级至等级 39）</td>
         </tr>
         <tr>
             <td id="690">690</td>
@@ -5736,7 +5736,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/695.png"></td>
             <td>光电伞蜥</td>
             <td>Heliolisk</td>
-            <td>进化方式：由 Helioptile 进化（使用Item: Sun Stone）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Helioptile 进化（使用Item: Sun Stone）</td>
         </tr>
         <tr>
             <td id="696">696</td>
@@ -5750,7 +5750,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/697.png"></td>
             <td>怪颚龙</td>
             <td>Tyrantrum</td>
-            <td>进化方式：由 Tyrunt 进化（等级 Up: Daytime + 等级 39）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Tyrunt 进化（等级 Up: Daytime + 等级 39）</td>
         </tr>
         <tr>
             <td id="698">698</td>
@@ -5806,14 +5806,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/705.png"></td>
             <td>黏美儿</td>
             <td>Sliggoo</td>
-            <td>进化方式：由 Goomy 进化（升级至等级 40）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Goomy 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="706">706</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/706.png"></td>
             <td>黏美龙</td>
             <td>Goodra</td>
-            <td>进化方式：由 Sliggoo 进化（等级 Up: Rain + 等级 50）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sliggoo 进化（等级 Up: Rain + 等级 50）</td>
         </tr>
         <tr>
             <td id="707">707</td>
@@ -5932,7 +5932,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/720.png"></td>
             <td>胡帕</td>
             <td>Hoopa Unbound</td>
-            <td>进化方式：由 Hoopa 进化（使用Item: Prison Bottle）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Hoopa 进化（使用Item: Prison Bottle）</td>
         </tr>
         <tr>
             <td id="720">720</td>
@@ -5960,7 +5960,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/723.png"></td>
             <td>投羽枭</td>
             <td>Dartrix</td>
-            <td>进化方式：由 Rowlet 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Rowlet 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="724">724</td>
@@ -5981,14 +5981,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/726.png"></td>
             <td>炎热喵</td>
             <td>Torracat</td>
-            <td>进化方式：由 Litten 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Litten 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="727">727</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/727.png"></td>
             <td>炽焰咆哮虎</td>
             <td>Incineroar</td>
-            <td>进化方式：由 Torracat 进化（升级至等级 34）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Torracat 进化（升级至等级 34）</td>
         </tr>
         <tr>
             <td id="728">728</td>
@@ -6002,14 +6002,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/729.png"></td>
             <td>花漾海狮</td>
             <td>Brionne</td>
-            <td>进化方式：由 Popplio 进化（升级至等级 17）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Popplio 进化（升级至等级 17）</td>
         </tr>
         <tr>
             <td id="730">730</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/730.png"></td>
             <td>西狮海壬</td>
             <td>Primarina</td>
-            <td>进化方式：由 Brionne 进化（升级至等级 34）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Brionne 进化（升级至等级 34）</td>
         </tr>
         <tr>
             <td id="731">731</td>
@@ -6058,7 +6058,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/737.png"></td>
             <td>虫电宝</td>
             <td>Charjabug</td>
-            <td>进化方式：由 Grubbin 进化（升级至等级 20）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Grubbin 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="738">738</td>
@@ -6254,7 +6254,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/760.png"></td>
             <td>穿著熊</td>
             <td>Bewear</td>
-            <td>进化方式：由 Stufful 进化（升级至等级 27）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Stufful 进化（升级至等级 27）</td>
         </tr>
         <tr>
             <td id="761">761</td>
@@ -6268,14 +6268,14 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/762.png"></td>
             <td>甜舞妮</td>
             <td>Steenee</td>
-            <td>进化方式：由 Bounsweet 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Bounsweet 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="763">763</td>
             <td><img src="https://www.serebii.net/swordshield/pokemon/763.png"></td>
             <td>甜冷美后</td>
             <td>Tsareena</td>
-            <td>进化方式：由 Steenee 进化（等级 Up: Learn Stomp (等级 29) + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Steenee 进化（等级 Up: Learn Stomp (等级 29) + 等级 Up）</td>
         </tr>
         <tr>
             <td id="764">764</td>
@@ -6345,7 +6345,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/773.png"></td>
             <td>银伴战兽</td>
             <td>Silvally</td>
-            <td>进化方式：由 Type: Null 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Type: Null 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="774">774</td>
@@ -6415,7 +6415,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/783.png"></td>
             <td>鳞甲龙</td>
             <td>Hakamo O</td>
-            <td>进化方式：由 Jangmo-o 进化（升级至等级 35）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Jangmo-o 进化（升级至等级 35）</td>
         </tr>
         <tr>
             <td id="784">784</td>
@@ -6562,7 +6562,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/804.png"></td>
             <td>四颚针龙</td>
             <td>Naganadel</td>
-            <td>进化方式：由 Poipole 进化（等级 Up: Learn Dragon Pulse (等级 1 Re-learn) + 等级 Up）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Poipole 进化（等级 Up: Learn Dragon Pulse (等级 1 Re-learn) + 等级 Up）</td>
         </tr>
         <tr>
             <td id="805">805</td>
@@ -6611,7 +6611,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/811.png"></td>
             <td>啪咚猴</td>
             <td>Thwackey</td>
-            <td>进化方式：由 Grookey 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Grookey 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="812">812</td>
@@ -6632,7 +6632,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/814.png"></td>
             <td>腾蹴小将</td>
             <td>Raboot</td>
-            <td>进化方式：由 Scorbunny 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Scorbunny 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="815">815</td>
@@ -6653,7 +6653,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/817.png"></td>
             <td>变涩蜥</td>
             <td>Drizzile</td>
-            <td>进化方式：由 Sobble 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sobble 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="818">818</td>
@@ -6688,7 +6688,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/822.png"></td>
             <td>蓝鸦</td>
             <td>Corvisquire</td>
-            <td>进化方式：由 Rookidee 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Rookidee 进化（升级至等级 18）</td>
         </tr>
         <tr>
             <td id="823">823</td>
@@ -6919,7 +6919,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/855.png"></td>
             <td>怖思壶</td>
             <td>Polteageist</td>
-            <td>进化方式：由 Sinistea 进化（使用Item: Chipped Pot）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Sinistea 进化（使用Item: Chipped Pot）</td>
         </tr>
         <tr>
             <td id="856">856</td>
@@ -6982,7 +6982,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/864.png"></td>
             <td>魔灵珊瑚</td>
             <td>Cursola</td>
-            <td>进化方式：由 Corsola-Galar 进化（升级至等级 38）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Corsola-Galar 进化（升级至等级 38）</td>
         </tr>
         <tr>
             <td id="865">865</td>
@@ -7150,7 +7150,7 @@ date: 2026-10-09 10:16 +0800
             <td><img src="https://www.serebii.net/swordshield/pokemon/886.png"></td>
             <td>多龙奇</td>
             <td>Drakloak</td>
-            <td>进化方式：由 Dreepy 进化（升级至等级 50）；Wiki 未列出其他获取地点</td>
+            <td>进化方式：由 Dreepy 进化（升级至等级 50）</td>
         </tr>
         <tr>
             <td id="887">887</td>
