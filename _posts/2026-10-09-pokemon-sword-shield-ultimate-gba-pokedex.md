@@ -77,910 +77,910 @@ date: 2026-10-09 10:16 +0800
     <tbody id="pokeTable">
         <tr>
             <td id="001">001</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/1.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/001.png"></td>
             <td>妙蛙种子</td>
             <td>Bulbasaur</td>
             <td>旷野地带 1 Southwest（露营点）：(通关后) 露营点 区域 可通过 NPC 前往；遭遇概率：100；铠岛 武馆（赠送）：赠送 from Mustard 完成岛屿挑战后；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="002">002</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/2.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/002.png"></td>
             <td>妙蛙草</td>
             <td>Ivysaur</td>
             <td>进化方式：由 Bulbasaur 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="003">003</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/3.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/003.png"></td>
             <td>妙蛙花</td>
             <td>Mega Venusaur</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：3.2</td>
         </tr>
         <tr>
             <td id="003">003</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/3.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/003.png"></td>
             <td>妙蛙花</td>
             <td>Venusaur</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Ivysaur 进化（升级至等级 32）</td>
         </tr>
         <tr>
             <td id="004">004</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/4.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/004.png"></td>
             <td>小火龙</td>
             <td>Charmander</td>
             <td>微寂镇（赠送）：通关后， Leon will leave you a Charmander at his and Hop's house.；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="005">005</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/5.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/005.png"></td>
             <td>火恐龙</td>
             <td>Charmeleon</td>
             <td>进化方式：由 Charmander 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="006">006</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/6.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/006.png"></td>
             <td>喷火龙</td>
             <td>Charizard</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：4；进化方式：由 Charmeleon 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="006">006</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/6.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/006.png"></td>
             <td>喷火龙</td>
             <td>Mega Charizard X</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="006">006</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/6.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/006.png"></td>
             <td>喷火龙</td>
             <td>Mega Charizard Y</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="007">007</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/7.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/007.png"></td>
             <td>杰尼龟</td>
             <td>Squirtle</td>
             <td>旷野地带 1 Southwest（露营点）：(通关后) 露营点 区域 可通过 NPC 前往；遭遇概率：100；铠岛 武馆（赠送）：赠送 from Mustard 完成岛屿挑战后；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="008">008</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/8.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/008.png"></td>
             <td>卡咪龟</td>
             <td>Wartortle</td>
             <td>进化方式：由 Squirtle 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="009">009</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/9.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/009.png"></td>
             <td>水箭龟</td>
             <td>Blastoise</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Wartortle 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="009">009</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/9.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/009.png"></td>
             <td>水箭龟</td>
             <td>Mega Blastoise</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="010">010</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/10.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/010.png"></td>
             <td>绿毛虫</td>
             <td>Caterpie</td>
             <td>道路 1（草丛）；遭遇概率：20；旷野地带 1 Southwest（草丛）；遭遇概率：2；旷野地带 1 Southeast（草丛）；遭遇概率：2；旷野地带 1 Northeast（草丛）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="011">011</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/11.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/011.png"></td>
             <td>铁甲蛹</td>
             <td>Metapod</td>
             <td>进化方式：由 Caterpie 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="012">012</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/12.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/012.png"></td>
             <td>巴大蝶</td>
             <td>Butterfree</td>
             <td>旷野地带 1 Southwest（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 2 (Bear)（草丛）；遭遇概率：4；旷野地带 2 (Bear)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 4 East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 4 West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 7 (Ice) East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 6 West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 6 East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 8 (Spooky)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）：Gigantamax form；遭遇概率：2；Slumbering Area（草丛）；遭遇概率：5；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2；进化方式：由 Metapod 进化（升级至等级 10）</td>
         </tr>
         <tr>
             <td id="013">013</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/13.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/013.png"></td>
             <td>独角虫</td>
             <td>Weedle</td>
             <td></td>
         </tr>
         <tr>
             <td id="014">014</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/14.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/014.png"></td>
             <td>铁壳蛹</td>
             <td>Kakuna</td>
             <td>进化方式：由 Weedle 进化（升级至等级 7）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="015">015</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/15.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/015.png"></td>
             <td>大针蜂</td>
             <td>Beedrill</td>
             <td>旷野地带 2 (Bear)（草丛）；遭遇概率：4；极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Kakuna 进化（升级至等级 10）</td>
         </tr>
         <tr>
             <td id="015">015</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/15.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/015.png"></td>
             <td>大针蜂</td>
             <td>Mega Beedrill</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="016">016</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/16.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/016.png"></td>
             <td>波波</td>
             <td>Pidgey</td>
             <td></td>
         </tr>
         <tr>
             <td id="017">017</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/17.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/017.png"></td>
             <td>比比鸟</td>
             <td>Pidgeotto</td>
             <td>进化方式：由 Pidgey 进化（升级至等级 18）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="018">018</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/18.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/018.png"></td>
             <td>大比鸟</td>
             <td>Mega Pidgeot</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="018">018</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/18.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/018.png"></td>
             <td>大比鸟</td>
             <td>Pidgeot</td>
             <td>铠岛 5（明雷遭遇）；遭遇概率：100；极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；冠之雪原 Graveyard（明雷遭遇）；遭遇概率：100；进化方式：由 Pidgeotto 进化（升级至等级 36）</td>
         </tr>
         <tr>
             <td id="019">019</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/19.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/019.png"></td>
             <td>小拉达</td>
             <td>Rattata Alolan</td>
             <td></td>
         </tr>
         <tr>
             <td id="019">019</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/19.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/019.png"></td>
             <td>小拉达</td>
             <td>Rattata</td>
             <td></td>
         </tr>
         <tr>
             <td id="020">020</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/20.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/020.png"></td>
             <td>拉达</td>
             <td>Raticate Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100；进化方式：由 Rattata-Alola 进化（等级 Up: Nighttime + 等级 20）</td>
         </tr>
         <tr>
             <td id="020">020</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/20.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/020.png"></td>
             <td>拉达</td>
             <td>Raticate</td>
             <td>铠岛 1（草丛）；遭遇概率：20；进化方式：由 Rattata 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="021">021</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/21.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/021.png"></td>
             <td>烈雀</td>
             <td>Spearow</td>
             <td></td>
         </tr>
         <tr>
             <td id="022">022</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/22.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/022.png"></td>
             <td>大嘴雀</td>
             <td>Fearow</td>
             <td>旷野地带 3 (Volcano)（极巨巢穴）；遭遇概率：7；铠岛 1（草丛）；遭遇概率：20；进化方式：由 Spearow 进化（升级至等级 20）</td>
         </tr>
         <tr>
             <td id="023">023</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/23.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/023.png"></td>
             <td>阿柏蛇</td>
             <td>Ekans</td>
             <td>旷野地带 1 Northwest（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="024">024</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/24.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/024.png"></td>
             <td>阿柏怪</td>
             <td>Arbok</td>
             <td>Courageous 洞窟rn (道路 10)（草丛）；遭遇概率：5；Courageous 洞窟rn (铠岛)（草丛）；遭遇概率：5；进化方式：由 Ekans 进化（升级至等级 22）</td>
         </tr>
         <tr>
             <td id="025">025</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/25.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/025.png"></td>
             <td>皮卡丘</td>
             <td>Pikachu</td>
             <td>旷野地带 1 Southwest（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 1 Northwest（草丛）；遭遇概率：20；旷野地带 1 Southeast（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）：Gigantamax form；遭遇概率：2；道路 4（草丛）；遭遇概率：20；旷野地带 7 (Ice) East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 8 (Spooky)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2；极巨探险 (冠之雪原)（极巨巢穴）：Forms: Flying, Hoenn Cap, Original Cap, Rock Star, 冲浪；遭遇概率：10；进化方式：由 Pichu 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="026">026</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/26.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/026.png"></td>
             <td>雷丘</td>
             <td>Raichu Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100；进化方式：由 Pikachu 进化（使用Item: Water Stone）</td>
         </tr>
         <tr>
             <td id="026">026</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/26.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/026.png"></td>
             <td>雷丘</td>
             <td>Raichu</td>
             <td>旷野地带 7 (Ice) East（极巨巢穴）；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）；遭遇概率：2；旷野地带 8 (Spooky)（极巨巢穴）；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）；遭遇概率：2；进化方式：由 Pikachu 进化（使用Item: Thunder Stone）</td>
         </tr>
         <tr>
             <td id="027">027</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/27.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/027.png"></td>
             <td>穿山鼠</td>
             <td>Sandshrew Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="027">027</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/27.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/027.png"></td>
             <td>穿山鼠</td>
             <td>Sandshrew</td>
             <td></td>
         </tr>
         <tr>
             <td id="028">028</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/28.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/028.png"></td>
             <td>穿山王</td>
             <td>Sandslash Alolan</td>
             <td>旷野地带 7 (Ice) East（草丛）；遭遇概率：10；进化方式：由 Sandshrew-Alola 进化（使用Item: Ice Stone）</td>
         </tr>
         <tr>
             <td id="028">028</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/28.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/028.png"></td>
             <td>穿山王</td>
             <td>Sandslash</td>
             <td>进化方式：由 Sandshrew 进化（升级至等级 22）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="029">029</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/29.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/029.png"></td>
             <td>尼多兰</td>
             <td>Nidoran F</td>
             <td>旷野地带 1 Northwest（草丛）；遭遇概率：10</td>
         </tr>
         <tr>
             <td id="030">030</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/30.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/030.png"></td>
             <td>尼多娜</td>
             <td>Nidorina</td>
             <td>进化方式：由 Nidoran♀ 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="031">031</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/31.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/031.png"></td>
             <td>尼多后</td>
             <td>Nidoqueen</td>
             <td>冠之雪原 Graveyard（草丛）；遭遇概率：20；进化方式：由 Nidorina 进化（使用Item: Moon Stone）</td>
         </tr>
         <tr>
             <td id="032">032</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/32.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/032.png"></td>
             <td>尼多朗</td>
             <td>Nidoran M</td>
             <td>旷野地带 1 Northeast（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="033">033</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/33.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/033.png"></td>
             <td>尼多力诺</td>
             <td>Nidorino</td>
             <td>进化方式：由 Nidoran♂ 进化（升级至等级 16）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="034">034</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/34.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/034.png"></td>
             <td>尼多王</td>
             <td>Nidoking</td>
             <td>冠之雪原 Graveyard（草丛）；遭遇概率：20；进化方式：由 Nidorino 进化（使用Item: Moon Stone）</td>
         </tr>
         <tr>
             <td id="035">035</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/35.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/035.png"></td>
             <td>皮皮</td>
             <td>Clefairy</td>
             <td>旷野地带 1 Northeast（草丛）；遭遇概率：20；Glimwood Tangle（草丛）；遭遇概率：10；进化方式：由 Cleffa 进化（等级 Up: Happiness + 等级 Up）</td>
         </tr>
         <tr>
             <td id="036">036</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/36.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/036.png"></td>
             <td>皮可西</td>
             <td>Clefable</td>
             <td>冠之雪原 Snowy East（草丛）；遭遇概率：1；Scifub Chamber (冠之雪原)（草丛）；遭遇概率：10；进化方式：由 Clefairy 进化（使用Item: Moon Stone）</td>
         </tr>
         <tr>
             <td id="037">037</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/37.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/037.png"></td>
             <td>六尾</td>
             <td>Vulpix Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="037">037</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/37.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/037.png"></td>
             <td>六尾</td>
             <td>Vulpix</td>
             <td>旷野地带 4 East（草丛）；遭遇概率：10</td>
         </tr>
         <tr>
             <td id="038">038</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/38.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/038.png"></td>
             <td>九尾</td>
             <td>Ninetales Alolan</td>
             <td>进化方式：由 Vulpix-Alola 进化（使用Item: Ice Stone）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="038">038</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/38.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/038.png"></td>
             <td>九尾</td>
             <td>Ninetales</td>
             <td>旷野地带 7 (Ice) East（极巨巢穴）；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）；遭遇概率：2；旷野地带 8 (Spooky)（极巨巢穴）；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）；遭遇概率：2；进化方式：由 Vulpix 进化（使用Item: Fire Stone）</td>
         </tr>
         <tr>
             <td id="039">039</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/39.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/039.png"></td>
             <td>胖丁</td>
             <td>Jigglypuff</td>
             <td>进化方式：由 Igglybuff 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="040">040</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/40.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/040.png"></td>
             <td>胖可丁</td>
             <td>Wigglytuff</td>
             <td>进化方式：由 Jigglypuff 进化（使用Item: Moon Stone）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="041">041</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/41.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/041.png"></td>
             <td>超音蝠</td>
             <td>Zubat</td>
             <td>道路 8 洞窟（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="042">042</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/42.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/042.png"></td>
             <td>大嘴蝠</td>
             <td>Golbat</td>
             <td>Courageous 洞窟rn (铠岛)（草丛）；遭遇概率：5；Liptoo Chamber (冠之雪原)（草丛）；遭遇概率：20；Tanoby Key (冠之雪原)（草丛）；遭遇概率：4；进化方式：由 Zubat 进化（升级至等级 22）</td>
         </tr>
         <tr>
             <td id="043">043</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/43.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/043.png"></td>
             <td>走路草</td>
             <td>Oddish</td>
             <td>旷野地带 1 Southwest（极巨巢穴）；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）；遭遇概率：2；旷野地带 1 Northeast（草丛）；遭遇概率：10；旷野地带 1 Northeast（极巨巢穴）；遭遇概率：2；旷野地带 2 (Bear)（极巨巢穴）；遭遇概率：2；旷野地带 4 East（极巨巢穴）；遭遇概率：2；旷野地带 4 West（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）；遭遇概率：2；旷野地带 6 West（极巨巢穴）；遭遇概率：2；旷野地带 6 East（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="044">044</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/44.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/044.png"></td>
             <td>臭臭花</td>
             <td>Gloom</td>
             <td>旷野地带 2 (Bear)（极巨巢穴）；遭遇概率：2；旷野地带 4 East（极巨巢穴）；遭遇概率：2；旷野地带 4 West（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）；遭遇概率：2；旷野地带 6 West（极巨巢穴）；遭遇概率：2；旷野地带 6 East（极巨巢穴）；遭遇概率：2；进化方式：由 Oddish 进化（升级至等级 21）</td>
         </tr>
         <tr>
             <td id="045">045</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/45.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/045.png"></td>
             <td>霸王花</td>
             <td>Vileplume</td>
             <td>进化方式：由 Gloom 进化（使用Item: Leaf Stone）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="046">046</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/46.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/046.png"></td>
             <td>派拉斯</td>
             <td>Paras</td>
             <td></td>
         </tr>
         <tr>
             <td id="047">047</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/47.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/047.png"></td>
             <td>派拉斯特</td>
             <td>Parasect</td>
             <td>旷野地带 3 South（极巨巢穴）；遭遇概率：4；旷野地带 3 West（极巨巢穴）；遭遇概率：4；旷野地带 3 North（极巨巢穴）；遭遇概率：4；铠岛 1（草丛）；遭遇概率：10；进化方式：由 Paras 进化（升级至等级 24）</td>
         </tr>
         <tr>
             <td id="048">048</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/48.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/048.png"></td>
             <td>毛球</td>
             <td>Venonat</td>
             <td>铠岛 1（草丛）；遭遇概率：10</td>
         </tr>
         <tr>
             <td id="049">049</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/49.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/049.png"></td>
             <td>摩鲁蛾</td>
             <td>Venomoth</td>
             <td>进化方式：由 Venonat 进化（升级至等级 31）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="050">050</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/50.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/050.png"></td>
             <td>地鼠</td>
             <td>Diglett Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="050">050</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/50.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/050.png"></td>
             <td>地鼠</td>
             <td>Diglett</td>
             <td>旷野地带 1 Southwest（极巨巢穴）；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）；遭遇概率：2；Galar Mine 1（草丛）；遭遇概率：14；旷野地带 5 (Desert) South（草丛）；遭遇概率：20；道路 8 洞窟（草丛）；遭遇概率：19</td>
         </tr>
         <tr>
             <td id="051">051</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/51.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/051.png"></td>
             <td>三地鼠</td>
             <td>Dugtrio Alolan</td>
             <td>进化方式：由 Diglett-Alola 进化（升级至等级 26）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="051">051</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/51.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/051.png"></td>
             <td>三地鼠</td>
             <td>Dugtrio</td>
             <td>道路 6（草丛）；遭遇概率：10；旷野地带 5 (Desert) North（草丛）；遭遇概率：20；进化方式：由 Diglett 进化（升级至等级 26）</td>
         </tr>
         <tr>
             <td id="052">052</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/52.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/052.png"></td>
             <td>喵喵</td>
             <td>Meowth Alolan</td>
             <td></td>
         </tr>
         <tr>
             <td id="052">052</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/52.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/052.png"></td>
             <td>喵喵</td>
             <td>Meowth Galarian</td>
             <td>旷野地带 2 (Bear)（极巨巢穴）；遭遇概率：2；道路 4（明雷遭遇）；遭遇概率：100；旷野地带 4 East（极巨巢穴）；遭遇概率：2；旷野地带 4 West（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）；遭遇概率：2；旷野地带 6 West（极巨巢穴）；遭遇概率：2；旷野地带 6 East（极巨巢穴）；遭遇概率：2；铠岛 7（明雷遭遇）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="052">052</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/52.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/052.png"></td>
             <td>喵喵</td>
             <td>Meowth</td>
             <td>旷野地带 1 Southwest（极巨巢穴）：Gigantamax form available；遭遇概率：4；旷野地带 1 Southeast（极巨巢穴）：Gigantamax form available；遭遇概率：4；旷野地带 1 Northeast（极巨巢穴）：Gigantamax form available；遭遇概率：4；旷野地带 2 (Bear)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 4 East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 4 West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 6 West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 6 East（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="053">053</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/53.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/053.png"></td>
             <td>猫老大</td>
             <td>Persian Alolan</td>
             <td>进化方式：由 Meowth-Alola 进化（等级 Up: Happiness + 等级 Up）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="053">053</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/53.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/053.png"></td>
             <td>猫老大</td>
             <td>Persian</td>
             <td>旷野地带 4 West（草丛）；遭遇概率：5；进化方式：由 Meowth 进化（升级至等级 28）</td>
         </tr>
         <tr>
             <td id="054">054</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/54.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/054.png"></td>
             <td>可达鸭</td>
             <td>Psyduck</td>
             <td>Glimwood Tangle（Surf）；遭遇概率：60；Glimwood Tangle（钓鱼   Super Rod）；遭遇概率：40</td>
         </tr>
         <tr>
             <td id="055">055</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/55.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/055.png"></td>
             <td>哥达鸭</td>
             <td>Golduck</td>
             <td>Glimwood Tangle（Surf）；遭遇概率：40；铠岛 1（Surf）；遭遇概率：40；进化方式：由 Psyduck 进化（升级至等级 33）</td>
         </tr>
         <tr>
             <td id="056">056</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/56.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/056.png"></td>
             <td>猴怪</td>
             <td>Mankey</td>
             <td>道路 8 洞窟（草丛）；遭遇概率：10</td>
         </tr>
         <tr>
             <td id="057">057</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/57.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/057.png"></td>
             <td>火暴猴</td>
             <td>Primeape</td>
             <td>Courageous 洞窟rn (道路 10)（草丛）；遭遇概率：10；铠岛 1（草丛）；遭遇概率：10；进化方式：由 Mankey 进化（升级至等级 28）</td>
         </tr>
         <tr>
             <td id="058">058</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/58.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/058.png"></td>
             <td>卡蒂狗</td>
             <td>Growlithe</td>
             <td>旷野地带 2 (Bear)（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="059">059</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/59.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/059.png"></td>
             <td>风速狗</td>
             <td>Arcanine</td>
             <td>进化方式：由 Growlithe 进化（使用Item: Fire Stone）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="060">060</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/60.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/060.png"></td>
             <td>蚊香蝌蚪</td>
             <td>Poliwag</td>
             <td>Glimwood Tangle（钓鱼   Good Rod）；遭遇概率：33</td>
         </tr>
         <tr>
             <td id="061">061</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/61.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/061.png"></td>
             <td>蚊香君</td>
             <td>Poliwhirl</td>
             <td>铠岛 1（Surf）；遭遇概率：40；进化方式：由 Poliwag 进化（升级至等级 25）</td>
         </tr>
         <tr>
             <td id="062">062</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/62.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/062.png"></td>
             <td>蚊香泳士</td>
             <td>Poliwrath</td>
             <td>道路 2（钓鱼   Super Rod）；遭遇概率：20；铠岛 2（Surf）；遭遇概率：20；进化方式：由 Poliwhirl 进化（使用Item: Water Stone）</td>
         </tr>
         <tr>
             <td id="063">063</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/63.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/063.png"></td>
             <td>凯西</td>
             <td>Abra</td>
             <td>旷野地带 1 Southwest（极巨巢穴）；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="064">064</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/64.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/064.png"></td>
             <td>勇基拉</td>
             <td>Kadabra</td>
             <td>旷野地带 4 West（草丛）；遭遇概率：10；进化方式：由 Abra 进化（升级至等级 16）</td>
         </tr>
         <tr>
             <td id="065">065</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/65.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/065.png"></td>
             <td>胡地</td>
             <td>Alakazam</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Kadabra 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="065">065</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/65.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/065.png"></td>
             <td>胡地</td>
             <td>Mega Alakazam</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="066">066</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/66.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/066.png"></td>
             <td>腕力</td>
             <td>Machop</td>
             <td>旷野地带 1 Southwest（极巨巢穴）；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）；遭遇概率：2；旷野地带 2 (Bear)（极巨巢穴）；遭遇概率：2；道路 3（草丛）；遭遇概率：40；Galar Mine 1（草丛）；遭遇概率：5；旷野地带 3 South（草丛）；遭遇概率：10；旷野地带 4 East（极巨巢穴）；遭遇概率：2；旷野地带 4 West（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）；遭遇概率：2；旷野地带 6 West（极巨巢穴）；遭遇概率：2；旷野地带 6 East（极巨巢穴）；遭遇概率：2；Courageous 洞窟rn (道路 10)（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="067">067</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/67.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/067.png"></td>
             <td>豪力</td>
             <td>Machoke</td>
             <td>旷野地带 2 (Bear)（极巨巢穴）；遭遇概率：2；旷野地带 4 East（极巨巢穴）；遭遇概率：2；旷野地带 4 West（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) North（极巨巢穴）；遭遇概率：2；旷野地带 5 (Desert) South（极巨巢穴）；遭遇概率：2；旷野地带 6 West（极巨巢穴）；遭遇概率：2；旷野地带 6 East（极巨巢穴）；遭遇概率：2；Courageous 洞窟rn (铠岛)（草丛）；遭遇概率：1；进化方式：由 Machop 进化（升级至等级 28）</td>
         </tr>
         <tr>
             <td id="068">068</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/68.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/068.png"></td>
             <td>怪力</td>
             <td>Machamp</td>
             <td>旷野地带 7 (Ice) East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 8 (Spooky)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2；进化方式：由 Machoke 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="069">069</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/69.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/069.png"></td>
             <td>喇叭芽</td>
             <td>Bellsprout</td>
             <td></td>
         </tr>
         <tr>
             <td id="070">070</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/70.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/070.png"></td>
             <td>口呆花</td>
             <td>Weepinbell</td>
             <td>进化方式：由 Bellsprout 进化（升级至等级 21）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="071">071</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/71.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/071.png"></td>
             <td>大食花</td>
             <td>Victreebel</td>
             <td>铠岛 6（草丛）；遭遇概率：10；进化方式：由 Weepinbell 进化（使用Item: Leaf Stone）</td>
         </tr>
         <tr>
             <td id="072">072</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/72.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/072.png"></td>
             <td>玛瑙水母</td>
             <td>Tentacool</td>
             <td>旷野地带 1 Northwest（钓鱼   Old Rod）；遭遇概率：50；铠岛 6（Surf）；遭遇概率：40</td>
         </tr>
         <tr>
             <td id="073">073</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/73.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/073.png"></td>
             <td>毒刺水母</td>
             <td>Tentacruel</td>
             <td>进化方式：由 Tentacool 进化（升级至等级 30）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="074">074</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/74.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/074.png"></td>
             <td>小拳石</td>
             <td>Geodude Alolan</td>
             <td></td>
         </tr>
         <tr>
             <td id="074">074</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/74.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/074.png"></td>
             <td>小拳石</td>
             <td>Geodude</td>
             <td>Courageous 洞窟rn (道路 10)（草丛）；遭遇概率：20；Courageous 洞窟rn (铠岛)（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="075">075</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/75.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/075.png"></td>
             <td>隆隆石</td>
             <td>Graveler Alolan</td>
             <td>Hulbury（Purchase 来自 NPC）；遭遇概率：100；进化方式：由 Geodude-Alola 进化（升级至等级 25）</td>
         </tr>
         <tr>
             <td id="075">075</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/75.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/075.png"></td>
             <td>隆隆石</td>
             <td>Graveler</td>
             <td>Liptoo Chamber (冠之雪原)（草丛）；遭遇概率：20；Tanoby Key (冠之雪原)（草丛）；遭遇概率：20；进化方式：由 Geodude 进化（升级至等级 25）</td>
         </tr>
         <tr>
             <td id="076">076</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/76.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/076.png"></td>
             <td>隆隆岩</td>
             <td>Golem Alolan</td>
             <td>进化方式：由 Graveler-Alola 进化（使用Item: Link Cable）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="076">076</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/76.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/076.png"></td>
             <td>隆隆岩</td>
             <td>Golem</td>
             <td>Warm Up Tunnel (铠岛)（草丛）；遭遇概率：5；进化方式：由 Graveler 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="077">077</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/77.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/077.png"></td>
             <td>小火马</td>
             <td>Ponyta Galarian</td>
             <td>旷野地带 1 Southwest（极巨巢穴）；遭遇概率：2；旷野地带 1 Southeast（极巨巢穴）；遭遇概率：2；旷野地带 1 Northeast（极巨巢穴）；遭遇概率：2；Glimwood Tangle（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="077">077</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/77.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/077.png"></td>
             <td>小火马</td>
             <td>Ponyta</td>
             <td></td>
         </tr>
         <tr>
             <td id="078">078</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/78.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/078.png"></td>
             <td>烈焰马</td>
             <td>Rapidash Galarian</td>
             <td>Isle or Armor 2（极巨巢穴）；遭遇概率：2；Isle of Armor 4（极巨巢穴）；遭遇概率：2；Isle of Armor 5（极巨巢穴）；遭遇概率：2；Isle of Armor 6（极巨巢穴）；遭遇概率：2；Isle of Armor 7（极巨巢穴）；遭遇概率：2；进化方式：由 Ponyta-Galar 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="078">078</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/78.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/078.png"></td>
             <td>烈焰马</td>
             <td>Rapidash</td>
             <td>铠岛 6（草丛）；遭遇概率：10；进化方式：由 Ponyta 进化（升级至等级 40）</td>
         </tr>
         <tr>
             <td id="079">079</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/79.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/079.png"></td>
             <td>呆呆兽</td>
             <td>Slowpoke Galarian</td>
             <td>木杆镇（明雷遭遇）：Battle as part of the Isle of Armor at the station.；遭遇概率：100；铠岛 1（草丛）；遭遇概率：5</td>
         </tr>
         <tr>
             <td id="079">079</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/79.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/079.png"></td>
             <td>呆呆兽</td>
             <td>Slowpoke</td>
             <td></td>
         </tr>
         <tr>
             <td id="080">080</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/80.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/080.png"></td>
             <td>呆壳兽</td>
             <td>Mega Slowbro</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="080">080</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/80.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/080.png"></td>
             <td>呆壳兽</td>
             <td>Slowbro Galarian</td>
             <td>Isle or Armor 2（极巨巢穴）；遭遇概率：2；Isle of Armor 4（极巨巢穴）；遭遇概率：2；Isle of Armor 5（极巨巢穴）；遭遇概率：2；Isle of Armor 6（极巨巢穴）；遭遇概率：2；Isle of Armor 7（极巨巢穴）；遭遇概率：2；进化方式：由 Slowpoke-Galar 进化（使用Item: Galar Cuff）</td>
         </tr>
         <tr>
             <td id="080">080</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/80.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/080.png"></td>
             <td>呆壳兽</td>
             <td>Slowbro</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Slowpoke 进化（升级至等级 37）</td>
         </tr>
         <tr>
             <td id="081">081</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/81.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/081.png"></td>
             <td>小磁怪</td>
             <td>Magnemite</td>
             <td></td>
         </tr>
         <tr>
             <td id="082">082</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/82.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/082.png"></td>
             <td>三合一磁怪</td>
             <td>Magneton</td>
             <td>旷野地带 4 West（草丛）；遭遇概率：20；铠岛 6（草丛）；遭遇概率：10；进化方式：由 Magnemite 进化（升级至等级 30）</td>
         </tr>
         <tr>
             <td id="083">083</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/83.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/083.png"></td>
             <td>大葱鸭</td>
             <td>Farfetchd Galarian</td>
             <td>道路 5（明雷遭遇）；遭遇概率：100；旷野地带 3 West（明雷遭遇）；遭遇概率：100；铠岛 5（明雷遭遇）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="083">083</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/83.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/083.png"></td>
             <td>大葱鸭</td>
             <td>Farfetchd</td>
             <td>旷野地带 6 East（草丛）；遭遇概率：1；铠岛 6（草丛）；遭遇概率：1</td>
         </tr>
         <tr>
             <td id="084">084</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/84.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/084.png"></td>
             <td>嘟嘟</td>
             <td>Doduo</td>
             <td>旷野地带 1 Southwest（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="085">085</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/85.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/085.png"></td>
             <td>嘟嘟利</td>
             <td>Dodrio</td>
             <td>进化方式：由 Doduo 进化（升级至等级 31）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="086">086</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/86.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/086.png"></td>
             <td>小海狮</td>
             <td>Seel</td>
             <td></td>
         </tr>
         <tr>
             <td id="087">087</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/87.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/087.png"></td>
             <td>白海狮</td>
             <td>Dewgong</td>
             <td>道路 9（Surf）；遭遇概率：20；进化方式：由 Seel 进化（升级至等级 34）</td>
         </tr>
         <tr>
             <td id="088">088</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/88.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/088.png"></td>
             <td>臭泥</td>
             <td>Grimer Alolan</td>
             <td></td>
         </tr>
         <tr>
             <td id="088">088</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/88.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/088.png"></td>
             <td>臭泥</td>
             <td>Grimer</td>
             <td></td>
         </tr>
         <tr>
             <td id="089">089</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/89.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/089.png"></td>
             <td>臭臭泥</td>
             <td>Muk Alolan</td>
             <td>进化方式：由 Grimer-Alola 进化（升级至等级 38）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="089">089</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/89.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/089.png"></td>
             <td>臭臭泥</td>
             <td>Muk</td>
             <td>冠之雪原 草丛y East（草丛）；遭遇概率：10</td>
         </tr>
         <tr>
             <td id="090">090</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/90.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/090.png"></td>
             <td>大舌贝</td>
             <td>Shellder</td>
             <td>旷野地带 1 Southwest（钓鱼   Old Rod）；遭遇概率：50</td>
         </tr>
         <tr>
             <td id="091">091</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/91.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/091.png"></td>
             <td>刺甲贝</td>
             <td>Cloyster</td>
             <td>进化方式：由 Shellder 进化（使用Item: Water Stone）；Wiki 未列出其他获取地点</td>
         </tr>
         <tr>
             <td id="092">092</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/92.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/092.png"></td>
             <td>鬼斯</td>
             <td>Gastly</td>
             <td>旷野地带 1 Southwest（草丛）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="093">093</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/93.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/093.png"></td>
             <td>鬼斯通</td>
             <td>Haunter</td>
             <td>道路 8（草丛）；遭遇概率：5；进化方式：由 Gastly 进化（升级至等级 25）</td>
         </tr>
         <tr>
             <td id="094">094</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/94.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/094.png"></td>
             <td>耿鬼</td>
             <td>Gengar</td>
             <td>旷野地带 7 (Ice) East（极巨巢穴）：Gigantamax form available；遭遇概率：3；旷野地带 7 (Ice) West（极巨巢穴）：Gigantamax form available；遭遇概率：3；旷野地带 8 (Spooky)（极巨巢穴）：Gigantamax form available；遭遇概率：3；旷野地带 9 (Dragon)（极巨巢穴）：Gigantamax form available；遭遇概率：3；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2；极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2；进化方式：由 Haunter 进化（使用Item: Link Cable）</td>
         </tr>
         <tr>
             <td id="094">094</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/94.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/094.png"></td>
             <td>耿鬼</td>
             <td>Mega Gengar</td>
             <td>极巨探险 (冠之雪原)（极巨巢穴）；遭遇概率：2</td>
         </tr>
         <tr>
             <td id="095">095</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/95.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/095.png"></td>
             <td>大岩蛇</td>
             <td>Onix</td>
             <td>旷野地带 3 (Volcano)（草丛）；遭遇概率：20；旷野地带 3 (Volcano)（明雷遭遇）；遭遇概率：100；Courageous 洞窟rn (道路 10)（草丛）；遭遇概率：10；铠岛 Desert（明雷遭遇）；遭遇概率：100；Courageous 洞窟rn (铠岛)（草丛）；遭遇概率：10；Brawlers 洞窟 (铠岛)（明雷遭遇）；遭遇概率：100；Warm Up Tunnel (铠岛)（明雷遭遇）；遭遇概率：100；Scifub Chamber (冠之雪原)（明雷遭遇）；遭遇概率：100；Liptoo Chamber (冠之雪原)（草丛）；遭遇概率：6；Liptoo Chamber (冠之雪原)（明雷遭遇）；遭遇概率：100；Tanoby Key (冠之雪原)（明雷遭遇）；遭遇概率：100</td>
         </tr>
         <tr>
             <td id="096">096</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/96.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/096.png"></td>
             <td>催眠貘</td>
             <td>Drowzee</td>
             <td>Glimwood Tangle（草丛）；遭遇概率：4</td>
         </tr>
         <tr>
             <td id="097">097</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/97.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/097.png"></td>
             <td>引梦貘人</td>
             <td>Hypno</td>
             <td>铠岛 1（草丛）；遭遇概率：5；进化方式：由 Drowzee 进化（升级至等级 26）</td>
         </tr>
         <tr>
             <td id="098">098</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/98.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/098.png"></td>
             <td>大钳蟹</td>
             <td>Krabby</td>
             <td>旷野地带 3 North（Surf）；遭遇概率：20</td>
         </tr>
         <tr>
             <td id="099">099</td>
-            <td><img src="https://www.serebii.net/swordshield/pokemon/99.png"></td>
+            <td><img src="https://www.serebii.net/swordshield/pokemon/099.png"></td>
             <td>巨钳蟹</td>
             <td>Kingler</td>
             <td>旷野地带 3 North（钓鱼   Old Rod）；遭遇概率：50；旷野地带 7 (Ice) East（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 7 (Ice) West（极巨巢穴）：Gigantamax form；遭遇概率：2；道路 9（草丛）；遭遇概率：20；旷野地带 8 (Spooky)（极巨巢穴）：Gigantamax form；遭遇概率：2；旷野地带 9 (Dragon)（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle or Armor 2（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 4（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 5（极巨巢穴）：Gigantamax form；遭遇概率：2；铠岛 6（草丛）；遭遇概率：4；Isle of Armor 6（极巨巢穴）：Gigantamax form；遭遇概率：2；Isle of Armor 7（极巨巢穴）：Gigantamax form；遭遇概率：2；进化方式：由 Krabby 进化（升级至等级 28）</td>
