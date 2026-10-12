@@ -15,30 +15,30 @@ date: 2026-07-24 11:16 +0800
     display: block;
   }
   .floating-buttons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 1000;
-    }
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
 
-    .floating-buttons button {
-      padding: 10px 15px;
-      border: none;
-      border-radius: 8px;
-      background-color: #4CAF50;
-      color: white;
-      font-size: 14px;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease;
-    }
+  .floating-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
 
-    .floating-buttons button:hover {
-      background-color: #45a049;
-    }
+  .floating-buttons button:hover {
+    background-color: #45a049;
+  }
 </style>
 
 <div>
@@ -49,9 +49,9 @@ date: 2026-07-24 11:16 +0800
 <div id="filters">
   <button onclick="filter('')">全部</button>
   <button onclick="filter(' 进化')">等级进化</button>
-    <button onclick="filter('之石')">进化石</button>
-    <button onclick="filter('通讯进化')">通讯进化</button>
-    <!-- 道路筛选按钮 -->
+  <button onclick="filter('之石')">进化石</button>
+  <button onclick="filter('通讯进化')">通讯进化</button>
+  <!-- 道路筛选按钮 -->
       <button onclick="filter('1号道路')">1号道路</button>
   <button onclick="filter('2号道路')">2号道路</button>
   <button onclick="filter('3号道路')">3号道路</button>
