@@ -107,14 +107,25 @@ date: 2026-07-24 11:16 +0800
 </div>
 
 <table>
-<tbody id="pokeTable">
-<tr>
-  <td><b>编号</b></td>
-  <td><b>图片</b></td>
-  <td><b>名称</b></td>
-  <td><b>属性</b></td>
-  <td><b>取得方式</b></td>
-</tr>
+<thead>
+        <tr>
+            <th>全国编号</th>
+            <th>图片</th>
+            <th>中文名称</th>
+            <th>中文捕获地点</th>
+            <th>中文捕获方式</th>
+            <th>概率</th>
+        </tr>
+    </thead>
+    <tbody id="pokeTable">
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>红莲岛</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
 <tr>
 <td>001</td>
 <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAgACADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+imTTRW8Ek88iRRRqXeR2CqqgZJJPQAV5Pr3jbW76ytbYQiyM6Gd1tpJFn29QpwAV28g7Tliv8IJWplNR3InOMNz0mHX9Kn1M6bFexNdhmTyxnll6gHoT97oeqOP4GxpV8+wTQQW6taTyQ+XK/liB2Ro92FJVlxtPU8cYYjoa9m8H6he6r4Usb3UebmRWy+zZ5ihyFfH+0oVuODnI4xWdKrz30sTTq891Ys+IdMk1jw/e2EMnlyzR4QlyqsRyFcjnY2NrAdVJFeX3zalp88QurDWLGztoGN15cBl2gLlcShXTHTcxyQB2Oa9joq504zab6DnTjNpy6HgV3pt3qmrSWTafcG5uEd1QBmbrtOR0UZOzc2ApHUY49z01LuLS7SPUJUlvVhRbiRBhXkCjcRwOCc9h9KbYaRpmleZ/Z2nWln5mN/2eBY9+M4ztAzjJ/OrlEIKKCnDkVj/2Q=="></td>
