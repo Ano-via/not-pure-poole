@@ -117,7 +117,7 @@ date: 2026-07-24 11:16 +0800
             <th>概率</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="pokeTable">
         <tr>
             <td>18</td>
             <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
