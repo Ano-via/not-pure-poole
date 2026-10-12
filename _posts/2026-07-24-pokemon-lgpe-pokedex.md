@@ -107,13 +107,13 @@ date: 2026-07-24 11:16 +0800
 </div>
 
 <table>
-<tbody>
+<tbody id="pokeTable">
 <tr>
-<td><b>编号</b></td>
-<td><b>图片</b></td>
-<td><b>名称</b></td>
-<td><b>属性</b></td>
-<td><b>取得方式</b></td>
+  <td><b>编号</b></td>
+  <td><b>图片</b></td>
+  <td><b>名称</b></td>
+  <td><b>属性</b></td>
+  <td><b>取得方式</b></td>
 </tr>
 <tr>
 <td>001</td>
