@@ -2,1361 +2,3462 @@
 layout: post
 title: 精灵宝可梦Let's Go！皮卡丘／Let's Go！伊布去皮去伊地区分布
 tags: [宠物小精灵, 口袋妖怪, 神奇宝贝, 宝可梦, 去皮去伊]
-date: 2026-07-24 11:15 +0800
+date: 2026-07-24 11:16 +0800
 ---
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宝可梦 去皮去伊 - 完整遭遇数据（命名空间CSS）</title>
-    <style>
-        /* 所有样式限定在 .pokemon-encounter-app 下，避免全局冲突 */
-        .pokemon-encounter-app {
-            font-family: "Microsoft YaHei", sans-serif;
-            background: #f4f4f4;
-            margin: 20px;
-        }
-        .pokemon-encounter-app .nav-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .pokemon-encounter-app .nav-buttons a {
-            display: inline-block;
-            padding: 8px 16px;
-            background: #3b4cca;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: background 0.3s;
-        }
-        .pokemon-encounter-app .nav-buttons a:hover { background: #2a3a9e; }
-        .pokemon-encounter-app table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 40px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .pokemon-encounter-app th {
-            background: #3b4cca;
-            color: white;
-            padding: 12px 8px;
-            text-align: center;
-            font-size: 16px;
-        }
-        .pokemon-encounter-app td {
-            padding: 8px 6px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-            font-size: 14px;
-        }
-        .pokemon-encounter-app tr:nth-child(even) { background-color: #f9f9f9; }
-        .pokemon-encounter-app tr:hover { background-color: #e6f0ff; }
-        .pokemon-encounter-app .zone-header {
-            background: #ffcb05;
-            color: #2a3a9e;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .pokemon-encounter-app .zone-header th {
-            background: #ffcb05;
-            color: #2a3a9e;
-            font-size: 22px;
-        }
-        .pokemon-encounter-app .capture-badge {
-            display: inline-block;
-            padding: 2px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .pokemon-encounter-app .badge-normal { background: #a8a878; color: white; }
-        .pokemon-encounter-app .badge-water { background: #6890f0; color: white; }
-        .pokemon-encounter-app .badge-sky { background: #a890f0; color: white; }
-        .pokemon-encounter-app img {
-            vertical-align: middle;
-            width: 40px;
-            height: 40px;
-        }
-        @media (max-width: 600px) {
-            .pokemon-encounter-app table { font-size: 12px; }
-            .pokemon-encounter-app td, .pokemon-encounter-app th { padding: 4px; }
-            .pokemon-encounter-app img { width: 30px; height: 30px; }
-        }
-        .pokemon-encounter-app .loading {
-            text-align: center;
-            padding: 50px;
-            font-size: 20px;
-            color: #3b4cca;
-        }
-    </style>
-</head>
-<body>
-    <div class="pokemon-encounter-app">
-        <h1 style="text-align:center; color:#3b4cca;">宝可梦 去皮去伊 - 完整遭遇数据（归一化+排序）</h1>
-        <div id="nav" class="nav-buttons"></div>
-        <div id="tables-container"></div>
-        <div id="loading" class="loading">⏳ 正在解析数据并生成表格…</div>
-    </div>
+<style>
+  td:nth-child(2) {
+    min-width: 64px;
+  }
+  td img {
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    display: block;
+  }
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
 
-    <script>
-        // ============================================================
-        // 1. 原始数据（直接粘贴自您的提供）
-        // ============================================================
-        const rawData = `
-Zone: Cinnabar Island
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Fuchsia City
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Vermilion City
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Lavender Town
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Cerulean City
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Pewter City
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Viridian City
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Pallet Town
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Pokémon Mansion
-    Normal Encounters:
-        Levels: 39-44
-            Ditto (10%)
-            Magmar (10%)
-            Raticate (20%)
-            Grimer (20%)
-            Muk (10%)
-            Koffing (30%)
-Zone: Pokémon Mansion
-    Normal Encounters:
-        Levels: 39-44
-            Mew (01%)
-            Magmar (14%)
-            Ditto (20%)
-            Koffing (20%)
-            Weezing (05%)
-            Grimer (40%)
-Zone: Pokémon Mansion
-    Normal Encounters:
-        Levels: 39-44
-            Mew (01%)
-            Magmar (14%)
-            Ditto (20%)
-            Grimer (20%)
-            Weezing (05%)
-            Koffing (40%)
-Zone: Pokémon Mansion
-    Normal Encounters:
-        Levels: 39-44
-            Mew (01%)
-            Magmar (14%)
-            Ditto (20%)
-            Grimer (20%)
-            Muk (05%)
-            Koffing (40%)
-Zone: Pokémon Tower
-    Normal Encounters:
-        Levels: 27-32
-            Cubone (10%)
-            Golbat (05%)
-            Zubat (05%)
-            Haunter (20%)
-            Gastly (60%)
-Zone: Pokémon Tower
-    Normal Encounters:
-        Levels: 27-32
-            Cubone (10%)
-            Golbat (05%)
-            Zubat (05%)
-            Haunter (10%)
-            Gastly (70%)
-Zone: Pokémon Tower
-    Normal Encounters:
-        Levels: 27-32
-            Cubone (10%)
-            Golbat (05%)
-            Zubat (05%)
-            Haunter (05%)
-            Gastly (75%)
-Zone: Pokémon Tower
-    Normal Encounters:
-        Levels: 27-32
-            Haunter (05%)
-            Golbat (05%)
-            Zubat (05%)
-            Cubone (10%)
-            Gastly (75%)
-Zone: Cerulean Cave
-    Normal Encounters:
-        Levels: 51-56
-            Psyduck (05%)
-            Rhydon (05%)
-            Rhyhorn (10%)
-            Lickitung (10%)
-            Ditto (05%)
-            Golduck (15%)
-            Graveler (15%)
-            Geodude (10%)
-            Golbat (15%)
-            Zubat (10%)
-    Water Encounters:
-        Levels: 51-56
-            Poliwrath (01%)
-            Poliwhirl (09%)
-            Poliwag (45%)
-            Magikarp (45%)
-Zone: Cerulean Cave
-        Levels: 51-56
-            Chansey (10%)
-            Rhyhorn (10%)
-            Lickitung (15%)
-            Ditto (05%)
-            Rhydon (10%)
-            Graveler (20%)
-            Geodude (05%)
-            Golbat (20%)
-            Zubat (05%)
-Zone: Cerulean Cave
-    Normal Encounters:
-        Levels: 51-56
-            Psyduck (05%)
-            Rhydon (05%)
-            Rhyhorn (10%)
-            Lickitung (10%)
-            Ditto (05%)
-            Golduck (15%)
-            Graveler (15%)
-            Geodude (10%)
-            Golbat (15%)
-            Zubat (10%)
-    Water Encounters:
-        Levels: 51-56
-            Poliwrath (01%)
-            Poliwhirl (09%)
-            Poliwag (45%)
-            Magikarp (45%)
-Zone: Route 25
-    Normal Encounters:
-        Levels: 09-14
-            Psyduck (20%)
-            Meowth (20%)
-            Bellsprout (20%)
-            Venonat (20%)
-            Gloom (20%)
-    Water Encounters:
-        Levels: 09-14
-            Poliwhirl (10%)
-            Poliwag (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 24
-    Normal Encounters:
-        Levels: 07-12
-            Psyduck (20%)
-            Meowth (20%)
-            Meowth (20%)
-            Venonat (20%)
-            Pidgey (20%)
-    Water Encounters:
-        Levels: 07-12
-            Tentacruel (10%)
-            Tentacool (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 23
-    Normal Encounters:
-        Levels: 41-46
-            Exeggcute (14%)
-            Nidorina (19%)
-            Nidoran♀ (10%)
-            Nidorino (19%)
-            Nidoran♂ (10%)
-            Nidoqueen (01%)
-            Nidoking (01%)
-            Exeggutor (01%)
-            Fearow (15%)
-            Spearow (10%)
-    Water Encounters:
-        Levels: 41-46
-            Poliwhirl (10%)
-            Poliwag (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 22
-    Normal Encounters:
-        Levels: 03-04
-            Nidoran♀ (20%)
-            Nidoran♂ (20%)
-            Rattata (30%)
-            Spearow (30%)
-    Water Encounters:
-        Levels: 03-04
-            Poliwhirl (10%)
-            Poliwag (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 21
-    Normal Encounters:
-        Levels: 37-42
-            Victreebel (01%)
-            Weepinbell (14%)
-            Gloom (10%)
-            Tangela (15%)
-            Pidgeotto (20%)
-            Gloom (10%)
-            Raticate (20%)
-            Rattata (10%)
-    Water Encounters:
-        Levels: 37-42
-            Starmie (01%)
-            Tentacruel (09%)
-            Staryu (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 20
-    Water Encounters:
-        Levels: 39-44
-            Gyarados (05%)
-            Tentacruel (05%)
-            Tentacool (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 20
-    Water Encounters:
-        Levels: 37-42
-            Gyarados (05%)
-            Tentacruel (05%)
-            Tentacool (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 19
-    Water Encounters:
-        Levels: 37-42
-            Starmie (01%)
-            Tentacruel (09%)
-            Staryu (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 18
-    Normal Encounters:
-        Levels: 33-38
-            Dodrio (10%)
-            Doduo (20%)
-            Raticate (15%)
-            Rattata (15%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 18
-    Water Encounters:
-        Levels: 33-38
-            Starmie (01%)
-            Tentacruel (09%)
-            Staryu (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 17
-    Normal Encounters:
-        Levels: 33-38
-            Psyduck (15%)
-            Rapidash (05%)
-            Ponyta (20%)
-            Dodrio (05%)
-            Doduo (20%)
-            Raticate (05%)
-            Rattata (05%)
-            Eevee (05%)
-            Pidgeotto (10%)
-            Pidgey (10%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 16
-    Normal Encounters:
-        Levels: 31-36
-            Doduo (25%)
-            Raticate (15%)
-            Rattata (15%)
-            Dodrio (05%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 16
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 15
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 15
-    Normal Encounters:
-        Levels: 33-38
-            Scyther (01%)
-            Weepinbell (15%)
-            Gloom (15%)
-            Venomoth (09%)
-            Venonat (15%)
-            Tauros (05%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 14
-    Normal Encounters:
-        Levels: 33-38
-            Pinsir (01%)
-            Weepinbell (15%)
-            Gloom (15%)
-            Venomoth (09%)
-            Venonat (15%)
-            Tauros (05%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 13
-    Normal Encounters:
-        Levels: 33-38
-            Krabby (15%)
-            Farfetch’d (10%)
-            Weepinbell (15%)
-            Gloom (15%)
-            Kingler (05%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Water Encounters:
-        Levels: 33-38
-            Seadra (05%)
-            Tentacruel (05%)
-            Horsea (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 12
-    Normal Encounters:
-        Levels: 31-36
-            Krabby (15%)
-            Farfetch’d (10%)
-            Weepinbell (15%)
-            Gloom (15%)
-            Kingler (05%)
-            Pidgeotto (20%)
-            Pidgey (20%)
-    Water Encounters:
-        Levels: 31-36
-            Seadra (05%)
-            Tentacruel (05%)
-            Horsea (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 11
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 11
-    Normal Encounters:
-        Levels: 13-18
-            Raticate (10%)
-            Pidgeotto (10%)
-            Mr. Mime (05%)
-            Drowzee (25%)
-            Rattata (25%)
-            Pidgey (25%)
-    Water Encounters:
-        Levels: 13-18
-            Seadra (05%)
-            Tentacruel (05%)
-            Horsea (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 10
-    Normal Encounters:
-        Levels: 18-23
-            Krabby (10%)
-            Nidorina (05%)
-            Nidorino (05%)
-            Nidoran♀ (15%)
-            Nidoran♂ (15%)
-            Raticate (10%)
-            Fearow (10%)
-            Rattata (15%)
-            Spearow (15%)
-    Water Encounters:
-        Levels: 18-23
-            Dragonair (01%)
-            Tentacruel (05%)
-            Dratini (04%)
-            Tentacool (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 10
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 9
-    Normal Encounters:
-        Levels: 17-22
-            Nidorina (05%)
-            Nidorino (05%)
-            Nidoran♀ (15%)
-            Nidoran♂ (15%)
-            Raticate (10%)
-            Fearow (10%)
-            Rattata (20%)
-            Spearow (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 8
-    Normal Encounters:
-        Levels: 22-27
-            Ninetales (01%)
-            Kadabra (01%)
-            Raticate (15%)
-            Pidgeotto (15%)
-            Abra (04%)
-            Jigglypuff (15%)
-            Vulpix (19%)
-            Rattata (15%)
-            Growlithe (15%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 7
-    Normal Encounters:
-        Levels: 22-27
-            Arcanine (01%)
-            Kadabra (01%)
-            Raticate (15%)
-            Pidgeotto (15%)
-            Abra (04%)
-            Jigglypuff (15%)
-            Growlithe (19%)
-            Rattata (15%)
-            Vulpix (15%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 6
-    Normal Encounters:
-        Levels: 11-16
-            Pidgeotto (10%)
-            Psyduck (10%)
-            Abra (05%)
-            Jigglypuff (15%)
-            Vulpix (20%)
-            Growlithe (20%)
-            Pidgey (20%)
-    Water Encounters:
-        Levels: 11-16
-            Seaking (10%)
-            Goldeen (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 5
-    Normal Encounters:
-        Levels: 11-16
-            Pidgeotto (10%)
-            Abra (05%)
-            Jigglypuff (15%)
-            Vulpix (20%)
-            Rattata (30%)
-            Growlithe (20%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 4
-    Normal Encounters:
-        Levels: 07-12
-            Psyduck (05%)
-            Ekans (20%)
-            Sandshrew (35%)
-            Mankey (40%)
-    Water Encounters:
-        Levels: 07-12
-            Tentacruel (10%)
-            Tentacool (45%)
-            Magikarp (45%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 4
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 3
-    Normal Encounters:
-        Levels: 03-08
-            Sandshrew (20%)
-            Ekans (40%)
-            Spearow (40%)
-    Sky Encounters:
-        Levels: 03-56
-            Fearow (40%)
-            Spearow (60%)
-Zone: Route 2
-    Normal Encounters:
-        Levels: 03-08
-            Bellsprout (20%)
-            Oddish (15%)
-            Caterpie (15%)
-            Rattata (20%)
-            Pidgey (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 2
-    Normal Encounters:
-        Levels: 03-04
-            Oddish (20%)
-            Weedle (15%)
-            Bellsprout (15%)
-            Rattata (20%)
-            Pidgey (30%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Route 1
-    Normal Encounters:
-        Levels: 03-04
-            Rattata (40%)
-            Pidgey (60%)
-    Sky Encounters:
-        Levels: 03-56
-            Pidgeot (05%)
-            Pidgeotto (35%)
-            Pidgey (60%)
-Zone: Victory Road
-    Normal Encounters:
-        Levels: 41-46
-            Rhydon (05%)
-            Rhyhorn (10%)
-            Onix (10%)
-            Machoke (15%)
-            Machop (10%)
-            Graveler (15%)
-            Geodude (10%)
-            Golbat (15%)
-            Zubat (10%)
-Zone: Victory Road
-    Normal Encounters:
-        Levels: 41-46
-            Rhydon (05%)
-            Rhyhorn (10%)
-            Onix (10%)
-            Machoke (15%)
-            Machop (10%)
-            Graveler (15%)
-            Geodude (10%)
-            Golbat (15%)
-            Zubat (10%)
-Zone: Victory Road
-    Normal Encounters:
-        Levels: 41-46
-            Rhydon (05%)
-            Rhyhorn (10%)
-            Onix (10%)
-            Machoke (15%)
-            Machop (10%)
-            Graveler (15%)
-            Geodude (10%)
-            Golbat (15%)
-            Zubat (10%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (10%)
-            Seel (15%)
-            Slowbro (10%)
-            Slowpoke (15%)
-            Golbat (20%)
-            Zubat (16%)
-    Water Encounters:
-        Levels: 39-44
-            Cloyster (01%)
-            Tentacruel (09%)
-            Shellder (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (10%)
-            Seel (15%)
-            Slowbro (10%)
-            Slowpoke (15%)
-            Golbat (20%)
-            Zubat (16%)
-    Water Encounters:
-        Levels: 39-44
-            Cloyster (01%)
-            Tentacruel (09%)
-            Shellder (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (05%)
-            Seel (20%)
-            Slowbro (05%)
-            Slowpoke (20%)
-            Golbat (20%)
-            Zubat (16%)
-    Water Encounters:
-        Levels: 39-44
-            Cloyster (01%)
-            Tentacruel (09%)
-            Shellder (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (05%)
-            Seel (20%)
-            Slowbro (05%)
-            Slowpoke (20%)
-            Golbat (20%)
-            Zubat (16%)
-    Water Encounters:
-        Levels: 39-44
-            Cloyster (01%)
-            Tentacruel (09%)
-            Shellder (30%)
-            Tentacool (30%)
-            Magikarp (30%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (05%)
-            Seel (20%)
-            Slowbro (05%)
-            Slowpoke (20%)
-            Golbat (20%)
-            Zubat (16%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (05%)
-            Seel (20%)
-            Slowbro (05%)
-            Slowpoke (20%)
-            Golbat (20%)
-            Zubat (16%)
-Zone: Seafoam Islands
-    Normal Encounters:
-        Levels: 39-44
-            Jynx (14%)
-            Dewgong (05%)
-            Seel (20%)
-            Slowbro (05%)
-            Slowpoke (20%)
-            Golbat (20%)
-            Zubat (16%)
-Zone: Diglett’s Cave
-    Normal Encounters:
-        Levels: 13-18
-            Zubat (10%)
-            Dugtrio (05%)
-            Diglett (85%)
-Zone: Power Plant
-    Normal Encounters:
-        Levels: 37-42
-            Electabuzz (14%)
-            Muk (05%)
-            Koffing (25%)
-            Electrode (05%)
-            Voltorb (23%)
-            Magneton (05%)
-            Magnemite (23%)
-Zone: Rock Tunnel
-    Normal Encounters:
-        Levels: 18-23
-            Kangaskhan (01%)
-            Cubone (09%)
-            Rhyhorn (10%)
-            Onix (10%)
-            Machop (10%)
-            Graveler (20%)
-            Golbat (20%)
-            Geodude (10%)
-            Zubat (10%)
-Zone: Rock Tunnel
-    Normal Encounters:
-        Levels: 18-23
-            Kangaskhan (01%)
-            Cubone (09%)
-            Rhyhorn (10%)
-            Onix (10%)
-            Machop (10%)
-            Graveler (10%)
-            Golbat (10%)
-            Geodude (20%)
-            Zubat (20%)
-Zone: Mt. Moon
-    Normal Encounters:
-        Levels: 05-10
-            Clefable (01%)
-            Onix (01%)
-            Clefairy (09%)
-            Paras (15%)
-            Geodude (34%)
-            Zubat (40%)
-Zone: Mt. Moon
-    Normal Encounters:
-        Levels: 05-10
-            Onix (01%)
-            Clefairy (04%)
-            Paras (15%)
-            Geodude (40%)
-            Zubat (40%)
-Zone: Mt. Moon
-    Normal Encounters:
-        Levels: 05-10
-            Onix (01%)
-            Clefairy (04%)
-            Paras (15%)
-            Geodude (40%)
-            Zubat (40%)
-Zone: Viridian Forest
-    Normal Encounters:
-        Levels: 03-06
-            Bellsprout (10%)
-            Beedrill (01%)
-            Pikachu (05%)
-            Oddish (10%)
-            Metapod (10%)
-            Weedle (25%)
-            Caterpie (24%)
-            Pidgey (15%)
-        `;
+  .floating-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
 
-        // ============================================================
-        // 2. 中文映射
-        // ============================================================
-        const nameMap = {
-            'Pidgeot': '大比鸟', 'Pidgeotto': '比比鸟', 'Pidgey': '波波',
-            'Ditto': '百变怪', 'Magmar': '鸭嘴火兽', 'Raticate': '拉达',
-            'Grimer': '臭泥', 'Muk': '臭臭泥', 'Koffing': '瓦斯弹',
-            'Mew': '梦幻', 'Weezing': '双弹瓦斯',
-            'Cubone': '卡拉卡拉', 'Golbat': '大嘴蝠', 'Zubat': '超音蝠',
-            'Haunter': '鬼斯通', 'Gastly': '鬼斯',
-            'Psyduck': '可达鸭', 'Rhydon': '钻角犀兽', 'Rhyhorn': '独角犀牛',
-            'Lickitung': '大舌头', 'Golduck': '哥达鸭', 'Graveler': '隆隆石',
-            'Geodude': '小拳石', 'Poliwrath': '蚊香泳士', 'Poliwhirl': '蚊香君',
-            'Poliwag': '蚊香蝌蚪', 'Magikarp': '鲤鱼王', 'Chansey': '吉利蛋',
-            'Meowth': '喵喵', 'Bellsprout': '喇叭芽', 'Venonat': '毛球',
-            'Gloom': '臭臭花', 'Tentacruel': '毒刺水母', 'Tentacool': '玛瑙水母',
-            'Exeggcute': '蛋蛋', 'Nidorina': '尼多娜', 'Nidoran♀': '尼多兰',
-            'Nidorino': '尼多力诺', 'Nidoran♂': '尼多朗', 'Nidoqueen': '尼多后',
-            'Nidoking': '尼多王', 'Exeggutor': '椰蛋树', 'Fearow': '大嘴雀',
-            'Spearow': '烈雀', 'Rattata': '小拉达', 'Victreebel': '大食花',
-            'Weepinbell': '口呆花', 'Tangela': '蔓藤怪', 'Starmie': '宝石海星',
-            'Staryu': '海星星', 'Gyarados': '暴鲤龙', 'Dodrio': '嘟嘟利',
-            'Doduo': '嘟嘟', 'Rapidash': '烈焰马', 'Ponyta': '小火马',
-            'Eevee': '伊布', 'Scyther': '飞天螳螂', 'Venomoth': '摩鲁蛾',
-            'Tauros': '肯泰罗', 'Pinsir': '凯罗斯', 'Krabby': '大钳蟹',
-            'Farfetch’d': '大葱鸭', 'Kingler': '巨钳蟹', 'Seadra': '海刺龙',
-            'Horsea': '墨海马', 'Mr. Mime': '魔墙人偶', 'Drowzee': '催眠貘',
-            'Dragonair': '哈克龙', 'Dratini': '迷你龙', 'Ninetales': '九尾',
-            'Kadabra': '勇基拉', 'Abra': '凯西', 'Jigglypuff': '胖丁',
-            'Vulpix': '六尾', 'Growlithe': '卡蒂狗', 'Arcanine': '风速狗',
-            'Seaking': '金鱼王', 'Goldeen': '角金鱼', 'Ekans': '阿柏蛇',
-            'Sandshrew': '穿山鼠', 'Mankey': '猴怪', 'Oddish': '走路草',
-            'Caterpie': '绿毛虫', 'Weedle': '独角虫', 'Onix': '大岩蛇',
-            'Machoke': '豪力', 'Machop': '腕力', 'Jynx': '迷唇姐',
-            'Dewgong': '白海狮', 'Seel': '小海狮', 'Slowbro': '呆壳兽',
-            'Slowpoke': '呆呆兽', 'Cloyster': '刺甲贝', 'Shellder': '大舌贝',
-            'Dugtrio': '三地鼠', 'Diglett': '地鼠', 'Electabuzz': '电击兽',
-            'Electrode': '顽皮雷弹', 'Voltorb': '霹雳电球', 'Magneton': '三合一磁怪',
-            'Magnemite': '小磁怪', 'Kangaskhan': '袋兽', 'Clefable': '皮可西',
-            'Clefairy': '皮皮', 'Paras': '派拉斯', 'Beedrill': '大针蜂',
-            'Pikachu': '皮卡丘', 'Metapod': '铁甲蛹'
-        };
+  .floating-buttons button:hover {
+    background-color: #45a049;
+  }
+</style>
 
-        const zoneMap = {
-            'Cinnabar Island': '红莲镇',
-            'Fuchsia City': '浅红市',
-            'Vermilion City': '枯叶市',
-            'Lavender Town': '紫苑镇',
-            'Cerulean City': '华蓝市',
-            'Pewter City': '深灰市',
-            'Viridian City': '常青市',
-            'Pallet Town': '真新镇',
-            'Pokémon Mansion': '宝可梦屋',
-            'Pokémon Tower': '宝可梦塔',
-            'Cerulean Cave': '华蓝洞窟',
-            'Route 25': '25号道路',
-            'Route 24': '24号道路',
-            'Route 23': '23号道路',
-            'Route 22': '22号道路',
-            'Route 21': '21号道路',
-            'Route 20': '20号水路',
-            'Route 19': '19号水路',
-            'Route 18': '18号道路',
-            'Route 17': '17号道路',
-            'Route 16': '16号道路',
-            'Route 15': '15号道路',
-            'Route 14': '14号道路',
-            'Route 13': '13号道路',
-            'Route 12': '12号道路',
-            'Route 11': '11号道路',
-            'Route 10': '10号道路',
-            'Route 9': '9号道路',
-            'Route 8': '8号道路',
-            'Route 7': '7号道路',
-            'Route 6': '6号道路',
-            'Route 5': '5号道路',
-            'Route 4': '4号道路',
-            'Route 3': '3号道路',
-            'Route 2': '2号道路',
-            'Route 1': '1号道路',
-            'Victory Road': '冠军之路',
-            'Seafoam Islands': '双子岛',
-            'Diglett’s Cave': '地鼠洞穴',
-            'Power Plant': '无人发电厂',
-            'Rock Tunnel': '岩山隧道',
-            'Mt. Moon': '月见山',
-            'Viridian Forest': '常青森林'
-        };
+<div>
+<input id="numfilter" placeholder="123,456,789" />
+<button onclick="real_numfilter()">筛选特定编号</button>
+<button onclick="resetFilters()">重置筛选</button>
+</div>
+<div id="filters">
+  <button onclick="filter('')">全部</button>
+  <button onclick="filter(' 进化')">等级进化</button>
+  <button onclick="filter('之石')">进化石</button>
+  <button onclick="filter('通讯进化')">通讯进化</button>
+  <!-- 道路筛选按钮 -->
+      <button onclick="filter('1号道路')">1号道路</button>
+  <button onclick="filter('2号道路')">2号道路</button>
+  <button onclick="filter('3号道路')">3号道路</button>
+  <button onclick="filter('4号道路')">4号道路</button>
+  <button onclick="filter('5号道路')">5号道路</button>
+  <button onclick="filter('6号道路')">6号道路</button>
+  <button onclick="filter('7号道路')">7号道路</button>
+  <button onclick="filter('8号道路')">8号道路</button>
+  <button onclick="filter('9号道路')">9号道路</button>
+  <button onclick="filter('10号道路')">10号道路</button>
+  <button onclick="filter('11号道路')">11号道路</button>
+  <button onclick="filter('12号道路')">12号道路</button>
+  <button onclick="filter('13号道路')">13号道路</button>
+  <button onclick="filter('14号道路')">14号道路</button>
+  <button onclick="filter('15号道路')">15号道路</button>
+  <button onclick="filter('16号道路')">16号道路</button>
+  <button onclick="filter('17号道路')">17号道路</button>
+  <button onclick="filter('18号道路')">18号道路</button>
+  <button onclick="filter('19、20号水道')">19、20号水道</button>
+  <button onclick="filter('20号水道')">20号水道</button>
+  <button onclick="filter('21号道路')">21号道路</button>
+  <button onclick="filter('22号道路')">22号道路</button>
+  <button onclick="filter('23号道路')">23号道路</button>
+  <button onclick="filter('24号道路')">24号道路</button>
+  <button onclick="filter('25号道路')">25号道路</button>
+  <button onclick="filter('华蓝市')">华蓝市</button>
+  <button onclick="filter('华蓝市中心')">华蓝市中心</button>
+  <button onclick="filter('枯叶市')">枯叶市</button>
+  <button onclick="filter('枯叶市中心')">枯叶市中心</button>
+  <button onclick="filter('金黄市')">金黄市</button>
+  <button onclick="filter('金黄市中心')">金黄市中心</button>
+  <button onclick="filter('金黄市武斗馆')">金黄市武斗馆</button>
+  <button onclick="filter('玉虹市')">玉虹市</button>
+  <button onclick="filter('玉虹市中心')">玉虹市中心</button>
+  <button onclick="filter('紫苑镇中心')">紫苑镇中心</button>
+  <button onclick="filter('红莲镇')">红莲镇</button>
+  <button onclick="filter('红莲镇中心')">红莲镇中心</button>
+  <button onclick="filter('浅红市中心')">浅红市中心</button>
+  <button onclick="filter('石英高原中心')">石英高原中心</button>
+  <button onclick="filter('常青森林')">常青森林</button>
+  <button onclick="filter('地鼠洞穴')">地鼠洞穴</button>
+  <button onclick="filter('月见山')">月见山</button>
+  <button onclick="filter('华蓝洞窟')">华蓝洞窟</button>
+  <button onclick="filter('岩山隧道')">岩山隧道</button>
+  <button onclick="filter('宝可梦之塔')">宝可梦之塔</button>
+  <button onclick="filter('双子岛')">双子岛</button>
+  <button onclick="filter('冠军之路')">冠军之路</button>
+  <button onclick="filter('无人发电厂')">无人发电厂</button>
+  <button onclick="filter('宝可梦之家')">宝可梦之家</button>
+  <button onclick="filter('西尔佛公司')">西尔佛公司</button>
+  <button onclick="filter('红莲镇化石研究所')">红莲镇化石研究所</button>
+  <button onclick="filter('深灰市博物馆')">深灰市博物馆</button>
+</div>
 
-        const typeOrder = { 'Normal': 1, 'Water': 2, 'Sky': 3 };
+<table>
+    <thead>
+        <tr>
+            <th>全国编号</th>
+            <th>图片</th>
+            <th>中文名称</th>
+            <th>中文捕获地点</th>
+            <th>中文捕获方式</th>
+            <th>概率</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>红莲岛</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>红莲岛</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>红莲岛</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>浅红市</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>浅红市</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>浅红市</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>枯叶市</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>枯叶市</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>枯叶市</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>紫苑镇</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>紫苑镇</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>紫苑镇</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>华蓝市</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>华蓝市</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>华蓝市</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>尼比市</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>尼比市</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>尼比市</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>常磐市</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>常磐市</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>常磐市</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>真新镇</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>真新镇</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>真新镇</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>132</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
+            <td>百变怪</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>126</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/126.png"></td>
+            <td>鸭嘴火兽</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
+            <td>臭泥</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/089.png"></td>
+            <td>臭臭泥</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/109.png"></td>
+            <td>瓦斯弹</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>151</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/151.png"></td>
+            <td>梦幻</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>126</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/126.png"></td>
+            <td>鸭嘴火兽</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>132</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
+            <td>百变怪</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/109.png"></td>
+            <td>瓦斯弹</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/110.png"></td>
+            <td>双弹瓦斯</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/088.png"></td>
+            <td>臭泥</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/109.png"></td>
+            <td>瓦斯弹</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/089.png"></td>
+            <td>臭臭泥</td>
+            <td>宝可梦洋馆</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/104.png"></td>
+            <td>卡拉卡拉</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/093.png"></td>
+            <td>鬼斯通</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/092.png"></td>
+            <td>鬼斯</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/093.png"></td>
+            <td>鬼斯通</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/092.png"></td>
+            <td>鬼斯</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>70%</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/093.png"></td>
+            <td>鬼斯通</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/092.png"></td>
+            <td>鬼斯</td>
+            <td>宝可梦塔</td>
+            <td>地面遭遇</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/112.png"></td>
+            <td>钻角犀兽</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/111.png"></td>
+            <td>独角犀牛</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>108</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/108.png"></td>
+            <td>大舌头</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>132</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/132.png"></td>
+            <td>百变怪</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/055.png"></td>
+            <td>哥达鸭</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
+            <td>隆隆石</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/062.png"></td>
+            <td>蚊香泳士</td>
+            <td>华蓝洞窟</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
+            <td>蚊香君</td>
+            <td>华蓝洞窟</td>
+            <td>水面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
+            <td>蚊香蝌蚪</td>
+            <td>华蓝洞窟</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>华蓝洞窟</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>113</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/113.png"></td>
+            <td>吉利蛋</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>108</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/108.png"></td>
+            <td>大舌头</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/112.png"></td>
+            <td>钻角犀兽</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
+            <td>隆隆石</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>华蓝洞窟</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>25号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/052.png"></td>
+            <td>喵喵</td>
+            <td>25号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
+            <td>喇叭芽</td>
+            <td>25号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
+            <td>毛球</td>
+            <td>25号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>25号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
+            <td>蚊香君</td>
+            <td>25号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
+            <td>蚊香蝌蚪</td>
+            <td>25号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>25号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>25号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>25号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>25号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>24号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/052.png"></td>
+            <td>喵喵</td>
+            <td>24号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
+            <td>毛球</td>
+            <td>24号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>24号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>24号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>24号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>24号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>24号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>24号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>24号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/102.png"></td>
+            <td>蛋蛋</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/030.png"></td>
+            <td>尼多娜</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
+            <td>尼多兰</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/033.png"></td>
+            <td>尼多力诺</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/032.png"></td>
+            <td>尼多朗</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/031.png"></td>
+            <td>尼多后</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/034.png"></td>
+            <td>尼多王</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/103.png"></td>
+            <td>椰蛋树</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>23号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
+            <td>蚊香君</td>
+            <td>23号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
+            <td>蚊香蝌蚪</td>
+            <td>23号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>23号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>23号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>23号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
+            <td>尼多兰</td>
+            <td>22号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/032.png"></td>
+            <td>尼多朗</td>
+            <td>22号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>22号道路</td>
+            <td>地面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>22号道路</td>
+            <td>地面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/061.png"></td>
+            <td>蚊香君</td>
+            <td>22号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/060.png"></td>
+            <td>蚊香蝌蚪</td>
+            <td>22号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>22号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>22号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>22号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>71</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/071.png"></td>
+            <td>大食花</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
+            <td>口呆花</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>114</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/114.png"></td>
+            <td>蔓藤怪</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>21号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>121</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
+            <td>宝石海星</td>
+            <td>21号道路</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>21号道路</td>
+            <td>水面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>120</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
+            <td>海星星</td>
+            <td>21号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>21号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>21号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>21号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>21号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>21号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>130</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/130.png"></td>
+            <td>暴鲤龙</td>
+            <td>20号水道</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>20号水道</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>20号水道</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>20号水道</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>20号水道</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>20号水道</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>20号水道</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>121</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
+            <td>宝石海星</td>
+            <td>19号水道</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>19号水道</td>
+            <td>水面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>120</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
+            <td>海星星</td>
+            <td>19号水道</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>19号水道</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>19号水道</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>19号水道</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>19号水道</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>19号水道</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/085.png"></td>
+            <td>嘟嘟利</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/084.png"></td>
+            <td>嘟嘟</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>18号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>18号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>18号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>18号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>121</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/121.png"></td>
+            <td>宝石海星</td>
+            <td>18号道路</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>18号道路</td>
+            <td>水面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>120</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/120.png"></td>
+            <td>海星星</td>
+            <td>18号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>18号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>18号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/078.png"></td>
+            <td>烈焰马</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>77</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/077.png"></td>
+            <td>小火马</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/085.png"></td>
+            <td>嘟嘟利</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/084.png"></td>
+            <td>嘟嘟</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/133.png"></td>
+            <td>伊布</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>17号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>17号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>17号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>17号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/084.png"></td>
+            <td>嘟嘟</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/085.png"></td>
+            <td>嘟嘟利</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>16号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>16号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>16号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>16号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>15号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>15号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>15号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/123.png"></td>
+            <td>飞天螳螂</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
+            <td>口呆花</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
+            <td>摩鲁蛾</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
+            <td>毛球</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>128</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/128.png"></td>
+            <td>肯泰罗</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>15号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>127</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/127.png"></td>
+            <td>凯罗斯</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
+            <td>口呆花</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/049.png"></td>
+            <td>摩鲁蛾</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/048.png"></td>
+            <td>毛球</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>128</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/128.png"></td>
+            <td>肯泰罗</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>14号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>14号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>14号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>14号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
+            <td>大钳蟹</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>83</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/083.png"></td>
+            <td>大葱鸭</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
+            <td>口呆花</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>99</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
+            <td>巨钳蟹</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>13号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>117</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
+            <td>海刺龙</td>
+            <td>13号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>13号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>116</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
+            <td>墨海马</td>
+            <td>13号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>13号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>13号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>13号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>13号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>13号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
+            <td>大钳蟹</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>83</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/083.png"></td>
+            <td>大葱鸭</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/070.png"></td>
+            <td>口呆花</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/044.png"></td>
+            <td>臭臭花</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>99</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/099.png"></td>
+            <td>巨钳蟹</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>12号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>117</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
+            <td>海刺龙</td>
+            <td>12号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>12号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>116</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
+            <td>墨海马</td>
+            <td>12号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>12号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>12号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>12号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>12号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>12号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>11号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>11号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>11号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/122.png"></td>
+            <td>魔墙人偶</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>96</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/096.png"></td>
+            <td>催眠貘</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>11号道路</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>117</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/117.png"></td>
+            <td>海刺龙</td>
+            <td>11号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>11号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>116</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/116.png"></td>
+            <td>墨海马</td>
+            <td>11号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>11号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>11号道路</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/098.png"></td>
+            <td>大钳蟹</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/030.png"></td>
+            <td>尼多娜</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/033.png"></td>
+            <td>尼多力诺</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
+            <td>尼多兰</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/032.png"></td>
+            <td>尼多朗</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>10号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>148</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/148.png"></td>
+            <td>哈克龙</td>
+            <td>10号道路</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>10号道路</td>
+            <td>水面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>147</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/147.png"></td>
+            <td>迷你龙</td>
+            <td>10号道路</td>
+            <td>水面遭遇</td>
+            <td>4%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>10号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>10号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>10号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>10号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/030.png"></td>
+            <td>尼多娜</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/033.png"></td>
+            <td>尼多力诺</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/029.png"></td>
+            <td>尼多兰</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/032.png"></td>
+            <td>尼多朗</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>9号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>9号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>9号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/038.png"></td>
+            <td>九尾</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/064.png"></td>
+            <td>勇基拉</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
+            <td>凯西</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>4%</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
+            <td>胖丁</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
+            <td>六尾</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
+            <td>卡蒂狗</td>
+            <td>8号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>8号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>8号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>8号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/059.png"></td>
+            <td>风速狗</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/064.png"></td>
+            <td>勇基拉</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/020.png"></td>
+            <td>拉达</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
+            <td>凯西</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>4%</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
+            <td>胖丁</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
+            <td>卡蒂狗</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
+            <td>六尾</td>
+            <td>7号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>7号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>7号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>7号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
+            <td>凯西</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
+            <td>胖丁</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
+            <td>六尾</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
+            <td>卡蒂狗</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>6号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>119</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/119.png"></td>
+            <td>金鱼王</td>
+            <td>6号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>118</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/118.png"></td>
+            <td>角金鱼</td>
+            <td>6号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>6号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>6号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>6号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>6号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/063.png"></td>
+            <td>凯西</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/039.png"></td>
+            <td>胖丁</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/037.png"></td>
+            <td>六尾</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/058.png"></td>
+            <td>卡蒂狗</td>
+            <td>5号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>5号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>5号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>5号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/054.png"></td>
+            <td>可达鸭</td>
+            <td>4号道路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/023.png"></td>
+            <td>阿柏蛇</td>
+            <td>4号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/027.png"></td>
+            <td>穿山鼠</td>
+            <td>4号道路</td>
+            <td>地面遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/056.png"></td>
+            <td>猴怪</td>
+            <td>4号道路</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>4号道路</td>
+            <td>水面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>4号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>4号道路</td>
+            <td>水面遭遇</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>4号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>4号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/027.png"></td>
+            <td>穿山鼠</td>
+            <td>3号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/023.png"></td>
+            <td>阿柏蛇</td>
+            <td>3号道路</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>3号道路</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/022.png"></td>
+            <td>大嘴雀</td>
+            <td>3号道路</td>
+            <td>天空遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/021.png"></td>
+            <td>烈雀</td>
+            <td>3号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
+            <td>喇叭芽</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/043.png"></td>
+            <td>走路草</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/010.png"></td>
+            <td>绿毛虫</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>2号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>2号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>2号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/043.png"></td>
+            <td>走路草</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/013.png"></td>
+            <td>独角虫</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
+            <td>喇叭芽</td>
+            <td>2号道路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/019.png"></td>
+            <td>小拉达</td>
+            <td>1号道路</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>1号道路</td>
+            <td>地面遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/018.png"></td>
+            <td>大比鸟</td>
+            <td>1号道路</td>
+            <td>天空遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/017.png"></td>
+            <td>比比鸟</td>
+            <td>1号道路</td>
+            <td>天空遭遇</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>1号道路</td>
+            <td>天空遭遇</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/112.png"></td>
+            <td>钻角犀兽</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/111.png"></td>
+            <td>独角犀牛</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
+            <td>大岩蛇</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>67</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/067.png"></td>
+            <td>豪力</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/066.png"></td>
+            <td>腕力</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
+            <td>隆隆石</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>冠军之路</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/124.png"></td>
+            <td>迷唇姐</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
+            <td>白海狮</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>86</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
+            <td>小海狮</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/080.png"></td>
+            <td>呆壳兽</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
+            <td>呆呆兽</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>16%</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/091.png"></td>
+            <td>刺甲贝</td>
+            <td>双子岛</td>
+            <td>水面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/073.png"></td>
+            <td>毒刺水母</td>
+            <td>双子岛</td>
+            <td>水面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/090.png"></td>
+            <td>大舌贝</td>
+            <td>双子岛</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/072.png"></td>
+            <td>玛瑙水母</td>
+            <td>双子岛</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/129.png"></td>
+            <td>鲤鱼王</td>
+            <td>双子岛</td>
+            <td>水面遭遇</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/087.png"></td>
+            <td>白海狮</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>86</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/086.png"></td>
+            <td>小海狮</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/080.png"></td>
+            <td>呆壳兽</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/079.png"></td>
+            <td>呆呆兽</td>
+            <td>双子岛</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>地鼠洞穴</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/051.png"></td>
+            <td>三地鼠</td>
+            <td>地鼠洞穴</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/050.png"></td>
+            <td>地鼠</td>
+            <td>地鼠洞穴</td>
+            <td>地面遭遇</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>125</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/125.png"></td>
+            <td>电击兽</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/089.png"></td>
+            <td>臭臭泥</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/109.png"></td>
+            <td>瓦斯弹</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/101.png"></td>
+            <td>顽皮雷弹</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/100.png"></td>
+            <td>霹雳电球</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>23%</td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/082.png"></td>
+            <td>三合一磁怪</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/081.png"></td>
+            <td>小磁怪</td>
+            <td>无人发电厂</td>
+            <td>地面遭遇</td>
+            <td>23%</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/115.png"></td>
+            <td>袋兽</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/104.png"></td>
+            <td>卡拉卡拉</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/111.png"></td>
+            <td>独角犀牛</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
+            <td>大岩蛇</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/066.png"></td>
+            <td>腕力</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
+            <td>隆隆石</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/075.png"></td>
+            <td>隆隆石</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/042.png"></td>
+            <td>大嘴蝠</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>岩山隧道</td>
+            <td>地面遭遇</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/036.png"></td>
+            <td>皮可西</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/095.png"></td>
+            <td>大岩蛇</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
+            <td>皮皮</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/046.png"></td>
+            <td>派拉斯</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>34%</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/041.png"></td>
+            <td>超音蝠</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/035.png"></td>
+            <td>皮皮</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>4%</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/074.png"></td>
+            <td>小拳石</td>
+            <td>月见山</td>
+            <td>地面遭遇</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/069.png"></td>
+            <td>喇叭芽</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/015.png"></td>
+            <td>大针蜂</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>1%</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/025.png"></td>
+            <td>皮卡丘</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/043.png"></td>
+            <td>走路草</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/011.png"></td>
+            <td>铁甲蛹</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/013.png"></td>
+            <td>独角虫</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/010.png"></td>
+            <td>绿毛虫</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>24%</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="https://www.serebii.net/pokedex-xy/icon/016.png"></td>
+            <td>波波</td>
+            <td>常磐森林</td>
+            <td>地面遭遇</td>
+            <td>15%</td>
+        </tr>
+    </tbody>
+</table>
 
-        function getChineseName(eng) { return nameMap[eng] || eng; }
-        function getChineseZone(eng) { return zoneMap[eng] || eng; }
 
-        // ============================================================
-        // 3. 解析函数
-        // ============================================================
-        function parseRawData(text) {
-            const zones = {};
-            const blocks = text.split(/Zone:\s*/).filter(b => b.trim().length > 0);
-            for (const block of blocks) {
-                const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-                if (lines.length === 0) continue;
-                const zoneName = lines[0];
-                if (!zones[zoneName]) {
-                    zones[zoneName] = { encounters: [] };
-                }
-                let currentType = null;
-                let currentLevels = null;
-                let currentPokemon = [];
-                let i = 1;
-                while (i < lines.length) {
-                    const line = lines[i];
-                    if (line.includes('Encounters:')) {
-                        if (currentType && currentPokemon.length > 0) {
-                            zones[zoneName].encounters.push({
-                                type: currentType,
-                                level: currentLevels,
-                                pokemon: currentPokemon.slice()
-                            });
-                            currentPokemon = [];
-                        }
-                        if (line.includes('Normal')) currentType = 'Normal';
-                        else if (line.includes('Water')) currentType = 'Water';
-                        else if (line.includes('Sky')) currentType = 'Sky';
-                        else currentType = 'Normal';
-                        i++;
-                        continue;
-                    }
-                    if (line.startsWith('Levels:')) {
-                        currentLevels = line.replace('Levels:', '').trim();
-                        i++;
-                        continue;
-                    }
-                    const match = line.match(/^(.+?)\s*\((\d+)%\)$/);
-                    if (match) {
-                        const engName = match[1].trim();
-                        const chance = parseInt(match[2], 10);
-                        currentPokemon.push({ eng: engName, chance });
-                    }
-                    i++;
-                }
-                if (currentType && currentPokemon.length > 0) {
-                    zones[zoneName].encounters.push({
-                        type: currentType,
-                        level: currentLevels,
-                        pokemon: currentPokemon.slice()
-                    });
-                }
-            }
-            return zones;
-        }
+<script>
+let currentWayFilter = "";
+let currentNumFilter = "";
 
-        // ============================================================
-        // 4. 渲染（归一化 + 排序）
-        // ============================================================
-        function renderTables(zones) {
-            const container = document.getElementById('tables-container');
-            const nav = document.getElementById('nav');
-            container.innerHTML = '';
-            nav.innerHTML = '';
+function applyFilters() {
+    const rows = document.querySelectorAll("#pokeTable tr");
 
-            // 编号映射
-            const idMap = {
-                'Pidgeot': 18, 'Pidgeotto': 17, 'Pidgey': 16,
-                'Ditto': 132, 'Magmar': 126, 'Raticate': 20,
-                'Grimer': 88, 'Muk': 89, 'Koffing': 109,
-                'Mew': 151, 'Weezing': 110,
-                'Cubone': 104, 'Golbat': 42, 'Zubat': 41,
-                'Haunter': 93, 'Gastly': 92,
-                'Psyduck': 54, 'Rhydon': 112, 'Rhyhorn': 111,
-                'Lickitung': 108, 'Golduck': 55, 'Graveler': 75,
-                'Geodude': 74, 'Poliwrath': 62, 'Poliwhirl': 61,
-                'Poliwag': 60, 'Magikarp': 129, 'Chansey': 113,
-                'Meowth': 52, 'Bellsprout': 69, 'Venonat': 48,
-                'Gloom': 44, 'Tentacruel': 73, 'Tentacool': 72,
-                'Exeggcute': 102, 'Nidorina': 30, 'Nidoran♀': 29,
-                'Nidorino': 33, 'Nidoran♂': 32, 'Nidoqueen': 31,
-                'Nidoking': 34, 'Exeggutor': 103, 'Fearow': 22,
-                'Spearow': 21, 'Rattata': 19, 'Victreebel': 71,
-                'Weepinbell': 70, 'Tangela': 114, 'Starmie': 121,
-                'Staryu': 120, 'Gyarados': 130, 'Dodrio': 85,
-                'Doduo': 84, 'Rapidash': 78, 'Ponyta': 77,
-                'Eevee': 133, 'Scyther': 123, 'Venomoth': 49,
-                'Tauros': 128, 'Pinsir': 127, 'Krabby': 98,
-                'Farfetch’d': 83, 'Kingler': 99, 'Seadra': 117,
-                'Horsea': 116, 'Mr. Mime': 122, 'Drowzee': 96,
-                'Dragonair': 148, 'Dratini': 147, 'Ninetales': 38,
-                'Kadabra': 64, 'Abra': 63, 'Jigglypuff': 39,
-                'Vulpix': 37, 'Growlithe': 58, 'Arcanine': 59,
-                'Seaking': 119, 'Goldeen': 118, 'Ekans': 23,
-                'Sandshrew': 27, 'Mankey': 56, 'Oddish': 43,
-                'Caterpie': 10, 'Weedle': 13, 'Onix': 95,
-                'Machoke': 67, 'Machop': 66, 'Jynx': 124,
-                'Dewgong': 87, 'Seel': 86, 'Slowbro': 80,
-                'Slowpoke': 79, 'Cloyster': 91, 'Shellder': 90,
-                'Dugtrio': 51, 'Diglett': 50, 'Electabuzz': 125,
-                'Electrode': 101, 'Voltorb': 100, 'Magneton': 82,
-                'Magnemite': 81, 'Kangaskhan': 115, 'Clefable': 36,
-                'Clefairy': 35, 'Paras': 46, 'Beedrill': 15,
-                'Pikachu': 25, 'Metapod': 11
-            };
+    const numKeywords = currentNumFilter
+        ? currentNumFilter.split(/[,，/|;；]+/)
+        : [];
 
-            // ---- 第一步：为每个区域生成最终的行列表（已聚合概率） ----
-            const zoneRowsMap = new Map(); // zoneName -> { rows: [], title: chineseName }
-            for (const engName of Object.keys(zones)) {
-                const data = zones[engName];
-                const chineseName = getChineseZone(engName);
-                const rawRows = [];
-                for (const enc of data.encounters) {
-                    const type = enc.type;
-                    for (const pkm of enc.pokemon) {
-                        const eng = pkm.eng;
-                        const chance = pkm.chance;
-                        const numId = idMap[eng] || 9999;
-                        const chinese = getChineseName(eng);
-                        const imgUrl = `https://s.pokeuniv.com/pokemon/icon/${numId}.png`;
-                        rawRows.push({
-                            id: numId,
-                            img: imgUrl,
-                            name: chinese,
-                            type: type,
-                            chance: chance,
-                            typeOrder: typeOrder[type] || 99
-                        });
-                    }
-                }
-                // 按 (id, type) 聚合概率
-                const groupMap = new Map();
-                for (const row of rawRows) {
-                    const key = `${row.id}|${row.type}`;
-                    if (groupMap.has(key)) {
-                        groupMap.get(key).chance += row.chance;
-                    } else {
-                        groupMap.set(key, {
-                            id: row.id,
-                            img: row.img,
-                            name: row.name,
-                            type: row.type,
-                            typeOrder: row.typeOrder,
-                            chance: row.chance
-                        });
-                    }
-                }
-                const groupedRows = Array.from(groupMap.values());
-                // 排序
-                groupedRows.sort((a, b) => {
-                    if (a.typeOrder !== b.typeOrder) return a.typeOrder - b.typeOrder;
-                    return a.id - b.id;
-                });
-                zoneRowsMap.set(engName, { rows: groupedRows, title: chineseName });
-            }
+    rows.forEach(row => {
+        const num = row.cells[0].innerText;
+        const way = row.cells[3].innerText;
 
-            // ---- 第二步：按内容（行列表）分组 ----
-            const contentGroups = new Map(); // key: 序列化的行字符串 -> { zones: [], rows: [] }
-            for (const [engName, { rows, title }] of zoneRowsMap) {
-                const rowStrings = rows.map(r => `${r.id}|${r.type}|${r.chance}`).join(';');
-                if (!contentGroups.has(rowStrings)) {
-                    contentGroups.set(rowStrings, { zones: [], rows: rows });
-                }
-                contentGroups.get(rowStrings).zones.push(title);
-            }
+        // 方式筛选
+        const wayMatch =
+            currentWayFilter === "" ||
+            way.includes(currentWayFilter);
 
-            // ---- 第三步：构建表格数据，并对每个表格进行概率归一化 ----
-            const tableData = [];
-            for (const [key, group] of contentGroups) {
-                const zonesList = group.zones;
-                const rows = group.rows;
-                const title = zonesList.join(' / ');
+        // 编号筛选
+        const numMatch =
+            currentNumFilter === "" ||
+            numKeywords.some(k => num.includes(k));
 
-                // 归一化：按捕获方式分组，分别将概率总和调整为100
-                const typeGroups = new Map(); // type -> array of rows
-                for (const row of rows) {
-                    if (!typeGroups.has(row.type)) typeGroups.set(row.type, []);
-                    typeGroups.get(row.type).push(row);
-                }
-                const normalizedRows = [];
-                for (const [type, typeRows] of typeGroups) {
-                    const total = typeRows.reduce((sum, r) => sum + r.chance, 0);
-                    if (total === 0) continue;
-                    const scale = 100 / total;
-                    for (const row of typeRows) {
-                        // 保留一位小数
-                        const newChance = Math.round(row.chance * scale * 10) / 10;
-                        normalizedRows.push({ ...row, chance: newChance });
-                    }
-                }
-                // 重新排序
-                normalizedRows.sort((a, b) => {
-                    if (a.typeOrder !== b.typeOrder) return a.typeOrder - b.typeOrder;
-                    return a.id - b.id;
-                });
+        // 两个条件同时满足
+        row.style.display = wayMatch && numMatch ? "" : "none";
+    });
+}
 
-                tableData.push({ title, rows: normalizedRows });
-            }
+function filter(keyword) {
+    currentWayFilter = keyword;
+    applyFilters();
+}
 
-            // ---- 第四步：按标题升序排序 ----
-            tableData.sort((a, b) => a.title.localeCompare(b.title, 'zh'));
+function real_numfilter() {
+    currentNumFilter =
+        document.getElementById("numfilter").value.trim();
+    applyFilters();
+}
+function resetFilters() {
+    currentWayFilter = "";
+    currentNumFilter = "";
 
-            // ---- 第五步：生成表格 ----
-            for (const { title, rows } of tableData) {
-                const id = 'zone-' + title.replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '-');
+    // 清空输入框
+    document.getElementById("numfilter").value = "";
 
-                // 导航按钮
-                const link = document.createElement('a');
-                link.href = '#' + id;
-                link.textContent = title;
-                nav.appendChild(link);
-
-                // 表格
-                const table = document.createElement('table');
-                table.id = id;
-                const thead = document.createElement('thead');
-                const headerRow = document.createElement('tr');
-                headerRow.className = 'zone-header';
-                const th = document.createElement('th');
-                th.colSpan = 5;
-                th.textContent = title;
-                headerRow.appendChild(th);
-                thead.appendChild(headerRow);
-                table.appendChild(thead);
-
-                const colRow = document.createElement('tr');
-                ['编号', '图片', '名称', '捕获方式', '捕获概率'].forEach(text => {
-                    const th = document.createElement('th');
-                    th.textContent = text;
-                    colRow.appendChild(th);
-                });
-                table.appendChild(colRow);
-
-                const tbody = document.createElement('tbody');
-                for (const row of rows) {
-                    const tr = document.createElement('tr');
-                    // 编号
-                    const tdId = document.createElement('td');
-                    tdId.textContent = row.id === 9999 ? '??' : row.id;
-                    tr.appendChild(tdId);
-                    // 图片
-                    const tdImg = document.createElement('td');
-                    const img = document.createElement('img');
-                    img.src = row.img;
-                    img.alt = row.name;
-                    img.loading = 'lazy';
-                    tdImg.appendChild(img);
-                    tr.appendChild(tdImg);
-                    // 名称
-                    const tdName = document.createElement('td');
-                    tdName.textContent = row.name;
-                    tr.appendChild(tdName);
-                    // 捕获方式
-                    const tdType = document.createElement('td');
-                    let badgeClass = 'badge-normal';
-                    if (row.type === 'Water') badgeClass = 'badge-water';
-                    else if (row.type === 'Sky') badgeClass = 'badge-sky';
-                    const span = document.createElement('span');
-                    span.className = `capture-badge ${badgeClass}`;
-                    span.textContent = row.type === 'Normal' ? '普通' : (row.type === 'Water' ? '水上' : '天空');
-                    tdType.appendChild(span);
-                    tr.appendChild(tdType);
-                    // 概率
-                    const tdChance = document.createElement('td');
-                    tdChance.textContent = row.chance + '%';
-                    tr.appendChild(tdChance);
-                    tbody.appendChild(tr);
-                }
-                table.appendChild(tbody);
-                container.appendChild(table);
-            }
-
-            document.getElementById('loading').style.display = 'none';
-        }
-
-        // ============================================================
-        // 5. 执行
-        // ============================================================
-        (function() {
-            const zones = parseRawData(rawData);
-            renderTables(zones);
-        })();
-    </script>
-</body>
-</html>
+    // 显示全部
+    applyFilters();
+}
+</script>
