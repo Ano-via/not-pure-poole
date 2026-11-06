@@ -1,0 +1,227 @@
+---
+layout: post
+title: "扩展为 9:16"
+permalink: 916.html
+---
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>图片扩展为 9:16</title>
+<style>
+  .imgext-container, .imgext-container * {box-sizing:border-box}
+  .imgext-container {margin:0;padding:32px 18px;background:#f5f6f8;color:#20242b;font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+  .imgext-main{max-width:820px;margin:auto}
+  .imgext-main h1{font-size:25px;margin:0 0 8px}
+  .imgext-sub{color:#667085;margin:0 0 22px}
+  #imgext-drop{border:2px dashed #aab2bf;border-radius:16px;background:#fff;padding:42px 20px;text-align:center;cursor:pointer;transition:.15s}
+  #imgext-drop.imgext-over{border-color:#356ae6;background:#f0f5ff}
+  #imgext-drop strong{display:block;font-size:18px;margin-bottom:6px}
+  .imgext-btn{border:0;border-radius:9px;background:#245eea;color:white;padding:10px 17px;font:inherit;cursor:pointer}
+  .imgext-btn:disabled{opacity:.45;cursor:not-allowed}
+  .imgext-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0}
+  .imgext-hint{font-size:13px;color:#667085}
+  #imgext-status{margin:12px 0;color:#475467;white-space:pre-wrap}
+  #imgext-items{display:grid;gap:10px;margin-top:16px}
+  .imgext-item{display:flex;gap:13px;align-items:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px}
+  .imgext-item img{width:64px;height:80px;object-fit:contain;background:#eef0f3;border-radius:6px}
+  .imgext-meta{min-width:0;flex:1}
+  .imgext-name{font-weight:600;overflow-wrap:anywhere}
+  .imgext-detail{font-size:13px;color:#667085}
+  .imgext-swatch{display:inline-block;width:12px;height:12px;border:1px solid #999;vertical-align:-2px;margin-right:5px}
+  .imgext-download{font-size:13px;text-decoration:none;color:#245eea}
+  .imgext-input{display:none}
+</style>
+</head>
+<body>
+<div class="imgext-container">
+  <main class="imgext-main">
+    <h1>图片扩展为 9:16 竖屏</h1>
+    <p class="imgext-sub">读取原图左上角像素颜色，以该颜色扩展画布；原图不缩放、不裁切，居中放置。</p>
+    <div id="imgext-drop" tabindex="0" role="button" aria-label="拖入图片或点击选择">
+      <strong>拖入图片到这里</strong>
+      <span>或点击选择 JPG / JPEG / PNG / WEBP / AVIF</span>
+    </div>
+    <input id="imgext-picker" class="imgext-input" type="file" accept=".jpg,.jpeg,.png,.webp,.avif,image/jpeg,image/png,image/webp,image/avif" multiple>
+    <div class="imgext-toolbar">
+      <button id="imgext-process" class="imgext-btn" disabled>处理并下载</button>
+      <button id="imgext-clear" class="imgext-btn" type="button">清空列表</button>
+      <span class="imgext-hint">单张图片直接下载；多张图片自动打包为 ZIP。</span>
+    </div>
+    <div id="imgext-status" aria-live="polite"></div>
+    <div id="imgext-items"></div>
+  </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+(() => {
+  const allowed = new Set(["jpg","jpeg","png","webp","avif"]);
+  const drop = document.querySelector("#imgext-drop");
+  const picker = document.querySelector("#imgext-picker");
+  const processBtn = document.querySelector("#imgext-process");
+  const clearBtn = document.querySelector("#imgext-clear");
+  const status = document.querySelector("#imgext-status");
+  const itemsEl = document.querySelector("#imgext-items");
+  let files = [];
+
+  const extOf = name => (name.split(".").pop() || "").toLowerCase();
+  const mimeOf = ext => ({jpg:"image/jpeg",jpeg:"image/jpeg",png:"image/png",webp:"image/webp",avif:"image/avif"})[ext];
+
+  function addFiles(list) {
+    const incoming = [...list].filter(f => allowed.has(extOf(f.name)) || allowed.has((f.type.split("/")[1] || "").replace("jpeg","jpg")));
+    const rejected = list.length - incoming.length;
+    files.push(...incoming);
+    render();
+    status.textContent = `${incoming.length} 张图片已加入${rejected ? `；忽略 ${rejected} 个不支持的文件` : ""}。`;
+  }
+
+  function render() {
+    itemsEl.replaceChildren();
+    files.forEach((file) => {
+      const row = document.createElement("div");
+      row.className = "imgext-item";
+      const img = document.createElement("img");
+      img.alt = "";
+      img.src = URL.createObjectURL(file);
+      const meta = document.createElement("div");
+      meta.className = "imgext-meta";
+      const name = document.createElement("div");
+      name.className = "imgext-name";
+      name.textContent = file.name;
+      const detail = document.createElement("div");
+      detail.className = "imgext-detail";
+      detail.textContent = `${(file.size / 1024).toFixed(1)} KB · ${file.type || extOf(file.name).toUpperCase()}`;
+      meta.append(name, detail);
+      row.append(img, meta);
+      itemsEl.append(row);
+    });
+    processBtn.disabled = files.length === 0;
+  }
+
+  function loadImage(file) {
+    return new Promise((resolve, reject) => {
+      const url = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
+      img.onerror = () => { URL.revokeObjectURL(url); reject(new Error("图片无法解码")); };
+      img.src = url;
+    });
+  }
+
+  function canvasBlob(canvas, mime) {
+    return new Promise((resolve, reject) => {
+      canvas.toBlob(blob => {
+        if (!blob) return reject(new Error(`浏览器无法编码为 ${mime}`));
+        if (blob.type !== mime) return reject(new Error(`当前浏览器不支持输出 ${mime}，实际返回 ${blob.type || "未知格式"}。为避免格式变化，已停止该图片。`));
+        resolve(blob);
+      }, mime, 0.95);
+    });
+  }
+
+  async function processOne(file) {
+    const ext = extOf(file.name);
+    const mime = mimeOf(ext);
+    const img = await loadImage(file);
+    const w = img.naturalWidth, h = img.naturalHeight;
+    // 只扩展画布，不缩放原图：输出尺寸取满足 9:16 的最小整数尺寸。
+    let outW, outH;
+    if (w / h > 9 / 16) {
+      outW = w;
+      outH = Math.ceil(w * 16 / 9);
+    } else {
+      outH = h;
+      outW = Math.ceil(h * 9 / 16);
+    }
+    const canvas = document.createElement("canvas");
+    canvas.width = outW;
+    canvas.height = outH;
+    const ctx = canvas.getContext("2d", {willReadFrequently:true});
+    ctx.drawImage(img, 0, 0);
+    const pixel = ctx.getImageData(0, 0, 1, 1).data;
+    const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, outW, outH);
+    const x = Math.floor((outW - w) / 2);
+    const y = Math.floor((outH - h) / 2);
+    ctx.drawImage(img, x, y, w, h);
+    const blob = await canvasBlob(canvas, mime);
+    const stem = file.name.replace(/\.[^.]+$/, "");
+    return {blob, name:`${stem}_9x16.${ext}`, w, h, outW, outH, color};
+  }
+
+  function download(blob, name) {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = name;
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+
+  processBtn.addEventListener("click", async () => {
+    processBtn.disabled = true;
+    clearBtn.disabled = true;
+    const results = [];
+    const errors = [];
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      status.textContent = `正在处理 ${i + 1}/${files.length}：${file.name}`;
+      try {
+        const result = await processOne(file);
+        results.push({...result, original:file.name});
+      } catch (e) {
+        errors.push(`${file.name}：${e.message}`);
+      }
+    }
+    try {
+      if (results.length === 1 && files.length === 1) {
+        download(results[0].blob, results[0].name);
+      } else if (results.length > 0) {
+        if (typeof JSZip === "undefined") throw new Error("ZIP 组件加载失败，请检查网络后刷新页面。");
+        const zip = new JSZip();
+        results.forEach(r => zip.file(r.name, r.blob));
+        const blob = await zip.generateAsync({type:"blob"});
+        download(blob, "images_9x16.zip");
+      }
+      const summary = results.map(r =>
+        `✓ ${r.original}：${r.w}×${r.h} → ${r.outW}×${r.outH}，颜色 ${r.color}`
+      );
+      status.textContent = [...summary, ...errors.map(e => `✗ ${e}`)].join("\n") || "没有成功处理的图片。";
+      // 显示处理结果与颜色信息
+      [...itemsEl.children].forEach((row, i) => {
+        const r = results[i];
+        if (!r) return;
+        const detail = row.querySelector(".imgext-detail");
+        detail.innerHTML = "";
+        detail.append(document.createTextNode(`${r.w}×${r.h} → ${r.outW}×${r.outH} · `));
+        const swatch = document.createElement("span");
+        swatch.className = "imgext-swatch";
+        swatch.style.background = r.color;
+        detail.append(swatch, document.createTextNode(r.color));
+      });
+    } catch (e) {
+      status.textContent += `\n${e.message}`;
+    } finally {
+      processBtn.disabled = files.length === 0;
+      clearBtn.disabled = false;
+    }
+  });
+
+  drop.addEventListener("click", () => picker.click());
+  drop.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") picker.click(); });
+  picker.addEventListener("change", e => { addFiles([...e.target.files]); picker.value = ""; });
+  ["dragenter","dragover"].forEach(type => drop.addEventListener(type, e => {
+    e.preventDefault(); drop.classList.add("imgext-over");
+  }));
+  ["dragleave","drop"].forEach(type => drop.addEventListener(type, e => {
+    e.preventDefault(); drop.classList.remove("imgext-over");
+  }));
+  drop.addEventListener("drop", e => addFiles([...e.dataTransfer.files]));
+  clearBtn.addEventListener("click", () => {
+    files = []; render(); status.textContent = "";
+  });
+})();
+</script>
+</body>
+</html>
