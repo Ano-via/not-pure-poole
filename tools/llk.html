@@ -1,0 +1,2277 @@
+---
+layout: post
+title: "101连连看"
+permalink: llk.html
+---
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>101连连看 · 独立命名空间版</title>
+<style>
+/* 完全独立命名空间：所有样式严格限定在 #llk101-app-root 内 */
+#llk101-app-root {
+  --llk-bg-outer: linear-gradient(135deg, #ffe7f0, #f9d8eb 48%, #e8e1ff);
+  --llk-card-bg: rgba(255, 250, 245, 0.96);
+  --llk-border: #ffffff;
+  --llk-primary: #e85d9d;
+  --llk-primary-dark: #b93e78;
+  --llk-soft: #ffe1ed;
+  --llk-soft-border: #ffd0e1;
+  --llk-ink: #65445a;
+  --llk-sub-ink: #9a7189;
+  --llk-board-bg: linear-gradient(145deg, #fff1f6, #fffaf1);
+  --llk-board-border: #f8c6da;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #ffe5ef);
+  --llk-tile-border: #f4bfd3;
+  --llk-tile-shadow: #e9b2c8;
+  --llk-sel-bg: linear-gradient(145deg, #ffcae0, #f58db8);
+  --llk-line-color: #ed4b98;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--llk-bg-outer);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--llk-ink);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#llk101-app-root *,
+#llk101-app-root *::before,
+#llk101-app-root *::after {
+  box-sizing: border-box;
+}
+
+/* 6款皮肤主题变量 */
+#llk101-app-root[data-theme="pink"] {
+  --llk-bg-outer: linear-gradient(135deg, #ffe7f0, #f9d8eb 48%, #e8e1ff);
+  --llk-card-bg: rgba(255, 250, 245, 0.96);
+  --llk-border: #ffffff;
+  --llk-primary: #e85d9d;
+  --llk-primary-dark: #b93e78;
+  --llk-soft: #ffe1ed;
+  --llk-soft-border: #ffd0e1;
+  --llk-ink: #65445a;
+  --llk-sub-ink: #9a7189;
+  --llk-board-bg: linear-gradient(145deg, #fff1f6, #fffaf1);
+  --llk-board-border: #f8c6da;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #ffe5ef);
+  --llk-tile-border: #f4bfd3;
+  --llk-tile-shadow: #e9b2c8;
+  --llk-sel-bg: linear-gradient(145deg, #ffcae0, #f58db8);
+  --llk-line-color: #ed4b98;
+}
+
+#llk101-app-root[data-theme="green"] {
+  --llk-bg-outer: linear-gradient(135deg, #e2f8ec, #cbf0dc 50%, #e4f7f5);
+  --llk-card-bg: rgba(248, 255, 251, 0.96);
+  --llk-border: #ffffff;
+  --llk-primary: #27a86b;
+  --llk-primary-dark: #197a4c;
+  --llk-soft: #dcf7e8;
+  --llk-soft-border: #b8ebd0;
+  --llk-ink: #27543e;
+  --llk-sub-ink: #5f8c76;
+  --llk-board-bg: linear-gradient(145deg, #eefbf3, #f8fffb);
+  --llk-board-border: #aee2c6;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #e3f8ec);
+  --llk-tile-border: #b2e4c9;
+  --llk-tile-shadow: #98d4b4;
+  --llk-sel-bg: linear-gradient(145deg, #a7ecc6, #5cd195);
+  --llk-line-color: #1e9e60;
+}
+
+#llk101-app-root[data-theme="blue"] {
+  --llk-bg-outer: linear-gradient(135deg, #e3f2fd, #cfe8fc 50%, #e1ecff);
+  --llk-card-bg: rgba(248, 252, 255, 0.96);
+  --llk-border: #ffffff;
+  --llk-primary: #2b88d9;
+  --llk-primary-dark: #1b62a3;
+  --llk-soft: #dceeff;
+  --llk-soft-border: #b9dcfa;
+  --llk-ink: #24486b;
+  --llk-sub-ink: #5d80a3;
+  --llk-board-bg: linear-gradient(145deg, #edf6ff, #f9fcff);
+  --llk-board-border: #add5f7;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #e3f1ff);
+  --llk-tile-border: #b5d8f7;
+  --llk-tile-shadow: #9ac4eb;
+  --llk-sel-bg: linear-gradient(145deg, #add8ff, #64b1f5);
+  --llk-line-color: #1f7ed1;
+}
+
+#llk101-app-root[data-theme="purple"] {
+  --llk-bg-outer: linear-gradient(135deg, #f3e5f5, #e5d0f7 50%, #ede7f6);
+  --llk-card-bg: rgba(252, 248, 255, 0.96);
+  --llk-border: #ffffff;
+  --llk-primary: #8e44ad;
+  --llk-primary-dark: #63297d;
+  --llk-soft: #f1e1fa;
+  --llk-soft-border: #dfc0f2;
+  --llk-ink: #4a265c;
+  --llk-sub-ink: #7f5b91;
+  --llk-board-bg: linear-gradient(145deg, #f7edfc, #fcf9ff);
+  --llk-board-border: #d7b2ed;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #f2e4fa);
+  --llk-tile-border: #dab9ed;
+  --llk-tile-shadow: #c59ede;
+  --llk-sel-bg: linear-gradient(145deg, #dfb8f7, #b573e0);
+  --llk-line-color: #8e44ad;
+}
+
+#llk101-app-root[data-theme="black"] {
+  --llk-bg-outer: linear-gradient(135deg, #12141a, #1d2029 50%, #14171f);
+  --llk-card-bg: rgba(28, 31, 40, 0.97);
+  --llk-border: #383e4f;
+  --llk-primary: #00d2ff;
+  --llk-primary-dark: #0095b8;
+  --llk-soft: #2a2f3d;
+  --llk-soft-border: #3f4659;
+  --llk-ink: #eef2ff;
+  --llk-sub-ink: #9aa4bf;
+  --llk-board-bg: linear-gradient(145deg, #181b24, #212530);
+  --llk-board-border: #3a4154;
+  --llk-tile-bg: linear-gradient(145deg, #2d3242, #222633);
+  --llk-tile-border: #434b61;
+  --llk-tile-shadow: #11131a;
+  --llk-sel-bg: linear-gradient(145deg, #0099bd, #006680);
+  --llk-line-color: #00e5ff;
+}
+
+#llk101-app-root[data-theme="white"] {
+  --llk-bg-outer: linear-gradient(135deg, #f2f4f7, #e6e9ef 50%, #f5f6f8);
+  --llk-card-bg: #ffffff;
+  --llk-border: #e1e4ea;
+  --llk-primary: #2c3e50;
+  --llk-primary-dark: #1a252f;
+  --llk-soft: #f0f2f5;
+  --llk-soft-border: #dcdfe6;
+  --llk-ink: #2c3e50;
+  --llk-sub-ink: #6c7a89;
+  --llk-board-bg: #f9fafb;
+  --llk-board-border: #d5d9e2;
+  --llk-tile-bg: linear-gradient(145deg, #ffffff, #f2f4f7);
+  --llk-tile-border: #d0d5dd;
+  --llk-tile-shadow: #bfc5d0;
+  --llk-sel-bg: linear-gradient(145deg, #d6e4ff, #adc6ff);
+  --llk-line-color: #2c3e50;
+}
+
+#llk101-app-root .llk-shell {
+  width: min(100%, 1040px);
+  background: var(--llk-card-bg);
+  border: 4px solid var(--llk-border);
+  border-radius: 24px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.14);
+  padding: 14px;
+  position: relative;
+}
+
+#llk101-app-root .llk-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#llk101-app-root .llk-brand {
+  font-size: clamp(20px, 4.5vw, 30px);
+  font-weight: 900;
+  color: var(--llk-primary);
+  line-height: 1.15;
+}
+
+#llk101-app-root .llk-brand small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--llk-sub-ink);
+  font-weight: 600;
+}
+
+#llk101-app-root .llk-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(56px, 1fr));
+  gap: 6px;
+  flex: 1;
+  max-width: 520px;
+}
+
+#llk101-app-root .llk-stat {
+  background: var(--llk-soft);
+  border: 1.5px solid var(--llk-soft-border);
+  border-radius: 12px;
+  padding: 5px 6px;
+  text-align: center;
+}
+
+#llk101-app-root .llk-stat b {
+  display: block;
+  font-size: clamp(14px, 3.2vw, 18px);
+  color: var(--llk-primary);
+  line-height: 1.2;
+}
+
+#llk101-app-root .llk-stat span {
+  font-size: 10px;
+  color: var(--llk-sub-ink);
+  display: block;
+}
+
+#llk101-app-root .llk-stat.llk-time-warn b {
+  color: #e53935;
+  animation: llk-blink 0.6s infinite;
+}
+
+@keyframes llk-blink {
+  50% { opacity: 0.45; }
+}
+
+#llk101-app-root .llk-stage-banner {
+  margin-top: 10px;
+  background: var(--llk-soft);
+  border: 1.5px dashed var(--llk-primary);
+  border-radius: 12px;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12.5px;
+}
+
+#llk101-app-root .llk-stage-tag {
+  font-weight: 800;
+  color: var(--llk-primary);
+}
+
+#llk101-app-root .llk-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+#llk101-app-root .llk-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+#llk101-app-root .llk-btn {
+  font: inherit;
+  font-size: 12.5px;
+  border: 0;
+  border-radius: 10px;
+  padding: 8px 11px;
+  background: var(--llk-soft);
+  color: var(--llk-ink);
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--llk-tile-shadow);
+  transition: transform 0.1s, filter 0.1s;
+  white-space: nowrap;
+}
+
+#llk101-app-root .llk-btn:hover:not(:disabled) {
+  filter: brightness(1.04);
+}
+
+#llk101-app-root .llk-btn:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+#llk101-app-root .llk-btn:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+#llk101-app-root .llk-btn.llk-active,
+#llk101-app-root .llk-btn.llk-primary {
+  background: var(--llk-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 0 var(--llk-primary-dark);
+}
+
+#llk101-app-root[data-theme="black"] .llk-btn.llk-active,
+#llk101-app-root[data-theme="black"] .llk-btn.llk-primary {
+  color: #0e131a;
+}
+
+#llk101-app-root .llk-btn.llk-danger {
+  background: #ffebee;
+  color: #c62828;
+  box-shadow: 0 2px 0 #ef9a9a;
+}
+
+#llk101-app-root .llk-board-wrap {
+  background: var(--llk-board-bg);
+  border: 2.5px solid var(--llk-board-border);
+  border-radius: 16px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#llk101-app-root .llk-board {
+  display: grid;
+  gap: 4px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  touch-action: manipulation;
+}
+
+#llk101-app-root .llk-tile {
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 0;
+  border-radius: 8px;
+  background: var(--llk-tile-bg);
+  border: 1.5px solid var(--llk-tile-border);
+  display: grid;
+  place-items: center;
+  font-size: clamp(15px, 3.8vw, 27px);
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--llk-tile-shadow);
+  transition: transform 0.1s;
+  position: relative;
+  color: var(--llk-ink);
+}
+
+#llk101-app-root .llk-tile.llk-selected {
+  background: var(--llk-sel-bg);
+  border-color: var(--llk-primary);
+  box-shadow: 0 0 0 2.5px var(--llk-primary);
+  transform: scale(0.92);
+}
+
+#llk101-app-root .llk-tile.llk-empty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 骷髅障碍样式 */
+#llk101-app-root .llk-tile.llk-skull {
+  background: linear-gradient(145deg, #3a3a42, #1f1f24);
+  border-color: #61616b;
+  box-shadow: 0 2px 0 #111;
+  cursor: not-allowed;
+  color: #fff;
+}
+
+/* 冻结遮罩与倒计时角标 */
+#llk101-app-root .llk-tile.llk-frozen {
+  border-color: #4fc3f7;
+  box-shadow: inset 0 0 10px rgba(79, 195, 247, 0.75), 0 2px 0 #29b6f6;
+  cursor: not-allowed;
+}
+
+#llk101-app-root .llk-freeze-badge {
+  position: absolute;
+  inset: 0;
+  background: rgba(179, 229, 252, 0.52);
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1px 3px;
+  font-size: 10px;
+  font-weight: 900;
+  color: #01579b;
+  text-shadow: 0 0 3px #fff;
+  pointer-events: none;
+}
+
+/* 面具伪装样式 */
+#llk101-app-root .llk-tile.llk-masked {
+  background: linear-gradient(145deg, #fff3e0, #ffe0b2);
+  border: 2px dashed #fb8c00;
+}
+
+#llk101-app-root .llk-mask-tag {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  font-size: 9px;
+  line-height: 1;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+#llk101-app-root .llk-tile.llk-hint {
+  animation: llk-pulse 0.5s 4;
+  border-color: #ff9800;
+  box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.65);
+}
+
+@keyframes llk-pulse {
+  50% { transform: scale(0.84); filter: brightness(1.2); }
+}
+
+#llk101-app-root .llk-svg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+#llk101-app-root .llk-pause-mask {
+  position: absolute;
+  inset: 0;
+  background: var(--llk-card-bg);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  gap: 10px;
+}
+
+#llk101-app-root .llk-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--llk-sub-ink);
+}
+
+#llk101-app-root .llk-message {
+  font-weight: 800;
+  color: var(--llk-primary);
+}
+
+/* 弹窗层 */
+#llk101-app-root .llk-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 18, 28, 0.65);
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  z-index: 9999;
+}
+
+#llk101-app-root .llk-dialog {
+  width: min(480px, 100%);
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--llk-card-bg);
+  border: 3px solid var(--llk-border);
+  border-radius: 20px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  color: var(--llk-ink);
+}
+
+#llk101-app-root .llk-dialog h2 {
+  color: var(--llk-primary);
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+#llk101-app-root .llk-box {
+  text-align: left;
+  background: var(--llk-soft);
+  border: 1.5px solid var(--llk-soft-border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 8px 0;
+}
+
+#llk101-app-root .llk-box ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+#llk101-app-root .llk-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 12.5px;
+}
+
+#llk101-app-root .llk-table th,
+#llk101-app-root .llk-table td {
+  padding: 7px 6px;
+  border-bottom: 1px solid var(--llk-soft-border);
+  text-align: center;
+}
+
+#llk101-app-root .llk-table th {
+  background: var(--llk-soft);
+  color: var(--llk-primary);
+}
+
+#llk101-app-root .llk-avatar-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  border: 1.5px solid var(--llk-primary);
+}
+
+#llk101-app-root .llk-input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1.5px solid var(--llk-soft-border);
+  background: #ffffff;
+  color: #333;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+#llk101-app-root .llk-setting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+
+#llk101-app-root .llk-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+#llk101-app-root .llk-hidden {
+  display: none !important;
+}
+
+/* 移动端精细适配 */
+@media (max-width: 600px) {
+  #llk101-app-root {
+    padding: 6px;
+  }
+  #llk101-app-root .llk-shell {
+    padding: 10px;
+    border-radius: 18px;
+    border-width: 3px;
+  }
+  #llk101-app-root .llk-stats {
+    width: 100%;
+    max-width: none;
+  }
+  #llk101-app-root .llk-btn {
+    padding: 7px 9px;
+    font-size: 11.5px;
+  }
+  #llk101-app-root .llk-board {
+    gap: 2.5px;
+  }
+  #llk101-app-root .llk-tile {
+    border-radius: 5px;
+    border-width: 1px;
+  }
+  #llk101-app-root .llk-board-wrap {
+    padding: 6px;
+  }
+}
+</style>
+</head>
+<body style="margin:0;">
+
+<div id="llk101-app-root" data-theme="pink">
+  <div class="llk-shell">
+    <header class="llk-header">
+      <div class="llk-brand">
+        101连连看
+        <small>101 STAGES CHALLENGE · MOBILE &amp; DESKTOP</small>
+      </div>
+      <div class="llk-stats">
+        <div class="llk-stat"><b data-llk="stage">1</b><span>当前关卡</span></div>
+        <div class="llk-stat" data-llk="timeBox"><b data-llk="time">30s</b><span>倒计时</span></div>
+        <div class="llk-stat"><b data-llk="life">3</b><span>生命点数</span></div>
+        <div class="llk-stat"><b data-llk="hintCount">3</b><span>提示点数</span></div>
+        <div class="llk-stat"><b data-llk="score">0</b><span>总得分</span></div>
+      </div>
+    </header>
+
+    <div class="llk-stage-banner">
+      <span class="llk-stage-tag" data-llk="modeBadge">单人 Easy 模式</span>
+      <span data-llk="ruleBadge">本关特性：标准消除（≤二转弯）</span>
+    </div>
+
+    <div class="llk-toolbar">
+      <div class="llk-group" data-llk="modeGroup">
+        <button type="button" class="llk-btn llk-active" data-mode="easy">单人 Easy 模式</button>
+        <button type="button" class="llk-btn" data-mode="normal">单人 Normal 模式</button>
+        <button type="button" class="llk-btn" data-mode="hard">单人 Hard 模式</button>
+        <button type="button" class="llk-btn" data-mode="endless">101无尽模式 🔥</button>
+      </div>
+      <div class="llk-group">
+        <button type="button" class="llk-btn" data-llk="btnHint">提示 ✨</button>
+        <button type="button" class="llk-btn" data-llk="btnShuffle">重新洗牌 ↻</button>
+        <button type="button" class="llk-btn" data-llk="btnPause">暂停 Ⅱ</button>
+        <button type="button" class="llk-btn" data-llk="btnSetting">设置 ⚙️</button>
+        <button type="button" class="llk-btn" data-llk="btnBoard">查看榜单 🏆</button>
+        <button type="button" class="llk-btn llk-danger" data-llk="btnGiveUp">放弃此局</button>
+      </div>
+    </div>
+
+    <section class="llk-board-wrap" data-llk="boardWrap">
+      <div class="llk-board" data-llk="board" aria-label="101连连看棋盘"></div>
+      <svg class="llk-svg" data-llk="svg"></svg>
+      <div class="llk-pause-mask llk-hidden" data-llk="pauseMask">
+        <h3 style="margin:0;color:var(--llk-primary);">⏸ 游戏已暂停</h3>
+        <p style="margin:0;font-size:13px;color:var(--llk-sub-ink);">牌面已保护隐藏，点击下方按钮恢复</p>
+        <button type="button" class="llk-btn llk-primary" data-llk="btnResumeInline">取消暂停 ▶</button>
+      </div>
+    </section>
+
+    <div class="llk-bottom">
+      <span class="llk-message" data-llk="message">欢迎来到 101连连看！每次消除或洗牌都会重置 30 秒倒计时。</span>
+      <span>操作：点击1次＝选取 ｜ 右键或再点同牌＝取消选取</span>
+    </div>
+  </div>
+
+  <!-- 欢迎与规则说明弹窗 -->
+  <div class="llk-overlay" data-llk="welcomeModal">
+    <div class="llk-dialog">
+      <h2>🎮 101连连看 · 玩法说明</h2>
+      <div class="llk-box">
+        <ul>
+          <li><b>30秒极限节奏：</b>每关限时 <b>30 秒</b>，每次成功消除或洗牌都会立即重置为 30 秒。</li>
+          <li><b>基础规则：</b>选一对相同牌面，避开其他牌且连线<b>不超过二转弯</b>即可消除。左键点1次选取，右键或同牌点2次取消。</li>
+          <li><b>生命与提示：</b>初始各 3 点，每过一关各 +1 点。〔重新洗牌〕或出现无解局面扣 1 点生命换牌；生命为 0 且无解则结束。</li>
+          <li><b>101无尽模式：</b>涵盖重力位移、周期变向、回合冻结 ❄️、骷髅路障 💀、双层伪装面具 🎭 等 101 关递进挑战，全通可上传头像与名字登上全服榜单！</li>
+        </ul>
+      </div>
+      <div class="llk-actions">
+        <button type="button" class="llk-btn" data-start-mode="easy">单人 Easy</button>
+        <button type="button" class="llk-btn" data-start-mode="normal">单人 Normal</button>
+        <button type="button" class="llk-btn" data-start-mode="hard">单人 Hard</button>
+        <button type="button" class="llk-btn llk-primary" data-start-mode="endless">101无尽模式 🔥</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 设置弹窗（皮肤与图标切换） -->
+  <div class="llk-overlay llk-hidden" data-llk="settingModal">
+    <div class="llk-dialog">
+      <h2>⚙️ 游戏个性化设置</h2>
+      <div class="llk-box">
+        <b>🎨 选择界面皮肤</b>
+        <div class="llk-setting-grid" data-llk="themeGrid">
+          <button type="button" class="llk-btn llk-active" data-set-theme="pink">可爱粉色</button>
+          <button type="button" class="llk-btn" data-set-theme="green">清爽绿色</button>
+          <button type="button" class="llk-btn" data-set-theme="blue">清新蓝色</button>
+          <button type="button" class="llk-btn" data-set-theme="purple">魅惑紫色</button>
+          <button type="button" class="llk-btn" data-set-theme="black">酷炫黑色</button>
+          <button type="button" class="llk-btn" data-set-theme="white">经典白色</button>
+        </div>
+      </div>
+      <div class="llk-box">
+        <b>🧩 选择牌面图标库</b>
+        <div class="llk-setting-grid" data-llk="iconGrid">
+          <button type="button" class="llk-btn llk-active" data-set-icon="daily">日常用品</button>
+          <button type="button" class="llk-btn" data-set-icon="animal">动物</button>
+          <button type="button" class="llk-btn" data-set-icon="plant">植物</button>
+          <button type="button" class="llk-btn" data-set-icon="food">食物</button>
+          <button type="button" class="llk-btn" data-set-icon="vehicle">交通工具</button>
+          <button type="button" class="llk-btn" data-set-icon="symbol">标志</button>
+        </div>
+      </div>
+      <div class="llk-actions">
+        <button type="button" class="llk-btn llk-primary" data-llk="btnCloseSetting">完成设置</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 通用结算 / 101关胜利上传 / 确认弹窗 -->
+  <div class="llk-overlay llk-hidden" data-llk="statusModal">
+    <div class="llk-dialog">
+      <h2 data-llk="modalTitle">结算</h2>
+      <div data-llk="modalBody"></div>
+      <div class="llk-actions" data-llk="modalActions"></div>
+    </div>
+  </div>
+
+  <!-- 榜单弹窗 -->
+  <div class="llk-overlay llk-hidden" data-llk="rankModal">
+    <div class="llk-dialog">
+      <h2>🏆 101连连看 · 荣耀榜单</h2>
+      <div class="llk-group" style="justify-content:center;margin-bottom:8px;" data-llk="rankTabs">
+        <button type="button" class="llk-btn llk-active" data-rank-mode="endless">101无尽榜 🔥</button>
+        <button type="button" class="llk-btn" data-rank-mode="easy">Easy 榜</button>
+        <button type="button" class="llk-btn" data-rank-mode="normal">Normal 榜</button>
+        <button type="button" class="llk-btn" data-rank-mode="hard">Hard 榜</button>
+      </div>
+      <div style="font-size:11px;color:var(--llk-sub-ink);margin-bottom:4px;" data-llk="dbSourceLabel">数据源：本地/Cloudflare 同步</div>
+      <div data-llk="rankContent"></div>
+      <div class="llk-actions">
+        <button type="button" class="llk-btn llk-primary" data-llk="btnCloseRank">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function (global) {
+  "use strict";
+
+  if (global.Link101App && global.Link101App.__booted) {
+    return;
+  }
+
+  // 在此处填入你的 Cloudflare Worker 接口地址（如 "https://llk101-rank.yourname.workers.dev"）
+  // 留空时自动使用本地 localStorage 模拟数据库并保持相同数据结构
+  const CLOUDFLARE_API_URL = "";
+  const LOCAL_RANK_KEY = "llk101_cf_fallback_rank_v1";
+  const LOCAL_PREF_KEY = "llk101_user_prefs_v1";
+  const TURN_TIME_LIMIT = 30; // 倒计时固定30秒，消除/洗牌重置
+
+  // 6大图标库（每套提供 28 个高辨识度图标）
+  const ICON_PACKS = {
+    daily: [
+      "⌚", "📱", "💻", "📷", "🎧", "🔑", "💡", "🕯️", "📚", "✂️",
+      "🖊️", "📎", "🔒", " umbrella" === "umbrella" ? "☂️" : "☂️", "👓", "🎒", "👟", "🎩", "💍", "🪞",
+      "🪥", "🧼", "🧽", "🪣", "🪑", "🛏️", "⏰", "🧭"
+    ],
+    animal: [
+      "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯",
+      "🦁", "🐮", "🐷", "🐸", "🐵", "🐔", "🐧", "🐦", "🐤", "🦆",
+      "🦅", "🦉", "🦇", "🐺", "🐴", "🦄", "🐝", "🦋"
+    ],
+    plant: [
+      "🌵", "🎄", "🌲", "🌳", "🌴", "🌱", "🌿", "☘️", "🍀", "🎍",
+      "🎋", "🍃", "🍂", "🍁", "🍄", "🌾", "💐", "🌷", "🌹", "🥀",
+      "🌺", "🌸", "🌼", "🌻", "🪻", "🪷", "🪴", "🌰"
+    ],
+    food: [
+      "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍒",
+      "🍑", "🥭", "🍍", "🥝", "🍅", "🥑", "🌽", "🥕", "🍔", "🍟",
+      "🍕", "🌭", "🥪", "🍣", "🍤", "🍩", "🍪", "🧁"
+    ],
+    vehicle: [
+      "🚗", "🚕", "🚙", "🚌", "🚎", "🏎️", "🚓", "🚑", "🚒", "🚐",
+      "🛻", "🚚", "🚛", "🚜", "🛵", "🏍️", "🚲", "🛴", "🚂", "🚆",
+      "🚇", " tram" === "tram" ? "🚊" : "🚊", "🚁", "🛩️", "🚀", "🛸", "⛵", "🚢"
+    ],
+    symbol: [
+      "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💔", "❣️",
+      "💕", "💞", "💓", "💗", "💖", "💘", "💝", "☮️", "✝️", "☪️",
+      "☸️", "✡️", "☯️", "♈", "♉", "♊", "♋", "♌"
+    ]
+  };
+
+  // 面具专属伪装图案库（与普通牌面区分）
+  const MASK_ICONS = [
+    "🎭", "👺", "👹", "🤡", "👻", "👽", "🤖", "🎃", "🦊", "🐯",
+    "🐲", "🦄", "👑", "🎩", "🪖", "⛑️", "🥽", "🕶️", "🔮", "🧿"
+  ];
+
+  const MODES = {
+    easy: { key: "easy", label: "单人 Easy 模式", cols: 8, rows: 6, pairs: 24, kinds: 16, maxStage: 999 },
+    normal: { key: "normal", label: "单人 Normal 模式", cols: 10, rows: 8, pairs: 40, kinds: 22, maxStage: 999 },
+    hard: { key: "hard", label: "单人 Hard 模式", cols: 12, rows: 8, pairs: 48, kinds: 28, maxStage: 999 },
+    endless: { key: "endless", label: "101无尽模式 🔥", cols: 10, rows: 8, pairs: 40, kinds: 22, maxStage: 101 }
+  };
+
+  const SHIFT_NAMES = {
+    none: "保持原位",
+    left: "整体靠左",
+    right: "整体靠右",
+    up: "整体靠上",
+    down: "整体靠下",
+    v_in: "上下靠中间",
+    v_out: "中间靠上下",
+    h_in: "左右靠中间",
+    h_out: "中间靠左右",
+    all_in: "四周靠中间",
+    all_out: "中间靠四周",
+    odd_up_even_down: "奇数列靠上·偶数列靠下",
+    odd_down_even_up: "奇数列靠下·偶数列靠上",
+    odd_left_even_right: "奇数行靠左·偶数行靠右",
+    odd_right_even_left: "奇数行靠右·偶数行靠左",
+    top_left: "聚拢靠左上",
+    top_right: "聚拢靠右上",
+    bottom_right: "聚拢靠右下",
+    bottom_left: "聚拢靠左下"
+  };
+
+  const ALL_SHIFT_TYPES = Object.keys(SHIFT_NAMES).filter((k) => k !== "none");
+
+  class Link101Game {
+    constructor(root) {
+      this.root = root;
+      this.dom = {
+        stage: root.querySelector('[data-llk="stage"]'),
+        timeBox: root.querySelector('[data-llk="timeBox"]'),
+        time: root.querySelector('[data-llk="time"]'),
+        life: root.querySelector('[data-llk="life"]'),
+        hintCount: root.querySelector('[data-llk="hintCount"]'),
+        score: root.querySelector('[data-llk="score"]'),
+        modeBadge: root.querySelector('[data-llk="modeBadge"]'),
+        ruleBadge: root.querySelector('[data-llk="ruleBadge"]'),
+        modeGroup: root.querySelector('[data-llk="modeGroup"]'),
+        btnHint: root.querySelector('[data-llk="btnHint"]'),
+        btnShuffle: root.querySelector('[data-llk="btnShuffle"]'),
+        btnPause: root.querySelector('[data-llk="btnPause"]'),
+        btnSetting: root.querySelector('[data-llk="btnSetting"]'),
+        btnBoard: root.querySelector('[data-llk="btnBoard"]'),
+        btnGiveUp: root.querySelector('[data-llk="btnGiveUp"]'),
+        boardWrap: root.querySelector('[data-llk="boardWrap"]'),
+        board: root.querySelector('[data-llk="board"]'),
+        svg: root.querySelector('[data-llk="svg"]'),
+        pauseMask: root.querySelector('[data-llk="pauseMask"]'),
+        btnResumeInline: root.querySelector('[data-llk="btnResumeInline"]'),
+        message: root.querySelector('[data-llk="message"]'),
+        welcomeModal: root.querySelector('[data-llk="welcomeModal"]'),
+        settingModal: root.querySelector('[data-llk="settingModal"]'),
+        themeGrid: root.querySelector('[data-llk="themeGrid"]'),
+        iconGrid: root.querySelector('[data-llk="iconGrid"]'),
+        btnCloseSetting: root.querySelector('[data-llk="btnCloseSetting"]'),
+        statusModal: root.querySelector('[data-llk="statusModal"]'),
+        modalTitle: root.querySelector('[data-llk="modalTitle"]'),
+        modalBody: root.querySelector('[data-llk="modalBody"]'),
+        modalActions: root.querySelector('[data-llk="modalActions"]'),
+        rankModal: root.querySelector('[data-llk="rankModal"]'),
+        rankTabs: root.querySelector('[data-llk="rankTabs"]'),
+        rankContent: root.querySelector('[data-llk="rankContent"]'),
+        dbSourceLabel: root.querySelector('[data-llk="dbSourceLabel"]'),
+        btnCloseRank: root.querySelector('[data-llk="btnCloseRank"]')
+      };
+
+      this.prefs = this._loadPrefs();
+      this._applyTheme(this.prefs.theme);
+
+      this.state = {
+        mode: "easy",
+        stage: 1,
+        score: 0,
+        life: 3,
+        hintCount: 3,
+        seconds: TURN_TIME_LIMIT,
+        grid: [], // 单元格对象: null 或 { id, kindIdx, freeze: 0, maskIdx: null, skull: false, skullTrigger: false }
+        selected: null,
+        timerId: null,
+        running: false,
+        paused: false,
+        locked: false,
+        elimStepCount: 0, // 当前关卡消除次数计数器（用于周期位移）
+        activeRankTab: "endless"
+      };
+
+      this._bindEvents();
+      this._syncSettingButtons();
+      this._updateHUD();
+    }
+
+    _loadPrefs() {
+      try {
+        const raw = localStorage.getItem(LOCAL_PREF_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          return {
+            theme: parsed.theme || "pink",
+            iconPack: ICON_PACKS[parsed.iconPack] ? parsed.iconPack : "daily"
+          };
+        }
+      } catch (_) {}
+      return { theme: "pink", iconPack: "daily" };
+    }
+
+    _savePrefs() {
+      try {
+        localStorage.setItem(LOCAL_PREF_KEY, JSON.stringify(this.prefs));
+      } catch (_) {}
+    }
+
+    _applyTheme(themeKey) {
+      this.prefs.theme = themeKey;
+      this.root.setAttribute("data-theme", themeKey);
+      this._savePrefs();
+    }
+
+    _applyIconPack(packKey) {
+      if (!ICON_PACKS[packKey]) return;
+      this.prefs.iconPack = packKey;
+      this._savePrefs();
+      if (this.state.grid.length > 0) {
+        this._renderBoard();
+      }
+    }
+
+    _syncSettingButtons() {
+      this.dom.themeGrid.querySelectorAll("[data-set-theme]").forEach((btn) => {
+        btn.classList.toggle("llk-active", btn.dataset.setTheme === this.prefs.theme);
+      });
+      this.dom.iconGrid.querySelectorAll("[data-set-icon]").forEach((btn) => {
+        btn.classList.toggle("llk-active", btn.dataset.setIcon === this.prefs.iconPack);
+      });
+    }
+
+    _bindEvents() {
+      // 欢迎弹窗按钮
+      this.dom.welcomeModal.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-start-mode]");
+        if (!btn) return;
+        this.startNewGame(btn.dataset.startMode);
+      });
+
+      // 模式切换
+      this.dom.modeGroup.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-mode]");
+        if (!btn) return;
+        const target = btn.dataset.mode;
+        if (this.state.running) {
+          this._confirmSwitchMode(target);
+        } else {
+          this.startNewGame(target);
+        }
+      });
+
+      // 功能按钮
+      this.dom.btnHint.addEventListener("click", () => this.useHint());
+      this.dom.btnShuffle.addEventListener("click", () => this.useManualShuffle());
+      this.dom.btnPause.addEventListener("click", () => this.togglePause());
+      this.dom.btnResumeInline.addEventListener("click", () => this.togglePause());
+      this.dom.btnGiveUp.addEventListener("click", () => this.confirmGiveUp());
+      this.dom.btnBoard.addEventListener("click", () => this.openLeaderboard(this.state.mode));
+
+      // 设置弹窗
+      this.dom.btnSetting.addEventListener("click", () => {
+        // 如果游戏正在运行且未暂停，则自动触发暂停
+        if (this.state.running && !this.state.paused) {
+          this.togglePause(); // 复用原有的暂停逻辑（会停止计时并显示遮罩保护牌面）
+        }
+        
+        this._syncSettingButtons();
+        this.dom.settingModal.classList.remove("llk-hidden");
+      });
+      this.dom.btnCloseSetting.addEventListener("click", () => {
+        this.dom.settingModal.classList.add("llk-hidden");
+      });
+      this.dom.themeGrid.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-set-theme]");
+        if (!btn) return;
+        this._applyTheme(btn.dataset.setTheme);
+        this._syncSettingButtons();
+      });
+      this.dom.iconGrid.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-set-icon]");
+        if (!btn) return;
+        this._applyIconPack(btn.dataset.setIcon);
+        this._syncSettingButtons();
+      });
+
+      // 榜单弹窗
+      this.dom.rankTabs.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-rank-mode]");
+        if (!btn) return;
+        this.openLeaderboard(btn.dataset.rankMode);
+      });
+      this.dom.btnCloseRank.addEventListener("click", () => {
+        this.dom.rankModal.classList.add("llk-hidden");
+      });
+
+      // 棋盘左键选取 / 同牌二次取消
+      this.dom.board.addEventListener("click", (e) => {
+        const tile = e.target.closest(".llk-tile");
+        if (!tile || tile.classList.contains("llk-empty")) return;
+        const r = Number(tile.dataset.r);
+        const c = Number(tile.dataset.c);
+        this._handleLeftClick(r, c);
+      });
+
+      // 棋盘右键取消选取
+      this.dom.boardWrap.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        if (!this.state.running || this.state.paused || this.state.locked) return;
+        if (this.state.selected) {
+          this.state.selected = null;
+          this._renderSelection();
+          this._say("右键取消了当前选取。");
+        }
+      });
+    }
+
+    _say(msg) {
+      this.dom.message.textContent = msg;
+    }
+
+    _resetTurnTimer() {
+      this.state.seconds = TURN_TIME_LIMIT;
+      this.dom.timeBox.classList.remove("llk-time-warn");
+      this._updateHUD();
+    }
+
+    _updateHUD() {
+      const st = this.state;
+      const cfg = MODES[st.mode];
+      this.dom.stage.textContent = st.mode === "endless" ? `${st.stage}/101` : String(st.stage);
+      this.dom.time.textContent = `${Math.max(0, st.seconds)}s`;
+      this.dom.timeBox.classList.toggle("llk-time-warn", st.running && st.seconds <= 7);
+      this.dom.life.textContent = String(st.life);
+      this.dom.hintCount.textContent = String(st.hintCount);
+      this.dom.score.textContent = String(st.score);
+      this.dom.modeBadge.textContent = cfg.label;
+      this.dom.ruleBadge.textContent = this._describeStageRule(st.mode, st.stage);
+
+      this.dom.modeGroup.querySelectorAll("[data-mode]").forEach((btn) => {
+        btn.classList.toggle("llk-active", btn.dataset.mode === st.mode);
+      });
+
+      const canAct = st.running && !st.paused && !st.locked;
+      this.dom.btnHint.disabled = !canAct || st.hintCount <= 0;
+      this.dom.btnShuffle.disabled = !canAct || st.life <= 0;
+      this.dom.btnPause.disabled = !st.running;
+      this.dom.btnPause.textContent = st.paused ? "取消暂停 ▶" : "暂停 Ⅱ";
+      this.dom.btnGiveUp.disabled = !st.running;
+    }
+
+    // 解析第 1 ~ 101 关规则配置
+    _getStageRuleConfig(mode, stage) {
+      if (mode !== "endless") {
+        return {
+          modeType: "normal_gravity",
+          stage,
+          desc: stage === 1 ? "标准消除（≤二转弯）" : `经典进阶第 ${stage} 关`
+        };
+      }
+
+      // 1 ~ 31 关精确映射
+      const fixedGravityMap = {
+        1: { type: "fixed", dir: "none", desc: "第1关：消除后位置不变" },
+        2: { type: "fixed", dir: "left", desc: "第2关：消除后整体靠左" },
+        3: { type: "fixed", dir: "right", desc: "第3关：消除后整体靠右" },
+        4: { type: "fixed", dir: "up", desc: "第4关：消除后整体靠上" },
+        5: { type: "fixed", dir: "down", desc: "第5关：消除后整体靠下" },
+        6: { type: "fixed", dir: "v_in", desc: "第6关：消除后上下靠中间" },
+        7: { type: "fixed", dir: "v_out", desc: "第7关：消除后中间靠上下" },
+        8: { type: "fixed", dir: "h_in", desc: "第8关：消除后左右靠中间" },
+        9: { type: "fixed", dir: "h_out", desc: "第9关：消除后中间靠左右" },
+        10: { type: "fixed", dir: "all_in", desc: "第10关：消除后四周靠中间" },
+        11: { type: "fixed", dir: "all_out", desc: "第11关：消除后中间靠四周" },
+        12: { type: "fixed", dir: "odd_up_even_down", desc: "第12关：奇数列靠上，偶数列靠下" },
+        13: { type: "fixed", dir: "odd_down_even_up", desc: "第13关：奇数列靠下，偶数列靠上" },
+        14: { type: "fixed", dir: "odd_left_even_right", desc: "第14关：奇数行靠左，偶数行靠右" },
+        15: { type: "fixed", dir: "odd_right_even_left", desc: "第15关：奇数行靠右，偶数行靠左" },
+        16: { type: "fixed", dir: "top_left", desc: "第16关：消除后靠左上" },
+        17: { type: "fixed", dir: "top_right", desc: "第17关：消除后靠右上" },
+        18: { type: "fixed", dir: "bottom_right", desc: "第18关：消除后靠右下" },
+        19: { type: "fixed", dir: "bottom_left", desc: "第19关：消除后靠左下" },
+        20: { type: "cycle", seq: ["left", "right"], desc: "第20关：第1次靠左，第2次靠右循环" },
+        21: { type: "cycle", seq: ["right", "left"], desc: "第21关：第1次靠右，第2次靠左循环" },
+        22: { type: "cycle", seq: ["up", "down"], desc: "第22关：第1次靠上，第2次靠下循环" },
+        23: { type: "cycle", seq: ["down", "up"], desc: "第23关：第1次靠下，第2次靠上循环" },
+        24: { type: "cycle", seq: ["left", "right", "all_in"], desc: "第24关：左 → 右 → 中间循环" },
+        25: { type: "cycle", seq: ["right", "left", "all_in"], desc: "第25关：右 → 左 → 中间循环" },
+        26: { type: "cycle", seq: ["up", "down", "all_in"], desc: "第26关：上 → 下 → 中间循环" },
+        27: { type: "cycle", seq: ["down", "up", "all_in"], desc: "第27关：下 → 上 → 中间循环" },
+        28: { type: "cycle", seq: ["left", "right", "up", "down"], desc: "第28关：左 → 右 → 上 → 下循环" },
+        29: { type: "cycle", seq: ["right", "left", "up", "down"], desc: "第29关：右 → 左 → 上 → 下循环" },
+        30: { type: "cycle", seq: ["left", "right", "down", "up"], desc: "第30关：左 → 右 → 下 → 上循环" },
+        31: { type: "cycle", seq: ["left", "right", "up", "down"], desc: "第31关：左 → 右 → 上 → 下循环" }
+      };
+
+      if (fixedGravityMap[stage]) {
+        return { ...fixedGravityMap[stage], freezeCount: 0, skullPairs: 0, maskPairs: 0 };
+      }
+
+      // 32 ~ 41 关（10关）：每次消除随机靠
+      if (stage >= 32 && stage <= 41) {
+        return {
+          type: "random_shift",
+          allowNone: false,
+          freezeCount: 0,
+          skullPairs: 0,
+          maskPairs: 0,
+          desc: `第${stage}关：每次消除随机方向靠拢`
+        };
+      }
+
+      // 42 ~ 51 关（10关）：每次消除随机靠或不变
+      if (stage >= 42 && stage <= 51) {
+        return {
+          type: "random_shift",
+          allowNone: true,
+          freezeCount: 0,
+          skullPairs: 0,
+          maskPairs: 0,
+          desc: `第${stage}关：每次消除随机靠拢或保持不变`
+        };
+      }
+
+      // 52 ~ 61 关（10关）：随机 1~10 个冻结，固定 3 回合解冻
+      if (stage >= 52 && stage <= 61) {
+        const count = stage - 51; // 1 .. 10
+        return {
+          type: "fixed",
+          dir: "none",
+          freezeCount: count,
+          freezeMode: "fixed3",
+          skullPairs: 0,
+          maskPairs: 0,
+          desc: `第${stage}关：随机 ${count} 个牌冻结 3 回合 ❄️`
+        };
+      }
+
+      // 62 ~ 71 关（10关）：随机 n 个冻结（n为10内随机数），每个 n 回合独立随机
+      if (stage >= 62 && stage <= 71) {
+        const n = Math.floor(Math.random() * 10) + 1;
+        return {
+          type: "fixed",
+          dir: "none",
+          freezeCount: n,
+          freezeMode: "random10",
+          skullPairs: 0,
+          maskPairs: 0,
+          desc: `第${stage}关：随机 ${n} 个牌冻结随机回合(1~10) ❄️`
+        };
+      }
+
+      // 72 ~ 81 关（10关）：随机 1~10 对消除后产生骷髅路障
+      if (stage >= 72 && stage <= 81) {
+        const sp = stage - 71; // 1 .. 10
+        return {
+          type: "fixed",
+          dir: "none",
+          freezeCount: 0,
+          skullPairs: sp,
+          maskPairs: 0,
+          desc: `第${stage}关：${sp} 对牌消除后会变成阻挡骷髅 💀`
+        };
+      }
+
+      // 82 ~ 91 关（10关）：随机 1~10 对戴上成对不同面具（2~20个面具）
+      if (stage >= 82 && stage <= 91) {
+        const mp = stage - 81; // 1 .. 10 对
+        return {
+          type: "fixed",
+          dir: "none",
+          freezeCount: 0,
+          skullPairs: 0,
+          maskPairs: mp,
+          desc: `第${stage}关：${mp * 2} 个牌戴上 ${mp} 对伪装面具 🎭`
+        };
+      }
+
+      // 92 ~ 101 关（10关）：终极混合关卡（随机骷髅 + 随机面具 + 随机冻结 + 随机靠/不变）
+      const mixFreeze = Math.floor(Math.random() * 6) + 2;
+      const mixSkull = Math.floor(Math.random() * 5) + 1;
+      const mixMask = Math.floor(Math.random() * 5) + 1;
+      return {
+        type: "random_shift",
+        allowNone: true,
+        freezeCount: mixFreeze,
+        freezeMode: "random10",
+        skullPairs: mixSkull,
+        maskPairs: mixMask,
+        desc: `第${stage}关终极混合：❄️${mixFreeze}冻结 + 💀${mixSkull}组骷髅 + 🎭${mixMask}对面具 + 随机位移`
+      };
+    }
+
+    _describeStageRule(mode, stage) {
+      if (this.currentRule && this.currentRule.stage === stage && this.currentRule.mode === mode) {
+        return this.currentRule.desc;
+      }
+      return this._getStageRuleConfig(mode, stage).desc;
+    }
+
+    _confirmSwitchMode(targetMode) {
+      const wasPaused = this.state.paused;
+      if (!wasPaused) {
+        this.state.paused = true;
+        this._updateHUD();
+      }
+      this._showModal(
+        "切换游戏模式",
+        `<p>当前正在进行 <b>${MODES[this.state.mode].label}</b>（第 ${this.state.stage} 关），切换将重新开始，确认切换吗？</p>`,
+        [
+          {
+            text: "确认切换",
+            primary: true,
+            onClick: () => {
+              this._hideModal();
+              this.startNewGame(targetMode);
+            }
+          },
+          {
+            text: "继续当前局",
+            primary: false,
+            onClick: () => {
+              this._hideModal();
+              if (!wasPaused) {
+                this.state.paused = false;
+                this._updateHUD();
+              }
+            }
+          }
+        ]
+      );
+    }
+
+    startNewGame(modeKey) {
+      const cfg = MODES[modeKey] || MODES.easy;
+      this._stopTimer();
+      this.dom.welcomeModal.classList.add("llk-hidden");
+      this._hideModal();
+      this.dom.pauseMask.classList.add("llk-hidden");
+
+      this.state.mode = cfg.key;
+      this.state.stage = 1;
+      this.state.score = 0;
+      this.state.life = 3;
+      this.state.hintCount = 3;
+      this.state.running = true;
+      this.state.paused = false;
+      this.state.locked = false;
+
+      this._initStage(1);
+    }
+
+    _initStage(stageNum) {
+      const cfg = MODES[this.state.mode];
+      this.state.stage = stageNum;
+      this.state.seconds = TURN_TIME_LIMIT;
+      this.state.selected = null;
+      this.state.locked = false;
+      this.state.elimStepCount = 0;
+      this.dom.svg.innerHTML = "";
+
+      const rule = this._getStageRuleConfig(this.state.mode, stageNum);
+      rule.stage = stageNum;
+      rule.mode = this.state.mode;
+      this.currentRule = rule;
+
+      // 构建成对牌组
+      const tiles = [];
+      let uid = 1;
+      for (let i = 0; i < cfg.pairs; i++) {
+        const kindIdx = i % cfg.kinds;
+        tiles.push({ id: uid++, kindIdx, freeze: 0, maskIdx: null, skull: false, skullTrigger: false });
+        tiles.push({ id: uid++, kindIdx, freeze: 0, maskIdx: null, skull: false, skullTrigger: false });
+      }
+      this._shuffleArray(tiles);
+
+      // 1. 分配骷髅触发对（消除后原地变骷髅）
+      if (rule.skullPairs > 0) {
+        const pairGroups = new Map();
+        tiles.forEach((t) => {
+          if (!pairGroups.has(t.kindIdx)) pairGroups.set(t.kindIdx, []);
+          pairGroups.get(t.kindIdx).push(t);
+        });
+        const allGroups = Array.from(pairGroups.values());
+        this._shuffleArray(allGroups);
+        let assigned = 0;
+        for (const grp of allGroups) {
+          if (assigned >= rule.skullPairs) break;
+          // 每一组取一对（2张）标记为消除后生成骷髅
+          grp[0].skullTrigger = true;
+          grp[1].skullTrigger = true;
+          assigned++;
+        }
+      }
+
+      // 2. 分配面具伪装对（成对戴上相同图案面具，不与骷髅触发重叠以防死锁）
+      if (rule.maskPairs > 0) {
+        const candidates = tiles.filter((t) => !t.skullTrigger);
+        this._shuffleArray(candidates);
+        const maxMaskPairs = Math.min(rule.maskPairs, Math.floor(candidates.length / 2));
+        for (let m = 0; m < maxMaskPairs; m++) {
+          const maskIconIdx = m % MASK_ICONS.length;
+          candidates[m * 2].maskIdx = maskIconIdx;
+          candidates[m * 2 + 1].maskIdx = maskIconIdx;
+        }
+      }
+
+      // 3. 分配冻结格子（优先冻结未戴面具的普通牌，保障可解体验）
+      if (rule.freezeCount > 0) {
+        const freezePool = tiles.filter((t) => t.maskIdx === null);
+        this._shuffleArray(freezePool);
+        const fCount = Math.min(rule.freezeCount, freezePool.length);
+        for (let f = 0; f < fCount; f++) {
+          freezePool[f].freeze = rule.freezeMode === "random10"
+            ? Math.floor(Math.random() * 10) + 1
+            : 3;
+        }
+      }
+
+      // 填入带外围 1 圈空边界的二维网格
+      const grid = Array.from({ length: cfg.rows + 2 }, () => Array(cfg.cols + 2).fill(null));
+      let idx = 0;
+      for (let r = 1; r <= cfg.rows; r++) {
+        for (let c = 1; c <= cfg.cols; c++) {
+          grid[r][c] = tiles[idx++];
+        }
+      }
+      this.state.grid = grid;
+
+      // 开局保证至少存在一组当前可操作配对
+      let guard = 0;
+      while (!this._findAvailablePair() && guard < 40) {
+        this._reshufflePlayableTiles();
+        guard++;
+      }
+
+      this._renderBoard();
+      this._updateHUD();
+      this._startTimer();
+      this._say(`第 ${stageNum} 关开始！30秒倒计时已启动。`);
+    }
+
+    _startTimer() {
+      this._stopTimer();
+      this.state.timerId = setInterval(() => {
+        if (!this.state.running || this.state.paused || this.state.locked) return;
+        this.state.seconds--;
+        this._updateHUD();
+        if (this.state.seconds <= 0) {
+          this._handleGameOver("30秒倒计时耗尽！未能及时完成消除。");
+        }
+      }, 1000);
+    }
+
+    _stopTimer() {
+      if (this.state.timerId !== null) {
+        clearInterval(this.state.timerId);
+        this.state.timerId = null;
+      }
+    }
+
+    // 获取格子当前对外展示的匹配键值（戴面具时只能与同面具匹配）
+    _getTileMatchKey(cell) {
+      if (!cell || cell.skull || cell.freeze > 0) return null;
+      if (cell.maskIdx !== null) return `MASK_${cell.maskIdx}`;
+      return `KIND_${cell.kindIdx}`;
+    }
+
+    _renderBoard() {
+      const cfg = MODES[this.state.mode];
+      const pack = ICON_PACKS[this.prefs.iconPack] || ICON_PACKS.daily;
+      const board = this.dom.board;
+      board.style.gridTemplateColumns = `repeat(${cfg.cols}, minmax(0, 1fr))`;
+      board.style.maxWidth = `${cfg.cols * 58}px`;
+      board.innerHTML = "";
+
+      const frag = document.createDocumentFragment();
+      for (let r = 1; r <= cfg.rows; r++) {
+        for (let c = 1; c <= cfg.cols; c++) {
+          const cell = this.state.grid[r][c];
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.dataset.r = String(r);
+          btn.dataset.c = String(c);
+
+          if (!cell) {
+            btn.className = "llk-tile llk-empty";
+            btn.disabled = true;
+          } else if (cell.skull) {
+            btn.className = "llk-tile llk-skull";
+            btn.textContent = "💀";
+            btn.disabled = true;
+            btn.title = "骷髅障碍：不可消除，连线不可穿过";
+          } else {
+            let cls = "llk-tile";
+            if (cell.freeze > 0) cls += " llk-frozen";
+            if (cell.maskIdx !== null) cls += " llk-masked";
+            btn.className = cls;
+
+            if (cell.maskIdx !== null) {
+              btn.textContent = MASK_ICONS[cell.maskIdx];
+              const mTag = document.createElement("span");
+              mTag.className = "llk-mask-tag";
+              mTag.textContent = "🎭";
+              btn.appendChild(mTag);
+            } else {
+              btn.textContent = pack[cell.kindIdx % pack.length];
+            }
+
+            if (cell.freeze > 0) {
+              const fBadge = document.createElement("span");
+              fBadge.className = "llk-freeze-badge";
+              fBadge.textContent = `❄️${cell.freeze}`;
+              btn.appendChild(fBadge);
+            }
+          }
+          frag.appendChild(btn);
+        }
+      }
+      board.appendChild(frag);
+    }
+
+    _renderSelection() {
+      const sel = this.state.selected;
+      this.dom.board.querySelectorAll(".llk-tile").forEach((el) => {
+        const active = sel && Number(el.dataset.r) === sel.r && Number(el.dataset.c) === sel.c;
+        el.classList.toggle("llk-selected", Boolean(active));
+      });
+    }
+
+    // BFS 二转弯寻路（骷髅与所有未消除格子均阻挡连线）
+    _findPath(a, b) {
+      const grid = this.state.grid;
+      const R = grid.length;
+      const C = grid[0].length;
+      const dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+      const minTurns = Array.from({ length: R }, () =>
+        Array.from({ length: C }, () => [9, 9, 9, 9])
+      );
+
+      const queue = [{ r: a.r, c: a.c, dir: -1, turns: 0, path: [[a.r, a.c]] }];
+      while (queue.length > 0) {
+        const cur = queue.shift();
+        if (cur.r === b.r && cur.c === b.c) return cur.path;
+
+        for (let d = 0; d < 4; d++) {
+          const nr = cur.r + dirs[d][0];
+          const nc = cur.c + dirs[d][1];
+          const nTurns = cur.turns + (cur.dir !== -1 && cur.dir !== d ? 1 : 0);
+
+          if (nTurns > 2 || nr < 0 || nc < 0 || nr >= R || nc >= C) continue;
+          if (!(nr === b.r && nc === b.c) && grid[nr][nc] !== null) continue;
+          if (minTurns[nr][nc][d] <= nTurns) continue;
+
+          minTurns[nr][nc][d] = nTurns;
+          queue.push({
+            r: nr,
+            c: nc,
+            dir: d,
+            turns: nTurns,
+            path: [...cur.path, [nr, nc]]
+          });
+        }
+      }
+      return null;
+    }
+
+    _handleLeftClick(r, c) {
+      const st = this.state;
+      if (!st.running || st.paused || st.locked) return;
+      const cell = st.grid[r][c];
+      if (!cell || cell.skull) return;
+
+      if (cell.freeze > 0) {
+        this._say(`该牌被冰封中，还需 ${cell.freeze} 个消除回合后解冻！`);
+        return;
+      }
+
+      if (!st.selected) {
+        st.selected = { r, c };
+        this._renderSelection();
+        return;
+      }
+
+      // 同一张牌左键点2次 ＝ 取消选取
+      if (st.selected.r === r && st.selected.c === c) {
+        st.selected = null;
+        this._renderSelection();
+        this._say("已取消选取。");
+        return;
+      }
+
+      const first = st.selected;
+      const second = { r, c };
+      const cellA = st.grid[first.r][first.c];
+      const cellB = st.grid[second.r][second.c];
+
+      const keyA = this._getTileMatchKey(cellA);
+      const keyB = this._getTileMatchKey(cellB);
+
+      if (keyA && keyA === keyB) {
+        const path = this._findPath(first, second);
+        if (path) {
+          st.locked = true;
+          this._drawPath(path);
+          setTimeout(() => {
+            this._executePairElimination(first, second);
+          }, 190);
+          return;
+        }
+      }
+
+      st.selected = second;
+      this._renderSelection();
+      this._say("无法连接：需相同图案/同款面具，且连线不超过二转弯。");
+    }
+
+    _executePairElimination(posA, posB) {
+      const st = this.state;
+      const cellA = st.grid[posA.r][posA.c];
+      const cellB = st.grid[posB.r][posB.c];
+
+      // 1. 处理面具揭开或本体消除/变骷髅
+      this._resolveSingleTileAfterMatch(posA.r, posA.c, cellA);
+      this._resolveSingleTileAfterMatch(posB.r, posB.c, cellB);
+
+      // 2. 所有冻结格子的剩余回合数 -1
+      this._tickFreezeCounters();
+
+      // 3. 应用关卡重力位移规则
+      st.elimStepCount++;
+      const shiftApplied = this._applyStageGravity();
+
+      // 4. 计分并重置 30 秒倒计时
+      st.score += 10 * st.stage;
+      st.selected = null;
+      st.locked = false;
+      this.dom.svg.innerHTML = "";
+      this._resetTurnTimer();
+
+      this._renderBoard();
+      this._updateHUD();
+
+      // 5. 判断是否清空所有可消牌面（骷髅路障不计入剩余牌）
+      if (this._countRemainingPlayable() === 0) {
+        this._handleStageClear();
+        return;
+      }
+
+      const extraTip = shiftApplied && shiftApplied !== "none"
+        ? `（触发${SHIFT_NAMES[shiftApplied]}）`
+        : "";
+      this._say(`消除成功！倒计时已重置为 30 秒${extraTip}。`);
+
+      // 6. 死局检测与自动扣命重排
+      this._checkDeadlockAndResolve();
+    }
+
+    _resolveSingleTileAfterMatch(r, c, cell) {
+      if (!cell) return;
+      // 若戴有面具，先消除面具露出底层格子
+      if (cell.maskIdx !== null) {
+        cell.maskIdx = null;
+        return;
+      }
+      // 若是骷髅触发格，消除后原地变成骷髅障碍
+      if (cell.skullTrigger) {
+        this.state.grid[r][c] = {
+          id: cell.id,
+          kindIdx: -1,
+          freeze: 0,
+          maskIdx: null,
+          skull: true,
+          skullTrigger: false
+        };
+        return;
+      }
+      // 普通牌直接清空
+      this.state.grid[r][c] = null;
+    }
+
+    _tickFreezeCounters() {
+      const grid = this.state.grid;
+      for (let r = 1; r < grid.length - 1; r++) {
+        for (let c = 1; c < grid[0].length - 1; c++) {
+          const cell = grid[r][c];
+          if (cell && !cell.skull && cell.freeze > 0) {
+            cell.freeze--;
+          }
+        }
+      }
+    }
+
+    // 确定本次消除后要执行的位移模式
+    _resolveCurrentShiftType() {
+      const rule = this.currentRule;
+      if (!rule) return "none";
+      if (rule.type === "fixed") return rule.dir || "none";
+      if (rule.type === "cycle") {
+        const idx = (this.state.elimStepCount - 1) % rule.seq.length;
+        return rule.seq[idx];
+      }
+      if (rule.type === "random_shift") {
+        const pool = rule.allowNone ? [...ALL_SHIFT_TYPES, "none", "none"] : ALL_SHIFT_TYPES;
+        return pool[Math.floor(Math.random() * pool.length)];
+      }
+      return "none";
+    }
+
+    // 执行各种重力位移（保持骷髅路障原地不动，非空牌向指定方向紧凑排列）
+    _applyStageGravity() {
+      const dir = this._resolveCurrentShiftType();
+      if (!dir || dir === "none") return "none";
+
+      const cfg = MODES[this.state.mode];
+      const R = cfg.rows;
+      const C = cfg.cols;
+      const grid = this.state.grid;
+
+      // 辅助函数：将一维数组按段（以骷髅为固定隔断）向 start / end / center 紧凑
+      const compactLine = (coords, align) => {
+        // 按骷髅分割成连续可移动区间
+        let segment = [];
+        const flushSegment = () => {
+          if (segment.length <= 1) {
+            segment = [];
+            return;
+          }
+          const items = segment.map(([r, c]) => grid[r][c]).filter(Boolean);
+          const emptyCount = segment.length - items.length;
+          let arranged = [];
+          if (align === "start") {
+            arranged = [...items, ...Array(emptyCount).fill(null)];
+          } else if (align === "end") {
+            arranged = [...Array(emptyCount).fill(null), ...items];
+          } else if (align === "center") {
+            const leftPad = Math.floor(emptyCount / 2);
+            const rightPad = emptyCount - leftPad;
+            arranged = [...Array(leftPad).fill(null), ...items, ...Array(rightPad).fill(null)];
+          }
+          segment.forEach(([r, c], idx) => {
+            grid[r][c] = arranged[idx];
+          });
+          segment = [];
+        };
+
+        for (const [r, c] of coords) {
+          if (grid[r][c] && grid[r][c].skull) {
+            flushSegment();
+          } else {
+            segment.push([r, c]);
+          }
+        }
+        flushSegment();
+      };
+
+      const shiftHorizontal = (rowAlignFn) => {
+        for (let r = 1; r <= R; r++) {
+          const mode = rowAlignFn(r);
+          const coords = [];
+          for (let c = 1; c <= C; c++) coords.push([r, c]);
+          if (mode === "in") {
+            const mid = Math.floor(C / 2);
+            compactLine(coords.slice(0, mid), "end");
+            compactLine(coords.slice(mid), "start");
+          } else if (mode === "out") {
+            const mid = Math.floor(C / 2);
+            compactLine(coords.slice(0, mid), "start");
+            compactLine(coords.slice(mid), "end");
+          } else {
+            compactLine(coords, mode);
+          }
+        }
+      };
+
+      const shiftVertical = (colAlignFn) => {
+        for (let c = 1; c <= C; c++) {
+          const mode = colAlignFn(c);
+          const coords = [];
+          for (let r = 1; r <= R; r++) coords.push([r, c]);
+          if (mode === "in") {
+            const mid = Math.floor(R / 2);
+            compactLine(coords.slice(0, mid), "end");
+            compactLine(coords.slice(mid), "start");
+          } else if (mode === "out") {
+            const mid = Math.floor(R / 2);
+            compactLine(coords.slice(0, mid), "start");
+            compactLine(coords.slice(mid), "end");
+          } else {
+            compactLine(coords, mode);
+          }
+        }
+      };
+
+      switch (dir) {
+        case "left":
+          shiftHorizontal(() => "start");
+          break;
+        case "right":
+          shiftHorizontal(() => "end");
+          break;
+        case "up":
+          shiftVertical(() => "start");
+          break;
+        case "down":
+          shiftVertical(() => "end");
+          break;
+        case "v_in":
+          shiftVertical(() => "in");
+          break;
+        case "v_out":
+          shiftVertical(() => "out");
+          break;
+        case "h_in":
+          shiftHorizontal(() => "in");
+          break;
+        case "h_out":
+          shiftHorizontal(() => "out");
+          break;
+        case "all_in":
+          shiftVertical(() => "in");
+          shiftHorizontal(() => "in");
+          break;
+        case "all_out":
+          shiftVertical(() => "out");
+          shiftHorizontal(() => "out");
+          break;
+        case "odd_up_even_down":
+          shiftVertical((c) => (c % 2 === 1 ? "start" : "end"));
+          break;
+        case "odd_down_even_up":
+          shiftVertical((c) => (c % 2 === 1 ? "end" : "start"));
+          break;
+        case "odd_left_even_right":
+          shiftHorizontal((r) => (r % 2 === 1 ? "start" : "end"));
+          break;
+        case "odd_right_even_left":
+          shiftHorizontal((r) => (r % 2 === 1 ? "end" : "start"));
+          break;
+        case "top_left":
+          shiftVertical(() => "start");
+          shiftHorizontal(() => "start");
+          break;
+        case "top_right":
+          shiftVertical(() => "start");
+          shiftHorizontal(() => "end");
+          break;
+        case "bottom_right":
+          shiftVertical(() => "end");
+          shiftHorizontal(() => "end");
+          break;
+        case "bottom_left":
+          shiftVertical(() => "end");
+          shiftHorizontal(() => "start");
+          break;
+      }
+
+      return dir;
+    }
+
+    _countRemainingPlayable() {
+      const grid = this.state.grid;
+      let count = 0;
+      for (let r = 1; r < grid.length - 1; r++) {
+        for (let c = 1; c < grid[0].length - 1; c++) {
+          const cell = grid[r][c];
+          if (cell && !cell.skull) count++;
+        }
+      }
+      return count;
+    }
+
+    _drawPath(path) {
+      const wrapRect = this.dom.boardWrap.getBoundingClientRect();
+      const boardRect = this.dom.board.getBoundingClientRect();
+      const cfg = MODES[this.state.mode];
+
+      const cellW = boardRect.width / cfg.cols;
+      const cellH = boardRect.height / cfg.rows;
+      const offsetX = boardRect.left - wrapRect.left;
+      const offsetY = boardRect.top - wrapRect.top;
+
+      const pts = path.map(([r, c]) => {
+        const x = offsetX + (c - 0.5) * cellW;
+        const y = offsetY + (r - 0.5) * cellH;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      });
+
+      this.dom.svg.setAttribute("viewBox", `0 0 ${wrapRect.width} ${wrapRect.height}`);
+      this.dom.svg.innerHTML = `<polyline points="${pts.join(" ")}" fill="none" stroke="var(--llk-line-color)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }
+
+    _findAvailablePair() {
+      const grid = this.state.grid;
+      const R = grid.length - 1;
+      const C = grid[0].length - 1;
+      const buckets = new Map();
+
+      for (let r = 1; r < R; r++) {
+        for (let c = 1; c < C; c++) {
+          const key = this._getTileMatchKey(grid[r][c]);
+          if (!key) continue;
+          if (!buckets.has(key)) buckets.set(key, []);
+          buckets.get(key).push({ r, c });
+        }
+      }
+
+      for (const list of buckets.values()) {
+        for (let i = 0; i < list.length; i++) {
+          for (let j = i + 1; j < list.length; j++) {
+            if (this._findPath(list[i], list[j])) {
+              return [list[i], list[j]];
+            }
+          }
+        }
+      }
+      return null;
+    }
+
+    _reshufflePlayableTiles() {
+      const grid = this.state.grid;
+      const R = grid.length - 1;
+      const C = grid[0].length - 1;
+      const items = [];
+
+      for (let r = 1; r < R; r++) {
+        for (let c = 1; c < C; c++) {
+          const cell = grid[r][c];
+          if (cell && !cell.skull) items.push(cell);
+        }
+      }
+      this._shuffleArray(items);
+
+      let k = 0;
+      for (let r = 1; r < R; r++) {
+        for (let c = 1; c < C; c++) {
+          const cell = grid[r][c];
+          if (cell && !cell.skull) {
+            grid[r][c] = items[k++];
+          }
+        }
+      }
+    }
+
+    _checkDeadlockAndResolve() {
+      if (this._findAvailablePair()) return;
+
+      if (this.state.life <= 0) {
+        this._handleGameOver("局面出现无解，且生命点数已为 0，游戏结束！");
+        return;
+      }
+
+      this.state.life--;
+      let guard = 0;
+      do {
+        this._reshufflePlayableTiles();
+        guard++;
+      } while (!this._findAvailablePair() && guard < 50);
+
+      this.state.selected = null;
+      this._resetTurnTimer();
+      this._renderBoard();
+      this._updateHUD();
+      this._say(`出现无解局面！自动扣除 1 点生命（剩余 ${this.state.life}）换牌并重置 30 秒倒计时。`);
+    }
+
+    useHint() {
+      const st = this.state;
+      if (!st.running || st.paused || st.locked || st.hintCount <= 0) return;
+
+      const pair = this._findAvailablePair();
+      if (!pair) {
+        this._checkDeadlockAndResolve();
+        return;
+      }
+
+      st.hintCount--;
+      this._updateHUD();
+
+      this.dom.board.querySelectorAll(".llk-hint").forEach((el) => el.classList.remove("llk-hint"));
+      pair.forEach(({ r, c }) => {
+        const el = this.dom.board.querySelector(`.llk-tile[data-r="${r}"][data-c="${c}"]`);
+        if (el) {
+          void el.offsetWidth;
+          el.classList.add("llk-hint");
+        }
+      });
+      this._say(`已使用提示（剩余 ${st.hintCount} 点），闪烁牌组可消除。`);
+    }
+
+    useManualShuffle() {
+      const st = this.state;
+      if (!st.running || st.paused || st.locked || st.life <= 0) return;
+
+      st.life--;
+      let guard = 0;
+      do {
+        this._reshufflePlayableTiles();
+        guard++;
+      } while (!this._findAvailablePair() && guard < 50);
+
+      st.selected = null;
+      this._resetTurnTimer();
+      this._renderBoard();
+      this._updateHUD();
+      this._say(`已重新洗牌（扣 1 点生命，剩余 ${st.life}），30 秒倒计时已重置！`);
+    }
+
+    togglePause() {
+      const st = this.state;
+      if (!st.running) return;
+      st.paused = !st.paused;
+      this.dom.pauseMask.classList.toggle("llk-hidden", !st.paused);
+      this._updateHUD();
+    }
+
+    _calcStageExtraBonus(stage) {
+      if (stage === 1) return 200;
+      return Math.round((200 * stage * (stage - 1)) / 3);
+    }
+
+    _handleStageClear() {
+      this._stopTimer();
+      const st = this.state;
+      st.locked = true;
+
+      // 每过一关生命 +1，提示 +1
+      st.life += 1;
+      st.hintCount += 1;
+
+      const timeBonus = st.seconds * 5 * st.stage;
+      const lifeBonus = st.life * 50 * st.stage;
+      const hintBonus = st.hintCount * 30 * st.stage;
+      const extraBonus = this._calcStageExtraBonus(st.stage);
+      const gain = timeBonus + lifeBonus + hintBonus + extraBonus;
+
+      st.score += gain;
+      this._updateHUD();
+
+      // 判断是否通关 101 无尽模式全部 101 关
+      if (st.mode === "endless" && st.stage >= 101) {
+        this._handleAll101Victory();
+        return;
+      }
+
+      this._showModal(
+        `🎉 第 ${st.stage} 关过关奖励`,
+        `
+          <p>生命点数与提示点数各 <b>+1</b>！</p>
+          <table class="llk-table">
+            <tr><td>剩余时间奖励（${st.seconds}s × 5 × ${st.stage}关）</td><td><b>+${timeBonus}</b></td></tr>
+            <tr><td>生命点数奖励（${st.life}点 × 50 × ${st.stage}关）</td><td><b>+${lifeBonus}</b></td></tr>
+            <tr><td>提示点数奖励（${st.hintCount}点 × 30 × ${st.stage}关）</td><td><b>+${hintBonus}</b></td></tr>
+            <tr><td>第 ${st.stage} 关额外过关加分</td><td><b>+${extraBonus}</b></td></tr>
+            <tr><td><b>本关合计加分</b></td><td><b style="color:var(--llk-primary);">+${gain}</b></td></tr>
+          </table>
+          <p style="font-size:15px;">当前累计总分：<b style="color:var(--llk-primary);">${st.score}</b></p>
+        `,
+        [
+          {
+            text: `进入第 ${st.stage + 1} 关 ➔`,
+            primary: true,
+            onClick: () => {
+              this._hideModal();
+              this._initStage(st.stage + 1);
+            }
+          }
+        ]
+      );
+    }
+
+    // 第101关全部通关后的胜利结算（支持输入名字 + 上传头像 + 写入 Cloudflare 榜单）
+    _handleAll101Victory() {
+      const st = this.state;
+      st.running = false;
+      let avatarDataUrl = "";
+
+      this._showModal(
+        "👑 恭喜通关全部 101 关！",
+        `
+          <p style="color:var(--llk-primary);font-weight:800;">你已征服 101连连看 全部 101 关终极试炼！</p>
+          <div class="llk-box" style="text-align:center;">
+            <div>最终通关总分：<b style="font-size:20px;color:var(--llk-primary);">${st.score}</b></div>
+            <div style="margin-top:10px;text-align:left;">
+              <label style="font-weight:700;">输入英雄昵称：</label>
+              <input type="text" class="llk-input" id="llk101-winner-name" maxlength="16" placeholder="请输入你的名字（最多16字）">
+            </div>
+            <div style="margin-top:10px;text-align:left;">
+              <label style="font-weight:700;">上传荣耀头像（可选）：</label>
+              <input type="file" accept="image/*" class="llk-input" id="llk101-winner-avatar">
+              <div id="llk101-avatar-preview" style="margin-top:6px;text-align:center;"></div>
+            </div>
+          </div>
+        `,
+        [
+          {
+            text: "提交成绩并进入榜单 🏆",
+            primary: true,
+            onClick: async () => {
+              const nameInput = document.getElementById("llk101-winner-name");
+              const playerName = (nameInput && nameInput.value.trim()) || "101通关王者";
+              await this._submitRankScore({
+                mode: "endless",
+                name: playerName,
+                avatar: avatarDataUrl,
+                stage: 101,
+                score: st.score,
+                cleared101: true
+              });
+              this._hideModal();
+              this.openLeaderboard("endless");
+            }
+          }
+        ]
+      );
+
+      // 绑定图片上传与自动压缩（保证存入 Cloudflare KV/D1 体积小巧）
+      setTimeout(() => {
+        const fileInput = document.getElementById("llk101-winner-avatar");
+        const preview = document.getElementById("llk101-avatar-preview");
+        if (!fileInput) return;
+        fileInput.addEventListener("change", (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          this._compressAvatar(file, (base64) => {
+            avatarDataUrl = base64;
+            if (preview) {
+              preview.innerHTML = `<img src="${base64}" class="llk-avatar-img" style="width:52px;height:52px;" alt="头像预览">`;
+            }
+          });
+        });
+      }, 30);
+    }
+
+    _compressAvatar(file, callback) {
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement("canvas");
+          const size = 64;
+          canvas.width = size;
+          canvas.height = size;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, size, size);
+          callback(canvas.toDataURL("image/jpeg", 0.72));
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    confirmGiveUp() {
+      const st = this.state;
+      if (!st.running) return;
+      const wasPaused = st.paused;
+      if (!wasPaused) {
+        st.paused = true;
+        this._updateHUD();
+      }
+      this._showModal(
+        "放弃此局",
+        `<p>确定要放弃当前 <b>${MODES[st.mode].label}</b>（第 ${st.stage} 关，得分 ${st.score}）吗？</p>`,
+        [
+          {
+            text: "确认放弃",
+            primary: true,
+            onClick: () => {
+              this._hideModal();
+              this._handleGameOver("玩家主动放弃了本局挑战。");
+            }
+          },
+          {
+            text: "继续游戏",
+            primary: false,
+            onClick: () => {
+              this._hideModal();
+              if (!wasPaused) {
+                st.paused = false;
+                this._updateHUD();
+              }
+            }
+          }
+        ]
+      );
+    }
+
+    _handleGameOver(reason) {
+      this._stopTimer();
+      const st = this.state;
+      st.running = false;
+      st.paused = false;
+      st.locked = true;
+      this.dom.pauseMask.classList.add("llk-hidden");
+      this._updateHUD();
+
+      if (st.score > 0) {
+        this._submitRankScore({
+          mode: st.mode,
+          name: "挑战者",
+          avatar: "",
+          stage: st.stage,
+          score: st.score,
+          cleared101: false
+        });
+      }
+
+      this._showModal(
+        "挑战结束",
+        `
+          <p>${reason}</p>
+          <div class="llk-box" style="text-align:center;">
+            <div>模式：<b>${MODES[st.mode].label}</b></div>
+            <div>到达关卡：<b>第 ${st.stage} 关</b></div>
+            <div style="font-size:18px;color:var(--llk-primary);margin-top:4px;">最终得分：<b>${st.score}</b></div>
+          </div>
+        `,
+        [
+          {
+            text: "再来一局",
+            primary: true,
+            onClick: () => this.startNewGame(st.mode)
+          },
+          {
+            text: "查看榜单 🏆",
+            primary: false,
+            onClick: () => {
+              this._hideModal();
+              this.openLeaderboard(st.mode);
+            }
+          }
+        ]
+      );
+      this._say("游戏结束，可点击模式按钮重新开始。");
+    }
+
+    // Cloudflare 数据库优先 + 本地降级存储
+    async _submitRankScore(record) {
+      if (CLOUDFLARE_API_URL) {
+        try {
+          await fetch(CLOUDFLARE_API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(record)
+          });
+          return;
+        } catch (_) {}
+      }
+      // 本地降级保存
+      try {
+        const raw = localStorage.getItem(LOCAL_RANK_KEY);
+        const db = raw ? JSON.parse(raw) : {};
+        if (!Array.isArray(db[record.mode])) db[record.mode] = [];
+        db[record.mode].push({
+          ...record,
+          date: new Date().toLocaleDateString("zh-CN")
+        });
+        db[record.mode].sort((a, b) => b.score - a.score || b.stage - a.stage);
+        db[record.mode] = db[record.mode].slice(0, 30);
+        localStorage.setItem(LOCAL_RANK_KEY, JSON.stringify(db));
+      } catch (_) {}
+    }
+
+    async openLeaderboard(modeKey) {
+      const target = MODES[modeKey] ? modeKey : "endless";
+      this.state.activeRankTab = target;
+      this.dom.rankModal.classList.remove("llk-hidden");
+      this.dom.rankTabs.querySelectorAll("[data-rank-mode]").forEach((btn) => {
+        btn.classList.toggle("llk-active", btn.dataset.rankMode === target);
+      });
+      this.dom.dbSourceLabel.textContent = CLOUDFLARE_API_URL
+        ? "数据源：Cloudflare 云端实时数据库"
+        : "数据源：本地存储（配置 CLOUDFLARE_API_URL 后自动切换云端）";
+      this.dom.rankContent.innerHTML = `<p style="padding:16px 0;">正在加载榜单数据...</p>`;
+
+      let list = [];
+      if (CLOUDFLARE_API_URL) {
+        try {
+          const res = await fetch(`${CLOUDFLARE_API_URL}?mode=${encodeURIComponent(target)}`);
+          const json = await res.json();
+          if (json && Array.isArray(json.list)) list = json.list;
+        } catch (_) {}
+      } else {
+        try {
+          const raw = localStorage.getItem(LOCAL_RANK_KEY);
+          const db = raw ? JSON.parse(raw) : {};
+          list = db[target] || [];
+        } catch (_) {}
+      }
+
+      if (list.length === 0) {
+        this.dom.rankContent.innerHTML = `<p style="color:var(--llk-sub-ink);padding:18px 0;">暂无 ${MODES[target].label} 榜单记录，等你来登顶！</p>`;
+        return;
+      }
+
+      const rowsHtml = list.map((item, idx) => {
+        const medal = idx === 0 ? "🥇" : idx === 1 ? "🥈" : idx === 2 ? "🥉" : idx + 1;
+        const avatarHtml = item.avatar
+          ? `<img src="${item.avatar}" class="llk-avatar-img" alt="avatar"> `
+          : "👤 ";
+        const crown = item.cleared101 ? " 👑" : "";
+        return `
+          <tr>
+            <td><b>${medal}</b></td>
+            <td style="text-align:left;">${avatarHtml}<span>${this._escapeHtml(item.name || "匿名玩家")}${crown}</span></td>
+            <td>第${item.stage}关</td>
+            <td><b style="color:var(--llk-primary);">${item.score}</b></td>
+          </tr>
+        `;
+      }).join("");
+
+      this.dom.rankContent.innerHTML = `
+        <table class="llk-table">
+          <thead>
+            <tr><th>排名</th><th style="text-align:left;">玩家</th><th>关卡</th><th>得分</th></tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      `;
+    }
+
+    _escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    _showModal(title, html, actions) {
+      this.dom.modalTitle.textContent = title;
+      this.dom.modalBody.innerHTML = html;
+      this.dom.modalActions.innerHTML = "";
+      actions.forEach((act) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "llk-btn" + (act.primary ? " llk-primary" : "");
+        btn.textContent = act.text;
+        btn.addEventListener("click", act.onClick);
+        this.dom.modalActions.appendChild(btn);
+      });
+      this.dom.statusModal.classList.remove("llk-hidden");
+    }
+
+    _hideModal() {
+      this.dom.statusModal.classList.add("llk-hidden");
+    }
+
+    _shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+      }
+    }
+  }
+
+  global.Link101App = {
+    __booted: true,
+    mount: function (elOrSelector) {
+      const el = typeof elOrSelector === "string"
+        ? document.querySelector(elOrSelector)
+        : elOrSelector;
+      return el ? new Link101Game(el) : null;
+    }
+  };
+
+  const defaultRoot = document.getElementById("llk101-app-root");
+  if (defaultRoot) {
+    global.Link101App.instance = global.Link101App.mount(defaultRoot);
+  }
+})(window);
+</script>
+</body>
+</html>
