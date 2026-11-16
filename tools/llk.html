@@ -166,7 +166,7 @@ permalink: llk.html
 }
 
 #llk101-app-root .llk-shell {
-  width: min(100%, 1040px);
+  width: min(100%, 960px);
   background: var(--llk-card-bg);
   border: 4px solid var(--llk-border);
   border-radius: 24px;
@@ -334,7 +334,7 @@ permalink: llk.html
   padding: 10px;
   position: relative;
   overflow: hidden;
-  min-height: 280px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,7 +342,7 @@ permalink: llk.html
 
 #llk101-app-root .llk-board {
   display: grid;
-  gap: 4px;
+  gap: 3.5px;
   justify-content: center;
   align-content: center;
   width: 100%;
@@ -358,7 +358,7 @@ permalink: llk.html
   border: 1.5px solid var(--llk-tile-border);
   display: grid;
   place-items: center;
-  font-size: clamp(15px, 3.8vw, 27px);
+  font-size: clamp(14px, 3.6vw, 25px);
   cursor: pointer;
   box-shadow: 0 2px 0 var(--llk-tile-shadow);
   transition: transform 0.1s;
@@ -403,7 +403,7 @@ permalink: llk.html
   align-items: flex-end;
   justify-content: flex-end;
   padding: 1px 3px;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 900;
   color: #01579b;
   text-shadow: 0 0 3px #fff;
@@ -420,7 +420,7 @@ permalink: llk.html
   position: absolute;
   top: 1px;
   left: 2px;
-  font-size: 9px;
+  font-size: 8.5px;
   line-height: 1;
   opacity: 0.85;
   pointer-events: none;
@@ -577,13 +577,13 @@ permalink: llk.html
   display: none !important;
 }
 
-/* 移动端精细适配 */
+/* 移动端精细适配（兼顾 12x12 棋盘在小屏的清晰点击） */
 @media (max-width: 600px) {
   #llk101-app-root {
     padding: 6px;
   }
   #llk101-app-root .llk-shell {
-    padding: 10px;
+    padding: 8px;
     border-radius: 18px;
     border-width: 3px;
   }
@@ -596,14 +596,15 @@ permalink: llk.html
     font-size: 11.5px;
   }
   #llk101-app-root .llk-board {
-    gap: 2.5px;
+    gap: 2px;
   }
   #llk101-app-root .llk-tile {
-    border-radius: 5px;
+    border-radius: 4px;
     border-width: 1px;
+    font-size: clamp(13px, 4.8vw, 22px);
   }
   #llk101-app-root .llk-board-wrap {
-    padding: 6px;
+    padding: 5px;
   }
 }
 </style>
@@ -627,16 +628,16 @@ permalink: llk.html
     </header>
 
     <div class="llk-stage-banner">
-      <span class="llk-stage-tag" data-llk="modeBadge">简单模式</span>
+      <span class="llk-stage-tag" data-llk="modeBadge">简单模式 (8×8)</span>
       <span data-llk="ruleBadge">本关特性：第1关消除后位置不变</span>
     </div>
 
     <div class="llk-toolbar">
       <div class="llk-group" data-llk="modeGroup">
-        <button type="button" class="llk-btn llk-active" data-mode="easy">简单</button>
-        <button type="button" class="llk-btn" data-mode="normal">普通</button>
-        <button type="button" class="llk-btn" data-mode="hard">困难</button>
-        <button type="button" class="llk-btn" data-mode="endless">无尽模式 🔥</button>
+        <button type="button" class="llk-btn llk-active" data-mode="easy">简单 (8×8)</button>
+        <button type="button" class="llk-btn" data-mode="normal">普通 (10×10)</button>
+        <button type="button" class="llk-btn" data-mode="hard">困难 (12×12)</button>
+        <button type="button" class="llk-btn" data-mode="endless">无尽模式 (12×12) 🔥</button>
       </div>
       <div class="llk-group">
         <button type="button" class="llk-btn" data-llk="btnHint">提示 ✨</button>
@@ -664,7 +665,7 @@ permalink: llk.html
     </div>
   </div>
 
-  <!-- 欢迎与规则说明弹窗（此时计时严格处于未启动/暂停状态，支持断点续玩或重来） -->
+  <!-- 欢迎与规则说明弹窗 -->
   <div class="llk-overlay" data-llk="welcomeModal">
     <div class="llk-dialog">
       <h2>🎮 101连连看 · 玩法说明</h2>
@@ -672,8 +673,8 @@ permalink: llk.html
         <ul>
           <li><b>30秒极限节奏：</b>每关限时 <b>30 秒</b>，每次成功消除或洗牌都会立即重置为 30 秒。</li>
           <li><b>基础规则：</b>选一对相同牌面，避开其他牌且连线<b>不超过二转弯</b>即可消除。左键点1次选取，右键或同牌点2次取消。</li>
-          <li><b>生命与提示：</b>初始各 3 点，每过一关各 +1 点。〔重新洗牌〕或出现无解局面扣 1 点生命换牌；生命为 0 且无解则结束。</li>
-          <li><b>四大模式：</b><b>简单 / 普通 / 困难</b> 均为 <b>第1关至第101关</b> 完整关卡递进（全通可输入昵称与上传头像登榜）；<b>无尽模式</b> 则是 <b>无限循环第92关</b> 终极混合挑战！</li>
+          <li><b>特殊机制：</b><b>面具 🎭</b> 需先配对消除外层面具，消除后露出面具后的真实格子；<b>冻结 ❄️</b> 需等待指定回合解冻；<b>骷髅 💀</b> 永久阻挡连线。</li>
+          <li><b>四大模式：</b><b>简单(8×8) / 普通(10×10) / 困难(12×12)</b> 均为 <b>第1关至第101关</b> 完整关卡递进（全通可输入昵称与上传头像登榜）；<b>无尽模式(12×12)</b> 则是 <b>无限循环第101关</b> 终极混合挑战！</li>
         </ul>
       </div>
 
@@ -687,10 +688,10 @@ permalink: llk.html
       </div>
 
       <div class="llk-actions">
-        <button type="button" class="llk-btn" data-start-mode="easy">新局：简单</button>
-        <button type="button" class="llk-btn" data-start-mode="normal">新局：普通</button>
-        <button type="button" class="llk-btn" data-start-mode="hard">新局：困难</button>
-        <button type="button" class="llk-btn llk-primary" data-start-mode="endless">新局：无尽模式 🔥</button>
+        <button type="button" class="llk-btn" data-start-mode="easy">简单 (8×8)</button>
+        <button type="button" class="llk-btn" data-start-mode="normal">普通 (10×10)</button>
+        <button type="button" class="llk-btn" data-start-mode="hard">困难 (12×12)</button>
+        <button type="button" class="llk-btn llk-primary" data-start-mode="endless">无尽模式 (12×12) 🔥</button>
       </div>
     </div>
   </div>
@@ -767,7 +768,7 @@ permalink: llk.html
   const CLOUDFLARE_API_URL = "https://llk.atticus-beta.workers.dev/";
   const LOCAL_RANK_KEY = "llk101_cf_fallback_rank_v1";
   const LOCAL_PREF_KEY = "llk101_user_prefs_v1";
-  const LOCAL_SESSION_KEY = "llk101_saved_session_v1";
+  const LOCAL_SESSION_KEY = "llk101_saved_session_v2";
   const TURN_TIME_LIMIT = 30;
 
   const ICON_PACKS = {
@@ -808,12 +809,12 @@ permalink: llk.html
     "🐲", "🦄", "👑", "🎩", "🪖", "⛑️", "🥽", "🕶️", "🔮", "🧿"
   ];
 
-  // 简单 / 普通 / 困难 均从第1关玩到第101关；无尽模式无限循环第92关
+  // 最新棋盘尺寸配置：简单 8*8、普通 10*10、困难 12*12、无尽 12*12
   const MODES = {
-    easy: { key: "easy", label: "简单模式", cols: 8, rows: 6, pairs: 24, kinds: 16, maxStage: 101 },
-    normal: { key: "normal", label: "普通模式", cols: 10, rows: 8, pairs: 40, kinds: 22, maxStage: 101 },
-    hard: { key: "hard", label: "困难模式", cols: 12, rows: 8, pairs: 48, kinds: 28, maxStage: 101 },
-    endless: { key: "endless", label: "无尽模式 🔥", cols: 10, rows: 8, pairs: 40, kinds: 22, maxStage: Infinity }
+    easy: { key: "easy", label: "简单模式 (8×8)", cols: 8, rows: 8, pairs: 32, kinds: 16, maxStage: 101 },
+    normal: { key: "normal", label: "普通模式 (10×10)", cols: 10, rows: 10, pairs: 50, kinds: 25, maxStage: 101 },
+    hard: { key: "hard", label: "困难模式 (12×12)", cols: 12, rows: 12, pairs: 72, kinds: 28, maxStage: 101 },
+    endless: { key: "endless", label: "无尽模式 (12×12) 🔥", cols: 12, rows: 12, pairs: 72, kinds: 28, maxStage: Infinity }
   };
 
   const SHIFT_NAMES = {
@@ -888,7 +889,6 @@ permalink: llk.html
       this.prefs = this._loadPrefs();
       this._applyTheme(this.prefs.theme);
 
-      // 初始说明界面严格保持未运行/暂停状态
       this.state = {
         mode: "easy",
         stage: 1,
@@ -983,7 +983,6 @@ permalink: llk.html
       this.state.paused = false;
       this.state.locked = false;
 
-      // 若上次退出时刚好处于过关结算界面，则直接初始化下一关棋盘
       if (saved.needInitNext || !Array.isArray(saved.grid) || saved.grid.length === 0) {
         this._initStage(this.state.stage);
         return;
@@ -1078,7 +1077,6 @@ permalink: llk.html
       this.dom.btnGiveUp.addEventListener("click", () => this.confirmGiveUp());
       this.dom.btnBoard.addEventListener("click", () => this.openLeaderboard(this.state.mode));
 
-      // 进入设置自动暂停并保存当前进度
       this.dom.btnSetting.addEventListener("click", () => {
         if (this.state.running && !this.state.paused) {
           this.togglePause();
@@ -1173,7 +1171,6 @@ permalink: llk.html
       this.dom.btnGiveUp.disabled = !st.running;
     }
 
-    // 简单 / 普通 / 困难 均使用 1~101 关规则；无尽模式固定无限循环第 92 关规则
     _getStageRuleConfig(mode, stage) {
       const effectiveStage = mode === "endless" ? 92 : stage;
 
@@ -1283,7 +1280,7 @@ permalink: llk.html
           freezeCount: 0,
           skullPairs: 0,
           maskPairs: mp,
-          desc: `第${effectiveStage}关：${mp * 2} 个牌戴上 ${mp} 对伪装面具 🎭`
+          desc: `第${effectiveStage}关：${mp * 2} 个牌戴上 ${mp} 对伪装面具（消除后展示原牌）🎭`
         };
       }
 
@@ -1377,6 +1374,7 @@ permalink: llk.html
       rule.mode = this.state.mode;
       this.currentRule = rule;
 
+      // 生成成对牌组（确保底层牌始终两两成对，面具消除后展示的底层格子均可正常配对消除）
       const tiles = [];
       let uid = 1;
       for (let i = 0; i < cfg.pairs; i++) {
@@ -1386,6 +1384,7 @@ permalink: llk.html
       }
       this._shuffleArray(tiles);
 
+      // 1. 分配骷髅触发对
       if (rule.skullPairs > 0) {
         const pairGroups = new Map();
         tiles.forEach((t) => {
@@ -1403,6 +1402,7 @@ permalink: llk.html
         }
       }
 
+      // 2. 分配成对面具（戴上后遮住原格子，消除面具后展示面具后的格子）
       if (rule.maskPairs > 0) {
         const candidates = tiles.filter((t) => !t.skullTrigger);
         this._shuffleArray(candidates);
@@ -1414,6 +1414,7 @@ permalink: llk.html
         }
       }
 
+      // 3. 分配冻结格子
       if (rule.freezeCount > 0) {
         const freezePool = tiles.filter((t) => t.maskIdx === null);
         this._shuffleArray(freezePool);
@@ -1446,8 +1447,8 @@ permalink: llk.html
       this._startTimer();
 
       const stageDesc = this.state.mode === "endless"
-        ? `无尽模式第 ${stageNum} 轮（循环第92关）开始！`
-        : `第 ${stageNum} 关开始！`;
+        ? `无尽模式(12×12)第 ${stageNum} 轮（循环第92关）开始！`
+        : `${cfg.label} 第 ${stageNum} 关开始！`;
       this._say(`${stageDesc} 30秒倒计时已启动。`);
     }
 
@@ -1470,9 +1471,12 @@ permalink: llk.html
       }
     }
 
+    // 戴面具时只能与同款面具匹配；面具消除后展示面具后的格子（恢复为 KIND_xxx 匹配）
     _getTileMatchKey(cell) {
       if (!cell || cell.skull || cell.freeze > 0) return null;
-      if (cell.maskIdx !== null) return `MASK_${cell.maskIdx}`;
+      if (cell.maskIdx !== null && cell.maskIdx !== undefined) {
+        return `MASK_${cell.maskIdx}`;
+      }
       return `KIND_${cell.kindIdx}`;
     }
 
@@ -1481,7 +1485,8 @@ permalink: llk.html
       const pack = ICON_PACKS[this.prefs.iconPack] || ICON_PACKS.daily;
       const board = this.dom.board;
       board.style.gridTemplateColumns = `repeat(${cfg.cols}, minmax(0, 1fr))`;
-      board.style.maxWidth = `${cfg.cols * 58}px`;
+      // 12x12 在桌面端略微放宽最大容器宽度以保证格子清晰，移动端自动100%适配
+      board.style.maxWidth = `${cfg.cols * 54}px`;
       board.innerHTML = "";
 
       const frag = document.createDocumentFragment();
@@ -1502,18 +1507,20 @@ permalink: llk.html
             btn.disabled = true;
             btn.title = "骷髅障碍：不可消除，连线不可穿过";
           } else {
+            const hasMask = cell.maskIdx !== null && cell.maskIdx !== undefined;
             let cls = "llk-tile";
             if (cell.freeze > 0) cls += " llk-frozen";
-            if (cell.maskIdx !== null) cls += " llk-masked";
+            if (hasMask) cls += " llk-masked";
             btn.className = cls;
 
-            if (cell.maskIdx !== null) {
+            if (hasMask) {
               btn.textContent = MASK_ICONS[cell.maskIdx];
               const mTag = document.createElement("span");
               mTag.className = "llk-mask-tag";
               mTag.textContent = "🎭";
               btn.appendChild(mTag);
             } else {
+              // 面具消除后或普通格子，展示面具后的真实图标
               btn.textContent = pack[cell.kindIdx % pack.length];
             }
 
@@ -1628,8 +1635,9 @@ permalink: llk.html
       const cellA = st.grid[posA.r][posA.c];
       const cellB = st.grid[posB.r][posB.c];
 
-      this._resolveSingleTileAfterMatch(posA.r, posA.c, cellA);
-      this._resolveSingleTileAfterMatch(posB.r, posB.c, cellB);
+      const revealedA = this._resolveSingleTileAfterMatch(posA.r, posA.c, cellA);
+      const revealedB = this._resolveSingleTileAfterMatch(posB.r, posB.c, cellB);
+      const anyMaskRevealed = revealedA || revealedB;
 
       this._tickFreezeCounters();
 
@@ -1651,19 +1659,21 @@ permalink: llk.html
         return;
       }
 
-      const extraTip = shiftApplied && shiftApplied !== "none"
+      const maskTip = anyMaskRevealed ? "面具已消除，展示底层牌面！" : "消除成功！";
+      const shiftTip = shiftApplied && shiftApplied !== "none"
         ? `（触发${SHIFT_NAMES[shiftApplied]}）`
         : "";
-      this._say(`消除成功！倒计时已重置为 30 秒${extraTip}。`);
+      this._say(`${maskTip}倒计时已重置为 30 秒${shiftTip}。`);
 
       this._checkDeadlockAndResolve();
     }
 
+    // 处理单张牌配对后的状态：若为面具则剥离面具展示面具后的格子（返回 true）；否则消除或变骷髅
     _resolveSingleTileAfterMatch(r, c, cell) {
-      if (!cell) return;
-      if (cell.maskIdx !== null) {
+      if (!cell) return false;
+      if (cell.maskIdx !== null && cell.maskIdx !== undefined) {
         cell.maskIdx = null;
-        return;
+        return true;
       }
       if (cell.skullTrigger) {
         this.state.grid[r][c] = {
@@ -1674,9 +1684,10 @@ permalink: llk.html
           skull: true,
           skullTrigger: false
         };
-        return;
+        return false;
       }
       this.state.grid[r][c] = null;
+      return false;
     }
 
     _tickFreezeCounters() {
@@ -2040,7 +2051,6 @@ permalink: llk.html
       st.score += gain;
       this._updateHUD();
 
-      // 简单 / 普通 / 困难 通关第 101 关时进入全通胜利结算
       if (st.mode !== "endless" && st.stage >= cfg.maxStage) {
         this._clearSavedSession();
         this._handleAll101Victory();
@@ -2095,7 +2105,6 @@ permalink: llk.html
       );
     }
 
-    // 简单 / 普通 / 困难 全通 101 关胜利结算（输入名字 + 上传头像 + 写入榜单）
     _handleAll101Victory() {
       const st = this.state;
       const modeLabel = MODES[st.mode].label;
