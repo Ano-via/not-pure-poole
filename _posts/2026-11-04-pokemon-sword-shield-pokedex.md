@@ -5277,6 +5277,8 @@ function real_numfilter1() {
     currentNumFilter =
         document.getElementById("numfilter1").value.trim();
     applyFilters1();
+    document.getElementById("numfilter2").value = "-";
+    applyFilters2();
 }
 function resetFilters1() {
     currentWayFilter = "";
@@ -5292,6 +5294,10 @@ function real_numfilter2() {
     currentNumFilter =
         document.getElementById("numfilter2").value.trim();
     applyFilters2();
+        document.getElementById("numfilter1").value = "-";
+    applyFilters1();
+        document.getElementById("numfilter").value = "-";
+    applyFilters();
 }
 function resetFilters2() {
     currentWayFilter = "";
