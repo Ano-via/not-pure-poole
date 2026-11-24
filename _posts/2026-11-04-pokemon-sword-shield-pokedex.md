@@ -78,7 +78,7 @@ date: 2026-11-04 10:16 +0800
 </label>
 
 <label>
-    <input type="checkbox" onchange="toggleMod(this, 'mod3')">
+    <input type="checkbox" checked onchange="toggleMod(this, 'mod3')">
     Crowned Sword & Armored Shield
 </label>
 </div>
