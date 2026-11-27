@@ -5182,6 +5182,10 @@ function real_numfilter() {
     currentNumFilter =
         document.getElementById("numfilter").value.trim();
     applyFilters();
+    document.getElementById("numfilter1").value = "-";
+    applyFilters1();
+    document.getElementById("numfilter2").value = "-";
+    applyFilters2();
 }
 function resetFilters() {
     currentWayFilter = "";
@@ -5249,6 +5253,8 @@ function real_numfilter1() {
     applyFilters1();
     document.getElementById("numfilter2").value = "-";
     applyFilters2();
+    document.getElementById("numfilter").value = "-";
+    applyFilters();
 }
 function resetFilters1() {
     currentWayFilter = "";
@@ -5264,9 +5270,9 @@ function real_numfilter2() {
     currentNumFilter =
         document.getElementById("numfilter2").value.trim();
     applyFilters2();
-        document.getElementById("numfilter1").value = "-";
+    document.getElementById("numfilter1").value = "-";
     applyFilters1();
-        document.getElementById("numfilter").value = "-";
+    document.getElementById("numfilter").value = "-";
     applyFilters();
 }
 function resetFilters2() {
